@@ -1,0 +1,205 @@
+2024-05-28 11:11:35.278 [info] [3719071] Session logging begin   : reprostim-videocapture 1.8.0.225, session_logger_2024.05.28.11.11.35.277, start_ts=2024.05.28.11.11.35.277
+2024-05-28 11:11:35.278 [info] [3719071]         Video device    : /dev/video2, S/N: B208220302195, USB Capture DVI+, bus info: usb-0000:00:14.0-2
+2024-05-28 11:11:35.278 [info] [3719071]                         : 1920x1080, 60 fps
+2024-05-28 11:11:35.278 [info] [3719071]         Audio-in device : hw:2,1
+2024-05-28 11:11:35.278 [info] [3719071]                         : hdmi/HDMI Capture Volume=95%
+2024-05-28 11:11:35.278 [info] [3719071]                         : line-in/Line In Capture Volume=95%
+2024-05-28 11:11:35.278 [info] [3719071] REPROSTIM-METADATA-JSON: {"aDev":"hw:2,1","appName":"reprostim-videocapture","cx":1920,"cy":1080,"frameRate":"60","serial":"B208220302195","start_ts":"2024.05.28.11.11.35.277","ts":"2024.05.28.11.11.35.278","type":"session_begin","vDev":"USB Capture DVI+","version":"1.8.0.225"} :REPROSTIM-METADATA-JSON
+2024-05-28 11:11:35.278 [info] [856367] 2024.05.28.11.11.35.277: <SYSTEMCALL> ffmpeg -f alsa -ac 2 -thread_queue_size 40960 -i hw:2,1 -f v4l2 -input_format yuyv422 -framerate 60 -video_size 1920x1080 -thread_queue_size 40960 -i /dev/video2 -c:v libx264 -flush_packets 1 -copyts   -acodec aac /data/reprostim/Videos/2024/05/2024.05.28.11.11.35.277_.mkv 2>&1
+2024-05-28 11:11:35.357 [info] [856367] ffmpeg version 5.1.4-0+deb12u1 Copyright (c) 2000-2023 the FFmpeg developers
+
+2024-05-28 11:11:35.357 [info] [856367]   built with gcc 12 (Debian 12.2.0-14)
+
+2024-05-28 11:11:35.357 [info] [856367]   configuration: --prefix=/usr --extra-version=0+deb12u1 --toolchain=hardened --libdir=/usr/lib/x86_64-linux-gnu --incdir=/usr/
+2024-05-28 11:11:35.357 [info] [856367] include/x86_64-linux-gnu --arch=amd64 --enable-gpl --disable-stripping --enable-gnutls --enable-ladspa --enable-libaom --enable
+2024-05-28 11:11:35.357 [info] [856367] -libass --enable-libbluray --enable-libbs2b --enable-libcaca --enable-libcdio --enable-libcodec2 --enable-libdav1d --enable-lib
+2024-05-28 11:11:35.357 [info] [856367] flite --enable-libfontconfig --enable-libfreetype --enable-libfribidi --enable-libglslang --enable-libgme --enable-libgsm --ena
+2024-05-28 11:11:35.357 [info] [856367] ble-libjack --enable-libmp3lame --enable-libmysofa --enable-libopenjpeg --enable-libopenmpt --enable-libopus --enable-libpulse 
+2024-05-28 11:11:35.357 [info] [856367] --enable-librabbitmq --enable-librist --enable-librubberband --enable-libshine --enable-libsnappy --enable-libsoxr --enable-lib
+2024-05-28 11:11:35.357 [info] [856367] speex --enable-libsrt --enable-libssh --enable-libsvtav1 --enable-libtheora --enable-libtwolame --enable-libvidstab --enable-li
+2024-05-28 11:11:35.357 [info] [856367] bvorbis --enable-libvpx --enable-libwebp --enable-libx265 --enable-libxml2 --enable-libxvid --enable-libzimg --enable-libzmq --
+2024-05-28 11:11:35.357 [info] [856367] enable-libzvbi --enable-lv2 --enable-omx --enable-openal --enable-opencl --enable-opengl --enable-sdl2 --disable-sndio --enable
+2024-05-28 11:11:35.357 [info] [856367] -libjxl --enable-pocketsphinx --enable-librsvg --enable-libmfx --enable-libdc1394 --enable-libdrm --enable-libiec61883 --enable
+2024-05-28 11:11:35.357 [info] [856367] -chromaprint --enable-frei0r --enable-libx264 --enable-libplacebo --enable-librav1e --enable-shared
+
+2024-05-28 11:11:35.357 [info] [856367]   libavutil      57. 28.100 / 57. 28.100
+
+2024-05-28 11:11:35.357 [info] [856367]   libavcodec     59. 37.100 / 59. 37.100
+
+2024-05-28 11:11:35.357 [info] [856367]   libavformat    59. 27.100 / 59. 27.100
+
+2024-05-28 11:11:35.357 [info] [856367]   libavdevice    59.  7.100 / 59.  7.100
+
+2024-05-28 11:11:35.357 [info] [856367]   libavfilter     8. 44.100 /  8. 44.100
+
+2024-05-28 11:11:35.357 [info] [856367]   libswscale      6.  7.100 /  6.  7.100
+
+2024-05-28 11:11:35.357 [info] [856367]   libswresample   4.  7.100 /  4.  7.100
+
+2024-05-28 11:11:35.357 [info] [856367]   libpostproc    56.  6.100 / 56.  6.100
+
+2024-05-28 11:11:35.362 [info] [856367] Guessed Channel Layout for Input Stream #0.0 : stereo
+
+2024-05-28 11:11:35.363 [info] [856367] Input #0, alsa, from 'hw:2,1':
+
+2024-05-28 11:11:35.363 [info] [856367]   Duration: N/A, start: 1716909095.361870, bitrate: 1536 kb/s
+
+2024-05-28 11:11:35.363 [info] [856367]   Stream #0:0: Audio: pcm_s16le, 48000 Hz, stereo, s16, 1536 kb/s
+
+2024-05-28 11:11:35.379 [info] [3719071] 2024.05.28.11.11.35.277:	Started Recording: 
+2024-05-28 11:11:35.379 [info] [3719071] Apct Rat: 1920x1080
+2024-05-28 11:11:35.379 [info] [3719071] FR: 60
+2024-05-28 11:11:35.400 [info] [856367] [video4linux2,v4l2 @ 0x564c7f172200] Dequeued v4l2 buffer contains corrupted data (0 bytes).
+
+2024-05-28 11:11:35.401 [info] [856367] Input #1, video4linux2,v4l2, from '/dev/video2':
+
+2024-05-28 11:11:35.401 [info] [856367]   Duration: N/A, start: 0.000000, bitrate: 1990656 kb/s
+
+2024-05-28 11:11:35.401 [info] [856367]   Stream #1:0: Video: rawvideo (YUY2 / 0x32595559), yuyv422, 1920x1080, 1990656 kb/s, 60 fps, 60 tbr, 1000k tbn
+
+2024-05-28 11:11:35.401 [info] [856367] Stream mapping:
+
+2024-05-28 11:11:35.401 [info] [856367]   Stream #1:0 -> #0:0 (rawvideo (native) -> h264 (libx264))
+
+2024-05-28 11:11:35.401 [info] [856367]   Stream #0:0 -> #0:1 (pcm_s16le (native) -> aac (native))
+
+2024-05-28 11:11:35.401 [info] [856367] Press [q] to stop, [?] for help
+
+2024-05-28 11:11:35.401 [info] [856367] [video4linux2,v4l2 @ 0x564c7f172200] Dequeued v4l2 buffer contains corrupted data (0 bytes).
+
+2024-05-28 11:11:35.474 [info] [856367]     Last message repeated 30 times
+
+2024-05-28 11:11:35.474 [info] [856367] [libx264 @ 0x564c7f175900] using cpu capabilities: MMX2 SSE2Fast SSSE3 SSE4.2 AVX FMA3 BMI2 AVX2
+
+2024-05-28 11:11:35.481 [info] [856367] [libx264 @ 0x564c7f175900] profile High 4:2:2, level 4.2, 4:2:2, 8-bit
+
+2024-05-28 11:11:35.482 [info] [856367] [libx264 @ 0x564c7f175900] 264 - core 164 r3095 baee400 - H.264/MPEG-4 AVC codec - Copyleft 2003-2022 - http://www.videolan.org
+2024-05-28 11:11:35.482 [info] [856367] /x264.html - options: cabac=1 ref=3 deblock=1:0:0 analyse=0x3:0x113 me=hex subme=7 psy=1 psy_rd=1.00:0.00 mixed_ref=1 me_range=
+2024-05-28 11:11:35.482 [info] [856367] 16 chroma_me=1 trellis=1 8x8dct=1 cqm=0 deadzone=21,11 fast_pskip=1 chroma_qp_offset=-2 threads=6 lookahead_threads=1 sliced_th
+2024-05-28 11:11:35.482 [info] [856367] reads=0 nr=0 decimate=1 interlaced=0 bluray_compat=0 constrained_intra=0 bframes=3 b_pyramid=2 b_adapt=1 b_bias=0 direct=1 weig
+2024-05-28 11:11:35.482 [info] [856367] htb=1 open_gop=0 weightp=2 keyint=250 keyint_min=25 scenecut=40 intra_refresh=0 rc_lookahead=40 rc=crf mbtree=1 crf=23.0 qcomp=
+2024-05-28 11:11:35.482 [info] [856367] 0.60 qpmin=0 qpmax=69 qpstep=4 ip_ratio=1.40 aq=1:1.00
+
+2024-05-28 11:11:35.487 [info] [856367] Output #0, matroska, to '/data/reprostim/Videos/2024/05/2024.05.28.11.11.35.277_.mkv':
+
+2024-05-28 11:11:35.487 [info] [856367]   Metadata:
+
+2024-05-28 11:11:35.487 [info] [856367]     encoder         : Lavf59.27.100
+
+2024-05-28 11:11:35.487 [info] [856367]   Stream #0:0: Video: h264 (H264 / 0x34363248), yuv422p(tv, progressive), 1920x1080, q=2-31, 60 fps, 1k tbn
+
+2024-05-28 11:11:35.487 [info] [856367]     Metadata:
+
+2024-05-28 11:11:35.487 [info] [856367]       encoder         : Lavc59.37.100 libx264
+
+2024-05-28 11:11:35.487 [info] [856367]     Side data:
+
+2024-05-28 11:11:35.487 [info] [856367]       cpb: bitrate max/min/avg: 0/0/0 buffer size: 0 vbv_delay: N/A
+
+2024-05-28 11:11:35.487 [info] [856367]   Stream #0:1: Audio: aac (LC) ([255][0][0][0] / 0x00FF), 48000 Hz, stereo, fltp, 128 kb/s
+
+2024-05-28 11:11:35.487 [info] [856367]     Metadata:
+
+2024-05-28 11:11:35.488 [info] [856367]       encoder         : Lavc59.37.100 aac
+
+2024-05-28 11:11:35.995 [info] [856367] frame=    1 fps=0.0 q=0.0 size=       1kB time=00:00:00.00 bitrate=N/A speed=   0x    frame=   33 fps=0.0 q=0.0 size=       1k
+2024-05-28 11:11:36.674 [info] [856367] B time=00:00:00.00 bitrate=N/A speed=   0x    frame=   47 fps= 37 q=0.0 size=       1kB time=00:00:00.00 bitrate=N/A speed=   
+2024-05-28 11:11:37.685 [info] [856367] 0x    frame=   74 fps= 42 q=31.0 size=       1kB time=473798:52:15.42 bitrate=   0.0kbits/s speed=9.62e+08x    frame=  100 fp
+2024-05-28 11:11:38.201 [info] [856367] s= 44 q=31.0 size=       1kB time=473798:52:15.42 bitrate=   0.0kbits/s speed=7.48e+08x    frame=  124 fps= 44 q=31.0 size=   
+2024-05-28 11:11:38.727 [info] [856367]     1kB time=473798:52:15.42 bitrate=   0.0kbits/s speed=6.11e+08x    frame=  149 fps= 45 q=31.0 size=       1kB time=473798:5
+2024-05-28 11:11:39.247 [info] [856367] 2:15.42 bitrate=   0.0kbits/s speed=5.15e+08x    frame=  176 fps= 46 q=31.0 size=       1kB time=473798:52:15.42 bitrate=   0.
+2024-05-28 11:11:40.068 [info] [856367] 0kbits/s speed=4.44e+08x    frame=  197 fps= 44 q=31.0 size=       1kB time=473798:52:15.42 bitrate=   0.0kbits/s speed=3.82e+
+2024-05-28 11:11:40.930 [info] [856367] 08x    frame=  203 fps= 41 q=31.0 size=       1kB time=473798:52:15.42 bitrate=   0.0kbits/s speed=3.42e+08x    frame=  217 f
+2024-05-28 11:11:41.453 [info] [856367] ps= 39 q=31.0 size=       1kB time=473798:52:15.42 bitrate=   0.0kbits/s speed=3.1e+08x    frame=  233 fps= 39 q=31.0 size=   
+2024-05-28 11:11:41.938 [info] [856367]     1kB time=473798:52:15.42 bitrate=   0.0kbits/s speed=2.83e+08x    frame=  255 fps= 39 q=31.0 size=     198kB time=473798:5
+2024-05-28 11:11:42.475 [info] [856367] 2:15.42 bitrate=   0.0kbits/s speed=2.61e+08x    frame=  285 fps= 40 q=31.0 size=     198kB time=473798:52:15.42 bitrate=   0.
+2024-05-28 11:11:42.976 [info] [856367] 0kbits/s speed=2.42e+08x    frame=  313 fps= 41 q=31.0 size=     198kB time=473798:52:15.42 bitrate=   0.0kbits/s speed=2.25e+
+2024-05-28 11:11:44.011 [info] [856367] 08x    frame=  339 fps= 42 q=31.0 size=     198kB time=473798:52:15.42 bitrate=   0.0kbits/s speed=2.11e+08x    frame=  363 f
+2024-05-28 11:11:44.515 [info] [856367] ps= 42 q=31.0 size=     198kB time=473798:52:15.42 bitrate=   0.0kbits/s speed=1.98e+08x    frame=  388 fps= 43 q=31.0 size=  
+2024-05-28 11:11:45.040 [info] [856367]    198kB time=473798:52:15.42 bitrate=   0.0kbits/s speed=1.87e+08x    frame=  415 fps= 43 q=31.0 size=     198kB time=473798:
+2024-05-28 11:11:45.911 [info] [856367] 52:15.42 bitrate=   0.0kbits/s speed=1.77e+08x    frame=  440 fps= 43 q=31.0 size=     198kB time=473798:52:15.42 bitrate=   0
+2024-05-28 11:11:46.276 [info] [856367] .0kbits/s speed=1.65e+08x    frame=  448 fps= 41 q=31.0 size=     198kB time=473798:52:15.42 bitrate=   0.0kbits/s speed=1.57e
+2024-05-28 11:11:47.308 [info] [856367] +08x    frame=  463 fps= 41 q=31.0 size=     198kB time=473798:52:15.42 bitrate=   0.0kbits/s speed=1.5e+08x    frame=  480 f
+2024-05-28 11:11:47.801 [info] [856367] ps= 40 q=31.0 size=     198kB time=473798:52:15.42 bitrate=   0.0kbits/s speed=1.44e+08x    frame=  496 fps= 40 q=31.0 size=  
+2024-05-28 11:11:48.319 [info] [856367]    405kB time=473798:52:15.42 bitrate=   0.0kbits/s speed=1.38e+08x    frame=  520 fps= 40 q=31.0 size=     405kB time=473798:
+2024-05-28 11:11:48.865 [info] [856367] 52:15.42 bitrate=   0.0kbits/s speed=1.32e+08x    frame=  546 fps= 41 q=31.0 size=     405kB time=473798:52:15.42 bitrate=   0
+2024-05-28 11:11:49.411 [info] [856367] .0kbits/s speed=1.27e+08x    frame=  574 fps= 41 q=31.0 size=     405kB time=473798:52:15.42 bitrate=   0.0kbits/s speed=1.22e
+2024-05-28 11:11:50.439 [info] [856367] +08x    frame=  600 fps= 41 q=31.0 size=     405kB time=473798:52:15.42 bitrate=   0.0kbits/s speed=1.18e+08x    frame=  628 
+2024-05-28 11:11:50.955 [info] [856367] fps= 42 q=31.0 size=     405kB time=473798:52:15.42 bitrate=   0.0kbits/s speed=1.13e+08x    frame=  654 fps= 42 q=31.0 size= 
+2024-05-28 11:11:51.457 [info] [856367]     405kB time=473798:52:15.42 bitrate=   0.0kbits/s speed=1.1e+08x    frame=  680 fps= 42 q=31.0 size=     405kB time=473798:
+2024-05-28 11:11:51.984 [info] [856367] 52:15.42 bitrate=   0.0kbits/s speed=1.06e+08x    frame=  705 fps= 43 q=31.0 size=     405kB time=473798:52:15.42 bitrate=   0
+2024-05-28 11:11:52.516 [info] [856367] .0kbits/s speed=1.03e+08x    frame=  721 fps= 42 q=31.0 size=     640kB time=473798:52:15.42 bitrate=   0.0kbits/s speed=9.99e
+2024-05-28 11:11:53.553 [info] [856367] +07x    frame=  744 fps= 42 q=31.0 size=     640kB time=473798:52:15.42 bitrate=   0.0kbits/s speed=9.69e+07x    frame=  770 
+2024-05-28 11:11:54.037 [info] [856367] fps= 42 q=31.0 size=     640kB time=473798:52:15.42 bitrate=   0.0kbits/s speed=9.41e+07x    frame=  792 fps= 43 q=31.0 size= 
+2024-05-28 11:11:54.569 [info] [856367]     640kB time=473798:52:15.42 bitrate=   0.0kbits/s speed=9.15e+07x    frame=  816 fps= 43 q=31.0 size=     640kB time=473798
+2024-05-28 11:11:55.133 [info] [856367] :52:15.42 bitrate=   0.0kbits/s speed=8.9e+07x    frame=  839 fps= 43 q=31.0 size=     640kB time=473798:52:15.42 bitrate=   0
+2024-05-28 11:11:55.629 [info] [856367] .0kbits/s speed=8.67e+07x    frame=  864 fps= 43 q=31.0 size=     640kB time=473798:52:15.42 bitrate=   0.0kbits/s speed=8.44e
+2024-05-28 11:11:56.793 [info] [856367] +07x    frame=  888 fps= 43 q=31.0 size=     640kB time=473798:52:15.42 bitrate=   0.0kbits/s speed=8.22e+07x    frame=  907 
+2024-05-28 11:11:57.213 [info] [856367] fps= 43 q=31.0 size=     640kB time=473798:52:15.42 bitrate=   0.0kbits/s speed=8.03e+07x    frame=  917 fps= 42 q=31.0 size= 
+2024-05-28 11:11:57.710 [info] [856367]     640kB time=473798:52:15.42 bitrate=   0.0kbits/s speed=7.84e+07x    frame=  932 fps= 42 q=31.0 size=     640kB time=473798
+2024-05-28 11:11:58.241 [info] [856367] :52:15.42 bitrate=   0.0kbits/s speed=7.66e+07x    frame=  947 fps= 42 q=31.0 size=     640kB time=473798:52:15.42 bitrate=   
+2024-05-28 11:11:58.742 [info] [856367] 0.0kbits/s speed=7.48e+07x    frame=  967 fps= 41 q=31.0 size=     989kB time=473798:52:15.42 bitrate=   0.0kbits/s speed=7.31
+2024-05-28 11:11:59.807 [info] [856367] e+07x    frame=  993 fps= 42 q=31.0 size=     989kB time=473798:52:15.42 bitrate=   0.0kbits/s speed=7.14e+07x    frame= 1021
+2024-05-28 11:12:00.308 [info] [856367]  fps= 42 q=31.0 size=     989kB time=473798:52:15.42 bitrate=   0.0kbits/s speed=6.99e+07x    frame= 1049 fps= 42 q=31.0 size=
+2024-05-28 11:12:00.832 [info] [856367]      989kB time=473798:52:15.42 bitrate=   0.0kbits/s speed=6.85e+07x    frame= 1079 fps= 42 q=31.0 size=     989kB time=47379
+2024-05-28 11:12:01.361 [info] [856367] 8:52:15.42 bitrate=   0.0kbits/s speed=6.71e+07x    frame= 1107 fps= 43 q=31.0 size=     989kB time=473798:52:15.42 bitrate=  
+2024-05-28 11:12:01.871 [info] [856367]  0.0kbits/s speed=6.57e+07x    frame= 1134 fps= 43 q=31.0 size=     989kB time=473798:52:15.42 bitrate=   0.0kbits/s speed=6.4
+2024-05-28 11:12:03.240 [info] [856367] 4e+07x    frame= 1163 fps= 43 q=31.0 size=     989kB time=473798:52:15.42 bitrate=   0.0kbits/s speed=6.31e+07x    frame= 119
+2024-05-28 11:12:03.642 [info] [856367] 2 fps= 43 q=31.0 size=     989kB time=473798:52:15.42 bitrate=   0.0kbits/s speed=6.16e+07x    frame= 1201 fps= 43 q=31.0 size
+2024-05-28 11:12:04.159 [info] [856367] =     989kB time=473798:52:15.42 bitrate=   0.0kbits/s speed=6.05e+07x    frame= 1227 fps= 43 q=31.0 size=    1153kB time=4737
+2024-05-28 11:12:04.655 [info] [856367] 98:52:15.42 bitrate=   0.0kbits/s speed=5.94e+07x    frame= 1254 fps= 43 q=31.0 size=    1153kB time=473798:52:15.42 bitrate= 
+2024-05-28 11:12:05.158 [info] [856367]   0.0kbits/s speed=5.83e+07x    frame= 1284 fps= 43 q=31.0 size=    1153kB time=473798:52:15.42 bitrate=   0.0kbits/s speed=5.
+2024-05-28 11:12:05.466 [info] [3719071] REPROSTIM-METADATA-JSON: {"message":":\tWhack resolution: 1120x1073953092. Stopped recording","start_ts":"2024.05.28.11.11.35.277","stop_ts":"2024.05.28.11.12.05.466","ts":"2024.05.28.11.12.05.466","type":"capture_stop"} :REPROSTIM-METADATA-JSON
+2024-05-28 11:12:05.466 [info] [3719071] stop record says: terminating ffmpeg with SIGINT
+2024-05-28 11:12:05.480 [info] [3719071] ffmpeg pid: 856369
+
+2024-05-28 11:12:05.480 [info] [3719071] <> PID of ffmpeg	===> 856369
+
+2024-05-28 11:12:06.116 [info] [856367] 73e+07x    frame= 1301 fps= 42 q=-1.0 Lsize=    1221kB time=473798:52:15.48 bitrate=   0.0kbits/s speed=5.55e+07x    
+
+2024-05-28 11:12:06.116 [info] [856367] video:1210kB audio:1kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: 0.817502%
+
+2024-05-28 11:12:06.117 [info] [856367] [libx264 @ 0x564c7f175900] frame I:6     Avg QP:20.85  size: 11340
+
+2024-05-28 11:12:06.117 [info] [856367] [libx264 @ 0x564c7f175900] frame P:449   Avg QP:23.07  size:  1589
+
+2024-05-28 11:12:06.117 [info] [856367] [libx264 @ 0x564c7f175900] frame B:846   Avg QP:23.27  size:   540
+
+2024-05-28 11:12:06.117 [info] [856367] [libx264 @ 0x564c7f175900] consecutive B-frames: 13.3%  0.0%  0.0% 86.7%
+
+2024-05-28 11:12:06.117 [info] [856367] [libx264 @ 0x564c7f175900] mb I  I16..4: 20.7% 78.3%  1.1%
+
+2024-05-28 11:12:06.117 [info] [856367] [libx264 @ 0x564c7f175900] mb P  I16..4:  3.9%  0.9%  0.0%  P16..4:  8.6%  0.1%  0.6%  0.0%  0.0%    skip:85.9%
+
+2024-05-28 11:12:06.117 [info] [856367] [libx264 @ 0x564c7f175900] mb B  I16..4:  0.1%  0.0%  0.0%  B16..8:  5.9%  0.0%  0.0%  direct: 0.1%  skip:94.0%  L0:32.9% L1:67
+2024-05-28 11:12:06.117 [info] [856367] .1% BI: 0.0%
+
+2024-05-28 11:12:06.117 [info] [856367] [libx264 @ 0x564c7f175900] 8x8 transform intra:31.6% inter:96.7%
+
+2024-05-28 11:12:06.117 [info] [856367] [libx264 @ 0x564c7f175900] coded y,uvDC,uvAC intra: 3.4% 36.1% 0.2% inter: 0.1% 3.5% 0.0%
+
+2024-05-28 11:12:06.117 [info] [856367] [libx264 @ 0x564c7f175900] i16 v,h,dc,p: 79% 15%  2%  3%
+
+2024-05-28 11:12:06.117 [info] [856367] [libx264 @ 0x564c7f175900] i8 v,h,dc,ddl,ddr,vr,hd,vl,hu: 43%  6% 50%  0%  0%  0%  0%  0%  0%
+
+2024-05-28 11:12:06.117 [info] [856367] [libx264 @ 0x564c7f175900] i4 v,h,dc,ddl,ddr,vr,hd,vl,hu: 43% 25% 13%  2%  3%  3%  3%  3%  5%
+
+2024-05-28 11:12:06.117 [info] [856367] [libx264 @ 0x564c7f175900] i8c dc,h,v,p: 86%  5%  8%  0%
+
+2024-05-28 11:12:06.117 [info] [856367] [libx264 @ 0x564c7f175900] Weighted P-Frames: Y:0.0% UV:0.0%
+
+2024-05-28 11:12:06.117 [info] [856367] [libx264 @ 0x564c7f175900] ref P L0: 79.5%  7.4% 11.0%  2.1%
+
+2024-05-28 11:12:06.117 [info] [856367] [libx264 @ 0x564c7f175900] ref B L0: 87.7% 12.0%  0.3%
+
+2024-05-28 11:12:06.117 [info] [856367] [libx264 @ 0x564c7f175900] ref B L1: 98.1%  1.9%
+
+2024-05-28 11:12:06.117 [info] [856367] [libx264 @ 0x564c7f175900] kb/s:456.92
+
+2024-05-28 11:12:06.120 [info] [856367] [aac @ 0x564c7f176a40] Qavg: 140.497
+
+2024-05-28 11:12:06.151 [info] [856367] Exiting normally, received signal 2.
+
+2024-05-28 11:12:06.156 [info] [856367] :	Ffmpeg thread terminated. Saving video /data/reprostim/Videos/2024/05/2024.05.28.11.11.35.277_2024.05.28.11.12.06.156.mkv
+2024-05-28 11:12:06.157 [info] [856367] REPROSTIM-METADATA-JSON: {"message":"ffmpeg thread terminated","start_ts":"2024.05.28.11.11.35.277","ts":"2024.05.28.11.12.06.156","type":"session_end"} :REPROSTIM-METADATA-JSON
+2024-05-28 11:12:06.157 [info] [856367] Session logging end: session_logger_2024.05.28.11.11.35.277
