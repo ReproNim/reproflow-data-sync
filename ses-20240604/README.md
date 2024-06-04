@@ -1,0 +1,5 @@
+- ran from laptop
+  - still did not install psychopy on reproiner
+  - needs HDMI extension cable
+- log shows lots of the drop events for audiovideo capture but we need that to get sensible timing
+  - TODO -- may be filter out???
