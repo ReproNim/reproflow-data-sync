@@ -30,3 +30,10 @@ information.
 
 This repository contains all collected data, and psychopy "stimuli" displaying
 QR codes with metadata.
+
+DISCLAIMER/BEG-FOR-MERCY:
+
+- here we share audio-video recordings of "stimuli" which might include also
+  some periods of time around the experiment and thus potentially leaking some
+  sensitive (meta)data.  If you spot anything questionable -- please report
+  back to debian AT oneukrainian.com
