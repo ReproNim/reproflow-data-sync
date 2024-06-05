@@ -1,2 +1,2 @@
-3b589dd2-db4d-40af-8862-c618f5503ca9 include=.datalad/* and (not metadata=distribution-restrictions=*) timestamp=1717597728s
+3b589dd2-db4d-40af-8862-c618f5503ca9 not metadata=distribution-restrictions=* timestamp=1717598242s
 8849e5a6-55bb-472e-a6a2-8fbac3e2d878 anything timestamp=1716922167s
