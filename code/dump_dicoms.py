@@ -2,6 +2,8 @@
 
 import os
 import sys
+from collections import defaultdict, OrderedDict
+
 from pydantic import BaseModel, Field
 from datetime import datetime
 from typing import Optional
@@ -16,7 +18,7 @@ import logging
 logger = logging.getLogger(__name__)
 logging.getLogger().addHandler(logging.StreamHandler(sys.stderr))
 logger.setLevel(logging.DEBUG)
-logger.debug(f"name={__name__}")
+#logger.debug(f"name={__name__}")
 
 
 # Define model DICOM item
@@ -47,6 +49,9 @@ class StudyRecord(BaseModel):
                                             description="MRI study end "
                                                         "datetime in ISO "
                                                         "format")
+    duration: Optional[float] = Field(None, description="Duration of the "
+                                                        "study in seconds")
+
 
 
 # Define model for MRI series
@@ -65,6 +70,17 @@ class SeriesRecord(BaseModel):
                                             description="MRI series end "
                                                         "datetime in ISO "
                                                         "format")
+    study: Optional[str] = Field(None, description="MRI study description")
+    duration: Optional[float] = Field(None, description="Duration of the "
+                                                        "series in seconds")
+
+
+def calc_duration(start: datetime, end: datetime) -> float:
+    return (end - start).total_seconds()
+
+
+def parse_mri_datetime(date: str, time: str) -> datetime:
+    return datetime.strptime(f"{date} {time}", "%Y%m%d %H%M%S.%f")
 
 
 def dump_dicoms_file(path: str):
@@ -78,29 +94,40 @@ def dump_dicoms_file(path: str):
         # Read the DICOM file
         ds = pydicom.dcmread(path)
 
+        dr: DicomRecord = DicomRecord()
         # calc study
         if study_tag in ds:
-            logger.info(f"    Study           = {ds[study_tag].value}")
+            dr.study = ds[study_tag].value
+            logger.info(f"    Study           = {dr.study}")
         else:
             logger.info(f"    Study not found")
 
         # calc series
         if series_tag in ds:
-            logger.info(f"    Series          = {ds[series_tag].value}")
+            dr.series = ds[series_tag].value
+            logger.info(f"    Series          = {dr.series}")
         else:
             logger.info(f"    Series not found")
 
         # calc date
         if acq_date_tag in ds:
-            logger.info(f"    AcquisitionDate = {ds[acq_date_tag].value}")
+            dr.acquisition_date = ds[acq_date_tag].value
+            logger.info(f"    AcquisitionDate = {dr.acquisition_date}")
         else:
             logger.info(f"    AcquisitionDate not found")
 
         # calc time
         if acq_time_tag in ds:
-            logger.info(f"    AcquisitionTime = {ds[acq_time_tag].value}")
+            dr.acquisition_time = ds[acq_time_tag].value
+            logger.info(f"    AcquisitionTime = {dr.acquisition_time}")
         else:
             logger.info(f"    AcquisitionTime not found")
+
+        if dr.acquisition_time and dr.acquisition_date:
+            dr.acquisition_isotime = parse_mri_datetime(
+                dr.acquisition_date, dr.acquisition_time)
+
+        yield dr
 
     except Exception as e:
         logger.error(f"Error reading {path}: {e}")
@@ -113,7 +140,7 @@ def dump_dicoms_dir(path: str):
         if name.endswith('.dcm'):
             filepath = os.path.join(path, name)
             logger.debug(f"  {name}")
-            dump_dicoms_file(filepath)
+            yield from dump_dicoms_file(filepath)
         else:
             logger.debug(f"Skipping file: {name}")
 
@@ -126,9 +153,13 @@ def dump_dicoms_all(path: str):
         path2 = os.path.join(path, name)
         if os.path.isdir(path2):
             logger.debug(f"Reading DICOM dir  : {name}")
-            dump_dicoms_dir(path2)
+            yield from dump_dicoms_dir(path2)
         else:
             logger.debug(f"Skipping file: {name}")
+
+
+def dump_jsonl(obj):
+    print(obj.json())
 
 
 @click.command(help='Dump DICOM files date time info.')
@@ -157,7 +188,82 @@ def main(ctx, path: str, log_level):
         logger.error(f"DICOMS path does not exist: {dicoms_path}")
         return 1
 
-    dump_dicoms_all(dicoms_path)
+    map_study = OrderedDict()
+    map_series = OrderedDict()
+    for item in dump_dicoms_all(dicoms_path):
+        if item.study:
+            # build study map
+            if item.study in map_study:
+                sr: StudyRecord = map_study[item.study]
+                # update time if any
+                if item.acquisition_isotime < sr.isotime_start:
+                    sr.isotime_start = item.acquisition_isotime
+                    sr.time_start = item.acquisition_time
+                    sr.date_start = item.acquisition_date
+                    sr.duration = calc_duration(sr.isotime_start,
+                                                sr.isotime_end)
+                if item.acquisition_isotime > sr.isotime_end:
+                    sr.isotime_end = item.acquisition_isotime
+                    sr.time_end = item.acquisition_time
+                    sr.date_end = item.acquisition_date
+                    sr.duration = calc_duration(sr.isotime_start,
+                                                sr.isotime_end)
+            else:
+                # create study
+                sr: StudyRecord = StudyRecord(
+                    name=item.study,
+                    time_start=item.acquisition_time,
+                    date_start=item.acquisition_date,
+                    isotime_start=item.acquisition_isotime,
+                    time_end=item.acquisition_time,
+                    date_end=item.acquisition_date,
+                    isotime_end=item.acquisition_isotime,
+                    duration=0.0
+                )
+                map_study[item.study] = sr
+
+            # build series map
+            if item.series:
+                skey: str = f"{item.study}|{item.series}"
+                if skey in map_series:
+                    ss: SeriesRecord = map_series[skey]
+                    # update time if any
+                    if item.acquisition_isotime < ss.isotime_start:
+                        ss.isotime_start = item.acquisition_isotime
+                        ss.time_start = item.acquisition_time
+                        ss.date_start = item.acquisition_date
+                        ss.duration = calc_duration(ss.isotime_start,
+                                                    ss.isotime_end)
+                    if item.acquisition_isotime > ss.isotime_end:
+                        ss.isotime_end = item.acquisition_isotime
+                        ss.time_end = item.acquisition_time
+                        ss.date_end = item.acquisition_date
+                        ss.duration = calc_duration(ss.isotime_start,
+                                                    ss.isotime_end)
+                else:
+                    # create series
+                    ss: SeriesRecord = SeriesRecord(
+                        name=item.series,
+                        time_start=item.acquisition_time,
+                        date_start=item.acquisition_date,
+                        isotime_start=item.acquisition_isotime,
+                        time_end=item.acquisition_time,
+                        date_end=item.acquisition_date,
+                        isotime_end=item.acquisition_isotime,
+                        study=item.study,
+                        duration=0.0
+                    )
+                    map_series[skey] = ss
+
+        dump_jsonl(item)
+
+    #dump study
+    for k, v in map_study.items():
+        dump_jsonl(v)
+
+    #dump series
+    for k, v in map_series.items():
+        dump_jsonl(v)
 
     return 0
 
