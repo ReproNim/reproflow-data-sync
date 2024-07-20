@@ -2,6 +2,9 @@
 
 import os
 import sys
+from pydantic import BaseModel, Field
+from datetime import datetime
+from typing import Optional
 
 import click
 import pydicom
@@ -14,6 +17,54 @@ logger = logging.getLogger(__name__)
 logging.getLogger().addHandler(logging.StreamHandler(sys.stderr))
 logger.setLevel(logging.DEBUG)
 logger.debug(f"name={__name__}")
+
+
+# Define model DICOM item
+class DicomRecord(BaseModel):
+    type: Optional[str] = Field("dicom", description="JSON record type/class")
+    acquisition_time: Optional[str] = Field(None, description="MRI acquisition time")
+    acquisition_date: Optional[str] = Field(None, description="MRI acquisition date")
+    acquisition_isotime: Optional[datetime] = Field(None,
+                                                    description="MRI acquisition "
+                                                                "datetime in ISO "
+                                                                "format")
+    study: Optional[str] = Field(None, description="MRI study description")
+    series: Optional[str] = Field(None, description="MRI series description")
+
+# Define model for MRI study
+class StudyRecord(BaseModel):
+    type: Optional[str] = Field("study", description="JSON record type/class")
+    name: Optional[str] = Field(None, description="MRI study description")
+    time_start: Optional[str] = Field(None, description="MRI time study start")
+    date_start: Optional[str] = Field(None, description="MRI date study start")
+    isotime_start: Optional[datetime] = Field(None,
+                                            description="MRI study start "
+                                                        "datetime in ISO "
+                                                        "format")
+    time_end: Optional[str] = Field(None, description="MRI time study end")
+    date_end: Optional[str] = Field(None, description="MRI date study end")
+    isotime_end: Optional[datetime] = Field(None,
+                                            description="MRI study end "
+                                                        "datetime in ISO "
+                                                        "format")
+
+
+# Define model for MRI series
+class SeriesRecord(BaseModel):
+    type: Optional[str] = Field("series", description="JSON record type/class")
+    name: Optional[str] = Field(None, description="MRI series description")
+    time_start: Optional[str] = Field(None, description="MRI time series start")
+    date_start: Optional[str] = Field(None, description="MRI date series start")
+    isotime_start: Optional[datetime] = Field(None,
+                                            description="MRI series start "
+                                                        "datetime in ISO "
+                                                        "format")
+    time_end: Optional[str] = Field(None, description="MRI time series end")
+    date_end: Optional[str] = Field(None, description="MRI date series end")
+    isotime_end: Optional[datetime] = Field(None,
+                                            description="MRI series end "
+                                                        "datetime in ISO "
+                                                        "format")
 
 
 def dump_dicoms_file(path: str):
@@ -82,7 +133,7 @@ def dump_dicoms_all(path: str):
 
 @click.command(help='Dump DICOM files date time info.')
 @click.argument('path', type=click.Path(exists=True))
-@click.option('--log-level', default='DEBUG',
+@click.option('--log-level', default='INFO',
               type=click.Choice(['DEBUG', 'INFO',
                                  'WARNING', 'ERROR',
                                  'CRITICAL']),
