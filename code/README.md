@@ -12,7 +12,7 @@ Algorithm proposals for the ReproFlow time synchronization effort:
   - `./dump_dicoms.py --log-level DEBUG /data/repronim/reproflow-data-sync/ses-20240604 >dump_dicoms.jsonl 2> dump_dicoms.log` 
 - Parse videos with QR codes from session `reprostim-videos` folder with `reprostim/Parse/parse_wQR.py` tool and place results under `timing-reprostim-video` location. At this moment it's unclear how to merge or split this data. So as initial step we consider single video file containing all QR codes. The tool takes long time to proceed video, so we cached result manually in `timing-reprostim-videos` folder for prorotype/development purposes.
   - `./parse_wQR.py --log-level DEBUG /data/repronim/reproflow-data-sync/ses-20240604/reprostim-videos/2024.06.04.13.51.36.620_2024.06.04.13.58.20.763.mkv > 2024.06.04.13.51.36.620_2024.06.04.13.58.20.763.qrinfo.jsonl 2> 2024.06.04.13.51.36.620_2024.06.04.13.58.20.763.qrinfo.log`
-  - Note: consider parsing only videos that intersect with MRY stydy time range -+ 60 minutes.
+  - Note: consider parsing only videos that intersect with MRI study time range -+ 60 minutes.
   - Analyze QR code duration comparing to video script delay set to 0.5 sec at this moment.
   - Analyze time gap/difference between QR code isotime_start and data.keys_time_str.
 - Prepare merged JSONL data for psychopy logs. It should be filtered by QR codes and DICOMs information.
