@@ -1,6 +1,15 @@
 # ReproNim ReproFlow Data Analysis
 
+## Timing Data Model
 
+Probably timing data model can be described as parallel swimlanes of data, where each lane is a different filtered data source, and the goal is to synchronize the lanes.  The lanes are:
+- `timing-DICOMs` JSONL with from the MRI scanner, sequential list of A) `MRI` images, B) `study` and C) `series` list.
+- `timing-psychopy` JSONL logs with events pulse events and QR codes original events.
+- `timing-reprostim-videos` JSONL logs from the videos with QR codes.
+- `timing-birch` JSONL log from birch device filtered by preliminary time frame.
+- `timing-events` JSONL log with list of events/marks used to sync lines. It should be sequential list of events with timestamps and unique IDs. Idea is to proces all swimlanes data and put necessary event UID where it's possible to detect, so we can sync/link all data sources together and then analyze time offsets.
+
+## Algorithm
 Algorithm proposals for the ReproFlow time synchronization effort:
 - Collect data from different sources: psychopy logs, DICOMs, and videos with QR codes with `collect_data.sh` script. As result it should produce session folder like `ses-20240604` with all necessary data and structure listed below:
   - `birch` folder JSONL log from birch device.
@@ -23,4 +32,4 @@ Algorithm proposals for the ReproFlow time synchronization effort:
     - Filter record with "alink_byte": 496, "alink_flags": 3.
     - TBD:
   - TBD: 
-- TBD:
+- Use DICOMs as primary data. We should concentrate first on series with `func-` prefix producing multiple image and pulse events in system. And try to locate similar events/sequenec in other data sources like birch, reproevent, psychopy, and videos. 
