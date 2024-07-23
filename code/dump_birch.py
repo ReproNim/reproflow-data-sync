@@ -52,14 +52,18 @@ def dump_birch_file(path: str, range_start: datetime,
                     range_end: datetime):
     logger.debug(f"Processing    : {path}")
     for obj in safe_jsonl_reader(path):
-        if obj.get('alink_byte') == 496 and obj.get('alink_flags') == 3:
-            iso_time = pd.to_datetime(obj['iso_time']).replace(tzinfo=None)
+        if obj.get('alink_byte') == 496: # and obj.get('alink_flags') == 3:
+            iso_time_str: str = obj['iso_time']
+            iso_time_pd = pd.to_datetime(iso_time_str)
+            iso_time_local = iso_time_pd.tz_convert('America/New_York')
+            iso_time = iso_time_local.tz_localize(None)
             logger.debug(f"  {iso_time.isoformat()} {obj['alink_byte']} {obj['alink_flags']}")
             if range_start <= iso_time <= range_end:
                 obj['isotime'] = iso_time.isoformat()
                 dump_jsonl(obj)
             else:
-                logger.debug(f"Skipping out of study range {obj}")
+                logger.debug(f"Skipping out of study range "
+                             f"isotime={iso_time.isoformat()},  {obj}")
         else:
             logger.debug(f"Skipping by alink_byte/alink_flags filter {obj}")
 
