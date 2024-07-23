@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-
+import json
 import os
 import sys
 from datetime import datetime
@@ -20,6 +20,10 @@ logger.setLevel(logging.DEBUG)
 #logger.debug(f"name={__name__}")
 
 
+def dump_jsonl(obj):
+    print(json.dumps(obj, ensure_ascii=False))
+
+
 def dump_psychopy(logpath: str, range_start: datetime,
                   range_end: datetime):
     with (jsonlines.open(logpath) as reader):
@@ -35,7 +39,7 @@ def dump_psychopy(logpath: str, range_start: datetime,
                             obj.get('keys_time_str')
                         ).replace(tzinfo=None)
                         obj['isotime'] = keys_time.isoformat()
-                    print(obj)
+                    dump_jsonl(obj)
                 else:
                     logger.debug(f"Skip, out of study range: {obj}")
 
@@ -53,6 +57,7 @@ def find_psychopy_logfiles(qrinfo_path: str) -> List[str]:
     return list(logfn_ordered_dict.keys())
 
 
+# Note: shared code
 def find_study_range(dump_dicoms_path: str) -> Tuple[Optional[datetime], Optional[datetime]]:
     with (jsonlines.open(dump_dicoms_path) as reader):
         for obj in reader:
@@ -82,7 +87,7 @@ def main(ctx, path: str, log_level):
 
     # build path as path+timing-dumps
     dumps_path: str = os.path.join(path, "timing-dumps")
-    logger.info(f"Dumps path   : {dumps_path}")
+    logger.info(f"Dumps path    : {dumps_path}")
 
     if not os.path.exists(dumps_path):
         logger.error(f"Dumps path does not exist: {dumps_path}")

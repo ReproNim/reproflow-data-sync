@@ -1,7 +1,7 @@
 dump_psychopy.py tool
 Working dir   : /Users/vmelnik/Projects/Dartmouth/branches/reproflow-data-sync/code
 Session path  : /Users/vmelnik/Projects/Dartmouth/branches/typhon/reproflow-data-sync/ses-20240604
-Dumps path   : /Users/vmelnik/Projects/Dartmouth/branches/typhon/reproflow-data-sync/ses-20240604/timing-dumps
+Dumps path    : /Users/vmelnik/Projects/Dartmouth/branches/typhon/reproflow-data-sync/ses-20240604/timing-dumps
 DICOMS dump   : /Users/vmelnik/Projects/Dartmouth/branches/typhon/reproflow-data-sync/ses-20240604/timing-dumps/dump_dicoms.jsonl
 Psychopy path : /Users/vmelnik/Projects/Dartmouth/branches/typhon/reproflow-data-sync/ses-20240604/psychopy
 QRInfo path   : /Users/vmelnik/Projects/Dartmouth/branches/typhon/reproflow-data-sync/ses-20240604/timing-dumps/dump_qrinfo.jsonl
