@@ -3,11 +3,12 @@
 ## Timing Data Model
 
 Probably timing data model can be described as parallel swimlanes of data, where each lane is a different filtered data source, and the goal is to synchronize the lanes.  The lanes are:
-- `timing-DICOMs` JSONL with from the MRI scanner, sequential list of A) `MRI` images, B) `study` and C) `series` list.
-- `timing-psychopy` JSONL logs with events pulse events and QR codes original events.
-- `timing-reprostim-videos` JSONL logs from the videos with QR codes.
-- `timing-birch` JSONL log from birch device filtered by preliminary time frame.
-- `timing-events` JSONL log with list of events/marks used to sync lines. It should be sequential list of events with timestamps and unique IDs. Idea is to proces all swimlanes data and put necessary event UID where it's possible to detect, so we can sync/link all data sources together and then analyze time offsets.
+- `timing-dumps` directory with JSONL logs from DICOMs, psychopy, birch, reprostim-videos, and events:
+  - `dump_dicoms.jsonl` JSONL with from the MRI scanner, sequential list of A) `MRI` images, B) `study` and C) `series` list.
+  - `dump_psychopy.jsonl` JSONL logs with events pulse events and QR codes original events.
+  - `dump_qrinfo.jsonl` JSONL logs from the videos with QR codes.
+  - `dump_birch.jsonl` JSONL log from birch device filtered by preliminary time frame.
+  - `dump_events.jsonl` JSONL log with list of events/marks used to sync lines. It should be sequential list of events with timestamps and unique IDs. Idea is to proces all swimlanes data and put necessary event UID where it's possible to detect, so we can sync/link all data sources together and then analyze time offsets.
 
 ## Algorithm
 Algorithm proposals for the ReproFlow time synchronization effort:

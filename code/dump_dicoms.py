@@ -2,10 +2,10 @@
 
 import os
 import sys
-from collections import defaultdict, OrderedDict
+from collections import OrderedDict
 
 from pydantic import BaseModel, Field
-from datetime import datetime
+from datetime import datetime, timedelta
 from typing import Optional
 
 import click
@@ -43,12 +43,22 @@ class StudyRecord(BaseModel):
                                             description="MRI study start "
                                                         "datetime in ISO "
                                                         "format")
+    range_isotime_start: Optional[datetime] = Field(None,
+                                            description="Specify study range in "
+                                                        "absolute ISO time format, "
+                                                        "will be used by other "
+                                                        "tools to for filtering.")
     time_end: Optional[str] = Field(None, description="MRI time study end")
     date_end: Optional[str] = Field(None, description="MRI date study end")
     isotime_end: Optional[datetime] = Field(None,
                                             description="MRI study end "
                                                         "datetime in ISO "
                                                         "format")
+    range_isotime_end: Optional[datetime] = Field(None,
+                                            description="Specify study range in "
+                                                        "absolute ISO time format, "
+                                                        "will be used by other "
+                                                        "tools to for filtering.")
     duration: Optional[float] = Field(None, description="Duration of the "
                                                         "study in seconds")
 
@@ -184,12 +194,14 @@ def main(ctx, path: str, log_level):
     dicoms_path: str = os.path.join(path, "DICOMS")
     logger.info(f"DICOMS path   : {dicoms_path}")
 
-    if not os.path.exists(path):
+    if not os.path.exists(dicoms_path):
         logger.error(f"DICOMS path does not exist: {dicoms_path}")
         return 1
 
     map_study = OrderedDict()
     map_series = OrderedDict()
+    # specify delta time range as 1 hour
+    range_delta = timedelta(minutes=60)
     for item in dump_dicoms_all(dicoms_path):
         if item.study:
             # build study map
@@ -198,12 +210,14 @@ def main(ctx, path: str, log_level):
                 # update time if any
                 if item.acquisition_isotime < sr.isotime_start:
                     sr.isotime_start = item.acquisition_isotime
+                    sr.range_isotime_start = sr.isotime_start - range_delta
                     sr.time_start = item.acquisition_time
                     sr.date_start = item.acquisition_date
                     sr.duration = calc_duration(sr.isotime_start,
                                                 sr.isotime_end)
                 if item.acquisition_isotime > sr.isotime_end:
                     sr.isotime_end = item.acquisition_isotime
+                    sr.range_isotime_end = sr.isotime_end + range_delta
                     sr.time_end = item.acquisition_time
                     sr.date_end = item.acquisition_date
                     sr.duration = calc_duration(sr.isotime_start,
@@ -215,9 +229,11 @@ def main(ctx, path: str, log_level):
                     time_start=item.acquisition_time,
                     date_start=item.acquisition_date,
                     isotime_start=item.acquisition_isotime,
+                    range_isotime_start=item.acquisition_isotime - range_delta,
                     time_end=item.acquisition_time,
                     date_end=item.acquisition_date,
                     isotime_end=item.acquisition_isotime,
+                    range_isotime_end=item.acquisition_isotime + range_delta,
                     duration=0.0
                 )
                 map_study[item.study] = sr
