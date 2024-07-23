@@ -56,7 +56,7 @@ def find_psychopy_logfiles(qrinfo_path: str) -> List[str]:
 def find_study_range(dump_dicoms_path: str) -> Tuple[Optional[datetime], Optional[datetime]]:
     with (jsonlines.open(dump_dicoms_path) as reader):
         for obj in reader:
-            if obj.get('type') == 'study' and obj.get('name') == 'dbic^QA':
+            if obj.get('type') == 'StudyRecord' and obj.get('name') == 'dbic^QA':
                 res = pd.to_datetime(obj['range_isotime_start']), pd.to_datetime(obj['range_isotime_end'])
                 return res;
         return None, None

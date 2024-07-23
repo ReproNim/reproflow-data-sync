@@ -23,7 +23,7 @@ logger.setLevel(logging.DEBUG)
 
 # Define model DICOM item
 class DicomRecord(BaseModel):
-    type: Optional[str] = Field("dicom", description="JSON record type/class")
+    type: Optional[str] = Field("DicomRecord", description="JSON record type/class")
     acquisition_time: Optional[str] = Field(None, description="MRI acquisition time")
     acquisition_date: Optional[str] = Field(None, description="MRI acquisition date")
     acquisition_isotime: Optional[datetime] = Field(None,
@@ -35,7 +35,7 @@ class DicomRecord(BaseModel):
 
 # Define model for MRI study
 class StudyRecord(BaseModel):
-    type: Optional[str] = Field("study", description="JSON record type/class")
+    type: Optional[str] = Field("StudyRecord", description="JSON record type/class")
     name: Optional[str] = Field(None, description="MRI study description")
     time_start: Optional[str] = Field(None, description="MRI time study start")
     date_start: Optional[str] = Field(None, description="MRI date study start")
@@ -66,7 +66,7 @@ class StudyRecord(BaseModel):
 
 # Define model for MRI series
 class SeriesRecord(BaseModel):
-    type: Optional[str] = Field("series", description="JSON record type/class")
+    type: Optional[str] = Field("SeriesRecord", description="JSON record type/class")
     name: Optional[str] = Field(None, description="MRI series description")
     time_start: Optional[str] = Field(None, description="MRI time series start")
     date_start: Optional[str] = Field(None, description="MRI date series start")
