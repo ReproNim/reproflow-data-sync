@@ -1,0 +1,39 @@
+dump_psychopy.py tool
+Started on    : 2024-07-24 16:24:55.045429, vmelnik@Uranus
+Working dir   : /Users/vmelnik/Projects/Dartmouth/branches/reproflow-data-sync/code
+Session path  : /Users/vmelnik/Projects/Dartmouth/branches/typhon/reproflow-data-sync/ses-20240528
+Dumps path    : /Users/vmelnik/Projects/Dartmouth/branches/typhon/reproflow-data-sync/ses-20240528/timing-dumps
+DICOMS dump   : /Users/vmelnik/Projects/Dartmouth/branches/typhon/reproflow-data-sync/ses-20240528/timing-dumps/dump_dicoms.jsonl
+Psychopy path : /Users/vmelnik/Projects/Dartmouth/branches/typhon/reproflow-data-sync/ses-20240528/psychopy
+QRInfo path   : /Users/vmelnik/Projects/Dartmouth/branches/typhon/reproflow-data-sync/ses-20240528/timing-dumps/dump_qrinfo.jsonl
+Study range   : 2024-05-28 10:04:59.930000 - 2024-05-28 12:15:39.502500
+Psychopy log files: ['20240528-1.log', '20240528_run-2.log']
+Psychopy log file: /Users/vmelnik/Projects/Dartmouth/branches/typhon/reproflow-data-sync/ses-20240528/psychopy/20240528-1.log
+Time: 2024-05-28 11:05:01.906840
+Time: 2024-05-28 11:05:02.680983
+Time: 2024-05-28 11:05:02.811262
+Time: 2024-05-28 11:06:22.837086
+Time: 2024-05-28 11:06:30.009786
+Time: 2024-05-28 11:06:31.995279
+Time: 2024-05-28 11:06:33.996109
+Psychopy log file: /Users/vmelnik/Projects/Dartmouth/branches/typhon/reproflow-data-sync/ses-20240528/psychopy/20240528_run-2.log
+Time: 2024-05-28 11:08:48.215398
+Time: 2024-05-28 11:08:49.015509
+Time: 2024-05-28 11:08:49.144683
+Time: 2024-05-28 11:09:01.179221
+Time: 2024-05-28 11:09:03.145909
+Time: 2024-05-28 11:09:05.146012
+Time: 2024-05-28 11:09:07.181075
+Time: 2024-05-28 11:09:09.145290
+Time: 2024-05-28 11:09:11.146061
+Time: 2024-05-28 11:09:13.164732
+Time: 2024-05-28 11:09:15.144930
+Time: 2024-05-28 11:09:17.160589
+Time: 2024-05-28 11:09:19.163512
+Time: 2024-05-28 11:09:21.153489
+Time: 2024-05-28 11:09:23.164792
+Time: 2024-05-28 11:09:25.163245
+Time: 2024-05-28 11:09:27.146770
+Time: 2024-05-28 11:09:29.144830
+Exit on   : 2024-07-24 16:24:55.087573
+Exit code : 0

@@ -1,0 +1,108 @@
+dump_birch.py tool
+Started on    : 2024-07-24 16:24:54.536866, vmelnik@Uranus
+Working dir   : /Users/vmelnik/Projects/Dartmouth/branches/reproflow-data-sync/code
+Session path  : /Users/vmelnik/Projects/Dartmouth/branches/typhon/reproflow-data-sync/ses-20240528
+Dumps path    : /Users/vmelnik/Projects/Dartmouth/branches/typhon/reproflow-data-sync/ses-20240528/timing-dumps
+DICOMS dump   : /Users/vmelnik/Projects/Dartmouth/branches/typhon/reproflow-data-sync/ses-20240528/timing-dumps/dump_dicoms.jsonl
+Birch path    : /Users/vmelnik/Projects/Dartmouth/branches/typhon/reproflow-data-sync/ses-20240528/birch
+Study range   : 2024-05-28 10:04:59.930000 - 2024-05-28 12:15:39.502500
+Reading birch directory: /Users/vmelnik/Projects/Dartmouth/branches/typhon/reproflow-data-sync/ses-20240528/birch
+  20240528-105648.jsonl
+Processing    : /Users/vmelnik/Projects/Dartmouth/branches/typhon/reproflow-data-sync/ses-20240528/birch/20240528-105648.jsonl
+Skipping by alink_byte/alink_flags filter {'time': 0, 'tick': 2242210581, 'description': 'File opened.', 'epoch_time': 1716908208.4539888, 'iso_time': '2024-05-28T14:56:48.453989+00:00'}
+Skipping by alink_byte/alink_flags filter {'time': 0, 'tick': 2253250858, 'description': 'Handheld auto-detected', 'epoch_time': 1716908219.4941795, 'iso_time': '2024-05-28T14:56:59.494179+00:00', 'handheld': 'HHSC-2x2', 'gains': [6, 0, 10, 3, 0, 0, 0, 0]}
+Skipping by alink_byte/alink_flags filter {'time': 0, 'tick': 2259389374, 'description': 'Output mode selected.', 'epoch_time': 1716908225.632641, 'iso_time': '2024-05-28T14:57:05.632641+00:00', 'output_mode': 'HID_NAR_BYGRT'}
+Skipping by alink_byte/alink_flags filter {'epoch_time': 1716908249.0691106, 'iso_time': '2024-05-28T14:57:29.069111+00:00', 'time': 0.0, 'alink_byte': 242, 'alink_flags': 1}
+Skipping by alink_byte/alink_flags filter {'epoch_time': 1716908249.339844, 'iso_time': '2024-05-28T14:57:29.339844+00:00', 'time': 0.26499599999988277, 'alink_byte': 240, 'alink_flags': 0}
+Skipping by alink_byte/alink_flags filter {'epoch_time': 1716908249.6218405, 'iso_time': '2024-05-28T14:57:29.621840+00:00', 'time': 0.5520809999998164, 'alink_byte': 241, 'alink_flags': 1}
+Skipping by alink_byte/alink_flags filter {'epoch_time': 1716908249.8358026, 'iso_time': '2024-05-28T14:57:29.835803+00:00', 'time': 0.75573200000008, 'alink_byte': 240, 'alink_flags': 0}
+Skipping by alink_byte/alink_flags filter {'epoch_time': 1716908250.0289986, 'iso_time': '2024-05-28T14:57:30.028999+00:00', 'time': 0.9537219999997433, 'alink_byte': 244, 'alink_flags': 1}
+Skipping by alink_byte/alink_flags filter {'epoch_time': 1716908250.218889, 'iso_time': '2024-05-28T14:57:30.218889+00:00', 'time': 1.1413379999999052, 'alink_byte': 240, 'alink_flags': 0}
+Skipping by alink_byte/alink_flags filter {'epoch_time': 1716908250.344535, 'iso_time': '2024-05-28T14:57:30.344535+00:00', 'time': 1.2728879999999663, 'alink_byte': 248, 'alink_flags': 1}
+Skipping by alink_byte/alink_flags filter {'epoch_time': 1716908250.536756, 'iso_time': '2024-05-28T14:57:30.536756+00:00', 'time': 1.4650339999998323, 'alink_byte': 240, 'alink_flags': 0}
+Skipping by alink_byte/alink_flags filter {'epoch_time': 1716908310.5412133, 'iso_time': '2024-05-28T14:58:30.541213+00:00', 'time': 61.46561500000007, 'alink_byte': 240, 'alink_flags': 0}
+Skipping by alink_byte/alink_flags filter {'epoch_time': 1716908370.5356216, 'iso_time': '2024-05-28T14:59:30.535622+00:00', 'time': 121.46601699999974, 'alink_byte': 240, 'alink_flags': 0}
+Skipping by alink_byte/alink_flags filter {'epoch_time': 1716908430.5369256, 'iso_time': '2024-05-28T15:00:30.536926+00:00', 'time': 181.46679399999994, 'alink_byte': 240, 'alink_flags': 0}
+Skipping by alink_byte/alink_flags filter {'time': 0, 'tick': 2504719601, 'description': 'Output mode selected.', 'epoch_time': 1716908470.9613526, 'iso_time': '2024-05-28T15:01:10.961353+00:00', 'output_mode': 'HID_NAR_BYGRT'}
+Skipping by alink_byte/alink_flags filter {'time': 0, 'tick': 2507544781, 'description': 'Output mode selected.', 'epoch_time': 1716908473.7865207, 'iso_time': '2024-05-28T15:01:13.786521+00:00', 'output_mode': 'HID_KEY_12345'}
+Skipping by alink_byte/alink_flags filter {'epoch_time': 1716908533.784278, 'iso_time': '2024-05-28T15:02:13.784278+00:00', 'time': 0.0, 'alink_byte': 240, 'alink_flags': 1}
+Skipping by alink_byte/alink_flags filter {'epoch_time': 1716908593.7953203, 'iso_time': '2024-05-28T15:03:13.795320+00:00', 'time': 60.00040099999978, 'alink_byte': 240, 'alink_flags': 1}
+Skipping by alink_byte/alink_flags filter {'epoch_time': 1716908653.791516, 'iso_time': '2024-05-28T15:04:13.791516+00:00', 'time': 120.00130300000001, 'alink_byte': 240, 'alink_flags': 1}
+Skipping by alink_byte/alink_flags filter {'epoch_time': 1716908713.7929103, 'iso_time': '2024-05-28T15:05:13.792910+00:00', 'time': 180.00158199999987, 'alink_byte': 240, 'alink_flags': 1}
+Skipping by alink_byte/alink_flags filter {'epoch_time': 1716908773.7898278, 'iso_time': '2024-05-28T15:06:13.789828+00:00', 'time': 240.0021069999998, 'alink_byte': 240, 'alink_flags': 1}
+  2024-05-28T11:06:29.472027 496 2
+Skipping by alink_byte/alink_flags filter {'epoch_time': 1716908789.5123103, 'iso_time': '2024-05-28T15:06:29.512310+00:00', 'time': 255.70066700000007, 'alink_byte': 240, 'alink_flags': 1}
+  2024-05-28T11:06:31.475526 496 2
+Skipping by alink_byte/alink_flags filter {'epoch_time': 1716908791.5171025, 'iso_time': '2024-05-28T15:06:31.517102+00:00', 'time': 257.7007269999999, 'alink_byte': 240, 'alink_flags': 1}
+  2024-05-28T11:06:33.466848 496 2
+Skipping by alink_byte/alink_flags filter {'epoch_time': 1716908793.5081642, 'iso_time': '2024-05-28T15:06:33.508164+00:00', 'time': 259.700687, 'alink_byte': 240, 'alink_flags': 1}
+  2024-05-28T11:07:12.377772 496 2
+Skipping by alink_byte/alink_flags filter {'epoch_time': 1716908832.404886, 'iso_time': '2024-05-28T15:07:12.404886+00:00', 'time': 298.61409000000003, 'alink_byte': 240, 'alink_flags': 1}
+  2024-05-28T11:07:14.382652 496 2
+Skipping by alink_byte/alink_flags filter {'epoch_time': 1716908834.3976007, 'iso_time': '2024-05-28T15:07:14.397601+00:00', 'time': 300.6140949999999, 'alink_byte': 240, 'alink_flags': 1}
+  2024-05-28T11:07:16.378552 496 2
+Skipping by alink_byte/alink_flags filter {'epoch_time': 1716908836.4336157, 'iso_time': '2024-05-28T15:07:16.433616+00:00', 'time': 302.61411, 'alink_byte': 240, 'alink_flags': 1}
+  2024-05-28T11:07:18.384913 496 2
+Skipping by alink_byte/alink_flags filter {'epoch_time': 1716908838.4281776, 'iso_time': '2024-05-28T15:07:18.428178+00:00', 'time': 304.61411499999986, 'alink_byte': 240, 'alink_flags': 1}
+  2024-05-28T11:07:20.380289 496 2
+Skipping by alink_byte/alink_flags filter {'epoch_time': 1716908840.4229, 'iso_time': '2024-05-28T15:07:20.422900+00:00', 'time': 306.6141499999999, 'alink_byte': 240, 'alink_flags': 1}
+  2024-05-28T11:07:22.385893 496 2
+Skipping by alink_byte/alink_flags filter {'epoch_time': 1716908842.398704, 'iso_time': '2024-05-28T15:07:22.398704+00:00', 'time': 308.6141359999997, 'alink_byte': 240, 'alink_flags': 1}
+  2024-05-28T11:07:24.389291 496 2
+Skipping by alink_byte/alink_flags filter {'epoch_time': 1716908844.4022188, 'iso_time': '2024-05-28T15:07:24.402219+00:00', 'time': 310.614141, 'alink_byte': 240, 'alink_flags': 1}
+  2024-05-28T11:07:26.379962 496 2
+Skipping by alink_byte/alink_flags filter {'epoch_time': 1716908846.4050846, 'iso_time': '2024-05-28T15:07:26.405085+00:00', 'time': 312.61415099999977, 'alink_byte': 240, 'alink_flags': 1}
+  2024-05-28T11:07:28.381586 496 2
+Skipping by alink_byte/alink_flags filter {'epoch_time': 1716908848.4088125, 'iso_time': '2024-05-28T15:07:28.408813+00:00', 'time': 314.6141809999999, 'alink_byte': 240, 'alink_flags': 1}
+  2024-05-28T11:07:30.389523 496 2
+Skipping by alink_byte/alink_flags filter {'epoch_time': 1716908850.402382, 'iso_time': '2024-05-28T15:07:30.402382+00:00', 'time': 316.614196, 'alink_byte': 240, 'alink_flags': 1}
+  2024-05-28T11:07:32.377277 496 2
+Skipping by alink_byte/alink_flags filter {'epoch_time': 1716908852.4023988, 'iso_time': '2024-05-28T15:07:32.402399+00:00', 'time': 318.61420099999987, 'alink_byte': 240, 'alink_flags': 1}
+  2024-05-28T11:07:34.382613 496 2
+Skipping by alink_byte/alink_flags filter {'epoch_time': 1716908854.4095595, 'iso_time': '2024-05-28T15:07:34.409559+00:00', 'time': 320.6142359999999, 'alink_byte': 240, 'alink_flags': 1}
+  2024-05-28T11:07:36.389740 496 2
+Skipping by alink_byte/alink_flags filter {'epoch_time': 1716908856.4025831, 'iso_time': '2024-05-28T15:07:36.402583+00:00', 'time': 322.61421599999994, 'alink_byte': 240, 'alink_flags': 1}
+  2024-05-28T11:07:38.383853 496 2
+Skipping by alink_byte/alink_flags filter {'epoch_time': 1716908858.4088504, 'iso_time': '2024-05-28T15:07:38.408850+00:00', 'time': 324.6142259999997, 'alink_byte': 240, 'alink_flags': 1}
+  2024-05-28T11:07:40.388852 496 2
+Skipping by alink_byte/alink_flags filter {'epoch_time': 1716908860.4015563, 'iso_time': '2024-05-28T15:07:40.401556+00:00', 'time': 326.614231, 'alink_byte': 240, 'alink_flags': 1}
+Skipping by alink_byte/alink_flags filter {'epoch_time': 1716908920.407058, 'iso_time': '2024-05-28T15:08:40.407058+00:00', 'time': 386.6154779999997, 'alink_byte': 240, 'alink_flags': 1}
+  2024-05-28T11:09:00.610456 496 2
+Skipping by alink_byte/alink_flags filter {'epoch_time': 1716908940.6476722, 'iso_time': '2024-05-28T15:09:00.647672+00:00', 'time': 406.845734, 'alink_byte': 240, 'alink_flags': 1}
+  2024-05-28T11:09:02.609937 496 2
+Skipping by alink_byte/alink_flags filter {'epoch_time': 1716908942.6586547, 'iso_time': '2024-05-28T15:09:02.658655+00:00', 'time': 408.84574900000007, 'alink_byte': 240, 'alink_flags': 1}
+  2024-05-28T11:09:04.620556 496 2
+Skipping by alink_byte/alink_flags filter {'epoch_time': 1716908944.657614, 'iso_time': '2024-05-28T15:09:04.657614+00:00', 'time': 410.84575399999994, 'alink_byte': 240, 'alink_flags': 1}
+  2024-05-28T11:09:06.616974 496 2
+Skipping by alink_byte/alink_flags filter {'epoch_time': 1716908946.654341, 'iso_time': '2024-05-28T15:09:06.654341+00:00', 'time': 412.84578899999997, 'alink_byte': 240, 'alink_flags': 1}
+  2024-05-28T11:09:08.638040 496 2
+Skipping by alink_byte/alink_flags filter {'epoch_time': 1716908948.63893, 'iso_time': '2024-05-28T15:09:08.638930+00:00', 'time': 414.8457739999999, 'alink_byte': 240, 'alink_flags': 1}
+  2024-05-28T11:09:10.610367 496 2
+Skipping by alink_byte/alink_flags filter {'epoch_time': 1716908950.6472065, 'iso_time': '2024-05-28T15:09:10.647207+00:00', 'time': 416.84577899999977, 'alink_byte': 240, 'alink_flags': 1}
+  2024-05-28T11:09:12.615448 496 2
+Skipping by alink_byte/alink_flags filter {'epoch_time': 1716908952.6638095, 'iso_time': '2024-05-28T15:09:12.663810+00:00', 'time': 418.84578999999985, 'alink_byte': 240, 'alink_flags': 1}
+  2024-05-28T11:09:14.619642 496 2
+Skipping by alink_byte/alink_flags filter {'epoch_time': 1716908954.6324513, 'iso_time': '2024-05-28T15:09:14.632451+00:00', 'time': 420.8457949999997, 'alink_byte': 240, 'alink_flags': 1}
+  2024-05-28T11:09:16.612088 496 2
+Skipping by alink_byte/alink_flags filter {'epoch_time': 1716908956.6508768, 'iso_time': '2024-05-28T15:09:16.650877+00:00', 'time': 422.84582999999975, 'alink_byte': 240, 'alink_flags': 1}
+  2024-05-28T11:09:18.619613 496 2
+Skipping by alink_byte/alink_flags filter {'epoch_time': 1716908958.6584337, 'iso_time': '2024-05-28T15:09:18.658434+00:00', 'time': 424.8458149999997, 'alink_byte': 240, 'alink_flags': 1}
+  2024-05-28T11:09:20.611633 496 2
+Skipping by alink_byte/alink_flags filter {'epoch_time': 1716908960.6385722, 'iso_time': '2024-05-28T15:09:20.638572+00:00', 'time': 426.84582, 'alink_byte': 240, 'alink_flags': 1}
+  2024-05-28T11:09:22.616114 496 2
+Skipping by alink_byte/alink_flags filter {'epoch_time': 1716908962.6288438, 'iso_time': '2024-05-28T15:09:22.628844+00:00', 'time': 428.8458349999996, 'alink_byte': 240, 'alink_flags': 1}
+  2024-05-28T11:09:24.619536 496 2
+Skipping by alink_byte/alink_flags filter {'epoch_time': 1716908964.6323373, 'iso_time': '2024-05-28T15:09:24.632337+00:00', 'time': 430.84583999999995, 'alink_byte': 240, 'alink_flags': 1}
+  2024-05-28T11:09:26.611735 496 2
+Skipping by alink_byte/alink_flags filter {'epoch_time': 1716908966.6386719, 'iso_time': '2024-05-28T15:09:26.638672+00:00', 'time': 432.845875, 'alink_byte': 240, 'alink_flags': 1}
+  2024-05-28T11:09:28.615704 496 2
+Skipping by alink_byte/alink_flags filter {'epoch_time': 1716908968.6407366, 'iso_time': '2024-05-28T15:09:28.640737+00:00', 'time': 434.8458499999997, 'alink_byte': 240, 'alink_flags': 1}
+Skipping by alink_byte/alink_flags filter {'epoch_time': 1716909028.6364126, 'iso_time': '2024-05-28T15:10:28.636413+00:00', 'time': 494.847127, 'alink_byte': 240, 'alink_flags': 1}
+Skipping by alink_byte/alink_flags filter {'epoch_time': 1716909088.6381135, 'iso_time': '2024-05-28T15:11:28.638113+00:00', 'time': 554.8474039999996, 'alink_byte': 240, 'alink_flags': 1}
+Skipping by alink_byte/alink_flags filter {'epoch_time': 1716909148.6378465, 'iso_time': '2024-05-28T15:12:28.637846+00:00', 'time': 614.8474309999997, 'alink_byte': 240, 'alink_flags': 1}
+Skipping by alink_byte/alink_flags filter {'epoch_time': 1716909208.6298864, 'iso_time': '2024-05-28T15:13:28.629886+00:00', 'time': 674.8477079999998, 'alink_byte': 240, 'alink_flags': 1}
+Skipping by alink_byte/alink_flags filter {'epoch_time': 1716909268.6294, 'iso_time': '2024-05-28T15:14:28.629400+00:00', 'time': 734.847984, 'alink_byte': 240, 'alink_flags': 1}
+Skipping by alink_byte/alink_flags filter {'epoch_time': 1716909328.6393838, 'iso_time': '2024-05-28T15:15:28.639384+00:00', 'time': 794.8481360000001, 'alink_byte': 240, 'alink_flags': 1}
+Skipping by alink_byte/alink_flags filter {'epoch_time': 1716909388.6341913, 'iso_time': '2024-05-28T15:16:28.634191+00:00', 'time': 854.8490379999998, 'alink_byte': 240, 'alink_flags': 1}
+Exit on   : 2024-07-24 16:24:54.592783
+Exit code : 0
