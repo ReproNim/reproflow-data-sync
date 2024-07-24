@@ -1,0 +1,877 @@
+parse_wQR.py tool
+Working dir      : /home/vmelnik/projects/reprostim/Parsing
+Video full path  : /home/vmelnik/projects/typhon/reproflow-data-sync/ses-20240528/timing-reprostim-videos/2024.05.28.11.01.49.915_2024.05.28.11.08.26.672.mkv
+Video file name  : 2024.05.28.11.01.49.915_2024.05.28.11.08.26.672.mkv
+Video start time : 2024-05-28 11:01:49.915000
+Video end time   : 2024-05-28 11:08:26.672000
+Video duration   : 396.757 sec
+Video media info : 
+    - resolution : 1920x1080
+    - frame rate : 60.0 FPS
+    - duration   : 290.85 sec
+    - frame count: 17451
+iframe=50 79.65491878574
+iframe=100 79.65744840338229
+iframe=150 79.6558534543773
+iframe=200 79.65977955552005
+iframe=250 79.66319154732015
+iframe=300 79.63751804679286
+iframe=350 79.63860523535593
+iframe=400 79.64129047093725
+iframe=450 79.64094227512771
+iframe=500 79.64793999000216
+iframe=550 79.66705602887286
+iframe=600 79.67010531899297
+iframe=650 79.67178475362688
+iframe=700 79.67266127537275
+iframe=750 79.67735760038255
+iframe=800 79.64051579760255
+iframe=850 79.6412094536473
+iframe=900 79.640860847025
+iframe=950 79.6436445701125
+iframe=1000 79.64867548540778
+iframe=1050 79.62518349232185
+iframe=1100 79.62463417664874
+iframe=1150 79.62341994749607
+iframe=1200 79.62509530996428
+iframe=1250 79.62828039471299
+iframe=1300 79.67233250781285
+iframe=1350 79.67442270490454
+iframe=1400 79.67493230817689
+iframe=1450 79.67512158649413
+iframe=1500 79.68111379253567
+iframe=1550 79.64321376614566
+iframe=1600 79.6444531244929
+iframe=1650 79.6467881320105
+iframe=1700 79.64678991399224
+iframe=1750 79.64908095680215
+iframe=1800 79.63304151315114
+iframe=1850 79.63421940774958
+iframe=1900 79.6334271848362
+iframe=1950 89.22326326377639
+iframe=2000 83.0301489816069
+iframe=2050 82.96934029738742
+iframe=2100 82.93325661904314
+iframe=2150 88.52656788665843
+iframe=2200 88.78658795455111
+iframe=2250 88.78253312399026
+iframe=2300 88.78131742304244
+iframe=2350 88.7824763012065
+iframe=2400 88.78053350128707
+iframe=2450 88.76464711140079
+iframe=2500 88.76535930237483
+iframe=2550 88.76429555507029
+iframe=2600 88.76348113109668
+iframe=2650 88.76004157831792
+iframe=2700 88.76153373279712
+iframe=2750 88.76720707122385
+iframe=2800 88.76502036392858
+iframe=2850 88.7652303535253
+iframe=2900 88.76286179049794
+iframe=2950 88.74095939163088
+iframe=3000 88.74225154553315
+iframe=3050 88.74109371520633
+iframe=3100 88.74007691649884
+iframe=3150 88.74030474097319
+iframe=3200 88.7003547684061
+iframe=3250 88.70738059885467
+iframe=3300 88.70600455599137
+iframe=3350 88.70645599643736
+iframe=3400 88.70448217494489
+iframe=3450 88.72130518691831
+iframe=3500 88.71974195837392
+iframe=3550 88.71668859837806
+iframe=3600 88.71804801044225
+iframe=3650 88.71734309610052
+iframe=3700 88.69944280728903
+iframe=3750 88.69960851676038
+iframe=3800 88.69638468285278
+iframe=3850 88.69837627406757
+iframe=3900 88.69702188945017
+iframe=3950 88.67491155810694
+iframe=4000 88.67655419326833
+iframe=4050 88.67673999845259
+iframe=4100 88.67706763744513
+iframe=4150 88.68017213657102
+iframe=4200 88.70760837104551
+iframe=4250 88.70980287861784
+iframe=4300 88.7101604936461
+iframe=4350 88.71031978913459
+iframe=4400 88.70804201079793
+iframe=4450 88.69271131274931
+iframe=4500 88.69577110762872
+iframe=4550 88.69575990626055
+iframe=4600 88.69618620328353
+iframe=4650 88.69361810253659
+iframe=4700 88.70563519554314
+iframe=4750 88.71247281174189
+iframe=4800 88.71025249827036
+iframe=4850 88.71540403529828
+iframe=4900 88.71394008546743
+iframe=4950 88.66631990339174
+iframe=5000 88.667053122503
+iframe=5050 88.66618734556508
+iframe=5100 88.66919196926074
+iframe=5150 88.66808086481029
+iframe=5200 88.6683600885672
+iframe=5250 88.68129171080281
+iframe=5300 88.67917899046533
+iframe=5350 88.68195768944355
+iframe=5400 88.67937685046525
+iframe=5450 88.69013598754583
+iframe=5500 88.68948560444613
+iframe=5550 88.68901112556846
+iframe=5600 88.69248687996358
+iframe=5650 88.68790142371407
+iframe=5700 88.67390209552914
+iframe=5750 88.67555902368709
+iframe=5800 88.67416051129089
+iframe=5850 88.67449630105763
+iframe=5900 88.67293937546474
+iframe=5950 88.66406660291605
+iframe=6000 88.67004074270044
+iframe=6050 88.66602013727638
+iframe=6100 88.66952599710012
+iframe=6150 88.66866754272912
+iframe=6200 88.67884511981084
+iframe=6250 83.09346153936953
+iframe=6300 83.02326942454653
+iframe=6350 83.02753992752965
+iframe=6400 88.72347511739679
+iframe=6450 87.70696932677193
+iframe=6500 87.70463074093226
+iframe=6550 87.70266147470798
+iframe=6600 87.7018871705812
+iframe=6650 87.66257349458532
+iframe=6700 87.6587014616519
+iframe=6750 87.66121406294083
+iframe=6800 87.65853845323142
+iframe=6850 87.65976265183869
+iframe=6900 87.67155777658033
+iframe=6950 87.66959231304504
+iframe=7000 87.66942353506907
+iframe=7050 88.66705176166482
+iframe=7100 88.67209208241836
+iframe=7150 88.65899151228295
+iframe=7200 88.66035627792355
+iframe=7250 88.66104285324003
+iframe=7300 88.66007274359866
+iframe=7350 88.6612298968033
+iframe=7400 88.68405604879666
+iframe=7450 88.6811982887008
+iframe=7500 88.68409224955553
+iframe=7550 88.68108407867716
+iframe=7600 88.68164346775548
+iframe=7650 88.68521724555036
+iframe=7700 88.68616876581952
+iframe=7750 88.68742158190025
+iframe=7800 88.68956669744638
+iframe=7850 88.68960531199272
+iframe=7900 88.65414770388938
+iframe=7950 88.65395887715587
+iframe=8000 88.6552949280876
+iframe=8050 88.65232675960566
+iframe=8100 88.65292491650716
+iframe=8150 88.68613570486029
+iframe=8200 88.68378293216088
+iframe=8250 88.68543240696803
+iframe=8300 88.68145654615837
+iframe=8350 88.68424953401593
+iframe=8400 88.66588310490606
+iframe=8450 88.66513835796565
+iframe=8500 88.6666404377641
+iframe=8550 88.6640518165258
+iframe=8600 88.66845192863761
+iframe=8650 88.68087562321409
+iframe=8700 88.67814144388213
+iframe=8750 88.67961577253237
+iframe=8800 88.67682417694546
+iframe=8850 88.67861684569824
+iframe=8900 88.65760985042077
+iframe=8950 88.6572142929476
+iframe=9000 88.65770643363959
+iframe=9050 88.65492031079023
+iframe=9100 88.65652449359779
+iframe=9150 88.6771155091542
+iframe=9200 88.6752872688748
+iframe=9250 88.67740762336369
+iframe=9300 88.67569074058797
+iframe=9350 88.67625445286792
+iframe=9400 88.64405235422804
+iframe=9450 88.64107190895784
+iframe=9500 88.64142537103943
+iframe=9550 88.64209273394556
+iframe=9600 88.64263589905217
+iframe=9650 88.68418967597142
+iframe=9700 88.68593395419738
+iframe=9750 88.68533610695417
+iframe=9800 0.4921061487726714
+iframe=9850 1.2704590557539217
+iframe=9900 1.2533449248025827
+iframe=9950 1.2480787255300863
+iframe=10000 1.246520815140868
+iframe=10050 1.2492188455177629
+iframe=10100 1.2405100058213347
+iframe=10150 1.2418326874110943
+iframe=10200 1.2420618599165967
+iframe=10250 1.2418821361720207
+iframe=10300 1.2280431531446616
+iframe=10350 1.2255218137264594
+iframe=10400 1.226172116179902
+iframe=10450 1.2273485588175632
+iframe=10500 1.2281247232671086
+iframe=10550 1.22739957886685
+Found QR code: [Decoded(data=b'{"event": "trigger", "acqNum": 0, "logfn": "20240528-1.log", "time": 1716908673.4708064, "time_formatted": "2024-05-28T11:04:33.470806-04:00", "keys": ["lshift"], "keys_time": 1716908686.2310038, "keys_time_str": "2024-05-28T11:04:46.231004-04:00"}', type='QRCODE', rect=Rect(left=655, top=235, width=609, height=609), polygon=[Point(x=655, y=235), Point(x=657, y=844), Point(x=1264, y=844), Point(x=1264, y=237)], quality=1, orientation='UP')]
+New QR code: {'event': 'trigger', 'acqNum': 0, 'logfn': '20240528-1.log', 'time': 1716908673.4708064, 'time_formatted': '2024-05-28T11:04:33.470806-04:00', 'keys': ['lshift'], 'keys_time': 1716908686.2310038, 'keys_time_str': '2024-05-28T11:04:46.231004-04:00'}
+Found QR code: [Decoded(data=b'{"event": "trigger", "acqNum": 0, "logfn": "20240528-1.log", "time": 1716908673.4708064, "time_formatted": "2024-05-28T11:04:33.470806-04:00", "keys": ["lshift"], "keys_time": 1716908686.2310038, "keys_time_str": "2024-05-28T11:04:46.231004-04:00"}', type='QRCODE', rect=Rect(left=655, top=235, width=609, height=609), polygon=[Point(x=655, y=235), Point(x=657, y=844), Point(x=1264, y=844), Point(x=1264, y=237)], quality=1, orientation='UP')]
+Same QR code: continue
+Found QR code: [Decoded(data=b'{"event": "trigger", "acqNum": 0, "logfn": "20240528-1.log", "time": 1716908673.4708064, "time_formatted": "2024-05-28T11:04:33.470806-04:00", "keys": ["lshift"], "keys_time": 1716908686.2310038, "keys_time_str": "2024-05-28T11:04:46.231004-04:00"}', type='QRCODE', rect=Rect(left=655, top=235, width=609, height=609), polygon=[Point(x=655, y=235), Point(x=657, y=844), Point(x=1264, y=844), Point(x=1264, y=237)], quality=1, orientation='UP')]
+Same QR code: continue
+Found QR code: [Decoded(data=b'{"event": "trigger", "acqNum": 0, "logfn": "20240528-1.log", "time": 1716908673.4708064, "time_formatted": "2024-05-28T11:04:33.470806-04:00", "keys": ["lshift"], "keys_time": 1716908686.2310038, "keys_time_str": "2024-05-28T11:04:46.231004-04:00"}', type='QRCODE', rect=Rect(left=655, top=235, width=609, height=609), polygon=[Point(x=655, y=235), Point(x=657, y=844), Point(x=1264, y=844), Point(x=1264, y=237)], quality=1, orientation='UP')]
+Same QR code: continue
+Found QR code: [Decoded(data=b'{"event": "trigger", "acqNum": 0, "logfn": "20240528-1.log", "time": 1716908673.4708064, "time_formatted": "2024-05-28T11:04:33.470806-04:00", "keys": ["lshift"], "keys_time": 1716908686.2310038, "keys_time_str": "2024-05-28T11:04:46.231004-04:00"}', type='QRCODE', rect=Rect(left=655, top=235, width=609, height=609), polygon=[Point(x=655, y=235), Point(x=657, y=844), Point(x=1264, y=844), Point(x=1264, y=237)], quality=1, orientation='UP')]
+Same QR code: continue
+Found QR code: [Decoded(data=b'{"event": "trigger", "acqNum": 0, "logfn": "20240528-1.log", "time": 1716908673.4708064, "time_formatted": "2024-05-28T11:04:33.470806-04:00", "keys": ["lshift"], "keys_time": 1716908686.2310038, "keys_time_str": "2024-05-28T11:04:46.231004-04:00"}', type='QRCODE', rect=Rect(left=655, top=235, width=609, height=609), polygon=[Point(x=655, y=235), Point(x=657, y=844), Point(x=1264, y=844), Point(x=1264, y=237)], quality=1, orientation='UP')]
+Same QR code: continue
+Found QR code: [Decoded(data=b'{"event": "trigger", "acqNum": 0, "logfn": "20240528-1.log", "time": 1716908673.4708064, "time_formatted": "2024-05-28T11:04:33.470806-04:00", "keys": ["lshift"], "keys_time": 1716908686.2310038, "keys_time_str": "2024-05-28T11:04:46.231004-04:00"}', type='QRCODE', rect=Rect(left=655, top=235, width=609, height=609), polygon=[Point(x=655, y=235), Point(x=657, y=844), Point(x=1264, y=844), Point(x=1264, y=237)], quality=1, orientation='UP')]
+Same QR code: continue
+Found QR code: [Decoded(data=b'{"event": "trigger", "acqNum": 0, "logfn": "20240528-1.log", "time": 1716908673.4708064, "time_formatted": "2024-05-28T11:04:33.470806-04:00", "keys": ["lshift"], "keys_time": 1716908686.2310038, "keys_time_str": "2024-05-28T11:04:46.231004-04:00"}', type='QRCODE', rect=Rect(left=655, top=235, width=609, height=609), polygon=[Point(x=655, y=235), Point(x=657, y=844), Point(x=1264, y=844), Point(x=1264, y=237)], quality=1, orientation='UP')]
+Same QR code: continue
+Found QR code: [Decoded(data=b'{"event": "trigger", "acqNum": 0, "logfn": "20240528-1.log", "time": 1716908673.4708064, "time_formatted": "2024-05-28T11:04:33.470806-04:00", "keys": ["lshift"], "keys_time": 1716908686.2310038, "keys_time_str": "2024-05-28T11:04:46.231004-04:00"}', type='QRCODE', rect=Rect(left=655, top=235, width=609, height=609), polygon=[Point(x=655, y=235), Point(x=657, y=844), Point(x=1264, y=844), Point(x=1264, y=237)], quality=1, orientation='UP')]
+Same QR code: continue
+Found QR code: [Decoded(data=b'{"event": "trigger", "acqNum": 0, "logfn": "20240528-1.log", "time": 1716908673.4708064, "time_formatted": "2024-05-28T11:04:33.470806-04:00", "keys": ["lshift"], "keys_time": 1716908686.2310038, "keys_time_str": "2024-05-28T11:04:46.231004-04:00"}', type='QRCODE', rect=Rect(left=655, top=235, width=609, height=609), polygon=[Point(x=655, y=235), Point(x=657, y=844), Point(x=1264, y=844), Point(x=1264, y=237)], quality=1, orientation='UP')]
+Same QR code: continue
+Found QR code: [Decoded(data=b'{"event": "trigger", "acqNum": 0, "logfn": "20240528-1.log", "time": 1716908673.4708064, "time_formatted": "2024-05-28T11:04:33.470806-04:00", "keys": ["lshift"], "keys_time": 1716908686.2310038, "keys_time_str": "2024-05-28T11:04:46.231004-04:00"}', type='QRCODE', rect=Rect(left=655, top=235, width=609, height=609), polygon=[Point(x=655, y=235), Point(x=657, y=844), Point(x=1264, y=844), Point(x=1264, y=237)], quality=1, orientation='UP')]
+Same QR code: continue
+Found QR code: [Decoded(data=b'{"event": "trigger", "acqNum": 0, "logfn": "20240528-1.log", "time": 1716908673.4708064, "time_formatted": "2024-05-28T11:04:33.470806-04:00", "keys": ["lshift"], "keys_time": 1716908686.2310038, "keys_time_str": "2024-05-28T11:04:46.231004-04:00"}', type='QRCODE', rect=Rect(left=655, top=235, width=609, height=609), polygon=[Point(x=655, y=235), Point(x=657, y=844), Point(x=1264, y=844), Point(x=1264, y=237)], quality=1, orientation='UP')]
+Same QR code: continue
+Found QR code: [Decoded(data=b'{"event": "trigger", "acqNum": 0, "logfn": "20240528-1.log", "time": 1716908673.4708064, "time_formatted": "2024-05-28T11:04:33.470806-04:00", "keys": ["lshift"], "keys_time": 1716908686.2310038, "keys_time_str": "2024-05-28T11:04:46.231004-04:00"}', type='QRCODE', rect=Rect(left=655, top=235, width=609, height=609), polygon=[Point(x=655, y=235), Point(x=657, y=844), Point(x=1264, y=844), Point(x=1264, y=237)], quality=1, orientation='UP')]
+Same QR code: continue
+Found QR code: [Decoded(data=b'{"event": "trigger", "acqNum": 0, "logfn": "20240528-1.log", "time": 1716908673.4708064, "time_formatted": "2024-05-28T11:04:33.470806-04:00", "keys": ["lshift"], "keys_time": 1716908686.2310038, "keys_time_str": "2024-05-28T11:04:46.231004-04:00"}', type='QRCODE', rect=Rect(left=655, top=235, width=609, height=609), polygon=[Point(x=655, y=235), Point(x=657, y=844), Point(x=1264, y=844), Point(x=1264, y=237)], quality=1, orientation='UP')]
+Same QR code: continue
+Found QR code: [Decoded(data=b'{"event": "trigger", "acqNum": 0, "logfn": "20240528-1.log", "time": 1716908673.4708064, "time_formatted": "2024-05-28T11:04:33.470806-04:00", "keys": ["lshift"], "keys_time": 1716908686.2310038, "keys_time_str": "2024-05-28T11:04:46.231004-04:00"}', type='QRCODE', rect=Rect(left=655, top=235, width=609, height=609), polygon=[Point(x=655, y=235), Point(x=657, y=844), Point(x=1264, y=844), Point(x=1264, y=237)], quality=1, orientation='UP')]
+Same QR code: continue
+Found QR code: [Decoded(data=b'{"event": "trigger", "acqNum": 0, "logfn": "20240528-1.log", "time": 1716908673.4708064, "time_formatted": "2024-05-28T11:04:33.470806-04:00", "keys": ["lshift"], "keys_time": 1716908686.2310038, "keys_time_str": "2024-05-28T11:04:46.231004-04:00"}', type='QRCODE', rect=Rect(left=655, top=235, width=609, height=609), polygon=[Point(x=655, y=235), Point(x=657, y=844), Point(x=1264, y=844), Point(x=1264, y=237)], quality=1, orientation='UP')]
+Same QR code: continue
+Found QR code: [Decoded(data=b'{"event": "trigger", "acqNum": 0, "logfn": "20240528-1.log", "time": 1716908673.4708064, "time_formatted": "2024-05-28T11:04:33.470806-04:00", "keys": ["lshift"], "keys_time": 1716908686.2310038, "keys_time_str": "2024-05-28T11:04:46.231004-04:00"}', type='QRCODE', rect=Rect(left=655, top=235, width=609, height=609), polygon=[Point(x=655, y=235), Point(x=657, y=844), Point(x=1264, y=844), Point(x=1264, y=237)], quality=1, orientation='UP')]
+Same QR code: continue
+Found QR code: [Decoded(data=b'{"event": "trigger", "acqNum": 0, "logfn": "20240528-1.log", "time": 1716908673.4708064, "time_formatted": "2024-05-28T11:04:33.470806-04:00", "keys": ["lshift"], "keys_time": 1716908686.2310038, "keys_time_str": "2024-05-28T11:04:46.231004-04:00"}', type='QRCODE', rect=Rect(left=655, top=235, width=609, height=609), polygon=[Point(x=655, y=235), Point(x=657, y=844), Point(x=1264, y=844), Point(x=1264, y=237)], quality=1, orientation='UP')]
+Same QR code: continue
+Found QR code: [Decoded(data=b'{"event": "trigger", "acqNum": 0, "logfn": "20240528-1.log", "time": 1716908673.4708064, "time_formatted": "2024-05-28T11:04:33.470806-04:00", "keys": ["lshift"], "keys_time": 1716908686.2310038, "keys_time_str": "2024-05-28T11:04:46.231004-04:00"}', type='QRCODE', rect=Rect(left=655, top=235, width=609, height=609), polygon=[Point(x=655, y=235), Point(x=657, y=844), Point(x=1264, y=844), Point(x=1264, y=237)], quality=1, orientation='UP')]
+Same QR code: continue
+Found QR code: [Decoded(data=b'{"event": "trigger", "acqNum": 0, "logfn": "20240528-1.log", "time": 1716908673.4708064, "time_formatted": "2024-05-28T11:04:33.470806-04:00", "keys": ["lshift"], "keys_time": 1716908686.2310038, "keys_time_str": "2024-05-28T11:04:46.231004-04:00"}', type='QRCODE', rect=Rect(left=655, top=235, width=609, height=609), polygon=[Point(x=655, y=235), Point(x=657, y=844), Point(x=1264, y=844), Point(x=1264, y=237)], quality=1, orientation='UP')]
+Same QR code: continue
+Found QR code: [Decoded(data=b'{"event": "trigger", "acqNum": 0, "logfn": "20240528-1.log", "time": 1716908673.4708064, "time_formatted": "2024-05-28T11:04:33.470806-04:00", "keys": ["lshift"], "keys_time": 1716908686.2310038, "keys_time_str": "2024-05-28T11:04:46.231004-04:00"}', type='QRCODE', rect=Rect(left=655, top=235, width=609, height=609), polygon=[Point(x=655, y=235), Point(x=657, y=844), Point(x=1264, y=844), Point(x=1264, y=237)], quality=1, orientation='UP')]
+Same QR code: continue
+iframe=10600 59.0070809985769
+Found QR code: [Decoded(data=b'{"event": "trigger", "acqNum": 0, "logfn": "20240528-1.log", "time": 1716908673.4708064, "time_formatted": "2024-05-28T11:04:33.470806-04:00", "keys": ["lshift"], "keys_time": 1716908686.2310038, "keys_time_str": "2024-05-28T11:04:46.231004-04:00"}', type='QRCODE', rect=Rect(left=655, top=235, width=609, height=609), polygon=[Point(x=655, y=235), Point(x=657, y=844), Point(x=1264, y=844), Point(x=1264, y=237)], quality=1, orientation='UP')]
+Same QR code: continue
+Found QR code: [Decoded(data=b'{"event": "trigger", "acqNum": 0, "logfn": "20240528-1.log", "time": 1716908673.4708064, "time_formatted": "2024-05-28T11:04:33.470806-04:00", "keys": ["lshift"], "keys_time": 1716908686.2310038, "keys_time_str": "2024-05-28T11:04:46.231004-04:00"}', type='QRCODE', rect=Rect(left=655, top=235, width=609, height=609), polygon=[Point(x=655, y=235), Point(x=657, y=844), Point(x=1264, y=844), Point(x=1264, y=237)], quality=1, orientation='UP')]
+Same QR code: continue
+Found QR code: [Decoded(data=b'{"event": "trigger", "acqNum": 0, "logfn": "20240528-1.log", "time": 1716908673.4708064, "time_formatted": "2024-05-28T11:04:33.470806-04:00", "keys": ["lshift"], "keys_time": 1716908686.2310038, "keys_time_str": "2024-05-28T11:04:46.231004-04:00"}', type='QRCODE', rect=Rect(left=655, top=235, width=609, height=609), polygon=[Point(x=655, y=235), Point(x=657, y=844), Point(x=1264, y=844), Point(x=1264, y=237)], quality=1, orientation='UP')]
+Same QR code: continue
+Found QR code: [Decoded(data=b'{"event": "trigger", "acqNum": 0, "logfn": "20240528-1.log", "time": 1716908673.4708064, "time_formatted": "2024-05-28T11:04:33.470806-04:00", "keys": ["lshift"], "keys_time": 1716908686.2310038, "keys_time_str": "2024-05-28T11:04:46.231004-04:00"}', type='QRCODE', rect=Rect(left=655, top=235, width=609, height=609), polygon=[Point(x=655, y=235), Point(x=657, y=844), Point(x=1264, y=844), Point(x=1264, y=237)], quality=1, orientation='UP')]
+Same QR code: continue
+Found QR code: [Decoded(data=b'{"event": "trigger", "acqNum": 0, "logfn": "20240528-1.log", "time": 1716908673.4708064, "time_formatted": "2024-05-28T11:04:33.470806-04:00", "keys": ["lshift"], "keys_time": 1716908686.2310038, "keys_time_str": "2024-05-28T11:04:46.231004-04:00"}', type='QRCODE', rect=Rect(left=655, top=235, width=609, height=609), polygon=[Point(x=655, y=235), Point(x=657, y=844), Point(x=1264, y=844), Point(x=1264, y=237)], quality=1, orientation='UP')]
+Same QR code: continue
+Found QR code: [Decoded(data=b'{"event": "trigger", "acqNum": 0, "logfn": "20240528-1.log", "time": 1716908673.4708064, "time_formatted": "2024-05-28T11:04:33.470806-04:00", "keys": ["lshift"], "keys_time": 1716908686.2310038, "keys_time_str": "2024-05-28T11:04:46.231004-04:00"}', type='QRCODE', rect=Rect(left=655, top=235, width=609, height=609), polygon=[Point(x=655, y=235), Point(x=657, y=844), Point(x=1264, y=844), Point(x=1264, y=237)], quality=1, orientation='UP')]
+Same QR code: continue
+Found QR code: [Decoded(data=b'{"event": "trigger", "acqNum": 0, "logfn": "20240528-1.log", "time": 1716908673.4708064, "time_formatted": "2024-05-28T11:04:33.470806-04:00", "keys": ["lshift"], "keys_time": 1716908686.2310038, "keys_time_str": "2024-05-28T11:04:46.231004-04:00"}', type='QRCODE', rect=Rect(left=655, top=235, width=609, height=609), polygon=[Point(x=655, y=235), Point(x=657, y=844), Point(x=1264, y=844), Point(x=1264, y=237)], quality=1, orientation='UP')]
+Same QR code: continue
+Found QR code: [Decoded(data=b'{"event": "trigger", "acqNum": 0, "logfn": "20240528-1.log", "time": 1716908673.4708064, "time_formatted": "2024-05-28T11:04:33.470806-04:00", "keys": ["lshift"], "keys_time": 1716908686.2310038, "keys_time_str": "2024-05-28T11:04:46.231004-04:00"}', type='QRCODE', rect=Rect(left=655, top=235, width=609, height=609), polygon=[Point(x=655, y=235), Point(x=657, y=844), Point(x=1264, y=844), Point(x=1264, y=237)], quality=1, orientation='UP')]
+Same QR code: continue
+Found QR code: [Decoded(data=b'{"event": "trigger", "acqNum": 0, "logfn": "20240528-1.log", "time": 1716908673.4708064, "time_formatted": "2024-05-28T11:04:33.470806-04:00", "keys": ["lshift"], "keys_time": 1716908686.2310038, "keys_time_str": "2024-05-28T11:04:46.231004-04:00"}', type='QRCODE', rect=Rect(left=655, top=235, width=609, height=609), polygon=[Point(x=655, y=235), Point(x=657, y=844), Point(x=1264, y=844), Point(x=1264, y=237)], quality=1, orientation='UP')]
+Same QR code: continue
+Found QR code: [Decoded(data=b'{"event": "trigger", "acqNum": 0, "logfn": "20240528-1.log", "time": 1716908673.4708064, "time_formatted": "2024-05-28T11:04:33.470806-04:00", "keys": ["lshift"], "keys_time": 1716908686.2310038, "keys_time_str": "2024-05-28T11:04:46.231004-04:00"}', type='QRCODE', rect=Rect(left=655, top=235, width=609, height=609), polygon=[Point(x=655, y=235), Point(x=657, y=844), Point(x=1264, y=844), Point(x=1264, y=237)], quality=1, orientation='UP')]
+Same QR code: continue
+Found QR code: [Decoded(data=b'{"event": "trigger", "acqNum": 0, "logfn": "20240528-1.log", "time": 1716908673.4708064, "time_formatted": "2024-05-28T11:04:33.470806-04:00", "keys": ["lshift"], "keys_time": 1716908686.2310038, "keys_time_str": "2024-05-28T11:04:46.231004-04:00"}', type='QRCODE', rect=Rect(left=655, top=235, width=609, height=609), polygon=[Point(x=655, y=235), Point(x=657, y=844), Point(x=1264, y=844), Point(x=1264, y=237)], quality=1, orientation='UP')]
+Same QR code: continue
+QR: QrRecord(frames=[10579, 10611], times=[176.3, 176.833 sec], duration=0.532999999999987 sec, isotimes=[2024-05-28 11:04:46.215000, 2024-05-28 11:04:46.748000], data={'event': 'trigger', 'acqNum': 0, 'logfn': '20240528-1.log', 'time': 1716908673.4708064, 'time_formatted': '2024-05-28T11:04:33.470806-04:00', 'keys': ['lshift'], 'keys_time': 1716908686.2310038, 'keys_time_str': '2024-05-28T11:04:46.231004-04:00'})
+ - QR code isotime : 2024-05-28 11:04:46.215000
+ - Event isotime   : 2024-05-28 11:04:33.470806 / dt=-12.744194 sec
+ - Keys isotime    : 2024-05-28 11:04:46.231004 / dt=0.016004 sec
+iframe=10650 1.3340182476281113
+iframe=10700 1.2514187104237533
+iframe=10750 1.2494097204009957
+iframe=10800 1.2477939853805884
+iframe=10850 1.2471060930337399
+Found QR code: [Decoded(data=b'{"event": "trigger", "acqNum": 1, "logfn": "20240528-1.log", "time": 1716908686.8109934, "time_formatted": "2024-05-28T11:04:46.810993-04:00", "keys": ["lshift"], "keys_time": 1716908690.9567456, "keys_time_str": "2024-05-28T11:04:50.956746-04:00"}', type='QRCODE', rect=Rect(left=655, top=235, width=609, height=609), polygon=[Point(x=655, y=235), Point(x=657, y=844), Point(x=1264, y=844), Point(x=1264, y=237)], quality=1, orientation='UP')]
+New QR code: {'event': 'trigger', 'acqNum': 1, 'logfn': '20240528-1.log', 'time': 1716908686.8109934, 'time_formatted': '2024-05-28T11:04:46.810993-04:00', 'keys': ['lshift'], 'keys_time': 1716908690.9567456, 'keys_time_str': '2024-05-28T11:04:50.956746-04:00'}
+Found QR code: [Decoded(data=b'{"event": "trigger", "acqNum": 1, "logfn": "20240528-1.log", "time": 1716908686.8109934, "time_formatted": "2024-05-28T11:04:46.810993-04:00", "keys": ["lshift"], "keys_time": 1716908690.9567456, "keys_time_str": "2024-05-28T11:04:50.956746-04:00"}', type='QRCODE', rect=Rect(left=655, top=235, width=609, height=609), polygon=[Point(x=655, y=235), Point(x=657, y=844), Point(x=1264, y=844), Point(x=1264, y=237)], quality=1, orientation='UP')]
+Same QR code: continue
+Found QR code: [Decoded(data=b'{"event": "trigger", "acqNum": 1, "logfn": "20240528-1.log", "time": 1716908686.8109934, "time_formatted": "2024-05-28T11:04:46.810993-04:00", "keys": ["lshift"], "keys_time": 1716908690.9567456, "keys_time_str": "2024-05-28T11:04:50.956746-04:00"}', type='QRCODE', rect=Rect(left=655, top=235, width=609, height=609), polygon=[Point(x=655, y=235), Point(x=657, y=844), Point(x=1264, y=844), Point(x=1264, y=237)], quality=1, orientation='UP')]
+Same QR code: continue
+Found QR code: [Decoded(data=b'{"event": "trigger", "acqNum": 1, "logfn": "20240528-1.log", "time": 1716908686.8109934, "time_formatted": "2024-05-28T11:04:46.810993-04:00", "keys": ["lshift"], "keys_time": 1716908690.9567456, "keys_time_str": "2024-05-28T11:04:50.956746-04:00"}', type='QRCODE', rect=Rect(left=655, top=235, width=609, height=609), polygon=[Point(x=655, y=235), Point(x=657, y=844), Point(x=1264, y=844), Point(x=1264, y=237)], quality=1, orientation='UP')]
+Same QR code: continue
+Found QR code: [Decoded(data=b'{"event": "trigger", "acqNum": 1, "logfn": "20240528-1.log", "time": 1716908686.8109934, "time_formatted": "2024-05-28T11:04:46.810993-04:00", "keys": ["lshift"], "keys_time": 1716908690.9567456, "keys_time_str": "2024-05-28T11:04:50.956746-04:00"}', type='QRCODE', rect=Rect(left=655, top=235, width=609, height=609), polygon=[Point(x=655, y=235), Point(x=657, y=844), Point(x=1264, y=844), Point(x=1264, y=237)], quality=1, orientation='UP')]
+Same QR code: continue
+Found QR code: [Decoded(data=b'{"event": "trigger", "acqNum": 1, "logfn": "20240528-1.log", "time": 1716908686.8109934, "time_formatted": "2024-05-28T11:04:46.810993-04:00", "keys": ["lshift"], "keys_time": 1716908690.9567456, "keys_time_str": "2024-05-28T11:04:50.956746-04:00"}', type='QRCODE', rect=Rect(left=655, top=235, width=609, height=609), polygon=[Point(x=655, y=235), Point(x=657, y=844), Point(x=1264, y=844), Point(x=1264, y=237)], quality=1, orientation='UP')]
+Same QR code: continue
+Found QR code: [Decoded(data=b'{"event": "trigger", "acqNum": 1, "logfn": "20240528-1.log", "time": 1716908686.8109934, "time_formatted": "2024-05-28T11:04:46.810993-04:00", "keys": ["lshift"], "keys_time": 1716908690.9567456, "keys_time_str": "2024-05-28T11:04:50.956746-04:00"}', type='QRCODE', rect=Rect(left=655, top=235, width=609, height=609), polygon=[Point(x=655, y=235), Point(x=657, y=844), Point(x=1264, y=844), Point(x=1264, y=237)], quality=1, orientation='UP')]
+Same QR code: continue
+Found QR code: [Decoded(data=b'{"event": "trigger", "acqNum": 1, "logfn": "20240528-1.log", "time": 1716908686.8109934, "time_formatted": "2024-05-28T11:04:46.810993-04:00", "keys": ["lshift"], "keys_time": 1716908690.9567456, "keys_time_str": "2024-05-28T11:04:50.956746-04:00"}', type='QRCODE', rect=Rect(left=655, top=235, width=609, height=609), polygon=[Point(x=655, y=235), Point(x=657, y=844), Point(x=1264, y=844), Point(x=1264, y=237)], quality=1, orientation='UP')]
+Same QR code: continue
+Found QR code: [Decoded(data=b'{"event": "trigger", "acqNum": 1, "logfn": "20240528-1.log", "time": 1716908686.8109934, "time_formatted": "2024-05-28T11:04:46.810993-04:00", "keys": ["lshift"], "keys_time": 1716908690.9567456, "keys_time_str": "2024-05-28T11:04:50.956746-04:00"}', type='QRCODE', rect=Rect(left=655, top=235, width=609, height=609), polygon=[Point(x=655, y=235), Point(x=657, y=844), Point(x=1264, y=844), Point(x=1264, y=237)], quality=1, orientation='UP')]
+Same QR code: continue
+Found QR code: [Decoded(data=b'{"event": "trigger", "acqNum": 1, "logfn": "20240528-1.log", "time": 1716908686.8109934, "time_formatted": "2024-05-28T11:04:46.810993-04:00", "keys": ["lshift"], "keys_time": 1716908690.9567456, "keys_time_str": "2024-05-28T11:04:50.956746-04:00"}', type='QRCODE', rect=Rect(left=655, top=235, width=609, height=609), polygon=[Point(x=655, y=235), Point(x=657, y=844), Point(x=1264, y=844), Point(x=1264, y=237)], quality=1, orientation='UP')]
+Same QR code: continue
+Found QR code: [Decoded(data=b'{"event": "trigger", "acqNum": 1, "logfn": "20240528-1.log", "time": 1716908686.8109934, "time_formatted": "2024-05-28T11:04:46.810993-04:00", "keys": ["lshift"], "keys_time": 1716908690.9567456, "keys_time_str": "2024-05-28T11:04:50.956746-04:00"}', type='QRCODE', rect=Rect(left=655, top=235, width=609, height=609), polygon=[Point(x=655, y=235), Point(x=657, y=844), Point(x=1264, y=844), Point(x=1264, y=237)], quality=1, orientation='UP')]
+Same QR code: continue
+Found QR code: [Decoded(data=b'{"event": "trigger", "acqNum": 1, "logfn": "20240528-1.log", "time": 1716908686.8109934, "time_formatted": "2024-05-28T11:04:46.810993-04:00", "keys": ["lshift"], "keys_time": 1716908690.9567456, "keys_time_str": "2024-05-28T11:04:50.956746-04:00"}', type='QRCODE', rect=Rect(left=655, top=235, width=609, height=609), polygon=[Point(x=655, y=235), Point(x=657, y=844), Point(x=1264, y=844), Point(x=1264, y=237)], quality=1, orientation='UP')]
+Same QR code: continue
+Found QR code: [Decoded(data=b'{"event": "trigger", "acqNum": 1, "logfn": "20240528-1.log", "time": 1716908686.8109934, "time_formatted": "2024-05-28T11:04:46.810993-04:00", "keys": ["lshift"], "keys_time": 1716908690.9567456, "keys_time_str": "2024-05-28T11:04:50.956746-04:00"}', type='QRCODE', rect=Rect(left=655, top=235, width=609, height=609), polygon=[Point(x=655, y=235), Point(x=657, y=844), Point(x=1264, y=844), Point(x=1264, y=237)], quality=1, orientation='UP')]
+Same QR code: continue
+Found QR code: [Decoded(data=b'{"event": "trigger", "acqNum": 1, "logfn": "20240528-1.log", "time": 1716908686.8109934, "time_formatted": "2024-05-28T11:04:46.810993-04:00", "keys": ["lshift"], "keys_time": 1716908690.9567456, "keys_time_str": "2024-05-28T11:04:50.956746-04:00"}', type='QRCODE', rect=Rect(left=655, top=235, width=609, height=609), polygon=[Point(x=655, y=235), Point(x=657, y=844), Point(x=1264, y=844), Point(x=1264, y=237)], quality=1, orientation='UP')]
+Same QR code: continue
+Found QR code: [Decoded(data=b'{"event": "trigger", "acqNum": 1, "logfn": "20240528-1.log", "time": 1716908686.8109934, "time_formatted": "2024-05-28T11:04:46.810993-04:00", "keys": ["lshift"], "keys_time": 1716908690.9567456, "keys_time_str": "2024-05-28T11:04:50.956746-04:00"}', type='QRCODE', rect=Rect(left=655, top=235, width=609, height=609), polygon=[Point(x=655, y=235), Point(x=657, y=844), Point(x=1264, y=844), Point(x=1264, y=237)], quality=1, orientation='UP')]
+Same QR code: continue
+Found QR code: [Decoded(data=b'{"event": "trigger", "acqNum": 1, "logfn": "20240528-1.log", "time": 1716908686.8109934, "time_formatted": "2024-05-28T11:04:46.810993-04:00", "keys": ["lshift"], "keys_time": 1716908690.9567456, "keys_time_str": "2024-05-28T11:04:50.956746-04:00"}', type='QRCODE', rect=Rect(left=655, top=235, width=609, height=609), polygon=[Point(x=655, y=235), Point(x=657, y=844), Point(x=1264, y=844), Point(x=1264, y=237)], quality=1, orientation='UP')]
+Same QR code: continue
+Found QR code: [Decoded(data=b'{"event": "trigger", "acqNum": 1, "logfn": "20240528-1.log", "time": 1716908686.8109934, "time_formatted": "2024-05-28T11:04:46.810993-04:00", "keys": ["lshift"], "keys_time": 1716908690.9567456, "keys_time_str": "2024-05-28T11:04:50.956746-04:00"}', type='QRCODE', rect=Rect(left=655, top=235, width=609, height=609), polygon=[Point(x=655, y=235), Point(x=657, y=844), Point(x=1264, y=844), Point(x=1264, y=237)], quality=1, orientation='UP')]
+Same QR code: continue
+Found QR code: [Decoded(data=b'{"event": "trigger", "acqNum": 1, "logfn": "20240528-1.log", "time": 1716908686.8109934, "time_formatted": "2024-05-28T11:04:46.810993-04:00", "keys": ["lshift"], "keys_time": 1716908690.9567456, "keys_time_str": "2024-05-28T11:04:50.956746-04:00"}', type='QRCODE', rect=Rect(left=655, top=235, width=609, height=609), polygon=[Point(x=655, y=235), Point(x=657, y=844), Point(x=1264, y=844), Point(x=1264, y=237)], quality=1, orientation='UP')]
+Same QR code: continue
+Found QR code: [Decoded(data=b'{"event": "trigger", "acqNum": 1, "logfn": "20240528-1.log", "time": 1716908686.8109934, "time_formatted": "2024-05-28T11:04:46.810993-04:00", "keys": ["lshift"], "keys_time": 1716908690.9567456, "keys_time_str": "2024-05-28T11:04:50.956746-04:00"}', type='QRCODE', rect=Rect(left=655, top=235, width=609, height=609), polygon=[Point(x=655, y=235), Point(x=657, y=844), Point(x=1264, y=844), Point(x=1264, y=237)], quality=1, orientation='UP')]
+Same QR code: continue
+Found QR code: [Decoded(data=b'{"event": "trigger", "acqNum": 1, "logfn": "20240528-1.log", "time": 1716908686.8109934, "time_formatted": "2024-05-28T11:04:46.810993-04:00", "keys": ["lshift"], "keys_time": 1716908690.9567456, "keys_time_str": "2024-05-28T11:04:50.956746-04:00"}', type='QRCODE', rect=Rect(left=655, top=235, width=609, height=609), polygon=[Point(x=655, y=235), Point(x=657, y=844), Point(x=1264, y=844), Point(x=1264, y=237)], quality=1, orientation='UP')]
+Same QR code: continue
+Found QR code: [Decoded(data=b'{"event": "trigger", "acqNum": 1, "logfn": "20240528-1.log", "time": 1716908686.8109934, "time_formatted": "2024-05-28T11:04:46.810993-04:00", "keys": ["lshift"], "keys_time": 1716908690.9567456, "keys_time_str": "2024-05-28T11:04:50.956746-04:00"}', type='QRCODE', rect=Rect(left=655, top=235, width=609, height=609), polygon=[Point(x=655, y=235), Point(x=657, y=844), Point(x=1264, y=844), Point(x=1264, y=237)], quality=1, orientation='UP')]
+Same QR code: continue
+Found QR code: [Decoded(data=b'{"event": "trigger", "acqNum": 1, "logfn": "20240528-1.log", "time": 1716908686.8109934, "time_formatted": "2024-05-28T11:04:46.810993-04:00", "keys": ["lshift"], "keys_time": 1716908690.9567456, "keys_time_str": "2024-05-28T11:04:50.956746-04:00"}', type='QRCODE', rect=Rect(left=655, top=235, width=609, height=609), polygon=[Point(x=655, y=235), Point(x=657, y=844), Point(x=1264, y=844), Point(x=1264, y=237)], quality=1, orientation='UP')]
+Same QR code: continue
+Found QR code: [Decoded(data=b'{"event": "trigger", "acqNum": 1, "logfn": "20240528-1.log", "time": 1716908686.8109934, "time_formatted": "2024-05-28T11:04:46.810993-04:00", "keys": ["lshift"], "keys_time": 1716908690.9567456, "keys_time_str": "2024-05-28T11:04:50.956746-04:00"}', type='QRCODE', rect=Rect(left=655, top=235, width=609, height=609), polygon=[Point(x=655, y=235), Point(x=657, y=844), Point(x=1264, y=844), Point(x=1264, y=237)], quality=1, orientation='UP')]
+Same QR code: continue
+Found QR code: [Decoded(data=b'{"event": "trigger", "acqNum": 1, "logfn": "20240528-1.log", "time": 1716908686.8109934, "time_formatted": "2024-05-28T11:04:46.810993-04:00", "keys": ["lshift"], "keys_time": 1716908690.9567456, "keys_time_str": "2024-05-28T11:04:50.956746-04:00"}', type='QRCODE', rect=Rect(left=655, top=235, width=609, height=609), polygon=[Point(x=655, y=235), Point(x=657, y=844), Point(x=1264, y=844), Point(x=1264, y=237)], quality=1, orientation='UP')]
+Same QR code: continue
+Found QR code: [Decoded(data=b'{"event": "trigger", "acqNum": 1, "logfn": "20240528-1.log", "time": 1716908686.8109934, "time_formatted": "2024-05-28T11:04:46.810993-04:00", "keys": ["lshift"], "keys_time": 1716908690.9567456, "keys_time_str": "2024-05-28T11:04:50.956746-04:00"}', type='QRCODE', rect=Rect(left=655, top=235, width=609, height=609), polygon=[Point(x=655, y=235), Point(x=657, y=844), Point(x=1264, y=844), Point(x=1264, y=237)], quality=1, orientation='UP')]
+Same QR code: continue
+Found QR code: [Decoded(data=b'{"event": "trigger", "acqNum": 1, "logfn": "20240528-1.log", "time": 1716908686.8109934, "time_formatted": "2024-05-28T11:04:46.810993-04:00", "keys": ["lshift"], "keys_time": 1716908690.9567456, "keys_time_str": "2024-05-28T11:04:50.956746-04:00"}', type='QRCODE', rect=Rect(left=655, top=235, width=609, height=609), polygon=[Point(x=655, y=235), Point(x=657, y=844), Point(x=1264, y=844), Point(x=1264, y=237)], quality=1, orientation='UP')]
+Same QR code: continue
+Found QR code: [Decoded(data=b'{"event": "trigger", "acqNum": 1, "logfn": "20240528-1.log", "time": 1716908686.8109934, "time_formatted": "2024-05-28T11:04:46.810993-04:00", "keys": ["lshift"], "keys_time": 1716908690.9567456, "keys_time_str": "2024-05-28T11:04:50.956746-04:00"}', type='QRCODE', rect=Rect(left=655, top=235, width=609, height=609), polygon=[Point(x=655, y=235), Point(x=657, y=844), Point(x=1264, y=844), Point(x=1264, y=237)], quality=1, orientation='UP')]
+Same QR code: continue
+Found QR code: [Decoded(data=b'{"event": "trigger", "acqNum": 1, "logfn": "20240528-1.log", "time": 1716908686.8109934, "time_formatted": "2024-05-28T11:04:46.810993-04:00", "keys": ["lshift"], "keys_time": 1716908690.9567456, "keys_time_str": "2024-05-28T11:04:50.956746-04:00"}', type='QRCODE', rect=Rect(left=655, top=235, width=609, height=609), polygon=[Point(x=655, y=235), Point(x=657, y=844), Point(x=1264, y=844), Point(x=1264, y=237)], quality=1, orientation='UP')]
+Same QR code: continue
+Found QR code: [Decoded(data=b'{"event": "trigger", "acqNum": 1, "logfn": "20240528-1.log", "time": 1716908686.8109934, "time_formatted": "2024-05-28T11:04:46.810993-04:00", "keys": ["lshift"], "keys_time": 1716908690.9567456, "keys_time_str": "2024-05-28T11:04:50.956746-04:00"}', type='QRCODE', rect=Rect(left=655, top=235, width=609, height=609), polygon=[Point(x=655, y=235), Point(x=657, y=844), Point(x=1264, y=844), Point(x=1264, y=237)], quality=1, orientation='UP')]
+Same QR code: continue
+Found QR code: [Decoded(data=b'{"event": "trigger", "acqNum": 1, "logfn": "20240528-1.log", "time": 1716908686.8109934, "time_formatted": "2024-05-28T11:04:46.810993-04:00", "keys": ["lshift"], "keys_time": 1716908690.9567456, "keys_time_str": "2024-05-28T11:04:50.956746-04:00"}', type='QRCODE', rect=Rect(left=655, top=235, width=609, height=609), polygon=[Point(x=655, y=235), Point(x=657, y=844), Point(x=1264, y=844), Point(x=1264, y=237)], quality=1, orientation='UP')]
+Same QR code: continue
+Found QR code: [Decoded(data=b'{"event": "trigger", "acqNum": 1, "logfn": "20240528-1.log", "time": 1716908686.8109934, "time_formatted": "2024-05-28T11:04:46.810993-04:00", "keys": ["lshift"], "keys_time": 1716908690.9567456, "keys_time_str": "2024-05-28T11:04:50.956746-04:00"}', type='QRCODE', rect=Rect(left=655, top=235, width=609, height=609), polygon=[Point(x=655, y=235), Point(x=657, y=844), Point(x=1264, y=844), Point(x=1264, y=237)], quality=1, orientation='UP')]
+Same QR code: continue
+QR: QrRecord(frames=[10862, 10893], times=[181.017, 181.533 sec], duration=0.5159999999999911 sec, isotimes=[2024-05-28 11:04:50.932000, 2024-05-28 11:04:51.448000], data={'event': 'trigger', 'acqNum': 1, 'logfn': '20240528-1.log', 'time': 1716908686.8109934, 'time_formatted': '2024-05-28T11:04:46.810993-04:00', 'keys': ['lshift'], 'keys_time': 1716908690.9567456, 'keys_time_str': '2024-05-28T11:04:50.956746-04:00'})
+ - QR code isotime : 2024-05-28 11:04:50.932000
+ - Event isotime   : 2024-05-28 11:04:46.810993 / dt=-4.121007 sec
+ - Keys isotime    : 2024-05-28 11:04:50.956746 / dt=0.024746 sec
+iframe=10900 1.3106565283773701
+Found QR code: [Decoded(data=b'{"event": "trigger", "acqNum": 2, "logfn": "20240528-1.log", "time": 1716908691.516984, "time_formatted": "2024-05-28T11:04:51.516984-04:00", "keys": ["left"], "keys_time": 1716908691.6779673, "keys_time_str": "2024-05-28T11:04:51.677967-04:00"}', type='QRCODE', rect=Rect(left=655, top=235, width=609, height=609), polygon=[Point(x=655, y=235), Point(x=657, y=844), Point(x=1264, y=844), Point(x=1264, y=237)], quality=1, orientation='UP')]
+New QR code: {'event': 'trigger', 'acqNum': 2, 'logfn': '20240528-1.log', 'time': 1716908691.516984, 'time_formatted': '2024-05-28T11:04:51.516984-04:00', 'keys': ['left'], 'keys_time': 1716908691.6779673, 'keys_time_str': '2024-05-28T11:04:51.677967-04:00'}
+Found QR code: [Decoded(data=b'{"event": "trigger", "acqNum": 2, "logfn": "20240528-1.log", "time": 1716908691.516984, "time_formatted": "2024-05-28T11:04:51.516984-04:00", "keys": ["left"], "keys_time": 1716908691.6779673, "keys_time_str": "2024-05-28T11:04:51.677967-04:00"}', type='QRCODE', rect=Rect(left=655, top=235, width=609, height=609), polygon=[Point(x=655, y=235), Point(x=657, y=844), Point(x=1264, y=844), Point(x=1264, y=237)], quality=1, orientation='UP')]
+Same QR code: continue
+Found QR code: [Decoded(data=b'{"event": "trigger", "acqNum": 2, "logfn": "20240528-1.log", "time": 1716908691.516984, "time_formatted": "2024-05-28T11:04:51.516984-04:00", "keys": ["left"], "keys_time": 1716908691.6779673, "keys_time_str": "2024-05-28T11:04:51.677967-04:00"}', type='QRCODE', rect=Rect(left=655, top=235, width=609, height=609), polygon=[Point(x=655, y=235), Point(x=657, y=844), Point(x=1264, y=844), Point(x=1264, y=237)], quality=1, orientation='UP')]
+Same QR code: continue
+Found QR code: [Decoded(data=b'{"event": "trigger", "acqNum": 2, "logfn": "20240528-1.log", "time": 1716908691.516984, "time_formatted": "2024-05-28T11:04:51.516984-04:00", "keys": ["left"], "keys_time": 1716908691.6779673, "keys_time_str": "2024-05-28T11:04:51.677967-04:00"}', type='QRCODE', rect=Rect(left=655, top=235, width=609, height=609), polygon=[Point(x=655, y=235), Point(x=657, y=844), Point(x=1264, y=844), Point(x=1264, y=237)], quality=1, orientation='UP')]
+Same QR code: continue
+Found QR code: [Decoded(data=b'{"event": "trigger", "acqNum": 2, "logfn": "20240528-1.log", "time": 1716908691.516984, "time_formatted": "2024-05-28T11:04:51.516984-04:00", "keys": ["left"], "keys_time": 1716908691.6779673, "keys_time_str": "2024-05-28T11:04:51.677967-04:00"}', type='QRCODE', rect=Rect(left=655, top=235, width=609, height=609), polygon=[Point(x=655, y=235), Point(x=657, y=844), Point(x=1264, y=844), Point(x=1264, y=237)], quality=1, orientation='UP')]
+Same QR code: continue
+Found QR code: [Decoded(data=b'{"event": "trigger", "acqNum": 2, "logfn": "20240528-1.log", "time": 1716908691.516984, "time_formatted": "2024-05-28T11:04:51.516984-04:00", "keys": ["left"], "keys_time": 1716908691.6779673, "keys_time_str": "2024-05-28T11:04:51.677967-04:00"}', type='QRCODE', rect=Rect(left=655, top=235, width=609, height=609), polygon=[Point(x=655, y=235), Point(x=657, y=844), Point(x=1264, y=844), Point(x=1264, y=237)], quality=1, orientation='UP')]
+Same QR code: continue
+Found QR code: [Decoded(data=b'{"event": "trigger", "acqNum": 2, "logfn": "20240528-1.log", "time": 1716908691.516984, "time_formatted": "2024-05-28T11:04:51.516984-04:00", "keys": ["left"], "keys_time": 1716908691.6779673, "keys_time_str": "2024-05-28T11:04:51.677967-04:00"}', type='QRCODE', rect=Rect(left=655, top=235, width=609, height=609), polygon=[Point(x=655, y=235), Point(x=657, y=844), Point(x=1264, y=844), Point(x=1264, y=237)], quality=1, orientation='UP')]
+Same QR code: continue
+Found QR code: [Decoded(data=b'{"event": "trigger", "acqNum": 2, "logfn": "20240528-1.log", "time": 1716908691.516984, "time_formatted": "2024-05-28T11:04:51.516984-04:00", "keys": ["left"], "keys_time": 1716908691.6779673, "keys_time_str": "2024-05-28T11:04:51.677967-04:00"}', type='QRCODE', rect=Rect(left=655, top=235, width=609, height=609), polygon=[Point(x=655, y=235), Point(x=657, y=844), Point(x=1264, y=844), Point(x=1264, y=237)], quality=1, orientation='UP')]
+Same QR code: continue
+Found QR code: [Decoded(data=b'{"event": "trigger", "acqNum": 2, "logfn": "20240528-1.log", "time": 1716908691.516984, "time_formatted": "2024-05-28T11:04:51.516984-04:00", "keys": ["left"], "keys_time": 1716908691.6779673, "keys_time_str": "2024-05-28T11:04:51.677967-04:00"}', type='QRCODE', rect=Rect(left=655, top=235, width=609, height=609), polygon=[Point(x=655, y=235), Point(x=657, y=844), Point(x=1264, y=844), Point(x=1264, y=237)], quality=1, orientation='UP')]
+Same QR code: continue
+Found QR code: [Decoded(data=b'{"event": "trigger", "acqNum": 2, "logfn": "20240528-1.log", "time": 1716908691.516984, "time_formatted": "2024-05-28T11:04:51.516984-04:00", "keys": ["left"], "keys_time": 1716908691.6779673, "keys_time_str": "2024-05-28T11:04:51.677967-04:00"}', type='QRCODE', rect=Rect(left=655, top=235, width=609, height=609), polygon=[Point(x=655, y=235), Point(x=657, y=844), Point(x=1264, y=844), Point(x=1264, y=237)], quality=1, orientation='UP')]
+Same QR code: continue
+Found QR code: [Decoded(data=b'{"event": "trigger", "acqNum": 2, "logfn": "20240528-1.log", "time": 1716908691.516984, "time_formatted": "2024-05-28T11:04:51.516984-04:00", "keys": ["left"], "keys_time": 1716908691.6779673, "keys_time_str": "2024-05-28T11:04:51.677967-04:00"}', type='QRCODE', rect=Rect(left=655, top=235, width=609, height=609), polygon=[Point(x=655, y=235), Point(x=657, y=844), Point(x=1264, y=844), Point(x=1264, y=237)], quality=1, orientation='UP')]
+Same QR code: continue
+Found QR code: [Decoded(data=b'{"event": "trigger", "acqNum": 2, "logfn": "20240528-1.log", "time": 1716908691.516984, "time_formatted": "2024-05-28T11:04:51.516984-04:00", "keys": ["left"], "keys_time": 1716908691.6779673, "keys_time_str": "2024-05-28T11:04:51.677967-04:00"}', type='QRCODE', rect=Rect(left=655, top=235, width=609, height=609), polygon=[Point(x=655, y=235), Point(x=657, y=844), Point(x=1264, y=844), Point(x=1264, y=237)], quality=1, orientation='UP')]
+Same QR code: continue
+Found QR code: [Decoded(data=b'{"event": "trigger", "acqNum": 2, "logfn": "20240528-1.log", "time": 1716908691.516984, "time_formatted": "2024-05-28T11:04:51.516984-04:00", "keys": ["left"], "keys_time": 1716908691.6779673, "keys_time_str": "2024-05-28T11:04:51.677967-04:00"}', type='QRCODE', rect=Rect(left=655, top=235, width=609, height=609), polygon=[Point(x=655, y=235), Point(x=657, y=844), Point(x=1264, y=844), Point(x=1264, y=237)], quality=1, orientation='UP')]
+Same QR code: continue
+Found QR code: [Decoded(data=b'{"event": "trigger", "acqNum": 2, "logfn": "20240528-1.log", "time": 1716908691.516984, "time_formatted": "2024-05-28T11:04:51.516984-04:00", "keys": ["left"], "keys_time": 1716908691.6779673, "keys_time_str": "2024-05-28T11:04:51.677967-04:00"}', type='QRCODE', rect=Rect(left=655, top=235, width=609, height=609), polygon=[Point(x=655, y=235), Point(x=657, y=844), Point(x=1264, y=844), Point(x=1264, y=237)], quality=1, orientation='UP')]
+Same QR code: continue
+Found QR code: [Decoded(data=b'{"event": "trigger", "acqNum": 2, "logfn": "20240528-1.log", "time": 1716908691.516984, "time_formatted": "2024-05-28T11:04:51.516984-04:00", "keys": ["left"], "keys_time": 1716908691.6779673, "keys_time_str": "2024-05-28T11:04:51.677967-04:00"}', type='QRCODE', rect=Rect(left=655, top=235, width=609, height=609), polygon=[Point(x=655, y=235), Point(x=657, y=844), Point(x=1264, y=844), Point(x=1264, y=237)], quality=1, orientation='UP')]
+Same QR code: continue
+Found QR code: [Decoded(data=b'{"event": "trigger", "acqNum": 2, "logfn": "20240528-1.log", "time": 1716908691.516984, "time_formatted": "2024-05-28T11:04:51.516984-04:00", "keys": ["left"], "keys_time": 1716908691.6779673, "keys_time_str": "2024-05-28T11:04:51.677967-04:00"}', type='QRCODE', rect=Rect(left=655, top=235, width=609, height=609), polygon=[Point(x=655, y=235), Point(x=657, y=844), Point(x=1264, y=844), Point(x=1264, y=237)], quality=1, orientation='UP')]
+Same QR code: continue
+Found QR code: [Decoded(data=b'{"event": "trigger", "acqNum": 2, "logfn": "20240528-1.log", "time": 1716908691.516984, "time_formatted": "2024-05-28T11:04:51.516984-04:00", "keys": ["left"], "keys_time": 1716908691.6779673, "keys_time_str": "2024-05-28T11:04:51.677967-04:00"}', type='QRCODE', rect=Rect(left=655, top=235, width=609, height=609), polygon=[Point(x=655, y=235), Point(x=657, y=844), Point(x=1264, y=844), Point(x=1264, y=237)], quality=1, orientation='UP')]
+Same QR code: continue
+Found QR code: [Decoded(data=b'{"event": "trigger", "acqNum": 2, "logfn": "20240528-1.log", "time": 1716908691.516984, "time_formatted": "2024-05-28T11:04:51.516984-04:00", "keys": ["left"], "keys_time": 1716908691.6779673, "keys_time_str": "2024-05-28T11:04:51.677967-04:00"}', type='QRCODE', rect=Rect(left=655, top=235, width=609, height=609), polygon=[Point(x=655, y=235), Point(x=657, y=844), Point(x=1264, y=844), Point(x=1264, y=237)], quality=1, orientation='UP')]
+Same QR code: continue
+Found QR code: [Decoded(data=b'{"event": "trigger", "acqNum": 2, "logfn": "20240528-1.log", "time": 1716908691.516984, "time_formatted": "2024-05-28T11:04:51.516984-04:00", "keys": ["left"], "keys_time": 1716908691.6779673, "keys_time_str": "2024-05-28T11:04:51.677967-04:00"}', type='QRCODE', rect=Rect(left=655, top=235, width=609, height=609), polygon=[Point(x=655, y=235), Point(x=657, y=844), Point(x=1264, y=844), Point(x=1264, y=237)], quality=1, orientation='UP')]
+Same QR code: continue
+Found QR code: [Decoded(data=b'{"event": "trigger", "acqNum": 2, "logfn": "20240528-1.log", "time": 1716908691.516984, "time_formatted": "2024-05-28T11:04:51.516984-04:00", "keys": ["left"], "keys_time": 1716908691.6779673, "keys_time_str": "2024-05-28T11:04:51.677967-04:00"}', type='QRCODE', rect=Rect(left=655, top=235, width=609, height=609), polygon=[Point(x=655, y=235), Point(x=657, y=844), Point(x=1264, y=844), Point(x=1264, y=237)], quality=1, orientation='UP')]
+Same QR code: continue
+Found QR code: [Decoded(data=b'{"event": "trigger", "acqNum": 2, "logfn": "20240528-1.log", "time": 1716908691.516984, "time_formatted": "2024-05-28T11:04:51.516984-04:00", "keys": ["left"], "keys_time": 1716908691.6779673, "keys_time_str": "2024-05-28T11:04:51.677967-04:00"}', type='QRCODE', rect=Rect(left=655, top=235, width=609, height=609), polygon=[Point(x=655, y=235), Point(x=657, y=844), Point(x=1264, y=844), Point(x=1264, y=237)], quality=1, orientation='UP')]
+Same QR code: continue
+Found QR code: [Decoded(data=b'{"event": "trigger", "acqNum": 2, "logfn": "20240528-1.log", "time": 1716908691.516984, "time_formatted": "2024-05-28T11:04:51.516984-04:00", "keys": ["left"], "keys_time": 1716908691.6779673, "keys_time_str": "2024-05-28T11:04:51.677967-04:00"}', type='QRCODE', rect=Rect(left=655, top=235, width=609, height=609), polygon=[Point(x=655, y=235), Point(x=657, y=844), Point(x=1264, y=844), Point(x=1264, y=237)], quality=1, orientation='UP')]
+Same QR code: continue
+Found QR code: [Decoded(data=b'{"event": "trigger", "acqNum": 2, "logfn": "20240528-1.log", "time": 1716908691.516984, "time_formatted": "2024-05-28T11:04:51.516984-04:00", "keys": ["left"], "keys_time": 1716908691.6779673, "keys_time_str": "2024-05-28T11:04:51.677967-04:00"}', type='QRCODE', rect=Rect(left=655, top=235, width=609, height=609), polygon=[Point(x=655, y=235), Point(x=657, y=844), Point(x=1264, y=844), Point(x=1264, y=237)], quality=1, orientation='UP')]
+Same QR code: continue
+Found QR code: [Decoded(data=b'{"event": "trigger", "acqNum": 2, "logfn": "20240528-1.log", "time": 1716908691.516984, "time_formatted": "2024-05-28T11:04:51.516984-04:00", "keys": ["left"], "keys_time": 1716908691.6779673, "keys_time_str": "2024-05-28T11:04:51.677967-04:00"}', type='QRCODE', rect=Rect(left=655, top=235, width=609, height=609), polygon=[Point(x=655, y=235), Point(x=657, y=844), Point(x=1264, y=844), Point(x=1264, y=237)], quality=1, orientation='UP')]
+Same QR code: continue
+Found QR code: [Decoded(data=b'{"event": "trigger", "acqNum": 2, "logfn": "20240528-1.log", "time": 1716908691.516984, "time_formatted": "2024-05-28T11:04:51.516984-04:00", "keys": ["left"], "keys_time": 1716908691.6779673, "keys_time_str": "2024-05-28T11:04:51.677967-04:00"}', type='QRCODE', rect=Rect(left=655, top=235, width=609, height=609), polygon=[Point(x=655, y=235), Point(x=657, y=844), Point(x=1264, y=844), Point(x=1264, y=237)], quality=1, orientation='UP')]
+Same QR code: continue
+Found QR code: [Decoded(data=b'{"event": "trigger", "acqNum": 2, "logfn": "20240528-1.log", "time": 1716908691.516984, "time_formatted": "2024-05-28T11:04:51.516984-04:00", "keys": ["left"], "keys_time": 1716908691.6779673, "keys_time_str": "2024-05-28T11:04:51.677967-04:00"}', type='QRCODE', rect=Rect(left=655, top=235, width=609, height=609), polygon=[Point(x=655, y=235), Point(x=657, y=844), Point(x=1264, y=844), Point(x=1264, y=237)], quality=1, orientation='UP')]
+Same QR code: continue
+Found QR code: [Decoded(data=b'{"event": "trigger", "acqNum": 2, "logfn": "20240528-1.log", "time": 1716908691.516984, "time_formatted": "2024-05-28T11:04:51.516984-04:00", "keys": ["left"], "keys_time": 1716908691.6779673, "keys_time_str": "2024-05-28T11:04:51.677967-04:00"}', type='QRCODE', rect=Rect(left=655, top=235, width=609, height=609), polygon=[Point(x=655, y=235), Point(x=657, y=844), Point(x=1264, y=844), Point(x=1264, y=237)], quality=1, orientation='UP')]
+Same QR code: continue
+Found QR code: [Decoded(data=b'{"event": "trigger", "acqNum": 2, "logfn": "20240528-1.log", "time": 1716908691.516984, "time_formatted": "2024-05-28T11:04:51.516984-04:00", "keys": ["left"], "keys_time": 1716908691.6779673, "keys_time_str": "2024-05-28T11:04:51.677967-04:00"}', type='QRCODE', rect=Rect(left=655, top=235, width=609, height=609), polygon=[Point(x=655, y=235), Point(x=657, y=844), Point(x=1264, y=844), Point(x=1264, y=237)], quality=1, orientation='UP')]
+Same QR code: continue
+Found QR code: [Decoded(data=b'{"event": "trigger", "acqNum": 2, "logfn": "20240528-1.log", "time": 1716908691.516984, "time_formatted": "2024-05-28T11:04:51.516984-04:00", "keys": ["left"], "keys_time": 1716908691.6779673, "keys_time_str": "2024-05-28T11:04:51.677967-04:00"}', type='QRCODE', rect=Rect(left=655, top=235, width=609, height=609), polygon=[Point(x=655, y=235), Point(x=657, y=844), Point(x=1264, y=844), Point(x=1264, y=237)], quality=1, orientation='UP')]
+Same QR code: continue
+Found QR code: [Decoded(data=b'{"event": "trigger", "acqNum": 2, "logfn": "20240528-1.log", "time": 1716908691.516984, "time_formatted": "2024-05-28T11:04:51.516984-04:00", "keys": ["left"], "keys_time": 1716908691.6779673, "keys_time_str": "2024-05-28T11:04:51.677967-04:00"}', type='QRCODE', rect=Rect(left=655, top=235, width=609, height=609), polygon=[Point(x=655, y=235), Point(x=657, y=844), Point(x=1264, y=844), Point(x=1264, y=237)], quality=1, orientation='UP')]
+Same QR code: continue
+Found QR code: [Decoded(data=b'{"event": "trigger", "acqNum": 2, "logfn": "20240528-1.log", "time": 1716908691.516984, "time_formatted": "2024-05-28T11:04:51.516984-04:00", "keys": ["left"], "keys_time": 1716908691.6779673, "keys_time_str": "2024-05-28T11:04:51.677967-04:00"}', type='QRCODE', rect=Rect(left=655, top=235, width=609, height=609), polygon=[Point(x=655, y=235), Point(x=657, y=844), Point(x=1264, y=844), Point(x=1264, y=237)], quality=1, orientation='UP')]
+Same QR code: continue
+QR: QrRecord(frames=[10905, 10936], times=[181.733, 182.25 sec], duration=0.5169999999999959 sec, isotimes=[2024-05-28 11:04:51.648000, 2024-05-28 11:04:52.165000], data={'event': 'trigger', 'acqNum': 2, 'logfn': '20240528-1.log', 'time': 1716908691.516984, 'time_formatted': '2024-05-28T11:04:51.516984-04:00', 'keys': ['left'], 'keys_time': 1716908691.6779673, 'keys_time_str': '2024-05-28T11:04:51.677967-04:00'})
+ - QR code isotime : 2024-05-28 11:04:51.648000
+ - Event isotime   : 2024-05-28 11:04:51.516984 / dt=-0.131016 sec
+ - Keys isotime    : 2024-05-28 11:04:51.677967 / dt=0.029967 sec
+iframe=10950 1.3178296119697257
+Found QR code: [Decoded(data=b'{"event": "trigger", "acqNum": 3, "logfn": "20240528-1.log", "time": 1716908692.2375066, "time_formatted": "2024-05-28T11:04:52.237507-04:00", "keys": ["q"], "keys_time": 1716908692.6048167, "keys_time_str": "2024-05-28T11:04:52.604817-04:00"}', type='QRCODE', rect=Rect(left=655, top=235, width=609, height=609), polygon=[Point(x=655, y=235), Point(x=657, y=844), Point(x=1264, y=844), Point(x=1264, y=237)], quality=1, orientation='UP')]
+New QR code: {'event': 'trigger', 'acqNum': 3, 'logfn': '20240528-1.log', 'time': 1716908692.2375066, 'time_formatted': '2024-05-28T11:04:52.237507-04:00', 'keys': ['q'], 'keys_time': 1716908692.6048167, 'keys_time_str': '2024-05-28T11:04:52.604817-04:00'}
+Found QR code: [Decoded(data=b'{"event": "trigger", "acqNum": 3, "logfn": "20240528-1.log", "time": 1716908692.2375066, "time_formatted": "2024-05-28T11:04:52.237507-04:00", "keys": ["q"], "keys_time": 1716908692.6048167, "keys_time_str": "2024-05-28T11:04:52.604817-04:00"}', type='QRCODE', rect=Rect(left=655, top=235, width=609, height=609), polygon=[Point(x=655, y=235), Point(x=657, y=844), Point(x=1264, y=844), Point(x=1264, y=237)], quality=1, orientation='UP')]
+Same QR code: continue
+Found QR code: [Decoded(data=b'{"event": "trigger", "acqNum": 3, "logfn": "20240528-1.log", "time": 1716908692.2375066, "time_formatted": "2024-05-28T11:04:52.237507-04:00", "keys": ["q"], "keys_time": 1716908692.6048167, "keys_time_str": "2024-05-28T11:04:52.604817-04:00"}', type='QRCODE', rect=Rect(left=655, top=235, width=609, height=609), polygon=[Point(x=655, y=235), Point(x=657, y=844), Point(x=1264, y=844), Point(x=1264, y=237)], quality=1, orientation='UP')]
+Same QR code: continue
+Found QR code: [Decoded(data=b'{"event": "trigger", "acqNum": 3, "logfn": "20240528-1.log", "time": 1716908692.2375066, "time_formatted": "2024-05-28T11:04:52.237507-04:00", "keys": ["q"], "keys_time": 1716908692.6048167, "keys_time_str": "2024-05-28T11:04:52.604817-04:00"}', type='QRCODE', rect=Rect(left=655, top=235, width=609, height=609), polygon=[Point(x=655, y=235), Point(x=657, y=844), Point(x=1264, y=844), Point(x=1264, y=237)], quality=1, orientation='UP')]
+Same QR code: continue
+Found QR code: [Decoded(data=b'{"event": "trigger", "acqNum": 3, "logfn": "20240528-1.log", "time": 1716908692.2375066, "time_formatted": "2024-05-28T11:04:52.237507-04:00", "keys": ["q"], "keys_time": 1716908692.6048167, "keys_time_str": "2024-05-28T11:04:52.604817-04:00"}', type='QRCODE', rect=Rect(left=655, top=235, width=609, height=609), polygon=[Point(x=655, y=235), Point(x=657, y=844), Point(x=1264, y=844), Point(x=1264, y=237)], quality=1, orientation='UP')]
+Same QR code: continue
+Found QR code: [Decoded(data=b'{"event": "trigger", "acqNum": 3, "logfn": "20240528-1.log", "time": 1716908692.2375066, "time_formatted": "2024-05-28T11:04:52.237507-04:00", "keys": ["q"], "keys_time": 1716908692.6048167, "keys_time_str": "2024-05-28T11:04:52.604817-04:00"}', type='QRCODE', rect=Rect(left=655, top=235, width=609, height=609), polygon=[Point(x=655, y=235), Point(x=657, y=844), Point(x=1264, y=844), Point(x=1264, y=237)], quality=1, orientation='UP')]
+Same QR code: continue
+Found QR code: [Decoded(data=b'{"event": "trigger", "acqNum": 3, "logfn": "20240528-1.log", "time": 1716908692.2375066, "time_formatted": "2024-05-28T11:04:52.237507-04:00", "keys": ["q"], "keys_time": 1716908692.6048167, "keys_time_str": "2024-05-28T11:04:52.604817-04:00"}', type='QRCODE', rect=Rect(left=655, top=235, width=609, height=609), polygon=[Point(x=655, y=235), Point(x=657, y=844), Point(x=1264, y=844), Point(x=1264, y=237)], quality=1, orientation='UP')]
+Same QR code: continue
+Found QR code: [Decoded(data=b'{"event": "trigger", "acqNum": 3, "logfn": "20240528-1.log", "time": 1716908692.2375066, "time_formatted": "2024-05-28T11:04:52.237507-04:00", "keys": ["q"], "keys_time": 1716908692.6048167, "keys_time_str": "2024-05-28T11:04:52.604817-04:00"}', type='QRCODE', rect=Rect(left=655, top=235, width=609, height=609), polygon=[Point(x=655, y=235), Point(x=657, y=844), Point(x=1264, y=844), Point(x=1264, y=237)], quality=1, orientation='UP')]
+Same QR code: continue
+Found QR code: [Decoded(data=b'{"event": "trigger", "acqNum": 3, "logfn": "20240528-1.log", "time": 1716908692.2375066, "time_formatted": "2024-05-28T11:04:52.237507-04:00", "keys": ["q"], "keys_time": 1716908692.6048167, "keys_time_str": "2024-05-28T11:04:52.604817-04:00"}', type='QRCODE', rect=Rect(left=655, top=235, width=609, height=609), polygon=[Point(x=655, y=235), Point(x=657, y=844), Point(x=1264, y=844), Point(x=1264, y=237)], quality=1, orientation='UP')]
+Same QR code: continue
+Found QR code: [Decoded(data=b'{"event": "trigger", "acqNum": 3, "logfn": "20240528-1.log", "time": 1716908692.2375066, "time_formatted": "2024-05-28T11:04:52.237507-04:00", "keys": ["q"], "keys_time": 1716908692.6048167, "keys_time_str": "2024-05-28T11:04:52.604817-04:00"}', type='QRCODE', rect=Rect(left=655, top=235, width=609, height=609), polygon=[Point(x=655, y=235), Point(x=657, y=844), Point(x=1264, y=844), Point(x=1264, y=237)], quality=1, orientation='UP')]
+Same QR code: continue
+Found QR code: [Decoded(data=b'{"event": "trigger", "acqNum": 3, "logfn": "20240528-1.log", "time": 1716908692.2375066, "time_formatted": "2024-05-28T11:04:52.237507-04:00", "keys": ["q"], "keys_time": 1716908692.6048167, "keys_time_str": "2024-05-28T11:04:52.604817-04:00"}', type='QRCODE', rect=Rect(left=655, top=235, width=609, height=609), polygon=[Point(x=655, y=235), Point(x=657, y=844), Point(x=1264, y=844), Point(x=1264, y=237)], quality=1, orientation='UP')]
+Same QR code: continue
+Found QR code: [Decoded(data=b'{"event": "trigger", "acqNum": 3, "logfn": "20240528-1.log", "time": 1716908692.2375066, "time_formatted": "2024-05-28T11:04:52.237507-04:00", "keys": ["q"], "keys_time": 1716908692.6048167, "keys_time_str": "2024-05-28T11:04:52.604817-04:00"}', type='QRCODE', rect=Rect(left=655, top=235, width=609, height=609), polygon=[Point(x=655, y=235), Point(x=657, y=844), Point(x=1264, y=844), Point(x=1264, y=237)], quality=1, orientation='UP')]
+Same QR code: continue
+Found QR code: [Decoded(data=b'{"event": "trigger", "acqNum": 3, "logfn": "20240528-1.log", "time": 1716908692.2375066, "time_formatted": "2024-05-28T11:04:52.237507-04:00", "keys": ["q"], "keys_time": 1716908692.6048167, "keys_time_str": "2024-05-28T11:04:52.604817-04:00"}', type='QRCODE', rect=Rect(left=655, top=235, width=609, height=609), polygon=[Point(x=655, y=235), Point(x=657, y=844), Point(x=1264, y=844), Point(x=1264, y=237)], quality=1, orientation='UP')]
+Same QR code: continue
+Found QR code: [Decoded(data=b'{"event": "trigger", "acqNum": 3, "logfn": "20240528-1.log", "time": 1716908692.2375066, "time_formatted": "2024-05-28T11:04:52.237507-04:00", "keys": ["q"], "keys_time": 1716908692.6048167, "keys_time_str": "2024-05-28T11:04:52.604817-04:00"}', type='QRCODE', rect=Rect(left=655, top=235, width=609, height=609), polygon=[Point(x=655, y=235), Point(x=657, y=844), Point(x=1264, y=844), Point(x=1264, y=237)], quality=1, orientation='UP')]
+Same QR code: continue
+Found QR code: [Decoded(data=b'{"event": "trigger", "acqNum": 3, "logfn": "20240528-1.log", "time": 1716908692.2375066, "time_formatted": "2024-05-28T11:04:52.237507-04:00", "keys": ["q"], "keys_time": 1716908692.6048167, "keys_time_str": "2024-05-28T11:04:52.604817-04:00"}', type='QRCODE', rect=Rect(left=655, top=235, width=609, height=609), polygon=[Point(x=655, y=235), Point(x=657, y=844), Point(x=1264, y=844), Point(x=1264, y=237)], quality=1, orientation='UP')]
+Same QR code: continue
+Found QR code: [Decoded(data=b'{"event": "trigger", "acqNum": 3, "logfn": "20240528-1.log", "time": 1716908692.2375066, "time_formatted": "2024-05-28T11:04:52.237507-04:00", "keys": ["q"], "keys_time": 1716908692.6048167, "keys_time_str": "2024-05-28T11:04:52.604817-04:00"}', type='QRCODE', rect=Rect(left=655, top=235, width=609, height=609), polygon=[Point(x=655, y=235), Point(x=657, y=844), Point(x=1264, y=844), Point(x=1264, y=237)], quality=1, orientation='UP')]
+Same QR code: continue
+Found QR code: [Decoded(data=b'{"event": "trigger", "acqNum": 3, "logfn": "20240528-1.log", "time": 1716908692.2375066, "time_formatted": "2024-05-28T11:04:52.237507-04:00", "keys": ["q"], "keys_time": 1716908692.6048167, "keys_time_str": "2024-05-28T11:04:52.604817-04:00"}', type='QRCODE', rect=Rect(left=655, top=235, width=609, height=609), polygon=[Point(x=655, y=235), Point(x=657, y=844), Point(x=1264, y=844), Point(x=1264, y=237)], quality=1, orientation='UP')]
+Same QR code: continue
+Found QR code: [Decoded(data=b'{"event": "trigger", "acqNum": 3, "logfn": "20240528-1.log", "time": 1716908692.2375066, "time_formatted": "2024-05-28T11:04:52.237507-04:00", "keys": ["q"], "keys_time": 1716908692.6048167, "keys_time_str": "2024-05-28T11:04:52.604817-04:00"}', type='QRCODE', rect=Rect(left=655, top=235, width=609, height=609), polygon=[Point(x=655, y=235), Point(x=657, y=844), Point(x=1264, y=844), Point(x=1264, y=237)], quality=1, orientation='UP')]
+Same QR code: continue
+Found QR code: [Decoded(data=b'{"event": "trigger", "acqNum": 3, "logfn": "20240528-1.log", "time": 1716908692.2375066, "time_formatted": "2024-05-28T11:04:52.237507-04:00", "keys": ["q"], "keys_time": 1716908692.6048167, "keys_time_str": "2024-05-28T11:04:52.604817-04:00"}', type='QRCODE', rect=Rect(left=655, top=235, width=609, height=609), polygon=[Point(x=655, y=235), Point(x=657, y=844), Point(x=1264, y=844), Point(x=1264, y=237)], quality=1, orientation='UP')]
+Same QR code: continue
+Found QR code: [Decoded(data=b'{"event": "trigger", "acqNum": 3, "logfn": "20240528-1.log", "time": 1716908692.2375066, "time_formatted": "2024-05-28T11:04:52.237507-04:00", "keys": ["q"], "keys_time": 1716908692.6048167, "keys_time_str": "2024-05-28T11:04:52.604817-04:00"}', type='QRCODE', rect=Rect(left=655, top=235, width=609, height=609), polygon=[Point(x=655, y=235), Point(x=657, y=844), Point(x=1264, y=844), Point(x=1264, y=237)], quality=1, orientation='UP')]
+Same QR code: continue
+Found QR code: [Decoded(data=b'{"event": "trigger", "acqNum": 3, "logfn": "20240528-1.log", "time": 1716908692.2375066, "time_formatted": "2024-05-28T11:04:52.237507-04:00", "keys": ["q"], "keys_time": 1716908692.6048167, "keys_time_str": "2024-05-28T11:04:52.604817-04:00"}', type='QRCODE', rect=Rect(left=655, top=235, width=609, height=609), polygon=[Point(x=655, y=235), Point(x=657, y=844), Point(x=1264, y=844), Point(x=1264, y=237)], quality=1, orientation='UP')]
+Same QR code: continue
+Found QR code: [Decoded(data=b'{"event": "trigger", "acqNum": 3, "logfn": "20240528-1.log", "time": 1716908692.2375066, "time_formatted": "2024-05-28T11:04:52.237507-04:00", "keys": ["q"], "keys_time": 1716908692.6048167, "keys_time_str": "2024-05-28T11:04:52.604817-04:00"}', type='QRCODE', rect=Rect(left=655, top=235, width=609, height=609), polygon=[Point(x=655, y=235), Point(x=657, y=844), Point(x=1264, y=844), Point(x=1264, y=237)], quality=1, orientation='UP')]
+Same QR code: continue
+Found QR code: [Decoded(data=b'{"event": "trigger", "acqNum": 3, "logfn": "20240528-1.log", "time": 1716908692.2375066, "time_formatted": "2024-05-28T11:04:52.237507-04:00", "keys": ["q"], "keys_time": 1716908692.6048167, "keys_time_str": "2024-05-28T11:04:52.604817-04:00"}', type='QRCODE', rect=Rect(left=655, top=235, width=609, height=609), polygon=[Point(x=655, y=235), Point(x=657, y=844), Point(x=1264, y=844), Point(x=1264, y=237)], quality=1, orientation='UP')]
+Same QR code: continue
+Found QR code: [Decoded(data=b'{"event": "trigger", "acqNum": 3, "logfn": "20240528-1.log", "time": 1716908692.2375066, "time_formatted": "2024-05-28T11:04:52.237507-04:00", "keys": ["q"], "keys_time": 1716908692.6048167, "keys_time_str": "2024-05-28T11:04:52.604817-04:00"}', type='QRCODE', rect=Rect(left=655, top=235, width=609, height=609), polygon=[Point(x=655, y=235), Point(x=657, y=844), Point(x=1264, y=844), Point(x=1264, y=237)], quality=1, orientation='UP')]
+Same QR code: continue
+Found QR code: [Decoded(data=b'{"event": "trigger", "acqNum": 3, "logfn": "20240528-1.log", "time": 1716908692.2375066, "time_formatted": "2024-05-28T11:04:52.237507-04:00", "keys": ["q"], "keys_time": 1716908692.6048167, "keys_time_str": "2024-05-28T11:04:52.604817-04:00"}', type='QRCODE', rect=Rect(left=655, top=235, width=609, height=609), polygon=[Point(x=655, y=235), Point(x=657, y=844), Point(x=1264, y=844), Point(x=1264, y=237)], quality=1, orientation='UP')]
+Same QR code: continue
+Found QR code: [Decoded(data=b'{"event": "trigger", "acqNum": 3, "logfn": "20240528-1.log", "time": 1716908692.2375066, "time_formatted": "2024-05-28T11:04:52.237507-04:00", "keys": ["q"], "keys_time": 1716908692.6048167, "keys_time_str": "2024-05-28T11:04:52.604817-04:00"}', type='QRCODE', rect=Rect(left=655, top=235, width=609, height=609), polygon=[Point(x=655, y=235), Point(x=657, y=844), Point(x=1264, y=844), Point(x=1264, y=237)], quality=1, orientation='UP')]
+Same QR code: continue
+Found QR code: [Decoded(data=b'{"event": "trigger", "acqNum": 3, "logfn": "20240528-1.log", "time": 1716908692.2375066, "time_formatted": "2024-05-28T11:04:52.237507-04:00", "keys": ["q"], "keys_time": 1716908692.6048167, "keys_time_str": "2024-05-28T11:04:52.604817-04:00"}', type='QRCODE', rect=Rect(left=655, top=235, width=609, height=609), polygon=[Point(x=655, y=235), Point(x=657, y=844), Point(x=1264, y=844), Point(x=1264, y=237)], quality=1, orientation='UP')]
+Same QR code: continue
+Found QR code: [Decoded(data=b'{"event": "trigger", "acqNum": 3, "logfn": "20240528-1.log", "time": 1716908692.2375066, "time_formatted": "2024-05-28T11:04:52.237507-04:00", "keys": ["q"], "keys_time": 1716908692.6048167, "keys_time_str": "2024-05-28T11:04:52.604817-04:00"}', type='QRCODE', rect=Rect(left=655, top=235, width=609, height=609), polygon=[Point(x=655, y=235), Point(x=657, y=844), Point(x=1264, y=844), Point(x=1264, y=237)], quality=1, orientation='UP')]
+Same QR code: continue
+Found QR code: [Decoded(data=b'{"event": "trigger", "acqNum": 3, "logfn": "20240528-1.log", "time": 1716908692.2375066, "time_formatted": "2024-05-28T11:04:52.237507-04:00", "keys": ["q"], "keys_time": 1716908692.6048167, "keys_time_str": "2024-05-28T11:04:52.604817-04:00"}', type='QRCODE', rect=Rect(left=655, top=235, width=609, height=609), polygon=[Point(x=655, y=235), Point(x=657, y=844), Point(x=1264, y=844), Point(x=1264, y=237)], quality=1, orientation='UP')]
+Same QR code: continue
+Found QR code: [Decoded(data=b'{"event": "trigger", "acqNum": 3, "logfn": "20240528-1.log", "time": 1716908692.2375066, "time_formatted": "2024-05-28T11:04:52.237507-04:00", "keys": ["q"], "keys_time": 1716908692.6048167, "keys_time_str": "2024-05-28T11:04:52.604817-04:00"}', type='QRCODE', rect=Rect(left=655, top=235, width=609, height=609), polygon=[Point(x=655, y=235), Point(x=657, y=844), Point(x=1264, y=844), Point(x=1264, y=237)], quality=1, orientation='UP')]
+Same QR code: continue
+Found QR code: [Decoded(data=b'{"event": "trigger", "acqNum": 3, "logfn": "20240528-1.log", "time": 1716908692.2375066, "time_formatted": "2024-05-28T11:04:52.237507-04:00", "keys": ["q"], "keys_time": 1716908692.6048167, "keys_time_str": "2024-05-28T11:04:52.604817-04:00"}', type='QRCODE', rect=Rect(left=655, top=235, width=609, height=609), polygon=[Point(x=655, y=235), Point(x=657, y=844), Point(x=1264, y=844), Point(x=1264, y=237)], quality=1, orientation='UP')]
+Same QR code: continue
+QR: QrRecord(frames=[10961, 10992], times=[182.667, 183.183 sec], duration=0.5159999999999911 sec, isotimes=[2024-05-28 11:04:52.582000, 2024-05-28 11:04:53.098000], data={'event': 'trigger', 'acqNum': 3, 'logfn': '20240528-1.log', 'time': 1716908692.2375066, 'time_formatted': '2024-05-28T11:04:52.237507-04:00', 'keys': ['q'], 'keys_time': 1716908692.6048167, 'keys_time_str': '2024-05-28T11:04:52.604817-04:00'})
+ - QR code isotime : 2024-05-28 11:04:52.582000
+ - Event isotime   : 2024-05-28 11:04:52.237507 / dt=-0.344493 sec
+ - Keys isotime    : 2024-05-28 11:04:52.604817 / dt=0.022817 sec
+iframe=11000 80.5728871186239
+iframe=11050 88.67730788339347
+iframe=11100 88.73144222467744
+iframe=11150 88.6611060349697
+iframe=11200 88.69529853070965
+iframe=11250 88.7358323829881
+iframe=11300 88.73141777372423
+iframe=11350 88.72998406664468
+iframe=11400 88.7274644641662
+iframe=11450 88.7261100018502
+iframe=11500 88.68425400114697
+iframe=11550 0.5888865911183001
+iframe=11600 1.2609694258366213
+iframe=11650 1.2491759459952259
+iframe=11700 1.2482636539702374
+iframe=11750 1.2490225481010773
+iframe=11800 1.2464635949761202
+iframe=11850 1.2572461839485365
+iframe=11900 1.2561331408789465
+iframe=11950 1.2630493621549619
+iframe=12000 1.2669550796845424
+iframe=12050 1.265356871589647
+iframe=12100 1.2456748099825934
+iframe=12150 1.2437311174570527
+iframe=12200 1.2477463358782035
+iframe=12250 1.2495440867389267
+iframe=12300 1.2494876990393804
+iframe=12350 1.244471966621623
+iframe=12400 1.2496445982344644
+iframe=12450 1.25323440574161
+iframe=12500 1.2551996827561471
+iframe=12550 1.2359010804168677
+iframe=12600 1.2384361782592255
+iframe=12650 1.2397153825676028
+iframe=12700 1.2436130818558455
+iframe=12750 1.245443389336005
+iframe=12800 1.3068203949447121
+iframe=12850 1.3148850779917876
+iframe=12900 1.3150725374828423
+iframe=12950 1.3275945990972207
+iframe=13000 1.3339769804147072
+iframe=13050 1.3046236466403434
+iframe=13100 1.3043734955780655
+iframe=13150 1.3197221181845333
+iframe=13200 1.3319408829968533
+iframe=13250 1.336925345977035
+iframe=13300 1.3137058714826448
+iframe=13350 1.3142914474734613
+iframe=13400 1.3247884711503517
+iframe=13450 1.3389282651997714
+iframe=13500 1.3413663452169946
+iframe=13550 1.2852070576368635
+iframe=13600 1.2870049898619154
+iframe=13650 1.2894417098752249
+iframe=13700 1.294965605356259
+iframe=13750 1.313044744068448
+iframe=13800 1.2749205161593147
+iframe=13850 1.277766568155389
+iframe=13900 1.279593585457043
+iframe=13950 1.2839337264753652
+iframe=14000 1.286029312147473
+iframe=14050 1.2768812888137115
+iframe=14100 1.2792712515645885
+iframe=14150 1.2817013581928263
+iframe=14200 1.2840862547606586
+iframe=14250 1.289846985895723
+iframe=14300 1.2663338973515565
+iframe=14350 1.2663216162561648
+iframe=14400 1.2659888026606294
+iframe=14450 1.2825809089535094
+iframe=14500 1.3030673870650555
+iframe=14550 1.2630155434246133
+iframe=14600 1.2641067233796597
+iframe=14650 1.2661641451367462
+iframe=14700 1.2676094056505112
+iframe=14750 1.2722446217712198
+iframe=14800 1.2783589158562856
+iframe=14850 1.2742467570402898
+iframe=14900 1.2795410426448262
+iframe=14950 1.2813058936125408
+iframe=15000 1.2867762155200548
+iframe=15050 1.2919117335275172
+iframe=15100 1.2867828264129004
+iframe=15150 1.293495319543238
+iframe=15200 1.3061741551246628
+iframe=15250 1.3112891630218402
+iframe=15300 1.2631836482514525
+iframe=15350 1.262484089169002
+iframe=15400 1.2676097687587862
+iframe=15450 1.2720748097222725
+iframe=15500 1.2716453508275996
+iframe=15550 1.271330804548036
+iframe=15600 1.2756730309864501
+iframe=15650 1.2756522437921343
+iframe=15700 1.2849054892825789
+iframe=15750 1.2882552832261853
+iframe=15800 1.2812621162707514
+iframe=15850 1.2767297228671521
+iframe=15900 1.274292467460047
+iframe=15950 1.2797283305189568
+iframe=16000 1.2832659383697966
+iframe=16050 1.2472739065601923
+iframe=16100 1.2497050312124567
+iframe=16150 1.250133735984516
+iframe=16200 1.2519741763380632
+iframe=16250 1.255454132520644
+iframe=16300 1.276709305617431
+Found QR code: [Decoded(data=b'{"event": "trigger", "acqNum": 0, "logfn": "20240528-1.log", "time": 1716908702.8112624, "time_formatted": "2024-05-28T11:05:02.811262-04:00", "keys": ["rshift"], "keys_time": 1716908782.2445529, "keys_time_str": "2024-05-28T11:06:22.244553-04:00"}', type='QRCODE', rect=Rect(left=655, top=235, width=609, height=609), polygon=[Point(x=655, y=235), Point(x=657, y=844), Point(x=1264, y=844), Point(x=1264, y=237)], quality=1, orientation='UP')]
+New QR code: {'event': 'trigger', 'acqNum': 0, 'logfn': '20240528-1.log', 'time': 1716908702.8112624, 'time_formatted': '2024-05-28T11:05:02.811262-04:00', 'keys': ['rshift'], 'keys_time': 1716908782.2445529, 'keys_time_str': '2024-05-28T11:06:22.244553-04:00'}
+Found QR code: [Decoded(data=b'{"event": "trigger", "acqNum": 0, "logfn": "20240528-1.log", "time": 1716908702.8112624, "time_formatted": "2024-05-28T11:05:02.811262-04:00", "keys": ["rshift"], "keys_time": 1716908782.2445529, "keys_time_str": "2024-05-28T11:06:22.244553-04:00"}', type='QRCODE', rect=Rect(left=655, top=235, width=609, height=609), polygon=[Point(x=655, y=235), Point(x=657, y=844), Point(x=1264, y=844), Point(x=1264, y=237)], quality=1, orientation='UP')]
+Same QR code: continue
+Found QR code: [Decoded(data=b'{"event": "trigger", "acqNum": 0, "logfn": "20240528-1.log", "time": 1716908702.8112624, "time_formatted": "2024-05-28T11:05:02.811262-04:00", "keys": ["rshift"], "keys_time": 1716908782.2445529, "keys_time_str": "2024-05-28T11:06:22.244553-04:00"}', type='QRCODE', rect=Rect(left=655, top=235, width=609, height=609), polygon=[Point(x=655, y=235), Point(x=657, y=844), Point(x=1264, y=844), Point(x=1264, y=237)], quality=1, orientation='UP')]
+Same QR code: continue
+Found QR code: [Decoded(data=b'{"event": "trigger", "acqNum": 0, "logfn": "20240528-1.log", "time": 1716908702.8112624, "time_formatted": "2024-05-28T11:05:02.811262-04:00", "keys": ["rshift"], "keys_time": 1716908782.2445529, "keys_time_str": "2024-05-28T11:06:22.244553-04:00"}', type='QRCODE', rect=Rect(left=655, top=235, width=609, height=609), polygon=[Point(x=655, y=235), Point(x=657, y=844), Point(x=1264, y=844), Point(x=1264, y=237)], quality=1, orientation='UP')]
+Same QR code: continue
+Found QR code: [Decoded(data=b'{"event": "trigger", "acqNum": 0, "logfn": "20240528-1.log", "time": 1716908702.8112624, "time_formatted": "2024-05-28T11:05:02.811262-04:00", "keys": ["rshift"], "keys_time": 1716908782.2445529, "keys_time_str": "2024-05-28T11:06:22.244553-04:00"}', type='QRCODE', rect=Rect(left=655, top=235, width=609, height=609), polygon=[Point(x=655, y=235), Point(x=657, y=844), Point(x=1264, y=844), Point(x=1264, y=237)], quality=1, orientation='UP')]
+Same QR code: continue
+Found QR code: [Decoded(data=b'{"event": "trigger", "acqNum": 0, "logfn": "20240528-1.log", "time": 1716908702.8112624, "time_formatted": "2024-05-28T11:05:02.811262-04:00", "keys": ["rshift"], "keys_time": 1716908782.2445529, "keys_time_str": "2024-05-28T11:06:22.244553-04:00"}', type='QRCODE', rect=Rect(left=655, top=235, width=609, height=609), polygon=[Point(x=655, y=235), Point(x=657, y=844), Point(x=1264, y=844), Point(x=1264, y=237)], quality=1, orientation='UP')]
+Same QR code: continue
+Found QR code: [Decoded(data=b'{"event": "trigger", "acqNum": 0, "logfn": "20240528-1.log", "time": 1716908702.8112624, "time_formatted": "2024-05-28T11:05:02.811262-04:00", "keys": ["rshift"], "keys_time": 1716908782.2445529, "keys_time_str": "2024-05-28T11:06:22.244553-04:00"}', type='QRCODE', rect=Rect(left=655, top=235, width=609, height=609), polygon=[Point(x=655, y=235), Point(x=657, y=844), Point(x=1264, y=844), Point(x=1264, y=237)], quality=1, orientation='UP')]
+Same QR code: continue
+Found QR code: [Decoded(data=b'{"event": "trigger", "acqNum": 0, "logfn": "20240528-1.log", "time": 1716908702.8112624, "time_formatted": "2024-05-28T11:05:02.811262-04:00", "keys": ["rshift"], "keys_time": 1716908782.2445529, "keys_time_str": "2024-05-28T11:06:22.244553-04:00"}', type='QRCODE', rect=Rect(left=655, top=235, width=609, height=609), polygon=[Point(x=655, y=235), Point(x=657, y=844), Point(x=1264, y=844), Point(x=1264, y=237)], quality=1, orientation='UP')]
+Same QR code: continue
+Found QR code: [Decoded(data=b'{"event": "trigger", "acqNum": 0, "logfn": "20240528-1.log", "time": 1716908702.8112624, "time_formatted": "2024-05-28T11:05:02.811262-04:00", "keys": ["rshift"], "keys_time": 1716908782.2445529, "keys_time_str": "2024-05-28T11:06:22.244553-04:00"}', type='QRCODE', rect=Rect(left=655, top=235, width=609, height=609), polygon=[Point(x=655, y=235), Point(x=657, y=844), Point(x=1264, y=844), Point(x=1264, y=237)], quality=1, orientation='UP')]
+Same QR code: continue
+iframe=16350 58.94563447288282
+Found QR code: [Decoded(data=b'{"event": "trigger", "acqNum": 0, "logfn": "20240528-1.log", "time": 1716908702.8112624, "time_formatted": "2024-05-28T11:05:02.811262-04:00", "keys": ["rshift"], "keys_time": 1716908782.2445529, "keys_time_str": "2024-05-28T11:06:22.244553-04:00"}', type='QRCODE', rect=Rect(left=655, top=235, width=609, height=609), polygon=[Point(x=655, y=235), Point(x=657, y=844), Point(x=1264, y=844), Point(x=1264, y=237)], quality=1, orientation='UP')]
+Same QR code: continue
+Found QR code: [Decoded(data=b'{"event": "trigger", "acqNum": 0, "logfn": "20240528-1.log", "time": 1716908702.8112624, "time_formatted": "2024-05-28T11:05:02.811262-04:00", "keys": ["rshift"], "keys_time": 1716908782.2445529, "keys_time_str": "2024-05-28T11:06:22.244553-04:00"}', type='QRCODE', rect=Rect(left=655, top=235, width=609, height=609), polygon=[Point(x=655, y=235), Point(x=657, y=844), Point(x=1264, y=844), Point(x=1264, y=237)], quality=1, orientation='UP')]
+Same QR code: continue
+Found QR code: [Decoded(data=b'{"event": "trigger", "acqNum": 0, "logfn": "20240528-1.log", "time": 1716908702.8112624, "time_formatted": "2024-05-28T11:05:02.811262-04:00", "keys": ["rshift"], "keys_time": 1716908782.2445529, "keys_time_str": "2024-05-28T11:06:22.244553-04:00"}', type='QRCODE', rect=Rect(left=655, top=235, width=609, height=609), polygon=[Point(x=655, y=235), Point(x=657, y=844), Point(x=1264, y=844), Point(x=1264, y=237)], quality=1, orientation='UP')]
+Same QR code: continue
+Found QR code: [Decoded(data=b'{"event": "trigger", "acqNum": 0, "logfn": "20240528-1.log", "time": 1716908702.8112624, "time_formatted": "2024-05-28T11:05:02.811262-04:00", "keys": ["rshift"], "keys_time": 1716908782.2445529, "keys_time_str": "2024-05-28T11:06:22.244553-04:00"}', type='QRCODE', rect=Rect(left=655, top=235, width=609, height=609), polygon=[Point(x=655, y=235), Point(x=657, y=844), Point(x=1264, y=844), Point(x=1264, y=237)], quality=1, orientation='UP')]
+Same QR code: continue
+Found QR code: [Decoded(data=b'{"event": "trigger", "acqNum": 0, "logfn": "20240528-1.log", "time": 1716908702.8112624, "time_formatted": "2024-05-28T11:05:02.811262-04:00", "keys": ["rshift"], "keys_time": 1716908782.2445529, "keys_time_str": "2024-05-28T11:06:22.244553-04:00"}', type='QRCODE', rect=Rect(left=655, top=235, width=609, height=609), polygon=[Point(x=655, y=235), Point(x=657, y=844), Point(x=1264, y=844), Point(x=1264, y=237)], quality=1, orientation='UP')]
+Same QR code: continue
+Found QR code: [Decoded(data=b'{"event": "trigger", "acqNum": 0, "logfn": "20240528-1.log", "time": 1716908702.8112624, "time_formatted": "2024-05-28T11:05:02.811262-04:00", "keys": ["rshift"], "keys_time": 1716908782.2445529, "keys_time_str": "2024-05-28T11:06:22.244553-04:00"}', type='QRCODE', rect=Rect(left=655, top=235, width=609, height=609), polygon=[Point(x=655, y=235), Point(x=657, y=844), Point(x=1264, y=844), Point(x=1264, y=237)], quality=1, orientation='UP')]
+Same QR code: continue
+Found QR code: [Decoded(data=b'{"event": "trigger", "acqNum": 0, "logfn": "20240528-1.log", "time": 1716908702.8112624, "time_formatted": "2024-05-28T11:05:02.811262-04:00", "keys": ["rshift"], "keys_time": 1716908782.2445529, "keys_time_str": "2024-05-28T11:06:22.244553-04:00"}', type='QRCODE', rect=Rect(left=655, top=235, width=609, height=609), polygon=[Point(x=655, y=235), Point(x=657, y=844), Point(x=1264, y=844), Point(x=1264, y=237)], quality=1, orientation='UP')]
+Same QR code: continue
+Found QR code: [Decoded(data=b'{"event": "trigger", "acqNum": 0, "logfn": "20240528-1.log", "time": 1716908702.8112624, "time_formatted": "2024-05-28T11:05:02.811262-04:00", "keys": ["rshift"], "keys_time": 1716908782.2445529, "keys_time_str": "2024-05-28T11:06:22.244553-04:00"}', type='QRCODE', rect=Rect(left=655, top=235, width=609, height=609), polygon=[Point(x=655, y=235), Point(x=657, y=844), Point(x=1264, y=844), Point(x=1264, y=237)], quality=1, orientation='UP')]
+Same QR code: continue
+Found QR code: [Decoded(data=b'{"event": "trigger", "acqNum": 0, "logfn": "20240528-1.log", "time": 1716908702.8112624, "time_formatted": "2024-05-28T11:05:02.811262-04:00", "keys": ["rshift"], "keys_time": 1716908782.2445529, "keys_time_str": "2024-05-28T11:06:22.244553-04:00"}', type='QRCODE', rect=Rect(left=655, top=235, width=609, height=609), polygon=[Point(x=655, y=235), Point(x=657, y=844), Point(x=1264, y=844), Point(x=1264, y=237)], quality=1, orientation='UP')]
+Same QR code: continue
+Found QR code: [Decoded(data=b'{"event": "trigger", "acqNum": 0, "logfn": "20240528-1.log", "time": 1716908702.8112624, "time_formatted": "2024-05-28T11:05:02.811262-04:00", "keys": ["rshift"], "keys_time": 1716908782.2445529, "keys_time_str": "2024-05-28T11:06:22.244553-04:00"}', type='QRCODE', rect=Rect(left=655, top=235, width=609, height=609), polygon=[Point(x=655, y=235), Point(x=657, y=844), Point(x=1264, y=844), Point(x=1264, y=237)], quality=1, orientation='UP')]
+Same QR code: continue
+Found QR code: [Decoded(data=b'{"event": "trigger", "acqNum": 0, "logfn": "20240528-1.log", "time": 1716908702.8112624, "time_formatted": "2024-05-28T11:05:02.811262-04:00", "keys": ["rshift"], "keys_time": 1716908782.2445529, "keys_time_str": "2024-05-28T11:06:22.244553-04:00"}', type='QRCODE', rect=Rect(left=655, top=235, width=609, height=609), polygon=[Point(x=655, y=235), Point(x=657, y=844), Point(x=1264, y=844), Point(x=1264, y=237)], quality=1, orientation='UP')]
+Same QR code: continue
+Found QR code: [Decoded(data=b'{"event": "trigger", "acqNum": 0, "logfn": "20240528-1.log", "time": 1716908702.8112624, "time_formatted": "2024-05-28T11:05:02.811262-04:00", "keys": ["rshift"], "keys_time": 1716908782.2445529, "keys_time_str": "2024-05-28T11:06:22.244553-04:00"}', type='QRCODE', rect=Rect(left=655, top=235, width=609, height=609), polygon=[Point(x=655, y=235), Point(x=657, y=844), Point(x=1264, y=844), Point(x=1264, y=237)], quality=1, orientation='UP')]
+Same QR code: continue
+Found QR code: [Decoded(data=b'{"event": "trigger", "acqNum": 0, "logfn": "20240528-1.log", "time": 1716908702.8112624, "time_formatted": "2024-05-28T11:05:02.811262-04:00", "keys": ["rshift"], "keys_time": 1716908782.2445529, "keys_time_str": "2024-05-28T11:06:22.244553-04:00"}', type='QRCODE', rect=Rect(left=655, top=235, width=609, height=609), polygon=[Point(x=655, y=235), Point(x=657, y=844), Point(x=1264, y=844), Point(x=1264, y=237)], quality=1, orientation='UP')]
+Same QR code: continue
+Found QR code: [Decoded(data=b'{"event": "trigger", "acqNum": 0, "logfn": "20240528-1.log", "time": 1716908702.8112624, "time_formatted": "2024-05-28T11:05:02.811262-04:00", "keys": ["rshift"], "keys_time": 1716908782.2445529, "keys_time_str": "2024-05-28T11:06:22.244553-04:00"}', type='QRCODE', rect=Rect(left=655, top=235, width=609, height=609), polygon=[Point(x=655, y=235), Point(x=657, y=844), Point(x=1264, y=844), Point(x=1264, y=237)], quality=1, orientation='UP')]
+Same QR code: continue
+Found QR code: [Decoded(data=b'{"event": "trigger", "acqNum": 0, "logfn": "20240528-1.log", "time": 1716908702.8112624, "time_formatted": "2024-05-28T11:05:02.811262-04:00", "keys": ["rshift"], "keys_time": 1716908782.2445529, "keys_time_str": "2024-05-28T11:06:22.244553-04:00"}', type='QRCODE', rect=Rect(left=655, top=235, width=609, height=609), polygon=[Point(x=655, y=235), Point(x=657, y=844), Point(x=1264, y=844), Point(x=1264, y=237)], quality=1, orientation='UP')]
+Same QR code: continue
+Found QR code: [Decoded(data=b'{"event": "trigger", "acqNum": 0, "logfn": "20240528-1.log", "time": 1716908702.8112624, "time_formatted": "2024-05-28T11:05:02.811262-04:00", "keys": ["rshift"], "keys_time": 1716908782.2445529, "keys_time_str": "2024-05-28T11:06:22.244553-04:00"}', type='QRCODE', rect=Rect(left=655, top=235, width=609, height=609), polygon=[Point(x=655, y=235), Point(x=657, y=844), Point(x=1264, y=844), Point(x=1264, y=237)], quality=1, orientation='UP')]
+Same QR code: continue
+Found QR code: [Decoded(data=b'{"event": "trigger", "acqNum": 0, "logfn": "20240528-1.log", "time": 1716908702.8112624, "time_formatted": "2024-05-28T11:05:02.811262-04:00", "keys": ["rshift"], "keys_time": 1716908782.2445529, "keys_time_str": "2024-05-28T11:06:22.244553-04:00"}', type='QRCODE', rect=Rect(left=655, top=235, width=609, height=609), polygon=[Point(x=655, y=235), Point(x=657, y=844), Point(x=1264, y=844), Point(x=1264, y=237)], quality=1, orientation='UP')]
+Same QR code: continue
+Found QR code: [Decoded(data=b'{"event": "trigger", "acqNum": 0, "logfn": "20240528-1.log", "time": 1716908702.8112624, "time_formatted": "2024-05-28T11:05:02.811262-04:00", "keys": ["rshift"], "keys_time": 1716908782.2445529, "keys_time_str": "2024-05-28T11:06:22.244553-04:00"}', type='QRCODE', rect=Rect(left=655, top=235, width=609, height=609), polygon=[Point(x=655, y=235), Point(x=657, y=844), Point(x=1264, y=844), Point(x=1264, y=237)], quality=1, orientation='UP')]
+Same QR code: continue
+Found QR code: [Decoded(data=b'{"event": "trigger", "acqNum": 0, "logfn": "20240528-1.log", "time": 1716908702.8112624, "time_formatted": "2024-05-28T11:05:02.811262-04:00", "keys": ["rshift"], "keys_time": 1716908782.2445529, "keys_time_str": "2024-05-28T11:06:22.244553-04:00"}', type='QRCODE', rect=Rect(left=655, top=235, width=609, height=609), polygon=[Point(x=655, y=235), Point(x=657, y=844), Point(x=1264, y=844), Point(x=1264, y=237)], quality=1, orientation='UP')]
+Same QR code: continue
+Found QR code: [Decoded(data=b'{"event": "trigger", "acqNum": 0, "logfn": "20240528-1.log", "time": 1716908702.8112624, "time_formatted": "2024-05-28T11:05:02.811262-04:00", "keys": ["rshift"], "keys_time": 1716908782.2445529, "keys_time_str": "2024-05-28T11:06:22.244553-04:00"}', type='QRCODE', rect=Rect(left=655, top=235, width=609, height=609), polygon=[Point(x=655, y=235), Point(x=657, y=844), Point(x=1264, y=844), Point(x=1264, y=237)], quality=1, orientation='UP')]
+Same QR code: continue
+Found QR code: [Decoded(data=b'{"event": "trigger", "acqNum": 0, "logfn": "20240528-1.log", "time": 1716908702.8112624, "time_formatted": "2024-05-28T11:05:02.811262-04:00", "keys": ["rshift"], "keys_time": 1716908782.2445529, "keys_time_str": "2024-05-28T11:06:22.244553-04:00"}', type='QRCODE', rect=Rect(left=655, top=235, width=609, height=609), polygon=[Point(x=655, y=235), Point(x=657, y=844), Point(x=1264, y=844), Point(x=1264, y=237)], quality=1, orientation='UP')]
+Same QR code: continue
+Found QR code: [Decoded(data=b'{"event": "trigger", "acqNum": 0, "logfn": "20240528-1.log", "time": 1716908702.8112624, "time_formatted": "2024-05-28T11:05:02.811262-04:00", "keys": ["rshift"], "keys_time": 1716908782.2445529, "keys_time_str": "2024-05-28T11:06:22.244553-04:00"}', type='QRCODE', rect=Rect(left=655, top=235, width=609, height=609), polygon=[Point(x=655, y=235), Point(x=657, y=844), Point(x=1264, y=844), Point(x=1264, y=237)], quality=1, orientation='UP')]
+Same QR code: continue
+QR: QrRecord(frames=[16341, 16372], times=[272.333, 272.85 sec], duration=0.5169999999999959 sec, isotimes=[2024-05-28 11:06:22.248000, 2024-05-28 11:06:22.765000], data={'event': 'trigger', 'acqNum': 0, 'logfn': '20240528-1.log', 'time': 1716908702.8112624, 'time_formatted': '2024-05-28T11:05:02.811262-04:00', 'keys': ['rshift'], 'keys_time': 1716908782.2445529, 'keys_time_str': '2024-05-28T11:06:22.244553-04:00'})
+ - QR code isotime : 2024-05-28 11:06:22.248000
+ - Event isotime   : 2024-05-28 11:05:02.811262 / dt=-79.436738 sec
+ - Keys isotime    : 2024-05-28 11:06:22.244553 / dt=-0.003447 sec
+iframe=16400 1.3212963849796793
+iframe=16450 1.3207928002902176
+iframe=16500 1.3208320005334042
+iframe=16550 1.320370710682057
+iframe=16600 1.2763443892113648
+iframe=16650 1.2768450354848557
+iframe=16700 1.2791003529302787
+iframe=16750 1.2880142767494416
+Found QR code: [Decoded(data=b'{"event": "trigger", "acqNum": 1, "logfn": "20240528-1.log", "time": 1716908782.837086, "time_formatted": "2024-05-28T11:06:22.837086-04:00", "keys": ["5"], "keys_time": 1716908789.4357178, "keys_time_str": "2024-05-28T11:06:29.435718-04:00"}', type='QRCODE', rect=Rect(left=655, top=235, width=609, height=609), polygon=[Point(x=655, y=235), Point(x=657, y=844), Point(x=1264, y=844), Point(x=1264, y=237)], quality=1, orientation='UP')]
+New QR code: {'event': 'trigger', 'acqNum': 1, 'logfn': '20240528-1.log', 'time': 1716908782.837086, 'time_formatted': '2024-05-28T11:06:22.837086-04:00', 'keys': ['5'], 'keys_time': 1716908789.4357178, 'keys_time_str': '2024-05-28T11:06:29.435718-04:00'}
+Found QR code: [Decoded(data=b'{"event": "trigger", "acqNum": 1, "logfn": "20240528-1.log", "time": 1716908782.837086, "time_formatted": "2024-05-28T11:06:22.837086-04:00", "keys": ["5"], "keys_time": 1716908789.4357178, "keys_time_str": "2024-05-28T11:06:29.435718-04:00"}', type='QRCODE', rect=Rect(left=655, top=235, width=609, height=609), polygon=[Point(x=655, y=235), Point(x=657, y=844), Point(x=1264, y=844), Point(x=1264, y=237)], quality=1, orientation='UP')]
+Same QR code: continue
+Found QR code: [Decoded(data=b'{"event": "trigger", "acqNum": 1, "logfn": "20240528-1.log", "time": 1716908782.837086, "time_formatted": "2024-05-28T11:06:22.837086-04:00", "keys": ["5"], "keys_time": 1716908789.4357178, "keys_time_str": "2024-05-28T11:06:29.435718-04:00"}', type='QRCODE', rect=Rect(left=655, top=235, width=609, height=609), polygon=[Point(x=655, y=235), Point(x=657, y=844), Point(x=1264, y=844), Point(x=1264, y=237)], quality=1, orientation='UP')]
+Same QR code: continue
+Found QR code: [Decoded(data=b'{"event": "trigger", "acqNum": 1, "logfn": "20240528-1.log", "time": 1716908782.837086, "time_formatted": "2024-05-28T11:06:22.837086-04:00", "keys": ["5"], "keys_time": 1716908789.4357178, "keys_time_str": "2024-05-28T11:06:29.435718-04:00"}', type='QRCODE', rect=Rect(left=655, top=235, width=609, height=609), polygon=[Point(x=655, y=235), Point(x=657, y=844), Point(x=1264, y=844), Point(x=1264, y=237)], quality=1, orientation='UP')]
+Same QR code: continue
+Found QR code: [Decoded(data=b'{"event": "trigger", "acqNum": 1, "logfn": "20240528-1.log", "time": 1716908782.837086, "time_formatted": "2024-05-28T11:06:22.837086-04:00", "keys": ["5"], "keys_time": 1716908789.4357178, "keys_time_str": "2024-05-28T11:06:29.435718-04:00"}', type='QRCODE', rect=Rect(left=655, top=235, width=609, height=609), polygon=[Point(x=655, y=235), Point(x=657, y=844), Point(x=1264, y=844), Point(x=1264, y=237)], quality=1, orientation='UP')]
+Same QR code: continue
+Found QR code: [Decoded(data=b'{"event": "trigger", "acqNum": 1, "logfn": "20240528-1.log", "time": 1716908782.837086, "time_formatted": "2024-05-28T11:06:22.837086-04:00", "keys": ["5"], "keys_time": 1716908789.4357178, "keys_time_str": "2024-05-28T11:06:29.435718-04:00"}', type='QRCODE', rect=Rect(left=655, top=235, width=609, height=609), polygon=[Point(x=655, y=235), Point(x=657, y=844), Point(x=1264, y=844), Point(x=1264, y=237)], quality=1, orientation='UP')]
+Same QR code: continue
+Found QR code: [Decoded(data=b'{"event": "trigger", "acqNum": 1, "logfn": "20240528-1.log", "time": 1716908782.837086, "time_formatted": "2024-05-28T11:06:22.837086-04:00", "keys": ["5"], "keys_time": 1716908789.4357178, "keys_time_str": "2024-05-28T11:06:29.435718-04:00"}', type='QRCODE', rect=Rect(left=655, top=235, width=609, height=609), polygon=[Point(x=655, y=235), Point(x=657, y=844), Point(x=1264, y=844), Point(x=1264, y=237)], quality=1, orientation='UP')]
+Same QR code: continue
+Found QR code: [Decoded(data=b'{"event": "trigger", "acqNum": 1, "logfn": "20240528-1.log", "time": 1716908782.837086, "time_formatted": "2024-05-28T11:06:22.837086-04:00", "keys": ["5"], "keys_time": 1716908789.4357178, "keys_time_str": "2024-05-28T11:06:29.435718-04:00"}', type='QRCODE', rect=Rect(left=655, top=235, width=609, height=609), polygon=[Point(x=655, y=235), Point(x=657, y=844), Point(x=1264, y=844), Point(x=1264, y=237)], quality=1, orientation='UP')]
+Same QR code: continue
+Found QR code: [Decoded(data=b'{"event": "trigger", "acqNum": 1, "logfn": "20240528-1.log", "time": 1716908782.837086, "time_formatted": "2024-05-28T11:06:22.837086-04:00", "keys": ["5"], "keys_time": 1716908789.4357178, "keys_time_str": "2024-05-28T11:06:29.435718-04:00"}', type='QRCODE', rect=Rect(left=655, top=235, width=609, height=609), polygon=[Point(x=655, y=235), Point(x=657, y=844), Point(x=1264, y=844), Point(x=1264, y=237)], quality=1, orientation='UP')]
+Same QR code: continue
+Found QR code: [Decoded(data=b'{"event": "trigger", "acqNum": 1, "logfn": "20240528-1.log", "time": 1716908782.837086, "time_formatted": "2024-05-28T11:06:22.837086-04:00", "keys": ["5"], "keys_time": 1716908789.4357178, "keys_time_str": "2024-05-28T11:06:29.435718-04:00"}', type='QRCODE', rect=Rect(left=655, top=235, width=609, height=609), polygon=[Point(x=655, y=235), Point(x=657, y=844), Point(x=1264, y=844), Point(x=1264, y=237)], quality=1, orientation='UP')]
+Same QR code: continue
+Found QR code: [Decoded(data=b'{"event": "trigger", "acqNum": 1, "logfn": "20240528-1.log", "time": 1716908782.837086, "time_formatted": "2024-05-28T11:06:22.837086-04:00", "keys": ["5"], "keys_time": 1716908789.4357178, "keys_time_str": "2024-05-28T11:06:29.435718-04:00"}', type='QRCODE', rect=Rect(left=655, top=235, width=609, height=609), polygon=[Point(x=655, y=235), Point(x=657, y=844), Point(x=1264, y=844), Point(x=1264, y=237)], quality=1, orientation='UP')]
+Same QR code: continue
+Found QR code: [Decoded(data=b'{"event": "trigger", "acqNum": 1, "logfn": "20240528-1.log", "time": 1716908782.837086, "time_formatted": "2024-05-28T11:06:22.837086-04:00", "keys": ["5"], "keys_time": 1716908789.4357178, "keys_time_str": "2024-05-28T11:06:29.435718-04:00"}', type='QRCODE', rect=Rect(left=655, top=235, width=609, height=609), polygon=[Point(x=655, y=235), Point(x=657, y=844), Point(x=1264, y=844), Point(x=1264, y=237)], quality=1, orientation='UP')]
+Same QR code: continue
+Found QR code: [Decoded(data=b'{"event": "trigger", "acqNum": 1, "logfn": "20240528-1.log", "time": 1716908782.837086, "time_formatted": "2024-05-28T11:06:22.837086-04:00", "keys": ["5"], "keys_time": 1716908789.4357178, "keys_time_str": "2024-05-28T11:06:29.435718-04:00"}', type='QRCODE', rect=Rect(left=655, top=235, width=609, height=609), polygon=[Point(x=655, y=235), Point(x=657, y=844), Point(x=1264, y=844), Point(x=1264, y=237)], quality=1, orientation='UP')]
+Same QR code: continue
+Found QR code: [Decoded(data=b'{"event": "trigger", "acqNum": 1, "logfn": "20240528-1.log", "time": 1716908782.837086, "time_formatted": "2024-05-28T11:06:22.837086-04:00", "keys": ["5"], "keys_time": 1716908789.4357178, "keys_time_str": "2024-05-28T11:06:29.435718-04:00"}', type='QRCODE', rect=Rect(left=655, top=235, width=609, height=609), polygon=[Point(x=655, y=235), Point(x=657, y=844), Point(x=1264, y=844), Point(x=1264, y=237)], quality=1, orientation='UP')]
+Same QR code: continue
+Found QR code: [Decoded(data=b'{"event": "trigger", "acqNum": 1, "logfn": "20240528-1.log", "time": 1716908782.837086, "time_formatted": "2024-05-28T11:06:22.837086-04:00", "keys": ["5"], "keys_time": 1716908789.4357178, "keys_time_str": "2024-05-28T11:06:29.435718-04:00"}', type='QRCODE', rect=Rect(left=655, top=235, width=609, height=609), polygon=[Point(x=655, y=235), Point(x=657, y=844), Point(x=1264, y=844), Point(x=1264, y=237)], quality=1, orientation='UP')]
+Same QR code: continue
+Found QR code: [Decoded(data=b'{"event": "trigger", "acqNum": 1, "logfn": "20240528-1.log", "time": 1716908782.837086, "time_formatted": "2024-05-28T11:06:22.837086-04:00", "keys": ["5"], "keys_time": 1716908789.4357178, "keys_time_str": "2024-05-28T11:06:29.435718-04:00"}', type='QRCODE', rect=Rect(left=655, top=235, width=609, height=609), polygon=[Point(x=655, y=235), Point(x=657, y=844), Point(x=1264, y=844), Point(x=1264, y=237)], quality=1, orientation='UP')]
+Same QR code: continue
+iframe=16800 58.81514362449848
+Found QR code: [Decoded(data=b'{"event": "trigger", "acqNum": 1, "logfn": "20240528-1.log", "time": 1716908782.837086, "time_formatted": "2024-05-28T11:06:22.837086-04:00", "keys": ["5"], "keys_time": 1716908789.4357178, "keys_time_str": "2024-05-28T11:06:29.435718-04:00"}', type='QRCODE', rect=Rect(left=655, top=235, width=609, height=609), polygon=[Point(x=655, y=235), Point(x=657, y=844), Point(x=1264, y=844), Point(x=1264, y=237)], quality=1, orientation='UP')]
+Same QR code: continue
+Found QR code: [Decoded(data=b'{"event": "trigger", "acqNum": 1, "logfn": "20240528-1.log", "time": 1716908782.837086, "time_formatted": "2024-05-28T11:06:22.837086-04:00", "keys": ["5"], "keys_time": 1716908789.4357178, "keys_time_str": "2024-05-28T11:06:29.435718-04:00"}', type='QRCODE', rect=Rect(left=655, top=235, width=609, height=609), polygon=[Point(x=655, y=235), Point(x=657, y=844), Point(x=1264, y=844), Point(x=1264, y=237)], quality=1, orientation='UP')]
+Same QR code: continue
+Found QR code: [Decoded(data=b'{"event": "trigger", "acqNum": 1, "logfn": "20240528-1.log", "time": 1716908782.837086, "time_formatted": "2024-05-28T11:06:22.837086-04:00", "keys": ["5"], "keys_time": 1716908789.4357178, "keys_time_str": "2024-05-28T11:06:29.435718-04:00"}', type='QRCODE', rect=Rect(left=655, top=235, width=609, height=609), polygon=[Point(x=655, y=235), Point(x=657, y=844), Point(x=1264, y=844), Point(x=1264, y=237)], quality=1, orientation='UP')]
+Same QR code: continue
+Found QR code: [Decoded(data=b'{"event": "trigger", "acqNum": 1, "logfn": "20240528-1.log", "time": 1716908782.837086, "time_formatted": "2024-05-28T11:06:22.837086-04:00", "keys": ["5"], "keys_time": 1716908789.4357178, "keys_time_str": "2024-05-28T11:06:29.435718-04:00"}', type='QRCODE', rect=Rect(left=655, top=235, width=609, height=609), polygon=[Point(x=655, y=235), Point(x=657, y=844), Point(x=1264, y=844), Point(x=1264, y=237)], quality=1, orientation='UP')]
+Same QR code: continue
+QR: QrRecord(frames=[16784, 16804], times=[279.717, 280.05 sec], duration=0.33300000000002683 sec, isotimes=[2024-05-28 11:06:29.632000, 2024-05-28 11:06:29.965000], data={'event': 'trigger', 'acqNum': 1, 'logfn': '20240528-1.log', 'time': 1716908782.837086, 'time_formatted': '2024-05-28T11:06:22.837086-04:00', 'keys': ['5'], 'keys_time': 1716908789.4357178, 'keys_time_str': '2024-05-28T11:06:29.435718-04:00'})
+ - QR code isotime : 2024-05-28 11:06:29.632000
+ - Event isotime   : 2024-05-28 11:06:22.837086 / dt=-6.794914 sec
+ - Keys isotime    : 2024-05-28 11:06:29.435718 / dt=-0.196282 sec
+iframe=16850 1.3234831299554977
+Found QR code: [Decoded(data=b'{"event": "trigger", "acqNum": 2, "logfn": "20240528-1.log", "time": 1716908790.009786, "time_formatted": "2024-05-28T11:06:30.009786-04:00", "keys": ["5"], "keys_time": 1716908791.4346604, "keys_time_str": "2024-05-28T11:06:31.434660-04:00"}', type='QRCODE', rect=Rect(left=655, top=235, width=609, height=609), polygon=[Point(x=655, y=235), Point(x=657, y=844), Point(x=1264, y=844), Point(x=1264, y=237)], quality=1, orientation='UP')]
+New QR code: {'event': 'trigger', 'acqNum': 2, 'logfn': '20240528-1.log', 'time': 1716908790.009786, 'time_formatted': '2024-05-28T11:06:30.009786-04:00', 'keys': ['5'], 'keys_time': 1716908791.4346604, 'keys_time_str': '2024-05-28T11:06:31.434660-04:00'}
+Found QR code: [Decoded(data=b'{"event": "trigger", "acqNum": 2, "logfn": "20240528-1.log", "time": 1716908790.009786, "time_formatted": "2024-05-28T11:06:30.009786-04:00", "keys": ["5"], "keys_time": 1716908791.4346604, "keys_time_str": "2024-05-28T11:06:31.434660-04:00"}', type='QRCODE', rect=Rect(left=655, top=235, width=609, height=609), polygon=[Point(x=655, y=235), Point(x=657, y=844), Point(x=1264, y=844), Point(x=1264, y=237)], quality=1, orientation='UP')]
+Same QR code: continue
+Found QR code: [Decoded(data=b'{"event": "trigger", "acqNum": 2, "logfn": "20240528-1.log", "time": 1716908790.009786, "time_formatted": "2024-05-28T11:06:30.009786-04:00", "keys": ["5"], "keys_time": 1716908791.4346604, "keys_time_str": "2024-05-28T11:06:31.434660-04:00"}', type='QRCODE', rect=Rect(left=655, top=235, width=609, height=609), polygon=[Point(x=655, y=235), Point(x=657, y=844), Point(x=1264, y=844), Point(x=1264, y=237)], quality=1, orientation='UP')]
+Same QR code: continue
+Found QR code: [Decoded(data=b'{"event": "trigger", "acqNum": 2, "logfn": "20240528-1.log", "time": 1716908790.009786, "time_formatted": "2024-05-28T11:06:30.009786-04:00", "keys": ["5"], "keys_time": 1716908791.4346604, "keys_time_str": "2024-05-28T11:06:31.434660-04:00"}', type='QRCODE', rect=Rect(left=655, top=235, width=609, height=609), polygon=[Point(x=655, y=235), Point(x=657, y=844), Point(x=1264, y=844), Point(x=1264, y=237)], quality=1, orientation='UP')]
+Same QR code: continue
+Found QR code: [Decoded(data=b'{"event": "trigger", "acqNum": 2, "logfn": "20240528-1.log", "time": 1716908790.009786, "time_formatted": "2024-05-28T11:06:30.009786-04:00", "keys": ["5"], "keys_time": 1716908791.4346604, "keys_time_str": "2024-05-28T11:06:31.434660-04:00"}', type='QRCODE', rect=Rect(left=655, top=235, width=609, height=609), polygon=[Point(x=655, y=235), Point(x=657, y=844), Point(x=1264, y=844), Point(x=1264, y=237)], quality=1, orientation='UP')]
+Same QR code: continue
+Found QR code: [Decoded(data=b'{"event": "trigger", "acqNum": 2, "logfn": "20240528-1.log", "time": 1716908790.009786, "time_formatted": "2024-05-28T11:06:30.009786-04:00", "keys": ["5"], "keys_time": 1716908791.4346604, "keys_time_str": "2024-05-28T11:06:31.434660-04:00"}', type='QRCODE', rect=Rect(left=655, top=235, width=609, height=609), polygon=[Point(x=655, y=235), Point(x=657, y=844), Point(x=1264, y=844), Point(x=1264, y=237)], quality=1, orientation='UP')]
+Same QR code: continue
+Found QR code: [Decoded(data=b'{"event": "trigger", "acqNum": 2, "logfn": "20240528-1.log", "time": 1716908790.009786, "time_formatted": "2024-05-28T11:06:30.009786-04:00", "keys": ["5"], "keys_time": 1716908791.4346604, "keys_time_str": "2024-05-28T11:06:31.434660-04:00"}', type='QRCODE', rect=Rect(left=655, top=235, width=609, height=609), polygon=[Point(x=655, y=235), Point(x=657, y=844), Point(x=1264, y=844), Point(x=1264, y=237)], quality=1, orientation='UP')]
+Same QR code: continue
+Found QR code: [Decoded(data=b'{"event": "trigger", "acqNum": 2, "logfn": "20240528-1.log", "time": 1716908790.009786, "time_formatted": "2024-05-28T11:06:30.009786-04:00", "keys": ["5"], "keys_time": 1716908791.4346604, "keys_time_str": "2024-05-28T11:06:31.434660-04:00"}', type='QRCODE', rect=Rect(left=655, top=235, width=609, height=609), polygon=[Point(x=655, y=235), Point(x=657, y=844), Point(x=1264, y=844), Point(x=1264, y=237)], quality=1, orientation='UP')]
+Same QR code: continue
+Found QR code: [Decoded(data=b'{"event": "trigger", "acqNum": 2, "logfn": "20240528-1.log", "time": 1716908790.009786, "time_formatted": "2024-05-28T11:06:30.009786-04:00", "keys": ["5"], "keys_time": 1716908791.4346604, "keys_time_str": "2024-05-28T11:06:31.434660-04:00"}', type='QRCODE', rect=Rect(left=655, top=235, width=609, height=609), polygon=[Point(x=655, y=235), Point(x=657, y=844), Point(x=1264, y=844), Point(x=1264, y=237)], quality=1, orientation='UP')]
+Same QR code: continue
+Found QR code: [Decoded(data=b'{"event": "trigger", "acqNum": 2, "logfn": "20240528-1.log", "time": 1716908790.009786, "time_formatted": "2024-05-28T11:06:30.009786-04:00", "keys": ["5"], "keys_time": 1716908791.4346604, "keys_time_str": "2024-05-28T11:06:31.434660-04:00"}', type='QRCODE', rect=Rect(left=655, top=235, width=609, height=609), polygon=[Point(x=655, y=235), Point(x=657, y=844), Point(x=1264, y=844), Point(x=1264, y=237)], quality=1, orientation='UP')]
+Same QR code: continue
+iframe=16900 59.06395428992217
+Found QR code: [Decoded(data=b'{"event": "trigger", "acqNum": 2, "logfn": "20240528-1.log", "time": 1716908790.009786, "time_formatted": "2024-05-28T11:06:30.009786-04:00", "keys": ["5"], "keys_time": 1716908791.4346604, "keys_time_str": "2024-05-28T11:06:31.434660-04:00"}', type='QRCODE', rect=Rect(left=655, top=235, width=609, height=609), polygon=[Point(x=655, y=235), Point(x=657, y=844), Point(x=1264, y=844), Point(x=1264, y=237)], quality=1, orientation='UP')]
+Same QR code: continue
+Found QR code: [Decoded(data=b'{"event": "trigger", "acqNum": 2, "logfn": "20240528-1.log", "time": 1716908790.009786, "time_formatted": "2024-05-28T11:06:30.009786-04:00", "keys": ["5"], "keys_time": 1716908791.4346604, "keys_time_str": "2024-05-28T11:06:31.434660-04:00"}', type='QRCODE', rect=Rect(left=655, top=235, width=609, height=609), polygon=[Point(x=655, y=235), Point(x=657, y=844), Point(x=1264, y=844), Point(x=1264, y=237)], quality=1, orientation='UP')]
+Same QR code: continue
+Found QR code: [Decoded(data=b'{"event": "trigger", "acqNum": 2, "logfn": "20240528-1.log", "time": 1716908790.009786, "time_formatted": "2024-05-28T11:06:30.009786-04:00", "keys": ["5"], "keys_time": 1716908791.4346604, "keys_time_str": "2024-05-28T11:06:31.434660-04:00"}', type='QRCODE', rect=Rect(left=655, top=235, width=609, height=609), polygon=[Point(x=655, y=235), Point(x=657, y=844), Point(x=1264, y=844), Point(x=1264, y=237)], quality=1, orientation='UP')]
+Same QR code: continue
+Found QR code: [Decoded(data=b'{"event": "trigger", "acqNum": 2, "logfn": "20240528-1.log", "time": 1716908790.009786, "time_formatted": "2024-05-28T11:06:30.009786-04:00", "keys": ["5"], "keys_time": 1716908791.4346604, "keys_time_str": "2024-05-28T11:06:31.434660-04:00"}', type='QRCODE', rect=Rect(left=655, top=235, width=609, height=609), polygon=[Point(x=655, y=235), Point(x=657, y=844), Point(x=1264, y=844), Point(x=1264, y=237)], quality=1, orientation='UP')]
+Same QR code: continue
+Found QR code: [Decoded(data=b'{"event": "trigger", "acqNum": 2, "logfn": "20240528-1.log", "time": 1716908790.009786, "time_formatted": "2024-05-28T11:06:30.009786-04:00", "keys": ["5"], "keys_time": 1716908791.4346604, "keys_time_str": "2024-05-28T11:06:31.434660-04:00"}', type='QRCODE', rect=Rect(left=655, top=235, width=609, height=609), polygon=[Point(x=655, y=235), Point(x=657, y=844), Point(x=1264, y=844), Point(x=1264, y=237)], quality=1, orientation='UP')]
+Same QR code: continue
+Found QR code: [Decoded(data=b'{"event": "trigger", "acqNum": 2, "logfn": "20240528-1.log", "time": 1716908790.009786, "time_formatted": "2024-05-28T11:06:30.009786-04:00", "keys": ["5"], "keys_time": 1716908791.4346604, "keys_time_str": "2024-05-28T11:06:31.434660-04:00"}', type='QRCODE', rect=Rect(left=655, top=235, width=609, height=609), polygon=[Point(x=655, y=235), Point(x=657, y=844), Point(x=1264, y=844), Point(x=1264, y=237)], quality=1, orientation='UP')]
+Same QR code: continue
+Found QR code: [Decoded(data=b'{"event": "trigger", "acqNum": 2, "logfn": "20240528-1.log", "time": 1716908790.009786, "time_formatted": "2024-05-28T11:06:30.009786-04:00", "keys": ["5"], "keys_time": 1716908791.4346604, "keys_time_str": "2024-05-28T11:06:31.434660-04:00"}', type='QRCODE', rect=Rect(left=655, top=235, width=609, height=609), polygon=[Point(x=655, y=235), Point(x=657, y=844), Point(x=1264, y=844), Point(x=1264, y=237)], quality=1, orientation='UP')]
+Same QR code: continue
+Found QR code: [Decoded(data=b'{"event": "trigger", "acqNum": 2, "logfn": "20240528-1.log", "time": 1716908790.009786, "time_formatted": "2024-05-28T11:06:30.009786-04:00", "keys": ["5"], "keys_time": 1716908791.4346604, "keys_time_str": "2024-05-28T11:06:31.434660-04:00"}', type='QRCODE', rect=Rect(left=655, top=235, width=609, height=609), polygon=[Point(x=655, y=235), Point(x=657, y=844), Point(x=1264, y=844), Point(x=1264, y=237)], quality=1, orientation='UP')]
+Same QR code: continue
+Found QR code: [Decoded(data=b'{"event": "trigger", "acqNum": 2, "logfn": "20240528-1.log", "time": 1716908790.009786, "time_formatted": "2024-05-28T11:06:30.009786-04:00", "keys": ["5"], "keys_time": 1716908791.4346604, "keys_time_str": "2024-05-28T11:06:31.434660-04:00"}', type='QRCODE', rect=Rect(left=655, top=235, width=609, height=609), polygon=[Point(x=655, y=235), Point(x=657, y=844), Point(x=1264, y=844), Point(x=1264, y=237)], quality=1, orientation='UP')]
+Same QR code: continue
+Found QR code: [Decoded(data=b'{"event": "trigger", "acqNum": 2, "logfn": "20240528-1.log", "time": 1716908790.009786, "time_formatted": "2024-05-28T11:06:30.009786-04:00", "keys": ["5"], "keys_time": 1716908791.4346604, "keys_time_str": "2024-05-28T11:06:31.434660-04:00"}', type='QRCODE', rect=Rect(left=655, top=235, width=609, height=609), polygon=[Point(x=655, y=235), Point(x=657, y=844), Point(x=1264, y=844), Point(x=1264, y=237)], quality=1, orientation='UP')]
+Same QR code: continue
+Found QR code: [Decoded(data=b'{"event": "trigger", "acqNum": 2, "logfn": "20240528-1.log", "time": 1716908790.009786, "time_formatted": "2024-05-28T11:06:30.009786-04:00", "keys": ["5"], "keys_time": 1716908791.4346604, "keys_time_str": "2024-05-28T11:06:31.434660-04:00"}', type='QRCODE', rect=Rect(left=655, top=235, width=609, height=609), polygon=[Point(x=655, y=235), Point(x=657, y=844), Point(x=1264, y=844), Point(x=1264, y=237)], quality=1, orientation='UP')]
+Same QR code: continue
+Found QR code: [Decoded(data=b'{"event": "trigger", "acqNum": 2, "logfn": "20240528-1.log", "time": 1716908790.009786, "time_formatted": "2024-05-28T11:06:30.009786-04:00", "keys": ["5"], "keys_time": 1716908791.4346604, "keys_time_str": "2024-05-28T11:06:31.434660-04:00"}', type='QRCODE', rect=Rect(left=655, top=235, width=609, height=609), polygon=[Point(x=655, y=235), Point(x=657, y=844), Point(x=1264, y=844), Point(x=1264, y=237)], quality=1, orientation='UP')]
+Same QR code: continue
+Found QR code: [Decoded(data=b'{"event": "trigger", "acqNum": 2, "logfn": "20240528-1.log", "time": 1716908790.009786, "time_formatted": "2024-05-28T11:06:30.009786-04:00", "keys": ["5"], "keys_time": 1716908791.4346604, "keys_time_str": "2024-05-28T11:06:31.434660-04:00"}', type='QRCODE', rect=Rect(left=655, top=235, width=609, height=609), polygon=[Point(x=655, y=235), Point(x=657, y=844), Point(x=1264, y=844), Point(x=1264, y=237)], quality=1, orientation='UP')]
+Same QR code: continue
+Found QR code: [Decoded(data=b'{"event": "trigger", "acqNum": 2, "logfn": "20240528-1.log", "time": 1716908790.009786, "time_formatted": "2024-05-28T11:06:30.009786-04:00", "keys": ["5"], "keys_time": 1716908791.4346604, "keys_time_str": "2024-05-28T11:06:31.434660-04:00"}', type='QRCODE', rect=Rect(left=655, top=235, width=609, height=609), polygon=[Point(x=655, y=235), Point(x=657, y=844), Point(x=1264, y=844), Point(x=1264, y=237)], quality=1, orientation='UP')]
+Same QR code: continue
+Found QR code: [Decoded(data=b'{"event": "trigger", "acqNum": 2, "logfn": "20240528-1.log", "time": 1716908790.009786, "time_formatted": "2024-05-28T11:06:30.009786-04:00", "keys": ["5"], "keys_time": 1716908791.4346604, "keys_time_str": "2024-05-28T11:06:31.434660-04:00"}', type='QRCODE', rect=Rect(left=655, top=235, width=609, height=609), polygon=[Point(x=655, y=235), Point(x=657, y=844), Point(x=1264, y=844), Point(x=1264, y=237)], quality=1, orientation='UP')]
+Same QR code: continue
+Found QR code: [Decoded(data=b'{"event": "trigger", "acqNum": 2, "logfn": "20240528-1.log", "time": 1716908790.009786, "time_formatted": "2024-05-28T11:06:30.009786-04:00", "keys": ["5"], "keys_time": 1716908791.4346604, "keys_time_str": "2024-05-28T11:06:31.434660-04:00"}', type='QRCODE', rect=Rect(left=655, top=235, width=609, height=609), polygon=[Point(x=655, y=235), Point(x=657, y=844), Point(x=1264, y=844), Point(x=1264, y=237)], quality=1, orientation='UP')]
+Same QR code: continue
+Found QR code: [Decoded(data=b'{"event": "trigger", "acqNum": 2, "logfn": "20240528-1.log", "time": 1716908790.009786, "time_formatted": "2024-05-28T11:06:30.009786-04:00", "keys": ["5"], "keys_time": 1716908791.4346604, "keys_time_str": "2024-05-28T11:06:31.434660-04:00"}', type='QRCODE', rect=Rect(left=655, top=235, width=609, height=609), polygon=[Point(x=655, y=235), Point(x=657, y=844), Point(x=1264, y=844), Point(x=1264, y=237)], quality=1, orientation='UP')]
+Same QR code: continue
+Found QR code: [Decoded(data=b'{"event": "trigger", "acqNum": 2, "logfn": "20240528-1.log", "time": 1716908790.009786, "time_formatted": "2024-05-28T11:06:30.009786-04:00", "keys": ["5"], "keys_time": 1716908791.4346604, "keys_time_str": "2024-05-28T11:06:31.434660-04:00"}', type='QRCODE', rect=Rect(left=655, top=235, width=609, height=609), polygon=[Point(x=655, y=235), Point(x=657, y=844), Point(x=1264, y=844), Point(x=1264, y=237)], quality=1, orientation='UP')]
+Same QR code: continue
+Found QR code: [Decoded(data=b'{"event": "trigger", "acqNum": 2, "logfn": "20240528-1.log", "time": 1716908790.009786, "time_formatted": "2024-05-28T11:06:30.009786-04:00", "keys": ["5"], "keys_time": 1716908791.4346604, "keys_time_str": "2024-05-28T11:06:31.434660-04:00"}', type='QRCODE', rect=Rect(left=655, top=235, width=609, height=609), polygon=[Point(x=655, y=235), Point(x=657, y=844), Point(x=1264, y=844), Point(x=1264, y=237)], quality=1, orientation='UP')]
+Same QR code: continue
+Found QR code: [Decoded(data=b'{"event": "trigger", "acqNum": 2, "logfn": "20240528-1.log", "time": 1716908790.009786, "time_formatted": "2024-05-28T11:06:30.009786-04:00", "keys": ["5"], "keys_time": 1716908791.4346604, "keys_time_str": "2024-05-28T11:06:31.434660-04:00"}', type='QRCODE', rect=Rect(left=655, top=235, width=609, height=609), polygon=[Point(x=655, y=235), Point(x=657, y=844), Point(x=1264, y=844), Point(x=1264, y=237)], quality=1, orientation='UP')]
+Same QR code: continue
+Found QR code: [Decoded(data=b'{"event": "trigger", "acqNum": 2, "logfn": "20240528-1.log", "time": 1716908790.009786, "time_formatted": "2024-05-28T11:06:30.009786-04:00", "keys": ["5"], "keys_time": 1716908791.4346604, "keys_time_str": "2024-05-28T11:06:31.434660-04:00"}', type='QRCODE', rect=Rect(left=655, top=235, width=609, height=609), polygon=[Point(x=655, y=235), Point(x=657, y=844), Point(x=1264, y=844), Point(x=1264, y=237)], quality=1, orientation='UP')]
+Same QR code: continue
+Found QR code: [Decoded(data=b'{"event": "trigger", "acqNum": 2, "logfn": "20240528-1.log", "time": 1716908790.009786, "time_formatted": "2024-05-28T11:06:30.009786-04:00", "keys": ["5"], "keys_time": 1716908791.4346604, "keys_time_str": "2024-05-28T11:06:31.434660-04:00"}', type='QRCODE', rect=Rect(left=655, top=235, width=609, height=609), polygon=[Point(x=655, y=235), Point(x=657, y=844), Point(x=1264, y=844), Point(x=1264, y=237)], quality=1, orientation='UP')]
+Same QR code: continue
+Found QR code: [Decoded(data=b'{"event": "trigger", "acqNum": 2, "logfn": "20240528-1.log", "time": 1716908790.009786, "time_formatted": "2024-05-28T11:06:30.009786-04:00", "keys": ["5"], "keys_time": 1716908791.4346604, "keys_time_str": "2024-05-28T11:06:31.434660-04:00"}', type='QRCODE', rect=Rect(left=655, top=235, width=609, height=609), polygon=[Point(x=655, y=235), Point(x=657, y=844), Point(x=1264, y=844), Point(x=1264, y=237)], quality=1, orientation='UP')]
+Same QR code: continue
+QR: QrRecord(frames=[16890, 16923], times=[281.483, 282.033 sec], duration=0.5500000000000114 sec, isotimes=[2024-05-28 11:06:31.398000, 2024-05-28 11:06:31.948000], data={'event': 'trigger', 'acqNum': 2, 'logfn': '20240528-1.log', 'time': 1716908790.009786, 'time_formatted': '2024-05-28T11:06:30.009786-04:00', 'keys': ['5'], 'keys_time': 1716908791.4346604, 'keys_time_str': '2024-05-28T11:06:31.434660-04:00'})
+ - QR code isotime : 2024-05-28 11:06:31.398000
+ - Event isotime   : 2024-05-28 11:06:30.009786 / dt=-1.388214 sec
+ - Keys isotime    : 2024-05-28 11:06:31.434660 / dt=0.03666 sec
+iframe=16950 1.3232877470527389
+iframe=17000 1.319857913585989
+Found QR code: [Decoded(data=b'{"event": "trigger", "acqNum": 3, "logfn": "20240528-1.log", "time": 1716908791.995279, "time_formatted": "2024-05-28T11:06:31.995279-04:00", "keys": ["5"], "keys_time": 1716908793.4347296, "keys_time_str": "2024-05-28T11:06:33.434730-04:00"}', type='QRCODE', rect=Rect(left=655, top=235, width=609, height=609), polygon=[Point(x=655, y=235), Point(x=657, y=844), Point(x=1264, y=844), Point(x=1264, y=237)], quality=1, orientation='UP')]
+New QR code: {'event': 'trigger', 'acqNum': 3, 'logfn': '20240528-1.log', 'time': 1716908791.995279, 'time_formatted': '2024-05-28T11:06:31.995279-04:00', 'keys': ['5'], 'keys_time': 1716908793.4347296, 'keys_time_str': '2024-05-28T11:06:33.434730-04:00'}
+Found QR code: [Decoded(data=b'{"event": "trigger", "acqNum": 3, "logfn": "20240528-1.log", "time": 1716908791.995279, "time_formatted": "2024-05-28T11:06:31.995279-04:00", "keys": ["5"], "keys_time": 1716908793.4347296, "keys_time_str": "2024-05-28T11:06:33.434730-04:00"}', type='QRCODE', rect=Rect(left=655, top=235, width=609, height=609), polygon=[Point(x=655, y=235), Point(x=657, y=844), Point(x=1264, y=844), Point(x=1264, y=237)], quality=1, orientation='UP')]
+Same QR code: continue
+Found QR code: [Decoded(data=b'{"event": "trigger", "acqNum": 3, "logfn": "20240528-1.log", "time": 1716908791.995279, "time_formatted": "2024-05-28T11:06:31.995279-04:00", "keys": ["5"], "keys_time": 1716908793.4347296, "keys_time_str": "2024-05-28T11:06:33.434730-04:00"}', type='QRCODE', rect=Rect(left=655, top=235, width=609, height=609), polygon=[Point(x=655, y=235), Point(x=657, y=844), Point(x=1264, y=844), Point(x=1264, y=237)], quality=1, orientation='UP')]
+Same QR code: continue
+Found QR code: [Decoded(data=b'{"event": "trigger", "acqNum": 3, "logfn": "20240528-1.log", "time": 1716908791.995279, "time_formatted": "2024-05-28T11:06:31.995279-04:00", "keys": ["5"], "keys_time": 1716908793.4347296, "keys_time_str": "2024-05-28T11:06:33.434730-04:00"}', type='QRCODE', rect=Rect(left=655, top=235, width=609, height=609), polygon=[Point(x=655, y=235), Point(x=657, y=844), Point(x=1264, y=844), Point(x=1264, y=237)], quality=1, orientation='UP')]
+Same QR code: continue
+Found QR code: [Decoded(data=b'{"event": "trigger", "acqNum": 3, "logfn": "20240528-1.log", "time": 1716908791.995279, "time_formatted": "2024-05-28T11:06:31.995279-04:00", "keys": ["5"], "keys_time": 1716908793.4347296, "keys_time_str": "2024-05-28T11:06:33.434730-04:00"}', type='QRCODE', rect=Rect(left=655, top=235, width=609, height=609), polygon=[Point(x=655, y=235), Point(x=657, y=844), Point(x=1264, y=844), Point(x=1264, y=237)], quality=1, orientation='UP')]
+Same QR code: continue
+Found QR code: [Decoded(data=b'{"event": "trigger", "acqNum": 3, "logfn": "20240528-1.log", "time": 1716908791.995279, "time_formatted": "2024-05-28T11:06:31.995279-04:00", "keys": ["5"], "keys_time": 1716908793.4347296, "keys_time_str": "2024-05-28T11:06:33.434730-04:00"}', type='QRCODE', rect=Rect(left=655, top=235, width=609, height=609), polygon=[Point(x=655, y=235), Point(x=657, y=844), Point(x=1264, y=844), Point(x=1264, y=237)], quality=1, orientation='UP')]
+Same QR code: continue
+Found QR code: [Decoded(data=b'{"event": "trigger", "acqNum": 3, "logfn": "20240528-1.log", "time": 1716908791.995279, "time_formatted": "2024-05-28T11:06:31.995279-04:00", "keys": ["5"], "keys_time": 1716908793.4347296, "keys_time_str": "2024-05-28T11:06:33.434730-04:00"}', type='QRCODE', rect=Rect(left=655, top=235, width=609, height=609), polygon=[Point(x=655, y=235), Point(x=657, y=844), Point(x=1264, y=844), Point(x=1264, y=237)], quality=1, orientation='UP')]
+Same QR code: continue
+Found QR code: [Decoded(data=b'{"event": "trigger", "acqNum": 3, "logfn": "20240528-1.log", "time": 1716908791.995279, "time_formatted": "2024-05-28T11:06:31.995279-04:00", "keys": ["5"], "keys_time": 1716908793.4347296, "keys_time_str": "2024-05-28T11:06:33.434730-04:00"}', type='QRCODE', rect=Rect(left=655, top=235, width=609, height=609), polygon=[Point(x=655, y=235), Point(x=657, y=844), Point(x=1264, y=844), Point(x=1264, y=237)], quality=1, orientation='UP')]
+Same QR code: continue
+Found QR code: [Decoded(data=b'{"event": "trigger", "acqNum": 3, "logfn": "20240528-1.log", "time": 1716908791.995279, "time_formatted": "2024-05-28T11:06:31.995279-04:00", "keys": ["5"], "keys_time": 1716908793.4347296, "keys_time_str": "2024-05-28T11:06:33.434730-04:00"}', type='QRCODE', rect=Rect(left=655, top=235, width=609, height=609), polygon=[Point(x=655, y=235), Point(x=657, y=844), Point(x=1264, y=844), Point(x=1264, y=237)], quality=1, orientation='UP')]
+Same QR code: continue
+Found QR code: [Decoded(data=b'{"event": "trigger", "acqNum": 3, "logfn": "20240528-1.log", "time": 1716908791.995279, "time_formatted": "2024-05-28T11:06:31.995279-04:00", "keys": ["5"], "keys_time": 1716908793.4347296, "keys_time_str": "2024-05-28T11:06:33.434730-04:00"}', type='QRCODE', rect=Rect(left=655, top=235, width=609, height=609), polygon=[Point(x=655, y=235), Point(x=657, y=844), Point(x=1264, y=844), Point(x=1264, y=237)], quality=1, orientation='UP')]
+Same QR code: continue
+Found QR code: [Decoded(data=b'{"event": "trigger", "acqNum": 3, "logfn": "20240528-1.log", "time": 1716908791.995279, "time_formatted": "2024-05-28T11:06:31.995279-04:00", "keys": ["5"], "keys_time": 1716908793.4347296, "keys_time_str": "2024-05-28T11:06:33.434730-04:00"}', type='QRCODE', rect=Rect(left=655, top=235, width=609, height=609), polygon=[Point(x=655, y=235), Point(x=657, y=844), Point(x=1264, y=844), Point(x=1264, y=237)], quality=1, orientation='UP')]
+Same QR code: continue
+Found QR code: [Decoded(data=b'{"event": "trigger", "acqNum": 3, "logfn": "20240528-1.log", "time": 1716908791.995279, "time_formatted": "2024-05-28T11:06:31.995279-04:00", "keys": ["5"], "keys_time": 1716908793.4347296, "keys_time_str": "2024-05-28T11:06:33.434730-04:00"}', type='QRCODE', rect=Rect(left=655, top=235, width=609, height=609), polygon=[Point(x=655, y=235), Point(x=657, y=844), Point(x=1264, y=844), Point(x=1264, y=237)], quality=1, orientation='UP')]
+Same QR code: continue
+Found QR code: [Decoded(data=b'{"event": "trigger", "acqNum": 3, "logfn": "20240528-1.log", "time": 1716908791.995279, "time_formatted": "2024-05-28T11:06:31.995279-04:00", "keys": ["5"], "keys_time": 1716908793.4347296, "keys_time_str": "2024-05-28T11:06:33.434730-04:00"}', type='QRCODE', rect=Rect(left=655, top=235, width=609, height=609), polygon=[Point(x=655, y=235), Point(x=657, y=844), Point(x=1264, y=844), Point(x=1264, y=237)], quality=1, orientation='UP')]
+Same QR code: continue
+Found QR code: [Decoded(data=b'{"event": "trigger", "acqNum": 3, "logfn": "20240528-1.log", "time": 1716908791.995279, "time_formatted": "2024-05-28T11:06:31.995279-04:00", "keys": ["5"], "keys_time": 1716908793.4347296, "keys_time_str": "2024-05-28T11:06:33.434730-04:00"}', type='QRCODE', rect=Rect(left=655, top=235, width=609, height=609), polygon=[Point(x=655, y=235), Point(x=657, y=844), Point(x=1264, y=844), Point(x=1264, y=237)], quality=1, orientation='UP')]
+Same QR code: continue
+Found QR code: [Decoded(data=b'{"event": "trigger", "acqNum": 3, "logfn": "20240528-1.log", "time": 1716908791.995279, "time_formatted": "2024-05-28T11:06:31.995279-04:00", "keys": ["5"], "keys_time": 1716908793.4347296, "keys_time_str": "2024-05-28T11:06:33.434730-04:00"}', type='QRCODE', rect=Rect(left=655, top=235, width=609, height=609), polygon=[Point(x=655, y=235), Point(x=657, y=844), Point(x=1264, y=844), Point(x=1264, y=237)], quality=1, orientation='UP')]
+Same QR code: continue
+Found QR code: [Decoded(data=b'{"event": "trigger", "acqNum": 3, "logfn": "20240528-1.log", "time": 1716908791.995279, "time_formatted": "2024-05-28T11:06:31.995279-04:00", "keys": ["5"], "keys_time": 1716908793.4347296, "keys_time_str": "2024-05-28T11:06:33.434730-04:00"}', type='QRCODE', rect=Rect(left=655, top=235, width=609, height=609), polygon=[Point(x=655, y=235), Point(x=657, y=844), Point(x=1264, y=844), Point(x=1264, y=237)], quality=1, orientation='UP')]
+Same QR code: continue
+Found QR code: [Decoded(data=b'{"event": "trigger", "acqNum": 3, "logfn": "20240528-1.log", "time": 1716908791.995279, "time_formatted": "2024-05-28T11:06:31.995279-04:00", "keys": ["5"], "keys_time": 1716908793.4347296, "keys_time_str": "2024-05-28T11:06:33.434730-04:00"}', type='QRCODE', rect=Rect(left=655, top=235, width=609, height=609), polygon=[Point(x=655, y=235), Point(x=657, y=844), Point(x=1264, y=844), Point(x=1264, y=237)], quality=1, orientation='UP')]
+Same QR code: continue
+Found QR code: [Decoded(data=b'{"event": "trigger", "acqNum": 3, "logfn": "20240528-1.log", "time": 1716908791.995279, "time_formatted": "2024-05-28T11:06:31.995279-04:00", "keys": ["5"], "keys_time": 1716908793.4347296, "keys_time_str": "2024-05-28T11:06:33.434730-04:00"}', type='QRCODE', rect=Rect(left=655, top=235, width=609, height=609), polygon=[Point(x=655, y=235), Point(x=657, y=844), Point(x=1264, y=844), Point(x=1264, y=237)], quality=1, orientation='UP')]
+Same QR code: continue
+Found QR code: [Decoded(data=b'{"event": "trigger", "acqNum": 3, "logfn": "20240528-1.log", "time": 1716908791.995279, "time_formatted": "2024-05-28T11:06:31.995279-04:00", "keys": ["5"], "keys_time": 1716908793.4347296, "keys_time_str": "2024-05-28T11:06:33.434730-04:00"}', type='QRCODE', rect=Rect(left=655, top=235, width=609, height=609), polygon=[Point(x=655, y=235), Point(x=657, y=844), Point(x=1264, y=844), Point(x=1264, y=237)], quality=1, orientation='UP')]
+Same QR code: continue
+Found QR code: [Decoded(data=b'{"event": "trigger", "acqNum": 3, "logfn": "20240528-1.log", "time": 1716908791.995279, "time_formatted": "2024-05-28T11:06:31.995279-04:00", "keys": ["5"], "keys_time": 1716908793.4347296, "keys_time_str": "2024-05-28T11:06:33.434730-04:00"}', type='QRCODE', rect=Rect(left=655, top=235, width=609, height=609), polygon=[Point(x=655, y=235), Point(x=657, y=844), Point(x=1264, y=844), Point(x=1264, y=237)], quality=1, orientation='UP')]
+Same QR code: continue
+Found QR code: [Decoded(data=b'{"event": "trigger", "acqNum": 3, "logfn": "20240528-1.log", "time": 1716908791.995279, "time_formatted": "2024-05-28T11:06:31.995279-04:00", "keys": ["5"], "keys_time": 1716908793.4347296, "keys_time_str": "2024-05-28T11:06:33.434730-04:00"}', type='QRCODE', rect=Rect(left=655, top=235, width=609, height=609), polygon=[Point(x=655, y=235), Point(x=657, y=844), Point(x=1264, y=844), Point(x=1264, y=237)], quality=1, orientation='UP')]
+Same QR code: continue
+Found QR code: [Decoded(data=b'{"event": "trigger", "acqNum": 3, "logfn": "20240528-1.log", "time": 1716908791.995279, "time_formatted": "2024-05-28T11:06:31.995279-04:00", "keys": ["5"], "keys_time": 1716908793.4347296, "keys_time_str": "2024-05-28T11:06:33.434730-04:00"}', type='QRCODE', rect=Rect(left=655, top=235, width=609, height=609), polygon=[Point(x=655, y=235), Point(x=657, y=844), Point(x=1264, y=844), Point(x=1264, y=237)], quality=1, orientation='UP')]
+Same QR code: continue
+Found QR code: [Decoded(data=b'{"event": "trigger", "acqNum": 3, "logfn": "20240528-1.log", "time": 1716908791.995279, "time_formatted": "2024-05-28T11:06:31.995279-04:00", "keys": ["5"], "keys_time": 1716908793.4347296, "keys_time_str": "2024-05-28T11:06:33.434730-04:00"}', type='QRCODE', rect=Rect(left=655, top=235, width=609, height=609), polygon=[Point(x=655, y=235), Point(x=657, y=844), Point(x=1264, y=844), Point(x=1264, y=237)], quality=1, orientation='UP')]
+Same QR code: continue
+Found QR code: [Decoded(data=b'{"event": "trigger", "acqNum": 3, "logfn": "20240528-1.log", "time": 1716908791.995279, "time_formatted": "2024-05-28T11:06:31.995279-04:00", "keys": ["5"], "keys_time": 1716908793.4347296, "keys_time_str": "2024-05-28T11:06:33.434730-04:00"}', type='QRCODE', rect=Rect(left=655, top=235, width=609, height=609), polygon=[Point(x=655, y=235), Point(x=657, y=844), Point(x=1264, y=844), Point(x=1264, y=237)], quality=1, orientation='UP')]
+Same QR code: continue
+Found QR code: [Decoded(data=b'{"event": "trigger", "acqNum": 3, "logfn": "20240528-1.log", "time": 1716908791.995279, "time_formatted": "2024-05-28T11:06:31.995279-04:00", "keys": ["5"], "keys_time": 1716908793.4347296, "keys_time_str": "2024-05-28T11:06:33.434730-04:00"}', type='QRCODE', rect=Rect(left=655, top=235, width=609, height=609), polygon=[Point(x=655, y=235), Point(x=657, y=844), Point(x=1264, y=844), Point(x=1264, y=237)], quality=1, orientation='UP')]
+Same QR code: continue
+Found QR code: [Decoded(data=b'{"event": "trigger", "acqNum": 3, "logfn": "20240528-1.log", "time": 1716908791.995279, "time_formatted": "2024-05-28T11:06:31.995279-04:00", "keys": ["5"], "keys_time": 1716908793.4347296, "keys_time_str": "2024-05-28T11:06:33.434730-04:00"}', type='QRCODE', rect=Rect(left=655, top=235, width=609, height=609), polygon=[Point(x=655, y=235), Point(x=657, y=844), Point(x=1264, y=844), Point(x=1264, y=237)], quality=1, orientation='UP')]
+Same QR code: continue
+Found QR code: [Decoded(data=b'{"event": "trigger", "acqNum": 3, "logfn": "20240528-1.log", "time": 1716908791.995279, "time_formatted": "2024-05-28T11:06:31.995279-04:00", "keys": ["5"], "keys_time": 1716908793.4347296, "keys_time_str": "2024-05-28T11:06:33.434730-04:00"}', type='QRCODE', rect=Rect(left=655, top=235, width=609, height=609), polygon=[Point(x=655, y=235), Point(x=657, y=844), Point(x=1264, y=844), Point(x=1264, y=237)], quality=1, orientation='UP')]
+Same QR code: continue
+Found QR code: [Decoded(data=b'{"event": "trigger", "acqNum": 3, "logfn": "20240528-1.log", "time": 1716908791.995279, "time_formatted": "2024-05-28T11:06:31.995279-04:00", "keys": ["5"], "keys_time": 1716908793.4347296, "keys_time_str": "2024-05-28T11:06:33.434730-04:00"}', type='QRCODE', rect=Rect(left=655, top=235, width=609, height=609), polygon=[Point(x=655, y=235), Point(x=657, y=844), Point(x=1264, y=844), Point(x=1264, y=237)], quality=1, orientation='UP')]
+Same QR code: continue
+Found QR code: [Decoded(data=b'{"event": "trigger", "acqNum": 3, "logfn": "20240528-1.log", "time": 1716908791.995279, "time_formatted": "2024-05-28T11:06:31.995279-04:00", "keys": ["5"], "keys_time": 1716908793.4347296, "keys_time_str": "2024-05-28T11:06:33.434730-04:00"}', type='QRCODE', rect=Rect(left=655, top=235, width=609, height=609), polygon=[Point(x=655, y=235), Point(x=657, y=844), Point(x=1264, y=844), Point(x=1264, y=237)], quality=1, orientation='UP')]
+Same QR code: continue
+Found QR code: [Decoded(data=b'{"event": "trigger", "acqNum": 3, "logfn": "20240528-1.log", "time": 1716908791.995279, "time_formatted": "2024-05-28T11:06:31.995279-04:00", "keys": ["5"], "keys_time": 1716908793.4347296, "keys_time_str": "2024-05-28T11:06:33.434730-04:00"}', type='QRCODE', rect=Rect(left=655, top=235, width=609, height=609), polygon=[Point(x=655, y=235), Point(x=657, y=844), Point(x=1264, y=844), Point(x=1264, y=237)], quality=1, orientation='UP')]
+Same QR code: continue
+Found QR code: [Decoded(data=b'{"event": "trigger", "acqNum": 3, "logfn": "20240528-1.log", "time": 1716908791.995279, "time_formatted": "2024-05-28T11:06:31.995279-04:00", "keys": ["5"], "keys_time": 1716908793.4347296, "keys_time_str": "2024-05-28T11:06:33.434730-04:00"}', type='QRCODE', rect=Rect(left=655, top=235, width=609, height=609), polygon=[Point(x=655, y=235), Point(x=657, y=844), Point(x=1264, y=844), Point(x=1264, y=237)], quality=1, orientation='UP')]
+Same QR code: continue
+Found QR code: [Decoded(data=b'{"event": "trigger", "acqNum": 3, "logfn": "20240528-1.log", "time": 1716908791.995279, "time_formatted": "2024-05-28T11:06:31.995279-04:00", "keys": ["5"], "keys_time": 1716908793.4347296, "keys_time_str": "2024-05-28T11:06:33.434730-04:00"}', type='QRCODE', rect=Rect(left=655, top=235, width=609, height=609), polygon=[Point(x=655, y=235), Point(x=657, y=844), Point(x=1264, y=844), Point(x=1264, y=237)], quality=1, orientation='UP')]
+Same QR code: continue
+Found QR code: [Decoded(data=b'{"event": "trigger", "acqNum": 3, "logfn": "20240528-1.log", "time": 1716908791.995279, "time_formatted": "2024-05-28T11:06:31.995279-04:00", "keys": ["5"], "keys_time": 1716908793.4347296, "keys_time_str": "2024-05-28T11:06:33.434730-04:00"}', type='QRCODE', rect=Rect(left=655, top=235, width=609, height=609), polygon=[Point(x=655, y=235), Point(x=657, y=844), Point(x=1264, y=844), Point(x=1264, y=237)], quality=1, orientation='UP')]
+Same QR code: continue
+QR: QrRecord(frames=[17010, 17043], times=[283.483, 284.033 sec], duration=0.5500000000000114 sec, isotimes=[2024-05-28 11:06:33.398000, 2024-05-28 11:06:33.948000], data={'event': 'trigger', 'acqNum': 3, 'logfn': '20240528-1.log', 'time': 1716908791.995279, 'time_formatted': '2024-05-28T11:06:31.995279-04:00', 'keys': ['5'], 'keys_time': 1716908793.4347296, 'keys_time_str': '2024-05-28T11:06:33.434730-04:00'})
+ - QR code isotime : 2024-05-28 11:06:33.398000
+ - Event isotime   : 2024-05-28 11:06:31.995279 / dt=-1.402721 sec
+ - Keys isotime    : 2024-05-28 11:06:33.434730 / dt=0.03673 sec
+iframe=17050 1.3324711989933267
+iframe=17100 1.3301978353200574
+iframe=17150 1.3294927716681455
+iframe=17200 1.323256754498886
+iframe=17250 1.3211490910249377
+iframe=17300 1.2489145621950546
+iframe=17350 1.2502372749338535
+iframe=17400 1.254788406733224
+iframe=17450 1.2557144491232441
