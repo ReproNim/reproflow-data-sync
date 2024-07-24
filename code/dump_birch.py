@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+import getpass
 import json
 import os
 import sys
@@ -93,6 +94,7 @@ def dump_birch_all(path: str, range_start: datetime,
 def main(ctx, path: str, log_level):
     logger.setLevel(log_level)
     logger.debug("dump_birch.py tool")
+    logger.info(f"Started on    : {datetime.now()}, {getpass.getuser()}@{os.uname().nodename}")
     logger.debug(f"Working dir   : {os.getcwd()}")
     logger.info(f"Session path  : {path}")
 
@@ -132,5 +134,7 @@ def main(ctx, path: str, log_level):
 
 
 if __name__ == "__main__":
-    code = main()
+    code = main(standalone_mode=False)
+    logger.info(f"Exit on   : {datetime.now()}")
+    logger.info(f"Exit code : {code}")
     sys.exit(code)
