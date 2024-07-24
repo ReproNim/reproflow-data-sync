@@ -37,6 +37,7 @@ class DicomRecord(BaseModel):
 class StudyRecord(BaseModel):
     type: Optional[str] = Field("StudyRecord", description="JSON record type/class")
     name: Optional[str] = Field(None, description="MRI study description")
+    series_count: Optional[int] = Field(0, description="Number of series in the study")
     time_start: Optional[str] = Field(None, description="MRI time study start")
     date_start: Optional[str] = Field(None, description="MRI date study start")
     isotime_start: Optional[datetime] = Field(None,
@@ -68,6 +69,8 @@ class StudyRecord(BaseModel):
 class SeriesRecord(BaseModel):
     type: Optional[str] = Field("SeriesRecord", description="JSON record type/class")
     name: Optional[str] = Field(None, description="MRI series description")
+    dicom_count: Optional[int] = Field(0, description="Number of DICOM data images"
+                                                       " in the series")
     time_start: Optional[str] = Field(None, description="MRI time series start")
     date_start: Optional[str] = Field(None, description="MRI date series start")
     isotime_start: Optional[datetime] = Field(None,
@@ -227,6 +230,7 @@ def main(ctx, path: str, log_level):
                 # create study
                 sr: StudyRecord = StudyRecord(
                     name=item.study,
+                    series_count=0,
                     time_start=item.acquisition_time,
                     date_start=item.acquisition_date,
                     isotime_start=item.acquisition_isotime,
@@ -244,6 +248,7 @@ def main(ctx, path: str, log_level):
                 skey: str = f"{item.study}|{item.series}"
                 if skey in map_series:
                     ss: SeriesRecord = map_series[skey]
+                    ss.dicom_count += 1
                     # update time if any
                     if item.acquisition_isotime < ss.isotime_start:
                         ss.isotime_start = item.acquisition_isotime
@@ -261,6 +266,7 @@ def main(ctx, path: str, log_level):
                     # create series
                     ss: SeriesRecord = SeriesRecord(
                         name=item.series,
+                        dicom_count=1,
                         time_start=item.acquisition_time,
                         date_start=item.acquisition_date,
                         isotime_start=item.acquisition_isotime,
@@ -271,6 +277,7 @@ def main(ctx, path: str, log_level):
                         duration=0.0
                     )
                     map_series[skey] = ss
+                    map_study[item.study].series_count += 1
 
         dump_jsonl(item)
 
