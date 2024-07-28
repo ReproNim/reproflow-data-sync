@@ -31,6 +31,14 @@ def find_study_range(dump_dicoms_path: str) -> Tuple[Optional[datetime], Optiona
         return None, None
 
 
+last_id: dict = { "birch": 0 }
+def generate_id(name: str) -> str:
+    # generate unique id based on int sequence
+    global last_id
+    last_id[name] += 1
+    return f"{name}_{last_id[name]:06d}"
+
+
 def dump_jsonl(obj):
     print(json.dumps(obj, ensure_ascii=False))
 
@@ -60,6 +68,7 @@ def dump_birch_file(path: str, range_start: datetime,
             iso_time = iso_time_local.tz_localize(None)
             logger.debug(f"  {iso_time.isoformat()} {obj['alink_byte']} {obj['alink_flags']}")
             if range_start <= iso_time <= range_end:
+                obj['id'] = generate_id('birch')
                 obj['isotime'] = iso_time.isoformat()
                 dump_jsonl(obj)
             else:

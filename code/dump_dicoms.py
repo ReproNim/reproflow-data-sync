@@ -24,6 +24,7 @@ logger.setLevel(logging.DEBUG)
 # Define model DICOM item
 class DicomRecord(BaseModel):
     type: Optional[str] = Field("DicomRecord", description="JSON record type/class")
+    id: Optional[str] = Field(None, description="DICOM object unique ID")
     acquisition_time: Optional[str] = Field(None, description="MRI acquisition time")
     acquisition_date: Optional[str] = Field(None, description="MRI acquisition date")
     acquisition_isotime: Optional[datetime] = Field(None,
@@ -36,6 +37,7 @@ class DicomRecord(BaseModel):
 # Define model for MRI study
 class StudyRecord(BaseModel):
     type: Optional[str] = Field("StudyRecord", description="JSON record type/class")
+    id: Optional[str] = Field(None, description="DICOM object unique ID")
     name: Optional[str] = Field(None, description="MRI study description")
     series_count: Optional[int] = Field(0, description="Number of series in the study")
     time_start: Optional[str] = Field(None, description="MRI time study start")
@@ -68,6 +70,7 @@ class StudyRecord(BaseModel):
 # Define model for MRI series
 class SeriesRecord(BaseModel):
     type: Optional[str] = Field("SeriesRecord", description="JSON record type/class")
+    id: Optional[str] = Field(None, description="DICOM object unique ID")
     name: Optional[str] = Field(None, description="MRI series description")
     dicom_count: Optional[int] = Field(0, description="Number of DICOM data images"
                                                        " in the series")
@@ -91,6 +94,12 @@ class SeriesRecord(BaseModel):
 def calc_duration(start: datetime, end: datetime) -> float:
     return (end - start).total_seconds()
 
+last_id: dict = { "dicom": 0, "study": 0, "series": 0 }
+def generate_id(name: str) -> str:
+    # generate unique id based on int sequence
+    global last_id
+    last_id[name] += 1
+    return f"{name}_{last_id[name]:06d}"
 
 def parse_mri_datetime(date: str, time: str) -> datetime:
     return datetime.strptime(f"{date} {time}", "%Y%m%d %H%M%S.%f")
@@ -107,7 +116,7 @@ def dump_dicoms_file(path: str):
         # Read the DICOM file
         ds = pydicom.dcmread(path)
 
-        dr: DicomRecord = DicomRecord()
+        dr: DicomRecord = DicomRecord(id=generate_id("dicom"))
         # calc study
         if study_tag in ds:
             dr.study = ds[study_tag].value
@@ -229,6 +238,7 @@ def main(ctx, path: str, log_level):
             else:
                 # create study
                 sr: StudyRecord = StudyRecord(
+                    id=generate_id("study"),
                     name=item.study,
                     series_count=0,
                     time_start=item.acquisition_time,
@@ -265,6 +275,7 @@ def main(ctx, path: str, log_level):
                 else:
                     # create series
                     ss: SeriesRecord = SeriesRecord(
+                        id=generate_id("series"),
                         name=item.series,
                         dicom_count=1,
                         time_start=item.acquisition_time,

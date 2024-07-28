@@ -21,6 +21,14 @@ logger.setLevel(logging.DEBUG)
 #logger.debug(f"name={__name__}")
 
 
+last_id: dict = { "psychopy": 0 }
+def generate_id(name: str) -> str:
+    # generate unique id based on int sequence
+    global last_id
+    last_id[name] += 1
+    return f"{name}_{last_id[name]:06d}"
+
+
 def dump_jsonl(obj):
     print(json.dumps(obj, ensure_ascii=False))
 
@@ -34,6 +42,7 @@ def dump_psychopy(logpath: str, range_start: datetime,
                 time_dt = pd.to_datetime(time_str).replace(tzinfo=None)
                 logger.debug(f"Time: {time_dt}")
                 if range_start <= time_dt <= range_end:
+                    obj['id'] = generate_id('psychopy')
                     obj['isotime'] = time_dt.isoformat()
                     if obj.get('event') == 'trigger':
                         keys_time = pd.to_datetime(

@@ -31,6 +31,14 @@ def find_study_range(dump_dicoms_path: str) -> Tuple[Optional[datetime], Optiona
         return None, None
 
 
+last_id: dict = { "qr": 0 }
+def generate_id(name: str) -> str:
+    # generate unique id based on int sequence
+    global last_id
+    last_id[name] += 1
+    return f"{name}_{last_id[name]:06d}"
+
+
 def dump_jsonl(obj):
     print(json.dumps(obj, ensure_ascii=False))
 
@@ -58,6 +66,7 @@ def dump_qrinfo_file(path: str, range_start: datetime,
                                        ).replace(tzinfo=None)
         if range_start <= isotime_start <= range_end:
             # make flat, add videos info for info purposes
+            obj['id'] = generate_id('qr')
             obj['video_file_name'] = psum.get('video_file_name')
             obj['video_isotime_start'] = psum.get('video_isotime_start')
             obj['video_isotime_end'] = psum.get('video_isotime_end')
