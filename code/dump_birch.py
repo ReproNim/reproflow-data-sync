@@ -21,6 +21,22 @@ logger.setLevel(logging.DEBUG)
 #logger.debug(f"name={__name__}")
 
 
+# Calculate the duration in seconds based on the tick time used
+# by the birch system to recotd the 'time' field via pigpio.get_current_tick
+# https://abyz.me.uk/rpi/pigpio/python.html#get_current_tick API.
+# Note: this code works only with short time intervals, as the tick wraps around
+# approximately every 71.6 minutes. For longer time intervals in future, we need to use
+# the 'isotime' field to calculate the duration.
+def calc_tick_interval(tick_start: float, tick_end: float) -> float:
+    if not tick_start or not tick_end:
+        return 0.0
+
+    if tick_end >= tick_start:
+        return tick_end - tick_start
+    else:
+        return (0xFFFFFFFF - tick_start + tick_end) + 1
+
+
 # Note: shared code
 def find_study_range(dump_dicoms_path: str) -> Tuple[Optional[datetime], Optional[datetime]]:
     with (jsonlines.open(dump_dicoms_path) as reader):
@@ -78,6 +94,7 @@ def dump_birch_file(path: str, range_start: datetime,
             logger.debug(f"  {iso_time.isoformat()} {obj['alink_byte']} {obj['alink_flags']}")
             if range_start <= iso_time <= range_end:
                 obj['id'] = generate_id('birch')
+                obj['duration_isotime'] = 0.0
                 obj['duration'] = 0.0
                 obj['isotime'] = iso_time.isoformat()
                 #dump_jsonl(obj)
@@ -98,16 +115,21 @@ def dump_birch_file(path: str, range_start: datetime,
                 # the number of microseconds since system boot. As an unsigned
                 # 32 bit quantity tick wraps around approximately every 71.6 minutes.
                 t2: datetime = get_birch_isotime(obj)
+                tick2: float = obj.get('time')
                 for o in lst_bit8:
                     t1: datetime = get_birch_isotime(o)
+                    tick1: float = o.get('time')
                     if t1 and t2:
-                        o['duration'] = (t2 - t1).total_seconds()
+                        o['duration_isotime'] = (t2 - t1).total_seconds()
+                    if tick1 and tick2:
+                        o['duration'] = calc_tick_interval(tick1, tick2)
+
                 lst_bit8 = []
 
-        # dump the list of objects
-        if lst_obj:
-            for obj in lst_obj:
-                dump_jsonl(obj)
+    # dump the list of objects
+    if lst_obj:
+        for obj2 in lst_obj:
+            dump_jsonl(obj2)
 
 
 def dump_birch_all(path: str, range_start: datetime,
