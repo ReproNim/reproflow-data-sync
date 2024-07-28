@@ -38,6 +38,14 @@ def generate_id(name: str) -> str:
     last_id[name] += 1
     return f"{name}_{last_id[name]:06d}"
 
+def get_birch_isotime(obj: dict) -> datetime:
+    iso_time_str: str = obj['iso_time']
+    if not iso_time_str:
+        return None
+    iso_time_pd = pd.to_datetime(iso_time_str)
+    iso_time_local = iso_time_pd.tz_convert('America/New_York')
+    iso_time = iso_time_local.tz_localize(None)
+    return iso_time
 
 def dump_jsonl(obj):
     print(json.dumps(obj, ensure_ascii=False))
@@ -60,23 +68,46 @@ def safe_jsonl_reader(path):
 def dump_birch_file(path: str, range_start: datetime,
                     range_end: datetime):
     logger.debug(f"Processing    : {path}")
+    lst_obj: list = []
+    lst_bit8: list = []
     for obj in safe_jsonl_reader(path):
-        if obj.get('alink_byte') == 496: # and obj.get('alink_flags') == 3:
-            iso_time_str: str = obj['iso_time']
-            iso_time_pd = pd.to_datetime(iso_time_str)
-            iso_time_local = iso_time_pd.tz_convert('America/New_York')
-            iso_time = iso_time_local.tz_localize(None)
+        alink_byte = obj.get('alink_byte')
+        # check alink_byte bit 8 is on e.g. 496
+        if alink_byte and (alink_byte & 0x100) !=0 : # and obj.get('alink_flags') == 3:
+            iso_time = get_birch_isotime(obj)
             logger.debug(f"  {iso_time.isoformat()} {obj['alink_byte']} {obj['alink_flags']}")
             if range_start <= iso_time <= range_end:
                 obj['id'] = generate_id('birch')
+                obj['duration'] = 0.0
                 obj['isotime'] = iso_time.isoformat()
-                dump_jsonl(obj)
+                #dump_jsonl(obj)
+                lst_obj.append(obj)
+                lst_bit8.append(obj)
             else:
                 logger.debug(f"Skipping out of study range "
                              f"isotime={iso_time.isoformat()},  {obj}")
         else:
             logger.debug(f"Skipping by alink_byte/alink_flags filter {obj}")
+            #for o in lst_bit8:
+            #    dump_jsonl(o)
+            if len(lst_bit8)>0:
+                # NOTE: maybe we need to calculate the duration
+                # based on "time", which according to the birch
+                # documentation cirresponds to the
+                # https://abyz.me.uk/rpi/pigpio/python.html#get_current_tick
+                # the number of microseconds since system boot. As an unsigned
+                # 32 bit quantity tick wraps around approximately every 71.6 minutes.
+                t2: datetime = get_birch_isotime(obj)
+                for o in lst_bit8:
+                    t1: datetime = get_birch_isotime(o)
+                    if t1 and t2:
+                        o['duration'] = (t2 - t1).total_seconds()
+                lst_bit8 = []
 
+        # dump the list of objects
+        if lst_obj:
+            for obj in lst_obj:
+                dump_jsonl(obj)
 
 
 def dump_birch_all(path: str, range_start: datetime,
