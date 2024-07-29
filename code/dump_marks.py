@@ -23,16 +23,40 @@ logger.setLevel(logging.DEBUG)
 #logger.debug(f"name={__name__}")
 
 
+# Define abstract series model
+class SeriesData(BaseModel):
+    lst: Optional[List] = Field([], description="List JSONL object "
+                                                "in series")
+    name: Optional[str] = Field(None, description="Series name")
+    count: Optional[int] = Field(0, description="Number of object in series")
+    isotime_start: Optional[datetime] = Field(None, description="Series start "
+                                                                "datetime")
+    interval: Optional[float] = Field(0.0, description="Series interval "
+                                                       "in seconds")
+    next_series_interval: Optional[float] = Field(0.0,
+                                    description="Interval to next series if any in seconds, "
+                                                "otherwise 0.0. Claculated as"
+                                                "start-start interval between series")
+
+
+# Define swimlane object model
+class SwimlaneModel(BaseModel):
+    data: Optional[List] = Field([], description="List of data object "
+                                                 "from JSONL")
+    series: Optional[List[SeriesData]] = Field([], description="List of detected series "
+                                                               "for the swimlane")
+
+
 # Define dump model
 class DumpModel(BaseModel):
-    birch: Optional[List] = Field([], description="List of Birch object "
-                                                    "from JSONL")
-    dicoms: Optional[List] = Field([], description="List of DICOMs "
-                                                       "object from JSONL")
-    psychopy: Optional[List] = Field([], description="List of PsychoPy "
-                                                         "object from JSONL")
-    qrinfo: Optional[List] = Field([], description="List of QRInfo "
-                                                    "object from JSONL")
+    birch: Optional[SwimlaneModel] = Field(SwimlaneModel(),
+                                           description="Birch swimlane")
+    dicoms: Optional[SwimlaneModel] = Field(SwimlaneModel(),
+                                            description="DICOMs swimlane")
+    psychopy: Optional[SwimlaneModel] = Field(SwimlaneModel(),
+                                              description="PsychoPy swimlane")
+    qrinfo: Optional[SwimlaneModel] = Field(SwimlaneModel(),
+                                            description="QRInfo swimlane")
     map_by_id: Optional[dict] = Field({}, description="Map of all objects by "
                                                       "unique ID")
 
@@ -58,20 +82,6 @@ class MarkRecord(BaseModel):
     psychopy_isotime: Optional[str] = Field(None, description="PsychoPy acquisition "
                                                              "time in ISO format")
 
-# Define abstract series model
-class SeriesData(BaseModel):
-    lst: Optional[List] = Field([], description="List JSONL object "
-                                                "in series")
-    name: Optional[str] = Field(None, description="Series name")
-    count: Optional[int] = Field(0, description="Number of object in series")
-    isotime_start: Optional[datetime] = Field(None, description="Series start "
-                                                                "datetime")
-    interval: Optional[float] = Field(0.0, description="Series interval "
-                                                       "in seconds")
-    next_series_interval: Optional[float] = Field(0.0,
-                                    description="Interval to next series if any in seconds, "
-                                                "otherwise 0.0. Claculated as"
-                                                "start-start interval between series")
 
 
 last_id: dict = { "mark": 0 }
@@ -107,9 +117,50 @@ def calc_dicoms_series_interval(series: List) -> float:
     return 2.0
 
 
-# return list of list DICOMs object in each series
+# Find birch series based on DICOMs series interval
+def find_birch_series(model: DumpModel, interval: float) -> List[SeriesData]:
+    lst: List[SeriesData] = []
+    dt_min:float = interval * 0.8
+    dt_max:float = interval * 1.2
+
+    last_isotime: datetime = None
+    objs: List = []
+    for obj in model.birch.data:
+        isotime: datetime = parse_isotime(obj.get('isotime'))
+        if len(objs) == 0:
+            objs.append(obj)
+            last_isotime = isotime
+            continue
+
+        dt: float = (isotime - last_isotime).total_seconds()
+        if dt_min <= dt <= dt_max:
+            objs.append(obj)
+        else:
+            # consider only more than 5 objects in series
+            if len(objs) > 5:
+                sd: SeriesData = SeriesData()
+                sd.lst = objs
+                sd.count = len(objs)
+                sd.name = f"birch-series-{(len(lst)+1)}"
+                sd.isotime_start = parse_isotime(objs[0].get('isotime'))
+                sd.interval = (last_isotime - sd.isotime_start).total_seconds() / (sd.count-1)
+                sd.next_series_interval = 0
+                if len(lst) > 0:
+                    lst[-1].next_series_interval = (
+                        (sd.isotime_start - lst[-1].isotime_start).total_seconds())
+                lst.append(sd)
+            else:
+                logger.debug(f"Skip birch series (too small={len(objs)}): {objs}")
+            objs = []
+
+        last_isotime = isotime
+
+    return lst
+
+
+# Return list of list DICOMs object in each series
 def find_dicoms_func_series(model: DumpModel) -> List[SeriesData]:
-    df = pd.DataFrame(model.dicoms)
+    df = pd.DataFrame(model.dicoms.data)
     # filter by type, study and series
     filtered_df = df[
         (df['type'] == 'DicomRecord') &
@@ -120,11 +171,6 @@ def find_dicoms_func_series(model: DumpModel) -> List[SeriesData]:
     # group by series
     grouped_df = filtered_df.groupby('series')
 
-    #lst = [group['id'].tolist() for series, group in grouped_df]
-
-    # find object from model data
-    lst = [[model.get_by_id(uid) for uid in group['id']]
-                       for series, group in grouped_df]
     lst: List = []
     last_sd: SeriesData = None
     for series, group in grouped_df:
@@ -155,22 +201,35 @@ def parse_jsonl(path: str) -> List:
 
 def build_model(path: str) -> DumpModel:
     m: DumpModel = DumpModel()
-    m.dicoms = parse_jsonl(os.path.join(path, 'dump_dicoms.jsonl'))
-    m.birch = parse_jsonl(os.path.join(path, 'dump_birch.jsonl'))
-    m.psychopy = parse_jsonl(os.path.join(path, 'dump_psychopy.jsonl'))
-    m.qrinfo = parse_jsonl(os.path.join(path, 'dump_qrinfo.jsonl'))
-    for obj in chain(m.dicoms, m.birch, m.psychopy, m.qrinfo):
+    # first, load all JSONL data to memory
+    m.dicoms.data = parse_jsonl(os.path.join(path, 'dump_dicoms.jsonl'))
+    m.birch.data = parse_jsonl(os.path.join(path, 'dump_birch.jsonl'))
+    m.psychopy.data = parse_jsonl(os.path.join(path, 'dump_psychopy.jsonl'))
+    m.qrinfo.data = parse_jsonl(os.path.join(path, 'dump_qrinfo.jsonl'))
+    for obj in chain(m.dicoms.data, m.birch.data,
+                     m.psychopy.data, m.qrinfo.data):
         #logger.debug(f"Object: {obj}")
         m.map_by_id[obj.get('id')] = obj
+
+    # as second, detect possible series in each swimlane
+    m.dicoms.series = find_dicoms_func_series(m)
+    logger.debug(f"Found {len(m.dicoms.series)} DICOMs func series")
+    m.birch.series = find_birch_series(m, m.dicoms.series[0].interval)
+    logger.debug(f"Found {len(m.birch.series)} birch series")
+
+    for sd in chain(m.dicoms.series, m.birch.series):
+        logger.debug(f"Series: {sd.name}, "
+                     f"count: {sd.count}, "
+                     f"interval: {sd.interval}, "
+                     f"next_series_interval: {sd.next_series_interval}")
+
     return m
 
 
 def generate_marks(model: DumpModel):
-    dicoms_func: List[SeriesData] = find_dicoms_func_series(model)
-    logger.debug(f"Found {len(dicoms_func)} func series")
 
-    for sd in dicoms_func:
-        logger.debug(f"Series: {sd}")
+    for sd in model.dicoms.series:
+        logger.debug(f"DICOMs series: {sd}")
         mark: MarkRecord = MarkRecord()
         mark.id = generate_id('mark')
         mark.kind = "Func series start"
