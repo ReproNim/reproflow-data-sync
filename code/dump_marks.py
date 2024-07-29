@@ -41,6 +41,7 @@ class SeriesData(BaseModel):
 
 # Define swimlane object model
 class SwimlaneModel(BaseModel):
+    name: Optional[str] = Field(None, description="Swimlane name")
     data: Optional[List] = Field([], description="List of data object "
                                                  "from JSONL")
     series: Optional[List[SeriesData]] = Field([], description="List of detected series "
@@ -49,16 +50,20 @@ class SwimlaneModel(BaseModel):
 
 # Define dump model
 class DumpModel(BaseModel):
-    birch: Optional[SwimlaneModel] = Field(SwimlaneModel(),
+    birch: Optional[SwimlaneModel] = Field(SwimlaneModel(name="birch"),
                                            description="Birch swimlane")
-    dicoms: Optional[SwimlaneModel] = Field(SwimlaneModel(),
+    dicoms: Optional[SwimlaneModel] = Field(SwimlaneModel(name="dicoms"),
                                             description="DICOMs swimlane")
-    psychopy: Optional[SwimlaneModel] = Field(SwimlaneModel(),
+    psychopy: Optional[SwimlaneModel] = Field(SwimlaneModel(name="psychopy"),
                                               description="PsychoPy swimlane")
-    qrinfo: Optional[SwimlaneModel] = Field(SwimlaneModel(),
+    qrinfo: Optional[SwimlaneModel] = Field(SwimlaneModel(name="qrinfo"),
                                             description="QRInfo swimlane")
     map_by_id: Optional[dict] = Field({}, description="Map of all objects by "
                                                       "unique ID")
+
+    @property
+    def swimlanes(self) -> List[SwimlaneModel]:
+        return [self.dicoms, self.birch, self.qrinfo, self.psychopy]
 
     def get_by_id(self, uid: str):
         return self.map_by_id.get(uid)
@@ -118,15 +123,17 @@ def calc_dicoms_series_interval(series: List) -> float:
 
 
 # Find birch series based on DICOMs series interval
-def find_birch_series(model: DumpModel, interval: float) -> List[SeriesData]:
+def find_swimlane_series(swimlane: SwimlaneModel,
+                         isotime_filed: str,
+                         interval: float) -> List[SeriesData]:
     lst: List[SeriesData] = []
     dt_min:float = interval * 0.8
     dt_max:float = interval * 1.2
 
     last_isotime: datetime = None
     objs: List = []
-    for obj in model.birch.data:
-        isotime: datetime = parse_isotime(obj.get('isotime'))
+    for obj in chain(swimlane.data, [swimlane.data[0]]):
+        isotime: datetime = parse_isotime(obj.get(isotime_filed))
         if len(objs) == 0:
             objs.append(obj)
             last_isotime = isotime
@@ -141,8 +148,8 @@ def find_birch_series(model: DumpModel, interval: float) -> List[SeriesData]:
                 sd: SeriesData = SeriesData()
                 sd.lst = objs
                 sd.count = len(objs)
-                sd.name = f"birch-series-{(len(lst)+1)}"
-                sd.isotime_start = parse_isotime(objs[0].get('isotime'))
+                sd.name = f"{swimlane.name}-series-{(len(lst)+1)}"
+                sd.isotime_start = parse_isotime(objs[0].get(isotime_filed))
                 sd.interval = (last_isotime - sd.isotime_start).total_seconds() / (sd.count-1)
                 sd.next_series_interval = 0
                 if len(lst) > 0:
@@ -150,7 +157,7 @@ def find_birch_series(model: DumpModel, interval: float) -> List[SeriesData]:
                         (sd.isotime_start - lst[-1].isotime_start).total_seconds())
                 lst.append(sd)
             else:
-                logger.debug(f"Skip birch series (too small={len(objs)}): {objs}")
+                logger.debug(f"Skip {swimlane.name} series (too small={len(objs)}): {objs}")
             objs = []
 
         last_isotime = isotime
@@ -190,6 +197,35 @@ def find_dicoms_func_series(model: DumpModel) -> List[SeriesData]:
     return lst
 
 
+# match SeriesData object with another one
+def match_series_data(sd1: SeriesData, sd2: SeriesData) -> bool:
+    if sd1.name == 'func-bold_task-rest_run-2' and sd2.name == 'birch-series-1':
+        logger.debug(f"Match: {sd1} with {sd2}")
+
+    if not sd1 or not sd2:
+        return False
+
+    # match item count
+    if sd1.count != sd2.count:
+        return False
+
+    # match interval corresponds to each other
+    if sd1.interval and sd2.interval:
+        t_min: float = sd1.interval * 0.95
+        t_max: float = sd1.interval * 1.05
+        if not (t_min <= sd2.interval <= t_max):
+            return False
+
+    # match inter series interval matches as well
+    if sd1.next_series_interval and sd2.next_series_interval:
+        t_min: float = sd1.next_series_interval * 0.95
+        t_max: float = sd1.next_series_interval * 1.05
+        if not (t_min <= sd2.next_series_interval <= t_max):
+            return False
+    return True
+
+
+
 def parse_jsonl(path: str) -> List:
     # Load JSONL file
     lst = []
@@ -213,33 +249,56 @@ def build_model(path: str) -> DumpModel:
 
     # as second, detect possible series in each swimlane
     m.dicoms.series = find_dicoms_func_series(m)
-    logger.debug(f"Found {len(m.dicoms.series)} DICOMs func series")
-    m.birch.series = find_birch_series(m, m.dicoms.series[0].interval)
-    logger.debug(f"Found {len(m.birch.series)} birch series")
+    m.birch.series = find_swimlane_series(m.birch, 'isotime',
+                                          m.dicoms.series[0].interval)
+    m.qrinfo.series = find_swimlane_series(m.qrinfo, 'isotime_start',
+                                           m.dicoms.series[0].interval)
+    m.psychopy.series = find_swimlane_series(m.psychopy, 'isotime',
+                                             m.dicoms.series[0].interval)
 
-    for sd in chain(m.dicoms.series, m.birch.series):
-        logger.debug(f"Series: {sd.name}, "
-                     f"count: {sd.count}, "
-                     f"interval: {sd.interval}, "
-                     f"next_series_interval: {sd.next_series_interval}")
+    # dump short series info
+    for sl in m.swimlanes:
+        logger.debug(f"Swimlane: {sl.name}")
+        logger.debug(f"  Found {len(sl.series)} {sl.name} series")
+        for sd in sl.series:
+            logger.debug(f"  Series: {sd.name}, "
+                         f"count: {sd.count}, "
+                         f"interval: {sd.interval}, "
+                         f"next_series_interval: {sd.next_series_interval}")
+
+    # dump long series info and data
+    for sl in m.swimlanes:
+        for sd in sl.series:
+            logger.debug(f"{sl.name}.{sd.name} : {sd.lst}")
 
     return m
 
 
 def generate_marks(model: DumpModel):
 
-    for sd in model.dicoms.series:
-        logger.debug(f"DICOMs series: {sd}")
+    offset: dict = {}
+    for dicoms_sd in model.dicoms.series:
+        #logger.debug(f"DICOMs series: {sd}")
         mark: MarkRecord = MarkRecord()
         mark.id = generate_id('mark')
         mark.kind = "Func series start"
-        mark.name = f"{sd.name}_start"
-        mark.target_ids.append(sd.lst[0].get('id'))
-        mark.dicoms_isotime = sd.isotime_start.isoformat()
+        mark.name = f"{dicoms_sd.name}_start"
+        mark.target_ids.append(dicoms_sd.lst[0].get('id'))
+        mark.dicoms_isotime = dicoms_sd.isotime_start.isoformat()
+
+        # try to match series
+        for ser in [model.birch, model.qrinfo, model.psychopy]:
+            for ser_sd in ser.series:
+                if match_series_data(dicoms_sd, ser_sd):
+                    mark.target_ids.append(ser_sd.lst[0].get('id'))
+                    setattr(mark, f"{ser.name}_isotime", ser_sd.isotime_start.isoformat())
+                    offset[ser_sd.name] = (dicoms_sd.isotime_start -
+                                           ser_sd.isotime_start).total_seconds()
+                    break
+
         logger.debug(f"Mark: {mark}")
         dump_jsonl(mark)
-
-
+    logger.debug(f"Dicoms offsets: {offset}")
 
 
 @click.command(help='Dump calculated timing synchronization marks info.')
