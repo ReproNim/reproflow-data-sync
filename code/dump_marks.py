@@ -29,6 +29,7 @@ class SeriesData(BaseModel):
                                                 "in series")
     name: Optional[str] = Field(None, description="Series name")
     count: Optional[int] = Field(0, description="Number of object in series")
+    swimlane: Optional[object] = Field(None, description="Swimlane model reference")
     isotime_start: Optional[datetime] = Field(None, description="Series start "
                                                                 "datetime")
     isotime_end: Optional[datetime] = Field(None, description="Series end "
@@ -47,6 +48,9 @@ class SeriesData(BaseModel):
 # Define swimlane object model
 class SwimlaneModel(BaseModel):
     name: Optional[str] = Field(None, description="Swimlane name")
+    isotime_field: Optional[str] = Field(None, description="Field name for item in "
+                                                           "swimlane containing "
+                                                           "datetime in isotime format")
     data: Optional[List] = Field([], description="List of data object "
                                                  "from JSONL")
     series: Optional[List[SeriesData]] = Field([], description="List of detected series "
@@ -55,13 +59,17 @@ class SwimlaneModel(BaseModel):
 
 # Define dump model
 class DumpModel(BaseModel):
-    birch: Optional[SwimlaneModel] = Field(SwimlaneModel(name="birch"),
+    birch: Optional[SwimlaneModel] = Field(SwimlaneModel(name="birch",
+                                                         isotime_field="isotime"),
                                            description="Birch swimlane")
-    dicoms: Optional[SwimlaneModel] = Field(SwimlaneModel(name="dicoms"),
+    dicoms: Optional[SwimlaneModel] = Field(SwimlaneModel(name="dicoms",
+                                                          isotime_field="acquisition_isotime"),
                                             description="DICOMs swimlane")
-    psychopy: Optional[SwimlaneModel] = Field(SwimlaneModel(name="psychopy"),
+    psychopy: Optional[SwimlaneModel] = Field(SwimlaneModel(name="psychopy",
+                                                            isotime_field="isotime"),
                                               description="PsychoPy swimlane")
-    qrinfo: Optional[SwimlaneModel] = Field(SwimlaneModel(name="qrinfo"),
+    qrinfo: Optional[SwimlaneModel] = Field(SwimlaneModel(name="qrinfo",
+                                                          isotime_field="isotime_start"),
                                             description="QRInfo swimlane")
     map_by_id: Optional[dict] = Field({}, description="Map of all objects by "
                                                       "unique ID")
@@ -137,7 +145,6 @@ def calc_dicoms_series_interval(series: List) -> float:
 
 # Find birch series based on DICOMs series interval
 def find_swimlane_series(swimlane: SwimlaneModel,
-                         isotime_filed: str,
                          interval: float) -> List[SeriesData]:
     lst: List[SeriesData] = []
     dt_min:float = interval * 0.8
@@ -146,7 +153,7 @@ def find_swimlane_series(swimlane: SwimlaneModel,
     last_isotime: datetime = None
     objs: List = []
     for obj in chain(swimlane.data, [swimlane.data[0]]):
-        isotime: datetime = parse_isotime(obj.get(isotime_filed))
+        isotime: datetime = parse_isotime(obj.get(swimlane.isotime_field))
         if len(objs) == 0:
             objs.append(obj)
             last_isotime = isotime
@@ -159,11 +166,12 @@ def find_swimlane_series(swimlane: SwimlaneModel,
             # consider only more than 5 objects in series
             if len(objs) > 5:
                 sd: SeriesData = SeriesData()
+                sd.swimlane = swimlane
                 sd.lst = objs
                 sd.count = len(objs)
                 sd.name = f"{swimlane.name}-series-{(len(lst)+1)}"
-                sd.isotime_start = parse_isotime(objs[0].get(isotime_filed))
-                sd.isotime_end = parse_isotime(objs[-1].get(isotime_filed))
+                sd.isotime_start = parse_isotime(objs[0].get(swimlane.isotime_field))
+                sd.isotime_end = parse_isotime(objs[-1].get(swimlane.isotime_field))
                 sd.interval = (last_isotime - sd.isotime_start).total_seconds() / (sd.count-1)
                 sd.next_series_interval = 0
                 sd.duration = (sd.isotime_end - sd.isotime_start).total_seconds()
@@ -197,6 +205,7 @@ def find_dicoms_func_series(model: DumpModel) -> List[SeriesData]:
     last_sd: SeriesData = None
     for series, group in grouped_df:
         sd: SeriesData = SeriesData()
+        sd.swimlane = model.dicoms
         sd.lst = [model.get_by_id(uid) for uid in group['id']]
         sd.count = len(sd.lst)
         sd.name = series
@@ -270,11 +279,11 @@ def build_model(path: str) -> DumpModel:
 
     # as second, detect possible series in each swimlane
     m.dicoms.series = find_dicoms_func_series(m)
-    m.birch.series = find_swimlane_series(m.birch, 'isotime',
+    m.birch.series = find_swimlane_series(m.birch,
                                           m.dicoms.series[0].interval)
-    m.qrinfo.series = find_swimlane_series(m.qrinfo, 'isotime_start',
+    m.qrinfo.series = find_swimlane_series(m.qrinfo,
                                            m.dicoms.series[0].interval)
-    m.psychopy.series = find_swimlane_series(m.psychopy, 'isotime',
+    m.psychopy.series = find_swimlane_series(m.psychopy,
                                              m.dicoms.series[0].interval)
 
     # dump short series info
@@ -299,7 +308,7 @@ def generate_marks(model: DumpModel):
 
     offset: dict = {}
     for dicoms_sd in model.dicoms.series:
-        #logger.debug(f"DICOMs series: {sd}")
+        # generate start mark
         mark: MarkRecord = MarkRecord()
         mark.id = generate_id('mark')
         mark.kind = "Func series start"
@@ -309,18 +318,57 @@ def generate_marks(model: DumpModel):
         mark.dicoms_duration = dicoms_sd.duration
 
         # try to match series
-        for ser in [model.birch, model.qrinfo, model.psychopy]:
-            for ser_sd in ser.series:
+        map_series: dict = {}
+        for swiml in [model.birch, model.qrinfo, model.psychopy]:
+            for ser_sd in swiml.series:
+                # TODO: in future also consider match algorithm based on
+                #       existing table table for previous series
                 if match_series_data(dicoms_sd, ser_sd):
+                    map_series[swiml.name] = ser_sd
                     mark.target_ids.append(ser_sd.lst[0].get('id'))
-                    setattr(mark, f"{ser.name}_isotime", ser_sd.isotime_start.isoformat())
-                    setattr(mark, f"{ser.name}_duration", ser_sd.duration)
+                    setattr(mark, f"{swiml.name}_isotime", ser_sd.isotime_start.isoformat())
+                    setattr(mark, f"{swiml.name}_duration", ser_sd.duration)
                     offset[ser_sd.name] = (dicoms_sd.isotime_start -
                                            ser_sd.isotime_start).total_seconds()
                     break
 
         logger.debug(f"Mark: {mark}")
         dump_jsonl(mark)
+
+        # generate marks for each scan in series
+        for i in range(len(dicoms_sd.lst)):
+            mark = MarkRecord()
+            mark.id = generate_id('mark')
+            mark.kind = "Func series scan"
+            mark.name = f"{dicoms_sd.name}_scan_{i}"
+            mark.target_ids.append(dicoms_sd.lst[i].get('id'))
+            mark.dicoms_isotime = parse_isotime(
+                dicoms_sd.lst[i].get(
+                    model.dicoms.isotime_field)).isoformat()
+            #mark.dicoms_duration = None
+            for k, v in map_series.items():
+                mark.target_ids.append(v.lst[i].get('id'))
+                setattr(mark, f"{k}_isotime", parse_isotime(
+                    v.lst[i].get(v.swimlane.isotime_field)).isoformat())
+                #setattr(mark, f"{k}_duration", None)
+            dump_jsonl(mark)
+
+        # generate end mark
+        mark = MarkRecord()
+        mark.id = generate_id('mark')
+        mark.kind = "Func series end"
+        mark.name = f"{dicoms_sd.name}_end"
+        mark.target_ids.append(dicoms_sd.lst[-1].get('id'))
+        mark.dicoms_isotime = dicoms_sd.isotime_end.isoformat()
+        #mark.dicoms_duration = None
+        logger.debug(f"Mark: {mark}")
+        for k, v in map_series.items():
+            mark.target_ids.append(v.lst[-1].get('id'))
+            setattr(mark, f"{k}_isotime", v.isotime_end.isoformat())
+            #setattr(mark, f"{k}_duration", None)
+        dump_jsonl(mark)
+
+
     logger.debug(f"Dicoms offsets: {offset}")
 
 
