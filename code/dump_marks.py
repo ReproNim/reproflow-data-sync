@@ -31,8 +31,13 @@ class SeriesData(BaseModel):
     count: Optional[int] = Field(0, description="Number of object in series")
     isotime_start: Optional[datetime] = Field(None, description="Series start "
                                                                 "datetime")
+    isotime_end: Optional[datetime] = Field(None, description="Series end "
+                                                                "datetime w/o "
+                                                              "last item")
     interval: Optional[float] = Field(0.0, description="Series interval "
                                                        "in seconds")
+    duration: Optional[float] = Field(0.0, description="Series duration w/o last "
+                                                       "item at this moment")
     next_series_interval: Optional[float] = Field(0.0,
                                     description="Interval to next series if any in seconds, "
                                                 "otherwise 0.0. Claculated as"
@@ -80,12 +85,20 @@ class MarkRecord(BaseModel):
                                                         "series in seconds")
     dicoms_isotime: Optional[str] = Field(None, description="DICOMs acquisition "
                                                             "time in ISO format")
+    dicoms_duration: Optional[float] = Field(None, description="DICOMs series duration "
+                                                               "in seconds")
     birch_isotime: Optional[str] = Field(None, description="Birch acquisition "
                                                            "time in ISO format")
+    birch_duration: Optional[float] = Field(None, description="Birch series duration "
+                                                              "in seconds")
     qrinfo_isotime: Optional[str] = Field(None, description="QRInfo acquisition "
                                                             "time in ISO format")
+    qrinfo_duration: Optional[float] = Field(None, description="QRInfo series duration "
+                                                               "in seconds")
     psychopy_isotime: Optional[str] = Field(None, description="PsychoPy acquisition "
                                                              "time in ISO format")
+    psychopy_duration: Optional[float] = Field(None, description="Psychopy series duration "
+                                                                "in seconds")
 
 
 
@@ -150,8 +163,10 @@ def find_swimlane_series(swimlane: SwimlaneModel,
                 sd.count = len(objs)
                 sd.name = f"{swimlane.name}-series-{(len(lst)+1)}"
                 sd.isotime_start = parse_isotime(objs[0].get(isotime_filed))
+                sd.isotime_end = parse_isotime(objs[-1].get(isotime_filed))
                 sd.interval = (last_isotime - sd.isotime_start).total_seconds() / (sd.count-1)
                 sd.next_series_interval = 0
+                sd.duration = (sd.isotime_end - sd.isotime_start).total_seconds()
                 if len(lst) > 0:
                     lst[-1].next_series_interval = (
                         (sd.isotime_start - lst[-1].isotime_start).total_seconds())
@@ -187,8 +202,12 @@ def find_dicoms_func_series(model: DumpModel) -> List[SeriesData]:
         sd.name = series
         sd.isotime_start = parse_isotime(
             sd.lst[0].get('acquisition_isotime'))
+        sd.isotime_end = parse_isotime(
+            sd.lst[-1].get('acquisition_isotime'))
         sd.interval = calc_dicoms_series_interval(sd.lst)
         sd.next_series_interval = 0.0
+        sd.duration = (sd.isotime_end -
+                       sd.isotime_start).total_seconds()
         if last_sd:
             last_sd.next_series_interval = (
                 (sd.isotime_start - last_sd.isotime_start).total_seconds())
@@ -199,8 +218,8 @@ def find_dicoms_func_series(model: DumpModel) -> List[SeriesData]:
 
 # match SeriesData object with another one
 def match_series_data(sd1: SeriesData, sd2: SeriesData) -> bool:
-    if sd1.name == 'func-bold_task-rest_run-2' and sd2.name == 'birch-series-1':
-        logger.debug(f"Match: {sd1} with {sd2}")
+    #if sd1.name == 'func-bold_task-rest_run-2' and sd2.name == 'birch-series-1':
+    #    logger.debug(f"Match: {sd1} with {sd2}")
 
     if not sd1 or not sd2:
         return False
@@ -222,6 +241,8 @@ def match_series_data(sd1: SeriesData, sd2: SeriesData) -> bool:
         t_max: float = sd1.next_series_interval * 1.05
         if not (t_min <= sd2.next_series_interval <= t_max):
             return False
+    else:
+        return False
     return True
 
 
@@ -285,6 +306,7 @@ def generate_marks(model: DumpModel):
         mark.name = f"{dicoms_sd.name}_start"
         mark.target_ids.append(dicoms_sd.lst[0].get('id'))
         mark.dicoms_isotime = dicoms_sd.isotime_start.isoformat()
+        mark.dicoms_duration = dicoms_sd.duration
 
         # try to match series
         for ser in [model.birch, model.qrinfo, model.psychopy]:
@@ -292,6 +314,7 @@ def generate_marks(model: DumpModel):
                 if match_series_data(dicoms_sd, ser_sd):
                     mark.target_ids.append(ser_sd.lst[0].get('id'))
                     setattr(mark, f"{ser.name}_isotime", ser_sd.isotime_start.isoformat())
+                    setattr(mark, f"{ser.name}_duration", ser_sd.duration)
                     offset[ser_sd.name] = (dicoms_sd.isotime_start -
                                            ser_sd.isotime_start).total_seconds()
                     break
