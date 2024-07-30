@@ -43,3 +43,8 @@ echo "dump_psychopy.py exit code: $?"
 echo "Generating marks dumps..."
 ./dump_marks.py --log-level $LOG_LEVEL $SESSION_DIR >$OUT_DIR/dump_marks.jsonl 2>$OUT_DIR/dump_marks.log
 echo "dump_marks.py exit code: $?"
+
+# Generate ReproNim timing map table (tmap)
+echo "Generating tmap dumps..."
+./dump_tmap.py --log-level $LOG_LEVEL $SESSION_DIR >$OUT_DIR/dump_tmap.jsonl 2>$OUT_DIR/dump_tmap.log
+echo "dump_tmap.py exit code: $?"
