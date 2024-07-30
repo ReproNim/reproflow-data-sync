@@ -24,21 +24,30 @@ logger.setLevel(logging.DEBUG)
 class TMapRecord(BaseModel):
     isotime: Optional[datetime] = Field(
         None, description="Reference time bound to NTP in isotime format")
+    dicoms_isotime: Optional[datetime] = Field(
+        None, description="Corresponding DICOMs clock time in isotime format")
     dicoms_offset: Optional[float] = Field(
         0.0, description="DICOMs offset in seconds from isotime")
     dicoms_deviation: Optional[float] = Field(
         0.0, description="Represents DICOMs time deviation ratio comparing "
                          "to master clock")
+    birch_isotime: Optional[datetime] = Field(
+        None, description="Corresponding birch clock time in isotime format")
     birch_offset: Optional[float] = Field(
         0.0, description="birch offset in seconds from isotime")
     birch_deviation: Optional[float] = Field(
         0.0, description="Represents birch time deviation ratio comparing "
                          "to master clock")
-    qrinfo_offset: Optional[float] = Field(
-        0.0, description="qrinfo offset in seconds from isotime")
-    qrinfo_deviation: Optional[float] = Field(
-        0.0, description="Represents qrinfo time deviation ratio "
+    reprostim_video_isotime: Optional[datetime] = Field(
+        None, description="Corresponding ReproStim video clock time in "
+                          "isotime format")
+    reprostim_video_offset: Optional[float] = Field(
+        0.0, description="ReproStim video offset in seconds from isotime")
+    reprostim_video_deviation: Optional[float] = Field(
+        0.0, description="Represents ReproStim video time deviation ratio "
                          "comparing to master clock")
+    psychopy_isotime: Optional[datetime] = Field(
+        None, description="Corresponding psychopy clock time in isotime format")
     psychopy_offset: Optional[float] = Field(
         0.0, description="psychopy offset in seconds from isotime")
     psychopy_deviation: Optional[float] = Field(
@@ -88,8 +97,8 @@ def calc_deviation(mark, field_name: str, ref_duration: float) -> float:
         return duration / ref_duration
 
 
-def calc_offset(mark, field_name: str, isotime: datetime) -> float:
-    return (parse_isotime(mark.get(field_name)) - isotime).total_seconds()
+def calc_offset(cur_isotime: datetime, ref_isotime: datetime) -> float:
+    return (cur_isotime - ref_isotime).total_seconds()
 
 
 def generate_tmap(path_marks: str):
@@ -108,13 +117,17 @@ def generate_tmap(path_marks: str):
     tmr: TMapRecord = TMapRecord()
     tmr.isotime = ref_isotime
     # ATM we consider birch device time as the reference one
+    tmr.birch_isotime = ref_isotime
     tmr.birch_offset = 0.0
     tmr.birch_deviation = 1.0
-    tmr.dicoms_offset = calc_offset(fm, 'dicoms_isotime', tmr.isotime)
+    tmr.dicoms_isotime = parse_isotime(fm.get('dicoms_isotime'))
+    tmr.dicoms_offset = calc_offset(tmr.dicoms_isotime, tmr.isotime)
     tmr.dicoms_deviation = calc_deviation(fm, 'dicoms_duration', ref_duration)
-    tmr.qrinfo_offset = calc_offset(fm, 'qrinfo_isotime', tmr.isotime)
-    tmr.qrinfo_deviation = calc_deviation(fm, 'qrinfo_duration', ref_duration)
-    tmr.psychopy_offset = calc_offset(fm, 'psychopy_isotime', tmr.isotime)
+    tmr.reprostim_video_isotime = parse_isotime(fm.get('qrinfo_isotime'))
+    tmr.reprostim_video_offset = calc_offset(tmr.reprostim_video_isotime, tmr.isotime)
+    tmr.reprostim_video_deviation = calc_deviation(fm, 'qrinfo_duration', ref_duration)
+    tmr.psychopy_isotime = parse_isotime(fm.get('psychopy_isotime'))
+    tmr.psychopy_offset = calc_offset(tmr.psychopy_isotime, tmr.isotime)
     tmr.psychopy_deviation = calc_deviation(fm, 'psychopy_duration', ref_duration)
 
     dump_jsonl(tmr)
