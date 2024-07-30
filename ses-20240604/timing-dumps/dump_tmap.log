@@ -1,0 +1,8 @@
+dump_tmap.py tool
+Started on    : 2024-07-30 17:10:40.491706, vmelnik@Uranus
+Working dir   : /Users/vmelnik/Projects/Dartmouth/branches/reproflow-data-sync/code
+Session path  : /Users/vmelnik/Projects/Dartmouth/branches/typhon/reproflow-data-sync/ses-20240604
+generate_tmap(/Users/vmelnik/Projects/Dartmouth/branches/typhon/reproflow-data-sync/ses-20240604/timing-dumps/dump_marks.jsonl)
+Found full mark: {'type': 'MarkRecord', 'id': 'mark_000018', 'kind': 'Func series start', 'name': 'func-bold_task-rest_run-2_start', 'target_ids': ['dicom_000155', 'birch_000001', 'qr_000001', 'psychopy_000003'], 'dicoms_isotime': '2024-06-04T14:00:31.507500', 'dicoms_duration': 28.0, 'birch_isotime': '2024-06-04T13:54:19.385115', 'birch_duration': 27.991215, 'qrinfo_isotime': '2024-06-04T13:54:19.703000', 'qrinfo_duration': 27.634, 'psychopy_isotime': '2024-06-04T13:54:19.369889', 'psychopy_duration': 27.997664}
+Exit on   : 2024-07-30 17:10:40.497252
+Exit code : 0
