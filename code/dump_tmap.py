@@ -10,6 +10,8 @@ import pandas as pd
 import jsonlines
 import click
 import logging
+from repronim_timing import (TMapRecord, parse_jsonl,
+                             parse_isotime, dump_jsonl)
 
 
 # initialize the logger
@@ -19,64 +21,6 @@ logging.getLogger().addHandler(logging.StreamHandler(sys.stderr))
 logger.setLevel(logging.DEBUG)
 #logger.debug(f"name={__name__}")
 
-
-# Define abstract series model
-class TMapRecord(BaseModel):
-    isotime: Optional[datetime] = Field(
-        None, description="Reference time bound to NTP in isotime format")
-    dicoms_isotime: Optional[datetime] = Field(
-        None, description="Corresponding DICOMs clock time in isotime format")
-    dicoms_offset: Optional[float] = Field(
-        0.0, description="DICOMs offset in seconds from isotime")
-    dicoms_deviation: Optional[float] = Field(
-        0.0, description="Represents DICOMs time deviation ratio comparing "
-                         "to master clock")
-    birch_isotime: Optional[datetime] = Field(
-        None, description="Corresponding birch clock time in isotime format")
-    birch_offset: Optional[float] = Field(
-        0.0, description="birch offset in seconds from isotime")
-    birch_deviation: Optional[float] = Field(
-        0.0, description="Represents birch time deviation ratio comparing "
-                         "to master clock")
-    reprostim_video_isotime: Optional[datetime] = Field(
-        None, description="Corresponding ReproStim video clock time in "
-                          "isotime format")
-    reprostim_video_offset: Optional[float] = Field(
-        0.0, description="ReproStim video offset in seconds from isotime")
-    reprostim_video_deviation: Optional[float] = Field(
-        0.0, description="Represents ReproStim video time deviation ratio "
-                         "comparing to master clock")
-    psychopy_isotime: Optional[datetime] = Field(
-        None, description="Corresponding psychopy clock time in isotime format")
-    psychopy_offset: Optional[float] = Field(
-        0.0, description="psychopy offset in seconds from isotime")
-    psychopy_deviation: Optional[float] = Field(
-        0.0, description="Represents psychopy time deviation ratio "
-                         "comparing to master clock")
-
-
-
-def dump_jsonl(obj):
-    print(obj.json())
-
-
-def parse_jsonl(path: str) -> List:
-    # Load JSONL file
-    lst = []
-    with jsonlines.open(path) as reader:
-        for obj in reader:
-            lst.append(obj)
-    return lst
-
-
-def parse_isotime(v: str) -> datetime:
-    if not v:
-        return None
-    ts = pd.to_datetime(v)
-    if ts.tzinfo is not None:
-        ts = ts.tz_convert('America/New_York')
-    isotime = ts.tz_localize(None)
-    return isotime
 
 
 def find_full_mark(marks: List) -> Optional[dict]:

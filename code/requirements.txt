@@ -4,3 +4,4 @@ pydantic>=2.7.1
 jsonlines>=4.0.0
 numpy>=2.0.1
 pandas>=2.2.2
+pytest>=8.3.2
