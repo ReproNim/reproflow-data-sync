@@ -142,8 +142,10 @@ def get_tmap_deviation(clock: Clock, tmap: TMapRecord) -> float:
 
 # Define ReproNim timing map service
 class TMapService:
-    def __init__(self):
+    def __init__(self, path_or_marks: str | List = None):
         self.marks = []
+        if path_or_marks:
+            self.load(path_or_marks)
 
     # convert datetime from one ReproNim clock to another
     def convert(self,
@@ -200,4 +202,12 @@ class TMapService:
 
         # sort by isotime
         self.marks.sort(key=lambda x: x.isotime)
+
+    def to_label(self) -> str:
+        # dump number of marks and each mark in format [N]=isotime
+        if len(self.marks) == 0:
+            return "TMap is empty"
+        return f"TMap marks count {len(self.marks)} : " \
+               + ", ".join([f"[{i}]={str_isotime(mark.isotime)}" for i, mark in enumerate(self.marks)])
+
 
