@@ -26,7 +26,7 @@ def init_tmap_service(path_tmap_jsonl: str):
 
 @pytest.fixture(scope="session")
 def path_tmap_jsonl() -> str:
-    return str(Path(__file__).with_name("data") / "tmap.jsonl")
+    return str(Path(__file__).with_name("data") / "test_tmap.jsonl")
 
 
 @pytest.fixture
