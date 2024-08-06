@@ -15,7 +15,7 @@ import pandas as pd
 import click
 import logging
 
-from code.repronim_timing import TMapService
+from repronim_timing import TMapService, Clock
 
 # initialize the logger
 # Note: all logs goes to stderr
@@ -56,6 +56,7 @@ class SeriesData(BaseModel):
 # Define swimlane object model
 class SwimlaneModel(BaseModel):
     name: Optional[str] = Field(None, description="Swimlane name")
+    clock: Optional[Clock] = Field(None, description="Clock model")
     isotime_field: Optional[str] = Field(None, description="Field name for item in "
                                                            "swimlane containing "
                                                            "datetime in isotime format")
@@ -68,15 +69,19 @@ class SwimlaneModel(BaseModel):
 # Define dump model
 class DumpModel(BaseModel):
     birch: Optional[SwimlaneModel] = Field(SwimlaneModel(name="birch",
+                                                         clock=Clock.BIRCH,
                                                          isotime_field="isotime"),
                                            description="Birch swimlane")
     dicoms: Optional[SwimlaneModel] = Field(SwimlaneModel(name="dicoms",
+                                                          clock=Clock.DICOMS,
                                                           isotime_field="acquisition_isotime"),
                                             description="DICOMs swimlane")
     psychopy: Optional[SwimlaneModel] = Field(SwimlaneModel(name="psychopy",
+                                                            clock=Clock.PSYCHOPY,
                                                             isotime_field="isotime"),
                                               description="PsychoPy swimlane")
     qrinfo: Optional[SwimlaneModel] = Field(SwimlaneModel(name="qrinfo",
+                                                          clock=Clock.QRINFO,
                                                           isotime_field="isotime_start"),
                                             description="QRInfo swimlane")
     map_by_id: Optional[dict] = Field({}, description="Map of all objects by "
@@ -99,19 +104,19 @@ class MarkRecord(BaseModel):
     name: Optional[str] = Field(None, description="Mark name")
     target_ids: Optional[List[str]] = Field([], description="List of unique "
                                                         "series in seconds")
-    dicoms_isotime: Optional[str] = Field(None, description="DICOMs acquisition "
+    dicoms_isotime: Optional[datetime] = Field(None, description="DICOMs acquisition "
                                                             "time in ISO format")
     dicoms_duration: Optional[float] = Field(None, description="DICOMs series duration "
                                                                "in seconds")
-    birch_isotime: Optional[str] = Field(None, description="Birch acquisition "
+    birch_isotime: Optional[datetime] = Field(None, description="Birch acquisition "
                                                            "time in ISO format")
     birch_duration: Optional[float] = Field(None, description="Birch series duration "
                                                               "in seconds")
-    qrinfo_isotime: Optional[str] = Field(None, description="QRInfo acquisition "
+    qrinfo_isotime: Optional[datetime] = Field(None, description="QRInfo acquisition "
                                                             "time in ISO format")
     qrinfo_duration: Optional[float] = Field(None, description="QRInfo series duration "
                                                                "in seconds")
-    psychopy_isotime: Optional[str] = Field(None, description="PsychoPy acquisition "
+    psychopy_isotime: Optional[datetime] = Field(None, description="PsychoPy acquisition "
                                                              "time in ISO format")
     psychopy_duration: Optional[float] = Field(None, description="Psychopy series duration "
                                                                 "in seconds")
@@ -190,6 +195,7 @@ def find_swimlane_series(swimlane: SwimlaneModel,
             else:
                 logger.debug(f"Skip {swimlane.name} series (too small={len(objs)}): {objs}")
             objs = []
+            objs.append(obj)
 
         last_isotime = isotime
 
@@ -302,7 +308,8 @@ def build_model(path: str) -> DumpModel:
             logger.debug(f"  Series: {sd.name}, "
                          f"count: {sd.count}, "
                          f"interval: {sd.interval}, "
-                         f"next_series_interval: {sd.next_series_interval}")
+                         f"next_series_interval: {sd.next_series_interval}, "
+                         f"ids: {sd.lst[0].get('id')}..{sd.lst[-1].get('id')}")
 
     # dump long series info and data
     for sl in m.swimlanes:
@@ -314,6 +321,7 @@ def build_model(path: str) -> DumpModel:
 
 def generate_marks(model: DumpModel):
 
+    marks: List[MarkRecord] = []
     offset: dict = {}
     for dicoms_sd in model.dicoms.series:
         # generate start mark
@@ -322,7 +330,7 @@ def generate_marks(model: DumpModel):
         mark.kind = "Func series start"
         mark.name = f"{dicoms_sd.name}_start"
         mark.target_ids.append(dicoms_sd.lst[0].get('id'))
-        mark.dicoms_isotime = dicoms_sd.isotime_start.isoformat()
+        mark.dicoms_isotime = dicoms_sd.isotime_start
         mark.dicoms_duration = dicoms_sd.duration
 
         # try to match series
@@ -334,14 +342,15 @@ def generate_marks(model: DumpModel):
                 if match_series_data(dicoms_sd, ser_sd):
                     map_series[swiml.name] = ser_sd
                     mark.target_ids.append(ser_sd.lst[0].get('id'))
-                    setattr(mark, f"{swiml.name}_isotime", ser_sd.isotime_start.isoformat())
+                    setattr(mark, f"{swiml.name}_isotime", ser_sd.isotime_start)
                     setattr(mark, f"{swiml.name}_duration", ser_sd.duration)
                     offset[ser_sd.name] = (dicoms_sd.isotime_start -
                                            ser_sd.isotime_start).total_seconds()
                     break
 
-        logger.debug(f"Mark: {mark}")
-        dump_jsonl(mark)
+        marks.append(mark)
+        logger.debug(f"{mark.model_dump_json()}")
+        # dump_jsonl(mark)
 
         # generate marks for each scan in series
         for i in range(len(dicoms_sd.lst)):
@@ -352,14 +361,16 @@ def generate_marks(model: DumpModel):
             mark.target_ids.append(dicoms_sd.lst[i].get('id'))
             mark.dicoms_isotime = parse_isotime(
                 dicoms_sd.lst[i].get(
-                    model.dicoms.isotime_field)).isoformat()
+                    model.dicoms.isotime_field))
             #mark.dicoms_duration = None
             for k, v in map_series.items():
                 mark.target_ids.append(v.lst[i].get('id'))
                 setattr(mark, f"{k}_isotime", parse_isotime(
-                    v.lst[i].get(v.swimlane.isotime_field)).isoformat())
+                    v.lst[i].get(v.swimlane.isotime_field)))
                 #setattr(mark, f"{k}_duration", None)
-            dump_jsonl(mark)
+            marks.append(mark)
+            logger.debug(f"{mark.model_dump_json()}")
+            # dump_jsonl(mark)
 
         # generate end mark
         mark = MarkRecord()
@@ -367,17 +378,64 @@ def generate_marks(model: DumpModel):
         mark.kind = "Func series end"
         mark.name = f"{dicoms_sd.name}_end"
         mark.target_ids.append(dicoms_sd.lst[-1].get('id'))
-        mark.dicoms_isotime = dicoms_sd.isotime_end.isoformat()
+        mark.dicoms_isotime = dicoms_sd.isotime_end
         #mark.dicoms_duration = None
         logger.debug(f"Mark: {mark}")
         for k, v in map_series.items():
             mark.target_ids.append(v.lst[-1].get('id'))
-            setattr(mark, f"{k}_isotime", v.isotime_end.isoformat())
+            setattr(mark, f"{k}_isotime", v.isotime_end)
             #setattr(mark, f"{k}_duration", None)
+        marks.append(mark)
+        logger.debug(f"{mark.model_dump_json()}")
+        # dump_jsonl(mark)
+
+    logger.debug(f"Dicoms offsets: {offset}")
+    logger.debug(f"Generated marks after pass 1, done: {marks}")
+
+    # try to match marks with existing tmap also
+    # TODO: in future consider also to use tmap record from
+    #  mark generator if any found
+    logger.debug("Try to match marks with tmap service")
+    for mark in marks:
+        dicoms_isotime: datetime = mark.dicoms_isotime
+        dicoms_id: str = mark.target_ids[0]
+        for swiml in [model.birch, model.qrinfo, model.psychopy]:
+            for ser_sd in swiml.series:
+                for obj in ser_sd.lst:
+                    obj_id: str = obj.get('id')
+                    isotime_1: datetime = parse_isotime(
+                        obj.get(swiml.isotime_field))
+
+                    isotime_2: datetime = get_tmap_svc().convert(
+                        model.dicoms.clock, swiml.clock,
+                        dicoms_isotime)
+
+                    dt: float = (isotime_1 - isotime_2).total_seconds()
+
+                    threshold: float = 0.3
+                    # logger.debug(f"{dicoms_id}/{obj_id}=, dt={dt}")
+                    if (-threshold <= dt <= threshold and
+                            obj_id not in mark.target_ids):
+                        logger.debug(f"Time matched : {mark.name}")
+                        logger.debug(f"             : {dt} sec, ({isotime_1} - {isotime_2})")
+                        logger.debug(f"             : {dicoms_id} = {dicoms_isotime}")
+                        logger.debug(f"             : {obj_id} = {isotime_2}")
+                        mark.target_ids.append(obj_id)
+                        logger.debug(f"             : set {swiml.name}_isotime = {isotime_1}")
+                        setattr(mark, f"{swiml.name}_isotime", isotime_1)
+                        if mark.kind == "Func series start":
+                            logger.debug(f"             : set {swiml.name}_duration = {ser_sd.duration}")
+                            setattr(mark, f"{swiml.name}_duration", ser_sd.duration)
+
+    logger.debug("Done match marks with tmap service")
+    logger.debug(f"Generated marks after pass 2, done: {marks}")
+
+
+    # now dump all to stdout
+    for mark in marks:
         dump_jsonl(mark)
 
 
-    logger.debug(f"Dicoms offsets: {offset}")
 
 
 @click.command(help='Dump calculated timing synchronization marks info.')
