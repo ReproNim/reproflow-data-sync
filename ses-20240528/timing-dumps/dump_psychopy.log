@@ -1,5 +1,5 @@
 dump_psychopy.py tool
-Started on    : 2024-08-06 16:34:55.126057, vmelnik@Uranus
+Started on    : 2024-08-06 17:46:51.260027, vmelnik@Uranus
 Working dir   : /Users/vmelnik/Projects/Dartmouth/branches/reproflow-data-sync/code
 Session path  : /Users/vmelnik/Projects/Dartmouth/branches/typhon/reproflow-data-sync/ses-20240528
 Dumps path    : /Users/vmelnik/Projects/Dartmouth/branches/typhon/reproflow-data-sync/ses-20240528/timing-dumps
@@ -35,5 +35,5 @@ Time: 2024-05-28 11:09:23.164792
 Time: 2024-05-28 11:09:25.163245
 Time: 2024-05-28 11:09:27.146770
 Time: 2024-05-28 11:09:29.144830
-Exit on   : 2024-08-06 16:34:55.164311
+Exit on   : 2024-08-06 17:46:51.299252
 Exit code : 0

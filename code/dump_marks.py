@@ -412,8 +412,8 @@ def generate_marks(model: DumpModel):
 
                     dt: float = (isotime_1 - isotime_2).total_seconds()
 
-                    threshold: float = 0.3
-                    # logger.debug(f"{dicoms_id}/{obj_id}=, dt={dt}")
+                    threshold: float = 0.9
+                    logger.debug(f"{dicoms_id}/{obj_id}=, dt={dt}")
                     if (-threshold <= dt <= threshold and
                             obj_id not in mark.target_ids):
                         logger.debug(f"Time matched : {mark.name}")
@@ -426,6 +426,8 @@ def generate_marks(model: DumpModel):
                         if mark.kind == "Func series start":
                             logger.debug(f"             : set {swiml.name}_duration = {ser_sd.duration}")
                             setattr(mark, f"{swiml.name}_duration", ser_sd.duration)
+                        # break next items
+                        continue
 
     logger.debug("Done match marks with tmap service")
     logger.debug(f"Generated marks after pass 2, done: {marks}")

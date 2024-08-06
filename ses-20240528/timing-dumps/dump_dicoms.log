@@ -1,5 +1,5 @@
 dump_dicoms.py tool
-Started on    : 2024-08-06 16:34:53.391256, vmelnik@Uranus
+Started on    : 2024-08-06 17:46:49.537718, vmelnik@Uranus
 Working dir   : /Users/vmelnik/Projects/Dartmouth/branches/reproflow-data-sync/code
 Session path  : /Users/vmelnik/Projects/Dartmouth/branches/typhon/reproflow-data-sync/ses-20240528
 DICOMS path   : /Users/vmelnik/Projects/Dartmouth/branches/typhon/reproflow-data-sync/ses-20240528/DICOMS
@@ -866,5 +866,5 @@ Reading DICOM dir  : 007-func-bold_task-rest_run-2
     Series          = func-bold_task-rest_run-2
     AcquisitionDate = 20240528
     AcquisitionTime = 111539.502500
-Exit on   : 2024-08-06 16:34:53.662468
+Exit on   : 2024-08-06 17:46:49.793958
 Exit code : 0

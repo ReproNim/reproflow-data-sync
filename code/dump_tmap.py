@@ -23,7 +23,8 @@ logger.setLevel(logging.DEBUG)
 
 
 
-def find_full_mark(marks: List) -> Optional[dict]:
+def find_full_marks(marks: List) -> List[dict]:
+    lst: List[dict] = []
     for obj in marks:
         if (obj.get('type')=='MarkRecord' and
             obj.get('kind')=='Func series start' and
@@ -31,8 +32,8 @@ def find_full_mark(marks: List) -> Optional[dict]:
             obj.get('birch_isotime') is not None and
             obj.get('qrinfo_isotime') is not None and
             obj.get('psychopy_isotime') is not None):
-            return obj
-    return None
+            lst.append(obj)
+    return lst
 
 
 def calc_deviation(mark, field_name: str, ref_duration: float) -> float:
@@ -49,32 +50,33 @@ def generate_tmap(path_marks: str):
     logger.debug(f"generate_tmap({path_marks})")
 
     marks: List = parse_jsonl(path_marks)
-    fm = find_full_mark(marks)
-    if fm is None:
+    fmarks = find_full_marks(marks)
+    if len(fmarks)<=0:
         logger.error(f"Full/completed mark not found in {path_marks}")
         return 1
-    logger.debug(f"Found full mark: {fm}")
+    logger.debug(f"Found full mark count {len(fmarks)}: {fmarks}")
 
-    ref_isotime: datetime = parse_isotime(fm.get('birch_isotime'))
-    ref_duration: float = float(fm.get('birch_duration'))
+    for fm in fmarks:
+        ref_isotime: datetime = parse_isotime(fm.get('birch_isotime'))
+        ref_duration: float = float(fm.get('birch_duration'))
 
-    tmr: TMapRecord = TMapRecord()
-    tmr.isotime = ref_isotime
-    # ATM we consider birch device time as the reference one
-    tmr.birch_isotime = ref_isotime
-    tmr.birch_offset = 0.0
-    tmr.birch_deviation = 1.0
-    tmr.dicoms_isotime = parse_isotime(fm.get('dicoms_isotime'))
-    tmr.dicoms_offset = calc_offset(tmr.dicoms_isotime, tmr.isotime)
-    tmr.dicoms_deviation = calc_deviation(fm, 'dicoms_duration', ref_duration)
-    tmr.reprostim_video_isotime = parse_isotime(fm.get('qrinfo_isotime'))
-    tmr.reprostim_video_offset = calc_offset(tmr.reprostim_video_isotime, tmr.isotime)
-    tmr.reprostim_video_deviation = calc_deviation(fm, 'qrinfo_duration', ref_duration)
-    tmr.psychopy_isotime = parse_isotime(fm.get('psychopy_isotime'))
-    tmr.psychopy_offset = calc_offset(tmr.psychopy_isotime, tmr.isotime)
-    tmr.psychopy_deviation = calc_deviation(fm, 'psychopy_duration', ref_duration)
+        tmr: TMapRecord = TMapRecord()
+        tmr.isotime = ref_isotime
+        # ATM we consider birch device time as the reference one
+        tmr.birch_isotime = ref_isotime
+        tmr.birch_offset = 0.0
+        tmr.birch_deviation = 1.0
+        tmr.dicoms_isotime = parse_isotime(fm.get('dicoms_isotime'))
+        tmr.dicoms_offset = calc_offset(tmr.dicoms_isotime, tmr.isotime)
+        tmr.dicoms_deviation = calc_deviation(fm, 'dicoms_duration', ref_duration)
+        tmr.reprostim_video_isotime = parse_isotime(fm.get('qrinfo_isotime'))
+        tmr.reprostim_video_offset = calc_offset(tmr.reprostim_video_isotime, tmr.isotime)
+        tmr.reprostim_video_deviation = calc_deviation(fm, 'qrinfo_duration', ref_duration)
+        tmr.psychopy_isotime = parse_isotime(fm.get('psychopy_isotime'))
+        tmr.psychopy_offset = calc_offset(tmr.psychopy_isotime, tmr.isotime)
+        tmr.psychopy_deviation = calc_deviation(fm, 'psychopy_duration', ref_duration)
 
-    dump_jsonl(tmr)
+        dump_jsonl(tmr)
     return 0
 
 
