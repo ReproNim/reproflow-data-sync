@@ -151,20 +151,20 @@ class TMapService:
     def convert(self,
                 from_clock: Clock,
                 to_clock: Clock,
-                dt_from: datetime) -> datetime:
+                from_dt: datetime) -> datetime:
         # bypass conversion if clocks are the same
         if from_clock == to_clock:
-            return dt_from
+            return from_dt
 
         # skip empty datetime
-        if not dt_from:
+        if not from_dt:
             return None
 
-        tmap: TMapRecord = self.find_tmap(dt_from)
+        tmap: TMapRecord = self.find_tmap(from_clock, from_dt)
         # bypass conversion if tmap is not found
         if tmap is None:
-            logger.warning(f"tmap not found for {dt_from}")
-            return dt_from
+            logger.warning(f"tmap not found for {from_dt}")
+            return from_dt
 
         # calculate offset
         from_offset: float = get_tmap_offset(from_clock, tmap)
@@ -173,11 +173,11 @@ class TMapService:
         offset: float = to_offset - from_offset
         logger.debug(f"offset={offset}")
 
-        return dt_from + pd.Timedelta(offset, unit='s')
+        return from_dt + pd.Timedelta(offset, unit='s')
 
     # find tmap record by datetime and clock in sorted
     # list of marks
-    def find_tmap(self, dt: datetime) -> TMapRecord:
+    def find_tmap(self, clock: Clock, dt: datetime) -> TMapRecord:
         if not self.marks or len(self.marks) == 0:
             return None
         if len(self.marks) == 1:
@@ -186,7 +186,9 @@ class TMapService:
         last_mark = self.marks[0]
 
         for mark in self.marks:
-            if mark.isotime > dt:
+            # lookup based on provided clock using appropriate
+            # ***_isotime field
+            if get_tmap_isotime(clock, mark) > dt:
                 break
             last_mark = mark
         return last_mark
