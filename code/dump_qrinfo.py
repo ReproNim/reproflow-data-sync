@@ -12,6 +12,7 @@ import logging
 import jsonlines
 import pandas as pd
 
+from repronim_timing import get_session_id
 
 # initialize the logger
 # Note: all logs goes to stderr
@@ -43,7 +44,7 @@ def dump_jsonl(obj):
     print(json.dumps(obj, ensure_ascii=False))
 
 
-def dump_qrinfo_file(path: str, range_start: datetime,
+def dump_qrinfo_file(session_id: str, path: str, range_start: datetime,
                     range_end: datetime):
     logger.debug(f"Processing QR : {path}")
     lst = []
@@ -67,6 +68,7 @@ def dump_qrinfo_file(path: str, range_start: datetime,
         if range_start <= isotime_start <= range_end:
             # make flat, add videos info for info purposes
             obj['id'] = generate_id('qr')
+            obj['session_id'] = session_id
             obj['video_file_name'] = psum.get('video_file_name')
             obj['video_isotime_start'] = psum.get('video_isotime_start')
             obj['video_isotime_end'] = psum.get('video_isotime_end')
@@ -78,7 +80,7 @@ def dump_qrinfo_file(path: str, range_start: datetime,
             logger.debug(f"Skip, out of study datetime range: {obj}")
 
 
-def dump_qrinfo_all(path: str, range_start: datetime,
+def dump_qrinfo_all(session_id: str, path: str, range_start: datetime,
                     range_end: datetime):
     logger.debug(f"Reading parsed video QRs directory: {path}")
     for name in sorted(os.listdir(path)):
@@ -86,7 +88,8 @@ def dump_qrinfo_all(path: str, range_start: datetime,
         if name.endswith('.qrinfo.jsonl'):
             filepath = os.path.join(path, name)
             logger.debug(f"  {name}")
-            dump_qrinfo_file(filepath, range_start, range_end)
+            dump_qrinfo_file(session_id, filepath,
+                             range_start, range_end)
         else:
             logger.debug(f"  Skipping {name}")
 
@@ -105,6 +108,10 @@ def main(ctx, path: str, log_level):
     logger.info(f"Started on    : {datetime.now()}, {getpass.getuser()}@{os.uname().nodename}")
     logger.debug(f"Working dir   : {os.getcwd()}")
     logger.info(f"Session path  : {path}")
+
+    session_id: str = get_session_id(path)
+    logger.info(f"Session ID    : {session_id}")
+
 
     if not os.path.exists(path):
         logger.error(f"Session path does not exist: {path}")
@@ -136,7 +143,7 @@ def main(ctx, path: str, log_level):
     range_start, range_end = find_study_range(dump_dicoms_path)
     logger.info(f"Study range   : {range_start} - {range_end}")
 
-    dump_qrinfo_all(parsed_videos_path, range_start, range_end)
+    dump_qrinfo_all(session_id, parsed_videos_path, range_start, range_end)
 
     return 0
 

@@ -15,7 +15,7 @@ import pandas as pd
 import click
 import logging
 
-from repronim_timing import TMapService, Clock
+from repronim_timing import TMapService, Clock, get_session_id
 
 # initialize the logger
 # Note: all logs goes to stderr
@@ -68,6 +68,8 @@ class SwimlaneModel(BaseModel):
 
 # Define dump model
 class DumpModel(BaseModel):
+    session_id: Optional[str] = Field(None,
+                                      description="Unique session identifier")
     birch: Optional[SwimlaneModel] = Field(SwimlaneModel(name="birch",
                                                          clock=Clock.BIRCH,
                                                          isotime_field="isotime"),
@@ -99,6 +101,7 @@ class DumpModel(BaseModel):
 # Define synchronization mark/tag model
 class MarkRecord(BaseModel):
     type: Optional[str] = Field("MarkRecord", description="JSON record type/class")
+    session_id: Optional[str] = Field(None, description="Unique session identifier")
     id: Optional[str] = Field(None, description="Mark object unique ID")
     kind: Optional[str] = Field(None, description="Mark kind/type")
     name: Optional[str] = Field(None, description="Mark name")
@@ -279,8 +282,9 @@ def parse_jsonl(path: str) -> List:
     return lst
 
 
-def build_model(path: str) -> DumpModel:
+def build_model(session_id: str, path: str) -> DumpModel:
     m: DumpModel = DumpModel()
+    m.session_id = session_id
     # first, load all JSONL data to memory
     m.dicoms.data = parse_jsonl(os.path.join(path, 'dump_dicoms.jsonl'))
     m.birch.data = parse_jsonl(os.path.join(path, 'dump_birch.jsonl'))
@@ -327,6 +331,7 @@ def generate_marks(model: DumpModel):
         # generate start mark
         mark: MarkRecord = MarkRecord()
         mark.id = generate_id('mark')
+        mark.session_id = model.session_id
         mark.kind = "Func series start"
         mark.name = f"{dicoms_sd.name}_start"
         mark.target_ids.append(dicoms_sd.lst[0].get('id'))
@@ -356,6 +361,7 @@ def generate_marks(model: DumpModel):
         for i in range(len(dicoms_sd.lst)):
             mark = MarkRecord()
             mark.id = generate_id('mark')
+            mark.session_id = model.session_id
             mark.kind = "Func series scan"
             mark.name = f"{dicoms_sd.name}_scan_{i}"
             mark.target_ids.append(dicoms_sd.lst[i].get('id'))
@@ -375,6 +381,7 @@ def generate_marks(model: DumpModel):
         # generate end mark
         mark = MarkRecord()
         mark.id = generate_id('mark')
+        mark.session_id = model.session_id
         mark.kind = "Func series end"
         mark.name = f"{dicoms_sd.name}_end"
         mark.target_ids.append(dicoms_sd.lst[-1].get('id'))
@@ -455,6 +462,9 @@ def main(ctx, path: str, log_level):
     logger.debug(f"Working dir   : {os.getcwd()}")
     logger.info(f"Session path  : {path}")
 
+    session_id: str = get_session_id(path)
+    logger.info(f"Session ID    : {session_id}")
+
     if not os.path.exists(path):
         logger.error(f"Session path does not exist: {path}")
         return 1
@@ -471,7 +481,7 @@ def main(ctx, path: str, log_level):
     _tmap_svc = TMapService(path_or_marks=path_tmap)
     logger.info(f"              : {get_tmap_svc().to_label()}")
 
-    model: DumpModel = build_model(path_dumps)
+    model: DumpModel = build_model(session_id, path_dumps)
     #logger.debug(f"Model: {model}")
 
     generate_marks(model)

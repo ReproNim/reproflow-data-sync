@@ -12,6 +12,8 @@ import click
 import pydicom
 import logging
 
+from repronim_timing import (get_session_id)
+
 
 # initialize the logger
 # Note: all logs goes to stderr
@@ -25,6 +27,7 @@ logger.setLevel(logging.DEBUG)
 class DicomRecord(BaseModel):
     type: Optional[str] = Field("DicomRecord", description="JSON record type/class")
     id: Optional[str] = Field(None, description="DICOM object unique ID")
+    session_id: Optional[str] = Field(None, description="Session unique ID")
     acquisition_time: Optional[str] = Field(None, description="MRI acquisition time")
     acquisition_date: Optional[str] = Field(None, description="MRI acquisition date")
     acquisition_isotime: Optional[datetime] = Field(None,
@@ -38,6 +41,7 @@ class DicomRecord(BaseModel):
 class StudyRecord(BaseModel):
     type: Optional[str] = Field("StudyRecord", description="JSON record type/class")
     id: Optional[str] = Field(None, description="DICOM object unique ID")
+    session_id: Optional[str] = Field(None, description="Session unique ID")
     name: Optional[str] = Field(None, description="MRI study description")
     series_count: Optional[int] = Field(0, description="Number of series in the study")
     time_start: Optional[str] = Field(None, description="MRI time study start")
@@ -71,6 +75,7 @@ class StudyRecord(BaseModel):
 class SeriesRecord(BaseModel):
     type: Optional[str] = Field("SeriesRecord", description="JSON record type/class")
     id: Optional[str] = Field(None, description="DICOM object unique ID")
+    session_id: Optional[str] = Field(None, description="Session unique ID")
     name: Optional[str] = Field(None, description="MRI series description")
     dicom_count: Optional[int] = Field(0, description="Number of DICOM data images"
                                                        " in the series")
@@ -105,7 +110,7 @@ def parse_mri_datetime(date: str, time: str) -> datetime:
     return datetime.strptime(f"{date} {time}", "%Y%m%d %H%M%S.%f")
 
 
-def dump_dicoms_file(path: str):
+def dump_dicoms_file(session_id: str, path: str):
     # DICOM tag for Content Time
     acq_time_tag = (0x0008, 0x0032)
     acq_date_tag = (0x0008, 0x0022)
@@ -116,7 +121,9 @@ def dump_dicoms_file(path: str):
         # Read the DICOM file
         ds = pydicom.dcmread(path)
 
-        dr: DicomRecord = DicomRecord(id=generate_id("dicom"))
+        dr: DicomRecord = DicomRecord(
+            id=generate_id("dicom"),
+            session_id=session_id)
         # calc study
         if study_tag in ds:
             dr.study = ds[study_tag].value
@@ -155,19 +162,19 @@ def dump_dicoms_file(path: str):
         logger.error(f"Error reading {path}: {e}")
 
 
-def dump_dicoms_dir(path: str):
+def dump_dicoms_dir(session_id: str, path: str):
     #logger.debug(f"Reading DICOM dir {path}")
     for name in sorted(os.listdir(path)):
         # check if file is *.dcm
         if name.endswith('.dcm'):
             filepath = os.path.join(path, name)
             logger.debug(f"  {name}")
-            yield from dump_dicoms_file(filepath)
+            yield from dump_dicoms_file(session_id, filepath)
         else:
             logger.debug(f"Skipping file: {name}")
 
 
-def dump_dicoms_all(path: str):
+def dump_dicoms_all(session_id: str, path: str):
     logger.debug(f"Reading DICOM root : {path}")
     # Loop through all .dcm files in the directory
     for name in sorted(os.listdir(path)):
@@ -175,7 +182,7 @@ def dump_dicoms_all(path: str):
         path2 = os.path.join(path, name)
         if os.path.isdir(path2):
             logger.debug(f"Reading DICOM dir  : {name}")
-            yield from dump_dicoms_dir(path2)
+            yield from dump_dicoms_dir(session_id, path2)
         else:
             logger.debug(f"Skipping file: {name}")
 
@@ -199,6 +206,10 @@ def main(ctx, path: str, log_level):
     logger.debug(f"Working dir   : {os.getcwd()}")
     logger.info(f"Session path  : {path}")
 
+    session_id: str = get_session_id(path)
+    logger.info(f"Session ID    : {session_id}")
+
+
     if not os.path.exists(path):
         logger.error(f"Session path does not exist: {path}")
         return 1
@@ -215,7 +226,7 @@ def main(ctx, path: str, log_level):
     map_series = OrderedDict()
     # specify delta time range as 1 hour
     range_delta = timedelta(minutes=60)
-    for item in dump_dicoms_all(dicoms_path):
+    for item in dump_dicoms_all(session_id, dicoms_path):
         if item.study:
             # build study map
             if item.study in map_study:
@@ -239,6 +250,7 @@ def main(ctx, path: str, log_level):
                 # create study
                 sr: StudyRecord = StudyRecord(
                     id=generate_id("study"),
+                    session_id=session_id,
                     name=item.study,
                     series_count=0,
                     time_start=item.acquisition_time,
@@ -276,6 +288,7 @@ def main(ctx, path: str, log_level):
                     # create series
                     ss: SeriesRecord = SeriesRecord(
                         id=generate_id("series"),
+                        session_id=session_id,
                         name=item.series,
                         dicom_count=1,
                         time_start=item.acquisition_time,

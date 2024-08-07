@@ -12,6 +12,7 @@ import logging
 import jsonlines
 import pandas as pd
 
+from repronim_timing import get_session_id
 
 # initialize the logger
 # Note: all logs goes to stderr
@@ -81,7 +82,7 @@ def safe_jsonl_reader(path):
             else:
                 logger.debug(f"Skipping empty or comment line: {line}")
 
-def dump_birch_file(path: str, range_start: datetime,
+def dump_birch_file(session_id: str, path: str, range_start: datetime,
                     range_end: datetime):
     logger.debug(f"Processing    : {path}")
     lst_obj: list = []
@@ -94,6 +95,7 @@ def dump_birch_file(path: str, range_start: datetime,
             logger.debug(f"  {iso_time.isoformat()} {obj['alink_byte']} {obj['alink_flags']}")
             if range_start <= iso_time <= range_end:
                 obj['id'] = generate_id('birch')
+                obj['session_id'] = session_id
                 obj['duration_isotime'] = 0.0
                 obj['duration'] = 0.0
                 obj['isotime'] = iso_time.isoformat()
@@ -132,15 +134,16 @@ def dump_birch_file(path: str, range_start: datetime,
             dump_jsonl(obj2)
 
 
-def dump_birch_all(path: str, range_start: datetime,
-                    range_end: datetime):
+def dump_birch_all(session_id: str,  path: str, range_start: datetime,
+                range_end: datetime):
     logger.debug(f"Reading birch directory: {path}")
     for name in sorted(os.listdir(path)):
         # check if file is *.dcm
         if name.endswith('.jsonl'):
             filepath = os.path.join(path, name)
             logger.debug(f"  {name}")
-            dump_birch_file(filepath, range_start, range_end)
+            dump_birch_file(session_id, filepath,
+                            range_start, range_end)
         else:
             logger.debug(f"  Skipping {name}")
 
@@ -159,6 +162,10 @@ def main(ctx, path: str, log_level):
     logger.info(f"Started on    : {datetime.now()}, {getpass.getuser()}@{os.uname().nodename}")
     logger.debug(f"Working dir   : {os.getcwd()}")
     logger.info(f"Session path  : {path}")
+
+    session_id: str = get_session_id(path)
+    logger.info(f"Session ID    : {session_id}")
+
 
     if not os.path.exists(path):
         logger.error(f"Session path does not exist: {path}")
@@ -190,7 +197,7 @@ def main(ctx, path: str, log_level):
     range_start, range_end = find_study_range(dump_dicoms_path)
     logger.info(f"Study range   : {range_start} - {range_end}")
 
-    dump_birch_all(birch_path, range_start, range_end)
+    dump_birch_all(session_id, birch_path, range_start, range_end)
 
     return 0
 

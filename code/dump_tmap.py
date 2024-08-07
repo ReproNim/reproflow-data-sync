@@ -10,7 +10,8 @@ import pandas as pd
 import jsonlines
 import click
 import logging
-from repronim_timing import (TMapRecord, parse_jsonl,
+
+from repronim_timing import (TMapRecord, parse_jsonl, get_session_id,
                              parse_isotime, dump_jsonl, dump_csv)
 
 
@@ -66,7 +67,8 @@ def calc_offset(cur_isotime: datetime, ref_isotime: datetime) -> float:
     return (cur_isotime - ref_isotime).total_seconds()
 
 
-def generate_tmap(path_marks: str, extended: bool, format: str) -> int:
+def generate_tmap(session_id: str, path_marks: str,
+                  extended: bool, format: str) -> int:
     logger.debug(f"generate_tmap({path_marks})")
 
     marks: List = parse_jsonl(path_marks)
@@ -86,6 +88,8 @@ def generate_tmap(path_marks: str, extended: bool, format: str) -> int:
 
         tmr: TMapRecord = TMapRecord()
         tmr.isotime = ref_isotime
+        tmr.session_id = session_id
+        tmr.mark_id = fm.get('id')
         # ATM we consider birch device time as the reference one
         tmr.birch_isotime = ref_isotime
         tmr.birch_offset = 0.0
@@ -130,6 +134,10 @@ def main(ctx, path: str, log_level, extended, format):
     logger.debug(f"Working dir   : {os.getcwd()}")
     logger.info(f"Session path  : {path}")
 
+    session_id: str = get_session_id(path)
+    logger.info(f"Session ID    : {session_id}")
+
+
     format = format.lower()
 
     if not os.path.exists(path):
@@ -146,7 +154,8 @@ def main(ctx, path: str, log_level, extended, format):
         logger.error(f"Dump marks path does not exist: {path_marks}")
         return 1
 
-    return generate_tmap(path_marks, extended, format)
+
+    return generate_tmap(session_id, path_marks, extended, format)
 
 
 if __name__ == "__main__":

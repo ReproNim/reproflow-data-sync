@@ -12,6 +12,7 @@ import logging
 import jsonlines
 import pandas as pd
 
+from repronim_timing import get_session_id
 
 # initialize the logger
 # Note: all logs goes to stderr
@@ -33,7 +34,7 @@ def dump_jsonl(obj):
     print(json.dumps(obj, ensure_ascii=False))
 
 
-def dump_psychopy(logpath: str, range_start: datetime,
+def dump_psychopy(session_id: str, logpath: str, range_start: datetime,
                   range_end: datetime):
     with (jsonlines.open(logpath) as reader):
         for obj in reader:
@@ -43,6 +44,7 @@ def dump_psychopy(logpath: str, range_start: datetime,
                 logger.debug(f"Time: {time_dt}")
                 if range_start <= time_dt <= range_end:
                     obj['id'] = generate_id('psychopy')
+                    obj['session_id'] = session_id
                     obj['isotime'] = time_dt.isoformat()
                     if obj.get('event') == 'trigger':
                         keys_time = pd.to_datetime(
@@ -92,6 +94,9 @@ def main(ctx, path: str, log_level):
     logger.debug(f"Working dir   : {os.getcwd()}")
     logger.info(f"Session path  : {path}")
 
+    session_id: str = get_session_id(path)
+    logger.info(f"Session ID    : {session_id}")
+
     if not os.path.exists(path):
         logger.error(f"Session path does not exist: {path}")
         return 1
@@ -137,7 +142,7 @@ def main(ctx, path: str, log_level):
     for logfn in lst_logfiles:
         logpath = os.path.join(psychopy_path, logfn)
         logger.info(f"Psychopy log file: {logpath}")
-        dump_psychopy(logpath, range_start, range_end)
+        dump_psychopy(session_id, logpath, range_start, range_end)
 
     return 0
 

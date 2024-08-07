@@ -1,7 +1,8 @@
 dump_birch.py tool
-Started on    : 2024-08-07 13:40:20.213553, vmelnik@Uranus
+Started on    : 2024-08-07 16:34:37.482281, vmelnik@Uranus
 Working dir   : /Users/vmelnik/Projects/Dartmouth/branches/reproflow-data-sync/code
 Session path  : /Users/vmelnik/Projects/Dartmouth/branches/typhon/reproflow-data-sync/ses-20240604
+Session ID    : ses-20240604
 Dumps path    : /Users/vmelnik/Projects/Dartmouth/branches/typhon/reproflow-data-sync/ses-20240604/timing-dumps
 DICOMS dump   : /Users/vmelnik/Projects/Dartmouth/branches/typhon/reproflow-data-sync/ses-20240604/timing-dumps/dump_dicoms.jsonl
 Birch path    : /Users/vmelnik/Projects/Dartmouth/branches/typhon/reproflow-data-sync/ses-20240604/birch
@@ -4224,5 +4225,5 @@ Skipping by alink_byte/alink_flags filter {'epoch_time': 1717527035.5446784, 'is
 Skipping by alink_byte/alink_flags filter {'epoch_time': 1717527095.5469155, 'iso_time': '2024-06-04T14:51:35.546916-04:00', 'time': 3465.923897, 'alink_byte': 240, 'alink_flags': 0}
 Skipping by alink_byte/alink_flags filter {'epoch_time': 1717527155.5416481, 'iso_time': '2024-06-04T14:52:35.541648-04:00', 'time': 3525.924549, 'alink_byte': 240, 'alink_flags': 0}
 Skipping by alink_byte/alink_flags filter {'epoch_time': 1717527215.5503223, 'iso_time': '2024-06-04T14:53:35.550322-04:00', 'time': 3585.92495, 'alink_byte': 240, 'alink_flags': 0}
-Exit on   : 2024-08-07 13:40:21.393696
+Exit on   : 2024-08-07 16:34:38.603403
 Exit code : 0
