@@ -11,7 +11,7 @@ import jsonlines
 import click
 import logging
 from repronim_timing import (TMapRecord, parse_jsonl,
-                             parse_isotime, dump_jsonl)
+                             parse_isotime, dump_jsonl, dump_csv)
 
 
 # initialize the logger
@@ -36,29 +36,53 @@ def find_full_marks(marks: List) -> List[dict]:
     return lst
 
 
+def find_partial_marks(marks: List) -> List[dict]:
+    lst: List[dict] = []
+    for obj in marks:
+        if (obj.get('type')=='MarkRecord' and
+            obj.get('birch_isotime') is not None and
+            (obj.get('dicoms_isotime') is not None or
+            obj.get('qrinfo_isotime') is not None or
+            obj.get('psychopy_isotime') is not None)):
+            lst.append(obj)
+    return lst
+
+
 def calc_deviation(mark, field_name: str, ref_duration: float) -> float:
-    duration: float = float(mark.get(field_name))
+    if not ref_duration:
+        return None
+
+    duration = mark.get(field_name)
+    if duration is None:
+        return None
+
     if ref_duration !=0 :
         return duration / ref_duration
 
 
 def calc_offset(cur_isotime: datetime, ref_isotime: datetime) -> float:
+    if cur_isotime is None or ref_isotime is None:
+        return None
     return (cur_isotime - ref_isotime).total_seconds()
 
 
-def generate_tmap(path_marks: str):
+def generate_tmap(path_marks: str, extended: bool, format: str) -> int:
     logger.debug(f"generate_tmap({path_marks})")
 
     marks: List = parse_jsonl(path_marks)
-    fmarks = find_full_marks(marks)
+    # use partial or full marks depending on the mode
+    fmarks = find_partial_marks(marks) if extended else find_full_marks(marks)
     if len(fmarks)<=0:
         logger.error(f"Full/completed mark not found in {path_marks}")
         return 1
     logger.debug(f"Found full mark count {len(fmarks)}: {fmarks}")
 
+    tmap: List[TMapRecord] = []
     for fm in fmarks:
         ref_isotime: datetime = parse_isotime(fm.get('birch_isotime'))
-        ref_duration: float = float(fm.get('birch_duration'))
+        ref_duration = fm.get('birch_duration')
+        if not ref_duration is None:
+            ref_duration = float(ref_duration)
 
         tmr: TMapRecord = TMapRecord()
         tmr.isotime = ref_isotime
@@ -75,8 +99,12 @@ def generate_tmap(path_marks: str):
         tmr.psychopy_isotime = parse_isotime(fm.get('psychopy_isotime'))
         tmr.psychopy_offset = calc_offset(tmr.psychopy_isotime, tmr.isotime)
         tmr.psychopy_deviation = calc_deviation(fm, 'psychopy_duration', ref_duration)
+        tmap.append(tmr)
+        if format == 'jsonl':
+            dump_jsonl(tmr)
 
-        dump_jsonl(tmr)
+    if format == 'csv':
+        dump_csv(tmap)
     return 0
 
 
@@ -87,13 +115,22 @@ def generate_tmap(path_marks: str):
                                  'WARNING', 'ERROR',
                                  'CRITICAL']),
               help='Set the logging level')
+@click.option('-f', '--format', default='JSONL',
+              type=click.Choice(['JSONL', 'CSV']),
+              help='Set the output format')
+@click.option('-e', '--extended', is_flag=True,
+              help='Enable extended mode for tmap, in this mode '
+                   'will be generated partial tmap entries, when not '
+                   'all clocks are available')
 @click.pass_context
-def main(ctx, path: str, log_level):
+def main(ctx, path: str, log_level, extended, format):
     logger.setLevel(log_level)
     logger.debug("dump_tmap.py tool")
     logger.info(f"Started on    : {datetime.now()}, {getpass.getuser()}@{os.uname().nodename}")
     logger.debug(f"Working dir   : {os.getcwd()}")
     logger.info(f"Session path  : {path}")
+
+    format = format.lower()
 
     if not os.path.exists(path):
         logger.error(f"Session path does not exist: {path}")
@@ -109,7 +146,7 @@ def main(ctx, path: str, log_level):
         logger.error(f"Dump marks path does not exist: {path_marks}")
         return 1
 
-    return generate_tmap(path_marks)
+    return generate_tmap(path_marks, extended, format)
 
 
 if __name__ == "__main__":

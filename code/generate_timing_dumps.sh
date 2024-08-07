@@ -48,3 +48,8 @@ echo "dump_marks.py exit code: $?"
 echo "Generating tmap dumps..."
 ./dump_tmap.py --log-level $LOG_LEVEL $SESSION_DIR >$OUT_DIR/dump_tmap.jsonl 2>$OUT_DIR/dump_tmap.log
 echo "dump_tmap.py exit code: $?"
+
+# Generate ReproNim extended tmap in CSV format
+echo "Generating tmap extended dumps..."
+./dump_tmap.py --extended --format CSV --log-level $LOG_LEVEL $SESSION_DIR >$OUT_DIR/dump_tmap_ex.csv 2>$OUT_DIR/dump_tmap_ex.log
+echo "dump_tmap.py exit code: $?"

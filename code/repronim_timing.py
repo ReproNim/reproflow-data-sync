@@ -1,3 +1,4 @@
+import sys
 from enum import Enum
 from pydantic import BaseModel, Field
 from datetime import datetime
@@ -10,6 +11,14 @@ logger = logging.getLogger(__name__)
 
 
 # common functions
+
+def dump_csv(lst: List):
+    # Convert the list of Pydantic models or objects to a DataFrame
+    df = pd.DataFrame([obj.dict() for obj in lst])
+    # Print the DataFrame as CSV to stdout
+    df.to_csv(sys.stdout, index=False)
+
+
 def dump_jsonl(obj):
     print(obj.json())
 
