@@ -44,6 +44,7 @@ _last_id: dict = {
     "dicom": 0,
     "mark": 0,
     "psychopy": 0,
+    "reproevents": 0,
     "qr": 0,
     "series": 0,
     "study": 0,
