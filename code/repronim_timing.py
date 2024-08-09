@@ -1,10 +1,11 @@
+import json
 import sys
 from enum import Enum
 from pathlib import Path
 
 from pydantic import BaseModel, Field
 from datetime import datetime
-from typing import Optional, List, Generator
+from typing import Optional, List, Generator, Tuple
 import jsonlines
 import pandas as pd
 import logging
@@ -22,7 +23,36 @@ def dump_csv(lst: List):
 
 
 def dump_jsonl(obj):
-    print(obj.json())
+    if obj:
+        if isinstance(obj, BaseModel):
+            print(obj.model_dump_json())
+        else:
+            print(json.dumps(obj, ensure_ascii=False))
+
+
+def find_study_range(dump_dicoms_path: str) -> Tuple[Optional[datetime], Optional[datetime]]:
+    with (jsonlines.open(dump_dicoms_path) as reader):
+        for obj in reader:
+            if obj.get('type') == 'StudyRecord' and obj.get('name') == 'dbic^QA':
+                res = pd.to_datetime(obj['range_isotime_start']), pd.to_datetime(obj['range_isotime_end'])
+                return res;
+        return None, None
+
+
+_last_id: dict = {
+    "birch": 0,
+    "dicom": 0,
+    "mark": 0,
+    "psychopy": 0,
+    "qr": 0,
+    "series": 0,
+    "study": 0,
+}
+def generate_id(name: str) -> str:
+    # generate unique id based on int sequence
+    global _last_id
+    _last_id[name] += 1
+    return f"{name}_{_last_id[name]:06d}"
 
 
 def get_session_id(path: str) -> str:

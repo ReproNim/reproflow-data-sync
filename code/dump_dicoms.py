@@ -12,7 +12,7 @@ import click
 import pydicom
 import logging
 
-from repronim_timing import (get_session_id)
+from repronim_timing import (dump_jsonl, get_session_id, generate_id)
 
 
 # initialize the logger
@@ -99,12 +99,6 @@ class SeriesRecord(BaseModel):
 def calc_duration(start: datetime, end: datetime) -> float:
     return (end - start).total_seconds()
 
-last_id: dict = { "dicom": 0, "study": 0, "series": 0 }
-def generate_id(name: str) -> str:
-    # generate unique id based on int sequence
-    global last_id
-    last_id[name] += 1
-    return f"{name}_{last_id[name]:06d}"
 
 def parse_mri_datetime(date: str, time: str) -> datetime:
     return datetime.strptime(f"{date} {time}", "%Y%m%d %H%M%S.%f")
@@ -185,10 +179,6 @@ def dump_dicoms_all(session_id: str, path: str):
             yield from dump_dicoms_dir(session_id, path2)
         else:
             logger.debug(f"Skipping file: {name}")
-
-
-def dump_jsonl(obj):
-    print(obj.json())
 
 
 @click.command(help='Dump DICOM files date time info.')

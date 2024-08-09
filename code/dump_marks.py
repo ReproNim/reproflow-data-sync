@@ -16,6 +16,7 @@ import click
 import logging
 
 from repronim_timing import (TMapService, Clock,
+                             generate_id, dump_jsonl,
                              get_session_id, get_tmap_svc)
 
 # initialize the logger
@@ -121,14 +122,6 @@ class MarkRecord(BaseModel):
 
 
 
-last_id: dict = { "mark": 0 }
-def generate_id(name: str) -> str:
-    # generate unique id based on int sequence
-    global last_id
-    last_id[name] += 1
-    return f"{name}_{last_id[name]:06d}"
-
-
 def parse_isotime(v: str) -> datetime:
     if not v:
         return None
@@ -138,9 +131,6 @@ def parse_isotime(v: str) -> datetime:
     isotime = ts.tz_localize(None)
     return isotime
 
-
-def dump_jsonl(obj):
-    print(obj.json())
 
 # calculate interval between first and last dicom in series if
 # series has more than 1 dicoms

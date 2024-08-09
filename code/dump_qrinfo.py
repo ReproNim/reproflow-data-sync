@@ -12,7 +12,8 @@ import logging
 import jsonlines
 import pandas as pd
 
-from repronim_timing import (TMapService, Clock,
+from repronim_timing import (TMapService, Clock, dump_jsonl,
+                             find_study_range, generate_id,
                              get_session_id, get_tmap_svc)
 
 # initialize the logger
@@ -21,28 +22,6 @@ logger = logging.getLogger(__name__)
 logging.getLogger().addHandler(logging.StreamHandler(sys.stderr))
 logger.setLevel(logging.DEBUG)
 #logger.debug(f"name={__name__}")
-
-
-# Note: shared code
-def find_study_range(dump_dicoms_path: str) -> Tuple[Optional[datetime], Optional[datetime]]:
-    with (jsonlines.open(dump_dicoms_path) as reader):
-        for obj in reader:
-            if obj.get('type') == 'StudyRecord' and obj.get('name') == 'dbic^QA':
-                res = pd.to_datetime(obj['range_isotime_start']), pd.to_datetime(obj['range_isotime_end'])
-                return res;
-        return None, None
-
-
-last_id: dict = { "qr": 0 }
-def generate_id(name: str) -> str:
-    # generate unique id based on int sequence
-    global last_id
-    last_id[name] += 1
-    return f"{name}_{last_id[name]:06d}"
-
-
-def dump_jsonl(obj):
-    print(json.dumps(obj, ensure_ascii=False))
 
 
 def dump_qrinfo_file(session_id: str, path: str, range_start: datetime,

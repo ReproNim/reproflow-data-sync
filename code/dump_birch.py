@@ -12,7 +12,8 @@ import logging
 import jsonlines
 import pandas as pd
 
-from repronim_timing import (TMapService, Clock,
+from repronim_timing import (TMapService, Clock, dump_jsonl,
+                             find_study_range, generate_id,
                              get_session_id, get_tmap_svc)
 
 
@@ -40,23 +41,6 @@ def calc_tick_interval(tick_start: float, tick_end: float) -> float:
         return (0xFFFFFFFF - tick_start + tick_end) + 1
 
 
-# Note: shared code
-def find_study_range(dump_dicoms_path: str) -> Tuple[Optional[datetime], Optional[datetime]]:
-    with (jsonlines.open(dump_dicoms_path) as reader):
-        for obj in reader:
-            if obj.get('type') == 'StudyRecord' and obj.get('name') == 'dbic^QA':
-                res = pd.to_datetime(obj['range_isotime_start']), pd.to_datetime(obj['range_isotime_end'])
-                return res;
-        return None, None
-
-
-last_id: dict = { "birch": 0 }
-def generate_id(name: str) -> str:
-    # generate unique id based on int sequence
-    global last_id
-    last_id[name] += 1
-    return f"{name}_{last_id[name]:06d}"
-
 def get_birch_isotime(obj: dict) -> datetime:
     iso_time_str: str = obj['iso_time']
     if not iso_time_str:
@@ -65,9 +49,6 @@ def get_birch_isotime(obj: dict) -> datetime:
     iso_time_local = iso_time_pd.tz_convert('America/New_York')
     iso_time = iso_time_local.tz_localize(None)
     return iso_time
-
-def dump_jsonl(obj):
-    print(json.dumps(obj, ensure_ascii=False))
 
 
 def safe_jsonl_reader(path):
