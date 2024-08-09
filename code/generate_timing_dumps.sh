@@ -39,6 +39,11 @@ echo "Generating psychopy dumps..."
 ./dump_psychopy.py --log-level $LOG_LEVEL $SESSION_DIR >$OUT_DIR/dump_psychopy.jsonl 2>$OUT_DIR/dump_psychopy.log
 echo "dump_psychopy.py exit code: $?"
 
+# Generate reproevents dump
+echo "Generating reproevents dumps..."
+./dump_reproevents.py --log-level $LOG_LEVEL $SESSION_DIR >$OUT_DIR/dump_reproevents.jsonl 2>$OUT_DIR/dump_reproevents.log
+echo "dump_reproevents.py exit code: $?"
+
 # Generate synchronization timing marks dump
 echo "Generating marks dumps..."
 ./dump_marks.py --log-level $LOG_LEVEL $SESSION_DIR >$OUT_DIR/dump_marks.jsonl 2>$OUT_DIR/dump_marks.log

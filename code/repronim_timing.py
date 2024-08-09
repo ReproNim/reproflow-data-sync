@@ -158,6 +158,8 @@ def get_tmap_offset(clock: Clock, tmap: TMapRecord) -> float:
         return tmap.psychopy_offset
     elif clock == Clock.QRINFO:
         return tmap.reprostim_video_offset
+    elif clock == Clock.REPROEVENTS:
+        return tmap.reproevents_offset
     elif clock == Clock.REPROSTIM_VIDEO:
         return tmap.reprostim_video_offset
     else:
@@ -176,6 +178,8 @@ def get_tmap_isotime(clock: Clock, tmap: TMapRecord) -> datetime:
         return tmap.psychopy_isotime
     elif clock == Clock.QRINFO:
         return tmap.reprostim_video_isotime
+    elif clock == Clock.REPROEVENTS:
+        return tmap.reproevents_isotime
     elif clock == Clock.REPROSTIM_VIDEO:
         return tmap.reprostim_video_isotime
     else:
@@ -194,6 +198,8 @@ def get_tmap_deviation(clock: Clock, tmap: TMapRecord) -> float:
         return tmap.psychopy_deviation
     elif clock == Clock.QRINFO:
         return tmap.reprostim_video_deviation
+    elif clock == Clock.REPROEVENTS:
+        return tmap.reproevents_deviation
     elif clock == Clock.REPROSTIM_VIDEO:
         return tmap.reprostim_video_deviation
     else:
