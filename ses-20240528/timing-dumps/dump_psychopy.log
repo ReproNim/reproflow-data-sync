@@ -1,5 +1,5 @@
 dump_psychopy.py tool
-Started on    : 2024-08-07 16:34:52.386404, vmelnik@Uranus
+Started on    : 2024-08-09 15:50:22.426053, vmelnik@Uranus
 Working dir   : /Users/vmelnik/Projects/Dartmouth/branches/reproflow-data-sync/code
 Session path  : /Users/vmelnik/Projects/Dartmouth/branches/typhon/reproflow-data-sync/ses-20240528
 Session ID    : ses-20240528
@@ -7,7 +7,8 @@ Dumps path    : /Users/vmelnik/Projects/Dartmouth/branches/typhon/reproflow-data
 DICOMS dump   : /Users/vmelnik/Projects/Dartmouth/branches/typhon/reproflow-data-sync/ses-20240528/timing-dumps/dump_dicoms.jsonl
 Psychopy path : /Users/vmelnik/Projects/Dartmouth/branches/typhon/reproflow-data-sync/ses-20240528/psychopy
 QRInfo path   : /Users/vmelnik/Projects/Dartmouth/branches/typhon/reproflow-data-sync/ses-20240528/timing-dumps/dump_qrinfo.jsonl
-Study range   : 2024-05-28 10:04:59.930000 - 2024-05-28 12:15:39.502500
+Study range   : dicoms    2024-05-28 11:02:59.930000 - 2024-05-28 11:17:39.502500
+              : psychopy  2024-05-28 10:56:47.792389 - 2024-05-28 11:11:27.364889
 Psychopy log files: ['20240528-1.log', '20240528_run-2.log']
 Psychopy log file: /Users/vmelnik/Projects/Dartmouth/branches/typhon/reproflow-data-sync/ses-20240528/psychopy/20240528-1.log
 Time: 2024-05-28 11:05:01.906840
@@ -36,5 +37,5 @@ Time: 2024-05-28 11:09:23.164792
 Time: 2024-05-28 11:09:25.163245
 Time: 2024-05-28 11:09:27.146770
 Time: 2024-05-28 11:09:29.144830
-Exit on   : 2024-08-07 16:34:52.430240
+Exit on   : 2024-08-09 15:50:22.476194
 Exit code : 0

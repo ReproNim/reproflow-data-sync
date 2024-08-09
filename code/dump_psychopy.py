@@ -12,7 +12,8 @@ import logging
 import jsonlines
 import pandas as pd
 
-from repronim_timing import get_session_id
+from repronim_timing import (TMapService, Clock,
+                             get_session_id, get_tmap_svc)
 
 # initialize the logger
 # Note: all logs goes to stderr
@@ -130,9 +131,19 @@ def main(ctx, path: str, log_level):
         logger.error(f"QRInfo path does not exist: {qrinfo_path}")
         return 1
 
+    # load tmap service
+    _tmp_svc = get_tmap_svc()
+
+
     # find the study range
     range_start, range_end = find_study_range(dump_dicoms_path)
-    logger.info(f"Study range   : {range_start} - {range_end}")
+    logger.info(f"Study range   : dicoms    {range_start} - {range_end}")
+    range_start = get_tmap_svc().convert(Clock.DICOMS, Clock.PSYCHOPY,
+                                         range_start)
+    range_end = get_tmap_svc().convert(Clock.DICOMS, Clock.PSYCHOPY,
+                                       range_end)
+    logger.info(f"              : psychopy  {range_start} - {range_end}")
+
 
     # find the psychopy log files
     lst_logfiles = find_psychopy_logfiles(qrinfo_path)

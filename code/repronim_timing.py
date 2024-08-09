@@ -243,3 +243,13 @@ class TMapService:
                + ", ".join([f"[{i}]={str_isotime(mark.isotime)}" for i, mark in enumerate(self.marks)])
 
 
+_tmap_svc: TMapService = None
+
+def get_tmap_svc() -> TMapService:
+    global _tmap_svc
+    if not _tmap_svc:
+        path_tmap: str = str(Path(__file__).with_name("repronim_tmap.jsonl"))
+        logger.info(f"Loading tmap  : {path_tmap}")
+        _tmap_svc = TMapService(path_or_marks=path_tmap)
+        logger.info(f"              : {get_tmap_svc().to_label()}")
+    return _tmap_svc

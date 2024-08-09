@@ -15,7 +15,8 @@ import pandas as pd
 import click
 import logging
 
-from repronim_timing import TMapService, Clock, get_session_id
+from repronim_timing import (TMapService, Clock,
+                             get_session_id, get_tmap_svc)
 
 # initialize the logger
 # Note: all logs goes to stderr
@@ -23,12 +24,6 @@ logger = logging.getLogger(__name__)
 logging.getLogger().addHandler(logging.StreamHandler(sys.stderr))
 logger.setLevel(logging.DEBUG)
 #logger.debug(f"name={__name__}")
-
-_tmap_svc: TMapService = None
-
-def get_tmap_svc() -> TMapService:
-    global _tmap_svc
-    return _tmap_svc
 
 
 # Define abstract series model
@@ -474,12 +469,8 @@ def main(ctx, path: str, log_level):
         logger.error(f"Session timing-dumps path does not exist: {path_dumps}")
         return 1
 
-    # TODO: provide tmap as parameter as well
-    path_tmap: str = str(Path(__file__).with_name("repronim_tmap.jsonl"))
-    logger.info(f"Loading tmap  : {path_tmap}")
-    global _tmap_svc
-    _tmap_svc = TMapService(path_or_marks=path_tmap)
-    logger.info(f"              : {get_tmap_svc().to_label()}")
+    # load tmap service
+    _tmp_svc = get_tmap_svc()
 
     model: DumpModel = build_model(session_id, path_dumps)
     #logger.debug(f"Model: {model}")
