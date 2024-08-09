@@ -34,3 +34,6 @@ Algorithm proposals for the ReproFlow time synchronization effort:
     - TBD:
   - TBD: 
 - Use DICOMs as primary data. We should concentrate first on series with `func-` prefix producing multiple image and pulse events in system. And try to locate similar events/sequenec in other data sources like birch, reproevent, psychopy, and videos. 
+
+TODO:
+  - Use DataLad run to execute commands (https://handbook.datalad.org/en/latest/basics/basics-run.html)

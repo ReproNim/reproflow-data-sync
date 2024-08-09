@@ -225,7 +225,7 @@ def main(ctx, path: str, log_level):
     map_study = OrderedDict()
     map_series = OrderedDict()
     # specify delta time range as 1 hour
-    range_delta = timedelta(minutes=60)
+    range_delta = timedelta(minutes=2)
     for item in dump_dicoms_all(session_id, dicoms_path):
         if item.study:
             # build study map
