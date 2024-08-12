@@ -185,8 +185,8 @@ def find_dicoms_func_series(model: DumpModel) -> List[SeriesData]:
         (df['series'].str.startswith('func-'))
         ]
 
-    # group by series
-    grouped_df = filtered_df.groupby('series')
+    # group by series folder, rather than only series name
+    grouped_df = filtered_df.groupby('series_folder')
 
     lst: List = []
     last_sd: SeriesData = None

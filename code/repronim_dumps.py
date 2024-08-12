@@ -22,6 +22,7 @@ class DicomRecord(BaseModel):
                                                                 "format")
     study: Optional[str] = Field(None, description="MRI study description")
     series: Optional[str] = Field(None, description="MRI series description")
+    series_folder: Optional[str] = Field(None, description="Base name of the series folder")
 
 # Define model for DICOM MRI study
 class StudyRecord(BaseModel):
@@ -63,6 +64,7 @@ class SeriesRecord(BaseModel):
     id: Optional[str] = Field(None, description="DICOM object unique ID")
     session_id: Optional[str] = Field(None, description="Session unique ID")
     name: Optional[str] = Field(None, description="MRI series description")
+    folder: Optional[str] = Field(None, description="Base name of the series folder")
     dicom_count: Optional[int] = Field(0, description="Number of DICOM data images"
                                                        " in the series")
     time_start: Optional[str] = Field(None, description="MRI time series start")

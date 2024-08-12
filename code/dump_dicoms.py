@@ -32,7 +32,7 @@ def parse_mri_datetime(date: str, time: str) -> datetime:
     return datetime.strptime(f"{date} {time}", "%Y%m%d %H%M%S.%f")
 
 
-def dump_dicoms_file(session_id: str, path: str):
+def dump_dicoms_file(session_id: str, dicoms_folder: str, path: str):
     # DICOM tag for Content Time
     acq_time_tag = (0x0008, 0x0032)
     acq_date_tag = (0x0008, 0x0022)
@@ -45,7 +45,8 @@ def dump_dicoms_file(session_id: str, path: str):
 
         dr: DicomRecord = DicomRecord(
             id=generate_id("dicom"),
-            session_id=session_id)
+            session_id=session_id,
+            series_folder=dicoms_folder)
         # calc study
         if study_tag in ds:
             dr.study = ds[study_tag].value
@@ -86,12 +87,17 @@ def dump_dicoms_file(session_id: str, path: str):
 
 def dump_dicoms_dir(session_id: str, path: str):
     #logger.debug(f"Reading DICOM dir {path}")
+    # get containing folder name
+    dicoms_folder: str = os.path.basename(path)
+
     for name in sorted(os.listdir(path)):
         # check if file is *.dcm
         if name.endswith('.dcm'):
             filepath = os.path.join(path, name)
             logger.debug(f"  {name}")
-            yield from dump_dicoms_file(session_id, filepath)
+            yield from dump_dicoms_file(session_id,
+                                        dicoms_folder,
+                                        filepath)
         else:
             logger.debug(f"Skipping file: {name}")
 
@@ -185,7 +191,7 @@ def main(ctx, path: str, log_level):
 
             # build series map
             if item.series:
-                skey: str = f"{item.study}|{item.series}"
+                skey: str = f"{item.study}|{item.series}|{item.series_folder}"
                 if skey in map_series:
                     ss: SeriesRecord = map_series[skey]
                     ss.dicom_count += 1
@@ -208,6 +214,7 @@ def main(ctx, path: str, log_level):
                         id=generate_id("series"),
                         session_id=session_id,
                         name=item.series,
+                        folder=item.series_folder,
                         dicom_count=1,
                         time_start=item.acquisition_time,
                         date_start=item.acquisition_date,
