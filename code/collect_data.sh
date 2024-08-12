@@ -30,9 +30,9 @@ ssh reprostim@reproiner "cd reprostim/Events/data && grep -l '\<${ISODATE}T' *.c
 
 # only those for which we fetch data, we get them
 (
-    cd ~/proj/repronim/reprostim-reproiner/Videos/
+    cd ~/proj/repronim/reprostim-reproiner
     git fetch origin; git fetch rolando;
     git merge --ff-only origin/master
-    git annex get -J4 Videos/$Y/$M/$Y.$M.$D.*
+    git annex get -J4 Videos/$Y/$M/$Y.$M.$D-*
 )
-cp --reflink=auto `find ~/proj/repronim/reprostim-reproiner/Videos/$Y/$M -size +100 -iname "$Y.$M.$D.*"` reprostim-videos/
+cp --reflink=auto `find ~/proj/repronim/reprostim-reproiner/Videos/$Y/$M -size +100 -iname "$Y.$M.$D-*"` reprostim-videos/
