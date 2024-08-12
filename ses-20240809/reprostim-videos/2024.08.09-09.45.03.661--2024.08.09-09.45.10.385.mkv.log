@@ -1,0 +1,1618 @@
+2024-08-09 09:45:03.662 [INFO] [75038] Session logging begin   : reprostim-videocapture 1.11.0.261, session_logger_2024.08.09-09.45.03.661, start_ts=2024.08.09-09.45.03.661
+2024-08-09 09:45:03.662 [INFO] [75038]         Video device    : /dev/video2, S/N: B208220302195, USB Capture DVI+, bus info: usb-0000:00:14.0-2
+2024-08-09 09:45:03.662 [INFO] [75038]                         : 1920x1080, 60 fps
+2024-08-09 09:45:03.662 [INFO] [75038]         Audio-in device : hw:2,1
+2024-08-09 09:45:03.662 [INFO] [75038]                         : hdmi/HDMI Capture Volume=95%
+2024-08-09 09:45:03.662 [INFO] [75038]                         : line-in/Line In Capture Volume=95%
+2024-08-09 09:45:03.662 [INFO] [75038] REPROSTIM-METADATA-JSON: {"aDev":"hw:2,1","appName":"reprostim-videocapture","cap_isotime_start":"2024-08-09T09:45:03.661898","cap_ts_start":"2024.08.09-09.45.03.661","cx":1920,"cy":1080,"frameRate":"60","json_isotime":"2024-08-09T09:45:03.662609","json_ts":"2024.08.09-09.45.03.662","serial":"B208220302195","type":"session_begin","vDev":"USB Capture DVI+","version":"1.11.0.261"} :REPROSTIM-METADATA-JSON
+2024-08-09 09:45:03.663 [INFO] [2906548] 2024.08.09-09.45.03.661: <SYSTEMCALL> ffmpeg -f alsa -ac 2 -thread_queue_size 40960 -i hw:2,1 -f v4l2 -input_format yuyv422 -framerate 60 -video_size 1920x1080 -thread_queue_size 40960 -i /dev/video2 -c:v libx264 -flush_packets 1   -acodec aac /data/reprostim/Videos/2024/08/2024.08.09-09.45.03.661--.mkv 2>&1
+2024-08-09 09:45:03.749 [INFO] [2906548] ffmpeg version 5.1.5-0+deb12u1 Copyright (c) 2000-2024 the FFmpeg developers
+
+2024-08-09 09:45:03.749 [INFO] [2906548]   built with gcc 12 (Debian 12.2.0-14)
+
+2024-08-09 09:45:03.749 [INFO] [2906548]   configuration: --prefix=/usr --extra-version=0+deb12u1 --toolchain=hardened --libdir=/usr/lib/x86_64-linux-gnu --incdir=/usr/
+2024-08-09 09:45:03.749 [INFO] [2906548] include/x86_64-linux-gnu --arch=amd64 --enable-gpl --disable-stripping --enable-gnutls --enable-ladspa --enable-libaom --enable
+2024-08-09 09:45:03.749 [INFO] [2906548] -libass --enable-libbluray --enable-libbs2b --enable-libcaca --enable-libcdio --enable-libcodec2 --enable-libdav1d --enable-lib
+2024-08-09 09:45:03.749 [INFO] [2906548] flite --enable-libfontconfig --enable-libfreetype --enable-libfribidi --enable-libglslang --enable-libgme --enable-libgsm --ena
+2024-08-09 09:45:03.749 [INFO] [2906548] ble-libjack --enable-libmp3lame --enable-libmysofa --enable-libopenjpeg --enable-libopenmpt --enable-libopus --enable-libpulse 
+2024-08-09 09:45:03.749 [INFO] [2906548] --enable-librabbitmq --enable-librist --enable-librubberband --enable-libshine --enable-libsnappy --enable-libsoxr --enable-lib
+2024-08-09 09:45:03.749 [INFO] [2906548] speex --enable-libsrt --enable-libssh --enable-libsvtav1 --enable-libtheora --enable-libtwolame --enable-libvidstab --enable-li
+2024-08-09 09:45:03.749 [INFO] [2906548] bvorbis --enable-libvpx --enable-libwebp --enable-libx265 --enable-libxml2 --enable-libxvid --enable-libzimg --enable-libzmq --
+2024-08-09 09:45:03.749 [INFO] [2906548] enable-libzvbi --enable-lv2 --enable-omx --enable-openal --enable-opencl --enable-opengl --enable-sdl2 --disable-sndio --enable
+2024-08-09 09:45:03.749 [INFO] [2906548] -libjxl --enable-pocketsphinx --enable-librsvg --enable-libmfx --enable-libdc1394 --enable-libdrm --enable-libiec61883 --enable
+2024-08-09 09:45:03.749 [INFO] [2906548] -chromaprint --enable-frei0r --enable-libx264 --enable-libplacebo --enable-librav1e --enable-shared
+
+2024-08-09 09:45:03.749 [INFO] [2906548]   libavutil      57. 28.100 / 57. 28.100
+
+2024-08-09 09:45:03.749 [INFO] [2906548]   libavcodec     59. 37.100 / 59. 37.100
+
+2024-08-09 09:45:03.749 [INFO] [2906548]   libavformat    59. 27.100 / 59. 27.100
+
+2024-08-09 09:45:03.749 [INFO] [2906548]   libavdevice    59.  7.100 / 59.  7.100
+
+2024-08-09 09:45:03.749 [INFO] [2906548]   libavfilter     8. 44.100 /  8. 44.100
+
+2024-08-09 09:45:03.749 [INFO] [2906548]   libswscale      6.  7.100 /  6.  7.100
+
+2024-08-09 09:45:03.749 [INFO] [2906548]   libswresample   4.  7.100 /  4.  7.100
+
+2024-08-09 09:45:03.749 [INFO] [2906548]   libpostproc    56.  6.100 / 56.  6.100
+
+2024-08-09 09:45:03.755 [INFO] [2906548] Guessed Channel Layout for Input Stream #0.0 : stereo
+
+2024-08-09 09:45:03.755 [INFO] [2906548] Input #0, alsa, from 'hw:2,1':
+
+2024-08-09 09:45:03.755 [INFO] [2906548]   Duration: N/A, start: 1723211103.754223, bitrate: 1536 kb/s
+
+2024-08-09 09:45:03.755 [INFO] [2906548]   Stream #0:0: Audio: pcm_s16le, 48000 Hz, stereo, s16, 1536 kb/s
+
+2024-08-09 09:45:03.763 [INFO] [75038] 2024.08.09-09.45.03.661:	Started Recording: 
+2024-08-09 09:45:03.763 [INFO] [75038] Apct Rat: 1920x1080
+2024-08-09 09:45:03.763 [INFO] [75038] FR: 60
+2024-08-09 09:45:03.790 [INFO] [2906548] [video4linux2,v4l2 @ 0x5624485f5fc0] Dequeued v4l2 buffer contains corrupted data (0 bytes).
+
+2024-08-09 09:45:03.790 [INFO] [2906548] Input #1, video4linux2,v4l2, from '/dev/video2':
+
+2024-08-09 09:45:03.790 [INFO] [2906548]   Duration: N/A, start: 0.000000, bitrate: 1990656 kb/s
+
+2024-08-09 09:45:03.790 [INFO] [2906548]   Stream #1:0: Video: rawvideo (YUY2 / 0x32595559), yuyv422, 1920x1080, 1990656 kb/s, 60 fps, 60 tbr, 1000k tbn
+
+2024-08-09 09:45:03.791 [INFO] [2906548] Stream mapping:
+
+2024-08-09 09:45:03.791 [INFO] [2906548]   Stream #1:0 -> #0:0 (rawvideo (native) -> h264 (libx264))
+
+2024-08-09 09:45:03.791 [INFO] [2906548]   Stream #0:0 -> #0:1 (pcm_s16le (native) -> aac (native))
+
+2024-08-09 09:45:03.791 [INFO] [2906548] Press [q] to stop, [?] for help
+
+2024-08-09 09:45:03.791 [INFO] [2906548] [video4linux2,v4l2 @ 0x5624485f5fc0] Dequeued v4l2 buffer contains corrupted data (0 bytes).
+
+2024-08-09 09:45:03.852 [INFO] [2906548]     Last message repeated 30 times
+
+2024-08-09 09:45:03.852 [INFO] [2906548] DTS 17535167975464, next:16666 st:0 invalid dropping
+
+2024-08-09 09:45:03.852 [INFO] [2906548] PTS 17535167975464, next:16666 invalid dropping st:0
+
+2024-08-09 09:45:03.862 [INFO] [2906548] [libx264 @ 0x5624485f9bc0] using cpu capabilities: MMX2 SSE2Fast SSSE3 SSE4.2 AVX FMA3 BMI2 AVX2
+
+2024-08-09 09:45:03.869 [INFO] [2906548] [libx264 @ 0x5624485f9bc0] profile High 4:2:2, level 4.2, 4:2:2, 8-bit
+
+2024-08-09 09:45:03.870 [INFO] [2906548] [libx264 @ 0x5624485f9bc0] 264 - core 164 r3095 baee400 - H.264/MPEG-4 AVC codec - Copyleft 2003-2022 - http://www.videolan.org
+2024-08-09 09:45:03.870 [INFO] [2906548] /x264.html - options: cabac=1 ref=3 deblock=1:0:0 analyse=0x3:0x113 me=hex subme=7 psy=1 psy_rd=1.00:0.00 mixed_ref=1 me_range=
+2024-08-09 09:45:03.870 [INFO] [2906548] 16 chroma_me=1 trellis=1 8x8dct=1 cqm=0 deadzone=21,11 fast_pskip=1 chroma_qp_offset=-2 threads=6 lookahead_threads=1 sliced_th
+2024-08-09 09:45:03.870 [INFO] [2906548] reads=0 nr=0 decimate=1 interlaced=0 bluray_compat=0 constrained_intra=0 bframes=3 b_pyramid=2 b_adapt=1 b_bias=0 direct=1 weig
+2024-08-09 09:45:03.870 [INFO] [2906548] htb=1 open_gop=0 weightp=2 keyint=250 keyint_min=25 scenecut=40 intra_refresh=0 rc_lookahead=40 rc=crf mbtree=1 crf=23.0 qcomp=
+2024-08-09 09:45:03.870 [INFO] [2906548] 0.60 qpmin=0 qpmax=69 qpstep=4 ip_ratio=1.40 aq=1:1.00
+
+2024-08-09 09:45:03.875 [INFO] [2906548] Output #0, matroska, to '/data/reprostim/Videos/2024/08/2024.08.09-09.45.03.661--.mkv':
+
+2024-08-09 09:45:03.876 [INFO] [2906548]   Metadata:
+
+2024-08-09 09:45:03.876 [INFO] [2906548]     encoder         : Lavf59.27.100
+
+2024-08-09 09:45:03.876 [INFO] [2906548]   Stream #0:0: Video: h264 (H264 / 0x34363248), yuv422p(tv, progressive), 1920x1080, q=2-31, 60 fps, 1k tbn
+
+2024-08-09 09:45:03.876 [INFO] [2906548]     Metadata:
+
+2024-08-09 09:45:03.876 [INFO] [2906548]       encoder         : Lavc59.37.100 libx264
+
+2024-08-09 09:45:03.876 [INFO] [2906548]     Side data:
+
+2024-08-09 09:45:03.876 [INFO] [2906548]       cpb: bitrate max/min/avg: 0/0/0 buffer size: 0 vbv_delay: N/A
+
+2024-08-09 09:45:03.876 [INFO] [2906548]   Stream #0:1: Audio: aac (LC) ([255][0][0][0] / 0x00FF), 48000 Hz, stereo, fltp, 128 kb/s
+
+2024-08-09 09:45:03.876 [INFO] [2906548]     Metadata:
+
+2024-08-09 09:45:03.876 [INFO] [2906548]       encoder         : Lavc59.37.100 aac
+
+2024-08-09 09:45:03.876 [INFO] [2906548] frame=    1 fps=0.0 q=0.0 size=       1kB time=00:00:00.00 bitrate=N/A speed=   0x    DTS 17535167992230, next:33332 st:0 inva
+2024-08-09 09:45:03.876 [INFO] [2906548] lid dropping
+
+2024-08-09 09:45:03.876 [INFO] [2906548] PTS 17535167992230, next:33332 invalid dropping st:0
+
+2024-08-09 09:45:03.881 [INFO] [2906548] DTS 17535168008893, next:49998 st:0 invalid dropping
+
+2024-08-09 09:45:03.882 [INFO] [2906548] PTS 17535168008893, next:49998 invalid dropping st:0
+
+2024-08-09 09:45:03.895 [INFO] [2906548] DTS 17535168025514, next:66664 st:0 invalid dropping
+
+2024-08-09 09:45:03.896 [INFO] [2906548] PTS 17535168025514, next:66664 invalid dropping st:0
+
+2024-08-09 09:45:03.910 [INFO] [2906548] DTS 17535168042234, next:83330 st:0 invalid dropping
+
+2024-08-09 09:45:03.911 [INFO] [2906548] PTS 17535168042234, next:83330 invalid dropping st:0
+
+2024-08-09 09:45:03.928 [INFO] [2906548] DTS 17535168058878, next:99996 st:0 invalid dropping
+
+2024-08-09 09:45:03.929 [INFO] [2906548] PTS 17535168058878, next:99996 invalid dropping st:0
+
+2024-08-09 09:45:03.945 [INFO] [2906548] DTS 17535168075517, next:116662 st:0 invalid dropping
+
+2024-08-09 09:45:03.946 [INFO] [2906548] PTS 17535168075517, next:116662 invalid dropping st:0
+
+2024-08-09 09:45:03.953 [INFO] [2906548] DTS 17535168092228, next:133328 st:0 invalid dropping
+
+2024-08-09 09:45:03.954 [INFO] [2906548] PTS 17535168092228, next:133328 invalid dropping st:0
+
+2024-08-09 09:45:03.979 [INFO] [2906548] DTS 17535168108895, next:149994 st:0 invalid dropping
+
+2024-08-09 09:45:03.980 [INFO] [2906548] PTS 17535168108895, next:149994 invalid dropping st:0
+
+2024-08-09 09:45:03.985 [INFO] [2906548] DTS 17535168125513, next:166660 st:0 invalid dropping
+
+2024-08-09 09:45:03.986 [INFO] [2906548] PTS 17535168125513, next:166660 invalid dropping st:0
+
+2024-08-09 09:45:04.010 [INFO] [2906548] DTS 17535168142220, next:183326 st:0 invalid dropping
+
+2024-08-09 09:45:04.010 [INFO] [2906548] PTS 17535168142220, next:183326 invalid dropping st:0
+
+2024-08-09 09:45:04.028 [INFO] [2906548] DTS 17535168158887, next:199992 st:0 invalid dropping
+
+2024-08-09 09:45:04.028 [INFO] [2906548] PTS 17535168158887, next:199992 invalid dropping st:0
+
+2024-08-09 09:45:04.036 [INFO] [2906548] DTS 17535168175516, next:216658 st:0 invalid dropping
+
+2024-08-09 09:45:04.036 [INFO] [2906548] PTS 17535168175516, next:216658 invalid dropping st:0
+
+2024-08-09 09:45:04.062 [INFO] [2906548] DTS 17535168192226, next:233324 st:0 invalid dropping
+
+2024-08-09 09:45:04.062 [INFO] [2906548] PTS 17535168192226, next:233324 invalid dropping st:0
+
+2024-08-09 09:45:04.080 [INFO] [2906548] DTS 17535168208883, next:249990 st:0 invalid dropping
+
+2024-08-09 09:45:04.080 [INFO] [2906548] PTS 17535168208883, next:249990 invalid dropping st:0
+
+2024-08-09 09:45:04.088 [INFO] [2906548] DTS 17535168225524, next:266656 st:0 invalid dropping
+
+2024-08-09 09:45:04.088 [INFO] [2906548] PTS 17535168225524, next:266656 invalid dropping st:0
+
+2024-08-09 09:45:04.113 [INFO] [2906548] DTS 17535168242223, next:283322 st:0 invalid dropping
+
+2024-08-09 09:45:04.114 [INFO] [2906548] PTS 17535168242223, next:283322 invalid dropping st:0
+
+2024-08-09 09:45:04.129 [INFO] [2906548] DTS 17535168258889, next:299988 st:0 invalid dropping
+
+2024-08-09 09:45:04.129 [INFO] [2906548] PTS 17535168258889, next:299988 invalid dropping st:0
+
+2024-08-09 09:45:04.144 [INFO] [2906548] DTS 17535168275513, next:316654 st:0 invalid dropping
+
+2024-08-09 09:45:04.144 [INFO] [2906548] PTS 17535168275513, next:316654 invalid dropping st:0
+
+2024-08-09 09:45:04.161 [INFO] [2906548] DTS 17535168292229, next:333320 st:0 invalid dropping
+
+2024-08-09 09:45:04.161 [INFO] [2906548] PTS 17535168292229, next:333320 invalid dropping st:0
+
+2024-08-09 09:45:04.178 [INFO] [2906548] DTS 17535168308883, next:349986 st:0 invalid dropping
+
+2024-08-09 09:45:04.179 [INFO] [2906548] PTS 17535168308883, next:349986 invalid dropping st:0
+
+2024-08-09 09:45:04.186 [INFO] [2906548] DTS 17535168325521, next:366652 st:0 invalid dropping
+
+2024-08-09 09:45:04.186 [INFO] [2906548] PTS 17535168325521, next:366652 invalid dropping st:0
+
+2024-08-09 09:45:04.212 [INFO] [2906548] DTS 17535168342231, next:383318 st:0 invalid dropping
+
+2024-08-09 09:45:04.212 [INFO] [2906548] PTS 17535168342231, next:383318 invalid dropping st:0
+
+2024-08-09 09:45:04.230 [INFO] [2906548] DTS 17535168358887, next:399984 st:0 invalid dropping
+
+2024-08-09 09:45:04.230 [INFO] [2906548] PTS 17535168358887, next:399984 invalid dropping st:0
+
+2024-08-09 09:45:04.239 [INFO] [2906548] DTS 17535168375526, next:416650 st:0 invalid dropping
+
+2024-08-09 09:45:04.239 [INFO] [2906548] PTS 17535168375526, next:416650 invalid dropping st:0
+
+2024-08-09 09:45:04.265 [INFO] [2906548] DTS 17535168392230, next:433316 st:0 invalid dropping
+
+2024-08-09 09:45:04.265 [INFO] [2906548] PTS 17535168392230, next:433316 invalid dropping st:0
+
+2024-08-09 09:45:04.273 [INFO] [2906548] DTS 17535168408883, next:449982 st:0 invalid dropping
+
+2024-08-09 09:45:04.273 [INFO] [2906548] PTS 17535168408883, next:449982 invalid dropping st:0
+
+2024-08-09 09:45:04.289 [INFO] [2906548] DTS 17535168425522, next:466648 st:0 invalid dropping
+
+2024-08-09 09:45:04.289 [INFO] [2906548] PTS 17535168425522, next:466648 invalid dropping st:0
+
+2024-08-09 09:45:04.316 [INFO] [2906548] DTS 17535168442233, next:483314 st:0 invalid dropping
+
+2024-08-09 09:45:04.317 [INFO] [2906548] PTS 17535168442233, next:483314 invalid dropping st:0
+
+2024-08-09 09:45:04.325 [INFO] [2906548] DTS 17535168458884, next:499980 st:0 invalid dropping
+
+2024-08-09 09:45:04.325 [INFO] [2906548] PTS 17535168458884, next:499980 invalid dropping st:0
+
+2024-08-09 09:45:04.341 [INFO] [2906548] DTS 17535168475530, next:516646 st:0 invalid dropping
+
+2024-08-09 09:45:04.341 [INFO] [2906548] PTS 17535168475530, next:516646 invalid dropping st:0
+
+2024-08-09 09:45:04.359 [INFO] [2906548] DTS 17535168492230, next:533312 st:0 invalid dropping
+
+2024-08-09 09:45:04.360 [INFO] [2906548] PTS 17535168492230, next:533312 invalid dropping st:0
+
+2024-08-09 09:45:04.378 [INFO] [2906548] DTS 17535168508888, next:549978 st:0 invalid dropping
+
+2024-08-09 09:45:04.378 [INFO] [2906548] PTS 17535168508888, next:549978 invalid dropping st:0
+
+2024-08-09 09:45:04.396 [INFO] [2906548] frame=   33 fps=0.0 q=0.0 size=       1kB time=00:00:00.00 bitrate=N/A speed=   0x    DTS 17535168525521, next:566644 st:0 inv
+2024-08-09 09:45:04.396 [INFO] [2906548] alid dropping
+
+2024-08-09 09:45:04.396 [INFO] [2906548] PTS 17535168525521, next:566644 invalid dropping st:0
+
+2024-08-09 09:45:04.414 [INFO] [2906548] DTS 17535168542236, next:583310 st:0 invalid dropping
+
+2024-08-09 09:45:04.414 [INFO] [2906548] PTS 17535168542236, next:583310 invalid dropping st:0
+
+2024-08-09 09:45:04.422 [INFO] [2906548] DTS 17535168558887, next:599976 st:0 invalid dropping
+
+2024-08-09 09:45:04.422 [INFO] [2906548] PTS 17535168558887, next:599976 invalid dropping st:0
+
+2024-08-09 09:45:04.447 [INFO] [2906548] DTS 17535168575524, next:616642 st:0 invalid dropping
+
+2024-08-09 09:45:04.447 [INFO] [2906548] PTS 17535168575524, next:616642 invalid dropping st:0
+
+2024-08-09 09:45:04.462 [INFO] [2906548] DTS 17535168592232, next:633308 st:0 invalid dropping
+
+2024-08-09 09:45:04.462 [INFO] [2906548] PTS 17535168592232, next:633308 invalid dropping st:0
+
+2024-08-09 09:45:04.478 [INFO] [2906548] DTS 17535168608886, next:649974 st:0 invalid dropping
+
+2024-08-09 09:45:04.478 [INFO] [2906548] PTS 17535168608886, next:649974 invalid dropping st:0
+
+2024-08-09 09:45:04.497 [INFO] [2906548] DTS 17535168625526, next:666640 st:0 invalid dropping
+
+2024-08-09 09:45:04.497 [INFO] [2906548] PTS 17535168625526, next:666640 invalid dropping st:0
+
+2024-08-09 09:45:04.514 [INFO] [2906548] DTS 17535168642237, next:683306 st:0 invalid dropping
+
+2024-08-09 09:45:04.515 [INFO] [2906548] PTS 17535168642237, next:683306 invalid dropping st:0
+
+2024-08-09 09:45:04.522 [INFO] [2906548] DTS 17535168658894, next:699972 st:0 invalid dropping
+
+2024-08-09 09:45:04.522 [INFO] [2906548] PTS 17535168658894, next:699972 invalid dropping st:0
+
+2024-08-09 09:45:04.549 [INFO] [2906548] DTS 17535168675530, next:716638 st:0 invalid dropping
+
+2024-08-09 09:45:04.549 [INFO] [2906548] PTS 17535168675530, next:716638 invalid dropping st:0
+
+2024-08-09 09:45:04.552 [INFO] [2906548] DTS 17535168692232, next:733304 st:0 invalid dropping
+
+2024-08-09 09:45:04.553 [INFO] [2906548] PTS 17535168692232, next:733304 invalid dropping st:0
+
+2024-08-09 09:45:04.577 [INFO] [2906548] DTS 17535168708890, next:749970 st:0 invalid dropping
+
+2024-08-09 09:45:04.577 [INFO] [2906548] PTS 17535168708890, next:749970 invalid dropping st:0
+
+2024-08-09 09:45:04.592 [INFO] [2906548] DTS 17535168725515, next:766636 st:0 invalid dropping
+
+2024-08-09 09:45:04.592 [INFO] [2906548] PTS 17535168725515, next:766636 invalid dropping st:0
+
+2024-08-09 09:45:04.731 [INFO] [2906548] DTS 17535168742228, next:783302 st:0 invalid dropping
+
+2024-08-09 09:45:04.731 [INFO] [2906548] PTS 17535168742228, next:783302 invalid dropping st:0
+
+2024-08-09 09:45:04.737 [INFO] [2906548] DTS 17535168758884, next:799968 st:0 invalid dropping
+
+2024-08-09 09:45:04.737 [INFO] [2906548] PTS 17535168758884, next:799968 invalid dropping st:0
+
+2024-08-09 09:45:04.763 [INFO] [2906548] DTS 17535168775515, next:816634 st:0 invalid dropping
+
+2024-08-09 09:45:04.763 [INFO] [2906548] PTS 17535168775515, next:816634 invalid dropping st:0
+
+2024-08-09 09:45:04.783 [INFO] [2906548] DTS 17535168792230, next:833300 st:0 invalid dropping
+
+2024-08-09 09:45:04.783 [INFO] [2906548] PTS 17535168792230, next:833300 invalid dropping st:0
+
+2024-08-09 09:45:04.788 [INFO] [2906548] DTS 17535168808886, next:849966 st:0 invalid dropping
+
+2024-08-09 09:45:04.788 [INFO] [2906548] PTS 17535168808886, next:849966 invalid dropping st:0
+
+2024-08-09 09:45:04.798 [INFO] [2906548] DTS 17535168825516, next:866632 st:0 invalid dropping
+
+2024-08-09 09:45:04.798 [INFO] [2906548] PTS 17535168825516, next:866632 invalid dropping st:0
+
+2024-08-09 09:45:04.812 [INFO] [2906548] DTS 17535168842228, next:883298 st:0 invalid dropping
+
+2024-08-09 09:45:04.812 [INFO] [2906548] PTS 17535168842228, next:883298 invalid dropping st:0
+
+2024-08-09 09:45:04.832 [INFO] [2906548] DTS 17535168858888, next:899964 st:0 invalid dropping
+
+2024-08-09 09:45:04.832 [INFO] [2906548] PTS 17535168858888, next:899964 invalid dropping st:0
+
+2024-08-09 09:45:04.846 [INFO] [2906548] DTS 17535168875515, next:916630 st:0 invalid dropping
+
+2024-08-09 09:45:04.847 [INFO] [2906548] PTS 17535168875515, next:916630 invalid dropping st:0
+
+2024-08-09 09:45:04.866 [INFO] [2906548] DTS 17535168892234, next:933296 st:0 invalid dropping
+
+2024-08-09 09:45:04.866 [INFO] [2906548] PTS 17535168892234, next:933296 invalid dropping st:0
+
+2024-08-09 09:45:04.872 [INFO] [2906548] DTS 17535168908899, next:949962 st:0 invalid dropping
+
+2024-08-09 09:45:04.872 [INFO] [2906548] PTS 17535168908899, next:949962 invalid dropping st:0
+
+2024-08-09 09:45:04.878 [INFO] [2906548] DTS 17535168925519, next:966628 st:0 invalid dropping
+
+2024-08-09 09:45:04.878 [INFO] [2906548] PTS 17535168925519, next:966628 invalid dropping st:0
+
+2024-08-09 09:45:04.915 [INFO] [2906548] DTS 17535168942270, next:983294 st:0 invalid dropping
+
+2024-08-09 09:45:04.916 [INFO] [2906548] PTS 17535168942270, next:983294 invalid dropping st:0
+
+2024-08-09 09:45:04.925 [INFO] [2906548] frame=   59 fps= 52 q=31.0 size=       1kB time=00:00:00.12 bitrate=  47.7kbits/s speed=0.11x    DTS 17535168958898, next:9999
+2024-08-09 09:45:04.926 [INFO] [2906548] 60 st:0 invalid dropping
+
+2024-08-09 09:45:04.926 [INFO] [2906548] PTS 17535168958898, next:999960 invalid dropping st:0
+
+2024-08-09 09:45:04.930 [INFO] [2906548] DTS 17535168975526, next:1016626 st:0 invalid dropping
+
+2024-08-09 09:45:04.934 [INFO] [2906548] PTS 17535168975526, next:1016626 invalid dropping st:0
+
+2024-08-09 09:45:04.940 [INFO] [2906548] DTS 17535168992232, next:1033292 st:0 invalid dropping
+
+2024-08-09 09:45:04.940 [INFO] [2906548] PTS 17535168992232, next:1033292 invalid dropping st:0
+
+2024-08-09 09:45:04.946 [INFO] [2906548] DTS 17535169008892, next:1049958 st:0 invalid dropping
+
+2024-08-09 09:45:04.946 [INFO] [2906548] PTS 17535169008892, next:1049958 invalid dropping st:0
+
+2024-08-09 09:45:04.954 [INFO] [2906548] DTS 17535169025520, next:1066624 st:0 invalid dropping
+
+2024-08-09 09:45:04.954 [INFO] [2906548] PTS 17535169025520, next:1066624 invalid dropping st:0
+
+2024-08-09 09:45:04.989 [INFO] [2906548] DTS 17535169042232, next:1083290 st:0 invalid dropping
+
+2024-08-09 09:45:04.989 [INFO] [2906548] PTS 17535169042232, next:1083290 invalid dropping st:0
+
+2024-08-09 09:45:04.993 [INFO] [2906548] DTS 17535169058889, next:1099956 st:0 invalid dropping
+
+2024-08-09 09:45:04.994 [INFO] [2906548] PTS 17535169058889, next:1099956 invalid dropping st:0
+
+2024-08-09 09:45:05.003 [INFO] [2906548] DTS 17535169075521, next:1116622 st:0 invalid dropping
+
+2024-08-09 09:45:05.004 [INFO] [2906548] PTS 17535169075521, next:1116622 invalid dropping st:0
+
+2024-08-09 09:45:05.013 [INFO] [2906548] DTS 17535169092236, next:1133288 st:0 invalid dropping
+
+2024-08-09 09:45:05.013 [INFO] [2906548] PTS 17535169092236, next:1133288 invalid dropping st:0
+
+2024-08-09 09:45:05.039 [INFO] [2906548] DTS 17535169108889, next:1149954 st:0 invalid dropping
+
+2024-08-09 09:45:05.039 [INFO] [2906548] PTS 17535169108889, next:1149954 invalid dropping st:0
+
+2024-08-09 09:45:05.046 [INFO] [2906548] DTS 17535169125520, next:1166620 st:0 invalid dropping
+
+2024-08-09 09:45:05.046 [INFO] [2906548] PTS 17535169125520, next:1166620 invalid dropping st:0
+
+2024-08-09 09:45:05.062 [INFO] [2906548] DTS 17535169142240, next:1183286 st:0 invalid dropping
+
+2024-08-09 09:45:05.062 [INFO] [2906548] PTS 17535169142240, next:1183286 invalid dropping st:0
+
+2024-08-09 09:45:05.069 [INFO] [2906548] DTS 17535169158893, next:1199952 st:0 invalid dropping
+
+2024-08-09 09:45:05.069 [INFO] [2906548] PTS 17535169158893, next:1199952 invalid dropping st:0
+
+2024-08-09 09:45:05.082 [INFO] [2906548] DTS 17535169175520, next:1216618 st:0 invalid dropping
+
+2024-08-09 09:45:05.082 [INFO] [2906548] PTS 17535169175520, next:1216618 invalid dropping st:0
+
+2024-08-09 09:45:05.088 [INFO] [2906548] DTS 17535169192234, next:1233284 st:0 invalid dropping
+
+2024-08-09 09:45:05.090 [INFO] [2906548] PTS 17535169192234, next:1233284 invalid dropping st:0
+
+2024-08-09 09:45:05.123 [INFO] [2906548] DTS 17535169208890, next:1249950 st:0 invalid dropping
+
+2024-08-09 09:45:05.124 [INFO] [2906548] PTS 17535169208890, next:1249950 invalid dropping st:0
+
+2024-08-09 09:45:05.138 [INFO] [2906548] DTS 17535169225524, next:1266616 st:0 invalid dropping
+
+2024-08-09 09:45:05.138 [INFO] [2906548] PTS 17535169225524, next:1266616 invalid dropping st:0
+
+2024-08-09 09:45:05.148 [INFO] [2906548] DTS 17535169242237, next:1283282 st:0 invalid dropping
+
+2024-08-09 09:45:05.149 [INFO] [2906548] PTS 17535169242237, next:1283282 invalid dropping st:0
+
+2024-08-09 09:45:05.156 [INFO] [2906548] DTS 17535169258891, next:1299948 st:0 invalid dropping
+
+2024-08-09 09:45:05.168 [INFO] [2906548] PTS 17535169258891, next:1299948 invalid dropping st:0
+
+2024-08-09 09:45:05.174 [INFO] [2906548] DTS 17535169275519, next:1316614 st:0 invalid dropping
+
+2024-08-09 09:45:05.174 [INFO] [2906548] PTS 17535169275519, next:1316614 invalid dropping st:0
+
+2024-08-09 09:45:05.179 [INFO] [2906548] DTS 17535169292235, next:1333280 st:0 invalid dropping
+
+2024-08-09 09:45:05.179 [INFO] [2906548] PTS 17535169292235, next:1333280 invalid dropping st:0
+
+2024-08-09 09:45:05.195 [INFO] [2906548] DTS 17535169308895, next:1349946 st:0 invalid dropping
+
+2024-08-09 09:45:05.195 [INFO] [2906548] PTS 17535169308895, next:1349946 invalid dropping st:0
+
+2024-08-09 09:45:05.210 [INFO] [2906548] DTS 17535169325524, next:1366612 st:0 invalid dropping
+
+2024-08-09 09:45:05.210 [INFO] [2906548] PTS 17535169325524, next:1366612 invalid dropping st:0
+
+2024-08-09 09:45:05.216 [INFO] [2906548] DTS 17535169342234, next:1383278 st:0 invalid dropping
+
+2024-08-09 09:45:05.216 [INFO] [2906548] PTS 17535169342234, next:1383278 invalid dropping st:0
+
+2024-08-09 09:45:05.240 [INFO] [2906548] DTS 17535169358895, next:1399944 st:0 invalid dropping
+
+2024-08-09 09:45:05.240 [INFO] [2906548] PTS 17535169358895, next:1399944 invalid dropping st:0
+
+2024-08-09 09:45:05.245 [INFO] [2906548] DTS 17535169375525, next:1416610 st:0 invalid dropping
+
+2024-08-09 09:45:05.251 [INFO] [2906548] PTS 17535169375525, next:1416610 invalid dropping st:0
+
+2024-08-09 09:45:05.264 [INFO] [2906548] DTS 17535169392235, next:1433276 st:0 invalid dropping
+
+2024-08-09 09:45:05.265 [INFO] [2906548] PTS 17535169392235, next:1433276 invalid dropping st:0
+
+2024-08-09 09:45:05.280 [INFO] [2906548] DTS 17535169408895, next:1449942 st:0 invalid dropping
+
+2024-08-09 09:45:05.280 [INFO] [2906548] PTS 17535169408895, next:1449942 invalid dropping st:0
+
+2024-08-09 09:45:05.295 [INFO] [2906548] DTS 17535169425521, next:1466608 st:0 invalid dropping
+
+2024-08-09 09:45:05.295 [INFO] [2906548] PTS 17535169425521, next:1466608 invalid dropping st:0
+
+2024-08-09 09:45:05.310 [INFO] [2906548] DTS 17535169442261, next:1483274 st:0 invalid dropping
+
+2024-08-09 09:45:05.311 [INFO] [2906548] PTS 17535169442261, next:1483274 invalid dropping st:0
+
+2024-08-09 09:45:05.334 [INFO] [2906548] DTS 17535169458895, next:1499940 st:0 invalid dropping
+
+2024-08-09 09:45:05.334 [INFO] [2906548] PTS 17535169458895, next:1499940 invalid dropping st:0
+
+2024-08-09 09:45:05.342 [INFO] [2906548] DTS 17535169475529, next:1516606 st:0 invalid dropping
+
+2024-08-09 09:45:05.342 [INFO] [2906548] PTS 17535169475529, next:1516606 invalid dropping st:0
+
+2024-08-09 09:45:05.358 [INFO] [2906548] DTS 17535169492242, next:1533272 st:0 invalid dropping
+
+2024-08-09 09:45:05.358 [INFO] [2906548] PTS 17535169492242, next:1533272 invalid dropping st:0
+
+2024-08-09 09:45:05.376 [INFO] [2906548] DTS 17535169508894, next:1549938 st:0 invalid dropping
+
+2024-08-09 09:45:05.376 [INFO] [2906548] PTS 17535169508894, next:1549938 invalid dropping st:0
+
+2024-08-09 09:45:05.399 [INFO] [2906548] DTS 17535169525528, next:1566604 st:0 invalid dropping
+
+2024-08-09 09:45:05.400 [INFO] [2906548] PTS 17535169525528, next:1566604 invalid dropping st:0
+
+2024-08-09 09:45:05.414 [INFO] [2906548] DTS 17535169542238, next:1583270 st:0 invalid dropping
+
+2024-08-09 09:45:05.414 [INFO] [2906548] PTS 17535169542238, next:1583270 invalid dropping st:0
+
+2024-08-09 09:45:05.423 [INFO] [2906548] frame=   95 fps= 58 q=31.0 size=       1kB time=00:00:00.72 bitrate=   8.2kbits/s speed=0.445x    DTS 17535169558898, next:159
+2024-08-09 09:45:05.423 [INFO] [2906548] 9936 st:0 invalid dropping
+
+2024-08-09 09:45:05.423 [INFO] [2906548] PTS 17535169558898, next:1599936 invalid dropping st:0
+
+2024-08-09 09:45:05.450 [INFO] [2906548] DTS 17535169575521, next:1616602 st:0 invalid dropping
+
+2024-08-09 09:45:05.450 [INFO] [2906548] PTS 17535169575521, next:1616602 invalid dropping st:0
+
+2024-08-09 09:45:05.460 [INFO] [2906548] DTS 17535169592238, next:1633268 st:0 invalid dropping
+
+2024-08-09 09:45:05.461 [INFO] [2906548] PTS 17535169592238, next:1633268 invalid dropping st:0
+
+2024-08-09 09:45:05.475 [INFO] [2906548] DTS 17535169608895, next:1649934 st:0 invalid dropping
+
+2024-08-09 09:45:05.475 [INFO] [2906548] PTS 17535169608895, next:1649934 invalid dropping st:0
+
+2024-08-09 09:45:05.501 [INFO] [2906548] DTS 17535169625524, next:1666600 st:0 invalid dropping
+
+2024-08-09 09:45:05.501 [INFO] [2906548] PTS 17535169625524, next:1666600 invalid dropping st:0
+
+2024-08-09 09:45:05.507 [INFO] [2906548] DTS 17535169642240, next:1683266 st:0 invalid dropping
+
+2024-08-09 09:45:05.508 [INFO] [2906548] PTS 17535169642240, next:1683266 invalid dropping st:0
+
+2024-08-09 09:45:05.527 [INFO] [2906548] DTS 17535169658900, next:1699932 st:0 invalid dropping
+
+2024-08-09 09:45:05.527 [INFO] [2906548] PTS 17535169658900, next:1699932 invalid dropping st:0
+
+2024-08-09 09:45:05.542 [INFO] [2906548] DTS 17535169675532, next:1716598 st:0 invalid dropping
+
+2024-08-09 09:45:05.542 [INFO] [2906548] PTS 17535169675532, next:1716598 invalid dropping st:0
+
+2024-08-09 09:45:05.555 [INFO] [2906548] DTS 17535169692239, next:1733264 st:0 invalid dropping
+
+2024-08-09 09:45:05.555 [INFO] [2906548] PTS 17535169692239, next:1733264 invalid dropping st:0
+
+2024-08-09 09:45:05.582 [INFO] [2906548] DTS 17535169708897, next:1749930 st:0 invalid dropping
+
+2024-08-09 09:45:05.582 [INFO] [2906548] PTS 17535169708897, next:1749930 invalid dropping st:0
+
+2024-08-09 09:45:05.597 [INFO] [2906548] DTS 17535169725523, next:1766596 st:0 invalid dropping
+
+2024-08-09 09:45:05.597 [INFO] [2906548] PTS 17535169725523, next:1766596 invalid dropping st:0
+
+2024-08-09 09:45:05.612 [INFO] [2906548] DTS 17535169742276, next:1783262 st:0 invalid dropping
+
+2024-08-09 09:45:05.612 [INFO] [2906548] PTS 17535169742276, next:1783262 invalid dropping st:0
+
+2024-08-09 09:45:05.626 [INFO] [2906548] DTS 17535169758896, next:1799928 st:0 invalid dropping
+
+2024-08-09 09:45:05.627 [INFO] [2906548] PTS 17535169758896, next:1799928 invalid dropping st:0
+
+2024-08-09 09:45:05.640 [INFO] [2906548] DTS 17535169775527, next:1816594 st:0 invalid dropping
+
+2024-08-09 09:45:05.641 [INFO] [2906548] PTS 17535169775527, next:1816594 invalid dropping st:0
+
+2024-08-09 09:45:05.665 [INFO] [2906548] DTS 17535169792237, next:1833260 st:0 invalid dropping
+
+2024-08-09 09:45:05.665 [INFO] [2906548] PTS 17535169792237, next:1833260 invalid dropping st:0
+
+2024-08-09 09:45:05.669 [INFO] [2906548] DTS 17535169808896, next:1849926 st:0 invalid dropping
+
+2024-08-09 09:45:05.670 [INFO] [2906548] PTS 17535169808896, next:1849926 invalid dropping st:0
+
+2024-08-09 09:45:05.695 [INFO] [2906548] DTS 17535169825524, next:1866592 st:0 invalid dropping
+
+2024-08-09 09:45:05.695 [INFO] [2906548] PTS 17535169825524, next:1866592 invalid dropping st:0
+
+2024-08-09 09:45:05.714 [INFO] [2906548] DTS 17535169842242, next:1883258 st:0 invalid dropping
+
+2024-08-09 09:45:05.715 [INFO] [2906548] PTS 17535169842242, next:1883258 invalid dropping st:0
+
+2024-08-09 09:45:05.723 [INFO] [2906548] DTS 17535169858895, next:1899924 st:0 invalid dropping
+
+2024-08-09 09:45:05.723 [INFO] [2906548] PTS 17535169858895, next:1899924 invalid dropping st:0
+
+2024-08-09 09:45:05.738 [INFO] [2906548] DTS 17535169875523, next:1916590 st:0 invalid dropping
+
+2024-08-09 09:45:05.738 [INFO] [2906548] PTS 17535169875523, next:1916590 invalid dropping st:0
+
+2024-08-09 09:45:05.763 [INFO] [2906548] DTS 17535169892240, next:1933256 st:0 invalid dropping
+
+2024-08-09 09:45:05.763 [INFO] [2906548] PTS 17535169892240, next:1933256 invalid dropping st:0
+
+2024-08-09 09:45:05.780 [INFO] [2906548] DTS 17535169908895, next:1949922 st:0 invalid dropping
+
+2024-08-09 09:45:05.780 [INFO] [2906548] PTS 17535169908895, next:1949922 invalid dropping st:0
+
+2024-08-09 09:45:05.793 [INFO] [2906548] DTS 17535169925525, next:1966588 st:0 invalid dropping
+
+2024-08-09 09:45:05.793 [INFO] [2906548] PTS 17535169925525, next:1966588 invalid dropping st:0
+
+2024-08-09 09:45:05.808 [INFO] [2906548] DTS 17535169942238, next:1983254 st:0 invalid dropping
+
+2024-08-09 09:45:05.808 [INFO] [2906548] PTS 17535169942238, next:1983254 invalid dropping st:0
+
+2024-08-09 09:45:05.833 [INFO] [2906548] DTS 17535169958896, next:1999920 st:0 invalid dropping
+
+2024-08-09 09:45:05.834 [INFO] [2906548] PTS 17535169958896, next:1999920 invalid dropping st:0
+
+2024-08-09 09:45:05.841 [INFO] [2906548] DTS 17535169975529, next:2016586 st:0 invalid dropping
+
+2024-08-09 09:45:05.841 [INFO] [2906548] PTS 17535169975529, next:2016586 invalid dropping st:0
+
+2024-08-09 09:45:05.864 [INFO] [2906548] DTS 17535169992241, next:2033252 st:0 invalid dropping
+
+2024-08-09 09:45:05.864 [INFO] [2906548] PTS 17535169992241, next:2033252 invalid dropping st:0
+
+2024-08-09 09:45:05.869 [INFO] [2906548] DTS 17535170008896, next:2049918 st:0 invalid dropping
+
+2024-08-09 09:45:05.869 [INFO] [2906548] PTS 17535170008896, next:2049918 invalid dropping st:0
+
+2024-08-09 09:45:05.894 [INFO] [2906548] DTS 17535170025528, next:2066584 st:0 invalid dropping
+
+2024-08-09 09:45:05.894 [INFO] [2906548] PTS 17535170025528, next:2066584 invalid dropping st:0
+
+2024-08-09 09:45:05.909 [INFO] [2906548] DTS 17535170042241, next:2083250 st:0 invalid dropping
+
+2024-08-09 09:45:05.909 [INFO] [2906548] PTS 17535170042241, next:2083250 invalid dropping st:0
+
+2024-08-09 09:45:05.924 [INFO] [2906548] DTS 17535170058898, next:2099916 st:0 invalid dropping
+
+2024-08-09 09:45:05.924 [INFO] [2906548] PTS 17535170058898, next:2099916 invalid dropping st:0
+
+2024-08-09 09:45:05.947 [INFO] [2906548] frame=  126 fps= 59 q=31.0 size=       1kB time=00:00:01.25 bitrate=   4.7kbits/s speed=0.589x    DTS 17535170075526, next:211
+2024-08-09 09:45:05.948 [INFO] [2906548] 6582 st:0 invalid dropping
+
+2024-08-09 09:45:05.948 [INFO] [2906548] PTS 17535170075526, next:2116582 invalid dropping st:0
+
+2024-08-09 09:45:05.965 [INFO] [2906548] DTS 17535170092241, next:2133248 st:0 invalid dropping
+
+2024-08-09 09:45:05.965 [INFO] [2906548] PTS 17535170092241, next:2133248 invalid dropping st:0
+
+2024-08-09 09:45:05.969 [INFO] [2906548] DTS 17535170108896, next:2149914 st:0 invalid dropping
+
+2024-08-09 09:45:05.969 [INFO] [2906548] PTS 17535170108896, next:2149914 invalid dropping st:0
+
+2024-08-09 09:45:05.996 [INFO] [2906548] DTS 17535170125527, next:2166580 st:0 invalid dropping
+
+2024-08-09 09:45:05.996 [INFO] [2906548] PTS 17535170125527, next:2166580 invalid dropping st:0
+
+2024-08-09 09:45:06.011 [INFO] [2906548] DTS 17535170142243, next:2183246 st:0 invalid dropping
+
+2024-08-09 09:45:06.011 [INFO] [2906548] PTS 17535170142243, next:2183246 invalid dropping st:0
+
+2024-08-09 09:45:06.025 [INFO] [2906548] DTS 17535170158897, next:2199912 st:0 invalid dropping
+
+2024-08-09 09:45:06.025 [INFO] [2906548] PTS 17535170158897, next:2199912 invalid dropping st:0
+
+2024-08-09 09:45:06.041 [INFO] [2906548] DTS 17535170175526, next:2216578 st:0 invalid dropping
+
+2024-08-09 09:45:06.041 [INFO] [2906548] PTS 17535170175526, next:2216578 invalid dropping st:0
+
+2024-08-09 09:45:06.066 [INFO] [2906548] DTS 17535170192241, next:2233244 st:0 invalid dropping
+
+2024-08-09 09:45:06.066 [INFO] [2906548] PTS 17535170192241, next:2233244 invalid dropping st:0
+
+2024-08-09 09:45:06.070 [INFO] [2906548] DTS 17535170208899, next:2249910 st:0 invalid dropping
+
+2024-08-09 09:45:06.071 [INFO] [2906548] PTS 17535170208899, next:2249910 invalid dropping st:0
+
+2024-08-09 09:45:06.094 [INFO] [2906548] DTS 17535170225530, next:2266576 st:0 invalid dropping
+
+2024-08-09 09:45:06.094 [INFO] [2906548] PTS 17535170225530, next:2266576 invalid dropping st:0
+
+2024-08-09 09:45:06.112 [INFO] [2906548] DTS 17535170242244, next:2283242 st:0 invalid dropping
+
+2024-08-09 09:45:06.112 [INFO] [2906548] PTS 17535170242244, next:2283242 invalid dropping st:0
+
+2024-08-09 09:45:06.126 [INFO] [2906548] DTS 17535170258900, next:2299908 st:0 invalid dropping
+
+2024-08-09 09:45:06.127 [INFO] [2906548] PTS 17535170258900, next:2299908 invalid dropping st:0
+
+2024-08-09 09:45:06.141 [INFO] [2906548] DTS 17535170275537, next:2316574 st:0 invalid dropping
+
+2024-08-09 09:45:06.141 [INFO] [2906548] PTS 17535170275537, next:2316574 invalid dropping st:0
+
+2024-08-09 09:45:06.158 [INFO] [2906548] DTS 17535170292244, next:2333240 st:0 invalid dropping
+
+2024-08-09 09:45:06.159 [INFO] [2906548] PTS 17535170292244, next:2333240 invalid dropping st:0
+
+2024-08-09 09:45:06.169 [INFO] [2906548] DTS 17535170308901, next:2349906 st:0 invalid dropping
+
+2024-08-09 09:45:06.169 [INFO] [2906548] PTS 17535170308901, next:2349906 invalid dropping st:0
+
+2024-08-09 09:45:06.194 [INFO] [2906548] DTS 17535170325534, next:2366572 st:0 invalid dropping
+
+2024-08-09 09:45:06.195 [INFO] [2906548] PTS 17535170325534, next:2366572 invalid dropping st:0
+
+2024-08-09 09:45:06.210 [INFO] [2906548] DTS 17535170342271, next:2383238 st:0 invalid dropping
+
+2024-08-09 09:45:06.210 [INFO] [2906548] PTS 17535170342271, next:2383238 invalid dropping st:0
+
+2024-08-09 09:45:06.225 [INFO] [2906548] DTS 17535170358903, next:2399904 st:0 invalid dropping
+
+2024-08-09 09:45:06.225 [INFO] [2906548] PTS 17535170358903, next:2399904 invalid dropping st:0
+
+2024-08-09 09:45:06.244 [INFO] [2906548] DTS 17535170375530, next:2416570 st:0 invalid dropping
+
+2024-08-09 09:45:06.244 [INFO] [2906548] PTS 17535170375530, next:2416570 invalid dropping st:0
+
+2024-08-09 09:45:06.260 [INFO] [2906548] DTS 17535170392247, next:2433236 st:0 invalid dropping
+
+2024-08-09 09:45:06.260 [INFO] [2906548] PTS 17535170392247, next:2433236 invalid dropping st:0
+
+2024-08-09 09:45:06.274 [INFO] [2906548] DTS 17535170408904, next:2449902 st:0 invalid dropping
+
+2024-08-09 09:45:06.275 [INFO] [2906548] PTS 17535170408904, next:2449902 invalid dropping st:0
+
+2024-08-09 09:45:06.290 [INFO] [2906548] DTS 17535170425528, next:2466568 st:0 invalid dropping
+
+2024-08-09 09:45:06.290 [INFO] [2906548] PTS 17535170425528, next:2466568 invalid dropping st:0
+
+2024-08-09 09:45:06.319 [INFO] [2906548] DTS 17535170442243, next:2483234 st:0 invalid dropping
+
+2024-08-09 09:45:06.319 [INFO] [2906548] PTS 17535170442243, next:2483234 invalid dropping st:0
+
+2024-08-09 09:45:06.321 [INFO] [2906548] DTS 17535170458902, next:2499900 st:0 invalid dropping
+
+2024-08-09 09:45:06.321 [INFO] [2906548] PTS 17535170458902, next:2499900 invalid dropping st:0
+
+2024-08-09 09:45:06.346 [INFO] [2906548] DTS 17535170475540, next:2516566 st:0 invalid dropping
+
+2024-08-09 09:45:06.346 [INFO] [2906548] PTS 17535170475540, next:2516566 invalid dropping st:0
+
+2024-08-09 09:45:06.361 [INFO] [2906548] DTS 17535170492242, next:2533232 st:0 invalid dropping
+
+2024-08-09 09:45:06.361 [INFO] [2906548] PTS 17535170492242, next:2533232 invalid dropping st:0
+
+2024-08-09 09:45:06.377 [INFO] [2906548] DTS 17535170508902, next:2549898 st:0 invalid dropping
+
+2024-08-09 09:45:06.377 [INFO] [2906548] PTS 17535170508902, next:2549898 invalid dropping st:0
+
+2024-08-09 09:45:06.390 [INFO] [2906548] DTS 17535170525529, next:2566564 st:0 invalid dropping
+
+2024-08-09 09:45:06.390 [INFO] [2906548] PTS 17535170525529, next:2566564 invalid dropping st:0
+
+2024-08-09 09:45:06.417 [INFO] [2906548] DTS 17535170542242, next:2583230 st:0 invalid dropping
+
+2024-08-09 09:45:06.417 [INFO] [2906548] PTS 17535170542242, next:2583230 invalid dropping st:0
+
+2024-08-09 09:45:06.421 [INFO] [2906548] DTS 17535170558905, next:2599896 st:0 invalid dropping
+
+2024-08-09 09:45:06.422 [INFO] [2906548] PTS 17535170558905, next:2599896 invalid dropping st:0
+
+2024-08-09 09:45:06.448 [INFO] [2906548] frame=  156 fps= 59 q=31.0 size=       1kB time=00:00:01.74 bitrate=   3.4kbits/s speed=0.664x    DTS 17535170575532, next:261
+2024-08-09 09:45:06.448 [INFO] [2906548] 6562 st:0 invalid dropping
+
+2024-08-09 09:45:06.448 [INFO] [2906548] PTS 17535170575532, next:2616562 invalid dropping st:0
+
+2024-08-09 09:45:06.451 [INFO] [2906548] DTS 17535170592243, next:2633228 st:0 invalid dropping
+
+2024-08-09 09:45:06.451 [INFO] [2906548] PTS 17535170592243, next:2633228 invalid dropping st:0
+
+2024-08-09 09:45:06.476 [INFO] [2906548] DTS 17535170608957, next:2649894 st:0 invalid dropping
+
+2024-08-09 09:45:06.476 [INFO] [2906548] PTS 17535170608957, next:2649894 invalid dropping st:0
+
+2024-08-09 09:45:06.491 [INFO] [2906548] DTS 17535170625532, next:2666560 st:0 invalid dropping
+
+2024-08-09 09:45:06.491 [INFO] [2906548] PTS 17535170625532, next:2666560 invalid dropping st:0
+
+2024-08-09 09:45:06.502 [INFO] [2906548] DTS 17535170642243, next:2683226 st:0 invalid dropping
+
+2024-08-09 09:45:06.502 [INFO] [2906548] PTS 17535170642243, next:2683226 invalid dropping st:0
+
+2024-08-09 09:45:06.529 [INFO] [2906548] DTS 17535170658905, next:2699892 st:0 invalid dropping
+
+2024-08-09 09:45:06.529 [INFO] [2906548] PTS 17535170658905, next:2699892 invalid dropping st:0
+
+2024-08-09 09:45:06.552 [INFO] [2906548] DTS 17535170675547, next:2716558 st:0 invalid dropping
+
+2024-08-09 09:45:06.553 [INFO] [2906548] PTS 17535170675547, next:2716558 invalid dropping st:0
+
+2024-08-09 09:45:06.557 [INFO] [2906548] DTS 17535170692247, next:2733224 st:0 invalid dropping
+
+2024-08-09 09:45:06.557 [INFO] [2906548] PTS 17535170692247, next:2733224 invalid dropping st:0
+
+2024-08-09 09:45:06.582 [INFO] [2906548] DTS 17535170708909, next:2749890 st:0 invalid dropping
+
+2024-08-09 09:45:06.582 [INFO] [2906548] PTS 17535170708909, next:2749890 invalid dropping st:0
+
+2024-08-09 09:45:06.597 [INFO] [2906548] DTS 17535170725537, next:2766556 st:0 invalid dropping
+
+2024-08-09 09:45:06.597 [INFO] [2906548] PTS 17535170725537, next:2766556 invalid dropping st:0
+
+2024-08-09 09:45:06.612 [INFO] [2906548] DTS 17535170742246, next:2783222 st:0 invalid dropping
+
+2024-08-09 09:45:06.612 [INFO] [2906548] PTS 17535170742246, next:2783222 invalid dropping st:0
+
+2024-08-09 09:45:06.625 [INFO] [2906548] DTS 17535170758902, next:2799888 st:0 invalid dropping
+
+2024-08-09 09:45:06.625 [INFO] [2906548] PTS 17535170758902, next:2799888 invalid dropping st:0
+
+2024-08-09 09:45:06.652 [INFO] [2906548] DTS 17535170775536, next:2816554 st:0 invalid dropping
+
+2024-08-09 09:45:06.652 [INFO] [2906548] PTS 17535170775536, next:2816554 invalid dropping st:0
+
+2024-08-09 09:45:06.656 [INFO] [2906548] DTS 17535170792245, next:2833220 st:0 invalid dropping
+
+2024-08-09 09:45:06.657 [INFO] [2906548] PTS 17535170792245, next:2833220 invalid dropping st:0
+
+2024-08-09 09:45:06.682 [INFO] [2906548] DTS 17535170808910, next:2849886 st:0 invalid dropping
+
+2024-08-09 09:45:06.682 [INFO] [2906548] PTS 17535170808910, next:2849886 invalid dropping st:0
+
+2024-08-09 09:45:06.686 [INFO] [2906548] DTS 17535170825536, next:2866552 st:0 invalid dropping
+
+2024-08-09 09:45:06.687 [INFO] [2906548] PTS 17535170825536, next:2866552 invalid dropping st:0
+
+2024-08-09 09:45:06.710 [INFO] [2906548] DTS 17535170842248, next:2883218 st:0 invalid dropping
+
+2024-08-09 09:45:06.710 [INFO] [2906548] PTS 17535170842248, next:2883218 invalid dropping st:0
+
+2024-08-09 09:45:06.724 [INFO] [2906548] DTS 17535170858905, next:2899884 st:0 invalid dropping
+
+2024-08-09 09:45:06.724 [INFO] [2906548] PTS 17535170858905, next:2899884 invalid dropping st:0
+
+2024-08-09 09:45:06.739 [INFO] [2906548] DTS 17535170875541, next:2916550 st:0 invalid dropping
+
+2024-08-09 09:45:06.739 [INFO] [2906548] PTS 17535170875541, next:2916550 invalid dropping st:0
+
+2024-08-09 09:45:06.756 [INFO] [2906548] DTS 17535170892246, next:2933216 st:0 invalid dropping
+
+2024-08-09 09:45:06.756 [INFO] [2906548] PTS 17535170892246, next:2933216 invalid dropping st:0
+
+2024-08-09 09:45:06.782 [INFO] [2906548] DTS 17535170908909, next:2949882 st:0 invalid dropping
+
+2024-08-09 09:45:06.782 [INFO] [2906548] PTS 17535170908909, next:2949882 invalid dropping st:0
+
+2024-08-09 09:45:06.788 [INFO] [2906548] DTS 17535170925538, next:2966548 st:0 invalid dropping
+
+2024-08-09 09:45:06.789 [INFO] [2906548] PTS 17535170925538, next:2966548 invalid dropping st:0
+
+2024-08-09 09:45:06.813 [INFO] [2906548] DTS 17535170942246, next:2983214 st:0 invalid dropping
+
+2024-08-09 09:45:06.814 [INFO] [2906548] PTS 17535170942246, next:2983214 invalid dropping st:0
+
+2024-08-09 09:45:06.828 [INFO] [2906548] DTS 17535170958907, next:2999880 st:0 invalid dropping
+
+2024-08-09 09:45:06.829 [INFO] [2906548] PTS 17535170958907, next:2999880 invalid dropping st:0
+
+2024-08-09 09:45:06.835 [INFO] [2906548] DTS 17535170975538, next:3016546 st:0 invalid dropping
+
+2024-08-09 09:45:06.835 [INFO] [2906548] PTS 17535170975538, next:3016546 invalid dropping st:0
+
+2024-08-09 09:45:06.859 [INFO] [2906548] DTS 17535170992249, next:3033212 st:0 invalid dropping
+
+2024-08-09 09:45:06.859 [INFO] [2906548] PTS 17535170992249, next:3033212 invalid dropping st:0
+
+2024-08-09 09:45:06.884 [INFO] [2906548] DTS 17535171008907, next:3049878 st:0 invalid dropping
+
+2024-08-09 09:45:06.885 [INFO] [2906548] PTS 17535171008907, next:3049878 invalid dropping st:0
+
+2024-08-09 09:45:06.890 [INFO] [2906548] DTS 17535171025537, next:3066544 st:0 invalid dropping
+
+2024-08-09 09:45:06.890 [INFO] [2906548] PTS 17535171025537, next:3066544 invalid dropping st:0
+
+2024-08-09 09:45:06.906 [INFO] [2906548] DTS 17535171042247, next:3083210 st:0 invalid dropping
+
+2024-08-09 09:45:06.906 [INFO] [2906548] PTS 17535171042247, next:3083210 invalid dropping st:0
+
+2024-08-09 09:45:06.932 [INFO] [2906548] DTS 17535171058908, next:3099876 st:0 invalid dropping
+
+2024-08-09 09:45:06.932 [INFO] [2906548] PTS 17535171058908, next:3099876 invalid dropping st:0
+
+2024-08-09 09:45:06.944 [INFO] [2906548] frame=  186 fps= 59 q=31.0 size=       1kB time=00:00:02.25 bitrate=   2.6kbits/s speed=0.719x    DTS 17535171075537, next:311
+2024-08-09 09:45:06.945 [INFO] [2906548] 6542 st:0 invalid dropping
+
+2024-08-09 09:45:06.945 [INFO] [2906548] PTS 17535171075537, next:3116542 invalid dropping st:0
+
+2024-08-09 09:45:06.959 [INFO] [2906548] DTS 17535171092252, next:3133208 st:0 invalid dropping
+
+2024-08-09 09:45:06.960 [INFO] [2906548] PTS 17535171092252, next:3133208 invalid dropping st:0
+
+2024-08-09 09:45:06.985 [INFO] [2906548] DTS 17535171108909, next:3149874 st:0 invalid dropping
+
+2024-08-09 09:45:06.985 [INFO] [2906548] PTS 17535171108909, next:3149874 invalid dropping st:0
+
+2024-08-09 09:45:06.990 [INFO] [2906548] DTS 17535171125539, next:3166540 st:0 invalid dropping
+
+2024-08-09 09:45:06.990 [INFO] [2906548] PTS 17535171125539, next:3166540 invalid dropping st:0
+
+2024-08-09 09:45:07.013 [INFO] [2906548] DTS 17535171142248, next:3183206 st:0 invalid dropping
+
+2024-08-09 09:45:07.013 [INFO] [2906548] PTS 17535171142248, next:3183206 invalid dropping st:0
+
+2024-08-09 09:45:07.018 [INFO] [2906548] DTS 17535171158903, next:3199872 st:0 invalid dropping
+
+2024-08-09 09:45:07.018 [INFO] [2906548] PTS 17535171158903, next:3199872 invalid dropping st:0
+
+2024-08-09 09:45:07.043 [INFO] [2906548] DTS 17535171175540, next:3216538 st:0 invalid dropping
+
+2024-08-09 09:45:07.043 [INFO] [2906548] PTS 17535171175540, next:3216538 invalid dropping st:0
+
+2024-08-09 09:45:07.058 [INFO] [2906548] DTS 17535171192247, next:3233204 st:0 invalid dropping
+
+2024-08-09 09:45:07.058 [INFO] [2906548] PTS 17535171192247, next:3233204 invalid dropping st:0
+
+2024-08-09 09:45:07.072 [INFO] [2906548] DTS 17535171208907, next:3249870 st:0 invalid dropping
+
+2024-08-09 09:45:07.073 [INFO] [2906548] PTS 17535171208907, next:3249870 invalid dropping st:0
+
+2024-08-09 09:45:07.096 [INFO] [2906548] DTS 17535171225540, next:3266536 st:0 invalid dropping
+
+2024-08-09 09:45:07.096 [INFO] [2906548] PTS 17535171225540, next:3266536 invalid dropping st:0
+
+2024-08-09 09:45:07.111 [INFO] [2906548] DTS 17535171242246, next:3283202 st:0 invalid dropping
+
+2024-08-09 09:45:07.111 [INFO] [2906548] PTS 17535171242246, next:3283202 invalid dropping st:0
+
+2024-08-09 09:45:07.118 [INFO] [2906548] DTS 17535171258908, next:3299868 st:0 invalid dropping
+
+2024-08-09 09:45:07.119 [INFO] [2906548] PTS 17535171258908, next:3299868 invalid dropping st:0
+
+2024-08-09 09:45:07.145 [INFO] [2906548] DTS 17535171275544, next:3316534 st:0 invalid dropping
+
+2024-08-09 09:45:07.145 [INFO] [2906548] PTS 17535171275544, next:3316534 invalid dropping st:0
+
+2024-08-09 09:45:07.168 [INFO] [2906548] DTS 17535171292246, next:3333200 st:0 invalid dropping
+
+2024-08-09 09:45:07.168 [INFO] [2906548] PTS 17535171292246, next:3333200 invalid dropping st:0
+
+2024-08-09 09:45:07.173 [INFO] [2906548] DTS 17535171308902, next:3349866 st:0 invalid dropping
+
+2024-08-09 09:45:07.173 [INFO] [2906548] PTS 17535171308902, next:3349866 invalid dropping st:0
+
+2024-08-09 09:45:07.198 [INFO] [2906548] DTS 17535171325548, next:3366532 st:0 invalid dropping
+
+2024-08-09 09:45:07.198 [INFO] [2906548] PTS 17535171325548, next:3366532 invalid dropping st:0
+
+2024-08-09 09:45:07.213 [INFO] [2906548] DTS 17535171342249, next:3383198 st:0 invalid dropping
+
+2024-08-09 09:45:07.213 [INFO] [2906548] PTS 17535171342249, next:3383198 invalid dropping st:0
+
+2024-08-09 09:45:07.226 [INFO] [2906548] DTS 17535171358909, next:3399864 st:0 invalid dropping
+
+2024-08-09 09:45:07.226 [INFO] [2906548] PTS 17535171358909, next:3399864 invalid dropping st:0
+
+2024-08-09 09:45:07.242 [INFO] [2906548] DTS 17535171375541, next:3416530 st:0 invalid dropping
+
+2024-08-09 09:45:07.242 [INFO] [2906548] PTS 17535171375541, next:3416530 invalid dropping st:0
+
+2024-08-09 09:45:07.267 [INFO] [2906548] DTS 17535171392248, next:3433196 st:0 invalid dropping
+
+2024-08-09 09:45:07.268 [INFO] [2906548] PTS 17535171392248, next:3433196 invalid dropping st:0
+
+2024-08-09 09:45:07.272 [INFO] [2906548] DTS 17535171408905, next:3449862 st:0 invalid dropping
+
+2024-08-09 09:45:07.272 [INFO] [2906548] PTS 17535171408905, next:3449862 invalid dropping st:0
+
+2024-08-09 09:45:07.297 [INFO] [2906548] DTS 17535171425546, next:3466528 st:0 invalid dropping
+
+2024-08-09 09:45:07.298 [INFO] [2906548] PTS 17535171425546, next:3466528 invalid dropping st:0
+
+2024-08-09 09:45:07.304 [INFO] [2906548] DTS 17535171442249, next:3483194 st:0 invalid dropping
+
+2024-08-09 09:45:07.304 [INFO] [2906548] PTS 17535171442249, next:3483194 invalid dropping st:0
+
+2024-08-09 09:45:07.327 [INFO] [2906548] DTS 17535171458909, next:3499860 st:0 invalid dropping
+
+2024-08-09 09:45:07.327 [INFO] [2906548] PTS 17535171458909, next:3499860 invalid dropping st:0
+
+2024-08-09 09:45:07.341 [INFO] [2906548] DTS 17535171475555, next:3516526 st:0 invalid dropping
+
+2024-08-09 09:45:07.341 [INFO] [2906548] PTS 17535171475555, next:3516526 invalid dropping st:0
+
+2024-08-09 09:45:07.357 [INFO] [2906548] DTS 17535171492260, next:3533192 st:0 invalid dropping
+
+2024-08-09 09:45:07.357 [INFO] [2906548] PTS 17535171492260, next:3533192 invalid dropping st:0
+
+2024-08-09 09:45:07.382 [INFO] [2906548] DTS 17535171508911, next:3549858 st:0 invalid dropping
+
+2024-08-09 09:45:07.383 [INFO] [2906548] PTS 17535171508911, next:3549858 invalid dropping st:0
+
+2024-08-09 09:45:07.395 [INFO] [2906548] DTS 17535171525547, next:3566524 st:0 invalid dropping
+
+2024-08-09 09:45:07.395 [INFO] [2906548] PTS 17535171525547, next:3566524 invalid dropping st:0
+
+2024-08-09 09:45:07.410 [INFO] [2906548] DTS 17535171542256, next:3583190 st:0 invalid dropping
+
+2024-08-09 09:45:07.410 [INFO] [2906548] PTS 17535171542256, next:3583190 invalid dropping st:0
+
+2024-08-09 09:45:07.425 [INFO] [2906548] DTS 17535171558906, next:3599856 st:0 invalid dropping
+
+2024-08-09 09:45:07.426 [INFO] [2906548] PTS 17535171558906, next:3599856 invalid dropping st:0
+
+2024-08-09 09:45:07.447 [INFO] [2906548] frame=  216 fps= 59 q=31.0 size=       1kB time=00:00:02.74 bitrate=   2.2kbits/s speed=0.754x    DTS 17535171575548, next:361
+2024-08-09 09:45:07.448 [INFO] [2906548] 6522 st:0 invalid dropping
+
+2024-08-09 09:45:07.448 [INFO] [2906548] PTS 17535171575548, next:3616522 invalid dropping st:0
+
+2024-08-09 09:45:07.461 [INFO] [2906548] DTS 17535171592246, next:3633188 st:0 invalid dropping
+
+2024-08-09 09:45:07.462 [INFO] [2906548] PTS 17535171592246, next:3633188 invalid dropping st:0
+
+2024-08-09 09:45:07.477 [INFO] [2906548] DTS 17535171608909, next:3649854 st:0 invalid dropping
+
+2024-08-09 09:45:07.477 [INFO] [2906548] PTS 17535171608909, next:3649854 invalid dropping st:0
+
+2024-08-09 09:45:07.493 [INFO] [2906548] DTS 17535171625576, next:3666520 st:0 invalid dropping
+
+2024-08-09 09:45:07.493 [INFO] [2906548] PTS 17535171625576, next:3666520 invalid dropping st:0
+
+2024-08-09 09:45:07.512 [INFO] [2906548] DTS 17535171642251, next:3683186 st:0 invalid dropping
+
+2024-08-09 09:45:07.512 [INFO] [2906548] PTS 17535171642251, next:3683186 invalid dropping st:0
+
+2024-08-09 09:45:07.527 [INFO] [2906548] DTS 17535171658910, next:3699852 st:0 invalid dropping
+
+2024-08-09 09:45:07.527 [INFO] [2906548] PTS 17535171658910, next:3699852 invalid dropping st:0
+
+2024-08-09 09:45:07.540 [INFO] [2906548] DTS 17535171675550, next:3716518 st:0 invalid dropping
+
+2024-08-09 09:45:07.540 [INFO] [2906548] PTS 17535171675550, next:3716518 invalid dropping st:0
+
+2024-08-09 09:45:07.555 [INFO] [2906548] DTS 17535171692252, next:3733184 st:0 invalid dropping
+
+2024-08-09 09:45:07.555 [INFO] [2906548] PTS 17535171692252, next:3733184 invalid dropping st:0
+
+2024-08-09 09:45:07.582 [INFO] [2906548] DTS 17535171708912, next:3749850 st:0 invalid dropping
+
+2024-08-09 09:45:07.582 [INFO] [2906548] PTS 17535171708912, next:3749850 invalid dropping st:0
+
+2024-08-09 09:45:07.586 [INFO] [2906548] DTS 17535171725545, next:3766516 st:0 invalid dropping
+
+2024-08-09 09:45:07.586 [INFO] [2906548] PTS 17535171725545, next:3766516 invalid dropping st:0
+
+2024-08-09 09:45:07.609 [INFO] [2906548] DTS 17535171742257, next:3783182 st:0 invalid dropping
+
+2024-08-09 09:45:07.610 [INFO] [2906548] PTS 17535171742257, next:3783182 invalid dropping st:0
+
+2024-08-09 09:45:07.634 [INFO] [2906548] DTS 17535171758908, next:3799848 st:0 invalid dropping
+
+2024-08-09 09:45:07.635 [INFO] [2906548] PTS 17535171758908, next:3799848 invalid dropping st:0
+
+2024-08-09 09:45:07.647 [INFO] [2906548] DTS 17535171775549, next:3816514 st:0 invalid dropping
+
+2024-08-09 09:45:07.648 [INFO] [2906548] PTS 17535171775549, next:3816514 invalid dropping st:0
+
+2024-08-09 09:45:07.661 [INFO] [2906548] DTS 17535171792256, next:3833180 st:0 invalid dropping
+
+2024-08-09 09:45:07.661 [INFO] [2906548] PTS 17535171792256, next:3833180 invalid dropping st:0
+
+2024-08-09 09:45:07.677 [INFO] [2906548] DTS 17535171808912, next:3849846 st:0 invalid dropping
+
+2024-08-09 09:45:07.677 [INFO] [2906548] PTS 17535171808912, next:3849846 invalid dropping st:0
+
+2024-08-09 09:45:07.690 [INFO] [2906548] DTS 17535171825575, next:3866512 st:0 invalid dropping
+
+2024-08-09 09:45:07.690 [INFO] [2906548] PTS 17535171825575, next:3866512 invalid dropping st:0
+
+2024-08-09 09:45:07.707 [INFO] [2906548] DTS 17535171842259, next:3883178 st:0 invalid dropping
+
+2024-08-09 09:45:07.707 [INFO] [2906548] PTS 17535171842259, next:3883178 invalid dropping st:0
+
+2024-08-09 09:45:07.732 [INFO] [2906548] DTS 17535171858910, next:3899844 st:0 invalid dropping
+
+2024-08-09 09:45:07.732 [INFO] [2906548] PTS 17535171858910, next:3899844 invalid dropping st:0
+
+2024-08-09 09:45:07.737 [INFO] [2906548] DTS 17535171875547, next:3916510 st:0 invalid dropping
+
+2024-08-09 09:45:07.737 [INFO] [2906548] PTS 17535171875547, next:3916510 invalid dropping st:0
+
+2024-08-09 09:45:07.760 [INFO] [2906548] DTS 17535171892260, next:3933176 st:0 invalid dropping
+
+2024-08-09 09:45:07.760 [INFO] [2906548] PTS 17535171892260, next:3933176 invalid dropping st:0
+
+2024-08-09 09:45:07.785 [INFO] [2906548] DTS 17535171908912, next:3949842 st:0 invalid dropping
+
+2024-08-09 09:45:07.785 [INFO] [2906548] PTS 17535171908912, next:3949842 invalid dropping st:0
+
+2024-08-09 09:45:07.789 [INFO] [2906548] DTS 17535171925546, next:3966508 st:0 invalid dropping
+
+2024-08-09 09:45:07.789 [INFO] [2906548] PTS 17535171925546, next:3966508 invalid dropping st:0
+
+2024-08-09 09:45:07.814 [INFO] [2906548] DTS 17535171942259, next:3983174 st:0 invalid dropping
+
+2024-08-09 09:45:07.814 [INFO] [2906548] PTS 17535171942259, next:3983174 invalid dropping st:0
+
+2024-08-09 09:45:07.829 [INFO] [2906548] DTS 17535171958908, next:3999840 st:0 invalid dropping
+
+2024-08-09 09:45:07.829 [INFO] [2906548] PTS 17535171958908, next:3999840 invalid dropping st:0
+
+2024-08-09 09:45:07.843 [INFO] [2906548] DTS 17535171975549, next:4016506 st:0 invalid dropping
+
+2024-08-09 09:45:07.843 [INFO] [2906548] PTS 17535171975549, next:4016506 invalid dropping st:0
+
+2024-08-09 09:45:07.861 [INFO] [2906548] DTS 17535171992256, next:4033172 st:0 invalid dropping
+
+2024-08-09 09:45:07.861 [INFO] [2906548] PTS 17535171992256, next:4033172 invalid dropping st:0
+
+2024-08-09 09:45:07.876 [INFO] [2906548] DTS 17535172008910, next:4049838 st:0 invalid dropping
+
+2024-08-09 09:45:07.876 [INFO] [2906548] PTS 17535172008910, next:4049838 invalid dropping st:0
+
+2024-08-09 09:45:07.897 [INFO] [2906548] DTS 17535172025549, next:4066504 st:0 invalid dropping
+
+2024-08-09 09:45:07.898 [INFO] [2906548] PTS 17535172025549, next:4066504 invalid dropping st:0
+
+2024-08-09 09:45:07.903 [INFO] [2906548] DTS 17535172042254, next:4083170 st:0 invalid dropping
+
+2024-08-09 09:45:07.903 [INFO] [2906548] PTS 17535172042254, next:4083170 invalid dropping st:0
+
+2024-08-09 09:45:07.928 [INFO] [2906548] DTS 17535172058932, next:4099836 st:0 invalid dropping
+
+2024-08-09 09:45:07.928 [INFO] [2906548] PTS 17535172058932, next:4099836 invalid dropping st:0
+
+2024-08-09 09:45:07.948 [INFO] [2906548] frame=  246 fps= 59 q=31.0 size=       1kB time=00:00:03.23 bitrate=   1.8kbits/s speed=0.781x    DTS 17535172075549, next:411
+2024-08-09 09:45:07.948 [INFO] [2906548] 6502 st:0 invalid dropping
+
+2024-08-09 09:45:07.948 [INFO] [2906548] PTS 17535172075549, next:4116502 invalid dropping st:0
+
+2024-08-09 09:45:07.953 [INFO] [2906548] DTS 17535172092259, next:4133168 st:0 invalid dropping
+
+2024-08-09 09:45:07.953 [INFO] [2906548] PTS 17535172092259, next:4133168 invalid dropping st:0
+
+2024-08-09 09:45:07.981 [INFO] [2906548] DTS 17535172108911, next:4149834 st:0 invalid dropping
+
+2024-08-09 09:45:07.981 [INFO] [2906548] PTS 17535172108911, next:4149834 invalid dropping st:0
+
+2024-08-09 09:45:07.994 [INFO] [2906548] DTS 17535172125552, next:4166500 st:0 invalid dropping
+
+2024-08-09 09:45:07.994 [INFO] [2906548] PTS 17535172125552, next:4166500 invalid dropping st:0
+
+2024-08-09 09:45:08.010 [INFO] [2906548] DTS 17535172142255, next:4183166 st:0 invalid dropping
+
+2024-08-09 09:45:08.010 [INFO] [2906548] PTS 17535172142255, next:4183166 invalid dropping st:0
+
+2024-08-09 09:45:08.041 [INFO] [2906548] DTS 17535172158913, next:4199832 st:0 invalid dropping
+
+2024-08-09 09:45:08.041 [INFO] [2906548] PTS 17535172158913, next:4199832 invalid dropping st:0
+
+2024-08-09 09:45:08.068 [INFO] [2906548] DTS 17535172175554, next:4216498 st:0 invalid dropping
+
+2024-08-09 09:45:08.068 [INFO] [2906548] PTS 17535172175554, next:4216498 invalid dropping st:0
+
+2024-08-09 09:45:08.075 [INFO] [2906548] DTS 17535172192254, next:4233164 st:0 invalid dropping
+
+2024-08-09 09:45:08.075 [INFO] [2906548] PTS 17535172192254, next:4233164 invalid dropping st:0
+
+2024-08-09 09:45:08.080 [INFO] [2906548] DTS 17535172208910, next:4249830 st:0 invalid dropping
+
+2024-08-09 09:45:08.080 [INFO] [2906548] PTS 17535172208910, next:4249830 invalid dropping st:0
+
+2024-08-09 09:45:08.096 [INFO] [2906548] DTS 17535172225548, next:4266496 st:0 invalid dropping
+
+2024-08-09 09:45:08.096 [INFO] [2906548] PTS 17535172225548, next:4266496 invalid dropping st:0
+
+2024-08-09 09:45:08.111 [INFO] [2906548] DTS 17535172242256, next:4283162 st:0 invalid dropping
+
+2024-08-09 09:45:08.111 [INFO] [2906548] PTS 17535172242256, next:4283162 invalid dropping st:0
+
+2024-08-09 09:45:08.126 [INFO] [2906548] DTS 17535172258912, next:4299828 st:0 invalid dropping
+
+2024-08-09 09:45:08.127 [INFO] [2906548] PTS 17535172258912, next:4299828 invalid dropping st:0
+
+2024-08-09 09:45:08.150 [INFO] [2906548] DTS 17535172275560, next:4316494 st:0 invalid dropping
+
+2024-08-09 09:45:08.150 [INFO] [2906548] PTS 17535172275560, next:4316494 invalid dropping st:0
+
+2024-08-09 09:45:08.154 [INFO] [2906548] DTS 17535172292260, next:4333160 st:0 invalid dropping
+
+2024-08-09 09:45:08.155 [INFO] [2906548] PTS 17535172292260, next:4333160 invalid dropping st:0
+
+2024-08-09 09:45:08.180 [INFO] [2906548] DTS 17535172308924, next:4349826 st:0 invalid dropping
+
+2024-08-09 09:45:08.180 [INFO] [2906548] PTS 17535172308924, next:4349826 invalid dropping st:0
+
+2024-08-09 09:45:08.184 [INFO] [2906548] DTS 17535172325549, next:4366492 st:0 invalid dropping
+
+2024-08-09 09:45:08.185 [INFO] [2906548] PTS 17535172325549, next:4366492 invalid dropping st:0
+
+2024-08-09 09:45:08.210 [INFO] [2906548] DTS 17535172342261, next:4383158 st:0 invalid dropping
+
+2024-08-09 09:45:08.210 [INFO] [2906548] PTS 17535172342261, next:4383158 invalid dropping st:0
+
+2024-08-09 09:45:08.225 [INFO] [2906548] DTS 17535172358923, next:4399824 st:0 invalid dropping
+
+2024-08-09 09:45:08.226 [INFO] [2906548] PTS 17535172358923, next:4399824 invalid dropping st:0
+
+2024-08-09 09:45:08.239 [INFO] [2906548] DTS 17535172375546, next:4416490 st:0 invalid dropping
+
+2024-08-09 09:45:08.239 [INFO] [2906548] PTS 17535172375546, next:4416490 invalid dropping st:0
+
+2024-08-09 09:45:08.265 [INFO] [2906548] DTS 17535172392256, next:4433156 st:0 invalid dropping
+
+2024-08-09 09:45:08.265 [INFO] [2906548] PTS 17535172392256, next:4433156 invalid dropping st:0
+
+2024-08-09 09:45:08.274 [INFO] [2906548] DTS 17535172408927, next:4449822 st:0 invalid dropping
+
+2024-08-09 09:45:08.277 [INFO] [2906548] PTS 17535172408927, next:4449822 invalid dropping st:0
+
+2024-08-09 09:45:08.297 [INFO] [2906548] DTS 17535172425555, next:4466488 st:0 invalid dropping
+
+2024-08-09 09:45:08.297 [INFO] [2906548] PTS 17535172425555, next:4466488 invalid dropping st:0
+
+2024-08-09 09:45:08.311 [INFO] [2906548] DTS 17535172442255, next:4483154 st:0 invalid dropping
+
+2024-08-09 09:45:08.311 [INFO] [2906548] PTS 17535172442255, next:4483154 invalid dropping st:0
+
+2024-08-09 09:45:08.327 [INFO] [2906548] DTS 17535172458926, next:4499820 st:0 invalid dropping
+
+2024-08-09 09:45:08.327 [INFO] [2906548] PTS 17535172458926, next:4499820 invalid dropping st:0
+
+2024-08-09 09:45:08.344 [INFO] [2906548] DTS 17535172475562, next:4516486 st:0 invalid dropping
+
+2024-08-09 09:45:08.344 [INFO] [2906548] PTS 17535172475562, next:4516486 invalid dropping st:0
+
+2024-08-09 09:45:08.360 [INFO] [2906548] DTS 17535172492257, next:4533152 st:0 invalid dropping
+
+2024-08-09 09:45:08.360 [INFO] [2906548] PTS 17535172492257, next:4533152 invalid dropping st:0
+
+2024-08-09 09:45:08.373 [INFO] [2906548] DTS 17535172508928, next:4549818 st:0 invalid dropping
+
+2024-08-09 09:45:08.373 [INFO] [2906548] PTS 17535172508928, next:4549818 invalid dropping st:0
+
+2024-08-09 09:45:08.398 [INFO] [2906548] DTS 17535172525553, next:4566484 st:0 invalid dropping
+
+2024-08-09 09:45:08.398 [INFO] [2906548] PTS 17535172525553, next:4566484 invalid dropping st:0
+
+2024-08-09 09:45:08.412 [INFO] [2906548] DTS 17535172542261, next:4583150 st:0 invalid dropping
+
+2024-08-09 09:45:08.413 [INFO] [2906548] PTS 17535172542261, next:4583150 invalid dropping st:0
+
+2024-08-09 09:45:08.428 [INFO] [2906548] DTS 17535172558933, next:4599816 st:0 invalid dropping
+
+2024-08-09 09:45:08.429 [INFO] [2906548] PTS 17535172558933, next:4599816 invalid dropping st:0
+
+2024-08-09 09:45:08.444 [INFO] [2906548] DTS 17535172575553, next:4616482 st:0 invalid dropping
+
+2024-08-09 09:45:08.444 [INFO] [2906548] PTS 17535172575553, next:4616482 invalid dropping st:0
+
+2024-08-09 09:45:08.468 [INFO] [2906548] frame=  277 fps= 60 q=31.0 size=     117kB time=00:00:03.77 bitrate= 253.0kbits/s speed=0.811x    DTS 17535172592256, next:463
+2024-08-09 09:45:08.468 [INFO] [2906548] 3148 st:0 invalid dropping
+
+2024-08-09 09:45:08.468 [INFO] [2906548] PTS 17535172592256, next:4633148 invalid dropping st:0
+
+2024-08-09 09:45:08.473 [INFO] [2906548] DTS 17535172608923, next:4649814 st:0 invalid dropping
+
+2024-08-09 09:45:08.473 [INFO] [2906548] PTS 17535172608923, next:4649814 invalid dropping st:0
+
+2024-08-09 09:45:08.499 [INFO] [2906548] DTS 17535172625558, next:4666480 st:0 invalid dropping
+
+2024-08-09 09:45:08.499 [INFO] [2906548] PTS 17535172625558, next:4666480 invalid dropping st:0
+
+2024-08-09 09:45:08.514 [INFO] [2906548] DTS 17535172642256, next:4683146 st:0 invalid dropping
+
+2024-08-09 09:45:08.514 [INFO] [2906548] PTS 17535172642256, next:4683146 invalid dropping st:0
+
+2024-08-09 09:45:08.529 [INFO] [2906548] DTS 17535172658927, next:4699812 st:0 invalid dropping
+
+2024-08-09 09:45:08.530 [INFO] [2906548] PTS 17535172658927, next:4699812 invalid dropping st:0
+
+2024-08-09 09:45:08.543 [INFO] [2906548] DTS 17535172675561, next:4716478 st:0 invalid dropping
+
+2024-08-09 09:45:08.543 [INFO] [2906548] PTS 17535172675561, next:4716478 invalid dropping st:0
+
+2024-08-09 09:45:08.558 [INFO] [2906548] DTS 17535172692258, next:4733144 st:0 invalid dropping
+
+2024-08-09 09:45:08.558 [INFO] [2906548] PTS 17535172692258, next:4733144 invalid dropping st:0
+
+2024-08-09 09:45:08.572 [INFO] [2906548] DTS 17535172708928, next:4749810 st:0 invalid dropping
+
+2024-08-09 09:45:08.572 [INFO] [2906548] PTS 17535172708928, next:4749810 invalid dropping st:0
+
+2024-08-09 09:45:08.597 [INFO] [2906548] DTS 17535172725553, next:4766476 st:0 invalid dropping
+
+2024-08-09 09:45:08.597 [INFO] [2906548] PTS 17535172725553, next:4766476 invalid dropping st:0
+
+2024-08-09 09:45:08.602 [INFO] [2906548] DTS 17535172742258, next:4783142 st:0 invalid dropping
+
+2024-08-09 09:45:08.602 [INFO] [2906548] PTS 17535172742258, next:4783142 invalid dropping st:0
+
+2024-08-09 09:45:08.624 [INFO] [2906548] DTS 17535172758945, next:4799808 st:0 invalid dropping
+
+2024-08-09 09:45:08.624 [INFO] [2906548] PTS 17535172758945, next:4799808 invalid dropping st:0
+
+2024-08-09 09:45:08.648 [INFO] [2906548] DTS 17535172775555, next:4816474 st:0 invalid dropping
+
+2024-08-09 09:45:08.649 [INFO] [2906548] PTS 17535172775555, next:4816474 invalid dropping st:0
+
+2024-08-09 09:45:08.653 [INFO] [2906548] DTS 17535172792254, next:4833140 st:0 invalid dropping
+
+2024-08-09 09:45:08.653 [INFO] [2906548] PTS 17535172792254, next:4833140 invalid dropping st:0
+
+2024-08-09 09:45:08.676 [INFO] [2906548] DTS 17535172808933, next:4849806 st:0 invalid dropping
+
+2024-08-09 09:45:08.677 [INFO] [2906548] PTS 17535172808933, next:4849806 invalid dropping st:0
+
+2024-08-09 09:45:08.701 [INFO] [2906548] DTS 17535172825558, next:4866472 st:0 invalid dropping
+
+2024-08-09 09:45:08.701 [INFO] [2906548] PTS 17535172825558, next:4866472 invalid dropping st:0
+
+2024-08-09 09:45:08.705 [INFO] [2906548] DTS 17535172842260, next:4883138 st:0 invalid dropping
+
+2024-08-09 09:45:08.706 [INFO] [2906548] PTS 17535172842260, next:4883138 invalid dropping st:0
+
+2024-08-09 09:45:08.731 [INFO] [2906548] DTS 17535172858951, next:4899804 st:0 invalid dropping
+
+2024-08-09 09:45:08.732 [INFO] [2906548] PTS 17535172858951, next:4899804 invalid dropping st:0
+
+2024-08-09 09:45:08.743 [INFO] [2906548] DTS 17535172875557, next:4916470 st:0 invalid dropping
+
+2024-08-09 09:45:08.764 [INFO] [2906548] PTS 17535172875557, next:4916470 invalid dropping st:0
+
+2024-08-09 09:45:08.764 [INFO] [2906548] DTS 17535172892259, next:4933136 st:0 invalid dropping
+
+2024-08-09 09:45:08.764 [INFO] [2906548] PTS 17535172892259, next:4933136 invalid dropping st:0
+
+2024-08-09 09:45:08.780 [INFO] [2906548] DTS 17535172908933, next:4949802 st:0 invalid dropping
+
+2024-08-09 09:45:08.781 [INFO] [2906548] PTS 17535172908933, next:4949802 invalid dropping st:0
+
+2024-08-09 09:45:08.797 [INFO] [2906548] DTS 17535172925558, next:4966468 st:0 invalid dropping
+
+2024-08-09 09:45:08.797 [INFO] [2906548] PTS 17535172925558, next:4966468 invalid dropping st:0
+
+2024-08-09 09:45:08.811 [INFO] [2906548] DTS 17535172942258, next:4983134 st:0 invalid dropping
+
+2024-08-09 09:45:08.811 [INFO] [2906548] PTS 17535172942258, next:4983134 invalid dropping st:0
+
+2024-08-09 09:45:08.827 [INFO] [2906548] DTS 17535172958927, next:4999800 st:0 invalid dropping
+
+2024-08-09 09:45:08.828 [INFO] [2906548] PTS 17535172958927, next:4999800 invalid dropping st:0
+
+2024-08-09 09:45:08.851 [INFO] [2906548] DTS 17535172975556, next:5016466 st:0 invalid dropping
+
+2024-08-09 09:45:08.851 [INFO] [2906548] PTS 17535172975556, next:5016466 invalid dropping st:0
+
+2024-08-09 09:45:08.855 [INFO] [2906548] DTS 17535172992255, next:5033132 st:0 invalid dropping
+
+2024-08-09 09:45:08.855 [INFO] [2906548] PTS 17535172992255, next:5033132 invalid dropping st:0
+
+2024-08-09 09:45:08.873 [INFO] [2906548] DTS 17535173008932, next:5049798 st:0 invalid dropping
+
+2024-08-09 09:45:08.873 [INFO] [2906548] PTS 17535173008932, next:5049798 invalid dropping st:0
+
+2024-08-09 09:45:08.903 [INFO] [2906548] DTS 17535173025557, next:5066464 st:0 invalid dropping
+
+2024-08-09 09:45:08.903 [INFO] [2906548] PTS 17535173025557, next:5066464 invalid dropping st:0
+
+2024-08-09 09:45:08.905 [INFO] [2906548] DTS 17535173042260, next:5083130 st:0 invalid dropping
+
+2024-08-09 09:45:08.905 [INFO] [2906548] PTS 17535173042260, next:5083130 invalid dropping st:0
+
+2024-08-09 09:45:08.931 [INFO] [2906548] DTS 17535173058942, next:5099796 st:0 invalid dropping
+
+2024-08-09 09:45:08.931 [INFO] [2906548] PTS 17535173058942, next:5099796 invalid dropping st:0
+
+2024-08-09 09:45:08.946 [INFO] [2906548] DTS 17535173075564, next:5116462 st:0 invalid dropping
+
+2024-08-09 09:45:08.946 [INFO] [2906548] PTS 17535173075564, next:5116462 invalid dropping st:0
+
+2024-08-09 09:45:08.965 [INFO] [2906548] frame=  307 fps= 60 q=31.0 size=     117kB time=00:00:04.26 bitrate= 223.9kbits/s speed=0.827x    DTS 17535173092256, next:513
+2024-08-09 09:45:08.965 [INFO] [2906548] 3128 st:0 invalid dropping
+
+2024-08-09 09:45:08.965 [INFO] [2906548] PTS 17535173092256, next:5133128 invalid dropping st:0
+
+2024-08-09 09:45:08.980 [INFO] [2906548] DTS 17535173108938, next:5149794 st:0 invalid dropping
+
+2024-08-09 09:45:08.980 [INFO] [2906548] PTS 17535173108938, next:5149794 invalid dropping st:0
+
+2024-08-09 09:45:08.993 [INFO] [2906548] DTS 17535173125559, next:5166460 st:0 invalid dropping
+
+2024-08-09 09:45:08.993 [INFO] [2906548] PTS 17535173125559, next:5166460 invalid dropping st:0
+
+2024-08-09 09:45:09.010 [INFO] [2906548] DTS 17535173142260, next:5183126 st:0 invalid dropping
+
+2024-08-09 09:45:09.010 [INFO] [2906548] PTS 17535173142260, next:5183126 invalid dropping st:0
+
+2024-08-09 09:45:09.025 [INFO] [2906548] DTS 17535173158928, next:5199792 st:0 invalid dropping
+
+2024-08-09 09:45:09.026 [INFO] [2906548] PTS 17535173158928, next:5199792 invalid dropping st:0
+
+2024-08-09 09:45:09.050 [INFO] [2906548] DTS 17535173175558, next:5216458 st:0 invalid dropping
+
+2024-08-09 09:45:09.051 [INFO] [2906548] PTS 17535173175558, next:5216458 invalid dropping st:0
+
+2024-08-09 09:45:09.053 [INFO] [2906548] DTS 17535173192257, next:5233124 st:0 invalid dropping
+
+2024-08-09 09:45:09.054 [INFO] [2906548] PTS 17535173192257, next:5233124 invalid dropping st:0
+
+2024-08-09 09:45:09.079 [INFO] [2906548] DTS 17535173208934, next:5249790 st:0 invalid dropping
+
+2024-08-09 09:45:09.079 [INFO] [2906548] PTS 17535173208934, next:5249790 invalid dropping st:0
+
+2024-08-09 09:45:09.094 [INFO] [2906548] DTS 17535173225556, next:5266456 st:0 invalid dropping
+
+2024-08-09 09:45:09.094 [INFO] [2906548] PTS 17535173225556, next:5266456 invalid dropping st:0
+
+2024-08-09 09:45:09.109 [INFO] [2906548] DTS 17535173242288, next:5283122 st:0 invalid dropping
+
+2024-08-09 09:45:09.109 [INFO] [2906548] PTS 17535173242288, next:5283122 invalid dropping st:0
+
+2024-08-09 09:45:09.124 [INFO] [2906548] DTS 17535173258929, next:5299788 st:0 invalid dropping
+
+2024-08-09 09:45:09.124 [INFO] [2906548] PTS 17535173258929, next:5299788 invalid dropping st:0
+
+2024-08-09 09:45:09.151 [INFO] [2906548] DTS 17535173275556, next:5316454 st:0 invalid dropping
+
+2024-08-09 09:45:09.151 [INFO] [2906548] PTS 17535173275556, next:5316454 invalid dropping st:0
+
+2024-08-09 09:45:09.155 [INFO] [2906548] DTS 17535173292257, next:5333120 st:0 invalid dropping
+
+2024-08-09 09:45:09.155 [INFO] [2906548] PTS 17535173292257, next:5333120 invalid dropping st:0
+
+2024-08-09 09:45:09.179 [INFO] [2906548] DTS 17535173308937, next:5349786 st:0 invalid dropping
+
+2024-08-09 09:45:09.179 [INFO] [2906548] PTS 17535173308937, next:5349786 invalid dropping st:0
+
+2024-08-09 09:45:09.195 [INFO] [2906548] DTS 17535173325557, next:5366452 st:0 invalid dropping
+
+2024-08-09 09:45:09.195 [INFO] [2906548] PTS 17535173325557, next:5366452 invalid dropping st:0
+
+2024-08-09 09:45:09.211 [INFO] [2906548] DTS 17535173342256, next:5383118 st:0 invalid dropping
+
+2024-08-09 09:45:09.212 [INFO] [2906548] PTS 17535173342256, next:5383118 invalid dropping st:0
+
+2024-08-09 09:45:09.224 [INFO] [2906548] DTS 17535173358933, next:5399784 st:0 invalid dropping
+
+2024-08-09 09:45:09.225 [INFO] [2906548] PTS 17535173358933, next:5399784 invalid dropping st:0
+
+2024-08-09 09:45:09.249 [INFO] [2906548] DTS 17535173375559, next:5416450 st:0 invalid dropping
+
+2024-08-09 09:45:09.249 [INFO] [2906548] PTS 17535173375559, next:5416450 invalid dropping st:0
+
+2024-08-09 09:45:09.253 [INFO] [2906548] DTS 17535173392257, next:5433116 st:0 invalid dropping
+
+2024-08-09 09:45:09.253 [INFO] [2906548] PTS 17535173392257, next:5433116 invalid dropping st:0
+
+2024-08-09 09:45:09.280 [INFO] [2906548] DTS 17535173408944, next:5449782 st:0 invalid dropping
+
+2024-08-09 09:45:09.281 [INFO] [2906548] PTS 17535173408944, next:5449782 invalid dropping st:0
+
+2024-08-09 09:45:09.293 [INFO] [2906548] DTS 17535173425557, next:5466448 st:0 invalid dropping
+
+2024-08-09 09:45:09.294 [INFO] [2906548] PTS 17535173425557, next:5466448 invalid dropping st:0
+
+2024-08-09 09:45:09.307 [INFO] [2906548] DTS 17535173442255, next:5483114 st:0 invalid dropping
+
+2024-08-09 09:45:09.308 [INFO] [2906548] PTS 17535173442255, next:5483114 invalid dropping st:0
+
+2024-08-09 09:45:09.332 [INFO] [2906548] DTS 17535173458932, next:5499780 st:0 invalid dropping
+
+2024-08-09 09:45:09.332 [INFO] [2906548] PTS 17535173458932, next:5499780 invalid dropping st:0
+
+2024-08-09 09:45:09.346 [INFO] [2906548] DTS 17535173475565, next:5516446 st:0 invalid dropping
+
+2024-08-09 09:45:09.347 [INFO] [2906548] PTS 17535173475565, next:5516446 invalid dropping st:0
+
+2024-08-09 09:45:09.360 [INFO] [2906548] DTS 17535173492258, next:5533112 st:0 invalid dropping
+
+2024-08-09 09:45:09.360 [INFO] [2906548] PTS 17535173492258, next:5533112 invalid dropping st:0
+
+2024-08-09 09:45:09.374 [INFO] [2906548] DTS 17535173508930, next:5549778 st:0 invalid dropping
+
+2024-08-09 09:45:09.375 [INFO] [2906548] PTS 17535173508930, next:5549778 invalid dropping st:0
+
+2024-08-09 09:45:09.391 [INFO] [2906548] DTS 17535173525556, next:5566444 st:0 invalid dropping
+
+2024-08-09 09:45:09.391 [INFO] [2906548] PTS 17535173525556, next:5566444 invalid dropping st:0
+
+2024-08-09 09:45:09.407 [INFO] [2906548] DTS 17535173542256, next:5583110 st:0 invalid dropping
+
+2024-08-09 09:45:09.407 [INFO] [2906548] PTS 17535173542256, next:5583110 invalid dropping st:0
+
+2024-08-09 09:45:09.428 [INFO] [2906548] DTS 17535173558966, next:5599776 st:0 invalid dropping
+
+2024-08-09 09:45:09.428 [INFO] [2906548] PTS 17535173558966, next:5599776 invalid dropping st:0
+
+2024-08-09 09:45:09.442 [INFO] [2906548] DTS 17535173575560, next:5616442 st:0 invalid dropping
+
+2024-08-09 09:45:09.442 [INFO] [2906548] PTS 17535173575560, next:5616442 invalid dropping st:0
+
+2024-08-09 09:45:09.458 [INFO] [2906548] frame=  337 fps= 60 q=31.0 size=     117kB time=00:00:04.78 bitrate= 199.8kbits/s speed=0.845x    DTS 17535173592254, next:563
+2024-08-09 09:45:09.458 [INFO] [2906548] 3108 st:0 invalid dropping
+
+2024-08-09 09:45:09.458 [INFO] [2906548] PTS 17535173592254, next:5633108 invalid dropping st:0
+
+2024-08-09 09:45:09.477 [INFO] [2906548] DTS 17535173608967, next:5649774 st:0 invalid dropping
+
+2024-08-09 09:45:09.477 [INFO] [2906548] PTS 17535173608967, next:5649774 invalid dropping st:0
+
+2024-08-09 09:45:09.492 [INFO] [2906548] DTS 17535173625554, next:5666440 st:0 invalid dropping
+
+2024-08-09 09:45:09.492 [INFO] [2906548] PTS 17535173625554, next:5666440 invalid dropping st:0
+
+2024-08-09 09:45:09.506 [INFO] [2906548] DTS 17535173642252, next:5683106 st:0 invalid dropping
+
+2024-08-09 09:45:09.506 [INFO] [2906548] PTS 17535173642252, next:5683106 invalid dropping st:0
+
+2024-08-09 09:45:09.529 [INFO] [2906548] DTS 17535173658967, next:5699772 st:0 invalid dropping
+
+2024-08-09 09:45:09.530 [INFO] [2906548] PTS 17535173658967, next:5699772 invalid dropping st:0
+
+2024-08-09 09:45:09.544 [INFO] [2906548] DTS 17535173675555, next:5716438 st:0 invalid dropping
+
+2024-08-09 09:45:09.545 [INFO] [2906548] PTS 17535173675555, next:5716438 invalid dropping st:0
+
+2024-08-09 09:45:09.558 [INFO] [2906548] DTS 17535173692292, next:5733104 st:0 invalid dropping
+
+2024-08-09 09:45:09.559 [INFO] [2906548] PTS 17535173692292, next:5733104 invalid dropping st:0
+
+2024-08-09 09:45:09.583 [INFO] [2906548] DTS 17535173708967, next:5749770 st:0 invalid dropping
+
+2024-08-09 09:45:09.583 [INFO] [2906548] PTS 17535173708967, next:5749770 invalid dropping st:0
+
+2024-08-09 09:45:09.586 [INFO] [2906548] DTS 17535173725556, next:5766436 st:0 invalid dropping
+
+2024-08-09 09:45:09.586 [INFO] [2906548] PTS 17535173725556, next:5766436 invalid dropping st:0
+
+2024-08-09 09:45:09.611 [INFO] [2906548] DTS 17535173742262, next:5783102 st:0 invalid dropping
+
+2024-08-09 09:45:09.612 [INFO] [2906548] PTS 17535173742262, next:5783102 invalid dropping st:0
+
+2024-08-09 09:45:09.636 [INFO] [2906548] DTS 17535173758935, next:5799768 st:0 invalid dropping
+
+2024-08-09 09:45:09.636 [INFO] [2906548] PTS 17535173758935, next:5799768 invalid dropping st:0
+
+2024-08-09 09:45:09.640 [INFO] [2906548] DTS 17535173775557, next:5816434 st:0 invalid dropping
+
+2024-08-09 09:45:09.640 [INFO] [2906548] PTS 17535173775557, next:5816434 invalid dropping st:0
+
+2024-08-09 09:45:09.665 [INFO] [2906548] DTS 17535173792258, next:5833100 st:0 invalid dropping
+
+2024-08-09 09:45:09.665 [INFO] [2906548] PTS 17535173792258, next:5833100 invalid dropping st:0
+
+2024-08-09 09:45:09.668 [INFO] [2906548] DTS 17535173808933, next:5849766 st:0 invalid dropping
+
+2024-08-09 09:45:09.668 [INFO] [2906548] PTS 17535173808933, next:5849766 invalid dropping st:0
+
+2024-08-09 09:45:09.689 [INFO] [2906548] DTS 17535173825560, next:5866432 st:0 invalid dropping
+
+2024-08-09 09:45:09.689 [INFO] [2906548] PTS 17535173825560, next:5866432 invalid dropping st:0
+
+2024-08-09 09:45:09.715 [INFO] [2906548] DTS 17535173842255, next:5883098 st:0 invalid dropping
+
+2024-08-09 09:45:09.715 [INFO] [2906548] PTS 17535173842255, next:5883098 invalid dropping st:0
+
+2024-08-09 09:45:09.719 [INFO] [2906548] DTS 17535173858965, next:5899764 st:0 invalid dropping
+
+2024-08-09 09:45:09.719 [INFO] [2906548] PTS 17535173858965, next:5899764 invalid dropping st:0
+
+2024-08-09 09:45:09.742 [INFO] [2906548] DTS 17535173875559, next:5916430 st:0 invalid dropping
+
+2024-08-09 09:45:09.742 [INFO] [2906548] PTS 17535173875559, next:5916430 invalid dropping st:0
+
+2024-08-09 09:45:09.767 [INFO] [2906548] DTS 17535173892257, next:5933096 st:0 invalid dropping
+
+2024-08-09 09:45:09.767 [INFO] [2906548] PTS 17535173892257, next:5933096 invalid dropping st:0
+
+2024-08-09 09:45:09.771 [INFO] [2906548] DTS 17535173908965, next:5949762 st:0 invalid dropping
+
+2024-08-09 09:45:09.771 [INFO] [2906548] PTS 17535173908965, next:5949762 invalid dropping st:0
+
+2024-08-09 09:45:09.795 [INFO] [2906548] DTS 17535173925561, next:5966428 st:0 invalid dropping
+
+2024-08-09 09:45:09.795 [INFO] [2906548] PTS 17535173925561, next:5966428 invalid dropping st:0
+
+2024-08-09 09:45:09.811 [INFO] [2906548] DTS 17535173942255, next:5983094 st:0 invalid dropping
+
+2024-08-09 09:45:09.811 [INFO] [2906548] PTS 17535173942255, next:5983094 invalid dropping st:0
+
+2024-08-09 09:45:09.825 [INFO] [2906548] DTS 17535173958967, next:5999760 st:0 invalid dropping
+
+2024-08-09 09:45:09.825 [INFO] [2906548] PTS 17535173958967, next:5999760 invalid dropping st:0
+
+2024-08-09 09:45:09.840 [INFO] [2906548] DTS 17535173975557, next:6016426 st:0 invalid dropping
+
+2024-08-09 09:45:09.840 [INFO] [2906548] PTS 17535173975557, next:6016426 invalid dropping st:0
+
+2024-08-09 09:45:09.870 [INFO] [75038] REPROSTIM-METADATA-JSON: {"cap_isotime_start":"2024-08-09T09:45:03.661898","cap_isotime_stop":"2024-08-09T09:45:09.870054","cap_ts_start":"2024.08.09-09.45.03.661","cap_ts_stop":"2024.08.09-09.45.09.870","json_isotime":"2024-08-09T09:45:09.870089","json_ts":"2024.08.09-09.45.09.870","message":":\tStopped recording because something changed.","type":"capture_stop"} :REPROSTIM-METADATA-JSON
+2024-08-09 09:45:09.870 [INFO] [75038] stop record says: terminating ffmpeg with SIGINT
+2024-08-09 09:45:09.873 [INFO] [2906548] DTS 17535173992256, next:6033092 st:0 invalid dropping
+
+2024-08-09 09:45:09.873 [INFO] [2906548] PTS 17535173992256, next:6033092 invalid dropping st:0
+
+2024-08-09 09:45:09.879 [INFO] [75038] ffmpeg pid: 2906550
+
+2024-08-09 09:45:09.879 [INFO] [75038] <> PID of ffmpeg	===> 2906550
+
+2024-08-09 09:45:10.351 [INFO] [2906548] frame=  362 fps= 55 q=-1.0 Lsize=     180kB time=00:00:06.00 bitrate= 246.0kbits/s speed=0.915x    
+
+2024-08-09 09:45:10.351 [INFO] [2906548] video:94kB audio:81kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: 2.677037%
+
+2024-08-09 09:45:10.352 [INFO] [2906548] [libx264 @ 0x5624485f9bc0] frame I:3     Avg QP:21.11  size: 15464
+
+2024-08-09 09:45:10.352 [INFO] [2906548] [libx264 @ 0x5624485f9bc0] frame P:94    Avg QP:22.35  size:   314
+
+2024-08-09 09:45:10.352 [INFO] [2906548] [libx264 @ 0x5624485f9bc0] frame B:265   Avg QP:22.03  size:    75
+
+2024-08-09 09:45:10.352 [INFO] [2906548] [libx264 @ 0x5624485f9bc0] consecutive B-frames:  1.9%  1.1%  0.8% 96.1%
+
+2024-08-09 09:45:10.352 [INFO] [2906548] [libx264 @ 0x5624485f9bc0] mb I  I16..4: 73.6% 24.7%  1.8%
+
+2024-08-09 09:45:10.352 [INFO] [2906548] [libx264 @ 0x5624485f9bc0] mb P  I16..4:  0.0%  0.1%  0.0%  P16..4:  1.2%  0.1%  0.1%  0.0%  0.0%    skip:98.6%
+
+2024-08-09 09:45:10.352 [INFO] [2906548] [libx264 @ 0x5624485f9bc0] mb B  I16..4:  0.0%  0.0%  0.0%  B16..8:  0.1%  0.0%  0.0%  direct: 0.0%  skip:99.9%  L0:21.5% L1:78
+2024-08-09 09:45:10.352 [INFO] [2906548] .5% BI: 0.1%
+
+2024-08-09 09:45:10.352 [INFO] [2906548] [libx264 @ 0x5624485f9bc0] 8x8 transform intra:26.6% inter:65.3%
+
+2024-08-09 09:45:10.352 [INFO] [2906548] [libx264 @ 0x5624485f9bc0] coded y,uvDC,uvAC intra: 2.2% 20.0% 4.3% inter: 0.0% 0.3% 0.0%
+
+2024-08-09 09:45:10.352 [INFO] [2906548] [libx264 @ 0x5624485f9bc0] i16 v,h,dc,p: 95%  1%  2%  2%
+
+2024-08-09 09:45:10.352 [INFO] [2906548] [libx264 @ 0x5624485f9bc0] i8 v,h,dc,ddl,ddr,vr,hd,vl,hu: 14%  4% 78%  1%  1%  0%  1%  0%  1%
+
+2024-08-09 09:45:10.352 [INFO] [2906548] [libx264 @ 0x5624485f9bc0] i4 v,h,dc,ddl,ddr,vr,hd,vl,hu: 26% 20% 19%  9%  5%  5%  4%  5%  8%
+
+2024-08-09 09:45:10.352 [INFO] [2906548] [libx264 @ 0x5624485f9bc0] i8c dc,h,v,p: 82%  7%  7%  4%
+
+2024-08-09 09:45:10.352 [INFO] [2906548] [libx264 @ 0x5624485f9bc0] Weighted P-Frames: Y:0.0% UV:0.0%
+
+2024-08-09 09:45:10.352 [INFO] [2906548] [libx264 @ 0x5624485f9bc0] ref P L0: 75.8%  1.2% 21.1%  1.9%
+
+2024-08-09 09:45:10.352 [INFO] [2906548] [libx264 @ 0x5624485f9bc0] ref B L0: 75.4% 24.1%  0.5%
+
+2024-08-09 09:45:10.352 [INFO] [2906548] [libx264 @ 0x5624485f9bc0] ref B L1: 97.9%  2.1%
+
+2024-08-09 09:45:10.352 [INFO] [2906548] [libx264 @ 0x5624485f9bc0] kb/s:127.05
+
+2024-08-09 09:45:10.354 [INFO] [2906548] [aac @ 0x5624485fb280] Qavg: 210.357
+
+2024-08-09 09:45:10.380 [INFO] [2906548] Exiting normally, received signal 2.
+
+2024-08-09 09:45:10.385 [INFO] [2906548] :	Ffmpeg thread terminated. Saving video /data/reprostim/Videos/2024/08/2024.08.09-09.45.03.661--2024.08.09-09.45.10.385.mkv
+2024-08-09 09:45:10.385 [INFO] [2906548] REPROSTIM-METADATA-JSON: {"cap_isotime_start":"2024-08-09T09:45:03.661898","cap_ts_start":"2024.08.09-09.45.03.661","json_isotime":"2024-08-09T09:45:10.385352","json_ts":"2024.08.09-09.45.10.385","message":"ffmpeg thread terminated","type":"session_end"} :REPROSTIM-METADATA-JSON
+2024-08-09 09:45:10.385 [INFO] [2906548] Session logging end: session_logger_2024.08.09-09.45.03.661
