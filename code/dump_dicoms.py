@@ -13,6 +13,7 @@ import pydicom
 import logging
 
 from repronim_timing import (dump_jsonl, get_session_id, generate_id)
+from repronim_dumps import DicomRecord, StudyRecord, SeriesRecord
 
 
 # initialize the logger
@@ -21,79 +22,6 @@ logger = logging.getLogger(__name__)
 logging.getLogger().addHandler(logging.StreamHandler(sys.stderr))
 logger.setLevel(logging.DEBUG)
 #logger.debug(f"name={__name__}")
-
-
-# Define model DICOM item
-class DicomRecord(BaseModel):
-    type: Optional[str] = Field("DicomRecord", description="JSON record type/class")
-    id: Optional[str] = Field(None, description="DICOM object unique ID")
-    session_id: Optional[str] = Field(None, description="Session unique ID")
-    acquisition_time: Optional[str] = Field(None, description="MRI acquisition time")
-    acquisition_date: Optional[str] = Field(None, description="MRI acquisition date")
-    acquisition_isotime: Optional[datetime] = Field(None,
-                                                    description="MRI acquisition "
-                                                                "datetime in ISO "
-                                                                "format")
-    study: Optional[str] = Field(None, description="MRI study description")
-    series: Optional[str] = Field(None, description="MRI series description")
-
-# Define model for MRI study
-class StudyRecord(BaseModel):
-    type: Optional[str] = Field("StudyRecord", description="JSON record type/class")
-    id: Optional[str] = Field(None, description="DICOM object unique ID")
-    session_id: Optional[str] = Field(None, description="Session unique ID")
-    name: Optional[str] = Field(None, description="MRI study description")
-    series_count: Optional[int] = Field(0, description="Number of series in the study")
-    time_start: Optional[str] = Field(None, description="MRI time study start")
-    date_start: Optional[str] = Field(None, description="MRI date study start")
-    isotime_start: Optional[datetime] = Field(None,
-                                            description="MRI study start "
-                                                        "datetime in ISO "
-                                                        "format")
-    range_isotime_start: Optional[datetime] = Field(None,
-                                            description="Specify study range in "
-                                                        "absolute ISO time format, "
-                                                        "will be used by other "
-                                                        "tools to for filtering.")
-    time_end: Optional[str] = Field(None, description="MRI time study end")
-    date_end: Optional[str] = Field(None, description="MRI date study end")
-    isotime_end: Optional[datetime] = Field(None,
-                                            description="MRI study end "
-                                                        "datetime in ISO "
-                                                        "format")
-    range_isotime_end: Optional[datetime] = Field(None,
-                                            description="Specify study range in "
-                                                        "absolute ISO time format, "
-                                                        "will be used by other "
-                                                        "tools to for filtering.")
-    duration: Optional[float] = Field(None, description="Duration of the "
-                                                        "study in seconds")
-
-
-
-# Define model for MRI series
-class SeriesRecord(BaseModel):
-    type: Optional[str] = Field("SeriesRecord", description="JSON record type/class")
-    id: Optional[str] = Field(None, description="DICOM object unique ID")
-    session_id: Optional[str] = Field(None, description="Session unique ID")
-    name: Optional[str] = Field(None, description="MRI series description")
-    dicom_count: Optional[int] = Field(0, description="Number of DICOM data images"
-                                                       " in the series")
-    time_start: Optional[str] = Field(None, description="MRI time series start")
-    date_start: Optional[str] = Field(None, description="MRI date series start")
-    isotime_start: Optional[datetime] = Field(None,
-                                            description="MRI series start "
-                                                        "datetime in ISO "
-                                                        "format")
-    time_end: Optional[str] = Field(None, description="MRI time series end")
-    date_end: Optional[str] = Field(None, description="MRI date series end")
-    isotime_end: Optional[datetime] = Field(None,
-                                            description="MRI series end "
-                                                        "datetime in ISO "
-                                                        "format")
-    study: Optional[str] = Field(None, description="MRI study description")
-    duration: Optional[float] = Field(None, description="Duration of the "
-                                                        "series in seconds")
 
 
 def calc_duration(start: datetime, end: datetime) -> float:

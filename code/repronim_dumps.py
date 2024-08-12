@@ -9,6 +9,79 @@ from pydantic import BaseModel, Field
 ######################################################################
 # Data models
 
+# Define model DICOM item
+class DicomRecord(BaseModel):
+    type: Optional[str] = Field("DicomRecord", description="JSON record type/class")
+    id: Optional[str] = Field(None, description="DICOM object unique ID")
+    session_id: Optional[str] = Field(None, description="Session unique ID")
+    acquisition_time: Optional[str] = Field(None, description="MRI acquisition time")
+    acquisition_date: Optional[str] = Field(None, description="MRI acquisition date")
+    acquisition_isotime: Optional[datetime] = Field(None,
+                                                    description="MRI acquisition "
+                                                                "datetime in ISO "
+                                                                "format")
+    study: Optional[str] = Field(None, description="MRI study description")
+    series: Optional[str] = Field(None, description="MRI series description")
+
+# Define model for DICOM MRI study
+class StudyRecord(BaseModel):
+    type: Optional[str] = Field("StudyRecord", description="JSON record type/class")
+    id: Optional[str] = Field(None, description="DICOM object unique ID")
+    session_id: Optional[str] = Field(None, description="Session unique ID")
+    name: Optional[str] = Field(None, description="MRI study description")
+    series_count: Optional[int] = Field(0, description="Number of series in the study")
+    time_start: Optional[str] = Field(None, description="MRI time study start")
+    date_start: Optional[str] = Field(None, description="MRI date study start")
+    isotime_start: Optional[datetime] = Field(None,
+                                            description="MRI study start "
+                                                        "datetime in ISO "
+                                                        "format")
+    range_isotime_start: Optional[datetime] = Field(None,
+                                            description="Specify study range in "
+                                                        "absolute ISO time format, "
+                                                        "will be used by other "
+                                                        "tools to for filtering.")
+    time_end: Optional[str] = Field(None, description="MRI time study end")
+    date_end: Optional[str] = Field(None, description="MRI date study end")
+    isotime_end: Optional[datetime] = Field(None,
+                                            description="MRI study end "
+                                                        "datetime in ISO "
+                                                        "format")
+    range_isotime_end: Optional[datetime] = Field(None,
+                                            description="Specify study range in "
+                                                        "absolute ISO time format, "
+                                                        "will be used by other "
+                                                        "tools to for filtering.")
+    duration: Optional[float] = Field(None, description="Duration of the "
+                                                        "study in seconds")
+
+
+
+# Define model for DICOM MRI series
+class SeriesRecord(BaseModel):
+    type: Optional[str] = Field("SeriesRecord", description="JSON record type/class")
+    id: Optional[str] = Field(None, description="DICOM object unique ID")
+    session_id: Optional[str] = Field(None, description="Session unique ID")
+    name: Optional[str] = Field(None, description="MRI series description")
+    dicom_count: Optional[int] = Field(0, description="Number of DICOM data images"
+                                                       " in the series")
+    time_start: Optional[str] = Field(None, description="MRI time series start")
+    date_start: Optional[str] = Field(None, description="MRI date series start")
+    isotime_start: Optional[datetime] = Field(None,
+                                            description="MRI series start "
+                                                        "datetime in ISO "
+                                                        "format")
+    time_end: Optional[str] = Field(None, description="MRI time series end")
+    date_end: Optional[str] = Field(None, description="MRI date series end")
+    isotime_end: Optional[datetime] = Field(None,
+                                            description="MRI series end "
+                                                        "datetime in ISO "
+                                                        "format")
+    study: Optional[str] = Field(None, description="MRI study description")
+    duration: Optional[float] = Field(None, description="Duration of the "
+                                                        "series in seconds")
+
+
 # Pydantic model for reproevents record
 class ReproeventsRecord(BaseModel):
     type: Optional[str] = Field("ReproeventsRecord", description="JSON record type/class")
@@ -31,3 +104,30 @@ class ReproeventsRecord(BaseModel):
     data: Optional[dict] = Field(None, description="Data record from original "
                                                    "reproevents CSV file "
                                                    "converted to JSON")
+
+
+# Define synchronization mark/tag model
+class MarkRecord(BaseModel):
+    type: Optional[str] = Field("MarkRecord", description="JSON record type/class")
+    session_id: Optional[str] = Field(None, description="Unique session identifier")
+    id: Optional[str] = Field(None, description="Mark object unique ID")
+    kind: Optional[str] = Field(None, description="Mark kind/type")
+    name: Optional[str] = Field(None, description="Mark name")
+    target_ids: Optional[List[str]] = Field([], description="List of unique "
+                                                        "series in seconds")
+    dicoms_isotime: Optional[datetime] = Field(None, description="DICOMs acquisition "
+                                                            "time in ISO format")
+    dicoms_duration: Optional[float] = Field(None, description="DICOMs series duration "
+                                                               "in seconds")
+    birch_isotime: Optional[datetime] = Field(None, description="Birch acquisition "
+                                                           "time in ISO format")
+    birch_duration: Optional[float] = Field(None, description="Birch series duration "
+                                                              "in seconds")
+    qrinfo_isotime: Optional[datetime] = Field(None, description="QRInfo acquisition "
+                                                            "time in ISO format")
+    qrinfo_duration: Optional[float] = Field(None, description="QRInfo series duration "
+                                                               "in seconds")
+    psychopy_isotime: Optional[datetime] = Field(None, description="PsychoPy acquisition "
+                                                             "time in ISO format")
+    psychopy_duration: Optional[float] = Field(None, description="Psychopy series duration "
+                                                                "in seconds")

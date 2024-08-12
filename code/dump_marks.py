@@ -18,6 +18,7 @@ import logging
 from repronim_timing import (TMapService, Clock,
                              generate_id, dump_jsonl,
                              get_session_id, get_tmap_svc)
+from repronim_dumps import MarkRecord
 
 # initialize the logger
 # Note: all logs goes to stderr
@@ -91,35 +92,6 @@ class DumpModel(BaseModel):
 
     def get_by_id(self, uid: str):
         return self.map_by_id.get(uid)
-
-
-
-# Define synchronization mark/tag model
-class MarkRecord(BaseModel):
-    type: Optional[str] = Field("MarkRecord", description="JSON record type/class")
-    session_id: Optional[str] = Field(None, description="Unique session identifier")
-    id: Optional[str] = Field(None, description="Mark object unique ID")
-    kind: Optional[str] = Field(None, description="Mark kind/type")
-    name: Optional[str] = Field(None, description="Mark name")
-    target_ids: Optional[List[str]] = Field([], description="List of unique "
-                                                        "series in seconds")
-    dicoms_isotime: Optional[datetime] = Field(None, description="DICOMs acquisition "
-                                                            "time in ISO format")
-    dicoms_duration: Optional[float] = Field(None, description="DICOMs series duration "
-                                                               "in seconds")
-    birch_isotime: Optional[datetime] = Field(None, description="Birch acquisition "
-                                                           "time in ISO format")
-    birch_duration: Optional[float] = Field(None, description="Birch series duration "
-                                                              "in seconds")
-    qrinfo_isotime: Optional[datetime] = Field(None, description="QRInfo acquisition "
-                                                            "time in ISO format")
-    qrinfo_duration: Optional[float] = Field(None, description="QRInfo series duration "
-                                                               "in seconds")
-    psychopy_isotime: Optional[datetime] = Field(None, description="PsychoPy acquisition "
-                                                             "time in ISO format")
-    psychopy_duration: Optional[float] = Field(None, description="Psychopy series duration "
-                                                                "in seconds")
-
 
 
 def parse_isotime(v: str) -> datetime:
