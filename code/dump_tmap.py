@@ -32,6 +32,7 @@ def find_full_marks(marks: List) -> List[dict]:
             obj.get('dicoms_isotime') is not None and
             obj.get('birch_isotime') is not None and
             obj.get('qrinfo_isotime') is not None and
+            obj.get('reproevents_isotime') is not None and
             obj.get('psychopy_isotime') is not None):
             lst.append(obj)
     return lst
@@ -44,6 +45,7 @@ def find_partial_marks(marks: List) -> List[dict]:
             obj.get('birch_isotime') is not None and
             (obj.get('dicoms_isotime') is not None or
             obj.get('qrinfo_isotime') is not None or
+            obj.get('reproevents_isotime') is not None or
             obj.get('psychopy_isotime') is not None)):
             lst.append(obj)
     return lst
@@ -103,6 +105,9 @@ def generate_tmap(session_id: str, path_marks: str,
         tmr.psychopy_isotime = parse_isotime(fm.get('psychopy_isotime'))
         tmr.psychopy_offset = calc_offset(tmr.psychopy_isotime, tmr.isotime)
         tmr.psychopy_deviation = calc_deviation(fm, 'psychopy_duration', ref_duration)
+        tmr.reproevents_isotime = parse_isotime(fm.get('reproevents_isotime'))
+        tmr.reproevents_offset = calc_offset(tmr.reproevents_isotime, tmr.isotime)
+        tmr.reproevents_deviation = calc_deviation(fm, 'reproevents_duration', ref_duration)
         tmap.append(tmr)
         if format == 'jsonl':
             dump_jsonl(tmr)

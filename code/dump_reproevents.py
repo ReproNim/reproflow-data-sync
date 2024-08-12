@@ -57,9 +57,12 @@ def dump_revents_file(session_id: str, path: str, range_start: datetime,
     for _, row in df.iterrows():
         obj = row_to_model(row, session_id, file_name)
         if range_start <= obj.isotime <= range_end:
-            obj.id = generate_id("reproevents")
-            lst.append(obj)
-            dump_jsonl(obj)
+            if obj.state == 1:
+                obj.id = generate_id("reproevents")
+                lst.append(obj)
+                dump_jsonl(obj)
+            else:
+                logger.debug(f"Skip reproevents, state is not 1: {obj}")
         else:
             logger.debug(f"Skip reproevents, out of study datetime range: {obj}")
 

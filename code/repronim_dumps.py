@@ -131,3 +131,7 @@ class MarkRecord(BaseModel):
                                                              "time in ISO format")
     psychopy_duration: Optional[float] = Field(None, description="Psychopy series duration "
                                                                 "in seconds")
+    reproevents_isotime: Optional[datetime] = Field(None, description="Reproevents acquisition "
+                                                                     "time in ISO format")
+    reproevents_duration: Optional[float] = Field(None, description="Reproevents series duration "
+                                                                    "in seconds")

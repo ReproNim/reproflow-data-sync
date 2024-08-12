@@ -15,7 +15,7 @@ import pandas as pd
 import click
 import logging
 
-from repronim_timing import (TMapService, Clock,
+from repronim_timing import (TMapService, Clock, parse_jsonl,
                              generate_id, dump_jsonl,
                              get_session_id, get_tmap_svc)
 from repronim_dumps import MarkRecord
@@ -83,12 +83,17 @@ class DumpModel(BaseModel):
                                                           clock=Clock.QRINFO,
                                                           isotime_field="isotime_start"),
                                             description="QRInfo swimlane")
+    reproevents: Optional[SwimlaneModel] = Field(SwimlaneModel(name="reproevents",
+                                                                clock=Clock.REPROEVENTS,
+                                                                isotime_field="isotime"),
+                                                    description="ReproEvents swimlane")
     map_by_id: Optional[dict] = Field({}, description="Map of all objects by "
                                                       "unique ID")
 
     @property
     def swimlanes(self) -> List[SwimlaneModel]:
-        return [self.dicoms, self.birch, self.qrinfo, self.psychopy]
+        return [self.dicoms, self.birch, self.qrinfo,
+                self.psychopy, self.reproevents]
 
     def get_by_id(self, uid: str):
         return self.map_by_id.get(uid)
@@ -122,6 +127,14 @@ def find_swimlane_series(swimlane: SwimlaneModel,
     lst: List[SeriesData] = []
     dt_min:float = interval * 0.8
     dt_max:float = interval * 1.2
+
+    # check for an empty list
+    if not swimlane.data:
+        return lst
+
+    # check for a list with less than 2 items
+    if len(swimlane.data) < 2:
+        return lst
 
     last_isotime: datetime = None
     objs: List = []
@@ -229,16 +242,6 @@ def match_series_data(sd1: SeriesData, sd2: SeriesData) -> bool:
     return True
 
 
-
-def parse_jsonl(path: str) -> List:
-    # Load JSONL file
-    lst = []
-    with jsonlines.open(path) as reader:
-        for obj in reader:
-            lst.append(obj)
-    return lst
-
-
 def build_model(session_id: str, path: str) -> DumpModel:
     m: DumpModel = DumpModel()
     m.session_id = session_id
@@ -247,8 +250,11 @@ def build_model(session_id: str, path: str) -> DumpModel:
     m.birch.data = parse_jsonl(os.path.join(path, 'dump_birch.jsonl'))
     m.psychopy.data = parse_jsonl(os.path.join(path, 'dump_psychopy.jsonl'))
     m.qrinfo.data = parse_jsonl(os.path.join(path, 'dump_qrinfo.jsonl'))
+    m.reproevents.data = parse_jsonl(os.path.join(path,
+                                                  'dump_reproevents.jsonl'))
     for obj in chain(m.dicoms.data, m.birch.data,
-                     m.psychopy.data, m.qrinfo.data):
+                     m.psychopy.data, m.qrinfo.data,
+                     m.reproevents.data):
         #logger.debug(f"Object: {obj}")
         m.map_by_id[obj.get('id')] = obj
 
@@ -260,6 +266,8 @@ def build_model(session_id: str, path: str) -> DumpModel:
                                            m.dicoms.series[0].interval)
     m.psychopy.series = find_swimlane_series(m.psychopy,
                                              m.dicoms.series[0].interval)
+    m.reproevents.series = find_swimlane_series(m.reproevents,
+                                                m.dicoms.series[0].interval)
 
     # dump short series info
     for sl in m.swimlanes:
@@ -297,7 +305,8 @@ def generate_marks(model: DumpModel):
 
         # try to match series
         map_series: dict = {}
-        for swiml in [model.birch, model.qrinfo, model.psychopy]:
+        for swiml in [model.birch, model.qrinfo, model.psychopy,
+                      model.reproevents]:
             for ser_sd in swiml.series:
                 # TODO: in future also consider match algorithm based on
                 #       existing table table for previous series
@@ -363,7 +372,8 @@ def generate_marks(model: DumpModel):
     for mark in marks:
         dicoms_isotime: datetime = mark.dicoms_isotime
         dicoms_id: str = mark.target_ids[0]
-        for swiml in [model.birch, model.qrinfo, model.psychopy]:
+        for swiml in [model.birch, model.qrinfo, model.psychopy,
+                      model.reproevents]:
             for ser_sd in swiml.series:
                 for obj in ser_sd.lst:
                     obj_id: str = obj.get('id')
