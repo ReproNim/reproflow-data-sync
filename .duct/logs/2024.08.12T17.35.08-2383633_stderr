@@ -1,0 +1,33 @@
++ mkdir -p ses-20240809
++ cd ses-20240809
++ mkdir -p DICOMS birch psychopy reproevents reprostim-videos
++ rsync -a 'bids@rolando.cns.dartmouth.edu:/inbox/DICOM/2024/08/09/birchtest*/*' DICOMS/
+
+
+    Dartmouth College, Department of Psychological and Brain Sciences
+                      Authorized access only
+
+
+
+
++ rsync -a /home/yoh/proj/repronim/reprostim/Examples/exp-alpha/code/20240809_acq-med1_run-01.log /home/yoh/proj/repronim/reprostim/Examples/exp-alpha/code/20240809_acq-med1_run-02.log /home/yoh/proj/repronim/reprostim/Examples/exp-alpha/code/20240809_acq-med1_run-03.log /home/yoh/proj/repronim/reprostim/Examples/exp-alpha/code/20240809_acq-med1_run-04.log /home/yoh/proj/repronim/reprostim/Examples/exp-alpha/code/20240809_acq-short1_run-01.log /home/yoh/proj/repronim/reprostim/Examples/exp-alpha/code/20240809_acq-short1_run-02.log /home/yoh/proj/repronim/reprostim/Examples/exp-alpha/code/20240809_acq-short1_run-03.log /home/yoh/proj/repronim/reprostim/Examples/exp-alpha/code/20240809_acq-short1_run-04.log /home/yoh/proj/repronim/reprostim/Examples/exp-alpha/code/20240809_acq-short1_run-05.log /home/yoh/proj/repronim/reprostim/Examples/exp-alpha/code/20240809_acq-short1_run-06.log /home/yoh/proj/repronim/reprostim/Examples/exp-alpha/code/20240809_acq-short1_run-07.log /home/yoh/proj/repronim/reprostim/Examples/exp-alpha/code/qr_code_flips.py psychopy/
++ ssh birch 'grep -h '\''\<2024-08-09T'\'' /mnt/td/*'
++ '[' '!' -s birch/out.jsonl ']'
++ ssh reprostim@reproiner 'cd reprostim/Events/data && grep -l '\''\<2024-08-09T'\'' *.csv | head -n 1 | xargs head -n 1 && grep '\''\<2024-08-09T'\'' *.csv'
++ cd /home/yoh/proj/repronim/reprostim-reproiner/Videos/
++ git fetch origin
++ git fetch rolando
+
+
+    Dartmouth College, Department of Psychological and Brain Sciences
+                      Authorized access only
+
+
+
+
++ git merge --ff-only origin/master
++ git annex get -J4 'Videos/2024/08/2024.08.09.*'
+error: pathspec 'Videos/2024/08/2024.08.09.*' did not match any file(s) known to git
+Did you forget to 'git add'?
+cat: .git/last-commit-msg: No such file or directory
+get: 1 failed
