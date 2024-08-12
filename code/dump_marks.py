@@ -260,14 +260,17 @@ def build_model(session_id: str, path: str) -> DumpModel:
 
     # as second, detect possible series in each swimlane
     m.dicoms.series = find_dicoms_func_series(m)
-    m.birch.series = find_swimlane_series(m.birch,
-                                          m.dicoms.series[0].interval)
-    m.qrinfo.series = find_swimlane_series(m.qrinfo,
-                                           m.dicoms.series[0].interval)
-    m.psychopy.series = find_swimlane_series(m.psychopy,
-                                             m.dicoms.series[0].interval)
-    m.reproevents.series = find_swimlane_series(m.reproevents,
-                                                m.dicoms.series[0].interval)
+
+    interval: float = m.dicoms.series[0].interval
+    if interval > 2.5 or interval < 1.5:
+        logger.error(f"!!! Invalid DICOMs series interval: {interval}, use default 2.0")
+        # logger.error(f"!!! Please check DICOMs series[0] data: {m.dicoms.series[0].lst}")
+        interval = 2.0
+
+    m.birch.series = find_swimlane_series(m.birch, interval)
+    m.qrinfo.series = find_swimlane_series(m.qrinfo, interval)
+    m.psychopy.series = find_swimlane_series(m.psychopy, interval)
+    m.reproevents.series = find_swimlane_series(m.reproevents, interval)
 
     # dump short series info
     for sl in m.swimlanes:
