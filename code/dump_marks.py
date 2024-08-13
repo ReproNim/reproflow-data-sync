@@ -390,7 +390,7 @@ def generate_marks(model: DumpModel):
                     dt: float = (isotime_1 - isotime_2).total_seconds()
 
                     threshold: float = 0.9
-                    logger.debug(f"{dicoms_id}/{obj_id}=, dt={dt}")
+                     # logger.debug(f"{dicoms_id}/{obj_id}=, dt={dt}")
                     if (-threshold <= dt <= threshold and
                             obj_id not in mark.target_ids):
                         logger.debug(f"Time matched : {mark.name}")

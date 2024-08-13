@@ -1,0 +1,4244 @@
+dump_dicoms.py tool
+Started on    : 2024-08-13 19:58:02.140004, vmelnik@Uranus
+Working dir   : /Users/vmelnik/Projects/Dartmouth/branches/reproflow-data-sync/code
+Session path  : /Users/vmelnik/Projects/Dartmouth/branches/typhon/reproflow-data-sync/ses-20240809
+Session ID    : ses-20240809
+DICOMS path   : /Users/vmelnik/Projects/Dartmouth/branches/typhon/reproflow-data-sync/ses-20240809/DICOMS
+Reading DICOM root : /Users/vmelnik/Projects/Dartmouth/branches/typhon/reproflow-data-sync/ses-20240809/DICOMS
+Reading DICOM dir  : 001-anat-scout_ses-{date}
+  0000011.dcm
+    Study           = dbic^QA
+    Series          = anat-scout_ses-{date}
+    AcquisitionDate = 20240809
+    AcquisitionTime = 094529.692500
+  0000021.dcm
+    Study           = dbic^QA
+    Series          = anat-scout_ses-{date}
+    AcquisitionDate = 20240809
+    AcquisitionTime = 094529.692500
+  0000031.dcm
+    Study           = dbic^QA
+    Series          = anat-scout_ses-{date}
+    AcquisitionDate = 20240809
+    AcquisitionTime = 094529.692500
+  0000041.dcm
+    Study           = dbic^QA
+    Series          = anat-scout_ses-{date}
+    AcquisitionDate = 20240809
+    AcquisitionTime = 094529.692500
+  0000051.dcm
+    Study           = dbic^QA
+    Series          = anat-scout_ses-{date}
+    AcquisitionDate = 20240809
+    AcquisitionTime = 094529.692500
+  0000061.dcm
+    Study           = dbic^QA
+    Series          = anat-scout_ses-{date}
+    AcquisitionDate = 20240809
+    AcquisitionTime = 094529.692500
+  0000071.dcm
+    Study           = dbic^QA
+    Series          = anat-scout_ses-{date}
+    AcquisitionDate = 20240809
+    AcquisitionTime = 094529.692500
+  0000081.dcm
+    Study           = dbic^QA
+    Series          = anat-scout_ses-{date}
+    AcquisitionDate = 20240809
+    AcquisitionTime = 094529.692500
+  0000091.dcm
+    Study           = dbic^QA
+    Series          = anat-scout_ses-{date}
+    AcquisitionDate = 20240809
+    AcquisitionTime = 094529.692500
+  0000101.dcm
+    Study           = dbic^QA
+    Series          = anat-scout_ses-{date}
+    AcquisitionDate = 20240809
+    AcquisitionTime = 094529.692500
+  0000111.dcm
+    Study           = dbic^QA
+    Series          = anat-scout_ses-{date}
+    AcquisitionDate = 20240809
+    AcquisitionTime = 094529.692500
+  0000121.dcm
+    Study           = dbic^QA
+    Series          = anat-scout_ses-{date}
+    AcquisitionDate = 20240809
+    AcquisitionTime = 094529.692500
+  0000131.dcm
+    Study           = dbic^QA
+    Series          = anat-scout_ses-{date}
+    AcquisitionDate = 20240809
+    AcquisitionTime = 094529.692500
+  0000141.dcm
+    Study           = dbic^QA
+    Series          = anat-scout_ses-{date}
+    AcquisitionDate = 20240809
+    AcquisitionTime = 094529.692500
+  0000151.dcm
+    Study           = dbic^QA
+    Series          = anat-scout_ses-{date}
+    AcquisitionDate = 20240809
+    AcquisitionTime = 094529.692500
+  0000161.dcm
+    Study           = dbic^QA
+    Series          = anat-scout_ses-{date}
+    AcquisitionDate = 20240809
+    AcquisitionTime = 094529.692500
+  0000171.dcm
+    Study           = dbic^QA
+    Series          = anat-scout_ses-{date}
+    AcquisitionDate = 20240809
+    AcquisitionTime = 094529.692500
+  0000181.dcm
+    Study           = dbic^QA
+    Series          = anat-scout_ses-{date}
+    AcquisitionDate = 20240809
+    AcquisitionTime = 094529.692500
+  0000191.dcm
+    Study           = dbic^QA
+    Series          = anat-scout_ses-{date}
+    AcquisitionDate = 20240809
+    AcquisitionTime = 094529.692500
+  0000201.dcm
+    Study           = dbic^QA
+    Series          = anat-scout_ses-{date}
+    AcquisitionDate = 20240809
+    AcquisitionTime = 094529.692500
+  0000211.dcm
+    Study           = dbic^QA
+    Series          = anat-scout_ses-{date}
+    AcquisitionDate = 20240809
+    AcquisitionTime = 094529.692500
+  0000221.dcm
+    Study           = dbic^QA
+    Series          = anat-scout_ses-{date}
+    AcquisitionDate = 20240809
+    AcquisitionTime = 094529.692500
+  0000231.dcm
+    Study           = dbic^QA
+    Series          = anat-scout_ses-{date}
+    AcquisitionDate = 20240809
+    AcquisitionTime = 094529.692500
+  0000241.dcm
+    Study           = dbic^QA
+    Series          = anat-scout_ses-{date}
+    AcquisitionDate = 20240809
+    AcquisitionTime = 094529.692500
+  0000251.dcm
+    Study           = dbic^QA
+    Series          = anat-scout_ses-{date}
+    AcquisitionDate = 20240809
+    AcquisitionTime = 094529.692500
+  0000261.dcm
+    Study           = dbic^QA
+    Series          = anat-scout_ses-{date}
+    AcquisitionDate = 20240809
+    AcquisitionTime = 094529.692500
+  0000271.dcm
+    Study           = dbic^QA
+    Series          = anat-scout_ses-{date}
+    AcquisitionDate = 20240809
+    AcquisitionTime = 094529.692500
+  0000281.dcm
+    Study           = dbic^QA
+    Series          = anat-scout_ses-{date}
+    AcquisitionDate = 20240809
+    AcquisitionTime = 094529.692500
+  0000291.dcm
+    Study           = dbic^QA
+    Series          = anat-scout_ses-{date}
+    AcquisitionDate = 20240809
+    AcquisitionTime = 094529.692500
+  0000301.dcm
+    Study           = dbic^QA
+    Series          = anat-scout_ses-{date}
+    AcquisitionDate = 20240809
+    AcquisitionTime = 094529.692500
+  0000311.dcm
+    Study           = dbic^QA
+    Series          = anat-scout_ses-{date}
+    AcquisitionDate = 20240809
+    AcquisitionTime = 094529.692500
+  0000321.dcm
+    Study           = dbic^QA
+    Series          = anat-scout_ses-{date}
+    AcquisitionDate = 20240809
+    AcquisitionTime = 094529.692500
+  0000331.dcm
+    Study           = dbic^QA
+    Series          = anat-scout_ses-{date}
+    AcquisitionDate = 20240809
+    AcquisitionTime = 094529.692500
+  0000341.dcm
+    Study           = dbic^QA
+    Series          = anat-scout_ses-{date}
+    AcquisitionDate = 20240809
+    AcquisitionTime = 094529.692500
+  0000351.dcm
+    Study           = dbic^QA
+    Series          = anat-scout_ses-{date}
+    AcquisitionDate = 20240809
+    AcquisitionTime = 094529.692500
+  0000361.dcm
+    Study           = dbic^QA
+    Series          = anat-scout_ses-{date}
+    AcquisitionDate = 20240809
+    AcquisitionTime = 094529.692500
+  0000371.dcm
+    Study           = dbic^QA
+    Series          = anat-scout_ses-{date}
+    AcquisitionDate = 20240809
+    AcquisitionTime = 094529.692500
+  0000381.dcm
+    Study           = dbic^QA
+    Series          = anat-scout_ses-{date}
+    AcquisitionDate = 20240809
+    AcquisitionTime = 094529.692500
+  0000391.dcm
+    Study           = dbic^QA
+    Series          = anat-scout_ses-{date}
+    AcquisitionDate = 20240809
+    AcquisitionTime = 094529.692500
+  0000401.dcm
+    Study           = dbic^QA
+    Series          = anat-scout_ses-{date}
+    AcquisitionDate = 20240809
+    AcquisitionTime = 094529.692500
+  0000411.dcm
+    Study           = dbic^QA
+    Series          = anat-scout_ses-{date}
+    AcquisitionDate = 20240809
+    AcquisitionTime = 094529.692500
+  0000421.dcm
+    Study           = dbic^QA
+    Series          = anat-scout_ses-{date}
+    AcquisitionDate = 20240809
+    AcquisitionTime = 094529.692500
+  0000431.dcm
+    Study           = dbic^QA
+    Series          = anat-scout_ses-{date}
+    AcquisitionDate = 20240809
+    AcquisitionTime = 094529.692500
+  0000441.dcm
+    Study           = dbic^QA
+    Series          = anat-scout_ses-{date}
+    AcquisitionDate = 20240809
+    AcquisitionTime = 094529.692500
+  0000451.dcm
+    Study           = dbic^QA
+    Series          = anat-scout_ses-{date}
+    AcquisitionDate = 20240809
+    AcquisitionTime = 094529.692500
+  0000461.dcm
+    Study           = dbic^QA
+    Series          = anat-scout_ses-{date}
+    AcquisitionDate = 20240809
+    AcquisitionTime = 094529.692500
+  0000471.dcm
+    Study           = dbic^QA
+    Series          = anat-scout_ses-{date}
+    AcquisitionDate = 20240809
+    AcquisitionTime = 094529.692500
+  0000481.dcm
+    Study           = dbic^QA
+    Series          = anat-scout_ses-{date}
+    AcquisitionDate = 20240809
+    AcquisitionTime = 094529.692500
+  0000491.dcm
+    Study           = dbic^QA
+    Series          = anat-scout_ses-{date}
+    AcquisitionDate = 20240809
+    AcquisitionTime = 094529.692500
+  0000501.dcm
+    Study           = dbic^QA
+    Series          = anat-scout_ses-{date}
+    AcquisitionDate = 20240809
+    AcquisitionTime = 094529.692500
+  0000511.dcm
+    Study           = dbic^QA
+    Series          = anat-scout_ses-{date}
+    AcquisitionDate = 20240809
+    AcquisitionTime = 094529.692500
+  0000521.dcm
+    Study           = dbic^QA
+    Series          = anat-scout_ses-{date}
+    AcquisitionDate = 20240809
+    AcquisitionTime = 094529.692500
+  0000531.dcm
+    Study           = dbic^QA
+    Series          = anat-scout_ses-{date}
+    AcquisitionDate = 20240809
+    AcquisitionTime = 094529.692500
+  0000541.dcm
+    Study           = dbic^QA
+    Series          = anat-scout_ses-{date}
+    AcquisitionDate = 20240809
+    AcquisitionTime = 094529.692500
+  0000551.dcm
+    Study           = dbic^QA
+    Series          = anat-scout_ses-{date}
+    AcquisitionDate = 20240809
+    AcquisitionTime = 094529.692500
+  0000561.dcm
+    Study           = dbic^QA
+    Series          = anat-scout_ses-{date}
+    AcquisitionDate = 20240809
+    AcquisitionTime = 094529.692500
+  0000571.dcm
+    Study           = dbic^QA
+    Series          = anat-scout_ses-{date}
+    AcquisitionDate = 20240809
+    AcquisitionTime = 094529.692500
+  0000581.dcm
+    Study           = dbic^QA
+    Series          = anat-scout_ses-{date}
+    AcquisitionDate = 20240809
+    AcquisitionTime = 094529.692500
+  0000591.dcm
+    Study           = dbic^QA
+    Series          = anat-scout_ses-{date}
+    AcquisitionDate = 20240809
+    AcquisitionTime = 094529.692500
+  0000601.dcm
+    Study           = dbic^QA
+    Series          = anat-scout_ses-{date}
+    AcquisitionDate = 20240809
+    AcquisitionTime = 094529.692500
+  0000611.dcm
+    Study           = dbic^QA
+    Series          = anat-scout_ses-{date}
+    AcquisitionDate = 20240809
+    AcquisitionTime = 094529.692500
+  0000621.dcm
+    Study           = dbic^QA
+    Series          = anat-scout_ses-{date}
+    AcquisitionDate = 20240809
+    AcquisitionTime = 094529.692500
+  0000631.dcm
+    Study           = dbic^QA
+    Series          = anat-scout_ses-{date}
+    AcquisitionDate = 20240809
+    AcquisitionTime = 094529.692500
+  0000641.dcm
+    Study           = dbic^QA
+    Series          = anat-scout_ses-{date}
+    AcquisitionDate = 20240809
+    AcquisitionTime = 094529.692500
+  0000651.dcm
+    Study           = dbic^QA
+    Series          = anat-scout_ses-{date}
+    AcquisitionDate = 20240809
+    AcquisitionTime = 094529.692500
+  0000661.dcm
+    Study           = dbic^QA
+    Series          = anat-scout_ses-{date}
+    AcquisitionDate = 20240809
+    AcquisitionTime = 094529.692500
+  0000671.dcm
+    Study           = dbic^QA
+    Series          = anat-scout_ses-{date}
+    AcquisitionDate = 20240809
+    AcquisitionTime = 094529.692500
+  0000681.dcm
+    Study           = dbic^QA
+    Series          = anat-scout_ses-{date}
+    AcquisitionDate = 20240809
+    AcquisitionTime = 094529.692500
+  0000691.dcm
+    Study           = dbic^QA
+    Series          = anat-scout_ses-{date}
+    AcquisitionDate = 20240809
+    AcquisitionTime = 094529.692500
+  0000701.dcm
+    Study           = dbic^QA
+    Series          = anat-scout_ses-{date}
+    AcquisitionDate = 20240809
+    AcquisitionTime = 094529.692500
+  0000711.dcm
+    Study           = dbic^QA
+    Series          = anat-scout_ses-{date}
+    AcquisitionDate = 20240809
+    AcquisitionTime = 094529.692500
+  0000721.dcm
+    Study           = dbic^QA
+    Series          = anat-scout_ses-{date}
+    AcquisitionDate = 20240809
+    AcquisitionTime = 094529.692500
+  0000731.dcm
+    Study           = dbic^QA
+    Series          = anat-scout_ses-{date}
+    AcquisitionDate = 20240809
+    AcquisitionTime = 094529.692500
+  0000741.dcm
+    Study           = dbic^QA
+    Series          = anat-scout_ses-{date}
+    AcquisitionDate = 20240809
+    AcquisitionTime = 094529.692500
+  0000751.dcm
+    Study           = dbic^QA
+    Series          = anat-scout_ses-{date}
+    AcquisitionDate = 20240809
+    AcquisitionTime = 094529.692500
+  0000761.dcm
+    Study           = dbic^QA
+    Series          = anat-scout_ses-{date}
+    AcquisitionDate = 20240809
+    AcquisitionTime = 094529.692500
+  0000771.dcm
+    Study           = dbic^QA
+    Series          = anat-scout_ses-{date}
+    AcquisitionDate = 20240809
+    AcquisitionTime = 094529.692500
+  0000781.dcm
+    Study           = dbic^QA
+    Series          = anat-scout_ses-{date}
+    AcquisitionDate = 20240809
+    AcquisitionTime = 094529.692500
+  0000791.dcm
+    Study           = dbic^QA
+    Series          = anat-scout_ses-{date}
+    AcquisitionDate = 20240809
+    AcquisitionTime = 094529.692500
+  0000801.dcm
+    Study           = dbic^QA
+    Series          = anat-scout_ses-{date}
+    AcquisitionDate = 20240809
+    AcquisitionTime = 094529.692500
+  0000811.dcm
+    Study           = dbic^QA
+    Series          = anat-scout_ses-{date}
+    AcquisitionDate = 20240809
+    AcquisitionTime = 094529.692500
+  0000821.dcm
+    Study           = dbic^QA
+    Series          = anat-scout_ses-{date}
+    AcquisitionDate = 20240809
+    AcquisitionTime = 094529.692500
+  0000831.dcm
+    Study           = dbic^QA
+    Series          = anat-scout_ses-{date}
+    AcquisitionDate = 20240809
+    AcquisitionTime = 094529.692500
+  0000841.dcm
+    Study           = dbic^QA
+    Series          = anat-scout_ses-{date}
+    AcquisitionDate = 20240809
+    AcquisitionTime = 094529.692500
+  0000851.dcm
+    Study           = dbic^QA
+    Series          = anat-scout_ses-{date}
+    AcquisitionDate = 20240809
+    AcquisitionTime = 094529.692500
+  0000861.dcm
+    Study           = dbic^QA
+    Series          = anat-scout_ses-{date}
+    AcquisitionDate = 20240809
+    AcquisitionTime = 094529.692500
+  0000871.dcm
+    Study           = dbic^QA
+    Series          = anat-scout_ses-{date}
+    AcquisitionDate = 20240809
+    AcquisitionTime = 094529.692500
+  0000881.dcm
+    Study           = dbic^QA
+    Series          = anat-scout_ses-{date}
+    AcquisitionDate = 20240809
+    AcquisitionTime = 094529.692500
+  0000891.dcm
+    Study           = dbic^QA
+    Series          = anat-scout_ses-{date}
+    AcquisitionDate = 20240809
+    AcquisitionTime = 094529.692500
+  0000901.dcm
+    Study           = dbic^QA
+    Series          = anat-scout_ses-{date}
+    AcquisitionDate = 20240809
+    AcquisitionTime = 094529.692500
+  0000911.dcm
+    Study           = dbic^QA
+    Series          = anat-scout_ses-{date}
+    AcquisitionDate = 20240809
+    AcquisitionTime = 094529.692500
+  0000921.dcm
+    Study           = dbic^QA
+    Series          = anat-scout_ses-{date}
+    AcquisitionDate = 20240809
+    AcquisitionTime = 094529.692500
+  0000931.dcm
+    Study           = dbic^QA
+    Series          = anat-scout_ses-{date}
+    AcquisitionDate = 20240809
+    AcquisitionTime = 094529.692500
+  0000941.dcm
+    Study           = dbic^QA
+    Series          = anat-scout_ses-{date}
+    AcquisitionDate = 20240809
+    AcquisitionTime = 094529.692500
+  0000951.dcm
+    Study           = dbic^QA
+    Series          = anat-scout_ses-{date}
+    AcquisitionDate = 20240809
+    AcquisitionTime = 094529.692500
+  0000961.dcm
+    Study           = dbic^QA
+    Series          = anat-scout_ses-{date}
+    AcquisitionDate = 20240809
+    AcquisitionTime = 094529.692500
+  0000971.dcm
+    Study           = dbic^QA
+    Series          = anat-scout_ses-{date}
+    AcquisitionDate = 20240809
+    AcquisitionTime = 094529.692500
+  0000981.dcm
+    Study           = dbic^QA
+    Series          = anat-scout_ses-{date}
+    AcquisitionDate = 20240809
+    AcquisitionTime = 094529.692500
+  0000991.dcm
+    Study           = dbic^QA
+    Series          = anat-scout_ses-{date}
+    AcquisitionDate = 20240809
+    AcquisitionTime = 094529.692500
+  0001001.dcm
+    Study           = dbic^QA
+    Series          = anat-scout_ses-{date}
+    AcquisitionDate = 20240809
+    AcquisitionTime = 094529.692500
+  0001011.dcm
+    Study           = dbic^QA
+    Series          = anat-scout_ses-{date}
+    AcquisitionDate = 20240809
+    AcquisitionTime = 094529.692500
+  0001021.dcm
+    Study           = dbic^QA
+    Series          = anat-scout_ses-{date}
+    AcquisitionDate = 20240809
+    AcquisitionTime = 094529.692500
+  0001031.dcm
+    Study           = dbic^QA
+    Series          = anat-scout_ses-{date}
+    AcquisitionDate = 20240809
+    AcquisitionTime = 094529.692500
+  0001041.dcm
+    Study           = dbic^QA
+    Series          = anat-scout_ses-{date}
+    AcquisitionDate = 20240809
+    AcquisitionTime = 094529.692500
+  0001051.dcm
+    Study           = dbic^QA
+    Series          = anat-scout_ses-{date}
+    AcquisitionDate = 20240809
+    AcquisitionTime = 094529.692500
+  0001061.dcm
+    Study           = dbic^QA
+    Series          = anat-scout_ses-{date}
+    AcquisitionDate = 20240809
+    AcquisitionTime = 094529.692500
+  0001071.dcm
+    Study           = dbic^QA
+    Series          = anat-scout_ses-{date}
+    AcquisitionDate = 20240809
+    AcquisitionTime = 094529.692500
+  0001081.dcm
+    Study           = dbic^QA
+    Series          = anat-scout_ses-{date}
+    AcquisitionDate = 20240809
+    AcquisitionTime = 094529.692500
+  0001091.dcm
+    Study           = dbic^QA
+    Series          = anat-scout_ses-{date}
+    AcquisitionDate = 20240809
+    AcquisitionTime = 094529.692500
+  0001101.dcm
+    Study           = dbic^QA
+    Series          = anat-scout_ses-{date}
+    AcquisitionDate = 20240809
+    AcquisitionTime = 094529.692500
+  0001111.dcm
+    Study           = dbic^QA
+    Series          = anat-scout_ses-{date}
+    AcquisitionDate = 20240809
+    AcquisitionTime = 094529.692500
+  0001121.dcm
+    Study           = dbic^QA
+    Series          = anat-scout_ses-{date}
+    AcquisitionDate = 20240809
+    AcquisitionTime = 094529.692500
+  0001131.dcm
+    Study           = dbic^QA
+    Series          = anat-scout_ses-{date}
+    AcquisitionDate = 20240809
+    AcquisitionTime = 094529.692500
+  0001141.dcm
+    Study           = dbic^QA
+    Series          = anat-scout_ses-{date}
+    AcquisitionDate = 20240809
+    AcquisitionTime = 094529.692500
+  0001151.dcm
+    Study           = dbic^QA
+    Series          = anat-scout_ses-{date}
+    AcquisitionDate = 20240809
+    AcquisitionTime = 094529.692500
+  0001161.dcm
+    Study           = dbic^QA
+    Series          = anat-scout_ses-{date}
+    AcquisitionDate = 20240809
+    AcquisitionTime = 094529.692500
+  0001171.dcm
+    Study           = dbic^QA
+    Series          = anat-scout_ses-{date}
+    AcquisitionDate = 20240809
+    AcquisitionTime = 094529.692500
+  0001181.dcm
+    Study           = dbic^QA
+    Series          = anat-scout_ses-{date}
+    AcquisitionDate = 20240809
+    AcquisitionTime = 094529.692500
+  0001191.dcm
+    Study           = dbic^QA
+    Series          = anat-scout_ses-{date}
+    AcquisitionDate = 20240809
+    AcquisitionTime = 094529.692500
+  0001201.dcm
+    Study           = dbic^QA
+    Series          = anat-scout_ses-{date}
+    AcquisitionDate = 20240809
+    AcquisitionTime = 094529.692500
+  0001211.dcm
+    Study           = dbic^QA
+    Series          = anat-scout_ses-{date}
+    AcquisitionDate = 20240809
+    AcquisitionTime = 094529.692500
+  0001221.dcm
+    Study           = dbic^QA
+    Series          = anat-scout_ses-{date}
+    AcquisitionDate = 20240809
+    AcquisitionTime = 094529.692500
+  0001231.dcm
+    Study           = dbic^QA
+    Series          = anat-scout_ses-{date}
+    AcquisitionDate = 20240809
+    AcquisitionTime = 094529.692500
+  0001241.dcm
+    Study           = dbic^QA
+    Series          = anat-scout_ses-{date}
+    AcquisitionDate = 20240809
+    AcquisitionTime = 094529.692500
+  0001251.dcm
+    Study           = dbic^QA
+    Series          = anat-scout_ses-{date}
+    AcquisitionDate = 20240809
+    AcquisitionTime = 094529.692500
+  0001261.dcm
+    Study           = dbic^QA
+    Series          = anat-scout_ses-{date}
+    AcquisitionDate = 20240809
+    AcquisitionTime = 094529.692500
+  0001271.dcm
+    Study           = dbic^QA
+    Series          = anat-scout_ses-{date}
+    AcquisitionDate = 20240809
+    AcquisitionTime = 094529.692500
+  0001281.dcm
+    Study           = dbic^QA
+    Series          = anat-scout_ses-{date}
+    AcquisitionDate = 20240809
+    AcquisitionTime = 094529.692500
+Reading DICOM dir  : 002-anat-scout_ses-{date}_MPR_sag
+  0000011.dcm
+    Study           = dbic^QA
+    Series          = anat-scout_ses-{date}_MPR_sag
+    AcquisitionDate = 20240809
+    AcquisitionTime = 094529.692500
+  0000021.dcm
+    Study           = dbic^QA
+    Series          = anat-scout_ses-{date}_MPR_sag
+    AcquisitionDate = 20240809
+    AcquisitionTime = 094529.692500
+  0000031.dcm
+    Study           = dbic^QA
+    Series          = anat-scout_ses-{date}_MPR_sag
+    AcquisitionDate = 20240809
+    AcquisitionTime = 094529.692500
+  0000041.dcm
+    Study           = dbic^QA
+    Series          = anat-scout_ses-{date}_MPR_sag
+    AcquisitionDate = 20240809
+    AcquisitionTime = 094529.692500
+  0000051.dcm
+    Study           = dbic^QA
+    Series          = anat-scout_ses-{date}_MPR_sag
+    AcquisitionDate = 20240809
+    AcquisitionTime = 094529.692500
+Reading DICOM dir  : 003-anat-scout_ses-{date}_MPR_cor
+  0000011.dcm
+    Study           = dbic^QA
+    Series          = anat-scout_ses-{date}_MPR_cor
+    AcquisitionDate = 20240809
+    AcquisitionTime = 094529.692500
+  0000021.dcm
+    Study           = dbic^QA
+    Series          = anat-scout_ses-{date}_MPR_cor
+    AcquisitionDate = 20240809
+    AcquisitionTime = 094529.692500
+  0000031.dcm
+    Study           = dbic^QA
+    Series          = anat-scout_ses-{date}_MPR_cor
+    AcquisitionDate = 20240809
+    AcquisitionTime = 094529.692500
+Reading DICOM dir  : 004-anat-scout_ses-{date}_MPR_tra
+  0000011.dcm
+    Study           = dbic^QA
+    Series          = anat-scout_ses-{date}_MPR_tra
+    AcquisitionDate = 20240809
+    AcquisitionTime = 094529.692500
+  0000021.dcm
+    Study           = dbic^QA
+    Series          = anat-scout_ses-{date}_MPR_tra
+    AcquisitionDate = 20240809
+    AcquisitionTime = 094529.692500
+  0000031.dcm
+    Study           = dbic^QA
+    Series          = anat-scout_ses-{date}_MPR_tra
+    AcquisitionDate = 20240809
+    AcquisitionTime = 094529.692500
+Reading DICOM dir  : 005-func-bold_task-rest_acq-short1_run-01
+  0000011.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-short1_run-01
+    AcquisitionDate = 20240809
+    AcquisitionTime = 100825.687500
+  0000021.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-short1_run-01
+    AcquisitionDate = 20240809
+    AcquisitionTime = 100827.687500
+  0000031.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-short1_run-01
+    AcquisitionDate = 20240809
+    AcquisitionTime = 100829.687500
+  0000041.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-short1_run-01
+    AcquisitionDate = 20240809
+    AcquisitionTime = 100831.687500
+  0000051.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-short1_run-01
+    AcquisitionDate = 20240809
+    AcquisitionTime = 100833.687500
+  0000061.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-short1_run-01
+    AcquisitionDate = 20240809
+    AcquisitionTime = 100835.687500
+  0000071.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-short1_run-01
+    AcquisitionDate = 20240809
+    AcquisitionTime = 100837.687500
+  0000081.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-short1_run-01
+    AcquisitionDate = 20240809
+    AcquisitionTime = 100839.687500
+  0000091.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-short1_run-01
+    AcquisitionDate = 20240809
+    AcquisitionTime = 100841.687500
+  0000101.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-short1_run-01
+    AcquisitionDate = 20240809
+    AcquisitionTime = 100843.687500
+  0000111.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-short1_run-01
+    AcquisitionDate = 20240809
+    AcquisitionTime = 100845.687500
+  0000121.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-short1_run-01
+    AcquisitionDate = 20240809
+    AcquisitionTime = 100847.687500
+  0000131.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-short1_run-01
+    AcquisitionDate = 20240809
+    AcquisitionTime = 100849.687500
+  0000141.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-short1_run-01
+    AcquisitionDate = 20240809
+    AcquisitionTime = 100851.687500
+  0000151.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-short1_run-01
+    AcquisitionDate = 20240809
+    AcquisitionTime = 100853.687500
+Reading DICOM dir  : 006-func-bold_task-rest_acq-short1_run-02
+  0000011.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-short1_run-02
+    AcquisitionDate = 20240809
+    AcquisitionTime = 101558.387500
+  0000021.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-short1_run-02
+    AcquisitionDate = 20240809
+    AcquisitionTime = 101600.387500
+  0000031.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-short1_run-02
+    AcquisitionDate = 20240809
+    AcquisitionTime = 101602.387500
+  0000041.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-short1_run-02
+    AcquisitionDate = 20240809
+    AcquisitionTime = 101604.387500
+  0000051.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-short1_run-02
+    AcquisitionDate = 20240809
+    AcquisitionTime = 101606.387500
+  0000061.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-short1_run-02
+    AcquisitionDate = 20240809
+    AcquisitionTime = 101608.387500
+  0000071.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-short1_run-02
+    AcquisitionDate = 20240809
+    AcquisitionTime = 101610.387500
+  0000081.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-short1_run-02
+    AcquisitionDate = 20240809
+    AcquisitionTime = 101612.387500
+  0000091.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-short1_run-02
+    AcquisitionDate = 20240809
+    AcquisitionTime = 101614.387500
+  0000101.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-short1_run-02
+    AcquisitionDate = 20240809
+    AcquisitionTime = 101616.387500
+  0000111.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-short1_run-02
+    AcquisitionDate = 20240809
+    AcquisitionTime = 101618.387500
+  0000121.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-short1_run-02
+    AcquisitionDate = 20240809
+    AcquisitionTime = 101620.387500
+  0000131.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-short1_run-02
+    AcquisitionDate = 20240809
+    AcquisitionTime = 101622.387500
+  0000141.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-short1_run-02
+    AcquisitionDate = 20240809
+    AcquisitionTime = 101624.387500
+  0000151.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-short1_run-02
+    AcquisitionDate = 20240809
+    AcquisitionTime = 101626.387500
+Reading DICOM dir  : 007-func-bold_task-rest_acq-short1_run-03
+  0000011.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-short1_run-03
+    AcquisitionDate = 20240809
+    AcquisitionTime = 102440.152500
+  0000021.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-short1_run-03
+    AcquisitionDate = 20240809
+    AcquisitionTime = 102442.152500
+  0000031.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-short1_run-03
+    AcquisitionDate = 20240809
+    AcquisitionTime = 102444.152500
+  0000041.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-short1_run-03
+    AcquisitionDate = 20240809
+    AcquisitionTime = 102446.152500
+  0000051.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-short1_run-03
+    AcquisitionDate = 20240809
+    AcquisitionTime = 102448.152500
+  0000061.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-short1_run-03
+    AcquisitionDate = 20240809
+    AcquisitionTime = 102450.152500
+  0000071.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-short1_run-03
+    AcquisitionDate = 20240809
+    AcquisitionTime = 102452.152500
+  0000081.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-short1_run-03
+    AcquisitionDate = 20240809
+    AcquisitionTime = 102454.152500
+  0000091.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-short1_run-03
+    AcquisitionDate = 20240809
+    AcquisitionTime = 102456.152500
+  0000101.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-short1_run-03
+    AcquisitionDate = 20240809
+    AcquisitionTime = 102458.152500
+  0000111.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-short1_run-03
+    AcquisitionDate = 20240809
+    AcquisitionTime = 102500.152500
+  0000121.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-short1_run-03
+    AcquisitionDate = 20240809
+    AcquisitionTime = 102502.152500
+  0000131.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-short1_run-03
+    AcquisitionDate = 20240809
+    AcquisitionTime = 102504.152500
+  0000141.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-short1_run-03
+    AcquisitionDate = 20240809
+    AcquisitionTime = 102506.152500
+  0000151.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-short1_run-03
+    AcquisitionDate = 20240809
+    AcquisitionTime = 102508.152500
+Reading DICOM dir  : 008-func-bold_task-rest_acq-short1_run-04
+  0000011.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-short1_run-04
+    AcquisitionDate = 20240809
+    AcquisitionTime = 103343.812500
+  0000021.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-short1_run-04
+    AcquisitionDate = 20240809
+    AcquisitionTime = 103345.812500
+  0000031.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-short1_run-04
+    AcquisitionDate = 20240809
+    AcquisitionTime = 103347.812500
+  0000041.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-short1_run-04
+    AcquisitionDate = 20240809
+    AcquisitionTime = 103349.812500
+  0000051.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-short1_run-04
+    AcquisitionDate = 20240809
+    AcquisitionTime = 103351.812500
+  0000061.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-short1_run-04
+    AcquisitionDate = 20240809
+    AcquisitionTime = 103353.812500
+  0000071.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-short1_run-04
+    AcquisitionDate = 20240809
+    AcquisitionTime = 103355.812500
+  0000081.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-short1_run-04
+    AcquisitionDate = 20240809
+    AcquisitionTime = 103357.812500
+  0000091.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-short1_run-04
+    AcquisitionDate = 20240809
+    AcquisitionTime = 103359.812500
+  0000101.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-short1_run-04
+    AcquisitionDate = 20240809
+    AcquisitionTime = 103401.812500
+  0000111.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-short1_run-04
+    AcquisitionDate = 20240809
+    AcquisitionTime = 103403.812500
+  0000121.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-short1_run-04
+    AcquisitionDate = 20240809
+    AcquisitionTime = 103405.812500
+  0000131.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-short1_run-04
+    AcquisitionDate = 20240809
+    AcquisitionTime = 103407.812500
+  0000141.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-short1_run-04
+    AcquisitionDate = 20240809
+    AcquisitionTime = 103409.812500
+  0000151.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-short1_run-04
+    AcquisitionDate = 20240809
+    AcquisitionTime = 103411.812500
+Reading DICOM dir  : 009-func-bold_task-rest_acq-short1_run-05
+  0000011.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-short1_run-05
+    AcquisitionDate = 20240809
+    AcquisitionTime = 103811.895000
+  0000021.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-short1_run-05
+    AcquisitionDate = 20240809
+    AcquisitionTime = 103813.895000
+  0000031.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-short1_run-05
+    AcquisitionDate = 20240809
+    AcquisitionTime = 103815.895000
+  0000041.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-short1_run-05
+    AcquisitionDate = 20240809
+    AcquisitionTime = 103817.895000
+  0000051.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-short1_run-05
+    AcquisitionDate = 20240809
+    AcquisitionTime = 103819.895000
+  0000061.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-short1_run-05
+    AcquisitionDate = 20240809
+    AcquisitionTime = 103821.895000
+  0000071.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-short1_run-05
+    AcquisitionDate = 20240809
+    AcquisitionTime = 103823.895000
+  0000081.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-short1_run-05
+    AcquisitionDate = 20240809
+    AcquisitionTime = 103825.895000
+  0000091.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-short1_run-05
+    AcquisitionDate = 20240809
+    AcquisitionTime = 103827.895000
+  0000101.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-short1_run-05
+    AcquisitionDate = 20240809
+    AcquisitionTime = 103829.895000
+  0000111.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-short1_run-05
+    AcquisitionDate = 20240809
+    AcquisitionTime = 103831.895000
+  0000121.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-short1_run-05
+    AcquisitionDate = 20240809
+    AcquisitionTime = 103833.895000
+  0000131.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-short1_run-05
+    AcquisitionDate = 20240809
+    AcquisitionTime = 103835.895000
+  0000141.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-short1_run-05
+    AcquisitionDate = 20240809
+    AcquisitionTime = 103837.895000
+  0000151.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-short1_run-05
+    AcquisitionDate = 20240809
+    AcquisitionTime = 103839.895000
+Reading DICOM dir  : 010-func-bold_task-rest_acq-short1_run-06
+  0000011.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-short1_run-06
+    AcquisitionDate = 20240809
+    AcquisitionTime = 103953.787500
+  0000021.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-short1_run-06
+    AcquisitionDate = 20240809
+    AcquisitionTime = 103955.787500
+  0000031.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-short1_run-06
+    AcquisitionDate = 20240809
+    AcquisitionTime = 103957.787500
+  0000041.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-short1_run-06
+    AcquisitionDate = 20240809
+    AcquisitionTime = 103959.787500
+  0000051.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-short1_run-06
+    AcquisitionDate = 20240809
+    AcquisitionTime = 104001.787500
+  0000061.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-short1_run-06
+    AcquisitionDate = 20240809
+    AcquisitionTime = 104003.787500
+  0000071.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-short1_run-06
+    AcquisitionDate = 20240809
+    AcquisitionTime = 104005.787500
+  0000081.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-short1_run-06
+    AcquisitionDate = 20240809
+    AcquisitionTime = 104007.787500
+  0000091.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-short1_run-06
+    AcquisitionDate = 20240809
+    AcquisitionTime = 104009.787500
+  0000101.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-short1_run-06
+    AcquisitionDate = 20240809
+    AcquisitionTime = 104011.787500
+  0000111.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-short1_run-06
+    AcquisitionDate = 20240809
+    AcquisitionTime = 104013.787500
+  0000121.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-short1_run-06
+    AcquisitionDate = 20240809
+    AcquisitionTime = 104015.787500
+  0000131.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-short1_run-06
+    AcquisitionDate = 20240809
+    AcquisitionTime = 104017.787500
+  0000141.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-short1_run-06
+    AcquisitionDate = 20240809
+    AcquisitionTime = 104019.787500
+  0000151.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-short1_run-06
+    AcquisitionDate = 20240809
+    AcquisitionTime = 104021.787500
+Reading DICOM dir  : 011-func-bold_task-rest_acq-short1_run-07
+  0000011.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-short1_run-07
+    AcquisitionDate = 20240809
+    AcquisitionTime = 104139.447500
+  0000021.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-short1_run-07
+    AcquisitionDate = 20240809
+    AcquisitionTime = 104141.447500
+  0000031.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-short1_run-07
+    AcquisitionDate = 20240809
+    AcquisitionTime = 104143.447500
+  0000041.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-short1_run-07
+    AcquisitionDate = 20240809
+    AcquisitionTime = 104145.447500
+  0000051.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-short1_run-07
+    AcquisitionDate = 20240809
+    AcquisitionTime = 104147.447500
+  0000061.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-short1_run-07
+    AcquisitionDate = 20240809
+    AcquisitionTime = 104149.447500
+  0000071.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-short1_run-07
+    AcquisitionDate = 20240809
+    AcquisitionTime = 104151.447500
+  0000081.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-short1_run-07
+    AcquisitionDate = 20240809
+    AcquisitionTime = 104153.447500
+  0000091.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-short1_run-07
+    AcquisitionDate = 20240809
+    AcquisitionTime = 104155.447500
+  0000101.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-short1_run-07
+    AcquisitionDate = 20240809
+    AcquisitionTime = 104157.447500
+  0000111.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-short1_run-07
+    AcquisitionDate = 20240809
+    AcquisitionTime = 104159.447500
+  0000121.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-short1_run-07
+    AcquisitionDate = 20240809
+    AcquisitionTime = 104201.447500
+  0000131.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-short1_run-07
+    AcquisitionDate = 20240809
+    AcquisitionTime = 104203.447500
+  0000141.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-short1_run-07
+    AcquisitionDate = 20240809
+    AcquisitionTime = 104205.447500
+  0000151.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-short1_run-07
+    AcquisitionDate = 20240809
+    AcquisitionTime = 104207.447500
+Reading DICOM dir  : 012-func-bold_task-rest_acq-med1_run-01
+  0000011.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-01
+    AcquisitionDate = 20240809
+    AcquisitionTime = 104439.187500
+  0000021.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-01
+    AcquisitionDate = 20240809
+    AcquisitionTime = 104441.187500
+  0000031.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-01
+    AcquisitionDate = 20240809
+    AcquisitionTime = 104443.187500
+  0000041.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-01
+    AcquisitionDate = 20240809
+    AcquisitionTime = 104445.187500
+  0000051.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-01
+    AcquisitionDate = 20240809
+    AcquisitionTime = 104447.187500
+  0000061.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-01
+    AcquisitionDate = 20240809
+    AcquisitionTime = 104449.187500
+  0000071.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-01
+    AcquisitionDate = 20240809
+    AcquisitionTime = 104451.187500
+  0000081.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-01
+    AcquisitionDate = 20240809
+    AcquisitionTime = 104453.187500
+  0000091.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-01
+    AcquisitionDate = 20240809
+    AcquisitionTime = 104455.187500
+  0000101.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-01
+    AcquisitionDate = 20240809
+    AcquisitionTime = 104457.187500
+  0000111.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-01
+    AcquisitionDate = 20240809
+    AcquisitionTime = 104459.187500
+  0000121.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-01
+    AcquisitionDate = 20240809
+    AcquisitionTime = 104501.187500
+  0000131.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-01
+    AcquisitionDate = 20240809
+    AcquisitionTime = 104503.187500
+  0000141.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-01
+    AcquisitionDate = 20240809
+    AcquisitionTime = 104505.187500
+  0000151.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-01
+    AcquisitionDate = 20240809
+    AcquisitionTime = 104507.187500
+  0000161.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-01
+    AcquisitionDate = 20240809
+    AcquisitionTime = 104509.187500
+  0000171.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-01
+    AcquisitionDate = 20240809
+    AcquisitionTime = 104511.187500
+  0000181.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-01
+    AcquisitionDate = 20240809
+    AcquisitionTime = 104513.187500
+  0000191.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-01
+    AcquisitionDate = 20240809
+    AcquisitionTime = 104515.187500
+  0000201.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-01
+    AcquisitionDate = 20240809
+    AcquisitionTime = 104517.187500
+  0000211.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-01
+    AcquisitionDate = 20240809
+    AcquisitionTime = 104519.187500
+  0000221.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-01
+    AcquisitionDate = 20240809
+    AcquisitionTime = 104521.187500
+  0000231.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-01
+    AcquisitionDate = 20240809
+    AcquisitionTime = 104523.187500
+  0000241.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-01
+    AcquisitionDate = 20240809
+    AcquisitionTime = 104525.187500
+  0000251.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-01
+    AcquisitionDate = 20240809
+    AcquisitionTime = 104527.187500
+  0000261.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-01
+    AcquisitionDate = 20240809
+    AcquisitionTime = 104529.187500
+  0000271.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-01
+    AcquisitionDate = 20240809
+    AcquisitionTime = 104531.187500
+  0000281.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-01
+    AcquisitionDate = 20240809
+    AcquisitionTime = 104533.187500
+  0000291.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-01
+    AcquisitionDate = 20240809
+    AcquisitionTime = 104535.187500
+  0000301.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-01
+    AcquisitionDate = 20240809
+    AcquisitionTime = 104537.187500
+  0000311.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-01
+    AcquisitionDate = 20240809
+    AcquisitionTime = 104539.187500
+  0000321.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-01
+    AcquisitionDate = 20240809
+    AcquisitionTime = 104541.187500
+  0000331.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-01
+    AcquisitionDate = 20240809
+    AcquisitionTime = 104543.187500
+  0000341.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-01
+    AcquisitionDate = 20240809
+    AcquisitionTime = 104545.187500
+  0000351.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-01
+    AcquisitionDate = 20240809
+    AcquisitionTime = 104547.187500
+  0000361.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-01
+    AcquisitionDate = 20240809
+    AcquisitionTime = 104549.187500
+  0000371.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-01
+    AcquisitionDate = 20240809
+    AcquisitionTime = 104551.187500
+  0000381.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-01
+    AcquisitionDate = 20240809
+    AcquisitionTime = 104553.187500
+  0000391.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-01
+    AcquisitionDate = 20240809
+    AcquisitionTime = 104555.187500
+  0000401.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-01
+    AcquisitionDate = 20240809
+    AcquisitionTime = 104557.187500
+  0000411.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-01
+    AcquisitionDate = 20240809
+    AcquisitionTime = 104559.187500
+  0000421.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-01
+    AcquisitionDate = 20240809
+    AcquisitionTime = 104601.187500
+  0000431.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-01
+    AcquisitionDate = 20240809
+    AcquisitionTime = 104603.187500
+  0000441.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-01
+    AcquisitionDate = 20240809
+    AcquisitionTime = 104605.187500
+  0000451.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-01
+    AcquisitionDate = 20240809
+    AcquisitionTime = 104607.187500
+  0000461.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-01
+    AcquisitionDate = 20240809
+    AcquisitionTime = 104609.187500
+  0000471.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-01
+    AcquisitionDate = 20240809
+    AcquisitionTime = 104611.187500
+  0000481.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-01
+    AcquisitionDate = 20240809
+    AcquisitionTime = 104613.187500
+  0000491.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-01
+    AcquisitionDate = 20240809
+    AcquisitionTime = 104615.187500
+  0000501.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-01
+    AcquisitionDate = 20240809
+    AcquisitionTime = 104617.187500
+  0000511.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-01
+    AcquisitionDate = 20240809
+    AcquisitionTime = 104619.187500
+  0000521.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-01
+    AcquisitionDate = 20240809
+    AcquisitionTime = 104621.187500
+  0000531.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-01
+    AcquisitionDate = 20240809
+    AcquisitionTime = 104623.187500
+  0000541.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-01
+    AcquisitionDate = 20240809
+    AcquisitionTime = 104625.187500
+  0000551.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-01
+    AcquisitionDate = 20240809
+    AcquisitionTime = 104627.187500
+  0000561.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-01
+    AcquisitionDate = 20240809
+    AcquisitionTime = 104629.187500
+  0000571.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-01
+    AcquisitionDate = 20240809
+    AcquisitionTime = 104631.187500
+  0000581.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-01
+    AcquisitionDate = 20240809
+    AcquisitionTime = 104633.187500
+  0000591.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-01
+    AcquisitionDate = 20240809
+    AcquisitionTime = 104635.187500
+  0000601.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-01
+    AcquisitionDate = 20240809
+    AcquisitionTime = 104637.187500
+  0000611.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-01
+    AcquisitionDate = 20240809
+    AcquisitionTime = 104639.187500
+  0000621.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-01
+    AcquisitionDate = 20240809
+    AcquisitionTime = 104641.187500
+  0000631.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-01
+    AcquisitionDate = 20240809
+    AcquisitionTime = 104643.187500
+  0000641.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-01
+    AcquisitionDate = 20240809
+    AcquisitionTime = 104645.187500
+  0000651.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-01
+    AcquisitionDate = 20240809
+    AcquisitionTime = 104647.187500
+  0000661.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-01
+    AcquisitionDate = 20240809
+    AcquisitionTime = 104649.187500
+  0000671.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-01
+    AcquisitionDate = 20240809
+    AcquisitionTime = 104651.187500
+  0000681.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-01
+    AcquisitionDate = 20240809
+    AcquisitionTime = 104653.187500
+  0000691.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-01
+    AcquisitionDate = 20240809
+    AcquisitionTime = 104655.187500
+  0000701.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-01
+    AcquisitionDate = 20240809
+    AcquisitionTime = 104657.187500
+  0000711.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-01
+    AcquisitionDate = 20240809
+    AcquisitionTime = 104659.187500
+  0000721.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-01
+    AcquisitionDate = 20240809
+    AcquisitionTime = 104701.187500
+  0000731.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-01
+    AcquisitionDate = 20240809
+    AcquisitionTime = 104703.187500
+  0000741.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-01
+    AcquisitionDate = 20240809
+    AcquisitionTime = 104705.187500
+  0000751.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-01
+    AcquisitionDate = 20240809
+    AcquisitionTime = 104707.187500
+  0000761.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-01
+    AcquisitionDate = 20240809
+    AcquisitionTime = 104709.187500
+  0000771.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-01
+    AcquisitionDate = 20240809
+    AcquisitionTime = 104711.187500
+  0000781.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-01
+    AcquisitionDate = 20240809
+    AcquisitionTime = 104713.187500
+  0000791.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-01
+    AcquisitionDate = 20240809
+    AcquisitionTime = 104715.187500
+  0000801.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-01
+    AcquisitionDate = 20240809
+    AcquisitionTime = 104717.187500
+  0000811.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-01
+    AcquisitionDate = 20240809
+    AcquisitionTime = 104719.187500
+  0000821.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-01
+    AcquisitionDate = 20240809
+    AcquisitionTime = 104721.187500
+  0000831.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-01
+    AcquisitionDate = 20240809
+    AcquisitionTime = 104723.187500
+  0000841.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-01
+    AcquisitionDate = 20240809
+    AcquisitionTime = 104725.187500
+  0000851.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-01
+    AcquisitionDate = 20240809
+    AcquisitionTime = 104727.187500
+  0000861.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-01
+    AcquisitionDate = 20240809
+    AcquisitionTime = 104729.187500
+  0000871.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-01
+    AcquisitionDate = 20240809
+    AcquisitionTime = 104731.187500
+  0000881.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-01
+    AcquisitionDate = 20240809
+    AcquisitionTime = 104733.187500
+  0000891.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-01
+    AcquisitionDate = 20240809
+    AcquisitionTime = 104735.187500
+  0000901.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-01
+    AcquisitionDate = 20240809
+    AcquisitionTime = 104737.187500
+  0000911.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-01
+    AcquisitionDate = 20240809
+    AcquisitionTime = 104739.187500
+  0000921.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-01
+    AcquisitionDate = 20240809
+    AcquisitionTime = 104741.187500
+  0000931.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-01
+    AcquisitionDate = 20240809
+    AcquisitionTime = 104743.187500
+  0000941.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-01
+    AcquisitionDate = 20240809
+    AcquisitionTime = 104745.187500
+  0000951.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-01
+    AcquisitionDate = 20240809
+    AcquisitionTime = 104747.187500
+  0000961.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-01
+    AcquisitionDate = 20240809
+    AcquisitionTime = 104749.187500
+  0000971.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-01
+    AcquisitionDate = 20240809
+    AcquisitionTime = 104751.187500
+  0000981.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-01
+    AcquisitionDate = 20240809
+    AcquisitionTime = 104753.187500
+  0000991.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-01
+    AcquisitionDate = 20240809
+    AcquisitionTime = 104755.187500
+  0001001.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-01
+    AcquisitionDate = 20240809
+    AcquisitionTime = 104757.187500
+  0001011.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-01
+    AcquisitionDate = 20240809
+    AcquisitionTime = 104759.187500
+  0001021.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-01
+    AcquisitionDate = 20240809
+    AcquisitionTime = 104801.187500
+  0001031.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-01
+    AcquisitionDate = 20240809
+    AcquisitionTime = 104803.187500
+  0001041.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-01
+    AcquisitionDate = 20240809
+    AcquisitionTime = 104805.187500
+  0001051.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-01
+    AcquisitionDate = 20240809
+    AcquisitionTime = 104807.187500
+  0001061.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-01
+    AcquisitionDate = 20240809
+    AcquisitionTime = 104809.187500
+  0001071.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-01
+    AcquisitionDate = 20240809
+    AcquisitionTime = 104811.187500
+  0001081.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-01
+    AcquisitionDate = 20240809
+    AcquisitionTime = 104813.187500
+  0001091.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-01
+    AcquisitionDate = 20240809
+    AcquisitionTime = 104815.187500
+  0001101.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-01
+    AcquisitionDate = 20240809
+    AcquisitionTime = 104817.187500
+  0001111.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-01
+    AcquisitionDate = 20240809
+    AcquisitionTime = 104819.187500
+  0001121.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-01
+    AcquisitionDate = 20240809
+    AcquisitionTime = 104821.187500
+  0001131.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-01
+    AcquisitionDate = 20240809
+    AcquisitionTime = 104823.187500
+  0001141.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-01
+    AcquisitionDate = 20240809
+    AcquisitionTime = 104825.187500
+  0001151.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-01
+    AcquisitionDate = 20240809
+    AcquisitionTime = 104827.187500
+  0001161.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-01
+    AcquisitionDate = 20240809
+    AcquisitionTime = 104829.187500
+  0001171.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-01
+    AcquisitionDate = 20240809
+    AcquisitionTime = 104831.187500
+  0001181.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-01
+    AcquisitionDate = 20240809
+    AcquisitionTime = 104833.187500
+  0001191.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-01
+    AcquisitionDate = 20240809
+    AcquisitionTime = 104835.187500
+  0001201.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-01
+    AcquisitionDate = 20240809
+    AcquisitionTime = 104837.187500
+  0001211.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-01
+    AcquisitionDate = 20240809
+    AcquisitionTime = 104839.187500
+  0001221.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-01
+    AcquisitionDate = 20240809
+    AcquisitionTime = 104841.187500
+  0001231.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-01
+    AcquisitionDate = 20240809
+    AcquisitionTime = 104843.187500
+  0001241.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-01
+    AcquisitionDate = 20240809
+    AcquisitionTime = 104845.187500
+  0001251.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-01
+    AcquisitionDate = 20240809
+    AcquisitionTime = 104847.187500
+  0001261.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-01
+    AcquisitionDate = 20240809
+    AcquisitionTime = 104849.187500
+  0001271.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-01
+    AcquisitionDate = 20240809
+    AcquisitionTime = 104851.187500
+  0001281.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-01
+    AcquisitionDate = 20240809
+    AcquisitionTime = 104853.187500
+  0001291.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-01
+    AcquisitionDate = 20240809
+    AcquisitionTime = 104855.187500
+  0001301.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-01
+    AcquisitionDate = 20240809
+    AcquisitionTime = 104857.187500
+  0001311.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-01
+    AcquisitionDate = 20240809
+    AcquisitionTime = 104859.187500
+  0001321.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-01
+    AcquisitionDate = 20240809
+    AcquisitionTime = 104901.187500
+  0001331.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-01
+    AcquisitionDate = 20240809
+    AcquisitionTime = 104903.187500
+  0001341.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-01
+    AcquisitionDate = 20240809
+    AcquisitionTime = 104905.187500
+  0001351.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-01
+    AcquisitionDate = 20240809
+    AcquisitionTime = 104907.187500
+  0001361.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-01
+    AcquisitionDate = 20240809
+    AcquisitionTime = 104909.187500
+  0001371.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-01
+    AcquisitionDate = 20240809
+    AcquisitionTime = 104911.187500
+  0001381.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-01
+    AcquisitionDate = 20240809
+    AcquisitionTime = 104913.187500
+  0001391.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-01
+    AcquisitionDate = 20240809
+    AcquisitionTime = 104915.187500
+  0001401.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-01
+    AcquisitionDate = 20240809
+    AcquisitionTime = 104917.187500
+  0001411.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-01
+    AcquisitionDate = 20240809
+    AcquisitionTime = 104919.187500
+  0001421.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-01
+    AcquisitionDate = 20240809
+    AcquisitionTime = 104921.187500
+  0001431.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-01
+    AcquisitionDate = 20240809
+    AcquisitionTime = 104923.187500
+  0001441.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-01
+    AcquisitionDate = 20240809
+    AcquisitionTime = 104925.187500
+  0001451.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-01
+    AcquisitionDate = 20240809
+    AcquisitionTime = 104927.187500
+  0001461.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-01
+    AcquisitionDate = 20240809
+    AcquisitionTime = 104929.187500
+  0001471.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-01
+    AcquisitionDate = 20240809
+    AcquisitionTime = 104931.187500
+  0001481.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-01
+    AcquisitionDate = 20240809
+    AcquisitionTime = 104933.187500
+  0001491.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-01
+    AcquisitionDate = 20240809
+    AcquisitionTime = 104935.187500
+  0001501.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-01
+    AcquisitionDate = 20240809
+    AcquisitionTime = 104937.187500
+Reading DICOM dir  : 013-func-bold_task-rest_acq-med1_run-02
+  0000011.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-02
+    AcquisitionDate = 20240809
+    AcquisitionTime = 105420.392500
+  0000021.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-02
+    AcquisitionDate = 20240809
+    AcquisitionTime = 105422.392500
+  0000031.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-02
+    AcquisitionDate = 20240809
+    AcquisitionTime = 105424.392500
+  0000041.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-02
+    AcquisitionDate = 20240809
+    AcquisitionTime = 105426.392500
+  0000051.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-02
+    AcquisitionDate = 20240809
+    AcquisitionTime = 105428.392500
+  0000061.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-02
+    AcquisitionDate = 20240809
+    AcquisitionTime = 105430.392500
+  0000071.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-02
+    AcquisitionDate = 20240809
+    AcquisitionTime = 105432.392500
+  0000081.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-02
+    AcquisitionDate = 20240809
+    AcquisitionTime = 105434.392500
+  0000091.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-02
+    AcquisitionDate = 20240809
+    AcquisitionTime = 105436.392500
+  0000101.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-02
+    AcquisitionDate = 20240809
+    AcquisitionTime = 105438.392500
+  0000111.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-02
+    AcquisitionDate = 20240809
+    AcquisitionTime = 105440.392500
+  0000121.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-02
+    AcquisitionDate = 20240809
+    AcquisitionTime = 105442.392500
+  0000131.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-02
+    AcquisitionDate = 20240809
+    AcquisitionTime = 105444.392500
+  0000141.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-02
+    AcquisitionDate = 20240809
+    AcquisitionTime = 105446.392500
+  0000151.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-02
+    AcquisitionDate = 20240809
+    AcquisitionTime = 105448.392500
+  0000161.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-02
+    AcquisitionDate = 20240809
+    AcquisitionTime = 105450.392500
+  0000171.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-02
+    AcquisitionDate = 20240809
+    AcquisitionTime = 105452.392500
+  0000181.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-02
+    AcquisitionDate = 20240809
+    AcquisitionTime = 105454.392500
+  0000191.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-02
+    AcquisitionDate = 20240809
+    AcquisitionTime = 105456.392500
+  0000201.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-02
+    AcquisitionDate = 20240809
+    AcquisitionTime = 105458.392500
+  0000211.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-02
+    AcquisitionDate = 20240809
+    AcquisitionTime = 105500.392500
+  0000221.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-02
+    AcquisitionDate = 20240809
+    AcquisitionTime = 105502.392500
+  0000231.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-02
+    AcquisitionDate = 20240809
+    AcquisitionTime = 105504.392500
+  0000241.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-02
+    AcquisitionDate = 20240809
+    AcquisitionTime = 105506.392500
+  0000251.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-02
+    AcquisitionDate = 20240809
+    AcquisitionTime = 105508.392500
+  0000261.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-02
+    AcquisitionDate = 20240809
+    AcquisitionTime = 105510.392500
+  0000271.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-02
+    AcquisitionDate = 20240809
+    AcquisitionTime = 105512.392500
+  0000281.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-02
+    AcquisitionDate = 20240809
+    AcquisitionTime = 105514.392500
+  0000291.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-02
+    AcquisitionDate = 20240809
+    AcquisitionTime = 105516.392500
+  0000301.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-02
+    AcquisitionDate = 20240809
+    AcquisitionTime = 105518.392500
+  0000311.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-02
+    AcquisitionDate = 20240809
+    AcquisitionTime = 105520.392500
+  0000321.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-02
+    AcquisitionDate = 20240809
+    AcquisitionTime = 105522.392500
+  0000331.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-02
+    AcquisitionDate = 20240809
+    AcquisitionTime = 105524.392500
+  0000341.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-02
+    AcquisitionDate = 20240809
+    AcquisitionTime = 105526.392500
+  0000351.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-02
+    AcquisitionDate = 20240809
+    AcquisitionTime = 105528.392500
+  0000361.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-02
+    AcquisitionDate = 20240809
+    AcquisitionTime = 105530.392500
+  0000371.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-02
+    AcquisitionDate = 20240809
+    AcquisitionTime = 105532.392500
+  0000381.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-02
+    AcquisitionDate = 20240809
+    AcquisitionTime = 105534.392500
+  0000391.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-02
+    AcquisitionDate = 20240809
+    AcquisitionTime = 105536.392500
+  0000401.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-02
+    AcquisitionDate = 20240809
+    AcquisitionTime = 105538.392500
+  0000411.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-02
+    AcquisitionDate = 20240809
+    AcquisitionTime = 105540.392500
+  0000421.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-02
+    AcquisitionDate = 20240809
+    AcquisitionTime = 105542.392500
+  0000431.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-02
+    AcquisitionDate = 20240809
+    AcquisitionTime = 105544.392500
+  0000441.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-02
+    AcquisitionDate = 20240809
+    AcquisitionTime = 105546.392500
+  0000451.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-02
+    AcquisitionDate = 20240809
+    AcquisitionTime = 105548.392500
+  0000461.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-02
+    AcquisitionDate = 20240809
+    AcquisitionTime = 105550.392500
+  0000471.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-02
+    AcquisitionDate = 20240809
+    AcquisitionTime = 105552.392500
+  0000481.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-02
+    AcquisitionDate = 20240809
+    AcquisitionTime = 105554.392500
+  0000491.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-02
+    AcquisitionDate = 20240809
+    AcquisitionTime = 105556.392500
+  0000501.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-02
+    AcquisitionDate = 20240809
+    AcquisitionTime = 105558.392500
+  0000511.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-02
+    AcquisitionDate = 20240809
+    AcquisitionTime = 105600.392500
+  0000521.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-02
+    AcquisitionDate = 20240809
+    AcquisitionTime = 105602.392500
+  0000531.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-02
+    AcquisitionDate = 20240809
+    AcquisitionTime = 105604.392500
+  0000541.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-02
+    AcquisitionDate = 20240809
+    AcquisitionTime = 105606.392500
+  0000551.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-02
+    AcquisitionDate = 20240809
+    AcquisitionTime = 105608.392500
+  0000561.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-02
+    AcquisitionDate = 20240809
+    AcquisitionTime = 105610.392500
+  0000571.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-02
+    AcquisitionDate = 20240809
+    AcquisitionTime = 105612.392500
+  0000581.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-02
+    AcquisitionDate = 20240809
+    AcquisitionTime = 105614.392500
+  0000591.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-02
+    AcquisitionDate = 20240809
+    AcquisitionTime = 105616.392500
+  0000601.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-02
+    AcquisitionDate = 20240809
+    AcquisitionTime = 105618.392500
+  0000611.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-02
+    AcquisitionDate = 20240809
+    AcquisitionTime = 105620.392500
+  0000621.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-02
+    AcquisitionDate = 20240809
+    AcquisitionTime = 105622.392500
+  0000631.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-02
+    AcquisitionDate = 20240809
+    AcquisitionTime = 105624.392500
+  0000641.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-02
+    AcquisitionDate = 20240809
+    AcquisitionTime = 105626.392500
+  0000651.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-02
+    AcquisitionDate = 20240809
+    AcquisitionTime = 105628.392500
+  0000661.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-02
+    AcquisitionDate = 20240809
+    AcquisitionTime = 105630.392500
+  0000671.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-02
+    AcquisitionDate = 20240809
+    AcquisitionTime = 105632.392500
+  0000681.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-02
+    AcquisitionDate = 20240809
+    AcquisitionTime = 105634.392500
+  0000691.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-02
+    AcquisitionDate = 20240809
+    AcquisitionTime = 105636.392500
+  0000701.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-02
+    AcquisitionDate = 20240809
+    AcquisitionTime = 105638.392500
+  0000711.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-02
+    AcquisitionDate = 20240809
+    AcquisitionTime = 105640.392500
+  0000721.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-02
+    AcquisitionDate = 20240809
+    AcquisitionTime = 105642.392500
+  0000731.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-02
+    AcquisitionDate = 20240809
+    AcquisitionTime = 105644.392500
+  0000741.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-02
+    AcquisitionDate = 20240809
+    AcquisitionTime = 105646.392500
+  0000751.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-02
+    AcquisitionDate = 20240809
+    AcquisitionTime = 105648.392500
+  0000761.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-02
+    AcquisitionDate = 20240809
+    AcquisitionTime = 105650.392500
+  0000771.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-02
+    AcquisitionDate = 20240809
+    AcquisitionTime = 105652.392500
+  0000781.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-02
+    AcquisitionDate = 20240809
+    AcquisitionTime = 105654.392500
+  0000791.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-02
+    AcquisitionDate = 20240809
+    AcquisitionTime = 105656.392500
+  0000801.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-02
+    AcquisitionDate = 20240809
+    AcquisitionTime = 105658.392500
+  0000811.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-02
+    AcquisitionDate = 20240809
+    AcquisitionTime = 105700.392500
+  0000821.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-02
+    AcquisitionDate = 20240809
+    AcquisitionTime = 105702.392500
+  0000831.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-02
+    AcquisitionDate = 20240809
+    AcquisitionTime = 105704.392500
+  0000841.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-02
+    AcquisitionDate = 20240809
+    AcquisitionTime = 105706.392500
+  0000851.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-02
+    AcquisitionDate = 20240809
+    AcquisitionTime = 105708.392500
+  0000861.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-02
+    AcquisitionDate = 20240809
+    AcquisitionTime = 105710.392500
+  0000871.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-02
+    AcquisitionDate = 20240809
+    AcquisitionTime = 105712.392500
+  0000881.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-02
+    AcquisitionDate = 20240809
+    AcquisitionTime = 105714.392500
+  0000891.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-02
+    AcquisitionDate = 20240809
+    AcquisitionTime = 105716.392500
+  0000901.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-02
+    AcquisitionDate = 20240809
+    AcquisitionTime = 105718.392500
+  0000911.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-02
+    AcquisitionDate = 20240809
+    AcquisitionTime = 105720.392500
+  0000921.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-02
+    AcquisitionDate = 20240809
+    AcquisitionTime = 105722.392500
+  0000931.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-02
+    AcquisitionDate = 20240809
+    AcquisitionTime = 105724.392500
+  0000941.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-02
+    AcquisitionDate = 20240809
+    AcquisitionTime = 105726.392500
+  0000951.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-02
+    AcquisitionDate = 20240809
+    AcquisitionTime = 105728.392500
+  0000961.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-02
+    AcquisitionDate = 20240809
+    AcquisitionTime = 105730.392500
+  0000971.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-02
+    AcquisitionDate = 20240809
+    AcquisitionTime = 105732.392500
+  0000981.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-02
+    AcquisitionDate = 20240809
+    AcquisitionTime = 105734.392500
+  0000991.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-02
+    AcquisitionDate = 20240809
+    AcquisitionTime = 105736.392500
+  0001001.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-02
+    AcquisitionDate = 20240809
+    AcquisitionTime = 105738.392500
+  0001011.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-02
+    AcquisitionDate = 20240809
+    AcquisitionTime = 105740.392500
+  0001021.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-02
+    AcquisitionDate = 20240809
+    AcquisitionTime = 105742.392500
+  0001031.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-02
+    AcquisitionDate = 20240809
+    AcquisitionTime = 105744.392500
+  0001041.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-02
+    AcquisitionDate = 20240809
+    AcquisitionTime = 105746.392500
+  0001051.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-02
+    AcquisitionDate = 20240809
+    AcquisitionTime = 105748.392500
+  0001061.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-02
+    AcquisitionDate = 20240809
+    AcquisitionTime = 105750.392500
+  0001071.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-02
+    AcquisitionDate = 20240809
+    AcquisitionTime = 105752.392500
+  0001081.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-02
+    AcquisitionDate = 20240809
+    AcquisitionTime = 105754.392500
+  0001091.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-02
+    AcquisitionDate = 20240809
+    AcquisitionTime = 105756.392500
+  0001101.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-02
+    AcquisitionDate = 20240809
+    AcquisitionTime = 105758.392500
+  0001111.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-02
+    AcquisitionDate = 20240809
+    AcquisitionTime = 105800.392500
+  0001121.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-02
+    AcquisitionDate = 20240809
+    AcquisitionTime = 105802.392500
+  0001131.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-02
+    AcquisitionDate = 20240809
+    AcquisitionTime = 105804.392500
+  0001141.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-02
+    AcquisitionDate = 20240809
+    AcquisitionTime = 105806.392500
+  0001151.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-02
+    AcquisitionDate = 20240809
+    AcquisitionTime = 105808.392500
+  0001161.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-02
+    AcquisitionDate = 20240809
+    AcquisitionTime = 105810.392500
+  0001171.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-02
+    AcquisitionDate = 20240809
+    AcquisitionTime = 105812.392500
+  0001181.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-02
+    AcquisitionDate = 20240809
+    AcquisitionTime = 105814.392500
+  0001191.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-02
+    AcquisitionDate = 20240809
+    AcquisitionTime = 105816.392500
+  0001201.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-02
+    AcquisitionDate = 20240809
+    AcquisitionTime = 105818.392500
+  0001211.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-02
+    AcquisitionDate = 20240809
+    AcquisitionTime = 105820.392500
+  0001221.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-02
+    AcquisitionDate = 20240809
+    AcquisitionTime = 105822.392500
+  0001231.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-02
+    AcquisitionDate = 20240809
+    AcquisitionTime = 105824.392500
+  0001241.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-02
+    AcquisitionDate = 20240809
+    AcquisitionTime = 105826.392500
+  0001251.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-02
+    AcquisitionDate = 20240809
+    AcquisitionTime = 105828.392500
+  0001261.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-02
+    AcquisitionDate = 20240809
+    AcquisitionTime = 105830.392500
+  0001271.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-02
+    AcquisitionDate = 20240809
+    AcquisitionTime = 105832.392500
+  0001281.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-02
+    AcquisitionDate = 20240809
+    AcquisitionTime = 105834.392500
+  0001291.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-02
+    AcquisitionDate = 20240809
+    AcquisitionTime = 105836.392500
+  0001301.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-02
+    AcquisitionDate = 20240809
+    AcquisitionTime = 105838.392500
+  0001311.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-02
+    AcquisitionDate = 20240809
+    AcquisitionTime = 105840.392500
+  0001321.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-02
+    AcquisitionDate = 20240809
+    AcquisitionTime = 105842.392500
+  0001331.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-02
+    AcquisitionDate = 20240809
+    AcquisitionTime = 105844.392500
+  0001341.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-02
+    AcquisitionDate = 20240809
+    AcquisitionTime = 105846.392500
+  0001351.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-02
+    AcquisitionDate = 20240809
+    AcquisitionTime = 105848.392500
+  0001361.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-02
+    AcquisitionDate = 20240809
+    AcquisitionTime = 105850.392500
+  0001371.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-02
+    AcquisitionDate = 20240809
+    AcquisitionTime = 105852.392500
+  0001381.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-02
+    AcquisitionDate = 20240809
+    AcquisitionTime = 105854.392500
+  0001391.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-02
+    AcquisitionDate = 20240809
+    AcquisitionTime = 105856.392500
+  0001401.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-02
+    AcquisitionDate = 20240809
+    AcquisitionTime = 105858.392500
+  0001411.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-02
+    AcquisitionDate = 20240809
+    AcquisitionTime = 105900.392500
+  0001421.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-02
+    AcquisitionDate = 20240809
+    AcquisitionTime = 105902.392500
+  0001431.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-02
+    AcquisitionDate = 20240809
+    AcquisitionTime = 105904.392500
+  0001441.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-02
+    AcquisitionDate = 20240809
+    AcquisitionTime = 105906.392500
+  0001451.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-02
+    AcquisitionDate = 20240809
+    AcquisitionTime = 105908.392500
+  0001461.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-02
+    AcquisitionDate = 20240809
+    AcquisitionTime = 105910.392500
+  0001471.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-02
+    AcquisitionDate = 20240809
+    AcquisitionTime = 105912.392500
+  0001481.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-02
+    AcquisitionDate = 20240809
+    AcquisitionTime = 105914.392500
+  0001491.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-02
+    AcquisitionDate = 20240809
+    AcquisitionTime = 105916.392500
+  0001501.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-02
+    AcquisitionDate = 20240809
+    AcquisitionTime = 105918.392500
+Reading DICOM dir  : 014-func-bold_task-rest_acq-med1_run-03
+  0000011.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-03
+    AcquisitionDate = 20240809
+    AcquisitionTime = 110055.857500
+  0000021.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-03
+    AcquisitionDate = 20240809
+    AcquisitionTime = 110057.857500
+  0000031.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-03
+    AcquisitionDate = 20240809
+    AcquisitionTime = 110059.857500
+  0000041.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-03
+    AcquisitionDate = 20240809
+    AcquisitionTime = 110101.857500
+  0000051.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-03
+    AcquisitionDate = 20240809
+    AcquisitionTime = 110103.857500
+  0000061.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-03
+    AcquisitionDate = 20240809
+    AcquisitionTime = 110105.857500
+  0000071.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-03
+    AcquisitionDate = 20240809
+    AcquisitionTime = 110107.857500
+  0000081.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-03
+    AcquisitionDate = 20240809
+    AcquisitionTime = 110109.857500
+  0000091.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-03
+    AcquisitionDate = 20240809
+    AcquisitionTime = 110111.857500
+  0000101.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-03
+    AcquisitionDate = 20240809
+    AcquisitionTime = 110113.857500
+  0000111.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-03
+    AcquisitionDate = 20240809
+    AcquisitionTime = 110115.857500
+  0000121.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-03
+    AcquisitionDate = 20240809
+    AcquisitionTime = 110117.857500
+  0000131.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-03
+    AcquisitionDate = 20240809
+    AcquisitionTime = 110119.857500
+  0000141.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-03
+    AcquisitionDate = 20240809
+    AcquisitionTime = 110121.857500
+  0000151.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-03
+    AcquisitionDate = 20240809
+    AcquisitionTime = 110123.857500
+  0000161.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-03
+    AcquisitionDate = 20240809
+    AcquisitionTime = 110125.857500
+  0000171.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-03
+    AcquisitionDate = 20240809
+    AcquisitionTime = 110127.857500
+  0000181.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-03
+    AcquisitionDate = 20240809
+    AcquisitionTime = 110129.857500
+  0000191.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-03
+    AcquisitionDate = 20240809
+    AcquisitionTime = 110131.857500
+  0000201.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-03
+    AcquisitionDate = 20240809
+    AcquisitionTime = 110133.857500
+  0000211.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-03
+    AcquisitionDate = 20240809
+    AcquisitionTime = 110135.857500
+  0000221.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-03
+    AcquisitionDate = 20240809
+    AcquisitionTime = 110137.857500
+  0000231.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-03
+    AcquisitionDate = 20240809
+    AcquisitionTime = 110139.857500
+  0000241.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-03
+    AcquisitionDate = 20240809
+    AcquisitionTime = 110141.857500
+  0000251.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-03
+    AcquisitionDate = 20240809
+    AcquisitionTime = 110143.857500
+  0000261.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-03
+    AcquisitionDate = 20240809
+    AcquisitionTime = 110145.857500
+  0000271.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-03
+    AcquisitionDate = 20240809
+    AcquisitionTime = 110147.857500
+  0000281.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-03
+    AcquisitionDate = 20240809
+    AcquisitionTime = 110149.857500
+  0000291.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-03
+    AcquisitionDate = 20240809
+    AcquisitionTime = 110151.857500
+  0000301.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-03
+    AcquisitionDate = 20240809
+    AcquisitionTime = 110153.857500
+  0000311.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-03
+    AcquisitionDate = 20240809
+    AcquisitionTime = 110155.857500
+  0000321.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-03
+    AcquisitionDate = 20240809
+    AcquisitionTime = 110157.857500
+  0000331.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-03
+    AcquisitionDate = 20240809
+    AcquisitionTime = 110159.857500
+  0000341.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-03
+    AcquisitionDate = 20240809
+    AcquisitionTime = 110201.857500
+  0000351.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-03
+    AcquisitionDate = 20240809
+    AcquisitionTime = 110203.857500
+  0000361.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-03
+    AcquisitionDate = 20240809
+    AcquisitionTime = 110205.857500
+  0000371.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-03
+    AcquisitionDate = 20240809
+    AcquisitionTime = 110207.857500
+  0000381.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-03
+    AcquisitionDate = 20240809
+    AcquisitionTime = 110209.857500
+  0000391.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-03
+    AcquisitionDate = 20240809
+    AcquisitionTime = 110211.857500
+  0000401.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-03
+    AcquisitionDate = 20240809
+    AcquisitionTime = 110213.857500
+  0000411.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-03
+    AcquisitionDate = 20240809
+    AcquisitionTime = 110215.857500
+  0000421.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-03
+    AcquisitionDate = 20240809
+    AcquisitionTime = 110217.857500
+  0000431.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-03
+    AcquisitionDate = 20240809
+    AcquisitionTime = 110219.857500
+  0000441.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-03
+    AcquisitionDate = 20240809
+    AcquisitionTime = 110221.857500
+  0000451.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-03
+    AcquisitionDate = 20240809
+    AcquisitionTime = 110223.857500
+  0000461.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-03
+    AcquisitionDate = 20240809
+    AcquisitionTime = 110225.857500
+  0000471.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-03
+    AcquisitionDate = 20240809
+    AcquisitionTime = 110227.857500
+  0000481.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-03
+    AcquisitionDate = 20240809
+    AcquisitionTime = 110229.857500
+  0000491.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-03
+    AcquisitionDate = 20240809
+    AcquisitionTime = 110231.857500
+  0000501.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-03
+    AcquisitionDate = 20240809
+    AcquisitionTime = 110233.857500
+  0000511.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-03
+    AcquisitionDate = 20240809
+    AcquisitionTime = 110235.857500
+  0000521.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-03
+    AcquisitionDate = 20240809
+    AcquisitionTime = 110237.857500
+  0000531.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-03
+    AcquisitionDate = 20240809
+    AcquisitionTime = 110239.857500
+  0000541.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-03
+    AcquisitionDate = 20240809
+    AcquisitionTime = 110241.857500
+  0000551.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-03
+    AcquisitionDate = 20240809
+    AcquisitionTime = 110243.857500
+  0000561.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-03
+    AcquisitionDate = 20240809
+    AcquisitionTime = 110245.857500
+  0000571.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-03
+    AcquisitionDate = 20240809
+    AcquisitionTime = 110247.857500
+  0000581.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-03
+    AcquisitionDate = 20240809
+    AcquisitionTime = 110249.857500
+  0000591.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-03
+    AcquisitionDate = 20240809
+    AcquisitionTime = 110251.857500
+  0000601.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-03
+    AcquisitionDate = 20240809
+    AcquisitionTime = 110253.857500
+  0000611.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-03
+    AcquisitionDate = 20240809
+    AcquisitionTime = 110255.857500
+  0000621.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-03
+    AcquisitionDate = 20240809
+    AcquisitionTime = 110257.857500
+  0000631.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-03
+    AcquisitionDate = 20240809
+    AcquisitionTime = 110259.857500
+  0000641.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-03
+    AcquisitionDate = 20240809
+    AcquisitionTime = 110301.857500
+  0000651.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-03
+    AcquisitionDate = 20240809
+    AcquisitionTime = 110303.857500
+  0000661.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-03
+    AcquisitionDate = 20240809
+    AcquisitionTime = 110305.857500
+  0000671.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-03
+    AcquisitionDate = 20240809
+    AcquisitionTime = 110307.857500
+  0000681.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-03
+    AcquisitionDate = 20240809
+    AcquisitionTime = 110309.857500
+  0000691.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-03
+    AcquisitionDate = 20240809
+    AcquisitionTime = 110311.857500
+  0000701.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-03
+    AcquisitionDate = 20240809
+    AcquisitionTime = 110313.857500
+  0000711.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-03
+    AcquisitionDate = 20240809
+    AcquisitionTime = 110315.857500
+  0000721.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-03
+    AcquisitionDate = 20240809
+    AcquisitionTime = 110317.857500
+  0000731.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-03
+    AcquisitionDate = 20240809
+    AcquisitionTime = 110319.857500
+  0000741.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-03
+    AcquisitionDate = 20240809
+    AcquisitionTime = 110321.857500
+  0000751.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-03
+    AcquisitionDate = 20240809
+    AcquisitionTime = 110323.857500
+  0000761.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-03
+    AcquisitionDate = 20240809
+    AcquisitionTime = 110325.857500
+  0000771.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-03
+    AcquisitionDate = 20240809
+    AcquisitionTime = 110327.857500
+  0000781.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-03
+    AcquisitionDate = 20240809
+    AcquisitionTime = 110329.857500
+  0000791.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-03
+    AcquisitionDate = 20240809
+    AcquisitionTime = 110331.857500
+  0000801.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-03
+    AcquisitionDate = 20240809
+    AcquisitionTime = 110333.857500
+  0000811.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-03
+    AcquisitionDate = 20240809
+    AcquisitionTime = 110335.857500
+  0000821.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-03
+    AcquisitionDate = 20240809
+    AcquisitionTime = 110337.857500
+  0000831.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-03
+    AcquisitionDate = 20240809
+    AcquisitionTime = 110339.857500
+  0000841.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-03
+    AcquisitionDate = 20240809
+    AcquisitionTime = 110341.857500
+  0000851.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-03
+    AcquisitionDate = 20240809
+    AcquisitionTime = 110343.857500
+  0000861.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-03
+    AcquisitionDate = 20240809
+    AcquisitionTime = 110345.857500
+  0000871.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-03
+    AcquisitionDate = 20240809
+    AcquisitionTime = 110347.857500
+  0000881.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-03
+    AcquisitionDate = 20240809
+    AcquisitionTime = 110349.857500
+  0000891.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-03
+    AcquisitionDate = 20240809
+    AcquisitionTime = 110351.857500
+  0000901.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-03
+    AcquisitionDate = 20240809
+    AcquisitionTime = 110353.857500
+  0000911.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-03
+    AcquisitionDate = 20240809
+    AcquisitionTime = 110355.857500
+  0000921.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-03
+    AcquisitionDate = 20240809
+    AcquisitionTime = 110357.857500
+  0000931.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-03
+    AcquisitionDate = 20240809
+    AcquisitionTime = 110359.857500
+  0000941.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-03
+    AcquisitionDate = 20240809
+    AcquisitionTime = 110401.857500
+  0000951.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-03
+    AcquisitionDate = 20240809
+    AcquisitionTime = 110403.857500
+  0000961.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-03
+    AcquisitionDate = 20240809
+    AcquisitionTime = 110405.857500
+  0000971.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-03
+    AcquisitionDate = 20240809
+    AcquisitionTime = 110407.857500
+  0000981.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-03
+    AcquisitionDate = 20240809
+    AcquisitionTime = 110409.857500
+  0000991.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-03
+    AcquisitionDate = 20240809
+    AcquisitionTime = 110411.857500
+  0001001.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-03
+    AcquisitionDate = 20240809
+    AcquisitionTime = 110413.857500
+  0001011.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-03
+    AcquisitionDate = 20240809
+    AcquisitionTime = 110415.857500
+  0001021.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-03
+    AcquisitionDate = 20240809
+    AcquisitionTime = 110417.857500
+  0001031.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-03
+    AcquisitionDate = 20240809
+    AcquisitionTime = 110419.857500
+  0001041.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-03
+    AcquisitionDate = 20240809
+    AcquisitionTime = 110421.857500
+  0001051.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-03
+    AcquisitionDate = 20240809
+    AcquisitionTime = 110423.857500
+  0001061.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-03
+    AcquisitionDate = 20240809
+    AcquisitionTime = 110425.857500
+  0001071.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-03
+    AcquisitionDate = 20240809
+    AcquisitionTime = 110427.857500
+  0001081.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-03
+    AcquisitionDate = 20240809
+    AcquisitionTime = 110429.857500
+  0001091.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-03
+    AcquisitionDate = 20240809
+    AcquisitionTime = 110431.857500
+  0001101.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-03
+    AcquisitionDate = 20240809
+    AcquisitionTime = 110433.857500
+  0001111.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-03
+    AcquisitionDate = 20240809
+    AcquisitionTime = 110435.857500
+  0001121.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-03
+    AcquisitionDate = 20240809
+    AcquisitionTime = 110437.857500
+  0001131.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-03
+    AcquisitionDate = 20240809
+    AcquisitionTime = 110439.857500
+  0001141.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-03
+    AcquisitionDate = 20240809
+    AcquisitionTime = 110441.857500
+  0001151.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-03
+    AcquisitionDate = 20240809
+    AcquisitionTime = 110443.857500
+  0001161.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-03
+    AcquisitionDate = 20240809
+    AcquisitionTime = 110445.857500
+  0001171.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-03
+    AcquisitionDate = 20240809
+    AcquisitionTime = 110447.857500
+  0001181.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-03
+    AcquisitionDate = 20240809
+    AcquisitionTime = 110449.857500
+  0001191.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-03
+    AcquisitionDate = 20240809
+    AcquisitionTime = 110451.857500
+  0001201.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-03
+    AcquisitionDate = 20240809
+    AcquisitionTime = 110453.857500
+  0001211.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-03
+    AcquisitionDate = 20240809
+    AcquisitionTime = 110455.857500
+  0001221.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-03
+    AcquisitionDate = 20240809
+    AcquisitionTime = 110457.857500
+  0001231.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-03
+    AcquisitionDate = 20240809
+    AcquisitionTime = 110459.857500
+  0001241.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-03
+    AcquisitionDate = 20240809
+    AcquisitionTime = 110501.857500
+  0001251.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-03
+    AcquisitionDate = 20240809
+    AcquisitionTime = 110503.857500
+  0001261.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-03
+    AcquisitionDate = 20240809
+    AcquisitionTime = 110505.857500
+  0001271.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-03
+    AcquisitionDate = 20240809
+    AcquisitionTime = 110507.857500
+  0001281.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-03
+    AcquisitionDate = 20240809
+    AcquisitionTime = 110509.857500
+  0001291.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-03
+    AcquisitionDate = 20240809
+    AcquisitionTime = 110511.857500
+  0001301.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-03
+    AcquisitionDate = 20240809
+    AcquisitionTime = 110513.857500
+  0001311.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-03
+    AcquisitionDate = 20240809
+    AcquisitionTime = 110515.857500
+  0001321.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-03
+    AcquisitionDate = 20240809
+    AcquisitionTime = 110517.857500
+  0001331.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-03
+    AcquisitionDate = 20240809
+    AcquisitionTime = 110519.857500
+  0001341.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-03
+    AcquisitionDate = 20240809
+    AcquisitionTime = 110521.857500
+  0001351.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-03
+    AcquisitionDate = 20240809
+    AcquisitionTime = 110523.857500
+  0001361.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-03
+    AcquisitionDate = 20240809
+    AcquisitionTime = 110525.857500
+  0001371.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-03
+    AcquisitionDate = 20240809
+    AcquisitionTime = 110527.857500
+  0001381.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-03
+    AcquisitionDate = 20240809
+    AcquisitionTime = 110529.857500
+  0001391.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-03
+    AcquisitionDate = 20240809
+    AcquisitionTime = 110531.857500
+  0001401.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-03
+    AcquisitionDate = 20240809
+    AcquisitionTime = 110533.857500
+  0001411.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-03
+    AcquisitionDate = 20240809
+    AcquisitionTime = 110535.857500
+  0001421.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-03
+    AcquisitionDate = 20240809
+    AcquisitionTime = 110537.857500
+  0001431.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-03
+    AcquisitionDate = 20240809
+    AcquisitionTime = 110539.857500
+  0001441.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-03
+    AcquisitionDate = 20240809
+    AcquisitionTime = 110541.857500
+  0001451.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-03
+    AcquisitionDate = 20240809
+    AcquisitionTime = 110543.857500
+  0001461.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-03
+    AcquisitionDate = 20240809
+    AcquisitionTime = 110545.857500
+  0001471.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-03
+    AcquisitionDate = 20240809
+    AcquisitionTime = 110547.857500
+  0001481.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-03
+    AcquisitionDate = 20240809
+    AcquisitionTime = 110549.857500
+  0001491.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-03
+    AcquisitionDate = 20240809
+    AcquisitionTime = 110551.857500
+  0001501.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-03
+    AcquisitionDate = 20240809
+    AcquisitionTime = 110553.857500
+Reading DICOM dir  : 015-func-bold_task-rest_acq-med1_run-04
+  0000011.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-04
+    AcquisitionDate = 20240809
+    AcquisitionTime = 110646.242500
+  0000021.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-04
+    AcquisitionDate = 20240809
+    AcquisitionTime = 110648.242500
+  0000031.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-04
+    AcquisitionDate = 20240809
+    AcquisitionTime = 110650.242500
+  0000041.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-04
+    AcquisitionDate = 20240809
+    AcquisitionTime = 110652.242500
+  0000051.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-04
+    AcquisitionDate = 20240809
+    AcquisitionTime = 110654.242500
+  0000061.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-04
+    AcquisitionDate = 20240809
+    AcquisitionTime = 110656.242500
+  0000071.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-04
+    AcquisitionDate = 20240809
+    AcquisitionTime = 110658.242500
+  0000081.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-04
+    AcquisitionDate = 20240809
+    AcquisitionTime = 110700.242500
+  0000091.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-04
+    AcquisitionDate = 20240809
+    AcquisitionTime = 110702.242500
+  0000101.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-04
+    AcquisitionDate = 20240809
+    AcquisitionTime = 110704.242500
+  0000111.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-04
+    AcquisitionDate = 20240809
+    AcquisitionTime = 110706.242500
+  0000121.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-04
+    AcquisitionDate = 20240809
+    AcquisitionTime = 110708.242500
+  0000131.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-04
+    AcquisitionDate = 20240809
+    AcquisitionTime = 110710.242500
+  0000141.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-04
+    AcquisitionDate = 20240809
+    AcquisitionTime = 110712.242500
+  0000151.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-04
+    AcquisitionDate = 20240809
+    AcquisitionTime = 110714.242500
+  0000161.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-04
+    AcquisitionDate = 20240809
+    AcquisitionTime = 110716.242500
+  0000171.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-04
+    AcquisitionDate = 20240809
+    AcquisitionTime = 110718.242500
+  0000181.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-04
+    AcquisitionDate = 20240809
+    AcquisitionTime = 110720.242500
+  0000191.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-04
+    AcquisitionDate = 20240809
+    AcquisitionTime = 110722.242500
+  0000201.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-04
+    AcquisitionDate = 20240809
+    AcquisitionTime = 110724.242500
+  0000211.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-04
+    AcquisitionDate = 20240809
+    AcquisitionTime = 110726.242500
+  0000221.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-04
+    AcquisitionDate = 20240809
+    AcquisitionTime = 110728.242500
+  0000231.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-04
+    AcquisitionDate = 20240809
+    AcquisitionTime = 110730.242500
+  0000241.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-04
+    AcquisitionDate = 20240809
+    AcquisitionTime = 110732.242500
+  0000251.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-04
+    AcquisitionDate = 20240809
+    AcquisitionTime = 110734.242500
+  0000261.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-04
+    AcquisitionDate = 20240809
+    AcquisitionTime = 110736.242500
+  0000271.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-04
+    AcquisitionDate = 20240809
+    AcquisitionTime = 110738.242500
+  0000281.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-04
+    AcquisitionDate = 20240809
+    AcquisitionTime = 110740.242500
+  0000291.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-04
+    AcquisitionDate = 20240809
+    AcquisitionTime = 110742.242500
+  0000301.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-04
+    AcquisitionDate = 20240809
+    AcquisitionTime = 110744.242500
+  0000311.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-04
+    AcquisitionDate = 20240809
+    AcquisitionTime = 110746.242500
+  0000321.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-04
+    AcquisitionDate = 20240809
+    AcquisitionTime = 110748.242500
+  0000331.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-04
+    AcquisitionDate = 20240809
+    AcquisitionTime = 110750.242500
+  0000341.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-04
+    AcquisitionDate = 20240809
+    AcquisitionTime = 110752.242500
+  0000351.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-04
+    AcquisitionDate = 20240809
+    AcquisitionTime = 110754.242500
+  0000361.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-04
+    AcquisitionDate = 20240809
+    AcquisitionTime = 110756.242500
+  0000371.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-04
+    AcquisitionDate = 20240809
+    AcquisitionTime = 110758.242500
+  0000381.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-04
+    AcquisitionDate = 20240809
+    AcquisitionTime = 110800.242500
+  0000391.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-04
+    AcquisitionDate = 20240809
+    AcquisitionTime = 110802.242500
+  0000401.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-04
+    AcquisitionDate = 20240809
+    AcquisitionTime = 110804.242500
+  0000411.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-04
+    AcquisitionDate = 20240809
+    AcquisitionTime = 110806.242500
+  0000421.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-04
+    AcquisitionDate = 20240809
+    AcquisitionTime = 110808.242500
+  0000431.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-04
+    AcquisitionDate = 20240809
+    AcquisitionTime = 110810.242500
+  0000441.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-04
+    AcquisitionDate = 20240809
+    AcquisitionTime = 110812.242500
+  0000451.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-04
+    AcquisitionDate = 20240809
+    AcquisitionTime = 110814.242500
+  0000461.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-04
+    AcquisitionDate = 20240809
+    AcquisitionTime = 110816.242500
+  0000471.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-04
+    AcquisitionDate = 20240809
+    AcquisitionTime = 110818.242500
+  0000481.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-04
+    AcquisitionDate = 20240809
+    AcquisitionTime = 110820.242500
+  0000491.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-04
+    AcquisitionDate = 20240809
+    AcquisitionTime = 110822.242500
+  0000501.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-04
+    AcquisitionDate = 20240809
+    AcquisitionTime = 110824.242500
+  0000511.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-04
+    AcquisitionDate = 20240809
+    AcquisitionTime = 110826.242500
+  0000521.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-04
+    AcquisitionDate = 20240809
+    AcquisitionTime = 110828.242500
+  0000531.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-04
+    AcquisitionDate = 20240809
+    AcquisitionTime = 110830.242500
+  0000541.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-04
+    AcquisitionDate = 20240809
+    AcquisitionTime = 110832.242500
+  0000551.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-04
+    AcquisitionDate = 20240809
+    AcquisitionTime = 110834.242500
+  0000561.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-04
+    AcquisitionDate = 20240809
+    AcquisitionTime = 110836.242500
+  0000571.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-04
+    AcquisitionDate = 20240809
+    AcquisitionTime = 110838.242500
+  0000581.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-04
+    AcquisitionDate = 20240809
+    AcquisitionTime = 110840.242500
+  0000591.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-04
+    AcquisitionDate = 20240809
+    AcquisitionTime = 110842.242500
+  0000601.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-04
+    AcquisitionDate = 20240809
+    AcquisitionTime = 110844.242500
+  0000611.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-04
+    AcquisitionDate = 20240809
+    AcquisitionTime = 110846.242500
+  0000621.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-04
+    AcquisitionDate = 20240809
+    AcquisitionTime = 110848.242500
+  0000631.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-04
+    AcquisitionDate = 20240809
+    AcquisitionTime = 110850.242500
+  0000641.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-04
+    AcquisitionDate = 20240809
+    AcquisitionTime = 110852.242500
+  0000651.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-04
+    AcquisitionDate = 20240809
+    AcquisitionTime = 110854.242500
+  0000661.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-04
+    AcquisitionDate = 20240809
+    AcquisitionTime = 110856.242500
+  0000671.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-04
+    AcquisitionDate = 20240809
+    AcquisitionTime = 110858.242500
+  0000681.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-04
+    AcquisitionDate = 20240809
+    AcquisitionTime = 110900.242500
+  0000691.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-04
+    AcquisitionDate = 20240809
+    AcquisitionTime = 110902.242500
+  0000701.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-04
+    AcquisitionDate = 20240809
+    AcquisitionTime = 110904.242500
+  0000711.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-04
+    AcquisitionDate = 20240809
+    AcquisitionTime = 110906.242500
+  0000721.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-04
+    AcquisitionDate = 20240809
+    AcquisitionTime = 110908.242500
+  0000731.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-04
+    AcquisitionDate = 20240809
+    AcquisitionTime = 110910.242500
+  0000741.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-04
+    AcquisitionDate = 20240809
+    AcquisitionTime = 110912.242500
+  0000751.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-04
+    AcquisitionDate = 20240809
+    AcquisitionTime = 110914.242500
+  0000761.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-04
+    AcquisitionDate = 20240809
+    AcquisitionTime = 110916.242500
+  0000771.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-04
+    AcquisitionDate = 20240809
+    AcquisitionTime = 110918.242500
+  0000781.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-04
+    AcquisitionDate = 20240809
+    AcquisitionTime = 110920.242500
+  0000791.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-04
+    AcquisitionDate = 20240809
+    AcquisitionTime = 110922.242500
+  0000801.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-04
+    AcquisitionDate = 20240809
+    AcquisitionTime = 110924.242500
+  0000811.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-04
+    AcquisitionDate = 20240809
+    AcquisitionTime = 110926.242500
+  0000821.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-04
+    AcquisitionDate = 20240809
+    AcquisitionTime = 110928.242500
+  0000831.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-04
+    AcquisitionDate = 20240809
+    AcquisitionTime = 110930.242500
+  0000841.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-04
+    AcquisitionDate = 20240809
+    AcquisitionTime = 110932.242500
+  0000851.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-04
+    AcquisitionDate = 20240809
+    AcquisitionTime = 110934.242500
+  0000861.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-04
+    AcquisitionDate = 20240809
+    AcquisitionTime = 110936.242500
+  0000871.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-04
+    AcquisitionDate = 20240809
+    AcquisitionTime = 110938.242500
+  0000881.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-04
+    AcquisitionDate = 20240809
+    AcquisitionTime = 110940.242500
+  0000891.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-04
+    AcquisitionDate = 20240809
+    AcquisitionTime = 110942.242500
+  0000901.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-04
+    AcquisitionDate = 20240809
+    AcquisitionTime = 110944.242500
+  0000911.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-04
+    AcquisitionDate = 20240809
+    AcquisitionTime = 110946.242500
+  0000921.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-04
+    AcquisitionDate = 20240809
+    AcquisitionTime = 110948.242500
+  0000931.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-04
+    AcquisitionDate = 20240809
+    AcquisitionTime = 110950.242500
+  0000941.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-04
+    AcquisitionDate = 20240809
+    AcquisitionTime = 110952.242500
+  0000951.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-04
+    AcquisitionDate = 20240809
+    AcquisitionTime = 110954.242500
+  0000961.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-04
+    AcquisitionDate = 20240809
+    AcquisitionTime = 110956.242500
+  0000971.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-04
+    AcquisitionDate = 20240809
+    AcquisitionTime = 110958.242500
+  0000981.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-04
+    AcquisitionDate = 20240809
+    AcquisitionTime = 111000.242500
+  0000991.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-04
+    AcquisitionDate = 20240809
+    AcquisitionTime = 111002.242500
+  0001001.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-04
+    AcquisitionDate = 20240809
+    AcquisitionTime = 111004.242500
+  0001011.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-04
+    AcquisitionDate = 20240809
+    AcquisitionTime = 111006.242500
+  0001021.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-04
+    AcquisitionDate = 20240809
+    AcquisitionTime = 111008.242500
+  0001031.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-04
+    AcquisitionDate = 20240809
+    AcquisitionTime = 111010.242500
+  0001041.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-04
+    AcquisitionDate = 20240809
+    AcquisitionTime = 111012.242500
+  0001051.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-04
+    AcquisitionDate = 20240809
+    AcquisitionTime = 111014.242500
+  0001061.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-04
+    AcquisitionDate = 20240809
+    AcquisitionTime = 111016.242500
+  0001071.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-04
+    AcquisitionDate = 20240809
+    AcquisitionTime = 111018.242500
+  0001081.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-04
+    AcquisitionDate = 20240809
+    AcquisitionTime = 111020.242500
+  0001091.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-04
+    AcquisitionDate = 20240809
+    AcquisitionTime = 111022.242500
+  0001101.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-04
+    AcquisitionDate = 20240809
+    AcquisitionTime = 111024.242500
+  0001111.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-04
+    AcquisitionDate = 20240809
+    AcquisitionTime = 111026.242500
+  0001121.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-04
+    AcquisitionDate = 20240809
+    AcquisitionTime = 111028.242500
+  0001131.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-04
+    AcquisitionDate = 20240809
+    AcquisitionTime = 111030.242500
+  0001141.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-04
+    AcquisitionDate = 20240809
+    AcquisitionTime = 111032.242500
+  0001151.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-04
+    AcquisitionDate = 20240809
+    AcquisitionTime = 111034.242500
+  0001161.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-04
+    AcquisitionDate = 20240809
+    AcquisitionTime = 111036.242500
+  0001171.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-04
+    AcquisitionDate = 20240809
+    AcquisitionTime = 111038.242500
+  0001181.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-04
+    AcquisitionDate = 20240809
+    AcquisitionTime = 111040.242500
+  0001191.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-04
+    AcquisitionDate = 20240809
+    AcquisitionTime = 111042.242500
+  0001201.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-04
+    AcquisitionDate = 20240809
+    AcquisitionTime = 111044.242500
+  0001211.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-04
+    AcquisitionDate = 20240809
+    AcquisitionTime = 111046.242500
+  0001221.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-04
+    AcquisitionDate = 20240809
+    AcquisitionTime = 111048.242500
+  0001231.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-04
+    AcquisitionDate = 20240809
+    AcquisitionTime = 111050.242500
+  0001241.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-04
+    AcquisitionDate = 20240809
+    AcquisitionTime = 111052.242500
+  0001251.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-04
+    AcquisitionDate = 20240809
+    AcquisitionTime = 111054.242500
+  0001261.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-04
+    AcquisitionDate = 20240809
+    AcquisitionTime = 111056.242500
+  0001271.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-04
+    AcquisitionDate = 20240809
+    AcquisitionTime = 111058.242500
+  0001281.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-04
+    AcquisitionDate = 20240809
+    AcquisitionTime = 111100.242500
+  0001291.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-04
+    AcquisitionDate = 20240809
+    AcquisitionTime = 111102.242500
+  0001301.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-04
+    AcquisitionDate = 20240809
+    AcquisitionTime = 111104.242500
+  0001311.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-04
+    AcquisitionDate = 20240809
+    AcquisitionTime = 111106.242500
+  0001321.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-04
+    AcquisitionDate = 20240809
+    AcquisitionTime = 111108.242500
+  0001331.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-04
+    AcquisitionDate = 20240809
+    AcquisitionTime = 111110.242500
+  0001341.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-04
+    AcquisitionDate = 20240809
+    AcquisitionTime = 111112.242500
+  0001351.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-04
+    AcquisitionDate = 20240809
+    AcquisitionTime = 111114.242500
+  0001361.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-04
+    AcquisitionDate = 20240809
+    AcquisitionTime = 111116.242500
+  0001371.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-04
+    AcquisitionDate = 20240809
+    AcquisitionTime = 111118.242500
+  0001381.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-04
+    AcquisitionDate = 20240809
+    AcquisitionTime = 111120.242500
+  0001391.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-04
+    AcquisitionDate = 20240809
+    AcquisitionTime = 111122.242500
+  0001401.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-04
+    AcquisitionDate = 20240809
+    AcquisitionTime = 111124.242500
+  0001411.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-04
+    AcquisitionDate = 20240809
+    AcquisitionTime = 111126.242500
+  0001421.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-04
+    AcquisitionDate = 20240809
+    AcquisitionTime = 111128.242500
+  0001431.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-04
+    AcquisitionDate = 20240809
+    AcquisitionTime = 111130.242500
+  0001441.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-04
+    AcquisitionDate = 20240809
+    AcquisitionTime = 111132.242500
+  0001451.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-04
+    AcquisitionDate = 20240809
+    AcquisitionTime = 111134.242500
+  0001461.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-04
+    AcquisitionDate = 20240809
+    AcquisitionTime = 111136.242500
+  0001471.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-04
+    AcquisitionDate = 20240809
+    AcquisitionTime = 111138.242500
+  0001481.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-04
+    AcquisitionDate = 20240809
+    AcquisitionTime = 111140.242500
+  0001491.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-04
+    AcquisitionDate = 20240809
+    AcquisitionTime = 111142.242500
+  0001501.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-med1_run-04
+    AcquisitionDate = 20240809
+    AcquisitionTime = 111144.242500
+Exit on   : 2024-08-13 19:58:04.410931
+Exit code : 0
