@@ -79,10 +79,25 @@ def dump_birch_file(session_id: str, path: str, range_start: datetime,
             if range_start <= iso_time <= range_end:
                 obj['id'] = generate_id('birch')
                 obj['session_id'] = session_id
+                # represents duration on 8-th bit alink_flags
+                obj['flag_duration_isotime'] = 0.0
+                obj['flag_duration'] = 0.0
+                # represents duration till next time 8-th bit will be on
                 obj['duration_isotime'] = 0.0
                 obj['duration'] = 0.0
                 obj['isotime'] = iso_time.isoformat()
                 #dump_jsonl(obj)
+
+                # calculate the duration between the last 8-th bit on
+                if len(lst_obj) > 0:
+                    t2: datetime = get_birch_isotime(obj)
+                    tick2: float = obj.get('time')
+                    t1: datetime = get_birch_isotime(lst_obj[-1])
+                    tick1: float = lst_obj[-1].get('time')
+                    if t1 and t2:
+                        obj['duration_isotime'] = (t2 - t1).total_seconds()
+                    if tick1 and tick2:
+                        obj['duration'] = calc_tick_interval(tick1, tick2)
                 lst_obj.append(obj)
                 lst_bit8.append(obj)
             else:
@@ -105,9 +120,9 @@ def dump_birch_file(session_id: str, path: str, range_start: datetime,
                     t1: datetime = get_birch_isotime(o)
                     tick1: float = o.get('time')
                     if t1 and t2:
-                        o['duration_isotime'] = (t2 - t1).total_seconds()
+                        o['flag_duration_isotime'] = (t2 - t1).total_seconds()
                     if tick1 and tick2:
-                        o['duration'] = calc_tick_interval(tick1, tick2)
+                        o['flag_duration'] = calc_tick_interval(tick1, tick2)
 
                 lst_bit8 = []
 
