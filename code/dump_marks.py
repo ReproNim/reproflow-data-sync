@@ -49,7 +49,7 @@ class EventData(BaseModel):
 
 # Define abstract series model
 class SeriesData(BaseModel):
-    lst: Optional[List] = Field([], description="List of raw JSONL object "
+    data: Optional[List] = Field([], description="List of raw JSONL object "
                                                 "in the series")
     events: Optional[List[EventData]] = Field([], description="List of event items "
                                                                 "in the series")
@@ -137,8 +137,8 @@ def parse_isotime(v: str) -> datetime:
 def calc_dicoms_series_interval(series: List) -> float:
     # calculate interval between first and last dicom in series
     if series and len(series) > 1:
-        t1 = parse_isotime(series[0].get('acquisition_isotime'))
-        t2 = parse_isotime(series[-1].get('acquisition_isotime'))
+        t1 = series[0].isotime
+        t2 = series[-1].isotime
         return (t2-t1).total_seconds() / (len(series)-1)
     logger.debug(f"Series {series} has less than 2 dicoms")
     return 2.0
@@ -157,35 +157,36 @@ def find_swimlane_series(swimlane: SwimlaneModel,
     dt_max:float = interval * 1.2
 
     # check for an empty list
-    if not swimlane.data:
+    if not swimlane.events:
         return lst
 
     # check for a list with less than 2 items
-    if len(swimlane.data) < 2:
+    if len(swimlane.events) < 2:
         return lst
 
     last_isotime: datetime = None
-    objs: List = []
-    for obj in chain(swimlane.data, [swimlane.data[0]]):
-        isotime: datetime = parse_isotime(obj.get(swimlane.isotime_field))
-        if len(objs) == 0:
-            objs.append(obj)
+    evts: List = []
+    for evt in chain(swimlane.events, [swimlane.events[0]]):
+        isotime: datetime = evt.isotime
+        if len(evts) == 0:
+            evts.append(evt)
             last_isotime = isotime
             continue
 
         dt: float = (isotime - last_isotime).total_seconds()
         if dt_min <= dt <= dt_max:
-            objs.append(obj)
+            evts.append(evt)
         else:
             # consider only more than 5 objects in series
-            if len(objs) > 5:
+            if len(evts) > 5:
                 sd: SeriesData = SeriesData()
                 sd.swimlane = swimlane
-                sd.lst = objs
-                sd.count = len(objs)
+                sd.events = evts
+                sd.data = [o.data for o in evts]
+                sd.count = len(evts)
                 sd.name = f"{swimlane.name}-series-{(len(lst)+1)}"
-                sd.isotime_start = parse_isotime(objs[0].get(swimlane.isotime_field))
-                sd.isotime_end = parse_isotime(objs[-1].get(swimlane.isotime_field))
+                sd.isotime_start = evts[0].isotime
+                sd.isotime_end = evts[-1].isotime
                 sd.interval = (last_isotime - sd.isotime_start).total_seconds() / (sd.count-1)
                 sd.next_series_interval = 0
                 sd.duration = (sd.isotime_end - sd.isotime_start).total_seconds()
@@ -194,9 +195,9 @@ def find_swimlane_series(swimlane: SwimlaneModel,
                         (sd.isotime_start - lst[-1].isotime_start).total_seconds())
                 lst.append(sd)
             else:
-                logger.debug(f"Skip {swimlane.name} series (too small={len(objs)}): {objs}")
-            objs = []
-            objs.append(obj)
+                logger.debug(f"Skip {swimlane.name} series (too small={len(evts)}): {[evt.id for evt in evts]}")
+            evts = []
+            evts.append(evt)
 
         last_isotime = isotime
 
@@ -221,14 +222,13 @@ def find_dicoms_func_series(model: DumpModel) -> List[SeriesData]:
     for series, group in grouped_df:
         sd: SeriesData = SeriesData()
         sd.swimlane = model.dicoms
-        sd.lst = [model.get_by_id(uid) for uid in group['id']]
-        sd.count = len(sd.lst)
+        sd.events = [model.get_by_id(uid) for uid in group['id']]
+        sd.data = [model.get_by_id(uid).data for uid in group['id']]
+        sd.count = len(sd.events)
         sd.name = series
-        sd.isotime_start = parse_isotime(
-            sd.lst[0].get('acquisition_isotime'))
-        sd.isotime_end = parse_isotime(
-            sd.lst[-1].get('acquisition_isotime'))
-        sd.interval = calc_dicoms_series_interval(sd.lst)
+        sd.isotime_start = sd.events[0].isotime
+        sd.isotime_end = sd.events[-1].isotime
+        sd.interval = calc_dicoms_series_interval(sd.events)
         sd.next_series_interval = 0.0
         sd.duration = (sd.isotime_end -
                        sd.isotime_start).total_seconds()
@@ -291,9 +291,9 @@ def build_model(session_id: str, path: str) -> DumpModel:
         sl.data = parse_jsonl(get_dump_path(path, sl))
         # build events data
         build_swimlane_events(sl)
-        for obj in sl.data:
-            #logger.debug(f"Object: {obj}")
-            m.map_by_id[obj.get('id')] = obj
+        for evt in sl.events:
+            #logger.debug(f"Object: {evt.data}")
+            m.map_by_id[evt.id] = evt
 
     # as second, detect possible series in each swimlane
     m.dicoms.series = find_dicoms_func_series(m)
@@ -301,7 +301,7 @@ def build_model(session_id: str, path: str) -> DumpModel:
     interval: float = m.dicoms.series[0].interval
     if interval > 2.5 or interval < 1.5:
         logger.error(f"!!! Invalid DICOMs series interval: {interval}, use default 2.0")
-        # logger.error(f"!!! Please check DICOMs series[0] data: {m.dicoms.series[0].lst}")
+        # logger.error(f"!!! Please check DICOMs series[0] data: {m.dicoms.series[0].data}")
         interval = 2.0
 
     for sl in chain([m.birch, m.qrinfo, m.psychopy, m.reproevents]):
@@ -316,12 +316,12 @@ def build_model(session_id: str, path: str) -> DumpModel:
                          f"count: {sd.count}, "
                          f"interval: {sd.interval}, "
                          f"next_series_interval: {sd.next_series_interval}, "
-                         f"ids: {sd.lst[0].get('id')}..{sd.lst[-1].get('id')}")
+                         f"ids: {sd.events[0].id}..{sd.events[-1].id}")
 
-    # dump long series info and data
+    # dump series info and data
     for sl in m.swimlanes:
         for sd in sl.series:
-            logger.debug(f"{sl.name}.{sd.name} : {sd.lst}")
+            logger.debug(f"{sl.name}.{sd.name} : {[evt.id for evt in sd.events]}")
 
     return m
 
@@ -337,7 +337,7 @@ def generate_marks(model: DumpModel):
         mark.session_id = model.session_id
         mark.kind = "Func series start"
         mark.name = f"{dicoms_sd.name}_start"
-        mark.target_ids.append(dicoms_sd.lst[0].get('id'))
+        mark.target_ids.append(dicoms_sd.events[0].id)
         mark.dicoms_isotime = dicoms_sd.isotime_start
         mark.dicoms_duration = dicoms_sd.duration
 
@@ -350,7 +350,7 @@ def generate_marks(model: DumpModel):
                 #       existing table table for previous series
                 if match_series_data(dicoms_sd, ser_sd):
                     map_series[swiml.name] = ser_sd
-                    mark.target_ids.append(ser_sd.lst[0].get('id'))
+                    mark.target_ids.append(ser_sd.events[0].id)
                     setattr(mark, f"{swiml.name}_isotime", ser_sd.isotime_start)
                     setattr(mark, f"{swiml.name}_duration", ser_sd.duration)
                     offset[ser_sd.name] = (dicoms_sd.isotime_start -
@@ -362,21 +362,18 @@ def generate_marks(model: DumpModel):
         # dump_jsonl(mark)
 
         # generate marks for each scan in series
-        for i in range(len(dicoms_sd.lst)):
+        for i in range(len(dicoms_sd.events)):
             mark = MarkRecord()
             mark.id = generate_id('mark')
             mark.session_id = model.session_id
             mark.kind = "Func series scan"
             mark.name = f"{dicoms_sd.name}_scan_{i}"
-            mark.target_ids.append(dicoms_sd.lst[i].get('id'))
-            mark.dicoms_isotime = parse_isotime(
-                dicoms_sd.lst[i].get(
-                    model.dicoms.isotime_field))
+            mark.target_ids.append(dicoms_sd.events[i].id)
+            mark.dicoms_isotime = dicoms_sd.events[i].isotime
             #mark.dicoms_duration = None
             for k, v in map_series.items():
-                mark.target_ids.append(v.lst[i].get('id'))
-                setattr(mark, f"{k}_isotime", parse_isotime(
-                    v.lst[i].get(v.swimlane.isotime_field)))
+                mark.target_ids.append(v.events[i].id)
+                setattr(mark, f"{k}_isotime", v.events[i].isotime)
                 #setattr(mark, f"{k}_duration", None)
             marks.append(mark)
             logger.debug(f"{mark.model_dump_json()}")
@@ -388,12 +385,12 @@ def generate_marks(model: DumpModel):
         mark.session_id = model.session_id
         mark.kind = "Func series end"
         mark.name = f"{dicoms_sd.name}_end"
-        mark.target_ids.append(dicoms_sd.lst[-1].get('id'))
+        mark.target_ids.append(dicoms_sd.events[-1].id)
         mark.dicoms_isotime = dicoms_sd.isotime_end
         #mark.dicoms_duration = None
         logger.debug(f"Mark: {mark}")
         for k, v in map_series.items():
-            mark.target_ids.append(v.lst[-1].get('id'))
+            mark.target_ids.append(v.events[-1].id)
             setattr(mark, f"{k}_isotime", v.isotime_end)
             #setattr(mark, f"{k}_duration", None)
         marks.append(mark)
@@ -401,7 +398,9 @@ def generate_marks(model: DumpModel):
         # dump_jsonl(mark)
 
     logger.debug(f"Dicoms offsets: {offset}")
-    logger.debug(f"Generated marks after pass 1, done: {marks}")
+    logger.debug(f"Generated marks after pass 1, done:")
+    for m in marks:
+        logger.debug(f"  {m.id} : {m.target_ids}")
 
     # try to match marks with existing tmap also
     # TODO: in future consider also to use tmap record from
@@ -409,18 +408,23 @@ def generate_marks(model: DumpModel):
     logger.debug("Try to match marks with tmap service")
     for mark in marks:
         dicoms_isotime: datetime = mark.dicoms_isotime
+        dicoms_cache: dict = {}
         dicoms_id: str = mark.target_ids[0]
         for swiml in [model.birch, model.qrinfo, model.psychopy,
                       model.reproevents]:
             for ser_sd in swiml.series:
-                for obj in ser_sd.lst:
-                    obj_id: str = obj.get('id')
-                    isotime_1: datetime = parse_isotime(
-                        obj.get(swiml.isotime_field))
+                for evt in ser_sd.events:
+                    obj_id: str = evt.id
+                    isotime_1: datetime = evt.isotime
 
-                    isotime_2: datetime = get_tmap_svc().convert(
-                        model.dicoms.clock, swiml.clock,
-                        dicoms_isotime)
+                    isotime_2: datetime = None
+                    if swiml.clock in dicoms_cache:
+                        isotime_2 = dicoms_cache[swiml.clock]
+                    else:
+                        isotime_2 = get_tmap_svc().convert(
+                            model.dicoms.clock, swiml.clock,
+                            dicoms_isotime)
+                        dicoms_cache[swiml.clock] = isotime_2
 
                     dt: float = (isotime_1 - isotime_2).total_seconds()
 
@@ -442,7 +446,9 @@ def generate_marks(model: DumpModel):
                         continue
 
     logger.debug("Done match marks with tmap service")
-    logger.debug(f"Generated marks after pass 2, done: {marks}")
+    logger.debug(f"Generated marks after pass 2, done:")
+    for m in marks:
+        logger.debug(f"  {m.id} : {m.target_ids}")
 
 
     # now dump all to stdout
