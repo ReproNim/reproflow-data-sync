@@ -2,6 +2,42 @@
 
 ## Timing Data Model
 
+### Session
+Time calibration session is a set of raw data collected during MRI `dbic^QA` study, generated data dumps, statistics and tmap info. 
+
+Session ID or name is unique string identifier usually containing date in independent format, e.g.: `ses-20240528`, so it was recorded on 28th May 2024.
+
+Directory named as session ID contains all related data. Initially session is created by `collect_data.sh` script, then enriched with QR codes by `reprostim/Parsing/generate_qrinfo.sh` tool and finally processed and analyzed by `generate_timing.sh` scripts.
+
+### Swimlanes
+Swimlane is logical model for certain ReproNim system part. It can be described as linear sequence of events or items, where each event has timestamp, unique string ID inside current session and related dump data fragment. Event ID is also unique across all events in current session. 
+
+Note: event can be addressed globally by concatenation of session ID and event ID, e.g. `ses-20240528:birch_000015`. 
+
+Each swimlane has own clock, and events are ordered by this clock internally. 
+
+Known swimlanes listed below, but it's possible to add more swimlanes in future:
+- `dicoms` swimlane with DICOMs data where datetime comes from MRI device and extracted from DICOM image as `AcquisitionDate` + `AcquisitionTime` tags.
+- `birch` swimlane with birch logs where datetime comes from `iso_time` field.
+- `psychopy` swimlane with psychopy logs where datetime comes from `keys_time_str` field.
+- `reproevents` swimlane with reproevents logs where datetime comes from `client_time_iso` column.
+- `qrinfo` / `reprostim-videos` swimlanes with QR timestamps extracted from video as `isotime_start` field.
+
+### Raw Data
+
+Raw data is set of files collected from different devices and computers during MRI `dbic^QA` study (usually created by `collect_data.sh` script). 
+
+It's stored under session directory as separate subdirectories:
+- `DICOMS` directory with DICOMs data produced for study by MRI scanner.
+- `birch` directory with JSONL log from birch device.
+- `psychopy` directory with multiple psychopy logs in JSONL format.
+- `reproevents` directory with reproevents data in CSV format.
+- `reprostim-videos` directory with captured videos with QR codes in *.mkv format and corresponding *.log files with reprostim-videocapture metadata.
+
+### Dumps
+TBD:
+
+
 Probably timing data model can be described as parallel swimlanes of data, where each lane is a different filtered data source, and the goal is to synchronize the lanes.  The lanes are:
 - `timing-dumps` directory with JSONL logs from DICOMs, psychopy, birch, reprostim-videos, and events:
   - `dump_dicoms.jsonl` JSONL with from the MRI scanner, sequential list of A) `MRI` images, B) `study` and C) `series` list.
@@ -43,6 +79,7 @@ Algorithm proposals for the ReproFlow time synchronization effort:
   - `iso_time` is less precise than `time` field from `pigpio.get_current_tick()` API. `time` fluctuated in range 0.0000-0.0003 sec, and `iso_time` fluctuated in range 0.00-0.05 sec.
   - in future look at possibility to use `time` field to produce more strict clock comparing to `iso_time`. This clock was selected as reference one for all other clocks and theoretically this can increase accuracy in 100+ times in this area.
   - `birch` events matched with DICOMs well, but anyway this is not always 100% match.
+  - raw data JSONL is not safe to use, because it contains comments and some dirty lines, so custom preprocessing is used to fix this.
 - `reproevents` 
   - `isotime` field is precise and reliable, and looks like more precise than birch `iso_time`, fluctuation in range 0.00-0.01 sec.
   - `reproevents` events also matched with DICOMs well close to `birch`, but this is not always 100% match.
@@ -50,7 +87,8 @@ Algorithm proposals for the ReproFlow time synchronization effort:
   - `isotime` field is less precise, fluctuation in range 0.00-0.03 sec.
 - `qrinfo` / `reprostim_video`
   - `isotime_start` field fluctuation in range 0.00-0.06 sec, and correlates with 60.0 FPS video capture, where each frame takes 0.017 sec.   
-  - first QR code in each series has strange datetime offset around 0.320 sec from other QR codes. Most likely it's related to code presenting QR in experiments.
+  - first QR code in each series has strange datetime offset around +0.320 sec (or 20 frames later on 60.0 FPS video) from other QR codes. Most likely it's related to Python script code presenting QR in experiments.
+  - QR codes processing is not fast, looks like `reprostim/Parsing/generate_qrinfo.sh` script execution time is around x1-x4 slower comparing to related video, e.g. for 5 minutes video like 1920x1080, 60 FPS it can take up to 20 minutes to process. So in future it would be good idea to optimize `parse_wQR.py` script for better performance on demand.
 
 - `ses-20240528`
   - problem to match other swimlanes with DICOMs at this moment, WiP. 
