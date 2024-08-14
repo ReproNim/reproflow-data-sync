@@ -35,5 +35,29 @@ Algorithm proposals for the ReproFlow time synchronization effort:
   - TBD: 
 - Use DICOMs as primary data. We should concentrate first on series with `func-` prefix producing multiple image and pulse events in system. And try to locate similar events/sequenec in other data sources like birch, reproevent, psychopy, and videos. 
 
-TODO:
+## Notes and Observations
+- `DICOMs`
+  - `AcquisitionDate`/`AcquisitionTime` is not reliable and precise. Time offset from NTP time is around 300-400 sec, and time fluctuation in func series scan can jump in 0.3-0.9 sec. This is problem and huge time gap for synchronization with scans each 2 sec.
+  - DICOM image metadata contains `Series` tag, and it's possible that the same series are used in different subfolders, e.g. `ses-20240528/005-func-bold_task-rest_run-1`, `ses-20240528/006-func-bold_task-rest_run-1`. Time distance between both series in this case is not 2.0 sec.
+- `birch` 
+  - `iso_time` is less precise than `time` field from `pigpio.get_current_tick()` API. `time` fluctuated in range 0.0000-0.0003 sec, and `iso_time` fluctuated in range 0.00-0.05 sec.
+  - in future look at possibility to use `time` field to produce more strict clock comparing to `iso_time`. This clock was selected as reference one for all other clocks and theoretically this can increase accuracy in 100+ times in this area.
+  - `birch` events matched with DICOMs well, but anyway this is not always 100% match.
+- `reproevents` 
+  - `isotime` field is precise and reliable, and looks like more precise than birch `iso_time`, fluctuation in range 0.00-0.01 sec.
+  - `reproevents` events also matched with DICOMs well close to `birch`, but this is not always 100% match.
+- `psychopy` 
+  - `isotime` field is less precise, fluctuation in range 0.00-0.03 sec.
+- `qrinfo` / `reprostim_video`
+  - `isotime_start` field fluctuation in range 0.00-0.06 sec, and correlates with 60.0 FPS video capture, where each frame takes 0.017 sec.   
+  - first QR code in each series has strange datetime offset around 0.320 sec from other QR codes. Most likely it's related to code presenting QR in experiments.
+
+- `ses-20240528`
+  - problem to match other swimlanes with DICOMs at this moment, WiP. 
+- `ses-20240604`
+  - produces most matches at this moment, but still some issues with psychopy, reprostim_video etc. 
+- `ses-20240809`
+  - under investigation, produces performance issues which partially are fixed, and swimlane matching issues. 
+
+## TODO:
   - Use DataLad run to execute commands (https://handbook.datalad.org/en/latest/basics/basics-run.html)
