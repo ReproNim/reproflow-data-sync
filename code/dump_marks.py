@@ -3,6 +3,7 @@
 import getpass
 import os
 import sys
+from enum import Enum
 from itertools import chain
 from pathlib import Path
 
@@ -28,10 +29,30 @@ logger.setLevel(logging.DEBUG)
 #logger.debug(f"name={__name__}")
 
 
+# define ReproNim clocks
+class Swimlane(str, Enum):
+    DICOMS = "dicoms"
+    BIRCH = "birch"
+    PSYCHOPY = "psychopy"
+    QRINFO = "qrinfo"
+    REPROEVENTS = "reproevents"
+    REPROSTIM_VIDEO = "reprostim_video"
+
+
+# Define swimlane event/item data model
+class EventData(BaseModel):
+    id: Optional[str] = Field(None, description="Unique ID of the item")
+    isotime: Optional[datetime] = Field(None, description="Event datetime timestamp")
+    swimlane: Optional[object] = Field(None, description="Swimlane model reference")
+    data: Optional[object] = Field({}, description="Data object")
+
+
 # Define abstract series model
 class SeriesData(BaseModel):
-    lst: Optional[List] = Field([], description="List JSONL object "
-                                                "in series")
+    lst: Optional[List] = Field([], description="List of raw JSONL object "
+                                                "in the series")
+    events: Optional[List[EventData]] = Field([], description="List of event items "
+                                                                "in the series")
     name: Optional[str] = Field(None, description="Series name")
     count: Optional[int] = Field(0, description="Number of object in series")
     swimlane: Optional[object] = Field(None, description="Swimlane model reference")
@@ -57,8 +78,10 @@ class SwimlaneModel(BaseModel):
     isotime_field: Optional[str] = Field(None, description="Field name for item in "
                                                            "swimlane containing "
                                                            "datetime in isotime format")
-    data: Optional[List] = Field([], description="List of data object "
+    data: Optional[List] = Field([], description="List of raw data object "
                                                  "from JSONL")
+    events: Optional[List[EventData]] = Field([], description="List of event items "
+                                                                "in the swimlane")
     series: Optional[List[SeriesData]] = Field([], description="List of detected series "
                                                                "for the swimlane")
 
@@ -67,23 +90,23 @@ class SwimlaneModel(BaseModel):
 class DumpModel(BaseModel):
     session_id: Optional[str] = Field(None,
                                       description="Unique session identifier")
-    birch: Optional[SwimlaneModel] = Field(SwimlaneModel(name="birch",
+    birch: Optional[SwimlaneModel] = Field(SwimlaneModel(name=Swimlane.BIRCH,
                                                          clock=Clock.BIRCH,
                                                          isotime_field="isotime"),
                                            description="Birch swimlane")
-    dicoms: Optional[SwimlaneModel] = Field(SwimlaneModel(name="dicoms",
+    dicoms: Optional[SwimlaneModel] = Field(SwimlaneModel(name=Swimlane.DICOMS,
                                                           clock=Clock.DICOMS,
                                                           isotime_field="acquisition_isotime"),
                                             description="DICOMs swimlane")
-    psychopy: Optional[SwimlaneModel] = Field(SwimlaneModel(name="psychopy",
+    psychopy: Optional[SwimlaneModel] = Field(SwimlaneModel(name=Swimlane.PSYCHOPY,
                                                             clock=Clock.PSYCHOPY,
                                                             isotime_field="isotime"),
                                               description="PsychoPy swimlane")
-    qrinfo: Optional[SwimlaneModel] = Field(SwimlaneModel(name="qrinfo",
+    qrinfo: Optional[SwimlaneModel] = Field(SwimlaneModel(name=Swimlane.QRINFO,
                                                           clock=Clock.QRINFO,
                                                           isotime_field="isotime_start"),
                                             description="QRInfo swimlane")
-    reproevents: Optional[SwimlaneModel] = Field(SwimlaneModel(name="reproevents",
+    reproevents: Optional[SwimlaneModel] = Field(SwimlaneModel(name=Swimlane.REPROEVENTS,
                                                                 clock=Clock.REPROEVENTS,
                                                                 isotime_field="isotime"),
                                                     description="ReproEvents swimlane")
@@ -119,6 +142,11 @@ def calc_dicoms_series_interval(series: List) -> float:
         return (t2-t1).total_seconds() / (len(series)-1)
     logger.debug(f"Series {series} has less than 2 dicoms")
     return 2.0
+
+
+# Get swimlane dump file path
+def get_dump_path(path: str, swimlane: SwimlaneModel) -> str:
+    return os.path.join(path, f"dump_{swimlane.name}.jsonl")
 
 
 # Find birch series based on DICOMs series interval
@@ -242,21 +270,30 @@ def match_series_data(sd1: SeriesData, sd2: SeriesData) -> bool:
     return True
 
 
+def build_swimlane_events(swimlane: SwimlaneModel):
+    swimlane.events = []
+    for obj in swimlane.data:
+        ed: EventData = EventData()
+        ed.id = obj.get('id')
+        ed.isotime = parse_isotime(obj.get(swimlane.isotime_field))
+        ed.swimlane = swimlane
+        ed.data = obj
+        swimlane.events.append(ed)
+
+
 def build_model(session_id: str, path: str) -> DumpModel:
     m: DumpModel = DumpModel()
     m.session_id = session_id
-    # first, load all JSONL data to memory
-    m.dicoms.data = parse_jsonl(os.path.join(path, 'dump_dicoms.jsonl'))
-    m.birch.data = parse_jsonl(os.path.join(path, 'dump_birch.jsonl'))
-    m.psychopy.data = parse_jsonl(os.path.join(path, 'dump_psychopy.jsonl'))
-    m.qrinfo.data = parse_jsonl(os.path.join(path, 'dump_qrinfo.jsonl'))
-    m.reproevents.data = parse_jsonl(os.path.join(path,
-                                                  'dump_reproevents.jsonl'))
-    for obj in chain(m.dicoms.data, m.birch.data,
-                     m.psychopy.data, m.qrinfo.data,
-                     m.reproevents.data):
-        #logger.debug(f"Object: {obj}")
-        m.map_by_id[obj.get('id')] = obj
+
+    # build swimlane data, events and map by id
+    for sl in m.swimlanes:
+        # first, load all JSONL data to memory
+        sl.data = parse_jsonl(get_dump_path(path, sl))
+        # build events data
+        build_swimlane_events(sl)
+        for obj in sl.data:
+            #logger.debug(f"Object: {obj}")
+            m.map_by_id[obj.get('id')] = obj
 
     # as second, detect possible series in each swimlane
     m.dicoms.series = find_dicoms_func_series(m)
@@ -267,10 +304,8 @@ def build_model(session_id: str, path: str) -> DumpModel:
         # logger.error(f"!!! Please check DICOMs series[0] data: {m.dicoms.series[0].lst}")
         interval = 2.0
 
-    m.birch.series = find_swimlane_series(m.birch, interval)
-    m.qrinfo.series = find_swimlane_series(m.qrinfo, interval)
-    m.psychopy.series = find_swimlane_series(m.psychopy, interval)
-    m.reproevents.series = find_swimlane_series(m.reproevents, interval)
+    for sl in chain([m.birch, m.qrinfo, m.psychopy, m.reproevents]):
+        sl.series = find_swimlane_series(sl, interval)
 
     # dump short series info
     for sl in m.swimlanes:
