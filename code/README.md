@@ -63,7 +63,7 @@ QR codes generation process is not fast with current implementation, and can tak
 ### Dumps
 Dumps can be described as set of JSONL files with 0 or more objects inside. It's stored as JSONL files under `timing-dumps` subfolder in related session directory, e.g. `ses-202040604/timing-dumps/dump_dicoms.jsonl` and `ses-202040604/timing-dumps/dump_dicoms.log`. Where *.jsonl is dump data and *.log is text file with detailed processing/execution info. There are following dump types:
 - Swimlane dumps with filtered and enriched data from raw data sources. Contain swimlane events ordered by time and also additional metadata and information. Raw data contains more logs and events, but dumps should contain only necessary data for further processing and analysis. Also, it's possible manually locate source raw data from certain JSON object in dump. Not all raw data exists in JSONL format, so in this case it's converted to JSONL, e.g. `reproevents` CSV file row converted to JSONL as `data` field.
-- Marks dumps with syncronization information accross swimlanes. Contain list of global events with timestamps and unique IDs used to synchronize swimlanes together.
+- Marks dumps with synchronization information across swimlanes. Contain list of global events with timestamps and unique IDs used to synchronize swimlanes together.
 - tmap dumps with mapping information between different clocks. 
 
 Common dump JSON item fields are:
@@ -77,7 +77,7 @@ Let's briefly describe each dump:
   - `DicomRecord` items corresponding to DICOMs image. Datetime information extracted from DICOM tags (`AcquisitionDate` + `AcquisitionTime`). 
   - `StudyRecord` specifies target study and study name is extracted from DICOM tags. 
   - `SeriesRecord` specifies target series inside the study. 
-- `dump_birch.jsonl` JSONL with items corresponding to birch logs. Datetime information extracted from `iso_time` field which is not very precise by now. It filtered by 8-th bit of `alink_byte` field and contains additional calculated fields:
+- `dump_birch.jsonl` JSONL with items corresponding to birch logs. Datetime information extracted from `iso_time` field which is not very precise by now. It's filtered by 8-th bit of `alink_byte` field and contains additional calculated fields:
   - `duration` - duration in seconds till the next time 8-th bit will be set on again, calculated from strict clock based on `time` field.
   - `duration_isotime` - the same as `duration` but calculated based on `iso_time` field.
   - `flag_duration` - duration in seconds till the next event 8-th bit will be set off, calculated from precise `time` field.
@@ -91,13 +91,8 @@ Let's briefly describe each dump:
 ### Statistics
 TBD:
 
-Probably timing data model can be described as parallel swimlanes of data, where each lane is a different filtered data source, and the goal is to synchronize the lanes.  The lanes are:
-- `timing-dumps` directory with JSONL logs from DICOMs, psychopy, birch, reprostim-videos, and events:
-  - `dump_dicoms.jsonl` JSONL with from the MRI scanner, sequential list of A) `MRI` images, B) `study` and C) `series` list.
-  - `dump_psychopy.jsonl` JSONL logs with events pulse events and QR codes original events.
-  - `dump_qrinfo.jsonl` JSONL logs from the videos with QR codes.
-  - `dump_birch.jsonl` JSONL log from birch device filtered by preliminary time frame.
-  - `dump_events.jsonl` JSONL log with list of events/marks used to sync lines. It should be sequential list of events with timestamps and unique IDs. Idea is to proces all swimlanes data and put necessary event UID where it's possible to detect, so we can sync/link all data sources together and then analyze time offsets.
+### Code and Tools
+TBD: 
 
 ## Algorithm
 Algorithm proposals for the ReproFlow time synchronization effort:
