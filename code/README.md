@@ -5,7 +5,7 @@
 ### Session
 Time calibration session is a set of raw data collected during MRI `dbic^QA` study, generated data dumps, statistics and tmap info. 
 
-Session ID or name is unique string identifier usually containing date in independent format, e.g.: `ses-20240528`, so it was recorded on 28th May 2024.
+Session ID or name is unique string identifier usually containing date in independent format, e.g.: `ses-20240528`, so recording date is May 28, 2024.
 
 Directory named as session ID contains all related data. Initially session is created by `collect_data.sh` script, then enriched with QR codes by `reprostim/Parsing/generate_qrinfo.sh` tool and finally processed and analyzed by `generate_timing.sh` scripts.
 
@@ -14,14 +14,33 @@ Swimlane is logical model for certain ReproNim system part. It can be described 
 
 Note: event can be addressed globally by concatenation of session ID and event ID, e.g. `ses-20240528:birch_000015`. 
 
-Each swimlane has own clock, and events are ordered by this clock internally. 
+Each swimlane has own clock, and all related events are ordered by this clock internally. 
 
-Known swimlanes listed below, but it's possible to add more swimlanes in future:
+Known swimlanes listed below, but it's possible this list will be extended in the future:
 - `dicoms` swimlane with DICOMs data where datetime comes from MRI device and extracted from DICOM image as `AcquisitionDate` + `AcquisitionTime` tags.
 - `birch` swimlane with birch logs where datetime comes from `iso_time` field.
 - `psychopy` swimlane with psychopy logs where datetime comes from `keys_time_str` field.
 - `reproevents` swimlane with reproevents logs where datetime comes from `client_time_iso` column.
 - `qrinfo` / `reprostim-videos` swimlanes with QR timestamps extracted from video as `isotime_start` field.
+
+### Clocks
+Each ReproNim system part and related swimlane has own clock. 
+
+All clocks values serialized into string as `isotime` format. It's variation of ISO 8601 format with microseconds and no-timezone. Timezone info removed to simplify readability and maintenance, but this format implictly treat is as `America/New_York` region (-04:00)  e.g. sample value is `2024-08-09T10:27:24.341075`, but it corresponds to `2024-08-09T10:27:24.341075-04:00` in real world. 
+
+In addition to swimlanes internal timing, there is also global clock - `isotime`. It respresents absolute global time in ISO format, and it's used to synchronize all swimlanes together. 
+
+Global clock timing information is currently sticked to `birch` clock, which mean both are the same. This was done as initial step to start development. But in nature it should not be bound any clocks, and can be set as independent clock, e.g. calculated from different swimlanes or taken somehow from NTP server, etc.
+
+Known clocks listed below, but it's possible this list will be extended in the future:
+- `isotime` global clock with absolute time in custom `isotime` format.
+- `dicoms` clock of MRI device.
+- `birch` clock of birch device.
+- `psychopy` clock of psychopy.
+- `reproevents` clock of reproevents.
+- `qrinfo` / `reprostim_videos` clock for QR codes reprostim-videocapture utility.
+
+We have tmap service (`repronim_timing.TMapService`) to map datetime from one clock to another. This mapping based on tmap JSONL information we calculated for each time calibration session (`dump_tmap.jsonl`) and merged into the global single file (`repronim_tmap.jsonl`).
 
 ### Raw Data
 
@@ -33,6 +52,9 @@ It's stored under session directory as separate subdirectories:
 - `psychopy` directory with multiple psychopy logs in JSONL format.
 - `reproevents` directory with reproevents data in CSV format.
 - `reprostim-videos` directory with captured videos with QR codes in *.mkv format and corresponding *.log files with reprostim-videocapture metadata.
+
+### QR Codes
+TBD:
 
 ### Dumps
 TBD:
@@ -82,7 +104,7 @@ Algorithm proposals for the ReproFlow time synchronization effort:
   - raw data JSONL is not safe to use, because it contains comments and some dirty lines, so custom preprocessing is used to fix this.
 - `reproevents` 
   - `isotime` field is precise and reliable, and looks like more precise than birch `iso_time`, fluctuation in range 0.00-0.01 sec.
-  - `reproevents` events also matched with DICOMs well close to `birch`, but this is not always 100% match.
+  - `reproevents` events also matched with DICOMs well close to `birch`, but this is not always 100% match. It's possible that precision is even better than `birch` one, so it should be considered in future when calculating global clock information.
 - `psychopy` 
   - `isotime` field is less precise, fluctuation in range 0.00-0.03 sec.
 - `qrinfo` / `reprostim_video`
