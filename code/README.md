@@ -61,7 +61,32 @@ Video recorded by `reprostim-videocapture` utility may contain QR codes with tim
 QR codes generation process is not fast with current implementation, and can take up to 4 times longer than original video duration. But this information should be definitely created before any further processing and dumps calculations.
 
 ### Dumps
-TBD:
+Dumps can be described as set of JSONL files with 0 or more objects inside. It's stored as JSONL files under `timing-dumps` subfolder in related session directory, e.g. `ses-202040604/timing-dumps/dump_dicoms.jsonl` and `ses-202040604/timing-dumps/dump_dicoms.log`. Where *.jsonl is dump data and *.log is text file with detailed processing/execution info. There are following dump types:
+- Swimlane dumps with filtered and enriched data from raw data sources. Contain swimlane events ordered by time and also additional metadata and information. Raw data contains more logs and events, but dumps should contain only necessary data for further processing and analysis. Also, it's possible manually locate source raw data from certain JSON object in dump. Not all raw data exists in JSONL format, so in this case it's converted to JSONL, e.g. `reproevents` CSV file row converted to JSONL as `data` field.
+- Marks dumps with syncronization information accross swimlanes. Contain list of global events with timestamps and unique IDs used to synchronize swimlanes together.
+- tmap dumps with mapping information between different clocks. 
+
+Common dump JSON item fields are:
+- `session_id` - specifies unique session ID.
+- `id` - specifies unique dump item ID inside related session.
+- `type` - specifies record class type, to distinguish different items if any inside single dump.
+- `isotime` - specifies datetime in `isotime` format in related swimlane clocks.
+
+Let's briefly describe each dump:
+- `dump_dicoms.jsonl` JSONL with items generated from DICOMS images:
+  - `DicomRecord` items corresponding to DICOMs image. Datetime information extracted from DICOM tags (`AcquisitionDate` + `AcquisitionTime`). 
+  - `StudyRecord` specifies target study and study name is extracted from DICOM tags. 
+  - `SeriesRecord` specifies target series inside the study. 
+- `dump_birch.jsonl` JSONL with items corresponding to birch logs. Datetime information extracted from `iso_time` field which is not very precise by now. It filtered by 8-th bit of `alink_byte` field and contains additional calculated fields:
+  - `duration` - duration in seconds till the next time 8-th bit will be set on again, calculated from strict clock based on `time` field.
+  - `duration_isotime` - the same as `duration` but calculated based on `iso_time` field.
+  - `flag_duration` - duration in seconds till the next event 8-th bit will be set off, calculated from precise `time` field.
+  - `flag_duration_isotime` - the same as `flag_duration` but calculated based on `iso_time` field.
+- `dump_psychopy.jsonl` Aggregated JSONL with items corresponding to psychopy logs. Target log file names extracted from QR codes and then filtered by MRI study datetime range. Datetime information extracted from `keys_time_str` field.
+- `dump_qrinfo.jsonl` JSONL with `QrRecord` items corresponding to QR codes logs. Datetime information extracted from `isotime_start` field (where this frame first appeared in captured video).
+- `dump_reproevents.jsonl` JSONL with `ReproeventsRecord` items corresponding to reproevents logs. Datetime information extracted from `client_time_iso` column in CVS file, and entire row is converted to JSON object `data` field.
+- `dump_marks.jsonl` JSONL with `MarkRecord` items corresponding to global events used to synchronize all swimlanes and clocks.
+- `dump_tmap.jsonl` JSONL with `TMapRecord` items specifying datetime mapping information between different clocks based on information and statistics extracted from the current session.
 
 ### Statistics
 TBD:
