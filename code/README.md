@@ -38,7 +38,7 @@ Known clocks listed below, but it's possible this list will be extended in the f
 - `birch` clock of birch device.
 - `psychopy` clock of psychopy.
 - `reproevents` clock of reproevents.
-- `qrinfo` / `reprostim_videos` clock for QR codes reprostim-videocapture utility.
+- `qrinfo` / `reprostim_videos` clock for QR codes and `reprostim-videocapture` utility.
 
 We have tmap service (`repronim_timing.TMapService`) to map datetime from one clock to another. This mapping based on tmap JSONL information we calculated for each time calibration session (`dump_tmap.jsonl`) and merged into the global single file (`repronim_tmap.jsonl`).
 
@@ -54,11 +54,17 @@ It's stored under session directory as separate subdirectories:
 - `reprostim-videos` directory with captured videos with QR codes in *.mkv format and corresponding *.log files with reprostim-videocapture metadata.
 
 ### QR Codes
-TBD:
+Video recorded by `reprostim-videocapture` utility may contain QR codes with timestamps. This data is extracted by `reprostim/Parsing/generate_qrinfo.sh` script and stored as JSONL logs under `timing-reprostim-videos` subfolder in related session directory, e.g. `ses-202040604/2024.06.04.13.51.24.278_2024.06.04.13.51.31.057.qrinfo.jsonl` and `ses-202040604/2024.06.04.13.51.24.278_2024.06.04.13.51.31.057.qrinfo.log`. Where *.jsonl is parsed QR codes data and *.log is text file with detailed processing/execution info.
+
+`generate_qrinfo.sh` script takes session root folder as parameter. It scans all video files (*.mkv,*.mov) and logs (*.log) in `reprostim-videos` sub-folder and produces JSONL logs with QR codes data under `timing-reprostim-videos` sub-folder.
+
+QR codes generation process is not fast with current implementation, and can take up to 4 times longer than original video duration. But this information should be definitely created before any further processing and dumps calculations.
 
 ### Dumps
 TBD:
 
+### Statistics
+TBD:
 
 Probably timing data model can be described as parallel swimlanes of data, where each lane is a different filtered data source, and the goal is to synchronize the lanes.  The lanes are:
 - `timing-dumps` directory with JSONL logs from DICOMs, psychopy, birch, reprostim-videos, and events:
