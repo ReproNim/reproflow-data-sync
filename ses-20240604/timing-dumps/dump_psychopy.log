@@ -1,0 +1,52 @@
+dump_psychopy.py tool
+Started on    : 2024-08-14 12:28:06.748483, vmelnik@Uranus
+Working dir   : /Users/vmelnik/Projects/Dartmouth/branches/reproflow-data-sync/code
+Session path  : /Users/vmelnik/Projects/Dartmouth/branches/typhon/reproflow-data-sync/ses-20240604
+Session ID    : ses-20240604
+Dumps path    : /Users/vmelnik/Projects/Dartmouth/branches/typhon/reproflow-data-sync/ses-20240604/timing-dumps
+DICOMS dump   : /Users/vmelnik/Projects/Dartmouth/branches/typhon/reproflow-data-sync/ses-20240604/timing-dumps/dump_dicoms.jsonl
+Psychopy path : /Users/vmelnik/Projects/Dartmouth/branches/typhon/reproflow-data-sync/ses-20240604/psychopy
+QRInfo path   : /Users/vmelnik/Projects/Dartmouth/branches/typhon/reproflow-data-sync/ses-20240604/timing-dumps/dump_qrinfo.jsonl
+Study range   : dicoms    2024-06-04 13:50:51.985000 - 2024-06-04 14:05:47.492500
+              : psychopy  2024-06-04 13:44:39.847389 - 2024-06-04 13:59:34.747645
+Psychopy log files: ['20240604_run-2.log', '20240604_run-3.log']
+Psychopy log file: /Users/vmelnik/Projects/Dartmouth/branches/typhon/reproflow-data-sync/ses-20240604/psychopy/20240604_run-2.log
+Time: 2024-06-04 13:54:04.554649
+Time: 2024-06-04 13:54:05.344933
+Time: 2024-06-04 13:54:05.491565
+Time: 2024-06-04 13:54:19.959281
+Time: 2024-06-04 13:54:21.947743
+Time: 2024-06-04 13:54:23.953160
+Time: 2024-06-04 13:54:25.956136
+Time: 2024-06-04 13:54:27.949676
+Time: 2024-06-04 13:54:29.944095
+Time: 2024-06-04 13:54:31.949441
+Time: 2024-06-04 13:54:33.944017
+Time: 2024-06-04 13:54:35.950066
+Time: 2024-06-04 13:54:37.945700
+Time: 2024-06-04 13:54:39.949766
+Time: 2024-06-04 13:54:41.947538
+Time: 2024-06-04 13:54:43.944996
+Time: 2024-06-04 13:54:45.960718
+Time: 2024-06-04 13:54:47.950436
+Psychopy log file: /Users/vmelnik/Projects/Dartmouth/branches/typhon/reproflow-data-sync/ses-20240604/psychopy/20240604_run-3.log
+Time: 2024-06-04 13:55:27.445440
+Time: 2024-06-04 13:55:28.255253
+Time: 2024-06-04 13:55:28.403125
+Time: 2024-06-04 13:55:51.337208
+Time: 2024-06-04 13:55:53.323197
+Time: 2024-06-04 13:55:55.317891
+Time: 2024-06-04 13:55:57.317951
+Time: 2024-06-04 13:55:59.312156
+Time: 2024-06-04 13:56:01.325451
+Time: 2024-06-04 13:56:03.322233
+Time: 2024-06-04 13:56:05.355690
+Time: 2024-06-04 13:56:07.317346
+Time: 2024-06-04 13:56:09.324960
+Time: 2024-06-04 13:56:11.318813
+Time: 2024-06-04 13:56:13.318419
+Time: 2024-06-04 13:56:15.316963
+Time: 2024-06-04 13:56:17.319389
+Time: 2024-06-04 13:56:19.316505
+Exit on   : 2024-08-14 12:28:06.812190
+Exit code : 0

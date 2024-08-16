@@ -1,0 +1,19 @@
+dump_qrinfo.py tool
+Started on    : 2024-08-14 12:28:04.287917, vmelnik@Uranus
+Working dir   : /Users/vmelnik/Projects/Dartmouth/branches/reproflow-data-sync/code
+Session path  : /Users/vmelnik/Projects/Dartmouth/branches/typhon/reproflow-data-sync/ses-20240604
+Session ID    : ses-20240604
+Dumps path    : /Users/vmelnik/Projects/Dartmouth/branches/typhon/reproflow-data-sync/ses-20240604/timing-dumps
+DICOMS dump   : /Users/vmelnik/Projects/Dartmouth/branches/typhon/reproflow-data-sync/ses-20240604/timing-dumps/dump_dicoms.jsonl
+Parsed QRs    : /Users/vmelnik/Projects/Dartmouth/branches/typhon/reproflow-data-sync/ses-20240604/timing-reprostim-videos
+Study range   : dicoms 2024-06-04 13:50:51.985000 - 2024-06-04 14:05:47.492500
+              : qrinfo 2024-06-04 13:44:40.180500 - 2024-06-04 13:59:35.077500
+Reading parsed video QRs directory: /Users/vmelnik/Projects/Dartmouth/branches/typhon/reproflow-data-sync/ses-20240604/timing-reprostim-videos
+  2024.06.04.13.51.24.278_2024.06.04.13.51.31.057.qrinfo.jsonl
+Processing QR : /Users/vmelnik/Projects/Dartmouth/branches/typhon/reproflow-data-sync/ses-20240604/timing-reprostim-videos/2024.06.04.13.51.24.278_2024.06.04.13.51.31.057.qrinfo.jsonl
+  Skipping 2024.06.04.13.51.24.278_2024.06.04.13.51.31.057.qrinfo.log
+  2024.06.04.13.51.36.620_2024.06.04.13.58.20.763.qrinfo.jsonl
+Processing QR : /Users/vmelnik/Projects/Dartmouth/branches/typhon/reproflow-data-sync/ses-20240604/timing-reprostim-videos/2024.06.04.13.51.36.620_2024.06.04.13.58.20.763.qrinfo.jsonl
+  Skipping 2024.06.04.13.51.36.620_2024.06.04.13.58.20.763.qrinfo.log
+Exit on   : 2024-08-14 12:28:04.312687
+Exit code : 0

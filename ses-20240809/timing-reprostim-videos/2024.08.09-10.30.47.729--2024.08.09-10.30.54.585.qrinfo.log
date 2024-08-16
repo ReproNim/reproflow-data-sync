@@ -1,0 +1,18 @@
+parse_wQR.py tool
+Working dir      : /home/vmelnik/projects/reprostim/Parsing
+Video full path  : /home/vmelnik/projects/typhon/reproflow-data-sync/ses-20240809/timing-reprostim-videos/2024.08.09-10.30.47.729--2024.08.09-10.30.54.585.mkv
+Video file name  : 2024.08.09-10.30.47.729--2024.08.09-10.30.54.585.mkv
+Video start time : 2024-08-09 10:30:47.729000
+Video end time   : 2024-08-09 10:30:54.585000
+Video duration   : 6.856 sec
+Video media info : 
+    - resolution : 1920x1080
+    - frame rate : 60.0 FPS
+    - duration   : 5.816666666666666 sec
+    - frame count: 349
+iframe=50 11.763942615337411
+iframe=100 11.754977797317244
+iframe=150 11.75490012448531
+iframe=200 11.752617636283563
+iframe=250 11.744601209257237
+iframe=300 11.745535792481878

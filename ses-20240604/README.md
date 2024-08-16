@@ -3,3 +3,8 @@
   - needs HDMI extension cable
 - log shows lots of the drop events for audiovideo capture but we need that to get sensible timing
   - TODO -- may be filter out???
+- timing related data and logs stored in directories started with timing-***
+  - `timing-reprostim-videos` contains manually produced QR codes from sample video with `parse_wQR.py` tool like below:
+    - `./parse_wQR.py --log-level DEBUG /data/repronim/reproflow-data-sync/ses-20240604/reprostim-videos/2024.06.04.13.51.36.620_2024.06.04.13.58.20.763.mkv > 2024-07-18.qrinfo.jsonl 2> 2024-07-18.qrinfo.log`
+  - `timing-DICOMS` contains timing data from DICOMs in JSONL format produced with `dump_dicoms.py` tool like below:
+    - `./dump_dicoms.py --log-level DEBUG /data/repronim/reproflow-data-sync/ses-20240604 >dump_dicoms.jsonl 2> dump_dicoms.log`

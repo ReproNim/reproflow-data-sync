@@ -1,0 +1,71 @@
+dump_psychopy.py tool
+Started on    : 2024-08-14 12:15:54.304395, vmelnik@Uranus
+Working dir   : /Users/vmelnik/Projects/Dartmouth/branches/reproflow-data-sync/code
+Session path  : /Users/vmelnik/Projects/Dartmouth/branches/typhon/reproflow-data-sync/ses-20240809
+Session ID    : ses-20240809
+Dumps path    : /Users/vmelnik/Projects/Dartmouth/branches/typhon/reproflow-data-sync/ses-20240809/timing-dumps
+DICOMS dump   : /Users/vmelnik/Projects/Dartmouth/branches/typhon/reproflow-data-sync/ses-20240809/timing-dumps/dump_dicoms.jsonl
+Psychopy path : /Users/vmelnik/Projects/Dartmouth/branches/typhon/reproflow-data-sync/ses-20240809/psychopy
+QRInfo path   : /Users/vmelnik/Projects/Dartmouth/branches/typhon/reproflow-data-sync/ses-20240809/timing-dumps/dump_qrinfo.jsonl
+Study range   : dicoms    2024-08-09 09:43:29.692500 - 2024-08-09 11:13:44.242500
+              : psychopy  2024-08-09 09:37:16.947645 - 2024-08-09 11:07:31.497645
+Psychopy log files: ['20240809_acq-short1_run-05.log', '20240809_acq-short1_run-06.log', '20240809_acq-short1_run-07.log']
+Psychopy log file: /Users/vmelnik/Projects/Dartmouth/branches/typhon/reproflow-data-sync/ses-20240809/psychopy/20240809_acq-short1_run-05.log
+Time: 2024-08-09 10:31:26.817266
+Time: 2024-08-09 10:31:27.665090
+Time: 2024-08-09 10:31:27.795350
+Time: 2024-08-09 10:31:41.273596
+Time: 2024-08-09 10:31:43.340072
+Time: 2024-08-09 10:31:45.263788
+Time: 2024-08-09 10:31:47.255743
+Time: 2024-08-09 10:31:49.264481
+Time: 2024-08-09 10:31:51.279796
+Time: 2024-08-09 10:31:53.265947
+Time: 2024-08-09 10:31:55.271172
+Time: 2024-08-09 10:31:57.269688
+Time: 2024-08-09 10:31:59.277807
+Time: 2024-08-09 10:32:01.277329
+Time: 2024-08-09 10:32:03.269826
+Time: 2024-08-09 10:32:05.280010
+Time: 2024-08-09 10:32:07.267800
+Time: 2024-08-09 10:32:09.263834
+Psychopy log file: /Users/vmelnik/Projects/Dartmouth/branches/typhon/reproflow-data-sync/ses-20240809/psychopy/20240809_acq-short1_run-06.log
+Time: 2024-08-09 10:33:09.925791
+Time: 2024-08-09 10:33:10.786375
+Time: 2024-08-09 10:33:10.949511
+Time: 2024-08-09 10:33:22.546908
+Time: 2024-08-09 10:33:24.537445
+Time: 2024-08-09 10:33:26.557040
+Time: 2024-08-09 10:33:28.570926
+Time: 2024-08-09 10:33:30.560818
+Time: 2024-08-09 10:33:32.545312
+Time: 2024-08-09 10:33:34.547226
+Time: 2024-08-09 10:33:36.553371
+Time: 2024-08-09 10:33:38.551801
+Time: 2024-08-09 10:33:40.551983
+Time: 2024-08-09 10:33:42.541588
+Time: 2024-08-09 10:33:44.554472
+Time: 2024-08-09 10:33:46.552420
+Time: 2024-08-09 10:33:48.569647
+Time: 2024-08-09 10:33:50.556797
+Psychopy log file: /Users/vmelnik/Projects/Dartmouth/branches/typhon/reproflow-data-sync/ses-20240809/psychopy/20240809_acq-short1_run-07.log
+Time: 2024-08-09 10:34:56.535336
+Time: 2024-08-09 10:34:57.340258
+Time: 2024-08-09 10:34:57.503486
+Time: 2024-08-09 10:35:08.434930
+Time: 2024-08-09 10:35:10.430125
+Time: 2024-08-09 10:35:12.432759
+Time: 2024-08-09 10:35:14.409739
+Time: 2024-08-09 10:35:16.443216
+Time: 2024-08-09 10:35:18.428963
+Time: 2024-08-09 10:35:20.421884
+Time: 2024-08-09 10:35:22.426008
+Time: 2024-08-09 10:35:24.428241
+Time: 2024-08-09 10:35:26.420345
+Time: 2024-08-09 10:35:28.427697
+Time: 2024-08-09 10:35:30.429194
+Time: 2024-08-09 10:35:32.417620
+Time: 2024-08-09 10:35:34.426551
+Time: 2024-08-09 10:35:36.418865
+Exit on   : 2024-08-14 12:15:54.388484
+Exit code : 0
