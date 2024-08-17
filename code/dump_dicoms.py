@@ -13,7 +13,7 @@ import pydicom
 import logging
 
 from repronim_timing import (dump_jsonl, get_session_id, generate_id)
-from repronim_dumps import DicomRecord, StudyRecord, SeriesRecord
+from repronim_dumps import DicomsRecord, StudyRecord, SeriesRecord
 
 
 # initialize the logger
@@ -43,8 +43,8 @@ def dump_dicoms_file(session_id: str, dicoms_folder: str, path: str):
         # Read the DICOM file
         ds = pydicom.dcmread(path)
 
-        dr: DicomRecord = DicomRecord(
-            id=generate_id("dicom"),
+        dr: DicomsRecord = DicomsRecord(
+            id=generate_id("dicoms"),
             session_id=session_id,
             series_folder=dicoms_folder)
         # calc study

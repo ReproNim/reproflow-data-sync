@@ -42,11 +42,11 @@ def find_study_range(dump_dicoms_path: str) -> Tuple[Optional[datetime], Optiona
 
 _last_id: dict = {
     "birch": 0,
-    "dicom": 0,
+    "dicoms": 0,
     "mark": 0,
     "psychopy": 0,
     "reproevents": 0,
-    "qr": 0,
+    "qrinfo": 0,
     "series": 0,
     "study": 0,
 }
@@ -110,6 +110,10 @@ class TMapRecord(BaseModel):
     mark_id: Optional[str] = Field(
         None, description="Unique mark identifier across session only, "
                           "e.g. mark_000025")
+    mark_name: Optional[str] = Field(
+        None, description="Optional name or description of the mark")
+    dicoms_id: Optional[str] = Field(
+        None, description="DICOMs dump unique identifier, e.g. dicoms-000025")
     dicoms_isotime: Optional[datetime] = Field(
         None, description="Corresponding DICOMs clock time in isotime format")
     dicoms_offset: Optional[float] = Field(
@@ -117,6 +121,8 @@ class TMapRecord(BaseModel):
     dicoms_deviation: Optional[float] = Field(
         0.0, description="Represents DICOMs time deviation ratio comparing "
                          "to master clock")
+    birch_id: Optional[str] = Field(
+        None, description="Birch dump identifier, e.g. birch-000027")
     birch_isotime: Optional[datetime] = Field(
         None, description="Corresponding birch clock time in isotime format")
     birch_offset: Optional[float] = Field(
@@ -124,6 +130,8 @@ class TMapRecord(BaseModel):
     birch_deviation: Optional[float] = Field(
         0.0, description="Represents birch time deviation ratio comparing "
                          "to master clock")
+    psychopy_id: Optional[str] = Field(
+        None, description="Psychopy dump identifier, e.g. psychopy-000017")
     psychopy_isotime: Optional[datetime] = Field(
         None, description="Corresponding psychopy clock time in isotime format")
     psychopy_offset: Optional[float] = Field(
@@ -131,6 +139,8 @@ class TMapRecord(BaseModel):
     psychopy_deviation: Optional[float] = Field(
         0.0, description="Represents psychopy time deviation ratio "
                          "comparing to master clock")
+    reproevents_id: Optional[str] = Field(
+        None, description="ReproEvents dump identifier, e.g. reproevents-000012")
     reproevents_isotime: Optional[datetime] = Field(
         None, description="Corresponding ReproEvents clock time in isotime format")
     reproevents_offset: Optional[float] = Field(
@@ -138,6 +148,8 @@ class TMapRecord(BaseModel):
     reproevents_deviation: Optional[float] = Field(
         0.0, description="Represents ReproEvents time deviation ratio "
                          "comparing to master clock")
+    qrinfo_id: Optional[str] = Field(
+        None, description="QRInfo dump identifier, e.g. qrinfo-000125")
     reprostim_video_isotime: Optional[datetime] = Field(
         None, description="Corresponding ReproStim video clock time in "
                           "isotime format")

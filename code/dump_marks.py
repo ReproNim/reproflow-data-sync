@@ -209,7 +209,7 @@ def find_dicoms_func_series(model: DumpModel) -> List[SeriesData]:
     df = pd.DataFrame(model.dicoms.data)
     # filter by type, study and series
     filtered_df = df[
-        (df['type'] == 'DicomRecord') &
+        (df['type'] == 'DicomsRecord') &
         (df['study'] == 'dbic^QA') &
         (df['series'].str.startswith('func-'))
         ]

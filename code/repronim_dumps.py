@@ -10,8 +10,8 @@ from pydantic import BaseModel, Field
 # Data models
 
 # Define model DICOM item
-class DicomRecord(BaseModel):
-    type: Optional[str] = Field("DicomRecord", description="JSON record type/class")
+class DicomsRecord(BaseModel):
+    type: Optional[str] = Field("DicomsRecord", description="JSON record type/class")
     id: Optional[str] = Field(None, description="DICOM object unique ID")
     session_id: Optional[str] = Field(None, description="Session unique ID")
     acquisition_time: Optional[str] = Field(None, description="MRI acquisition time")

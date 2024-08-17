@@ -69,6 +69,13 @@ def calc_offset(cur_isotime: datetime, ref_isotime: datetime) -> float:
     return (cur_isotime - ref_isotime).total_seconds()
 
 
+def get_dump_id(prefix: str, target_ids: List[str]) -> Optional[str]:
+    if target_ids is None:
+        return None
+    # return comma string with comma separated IDs started with prefix
+    return ",".join([id for id in target_ids if id.startswith(prefix)])
+
+
 def generate_tmap(session_id: str, path_marks: str,
                   extended: bool, format: str) -> int:
     logger.debug(f"generate_tmap({path_marks})")
@@ -92,19 +99,26 @@ def generate_tmap(session_id: str, path_marks: str,
         tmr.isotime = ref_isotime
         tmr.session_id = session_id
         tmr.mark_id = fm.get('id')
+        target_ids: List[str] = fm.get('target_ids')
+        tmr.mark_name = fm.get('name')
         # ATM we consider birch device time as the reference one
+        tmr.birch_id = get_dump_id("birch", target_ids)
         tmr.birch_isotime = ref_isotime
         tmr.birch_offset = 0.0
         tmr.birch_deviation = 1.0
+        tmr.dicoms_id = get_dump_id("dicoms", target_ids)
         tmr.dicoms_isotime = parse_isotime(fm.get('dicoms_isotime'))
         tmr.dicoms_offset = calc_offset(tmr.dicoms_isotime, tmr.isotime)
         tmr.dicoms_deviation = calc_deviation(fm, 'dicoms_duration', ref_duration)
+        tmr.qrinfo_id = get_dump_id("qrinfo", target_ids)
         tmr.reprostim_video_isotime = parse_isotime(fm.get('qrinfo_isotime'))
         tmr.reprostim_video_offset = calc_offset(tmr.reprostim_video_isotime, tmr.isotime)
         tmr.reprostim_video_deviation = calc_deviation(fm, 'qrinfo_duration', ref_duration)
+        tmr.psychopy_id = get_dump_id("psychopy", target_ids)
         tmr.psychopy_isotime = parse_isotime(fm.get('psychopy_isotime'))
         tmr.psychopy_offset = calc_offset(tmr.psychopy_isotime, tmr.isotime)
         tmr.psychopy_deviation = calc_deviation(fm, 'psychopy_duration', ref_duration)
+        tmr.reproevents_id = get_dump_id("reproevents", target_ids)
         tmr.reproevents_isotime = parse_isotime(fm.get('reproevents_isotime'))
         tmr.reproevents_offset = calc_offset(tmr.reproevents_isotime, tmr.isotime)
         tmr.reproevents_deviation = calc_deviation(fm, 'reproevents_duration', ref_duration)

@@ -74,7 +74,7 @@ Common dump JSON item fields are:
 
 Let's briefly describe each dump:
 - `dump_dicoms.jsonl` JSONL with items generated from DICOMS images:
-  - `DicomRecord` items corresponding to DICOMs image. Datetime information extracted from DICOM tags (`AcquisitionDate` + `AcquisitionTime`). 
+  - `DicomsRecord` items corresponding to DICOMs image. Datetime information extracted from DICOM tags (`AcquisitionDate` + `AcquisitionTime`). 
   - `StudyRecord` specifies target study and study name is extracted from DICOM tags. 
   - `SeriesRecord` specifies target series inside the study. 
 - `dump_birch.jsonl` JSONL with items corresponding to birch logs. Datetime information extracted from `iso_time` field which is not very precise by now. It's filtered by 8-th bit of `alink_byte` field and contains additional calculated fields:

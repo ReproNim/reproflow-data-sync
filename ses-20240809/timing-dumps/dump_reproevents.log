@@ -1,5 +1,5 @@
 dump_reproevents.py tool
-Started on    : 2024-08-17 10:55:34.393182, vmelnik@Uranus
+Started on    : 2024-08-17 11:26:43.850731, vmelnik@Uranus
 Working dir   : /Users/vmelnik/Projects/Dartmouth/branches/reproflow-data-sync/code
 Session path  : /Users/vmelnik/Projects/Dartmouth/branches/typhon/reproflow-data-sync/ses-20240809
 Session ID    : ses-20240809
@@ -577,5 +577,5 @@ Skip reproevents, out of study datetime range: type='ReproeventsRecord' isotime=
 Skip reproevents, out of study datetime range: type='ReproeventsRecord' isotime=Timestamp('2024-08-09 21:20:12.414391') session_id='ses-20240809' id=None file_name='events.csv' state=0 data={'callback_duration_us': '2024-03-26T14:17:27-04:00.csv:223', 'state': 0, 'client_time': 1723252812.4143908, 'client_time_iso': '2024-08-09T21:20:12.414391-04:00', 'pin': 3, 'callback_duration': 0.000223, 'server_time': 469.103029, 'action': 'D3', 'roundtrip_delay': nan, 'id': 2158900}
 Skip reproevents, out of study datetime range: type='ReproeventsRecord' isotime=Timestamp('2024-08-09 21:20:12.420013') session_id='ses-20240809' id=None file_name='events.csv' state=0 data={'callback_duration_us': '2024-03-26T14:17:27-04:00.csv:213', 'state': 0, 'client_time': 1723252812.4200127, 'client_time_iso': '2024-08-09T21:20:12.420013-04:00', 'pin': 4, 'callback_duration': 0.000213, 'server_time': 469.108422, 'action': 'D4', 'roundtrip_delay': nan, 'id': 2158901}
 Skip reproevents, out of study datetime range: type='ReproeventsRecord' isotime=Timestamp('2024-08-09 21:20:12.425362') session_id='ses-20240809' id=None file_name='events.csv' state=0 data={'callback_duration_us': '2024-03-26T14:17:27-04:00.csv:223', 'state': 0, 'client_time': 1723252812.4253616, 'client_time_iso': '2024-08-09T21:20:12.425362-04:00', 'pin': 6, 'callback_duration': 0.000223, 'server_time': 469.113813, 'action': '-ACK', 'roundtrip_delay': nan, 'id': 2158902}
-Exit on   : 2024-08-17 10:55:35.361242
+Exit on   : 2024-08-17 11:26:44.825628
 Exit code : 0

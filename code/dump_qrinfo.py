@@ -47,7 +47,7 @@ def dump_qrinfo_file(session_id: str, path: str, range_start: datetime,
                                        ).replace(tzinfo=None)
         if range_start <= isotime_start <= range_end:
             # make flat, add videos info for info purposes
-            obj['id'] = generate_id('qr')
+            obj['id'] = generate_id('qrinfo')
             obj['session_id'] = session_id
             obj['video_file_name'] = psum.get('video_file_name')
             obj['video_isotime_start'] = psum.get('video_isotime_start')
