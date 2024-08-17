@@ -54,7 +54,7 @@ def generate_id(name: str) -> str:
     # generate unique id based on int sequence
     global _last_id
     _last_id[name] += 1
-    return f"{name}_{_last_id[name]:06d}"
+    return f"{name}-{_last_id[name]:06d}"
 
 
 def get_session_id(path: str) -> str:

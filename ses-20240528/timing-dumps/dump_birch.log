@@ -1,5 +1,5 @@
 dump_birch.py tool
-Started on    : 2024-08-14 12:27:53.307336, vmelnik@Uranus
+Started on    : 2024-08-17 10:55:13.858475, vmelnik@Uranus
 Working dir   : /Users/vmelnik/Projects/Dartmouth/branches/reproflow-data-sync/code
 Session path  : /Users/vmelnik/Projects/Dartmouth/branches/typhon/reproflow-data-sync/ses-20240528
 Session ID    : ses-20240528
@@ -106,5 +106,5 @@ Skipping by alink_byte/alink_flags filter {'epoch_time': 1716909208.6298864, 'is
 Skipping by alink_byte/alink_flags filter {'epoch_time': 1716909268.6294, 'iso_time': '2024-05-28T15:14:28.629400+00:00', 'time': 734.847984, 'alink_byte': 240, 'alink_flags': 1}
 Skipping by alink_byte/alink_flags filter {'epoch_time': 1716909328.6393838, 'iso_time': '2024-05-28T15:15:28.639384+00:00', 'time': 794.8481360000001, 'alink_byte': 240, 'alink_flags': 1}
 Skipping by alink_byte/alink_flags filter {'epoch_time': 1716909388.6341913, 'iso_time': '2024-05-28T15:16:28.634191+00:00', 'time': 854.8490379999998, 'alink_byte': 240, 'alink_flags': 1}
-Exit on   : 2024-08-14 12:27:53.465451
+Exit on   : 2024-08-17 10:55:14.003364
 Exit code : 0

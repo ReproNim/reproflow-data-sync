@@ -367,7 +367,7 @@ def generate_marks(model: DumpModel):
             mark.id = generate_id('mark')
             mark.session_id = model.session_id
             mark.kind = "Func series scan"
-            mark.name = f"{dicoms_sd.name}_scan_{i}"
+            mark.name = f"{dicoms_sd.name}_scan-{i}"
             mark.target_ids.append(dicoms_sd.events[i].id)
             mark.dicoms_isotime = dicoms_sd.events[i].isotime
             #mark.dicoms_duration = None
