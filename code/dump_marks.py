@@ -316,7 +316,8 @@ def build_model(session_id: str, path: str) -> DumpModel:
                          f"count: {sd.count}, "
                          f"interval: {sd.interval}, "
                          f"next_series_interval: {sd.next_series_interval}, "
-                         f"ids: {sd.events[0].id}..{sd.events[-1].id}")
+                         f"ids: {sd.events[0].id}..{sd.events[-1].id}, "
+                         f"time: {sd.events[0].isotime.strftime('%H:%M:%S')}--{sd.events[-1].isotime.strftime('%H:%M:%S')}")
 
     # dump series info and data
     for sl in m.swimlanes:

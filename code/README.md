@@ -144,7 +144,10 @@ Algorithm proposals for the ReproFlow time synchronization effort:
 - `ses-20240604`
   - produces most matches at this moment, but still some issues with psychopy, reprostim_video etc. 
 - `ses-20240809`
-  - under investigation, produces performance issues which partially are fixed, and swimlane matching issues. 
+  - under investigation, produces performance issues which partially are fixed, and swimlane matching issues.
+  - `birch` data for first 3 func scan x15 is omitted somehow and started from `008-func-bold_task-rest_acq-short1_run-04` at 10:27:12.
+  - `psychopy` data for first 3 func scan x15 is omitted somehow and started from `008-func-bold_task-rest_acq-short1_run-04` at 10:27:12.
+  - `psychopy\20240809_acq-med1_run-01.log` contains only 30 records rather than 150 ones. After manual inspection it looks like it's cutted in the middle of the scan at 10:39:06 rather than 10:43:06.
 
 ## TODO:
   - Use DataLad run to execute commands (https://handbook.datalad.org/en/latest/basics/basics-run.html)
