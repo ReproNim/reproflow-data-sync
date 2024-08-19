@@ -72,8 +72,10 @@ def dump_birch_file(session_id: str, path: str, range_start: datetime,
     lst_bit8: list = []
     for obj in safe_jsonl_reader(path):
         alink_byte = obj.get('alink_byte')
+        alink_flags = obj.get('alink_flags')
         # check alink_byte bit 8 is on e.g. 496
-        if alink_byte and (alink_byte & 0x100) !=0 : # and obj.get('alink_flags') == 3:
+        #if alink_byte and (alink_byte & 0x100) !=0 : # and obj.get('alink_flags') == 3:
+        if alink_flags and (alink_flags & 0x0001) != 0:
             iso_time = get_birch_isotime(obj)
             logger.debug(f"  {iso_time.isoformat()} {obj['alink_byte']} {obj['alink_flags']}")
             if range_start <= iso_time <= range_end:

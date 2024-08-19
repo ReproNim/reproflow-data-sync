@@ -1,9 +1,20 @@
 dump_marks.py tool
-Started on    : 2024-08-17 11:26:24.338972, vmelnik@Uranus
+Started on    : 2024-08-19 14:50:42.657370, vmelnik@Uranus
 Working dir   : /Users/vmelnik/Projects/Dartmouth/branches/reproflow-data-sync/code
 Session path  : /Users/vmelnik/Projects/Dartmouth/branches/typhon/reproflow-data-sync/ses-20240528
 Session ID    : ses-20240528
-Skip birch series (too small=3): ['birch-000001', 'birch-000002', 'birch-000003']
+Skip birch series (too small=1): ['birch-000001']
+Skip birch series (too small=1): ['birch-000002']
+Skip birch series (too small=1): ['birch-000003']
+Skip birch series (too small=1): ['birch-000004']
+Skip birch series (too small=1): ['birch-000005']
+Skip birch series (too small=1): ['birch-000006']
+Skip birch series (too small=1): ['birch-000007']
+Skip birch series (too small=1): ['birch-000008']
+Skip birch series (too small=1): ['birch-000009']
+Skip birch series (too small=3): ['birch-000010', 'birch-000011', 'birch-000012']
+Skip birch series (too small=1): ['birch-000028']
+Skip birch series (too small=1): ['birch-000044']
 Skip qrinfo series (too small=1): ['qrinfo-000001']
 Skip qrinfo series (too small=1): ['qrinfo-000002']
 Skip qrinfo series (too small=1): ['qrinfo-000003']
@@ -27,8 +38,8 @@ Swimlane: dicoms
   Series: 007-func-bold_task-rest_run-2, count: 15, interval: 2.0, next_series_interval: 0.0, ids: dicoms-000157..dicoms-000171
 Swimlane: birch
   Found 2 birch series
-  Series: birch-series-1, count: 15, interval: 2.0007914285714286, next_series_interval: 108.232684, ids: birch-000004..birch-000018
-  Series: birch-series-2, count: 15, interval: 2.0003748571428575, next_series_interval: 0, ids: birch-000019..birch-000033
+  Series: birch-series-1, count: 15, interval: 1.999762142857143, next_series_interval: 108.242786, ids: birch-000013..birch-000027
+  Series: birch-series-2, count: 15, interval: 1.999504642857143, next_series_interval: 0, ids: birch-000029..birch-000043
 Swimlane: qrinfo
   Found 1 qrinfo series
   Series: qrinfo-series-1, count: 15, interval: 1.9821428571428572, next_series_interval: 0, ids: qrinfo-000009..qrinfo-000023
@@ -42,8 +53,8 @@ Swimlane: reproevents
 dicoms.005-func-bold_task-rest_run-1 : ['dicoms-000140', 'dicoms-000141']
 dicoms.006-func-bold_task-rest_run-1 : ['dicoms-000142', 'dicoms-000143', 'dicoms-000144', 'dicoms-000145', 'dicoms-000146', 'dicoms-000147', 'dicoms-000148', 'dicoms-000149', 'dicoms-000150', 'dicoms-000151', 'dicoms-000152', 'dicoms-000153', 'dicoms-000154', 'dicoms-000155', 'dicoms-000156']
 dicoms.007-func-bold_task-rest_run-2 : ['dicoms-000157', 'dicoms-000158', 'dicoms-000159', 'dicoms-000160', 'dicoms-000161', 'dicoms-000162', 'dicoms-000163', 'dicoms-000164', 'dicoms-000165', 'dicoms-000166', 'dicoms-000167', 'dicoms-000168', 'dicoms-000169', 'dicoms-000170', 'dicoms-000171']
-birch.birch-series-1 : ['birch-000004', 'birch-000005', 'birch-000006', 'birch-000007', 'birch-000008', 'birch-000009', 'birch-000010', 'birch-000011', 'birch-000012', 'birch-000013', 'birch-000014', 'birch-000015', 'birch-000016', 'birch-000017', 'birch-000018']
-birch.birch-series-2 : ['birch-000019', 'birch-000020', 'birch-000021', 'birch-000022', 'birch-000023', 'birch-000024', 'birch-000025', 'birch-000026', 'birch-000027', 'birch-000028', 'birch-000029', 'birch-000030', 'birch-000031', 'birch-000032', 'birch-000033']
+birch.birch-series-1 : ['birch-000013', 'birch-000014', 'birch-000015', 'birch-000016', 'birch-000017', 'birch-000018', 'birch-000019', 'birch-000020', 'birch-000021', 'birch-000022', 'birch-000023', 'birch-000024', 'birch-000025', 'birch-000026', 'birch-000027']
+birch.birch-series-2 : ['birch-000029', 'birch-000030', 'birch-000031', 'birch-000032', 'birch-000033', 'birch-000034', 'birch-000035', 'birch-000036', 'birch-000037', 'birch-000038', 'birch-000039', 'birch-000040', 'birch-000041', 'birch-000042', 'birch-000043']
 qrinfo.qrinfo-series-1 : ['qrinfo-000009', 'qrinfo-000010', 'qrinfo-000011', 'qrinfo-000012', 'qrinfo-000013', 'qrinfo-000014', 'qrinfo-000015', 'qrinfo-000016', 'qrinfo-000017', 'qrinfo-000018', 'qrinfo-000019', 'qrinfo-000020', 'qrinfo-000021', 'qrinfo-000022', 'qrinfo-000023']
 psychopy.psychopy-series-1 : ['psychopy-000010', 'psychopy-000011', 'psychopy-000012', 'psychopy-000013', 'psychopy-000014', 'psychopy-000015', 'psychopy-000016', 'psychopy-000017', 'psychopy-000018', 'psychopy-000019', 'psychopy-000020', 'psychopy-000021', 'psychopy-000022', 'psychopy-000023', 'psychopy-000024']
 reproevents.reproevents-series-1 : ['reproevents-000004', 'reproevents-000005', 'reproevents-000006', 'reproevents-000007', 'reproevents-000008', 'reproevents-000009', 'reproevents-000010', 'reproevents-000011', 'reproevents-000012', 'reproevents-000013', 'reproevents-000014', 'reproevents-000015', 'reproevents-000016', 'reproevents-000017', 'reproevents-000018']
@@ -53,24 +64,24 @@ reproevents.reproevents-series-2 : ['reproevents-000019', 'reproevents-000020', 
 {"type":"MarkRecord","session_id":"ses-20240528","id":"mark-000003","kind":"Func series scan","name":"005-func-bold_task-rest_run-1_scan-1","target_ids":["dicoms-000141"],"dicoms_isotime":"2024-05-28T11:12:41.707500","dicoms_duration":null,"birch_isotime":null,"birch_duration":null,"qrinfo_isotime":null,"qrinfo_duration":null,"psychopy_isotime":null,"psychopy_duration":null,"reproevents_isotime":null,"reproevents_duration":null}
 Mark: type='MarkRecord' session_id='ses-20240528' id='mark-000004' kind='Func series end' name='005-func-bold_task-rest_run-1_end' target_ids=['dicoms-000141'] dicoms_isotime=Timestamp('2024-05-28 11:12:41.707500') dicoms_duration=None birch_isotime=None birch_duration=None qrinfo_isotime=None qrinfo_duration=None psychopy_isotime=None psychopy_duration=None reproevents_isotime=None reproevents_duration=None
 {"type":"MarkRecord","session_id":"ses-20240528","id":"mark-000004","kind":"Func series end","name":"005-func-bold_task-rest_run-1_end","target_ids":["dicoms-000141"],"dicoms_isotime":"2024-05-28T11:12:41.707500","dicoms_duration":null,"birch_isotime":null,"birch_duration":null,"qrinfo_isotime":null,"qrinfo_duration":null,"psychopy_isotime":null,"psychopy_duration":null,"reproevents_isotime":null,"reproevents_duration":null}
-{"type":"MarkRecord","session_id":"ses-20240528","id":"mark-000005","kind":"Func series start","name":"006-func-bold_task-rest_run-1_start","target_ids":["dicoms-000142","birch-000004","reproevents-000004"],"dicoms_isotime":"2024-05-28T11:13:22.495000","dicoms_duration":28.0,"birch_isotime":"2024-05-28T11:07:12.377772","birch_duration":28.01108,"qrinfo_isotime":null,"qrinfo_duration":null,"psychopy_isotime":null,"psychopy_duration":null,"reproevents_isotime":"2024-05-28T11:07:12.383346","reproevents_duration":28.000038}
-{"type":"MarkRecord","session_id":"ses-20240528","id":"mark-000006","kind":"Func series scan","name":"006-func-bold_task-rest_run-1_scan-0","target_ids":["dicoms-000142","birch-000004","reproevents-000004"],"dicoms_isotime":"2024-05-28T11:13:22.495000","dicoms_duration":null,"birch_isotime":"2024-05-28T11:07:12.377772","birch_duration":null,"qrinfo_isotime":null,"qrinfo_duration":null,"psychopy_isotime":null,"psychopy_duration":null,"reproevents_isotime":"2024-05-28T11:07:12.383346","reproevents_duration":null}
-{"type":"MarkRecord","session_id":"ses-20240528","id":"mark-000007","kind":"Func series scan","name":"006-func-bold_task-rest_run-1_scan-1","target_ids":["dicoms-000143","birch-000005","reproevents-000005"],"dicoms_isotime":"2024-05-28T11:13:24.495000","dicoms_duration":null,"birch_isotime":"2024-05-28T11:07:14.382652","birch_duration":null,"qrinfo_isotime":null,"qrinfo_duration":null,"psychopy_isotime":null,"psychopy_duration":null,"reproevents_isotime":"2024-05-28T11:07:14.383460","reproevents_duration":null}
-{"type":"MarkRecord","session_id":"ses-20240528","id":"mark-000008","kind":"Func series scan","name":"006-func-bold_task-rest_run-1_scan-2","target_ids":["dicoms-000144","birch-000006","reproevents-000006"],"dicoms_isotime":"2024-05-28T11:13:26.495000","dicoms_duration":null,"birch_isotime":"2024-05-28T11:07:16.378552","birch_duration":null,"qrinfo_isotime":null,"qrinfo_duration":null,"psychopy_isotime":null,"psychopy_duration":null,"reproevents_isotime":"2024-05-28T11:07:16.383363","reproevents_duration":null}
-{"type":"MarkRecord","session_id":"ses-20240528","id":"mark-000009","kind":"Func series scan","name":"006-func-bold_task-rest_run-1_scan-3","target_ids":["dicoms-000145","birch-000007","reproevents-000007"],"dicoms_isotime":"2024-05-28T11:13:28.495000","dicoms_duration":null,"birch_isotime":"2024-05-28T11:07:18.384913","birch_duration":null,"qrinfo_isotime":null,"qrinfo_duration":null,"psychopy_isotime":null,"psychopy_duration":null,"reproevents_isotime":"2024-05-28T11:07:18.383377","reproevents_duration":null}
-{"type":"MarkRecord","session_id":"ses-20240528","id":"mark-000010","kind":"Func series scan","name":"006-func-bold_task-rest_run-1_scan-4","target_ids":["dicoms-000146","birch-000008","reproevents-000008"],"dicoms_isotime":"2024-05-28T11:13:30.495000","dicoms_duration":null,"birch_isotime":"2024-05-28T11:07:20.380289","birch_duration":null,"qrinfo_isotime":null,"qrinfo_duration":null,"psychopy_isotime":null,"psychopy_duration":null,"reproevents_isotime":"2024-05-28T11:07:20.383329","reproevents_duration":null}
-{"type":"MarkRecord","session_id":"ses-20240528","id":"mark-000011","kind":"Func series scan","name":"006-func-bold_task-rest_run-1_scan-5","target_ids":["dicoms-000147","birch-000009","reproevents-000009"],"dicoms_isotime":"2024-05-28T11:13:32.495000","dicoms_duration":null,"birch_isotime":"2024-05-28T11:07:22.385893","birch_duration":null,"qrinfo_isotime":null,"qrinfo_duration":null,"psychopy_isotime":null,"psychopy_duration":null,"reproevents_isotime":"2024-05-28T11:07:22.383473","reproevents_duration":null}
-{"type":"MarkRecord","session_id":"ses-20240528","id":"mark-000012","kind":"Func series scan","name":"006-func-bold_task-rest_run-1_scan-6","target_ids":["dicoms-000148","birch-000010","reproevents-000010"],"dicoms_isotime":"2024-05-28T11:13:34.495000","dicoms_duration":null,"birch_isotime":"2024-05-28T11:07:24.389291","birch_duration":null,"qrinfo_isotime":null,"qrinfo_duration":null,"psychopy_isotime":null,"psychopy_duration":null,"reproevents_isotime":"2024-05-28T11:07:24.383348","reproevents_duration":null}
-{"type":"MarkRecord","session_id":"ses-20240528","id":"mark-000013","kind":"Func series scan","name":"006-func-bold_task-rest_run-1_scan-7","target_ids":["dicoms-000149","birch-000011","reproevents-000011"],"dicoms_isotime":"2024-05-28T11:13:36.495000","dicoms_duration":null,"birch_isotime":"2024-05-28T11:07:26.379962","birch_duration":null,"qrinfo_isotime":null,"qrinfo_duration":null,"psychopy_isotime":null,"psychopy_duration":null,"reproevents_isotime":"2024-05-28T11:07:26.383453","reproevents_duration":null}
-{"type":"MarkRecord","session_id":"ses-20240528","id":"mark-000014","kind":"Func series scan","name":"006-func-bold_task-rest_run-1_scan-8","target_ids":["dicoms-000150","birch-000012","reproevents-000012"],"dicoms_isotime":"2024-05-28T11:13:38.495000","dicoms_duration":null,"birch_isotime":"2024-05-28T11:07:28.381586","birch_duration":null,"qrinfo_isotime":null,"qrinfo_duration":null,"psychopy_isotime":null,"psychopy_duration":null,"reproevents_isotime":"2024-05-28T11:07:28.383434","reproevents_duration":null}
-{"type":"MarkRecord","session_id":"ses-20240528","id":"mark-000015","kind":"Func series scan","name":"006-func-bold_task-rest_run-1_scan-9","target_ids":["dicoms-000151","birch-000013","reproevents-000013"],"dicoms_isotime":"2024-05-28T11:13:40.495000","dicoms_duration":null,"birch_isotime":"2024-05-28T11:07:30.389523","birch_duration":null,"qrinfo_isotime":null,"qrinfo_duration":null,"psychopy_isotime":null,"psychopy_duration":null,"reproevents_isotime":"2024-05-28T11:07:30.383448","reproevents_duration":null}
-{"type":"MarkRecord","session_id":"ses-20240528","id":"mark-000016","kind":"Func series scan","name":"006-func-bold_task-rest_run-1_scan-10","target_ids":["dicoms-000152","birch-000014","reproevents-000014"],"dicoms_isotime":"2024-05-28T11:13:42.495000","dicoms_duration":null,"birch_isotime":"2024-05-28T11:07:32.377277","birch_duration":null,"qrinfo_isotime":null,"qrinfo_duration":null,"psychopy_isotime":null,"psychopy_duration":null,"reproevents_isotime":"2024-05-28T11:07:32.383446","reproevents_duration":null}
-{"type":"MarkRecord","session_id":"ses-20240528","id":"mark-000017","kind":"Func series scan","name":"006-func-bold_task-rest_run-1_scan-11","target_ids":["dicoms-000153","birch-000015","reproevents-000015"],"dicoms_isotime":"2024-05-28T11:13:44.495000","dicoms_duration":null,"birch_isotime":"2024-05-28T11:07:34.382613","birch_duration":null,"qrinfo_isotime":null,"qrinfo_duration":null,"psychopy_isotime":null,"psychopy_duration":null,"reproevents_isotime":"2024-05-28T11:07:34.383427","reproevents_duration":null}
-{"type":"MarkRecord","session_id":"ses-20240528","id":"mark-000018","kind":"Func series scan","name":"006-func-bold_task-rest_run-1_scan-12","target_ids":["dicoms-000154","birch-000016","reproevents-000016"],"dicoms_isotime":"2024-05-28T11:13:46.495000","dicoms_duration":null,"birch_isotime":"2024-05-28T11:07:36.389740","birch_duration":null,"qrinfo_isotime":null,"qrinfo_duration":null,"psychopy_isotime":null,"psychopy_duration":null,"reproevents_isotime":"2024-05-28T11:07:36.383415","reproevents_duration":null}
-{"type":"MarkRecord","session_id":"ses-20240528","id":"mark-000019","kind":"Func series scan","name":"006-func-bold_task-rest_run-1_scan-13","target_ids":["dicoms-000155","birch-000017","reproevents-000017"],"dicoms_isotime":"2024-05-28T11:13:48.495000","dicoms_duration":null,"birch_isotime":"2024-05-28T11:07:38.383853","birch_duration":null,"qrinfo_isotime":null,"qrinfo_duration":null,"psychopy_isotime":null,"psychopy_duration":null,"reproevents_isotime":"2024-05-28T11:07:38.383385","reproevents_duration":null}
-{"type":"MarkRecord","session_id":"ses-20240528","id":"mark-000020","kind":"Func series scan","name":"006-func-bold_task-rest_run-1_scan-14","target_ids":["dicoms-000156","birch-000018","reproevents-000018"],"dicoms_isotime":"2024-05-28T11:13:50.495000","dicoms_duration":null,"birch_isotime":"2024-05-28T11:07:40.388852","birch_duration":null,"qrinfo_isotime":null,"qrinfo_duration":null,"psychopy_isotime":null,"psychopy_duration":null,"reproevents_isotime":"2024-05-28T11:07:40.383384","reproevents_duration":null}
+{"type":"MarkRecord","session_id":"ses-20240528","id":"mark-000005","kind":"Func series start","name":"006-func-bold_task-rest_run-1_start","target_ids":["dicoms-000142","birch-000013","reproevents-000004"],"dicoms_isotime":"2024-05-28T11:13:22.495000","dicoms_duration":28.0,"birch_isotime":"2024-05-28T11:07:12.404886","birch_duration":27.99667,"qrinfo_isotime":null,"qrinfo_duration":null,"psychopy_isotime":null,"psychopy_duration":null,"reproevents_isotime":"2024-05-28T11:07:12.383346","reproevents_duration":28.000038}
+{"type":"MarkRecord","session_id":"ses-20240528","id":"mark-000006","kind":"Func series scan","name":"006-func-bold_task-rest_run-1_scan-0","target_ids":["dicoms-000142","birch-000013","reproevents-000004"],"dicoms_isotime":"2024-05-28T11:13:22.495000","dicoms_duration":null,"birch_isotime":"2024-05-28T11:07:12.404886","birch_duration":null,"qrinfo_isotime":null,"qrinfo_duration":null,"psychopy_isotime":null,"psychopy_duration":null,"reproevents_isotime":"2024-05-28T11:07:12.383346","reproevents_duration":null}
+{"type":"MarkRecord","session_id":"ses-20240528","id":"mark-000007","kind":"Func series scan","name":"006-func-bold_task-rest_run-1_scan-1","target_ids":["dicoms-000143","birch-000014","reproevents-000005"],"dicoms_isotime":"2024-05-28T11:13:24.495000","dicoms_duration":null,"birch_isotime":"2024-05-28T11:07:14.397601","birch_duration":null,"qrinfo_isotime":null,"qrinfo_duration":null,"psychopy_isotime":null,"psychopy_duration":null,"reproevents_isotime":"2024-05-28T11:07:14.383460","reproevents_duration":null}
+{"type":"MarkRecord","session_id":"ses-20240528","id":"mark-000008","kind":"Func series scan","name":"006-func-bold_task-rest_run-1_scan-2","target_ids":["dicoms-000144","birch-000015","reproevents-000006"],"dicoms_isotime":"2024-05-28T11:13:26.495000","dicoms_duration":null,"birch_isotime":"2024-05-28T11:07:16.433616","birch_duration":null,"qrinfo_isotime":null,"qrinfo_duration":null,"psychopy_isotime":null,"psychopy_duration":null,"reproevents_isotime":"2024-05-28T11:07:16.383363","reproevents_duration":null}
+{"type":"MarkRecord","session_id":"ses-20240528","id":"mark-000009","kind":"Func series scan","name":"006-func-bold_task-rest_run-1_scan-3","target_ids":["dicoms-000145","birch-000016","reproevents-000007"],"dicoms_isotime":"2024-05-28T11:13:28.495000","dicoms_duration":null,"birch_isotime":"2024-05-28T11:07:18.428178","birch_duration":null,"qrinfo_isotime":null,"qrinfo_duration":null,"psychopy_isotime":null,"psychopy_duration":null,"reproevents_isotime":"2024-05-28T11:07:18.383377","reproevents_duration":null}
+{"type":"MarkRecord","session_id":"ses-20240528","id":"mark-000010","kind":"Func series scan","name":"006-func-bold_task-rest_run-1_scan-4","target_ids":["dicoms-000146","birch-000017","reproevents-000008"],"dicoms_isotime":"2024-05-28T11:13:30.495000","dicoms_duration":null,"birch_isotime":"2024-05-28T11:07:20.422900","birch_duration":null,"qrinfo_isotime":null,"qrinfo_duration":null,"psychopy_isotime":null,"psychopy_duration":null,"reproevents_isotime":"2024-05-28T11:07:20.383329","reproevents_duration":null}
+{"type":"MarkRecord","session_id":"ses-20240528","id":"mark-000011","kind":"Func series scan","name":"006-func-bold_task-rest_run-1_scan-5","target_ids":["dicoms-000147","birch-000018","reproevents-000009"],"dicoms_isotime":"2024-05-28T11:13:32.495000","dicoms_duration":null,"birch_isotime":"2024-05-28T11:07:22.398704","birch_duration":null,"qrinfo_isotime":null,"qrinfo_duration":null,"psychopy_isotime":null,"psychopy_duration":null,"reproevents_isotime":"2024-05-28T11:07:22.383473","reproevents_duration":null}
+{"type":"MarkRecord","session_id":"ses-20240528","id":"mark-000012","kind":"Func series scan","name":"006-func-bold_task-rest_run-1_scan-6","target_ids":["dicoms-000148","birch-000019","reproevents-000010"],"dicoms_isotime":"2024-05-28T11:13:34.495000","dicoms_duration":null,"birch_isotime":"2024-05-28T11:07:24.402219","birch_duration":null,"qrinfo_isotime":null,"qrinfo_duration":null,"psychopy_isotime":null,"psychopy_duration":null,"reproevents_isotime":"2024-05-28T11:07:24.383348","reproevents_duration":null}
+{"type":"MarkRecord","session_id":"ses-20240528","id":"mark-000013","kind":"Func series scan","name":"006-func-bold_task-rest_run-1_scan-7","target_ids":["dicoms-000149","birch-000020","reproevents-000011"],"dicoms_isotime":"2024-05-28T11:13:36.495000","dicoms_duration":null,"birch_isotime":"2024-05-28T11:07:26.405085","birch_duration":null,"qrinfo_isotime":null,"qrinfo_duration":null,"psychopy_isotime":null,"psychopy_duration":null,"reproevents_isotime":"2024-05-28T11:07:26.383453","reproevents_duration":null}
+{"type":"MarkRecord","session_id":"ses-20240528","id":"mark-000014","kind":"Func series scan","name":"006-func-bold_task-rest_run-1_scan-8","target_ids":["dicoms-000150","birch-000021","reproevents-000012"],"dicoms_isotime":"2024-05-28T11:13:38.495000","dicoms_duration":null,"birch_isotime":"2024-05-28T11:07:28.408813","birch_duration":null,"qrinfo_isotime":null,"qrinfo_duration":null,"psychopy_isotime":null,"psychopy_duration":null,"reproevents_isotime":"2024-05-28T11:07:28.383434","reproevents_duration":null}
+{"type":"MarkRecord","session_id":"ses-20240528","id":"mark-000015","kind":"Func series scan","name":"006-func-bold_task-rest_run-1_scan-9","target_ids":["dicoms-000151","birch-000022","reproevents-000013"],"dicoms_isotime":"2024-05-28T11:13:40.495000","dicoms_duration":null,"birch_isotime":"2024-05-28T11:07:30.402382","birch_duration":null,"qrinfo_isotime":null,"qrinfo_duration":null,"psychopy_isotime":null,"psychopy_duration":null,"reproevents_isotime":"2024-05-28T11:07:30.383448","reproevents_duration":null}
+{"type":"MarkRecord","session_id":"ses-20240528","id":"mark-000016","kind":"Func series scan","name":"006-func-bold_task-rest_run-1_scan-10","target_ids":["dicoms-000152","birch-000023","reproevents-000014"],"dicoms_isotime":"2024-05-28T11:13:42.495000","dicoms_duration":null,"birch_isotime":"2024-05-28T11:07:32.402399","birch_duration":null,"qrinfo_isotime":null,"qrinfo_duration":null,"psychopy_isotime":null,"psychopy_duration":null,"reproevents_isotime":"2024-05-28T11:07:32.383446","reproevents_duration":null}
+{"type":"MarkRecord","session_id":"ses-20240528","id":"mark-000017","kind":"Func series scan","name":"006-func-bold_task-rest_run-1_scan-11","target_ids":["dicoms-000153","birch-000024","reproevents-000015"],"dicoms_isotime":"2024-05-28T11:13:44.495000","dicoms_duration":null,"birch_isotime":"2024-05-28T11:07:34.409559","birch_duration":null,"qrinfo_isotime":null,"qrinfo_duration":null,"psychopy_isotime":null,"psychopy_duration":null,"reproevents_isotime":"2024-05-28T11:07:34.383427","reproevents_duration":null}
+{"type":"MarkRecord","session_id":"ses-20240528","id":"mark-000018","kind":"Func series scan","name":"006-func-bold_task-rest_run-1_scan-12","target_ids":["dicoms-000154","birch-000025","reproevents-000016"],"dicoms_isotime":"2024-05-28T11:13:46.495000","dicoms_duration":null,"birch_isotime":"2024-05-28T11:07:36.402583","birch_duration":null,"qrinfo_isotime":null,"qrinfo_duration":null,"psychopy_isotime":null,"psychopy_duration":null,"reproevents_isotime":"2024-05-28T11:07:36.383415","reproevents_duration":null}
+{"type":"MarkRecord","session_id":"ses-20240528","id":"mark-000019","kind":"Func series scan","name":"006-func-bold_task-rest_run-1_scan-13","target_ids":["dicoms-000155","birch-000026","reproevents-000017"],"dicoms_isotime":"2024-05-28T11:13:48.495000","dicoms_duration":null,"birch_isotime":"2024-05-28T11:07:38.408850","birch_duration":null,"qrinfo_isotime":null,"qrinfo_duration":null,"psychopy_isotime":null,"psychopy_duration":null,"reproevents_isotime":"2024-05-28T11:07:38.383385","reproevents_duration":null}
+{"type":"MarkRecord","session_id":"ses-20240528","id":"mark-000020","kind":"Func series scan","name":"006-func-bold_task-rest_run-1_scan-14","target_ids":["dicoms-000156","birch-000027","reproevents-000018"],"dicoms_isotime":"2024-05-28T11:13:50.495000","dicoms_duration":null,"birch_isotime":"2024-05-28T11:07:40.401556","birch_duration":null,"qrinfo_isotime":null,"qrinfo_duration":null,"psychopy_isotime":null,"psychopy_duration":null,"reproevents_isotime":"2024-05-28T11:07:40.383384","reproevents_duration":null}
 Mark: type='MarkRecord' session_id='ses-20240528' id='mark-000021' kind='Func series end' name='006-func-bold_task-rest_run-1_end' target_ids=['dicoms-000156'] dicoms_isotime=Timestamp('2024-05-28 11:13:50.495000') dicoms_duration=None birch_isotime=None birch_duration=None qrinfo_isotime=None qrinfo_duration=None psychopy_isotime=None psychopy_duration=None reproevents_isotime=None reproevents_duration=None
-{"type":"MarkRecord","session_id":"ses-20240528","id":"mark-000021","kind":"Func series end","name":"006-func-bold_task-rest_run-1_end","target_ids":["dicoms-000156","birch-000018","reproevents-000018"],"dicoms_isotime":"2024-05-28T11:13:50.495000","dicoms_duration":null,"birch_isotime":"2024-05-28T11:07:40.388852","birch_duration":null,"qrinfo_isotime":null,"qrinfo_duration":null,"psychopy_isotime":null,"psychopy_duration":null,"reproevents_isotime":"2024-05-28T11:07:40.383384","reproevents_duration":null}
+{"type":"MarkRecord","session_id":"ses-20240528","id":"mark-000021","kind":"Func series end","name":"006-func-bold_task-rest_run-1_end","target_ids":["dicoms-000156","birch-000027","reproevents-000018"],"dicoms_isotime":"2024-05-28T11:13:50.495000","dicoms_duration":null,"birch_isotime":"2024-05-28T11:07:40.401556","birch_duration":null,"qrinfo_isotime":null,"qrinfo_duration":null,"psychopy_isotime":null,"psychopy_duration":null,"reproevents_isotime":"2024-05-28T11:07:40.383384","reproevents_duration":null}
 {"type":"MarkRecord","session_id":"ses-20240528","id":"mark-000022","kind":"Func series start","name":"007-func-bold_task-rest_run-2_start","target_ids":["dicoms-000157"],"dicoms_isotime":"2024-05-28T11:15:11.502500","dicoms_duration":28.0,"birch_isotime":null,"birch_duration":null,"qrinfo_isotime":null,"qrinfo_duration":null,"psychopy_isotime":null,"psychopy_duration":null,"reproevents_isotime":null,"reproevents_duration":null}
 {"type":"MarkRecord","session_id":"ses-20240528","id":"mark-000023","kind":"Func series scan","name":"007-func-bold_task-rest_run-2_scan-0","target_ids":["dicoms-000157"],"dicoms_isotime":"2024-05-28T11:15:11.502500","dicoms_duration":null,"birch_isotime":null,"birch_duration":null,"qrinfo_isotime":null,"qrinfo_duration":null,"psychopy_isotime":null,"psychopy_duration":null,"reproevents_isotime":null,"reproevents_duration":null}
 {"type":"MarkRecord","session_id":"ses-20240528","id":"mark-000024","kind":"Func series scan","name":"007-func-bold_task-rest_run-2_scan-1","target_ids":["dicoms-000158"],"dicoms_isotime":"2024-05-28T11:15:13.502500","dicoms_duration":null,"birch_isotime":null,"birch_duration":null,"qrinfo_isotime":null,"qrinfo_duration":null,"psychopy_isotime":null,"psychopy_duration":null,"reproevents_isotime":null,"reproevents_duration":null}
@@ -89,29 +100,29 @@ Mark: type='MarkRecord' session_id='ses-20240528' id='mark-000021' kind='Func se
 {"type":"MarkRecord","session_id":"ses-20240528","id":"mark-000037","kind":"Func series scan","name":"007-func-bold_task-rest_run-2_scan-14","target_ids":["dicoms-000171"],"dicoms_isotime":"2024-05-28T11:15:39.502500","dicoms_duration":null,"birch_isotime":null,"birch_duration":null,"qrinfo_isotime":null,"qrinfo_duration":null,"psychopy_isotime":null,"psychopy_duration":null,"reproevents_isotime":null,"reproevents_duration":null}
 Mark: type='MarkRecord' session_id='ses-20240528' id='mark-000038' kind='Func series end' name='007-func-bold_task-rest_run-2_end' target_ids=['dicoms-000171'] dicoms_isotime=Timestamp('2024-05-28 11:15:39.502500') dicoms_duration=None birch_isotime=None birch_duration=None qrinfo_isotime=None qrinfo_duration=None psychopy_isotime=None psychopy_duration=None reproevents_isotime=None reproevents_duration=None
 {"type":"MarkRecord","session_id":"ses-20240528","id":"mark-000038","kind":"Func series end","name":"007-func-bold_task-rest_run-2_end","target_ids":["dicoms-000171"],"dicoms_isotime":"2024-05-28T11:15:39.502500","dicoms_duration":null,"birch_isotime":null,"birch_duration":null,"qrinfo_isotime":null,"qrinfo_duration":null,"psychopy_isotime":null,"psychopy_duration":null,"reproevents_isotime":null,"reproevents_duration":null}
-Dicoms offsets: {'birch-series-1': 370.117228, 'reproevents-series-1': 370.111654}
+Dicoms offsets: {'birch-series-1': 370.090114, 'reproevents-series-1': 370.111654}
 Generated marks after pass 1, done:
   mark-000001 : ['dicoms-000140']
   mark-000002 : ['dicoms-000140']
   mark-000003 : ['dicoms-000141']
   mark-000004 : ['dicoms-000141']
-  mark-000005 : ['dicoms-000142', 'birch-000004', 'reproevents-000004']
-  mark-000006 : ['dicoms-000142', 'birch-000004', 'reproevents-000004']
-  mark-000007 : ['dicoms-000143', 'birch-000005', 'reproevents-000005']
-  mark-000008 : ['dicoms-000144', 'birch-000006', 'reproevents-000006']
-  mark-000009 : ['dicoms-000145', 'birch-000007', 'reproevents-000007']
-  mark-000010 : ['dicoms-000146', 'birch-000008', 'reproevents-000008']
-  mark-000011 : ['dicoms-000147', 'birch-000009', 'reproevents-000009']
-  mark-000012 : ['dicoms-000148', 'birch-000010', 'reproevents-000010']
-  mark-000013 : ['dicoms-000149', 'birch-000011', 'reproevents-000011']
-  mark-000014 : ['dicoms-000150', 'birch-000012', 'reproevents-000012']
-  mark-000015 : ['dicoms-000151', 'birch-000013', 'reproevents-000013']
-  mark-000016 : ['dicoms-000152', 'birch-000014', 'reproevents-000014']
-  mark-000017 : ['dicoms-000153', 'birch-000015', 'reproevents-000015']
-  mark-000018 : ['dicoms-000154', 'birch-000016', 'reproevents-000016']
-  mark-000019 : ['dicoms-000155', 'birch-000017', 'reproevents-000017']
-  mark-000020 : ['dicoms-000156', 'birch-000018', 'reproevents-000018']
-  mark-000021 : ['dicoms-000156', 'birch-000018', 'reproevents-000018']
+  mark-000005 : ['dicoms-000142', 'birch-000013', 'reproevents-000004']
+  mark-000006 : ['dicoms-000142', 'birch-000013', 'reproevents-000004']
+  mark-000007 : ['dicoms-000143', 'birch-000014', 'reproevents-000005']
+  mark-000008 : ['dicoms-000144', 'birch-000015', 'reproevents-000006']
+  mark-000009 : ['dicoms-000145', 'birch-000016', 'reproevents-000007']
+  mark-000010 : ['dicoms-000146', 'birch-000017', 'reproevents-000008']
+  mark-000011 : ['dicoms-000147', 'birch-000018', 'reproevents-000009']
+  mark-000012 : ['dicoms-000148', 'birch-000019', 'reproevents-000010']
+  mark-000013 : ['dicoms-000149', 'birch-000020', 'reproevents-000011']
+  mark-000014 : ['dicoms-000150', 'birch-000021', 'reproevents-000012']
+  mark-000015 : ['dicoms-000151', 'birch-000022', 'reproevents-000013']
+  mark-000016 : ['dicoms-000152', 'birch-000023', 'reproevents-000014']
+  mark-000017 : ['dicoms-000153', 'birch-000024', 'reproevents-000015']
+  mark-000018 : ['dicoms-000154', 'birch-000025', 'reproevents-000016']
+  mark-000019 : ['dicoms-000155', 'birch-000026', 'reproevents-000017']
+  mark-000020 : ['dicoms-000156', 'birch-000027', 'reproevents-000018']
+  mark-000021 : ['dicoms-000156', 'birch-000027', 'reproevents-000018']
   mark-000022 : ['dicoms-000157']
   mark-000023 : ['dicoms-000157']
   mark-000024 : ['dicoms-000158']
@@ -131,160 +142,160 @@ Generated marks after pass 1, done:
   mark-000038 : ['dicoms-000171']
 Try to match marks with tmap service
 Time matched : 006-func-bold_task-rest_run-1_scan-1
-             : 0.005157 sec, (2024-05-28 11:07:12.377772 - 2024-05-28 11:07:12.372615)
+             : 0.032271 sec, (2024-05-28 11:07:12.404886 - 2024-05-28 11:07:12.372615)
              : dicoms-000143 = 2024-05-28 11:13:24.495000
-             : birch-000004 = 2024-05-28 11:07:12.372615
-             : set birch_isotime = 2024-05-28 11:07:12.377772
+             : birch-000013 = 2024-05-28 11:07:12.372615
+             : set birch_isotime = 2024-05-28 11:07:12.404886
 Time matched : 006-func-bold_task-rest_run-1_scan-1
              : 0.018685 sec, (2024-05-28 11:07:12.383346 - 2024-05-28 11:07:12.364661)
              : dicoms-000143 = 2024-05-28 11:13:24.495000
              : reproevents-000004 = 2024-05-28 11:07:12.364661
              : set reproevents_isotime = 2024-05-28 11:07:12.383346
 Time matched : 006-func-bold_task-rest_run-1_scan-2
-             : 0.010037 sec, (2024-05-28 11:07:14.382652 - 2024-05-28 11:07:14.372615)
+             : 0.024986 sec, (2024-05-28 11:07:14.397601 - 2024-05-28 11:07:14.372615)
              : dicoms-000144 = 2024-05-28 11:13:26.495000
-             : birch-000005 = 2024-05-28 11:07:14.372615
-             : set birch_isotime = 2024-05-28 11:07:14.382652
+             : birch-000014 = 2024-05-28 11:07:14.372615
+             : set birch_isotime = 2024-05-28 11:07:14.397601
 Time matched : 006-func-bold_task-rest_run-1_scan-2
              : 0.018799 sec, (2024-05-28 11:07:14.383460 - 2024-05-28 11:07:14.364661)
              : dicoms-000144 = 2024-05-28 11:13:26.495000
              : reproevents-000005 = 2024-05-28 11:07:14.364661
              : set reproevents_isotime = 2024-05-28 11:07:14.383460
 Time matched : 006-func-bold_task-rest_run-1_scan-3
-             : 0.005937 sec, (2024-05-28 11:07:16.378552 - 2024-05-28 11:07:16.372615)
+             : 0.061001 sec, (2024-05-28 11:07:16.433616 - 2024-05-28 11:07:16.372615)
              : dicoms-000145 = 2024-05-28 11:13:28.495000
-             : birch-000006 = 2024-05-28 11:07:16.372615
-             : set birch_isotime = 2024-05-28 11:07:16.378552
+             : birch-000015 = 2024-05-28 11:07:16.372615
+             : set birch_isotime = 2024-05-28 11:07:16.433616
 Time matched : 006-func-bold_task-rest_run-1_scan-3
              : 0.018702 sec, (2024-05-28 11:07:16.383363 - 2024-05-28 11:07:16.364661)
              : dicoms-000145 = 2024-05-28 11:13:28.495000
              : reproevents-000006 = 2024-05-28 11:07:16.364661
              : set reproevents_isotime = 2024-05-28 11:07:16.383363
 Time matched : 006-func-bold_task-rest_run-1_scan-4
-             : 0.012298 sec, (2024-05-28 11:07:18.384913 - 2024-05-28 11:07:18.372615)
+             : 0.055563 sec, (2024-05-28 11:07:18.428178 - 2024-05-28 11:07:18.372615)
              : dicoms-000146 = 2024-05-28 11:13:30.495000
-             : birch-000007 = 2024-05-28 11:07:18.372615
-             : set birch_isotime = 2024-05-28 11:07:18.384913
+             : birch-000016 = 2024-05-28 11:07:18.372615
+             : set birch_isotime = 2024-05-28 11:07:18.428178
 Time matched : 006-func-bold_task-rest_run-1_scan-4
              : 0.018716 sec, (2024-05-28 11:07:18.383377 - 2024-05-28 11:07:18.364661)
              : dicoms-000146 = 2024-05-28 11:13:30.495000
              : reproevents-000007 = 2024-05-28 11:07:18.364661
              : set reproevents_isotime = 2024-05-28 11:07:18.383377
 Time matched : 006-func-bold_task-rest_run-1_scan-5
-             : 0.007674 sec, (2024-05-28 11:07:20.380289 - 2024-05-28 11:07:20.372615)
+             : 0.050285 sec, (2024-05-28 11:07:20.422900 - 2024-05-28 11:07:20.372615)
              : dicoms-000147 = 2024-05-28 11:13:32.495000
-             : birch-000008 = 2024-05-28 11:07:20.372615
-             : set birch_isotime = 2024-05-28 11:07:20.380289
+             : birch-000017 = 2024-05-28 11:07:20.372615
+             : set birch_isotime = 2024-05-28 11:07:20.422900
 Time matched : 006-func-bold_task-rest_run-1_scan-5
              : 0.018668 sec, (2024-05-28 11:07:20.383329 - 2024-05-28 11:07:20.364661)
              : dicoms-000147 = 2024-05-28 11:13:32.495000
              : reproevents-000008 = 2024-05-28 11:07:20.364661
              : set reproevents_isotime = 2024-05-28 11:07:20.383329
 Time matched : 006-func-bold_task-rest_run-1_scan-6
-             : 0.013278 sec, (2024-05-28 11:07:22.385893 - 2024-05-28 11:07:22.372615)
+             : 0.026089 sec, (2024-05-28 11:07:22.398704 - 2024-05-28 11:07:22.372615)
              : dicoms-000148 = 2024-05-28 11:13:34.495000
-             : birch-000009 = 2024-05-28 11:07:22.372615
-             : set birch_isotime = 2024-05-28 11:07:22.385893
+             : birch-000018 = 2024-05-28 11:07:22.372615
+             : set birch_isotime = 2024-05-28 11:07:22.398704
 Time matched : 006-func-bold_task-rest_run-1_scan-6
              : 0.018812 sec, (2024-05-28 11:07:22.383473 - 2024-05-28 11:07:22.364661)
              : dicoms-000148 = 2024-05-28 11:13:34.495000
              : reproevents-000009 = 2024-05-28 11:07:22.364661
              : set reproevents_isotime = 2024-05-28 11:07:22.383473
 Time matched : 006-func-bold_task-rest_run-1_scan-7
-             : 0.016676 sec, (2024-05-28 11:07:24.389291 - 2024-05-28 11:07:24.372615)
+             : 0.029604 sec, (2024-05-28 11:07:24.402219 - 2024-05-28 11:07:24.372615)
              : dicoms-000149 = 2024-05-28 11:13:36.495000
-             : birch-000010 = 2024-05-28 11:07:24.372615
-             : set birch_isotime = 2024-05-28 11:07:24.389291
+             : birch-000019 = 2024-05-28 11:07:24.372615
+             : set birch_isotime = 2024-05-28 11:07:24.402219
 Time matched : 006-func-bold_task-rest_run-1_scan-7
              : 0.018687 sec, (2024-05-28 11:07:24.383348 - 2024-05-28 11:07:24.364661)
              : dicoms-000149 = 2024-05-28 11:13:36.495000
              : reproevents-000010 = 2024-05-28 11:07:24.364661
              : set reproevents_isotime = 2024-05-28 11:07:24.383348
 Time matched : 006-func-bold_task-rest_run-1_scan-8
-             : 0.007347 sec, (2024-05-28 11:07:26.379962 - 2024-05-28 11:07:26.372615)
+             : 0.03247 sec, (2024-05-28 11:07:26.405085 - 2024-05-28 11:07:26.372615)
              : dicoms-000150 = 2024-05-28 11:13:38.495000
-             : birch-000011 = 2024-05-28 11:07:26.372615
-             : set birch_isotime = 2024-05-28 11:07:26.379962
+             : birch-000020 = 2024-05-28 11:07:26.372615
+             : set birch_isotime = 2024-05-28 11:07:26.405085
 Time matched : 006-func-bold_task-rest_run-1_scan-8
              : 0.018792 sec, (2024-05-28 11:07:26.383453 - 2024-05-28 11:07:26.364661)
              : dicoms-000150 = 2024-05-28 11:13:38.495000
              : reproevents-000011 = 2024-05-28 11:07:26.364661
              : set reproevents_isotime = 2024-05-28 11:07:26.383453
 Time matched : 006-func-bold_task-rest_run-1_scan-9
-             : 0.008971 sec, (2024-05-28 11:07:28.381586 - 2024-05-28 11:07:28.372615)
+             : 0.036198 sec, (2024-05-28 11:07:28.408813 - 2024-05-28 11:07:28.372615)
              : dicoms-000151 = 2024-05-28 11:13:40.495000
-             : birch-000012 = 2024-05-28 11:07:28.372615
-             : set birch_isotime = 2024-05-28 11:07:28.381586
+             : birch-000021 = 2024-05-28 11:07:28.372615
+             : set birch_isotime = 2024-05-28 11:07:28.408813
 Time matched : 006-func-bold_task-rest_run-1_scan-9
              : 0.018773 sec, (2024-05-28 11:07:28.383434 - 2024-05-28 11:07:28.364661)
              : dicoms-000151 = 2024-05-28 11:13:40.495000
              : reproevents-000012 = 2024-05-28 11:07:28.364661
              : set reproevents_isotime = 2024-05-28 11:07:28.383434
 Time matched : 006-func-bold_task-rest_run-1_scan-10
-             : 0.016908 sec, (2024-05-28 11:07:30.389523 - 2024-05-28 11:07:30.372615)
+             : 0.029767 sec, (2024-05-28 11:07:30.402382 - 2024-05-28 11:07:30.372615)
              : dicoms-000152 = 2024-05-28 11:13:42.495000
-             : birch-000013 = 2024-05-28 11:07:30.372615
-             : set birch_isotime = 2024-05-28 11:07:30.389523
+             : birch-000022 = 2024-05-28 11:07:30.372615
+             : set birch_isotime = 2024-05-28 11:07:30.402382
 Time matched : 006-func-bold_task-rest_run-1_scan-10
              : 0.018787 sec, (2024-05-28 11:07:30.383448 - 2024-05-28 11:07:30.364661)
              : dicoms-000152 = 2024-05-28 11:13:42.495000
              : reproevents-000013 = 2024-05-28 11:07:30.364661
              : set reproevents_isotime = 2024-05-28 11:07:30.383448
 Time matched : 006-func-bold_task-rest_run-1_scan-11
-             : 0.004662 sec, (2024-05-28 11:07:32.377277 - 2024-05-28 11:07:32.372615)
+             : 0.029784 sec, (2024-05-28 11:07:32.402399 - 2024-05-28 11:07:32.372615)
              : dicoms-000153 = 2024-05-28 11:13:44.495000
-             : birch-000014 = 2024-05-28 11:07:32.372615
-             : set birch_isotime = 2024-05-28 11:07:32.377277
+             : birch-000023 = 2024-05-28 11:07:32.372615
+             : set birch_isotime = 2024-05-28 11:07:32.402399
 Time matched : 006-func-bold_task-rest_run-1_scan-11
              : 0.018785 sec, (2024-05-28 11:07:32.383446 - 2024-05-28 11:07:32.364661)
              : dicoms-000153 = 2024-05-28 11:13:44.495000
              : reproevents-000014 = 2024-05-28 11:07:32.364661
              : set reproevents_isotime = 2024-05-28 11:07:32.383446
 Time matched : 006-func-bold_task-rest_run-1_scan-12
-             : 0.009998 sec, (2024-05-28 11:07:34.382613 - 2024-05-28 11:07:34.372615)
+             : 0.036944 sec, (2024-05-28 11:07:34.409559 - 2024-05-28 11:07:34.372615)
              : dicoms-000154 = 2024-05-28 11:13:46.495000
-             : birch-000015 = 2024-05-28 11:07:34.372615
-             : set birch_isotime = 2024-05-28 11:07:34.382613
+             : birch-000024 = 2024-05-28 11:07:34.372615
+             : set birch_isotime = 2024-05-28 11:07:34.409559
 Time matched : 006-func-bold_task-rest_run-1_scan-12
              : 0.018766 sec, (2024-05-28 11:07:34.383427 - 2024-05-28 11:07:34.364661)
              : dicoms-000154 = 2024-05-28 11:13:46.495000
              : reproevents-000015 = 2024-05-28 11:07:34.364661
              : set reproevents_isotime = 2024-05-28 11:07:34.383427
 Time matched : 006-func-bold_task-rest_run-1_scan-13
-             : 0.017125 sec, (2024-05-28 11:07:36.389740 - 2024-05-28 11:07:36.372615)
+             : 0.029968 sec, (2024-05-28 11:07:36.402583 - 2024-05-28 11:07:36.372615)
              : dicoms-000155 = 2024-05-28 11:13:48.495000
-             : birch-000016 = 2024-05-28 11:07:36.372615
-             : set birch_isotime = 2024-05-28 11:07:36.389740
+             : birch-000025 = 2024-05-28 11:07:36.372615
+             : set birch_isotime = 2024-05-28 11:07:36.402583
 Time matched : 006-func-bold_task-rest_run-1_scan-13
              : 0.018754 sec, (2024-05-28 11:07:36.383415 - 2024-05-28 11:07:36.364661)
              : dicoms-000155 = 2024-05-28 11:13:48.495000
              : reproevents-000016 = 2024-05-28 11:07:36.364661
              : set reproevents_isotime = 2024-05-28 11:07:36.383415
 Time matched : 006-func-bold_task-rest_run-1_scan-14
-             : 0.011238 sec, (2024-05-28 11:07:38.383853 - 2024-05-28 11:07:38.372615)
+             : 0.036235 sec, (2024-05-28 11:07:38.408850 - 2024-05-28 11:07:38.372615)
              : dicoms-000156 = 2024-05-28 11:13:50.495000
-             : birch-000017 = 2024-05-28 11:07:38.372615
-             : set birch_isotime = 2024-05-28 11:07:38.383853
+             : birch-000026 = 2024-05-28 11:07:38.372615
+             : set birch_isotime = 2024-05-28 11:07:38.408850
 Time matched : 006-func-bold_task-rest_run-1_scan-14
              : 0.018724 sec, (2024-05-28 11:07:38.383385 - 2024-05-28 11:07:38.364661)
              : dicoms-000156 = 2024-05-28 11:13:50.495000
              : reproevents-000017 = 2024-05-28 11:07:38.364661
              : set reproevents_isotime = 2024-05-28 11:07:38.383385
 Time matched : 006-func-bold_task-rest_run-1_end
-             : 0.011238 sec, (2024-05-28 11:07:38.383853 - 2024-05-28 11:07:38.372615)
+             : 0.036235 sec, (2024-05-28 11:07:38.408850 - 2024-05-28 11:07:38.372615)
              : dicoms-000156 = 2024-05-28 11:13:50.495000
-             : birch-000017 = 2024-05-28 11:07:38.372615
-             : set birch_isotime = 2024-05-28 11:07:38.383853
+             : birch-000026 = 2024-05-28 11:07:38.372615
+             : set birch_isotime = 2024-05-28 11:07:38.408850
 Time matched : 006-func-bold_task-rest_run-1_end
              : 0.018724 sec, (2024-05-28 11:07:38.383385 - 2024-05-28 11:07:38.364661)
              : dicoms-000156 = 2024-05-28 11:13:50.495000
              : reproevents-000017 = 2024-05-28 11:07:38.364661
              : set reproevents_isotime = 2024-05-28 11:07:38.383385
 Time matched : 007-func-bold_task-rest_run-2_scan-1
-             : -0.769659 sec, (2024-05-28 11:09:00.610456 - 2024-05-28 11:09:01.380115)
+             : -0.732443 sec, (2024-05-28 11:09:00.647672 - 2024-05-28 11:09:01.380115)
              : dicoms-000158 = 2024-05-28 11:15:13.502500
-             : birch-000019 = 2024-05-28 11:09:01.380115
-             : set birch_isotime = 2024-05-28 11:09:00.610456
+             : birch-000029 = 2024-05-28 11:09:01.380115
+             : set birch_isotime = 2024-05-28 11:09:00.647672
 Time matched : 007-func-bold_task-rest_run-2_scan-1
              : -0.889 sec, (2024-05-28 11:09:00.809000 - 2024-05-28 11:09:01.698000)
              : dicoms-000158 = 2024-05-28 11:15:13.502500
@@ -306,10 +317,10 @@ Time matched : 007-func-bold_task-rest_run-2_scan-1
              : reproevents-000019 = 2024-05-28 11:09:01.372161
              : set reproevents_isotime = 2024-05-28 11:09:00.614422
 Time matched : 007-func-bold_task-rest_run-2_scan-2
-             : -0.770178 sec, (2024-05-28 11:09:02.609937 - 2024-05-28 11:09:03.380115)
+             : -0.72146 sec, (2024-05-28 11:09:02.658655 - 2024-05-28 11:09:03.380115)
              : dicoms-000159 = 2024-05-28 11:15:15.502500
-             : birch-000020 = 2024-05-28 11:09:03.380115
-             : set birch_isotime = 2024-05-28 11:09:02.609937
+             : birch-000030 = 2024-05-28 11:09:03.380115
+             : set birch_isotime = 2024-05-28 11:09:02.658655
 Time matched : 007-func-bold_task-rest_run-2_scan-2
              : 0.861 sec, (2024-05-28 11:09:04.559000 - 2024-05-28 11:09:03.698000)
              : dicoms-000159 = 2024-05-28 11:15:15.502500
@@ -326,10 +337,10 @@ Time matched : 007-func-bold_task-rest_run-2_scan-2
              : reproevents-000020 = 2024-05-28 11:09:03.372161
              : set reproevents_isotime = 2024-05-28 11:09:02.614394
 Time matched : 007-func-bold_task-rest_run-2_scan-3
-             : -0.759559 sec, (2024-05-28 11:09:04.620556 - 2024-05-28 11:09:05.380115)
+             : -0.7225010000000001 sec, (2024-05-28 11:09:04.657614 - 2024-05-28 11:09:05.380115)
              : dicoms-000160 = 2024-05-28 11:15:17.502500
-             : birch-000021 = 2024-05-28 11:09:05.380115
-             : set birch_isotime = 2024-05-28 11:09:04.620556
+             : birch-000031 = 2024-05-28 11:09:05.380115
+             : set birch_isotime = 2024-05-28 11:09:04.657614
 Time matched : 007-func-bold_task-rest_run-2_scan-3
              : 0.895 sec, (2024-05-28 11:09:06.593000 - 2024-05-28 11:09:05.698000)
              : dicoms-000160 = 2024-05-28 11:15:17.502500
@@ -346,10 +357,10 @@ Time matched : 007-func-bold_task-rest_run-2_scan-3
              : reproevents-000021 = 2024-05-28 11:09:05.372161
              : set reproevents_isotime = 2024-05-28 11:09:04.614471
 Time matched : 007-func-bold_task-rest_run-2_scan-4
-             : -0.7631410000000001 sec, (2024-05-28 11:09:06.616974 - 2024-05-28 11:09:07.380115)
+             : -0.7257739999999999 sec, (2024-05-28 11:09:06.654341 - 2024-05-28 11:09:07.380115)
              : dicoms-000161 = 2024-05-28 11:15:19.502500
-             : birch-000022 = 2024-05-28 11:09:07.380115
-             : set birch_isotime = 2024-05-28 11:09:06.616974
+             : birch-000032 = 2024-05-28 11:09:07.380115
+             : set birch_isotime = 2024-05-28 11:09:06.654341
 Time matched : 007-func-bold_task-rest_run-2_scan-4
              : 0.861 sec, (2024-05-28 11:09:08.559000 - 2024-05-28 11:09:07.698000)
              : dicoms-000161 = 2024-05-28 11:15:19.502500
@@ -366,10 +377,10 @@ Time matched : 007-func-bold_task-rest_run-2_scan-4
              : reproevents-000022 = 2024-05-28 11:09:07.372161
              : set reproevents_isotime = 2024-05-28 11:09:06.614407
 Time matched : 007-func-bold_task-rest_run-2_scan-5
-             : -0.742075 sec, (2024-05-28 11:09:08.638040 - 2024-05-28 11:09:09.380115)
+             : -0.741185 sec, (2024-05-28 11:09:08.638930 - 2024-05-28 11:09:09.380115)
              : dicoms-000162 = 2024-05-28 11:15:21.502500
-             : birch-000023 = 2024-05-28 11:09:09.380115
-             : set birch_isotime = 2024-05-28 11:09:08.638040
+             : birch-000033 = 2024-05-28 11:09:09.380115
+             : set birch_isotime = 2024-05-28 11:09:08.638930
 Time matched : 007-func-bold_task-rest_run-2_scan-5
              : 0.861 sec, (2024-05-28 11:09:10.559000 - 2024-05-28 11:09:09.698000)
              : dicoms-000162 = 2024-05-28 11:15:21.502500
@@ -386,10 +397,10 @@ Time matched : 007-func-bold_task-rest_run-2_scan-5
              : reproevents-000023 = 2024-05-28 11:09:09.372161
              : set reproevents_isotime = 2024-05-28 11:09:08.614443
 Time matched : 007-func-bold_task-rest_run-2_scan-6
-             : -0.769748 sec, (2024-05-28 11:09:10.610367 - 2024-05-28 11:09:11.380115)
+             : -0.732908 sec, (2024-05-28 11:09:10.647207 - 2024-05-28 11:09:11.380115)
              : dicoms-000163 = 2024-05-28 11:15:23.502500
-             : birch-000024 = 2024-05-28 11:09:11.380115
-             : set birch_isotime = 2024-05-28 11:09:10.610367
+             : birch-000034 = 2024-05-28 11:09:11.380115
+             : set birch_isotime = 2024-05-28 11:09:10.647207
 Time matched : 007-func-bold_task-rest_run-2_scan-6
              : 0.878 sec, (2024-05-28 11:09:12.576000 - 2024-05-28 11:09:11.698000)
              : dicoms-000163 = 2024-05-28 11:15:23.502500
@@ -406,10 +417,10 @@ Time matched : 007-func-bold_task-rest_run-2_scan-6
              : reproevents-000024 = 2024-05-28 11:09:11.372161
              : set reproevents_isotime = 2024-05-28 11:09:10.614457
 Time matched : 007-func-bold_task-rest_run-2_scan-7
-             : -0.764667 sec, (2024-05-28 11:09:12.615448 - 2024-05-28 11:09:13.380115)
+             : -0.716305 sec, (2024-05-28 11:09:12.663810 - 2024-05-28 11:09:13.380115)
              : dicoms-000164 = 2024-05-28 11:15:25.502500
-             : birch-000025 = 2024-05-28 11:09:13.380115
-             : set birch_isotime = 2024-05-28 11:09:12.615448
+             : birch-000035 = 2024-05-28 11:09:13.380115
+             : set birch_isotime = 2024-05-28 11:09:12.663810
 Time matched : 007-func-bold_task-rest_run-2_scan-7
              : 0.861 sec, (2024-05-28 11:09:14.559000 - 2024-05-28 11:09:13.698000)
              : dicoms-000164 = 2024-05-28 11:15:25.502500
@@ -426,10 +437,10 @@ Time matched : 007-func-bold_task-rest_run-2_scan-7
              : reproevents-000025 = 2024-05-28 11:09:13.372161
              : set reproevents_isotime = 2024-05-28 11:09:12.614447
 Time matched : 007-func-bold_task-rest_run-2_scan-8
-             : -0.760473 sec, (2024-05-28 11:09:14.619642 - 2024-05-28 11:09:15.380115)
+             : -0.747664 sec, (2024-05-28 11:09:14.632451 - 2024-05-28 11:09:15.380115)
              : dicoms-000165 = 2024-05-28 11:15:27.502500
-             : birch-000026 = 2024-05-28 11:09:15.380115
-             : set birch_isotime = 2024-05-28 11:09:14.619642
+             : birch-000036 = 2024-05-28 11:09:15.380115
+             : set birch_isotime = 2024-05-28 11:09:14.632451
 Time matched : 007-func-bold_task-rest_run-2_scan-8
              : 0.861 sec, (2024-05-28 11:09:16.559000 - 2024-05-28 11:09:15.698000)
              : dicoms-000165 = 2024-05-28 11:15:27.502500
@@ -446,10 +457,10 @@ Time matched : 007-func-bold_task-rest_run-2_scan-8
              : reproevents-000026 = 2024-05-28 11:09:15.372161
              : set reproevents_isotime = 2024-05-28 11:09:14.614400
 Time matched : 007-func-bold_task-rest_run-2_scan-9
-             : -0.768027 sec, (2024-05-28 11:09:16.612088 - 2024-05-28 11:09:17.380115)
+             : -0.729238 sec, (2024-05-28 11:09:16.650877 - 2024-05-28 11:09:17.380115)
              : dicoms-000166 = 2024-05-28 11:15:29.502500
-             : birch-000027 = 2024-05-28 11:09:17.380115
-             : set birch_isotime = 2024-05-28 11:09:16.612088
+             : birch-000037 = 2024-05-28 11:09:17.380115
+             : set birch_isotime = 2024-05-28 11:09:16.650877
 Time matched : 007-func-bold_task-rest_run-2_scan-9
              : 0.878 sec, (2024-05-28 11:09:18.576000 - 2024-05-28 11:09:17.698000)
              : dicoms-000166 = 2024-05-28 11:15:29.502500
@@ -466,10 +477,10 @@ Time matched : 007-func-bold_task-rest_run-2_scan-9
              : reproevents-000027 = 2024-05-28 11:09:17.372161
              : set reproevents_isotime = 2024-05-28 11:09:16.614450
 Time matched : 007-func-bold_task-rest_run-2_scan-10
-             : -0.760502 sec, (2024-05-28 11:09:18.619613 - 2024-05-28 11:09:19.380115)
+             : -0.721681 sec, (2024-05-28 11:09:18.658434 - 2024-05-28 11:09:19.380115)
              : dicoms-000167 = 2024-05-28 11:15:31.502500
-             : birch-000028 = 2024-05-28 11:09:19.380115
-             : set birch_isotime = 2024-05-28 11:09:18.619613
+             : birch-000038 = 2024-05-28 11:09:19.380115
+             : set birch_isotime = 2024-05-28 11:09:18.658434
 Time matched : 007-func-bold_task-rest_run-2_scan-10
              : 0.861 sec, (2024-05-28 11:09:20.559000 - 2024-05-28 11:09:19.698000)
              : dicoms-000167 = 2024-05-28 11:15:31.502500
@@ -486,10 +497,10 @@ Time matched : 007-func-bold_task-rest_run-2_scan-10
              : reproevents-000028 = 2024-05-28 11:09:19.372161
              : set reproevents_isotime = 2024-05-28 11:09:18.614420
 Time matched : 007-func-bold_task-rest_run-2_scan-11
-             : -0.768482 sec, (2024-05-28 11:09:20.611633 - 2024-05-28 11:09:21.380115)
+             : -0.7415430000000001 sec, (2024-05-28 11:09:20.638572 - 2024-05-28 11:09:21.380115)
              : dicoms-000168 = 2024-05-28 11:15:33.502500
-             : birch-000029 = 2024-05-28 11:09:21.380115
-             : set birch_isotime = 2024-05-28 11:09:20.611633
+             : birch-000039 = 2024-05-28 11:09:21.380115
+             : set birch_isotime = 2024-05-28 11:09:20.638572
 Time matched : 007-func-bold_task-rest_run-2_scan-11
              : 0.878 sec, (2024-05-28 11:09:22.576000 - 2024-05-28 11:09:21.698000)
              : dicoms-000168 = 2024-05-28 11:15:33.502500
@@ -506,10 +517,10 @@ Time matched : 007-func-bold_task-rest_run-2_scan-11
              : reproevents-000029 = 2024-05-28 11:09:21.372161
              : set reproevents_isotime = 2024-05-28 11:09:20.614392
 Time matched : 007-func-bold_task-rest_run-2_scan-12
-             : -0.764001 sec, (2024-05-28 11:09:22.616114 - 2024-05-28 11:09:23.380115)
+             : -0.751271 sec, (2024-05-28 11:09:22.628844 - 2024-05-28 11:09:23.380115)
              : dicoms-000169 = 2024-05-28 11:15:35.502500
-             : birch-000030 = 2024-05-28 11:09:23.380115
-             : set birch_isotime = 2024-05-28 11:09:22.616114
+             : birch-000040 = 2024-05-28 11:09:23.380115
+             : set birch_isotime = 2024-05-28 11:09:22.628844
 Time matched : 007-func-bold_task-rest_run-2_scan-12
              : 0.878 sec, (2024-05-28 11:09:24.576000 - 2024-05-28 11:09:23.698000)
              : dicoms-000169 = 2024-05-28 11:15:35.502500
@@ -526,10 +537,10 @@ Time matched : 007-func-bold_task-rest_run-2_scan-12
              : reproevents-000030 = 2024-05-28 11:09:23.372161
              : set reproevents_isotime = 2024-05-28 11:09:22.614375
 Time matched : 007-func-bold_task-rest_run-2_scan-13
-             : -0.760579 sec, (2024-05-28 11:09:24.619536 - 2024-05-28 11:09:25.380115)
+             : -0.747778 sec, (2024-05-28 11:09:24.632337 - 2024-05-28 11:09:25.380115)
              : dicoms-000170 = 2024-05-28 11:15:37.502500
-             : birch-000031 = 2024-05-28 11:09:25.380115
-             : set birch_isotime = 2024-05-28 11:09:24.619536
+             : birch-000041 = 2024-05-28 11:09:25.380115
+             : set birch_isotime = 2024-05-28 11:09:24.632337
 Time matched : 007-func-bold_task-rest_run-2_scan-13
              : 0.861 sec, (2024-05-28 11:09:26.559000 - 2024-05-28 11:09:25.698000)
              : dicoms-000170 = 2024-05-28 11:15:37.502500
@@ -546,10 +557,10 @@ Time matched : 007-func-bold_task-rest_run-2_scan-13
              : reproevents-000031 = 2024-05-28 11:09:25.372161
              : set reproevents_isotime = 2024-05-28 11:09:24.614442
 Time matched : 007-func-bold_task-rest_run-2_scan-14
-             : -0.7683800000000001 sec, (2024-05-28 11:09:26.611735 - 2024-05-28 11:09:27.380115)
+             : -0.7414430000000001 sec, (2024-05-28 11:09:26.638672 - 2024-05-28 11:09:27.380115)
              : dicoms-000171 = 2024-05-28 11:15:39.502500
-             : birch-000032 = 2024-05-28 11:09:27.380115
-             : set birch_isotime = 2024-05-28 11:09:26.611735
+             : birch-000042 = 2024-05-28 11:09:27.380115
+             : set birch_isotime = 2024-05-28 11:09:26.638672
 Time matched : 007-func-bold_task-rest_run-2_scan-14
              : 0.861 sec, (2024-05-28 11:09:28.559000 - 2024-05-28 11:09:27.698000)
              : dicoms-000171 = 2024-05-28 11:15:39.502500
@@ -566,10 +577,10 @@ Time matched : 007-func-bold_task-rest_run-2_scan-14
              : reproevents-000032 = 2024-05-28 11:09:27.372161
              : set reproevents_isotime = 2024-05-28 11:09:26.614443
 Time matched : 007-func-bold_task-rest_run-2_end
-             : -0.7683800000000001 sec, (2024-05-28 11:09:26.611735 - 2024-05-28 11:09:27.380115)
+             : -0.7414430000000001 sec, (2024-05-28 11:09:26.638672 - 2024-05-28 11:09:27.380115)
              : dicoms-000171 = 2024-05-28 11:15:39.502500
-             : birch-000032 = 2024-05-28 11:09:27.380115
-             : set birch_isotime = 2024-05-28 11:09:26.611735
+             : birch-000042 = 2024-05-28 11:09:27.380115
+             : set birch_isotime = 2024-05-28 11:09:26.638672
 Time matched : 007-func-bold_task-rest_run-2_end
              : 0.861 sec, (2024-05-28 11:09:28.559000 - 2024-05-28 11:09:27.698000)
              : dicoms-000171 = 2024-05-28 11:15:39.502500
@@ -591,39 +602,39 @@ Generated marks after pass 2, done:
   mark-000002 : ['dicoms-000140']
   mark-000003 : ['dicoms-000141']
   mark-000004 : ['dicoms-000141']
-  mark-000005 : ['dicoms-000142', 'birch-000004', 'reproevents-000004']
-  mark-000006 : ['dicoms-000142', 'birch-000004', 'reproevents-000004']
-  mark-000007 : ['dicoms-000143', 'birch-000005', 'reproevents-000005', 'birch-000004', 'reproevents-000004']
-  mark-000008 : ['dicoms-000144', 'birch-000006', 'reproevents-000006', 'birch-000005', 'reproevents-000005']
-  mark-000009 : ['dicoms-000145', 'birch-000007', 'reproevents-000007', 'birch-000006', 'reproevents-000006']
-  mark-000010 : ['dicoms-000146', 'birch-000008', 'reproevents-000008', 'birch-000007', 'reproevents-000007']
-  mark-000011 : ['dicoms-000147', 'birch-000009', 'reproevents-000009', 'birch-000008', 'reproevents-000008']
-  mark-000012 : ['dicoms-000148', 'birch-000010', 'reproevents-000010', 'birch-000009', 'reproevents-000009']
-  mark-000013 : ['dicoms-000149', 'birch-000011', 'reproevents-000011', 'birch-000010', 'reproevents-000010']
-  mark-000014 : ['dicoms-000150', 'birch-000012', 'reproevents-000012', 'birch-000011', 'reproevents-000011']
-  mark-000015 : ['dicoms-000151', 'birch-000013', 'reproevents-000013', 'birch-000012', 'reproevents-000012']
-  mark-000016 : ['dicoms-000152', 'birch-000014', 'reproevents-000014', 'birch-000013', 'reproevents-000013']
-  mark-000017 : ['dicoms-000153', 'birch-000015', 'reproevents-000015', 'birch-000014', 'reproevents-000014']
-  mark-000018 : ['dicoms-000154', 'birch-000016', 'reproevents-000016', 'birch-000015', 'reproevents-000015']
-  mark-000019 : ['dicoms-000155', 'birch-000017', 'reproevents-000017', 'birch-000016', 'reproevents-000016']
-  mark-000020 : ['dicoms-000156', 'birch-000018', 'reproevents-000018', 'birch-000017', 'reproevents-000017']
-  mark-000021 : ['dicoms-000156', 'birch-000018', 'reproevents-000018', 'birch-000017', 'reproevents-000017']
+  mark-000005 : ['dicoms-000142', 'birch-000013', 'reproevents-000004']
+  mark-000006 : ['dicoms-000142', 'birch-000013', 'reproevents-000004']
+  mark-000007 : ['dicoms-000143', 'birch-000014', 'reproevents-000005', 'birch-000013', 'reproevents-000004']
+  mark-000008 : ['dicoms-000144', 'birch-000015', 'reproevents-000006', 'birch-000014', 'reproevents-000005']
+  mark-000009 : ['dicoms-000145', 'birch-000016', 'reproevents-000007', 'birch-000015', 'reproevents-000006']
+  mark-000010 : ['dicoms-000146', 'birch-000017', 'reproevents-000008', 'birch-000016', 'reproevents-000007']
+  mark-000011 : ['dicoms-000147', 'birch-000018', 'reproevents-000009', 'birch-000017', 'reproevents-000008']
+  mark-000012 : ['dicoms-000148', 'birch-000019', 'reproevents-000010', 'birch-000018', 'reproevents-000009']
+  mark-000013 : ['dicoms-000149', 'birch-000020', 'reproevents-000011', 'birch-000019', 'reproevents-000010']
+  mark-000014 : ['dicoms-000150', 'birch-000021', 'reproevents-000012', 'birch-000020', 'reproevents-000011']
+  mark-000015 : ['dicoms-000151', 'birch-000022', 'reproevents-000013', 'birch-000021', 'reproevents-000012']
+  mark-000016 : ['dicoms-000152', 'birch-000023', 'reproevents-000014', 'birch-000022', 'reproevents-000013']
+  mark-000017 : ['dicoms-000153', 'birch-000024', 'reproevents-000015', 'birch-000023', 'reproevents-000014']
+  mark-000018 : ['dicoms-000154', 'birch-000025', 'reproevents-000016', 'birch-000024', 'reproevents-000015']
+  mark-000019 : ['dicoms-000155', 'birch-000026', 'reproevents-000017', 'birch-000025', 'reproevents-000016']
+  mark-000020 : ['dicoms-000156', 'birch-000027', 'reproevents-000018', 'birch-000026', 'reproevents-000017']
+  mark-000021 : ['dicoms-000156', 'birch-000027', 'reproevents-000018', 'birch-000026', 'reproevents-000017']
   mark-000022 : ['dicoms-000157']
   mark-000023 : ['dicoms-000157']
-  mark-000024 : ['dicoms-000158', 'birch-000019', 'qrinfo-000009', 'qrinfo-000010', 'psychopy-000010', 'reproevents-000019']
-  mark-000025 : ['dicoms-000159', 'birch-000020', 'qrinfo-000011', 'psychopy-000011', 'reproevents-000020']
-  mark-000026 : ['dicoms-000160', 'birch-000021', 'qrinfo-000012', 'psychopy-000012', 'reproevents-000021']
-  mark-000027 : ['dicoms-000161', 'birch-000022', 'qrinfo-000013', 'psychopy-000013', 'reproevents-000022']
-  mark-000028 : ['dicoms-000162', 'birch-000023', 'qrinfo-000014', 'psychopy-000014', 'reproevents-000023']
-  mark-000029 : ['dicoms-000163', 'birch-000024', 'qrinfo-000015', 'psychopy-000015', 'reproevents-000024']
-  mark-000030 : ['dicoms-000164', 'birch-000025', 'qrinfo-000016', 'psychopy-000016', 'reproevents-000025']
-  mark-000031 : ['dicoms-000165', 'birch-000026', 'qrinfo-000017', 'psychopy-000017', 'reproevents-000026']
-  mark-000032 : ['dicoms-000166', 'birch-000027', 'qrinfo-000018', 'psychopy-000018', 'reproevents-000027']
-  mark-000033 : ['dicoms-000167', 'birch-000028', 'qrinfo-000019', 'psychopy-000019', 'reproevents-000028']
-  mark-000034 : ['dicoms-000168', 'birch-000029', 'qrinfo-000020', 'psychopy-000020', 'reproevents-000029']
-  mark-000035 : ['dicoms-000169', 'birch-000030', 'qrinfo-000021', 'psychopy-000021', 'reproevents-000030']
-  mark-000036 : ['dicoms-000170', 'birch-000031', 'qrinfo-000022', 'psychopy-000022', 'reproevents-000031']
-  mark-000037 : ['dicoms-000171', 'birch-000032', 'qrinfo-000023', 'psychopy-000023', 'reproevents-000032']
-  mark-000038 : ['dicoms-000171', 'birch-000032', 'qrinfo-000023', 'psychopy-000023', 'reproevents-000032']
-Exit on   : 2024-08-17 11:26:24.562580
+  mark-000024 : ['dicoms-000158', 'birch-000029', 'qrinfo-000009', 'qrinfo-000010', 'psychopy-000010', 'reproevents-000019']
+  mark-000025 : ['dicoms-000159', 'birch-000030', 'qrinfo-000011', 'psychopy-000011', 'reproevents-000020']
+  mark-000026 : ['dicoms-000160', 'birch-000031', 'qrinfo-000012', 'psychopy-000012', 'reproevents-000021']
+  mark-000027 : ['dicoms-000161', 'birch-000032', 'qrinfo-000013', 'psychopy-000013', 'reproevents-000022']
+  mark-000028 : ['dicoms-000162', 'birch-000033', 'qrinfo-000014', 'psychopy-000014', 'reproevents-000023']
+  mark-000029 : ['dicoms-000163', 'birch-000034', 'qrinfo-000015', 'psychopy-000015', 'reproevents-000024']
+  mark-000030 : ['dicoms-000164', 'birch-000035', 'qrinfo-000016', 'psychopy-000016', 'reproevents-000025']
+  mark-000031 : ['dicoms-000165', 'birch-000036', 'qrinfo-000017', 'psychopy-000017', 'reproevents-000026']
+  mark-000032 : ['dicoms-000166', 'birch-000037', 'qrinfo-000018', 'psychopy-000018', 'reproevents-000027']
+  mark-000033 : ['dicoms-000167', 'birch-000038', 'qrinfo-000019', 'psychopy-000019', 'reproevents-000028']
+  mark-000034 : ['dicoms-000168', 'birch-000039', 'qrinfo-000020', 'psychopy-000020', 'reproevents-000029']
+  mark-000035 : ['dicoms-000169', 'birch-000040', 'qrinfo-000021', 'psychopy-000021', 'reproevents-000030']
+  mark-000036 : ['dicoms-000170', 'birch-000041', 'qrinfo-000022', 'psychopy-000022', 'reproevents-000031']
+  mark-000037 : ['dicoms-000171', 'birch-000042', 'qrinfo-000023', 'psychopy-000023', 'reproevents-000032']
+  mark-000038 : ['dicoms-000171', 'birch-000042', 'qrinfo-000023', 'psychopy-000023', 'reproevents-000032']
+Exit on   : 2024-08-19 14:50:42.907351
 Exit code : 0

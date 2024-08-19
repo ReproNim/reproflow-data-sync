@@ -128,6 +128,7 @@ Algorithm proposals for the ReproFlow time synchronization effort:
   - in future look at possibility to use `time` field to produce more strict clock comparing to `iso_time`. This clock was selected as reference one for all other clocks and theoretically this can increase accuracy in 100+ times in this area.
   - `birch` events matched with DICOMs well, but anyway this is not always 100% match.
   - raw data JSONL is not safe to use, because it contains comments and some dirty lines, so custom preprocessing is used to fix this.
+  - in long scan from `ses-20240809` determined that we should look at lowest bit in `alink_flags` rather than 8-th bit of `alink_byte` to determine event start/stop.
 - `reproevents` 
   - `isotime` field is precise and reliable, and looks like more precise than birch `iso_time`, fluctuation in range 0.00-0.01 sec.
   - `reproevents` events also matched with DICOMs well close to `birch`, but this is not always 100% match. It's possible that precision is even better than `birch` one, so it should be considered in future when calculating global clock information.
