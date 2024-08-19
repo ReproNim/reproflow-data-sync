@@ -144,7 +144,8 @@ Algorithm proposals for the ReproFlow time synchronization effort:
 - `ses-20240528`
   - problem to match other swimlanes with DICOMs at this moment, WiP. 
 - `ses-20240604`
-  - produces most matches at this moment, but still some issues with psychopy, reprostim_video etc. 
+  - produces most matches at this moment, but still some issues with psychopy, reprostim_video etc.
+  - [ ] `dicoms` series `008-func-bold_task-rest_run-4_start` has invalid mapping with birch,psychopy and reproevents and as result invalid dicoms_offset 448 sec instead of 372 sec.
 - `ses-20240809`
   - [x] under investigation, produces performance issues which partially are fixed, and swimlane matching issues.
   - [x] `birch` data for first 3 func scan x15 is omitted somehow and started from `008-func-bold_task-rest_acq-short1_run-04` at 10:27:12. This is ok for provided logs, somehow birch device is restarted in the middle of the scan.
