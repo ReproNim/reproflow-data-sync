@@ -82,7 +82,8 @@ Let's briefly describe each dump:
   - `duration_isotime` - the same as `duration` but calculated based on `iso_time` field.
   - `flag_duration` - duration in seconds till the next event 8-th bit will be set off, calculated from precise `time` field.
   - `flag_duration_isotime` - the same as `flag_duration` but calculated based on `iso_time` field.
-- `dump_psychopy.jsonl` Aggregated JSONL with items corresponding to psychopy logs. Target log file names extracted from QR codes and then filtered by MRI study datetime range. Datetime information extracted from `keys_time_str` field.
+- `dump_psychopy.jsonl` Aggregated JSONL with items corresponding to psychopy logs. Target log file names extracted from QR codes and then filtered by MRI study datetime range. Datetime information extracted from `keys_time_str` field. Calculated fields:
+  - `qrinfo_id` - optional, specifies related QR code ID from sessions's `dump_qrinfo.jsonl` file when exits.
 - `dump_qrinfo.jsonl` JSONL with `QrRecord` items corresponding to QR codes logs. Datetime information extracted from `isotime_start` field (where this frame first appeared in captured video).
 - `dump_reproevents.jsonl` JSONL with `ReproeventsRecord` items corresponding to reproevents logs. Datetime information extracted from `client_time_iso` column in CVS file, and entire row is converted to JSON object `data` field.
 - `dump_marks.jsonl` JSONL with `MarkRecord` items corresponding to global events used to synchronize all swimlanes and clocks.
@@ -132,6 +133,7 @@ Algorithm proposals for the ReproFlow time synchronization effort:
 - `reproevents` 
   - `isotime` field is precise and reliable, and looks like more precise than birch `iso_time`, fluctuation in range 0.00-0.01 sec.
   - `reproevents` events also matched with DICOMs well close to `birch`, but this is not always 100% match. It's possible that precision is even better than `birch` one, so it should be considered in future when calculating global clock information.
+  - in `ses-20240809` we determined that client time in this logs is not precise and contains a lot of records with the same time, so it's not reliable to use it as a master clock. 
 - `psychopy` 
   - `isotime` field is less precise, fluctuation in range 0.00-0.03 sec.
 - `qrinfo` / `reprostim_video`
@@ -144,10 +146,12 @@ Algorithm proposals for the ReproFlow time synchronization effort:
 - `ses-20240604`
   - produces most matches at this moment, but still some issues with psychopy, reprostim_video etc. 
 - `ses-20240809`
-  - under investigation, produces performance issues which partially are fixed, and swimlane matching issues.
-  - `birch` data for first 3 func scan x15 is omitted somehow and started from `008-func-bold_task-rest_acq-short1_run-04` at 10:27:12.
-  - `psychopy` data for first 3 func scan x15 is omitted somehow and started from `008-func-bold_task-rest_acq-short1_run-04` at 10:27:12.
-  - `psychopy\20240809_acq-med1_run-01.log` contains only 30 records rather than 150 ones. After manual inspection it looks like it's cutted in the middle of the scan at 10:39:06 rather than 10:43:06.
+  - [x] under investigation, produces performance issues which partially are fixed, and swimlane matching issues.
+  - [x] `birch` data for first 3 func scan x15 is omitted somehow and started from `008-func-bold_task-rest_acq-short1_run-04` at 10:27:12. This is ok for provided logs, somehow birch device is restarted in the middle of the scan.
+  - [x] `psychopy` data for first 3 func scan x15 is omitted somehow and started from `008-func-bold_task-rest_acq-short1_run-04` at 10:27:12. This is ok for provided logs.
+  - [x] `psychopy\20240809_acq-med1_run-01.log` contains only 30 records rather than 150 ones. After manual inspection it looks like it's cut in the middle of the scan at 10:39:06 rather than 10:43:06. So it's broken input data from psychopy.
+  - [ ] `qrinfo` it looks like video duration is only 6:37 instead of 32:07 (based on reprostim json metadata and `2024.08.09-10.31.00.087--2024.08.09-11.03.07.318.mkv` file name ), and it contains only 3 short series of QRs. Need in future investigation of `reprostim-videocapture` utility and `ffmpeg` params.
+  - [ ] `reproevents` started from `reproevents-000263` it produces invalid data. There are a lot of records in `events.csv/@client_time_iso` with time like `2024-08-09T10:49:39`. Real series time range based on the swimlanes is around `10:47:48`--`10:52:46` and scans count is 150. So it looks like some performance issues on hardware or software side recording events log.
 
 ## TODO:
   - Use DataLad run to execute commands (https://handbook.datalad.org/en/latest/basics/basics-run.html)
