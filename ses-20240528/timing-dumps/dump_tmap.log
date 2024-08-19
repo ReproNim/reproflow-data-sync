@@ -1,9 +1,9 @@
 dump_tmap.py tool
-Started on    : 2024-08-19 17:43:38.252172, vmelnik@Uranus
+Started on    : 2024-08-19 20:45:07.284760, vmelnik@Uranus
 Working dir   : /Users/vmelnik/Projects/Dartmouth/branches/reproflow-data-sync/code
 Session path  : /Users/vmelnik/Projects/Dartmouth/branches/typhon/reproflow-data-sync/ses-20240528
 Session ID    : ses-20240528
 generate_tmap(/Users/vmelnik/Projects/Dartmouth/branches/typhon/reproflow-data-sync/ses-20240528/timing-dumps/dump_marks.jsonl)
-Full/completed mark not found in /Users/vmelnik/Projects/Dartmouth/branches/typhon/reproflow-data-sync/ses-20240528/timing-dumps/dump_marks.jsonl
-Exit on   : 2024-08-19 17:43:38.253318
-Exit code : 1
+Found full mark count 2: [{'type': 'MarkRecord', 'session_id': 'ses-20240528', 'id': 'mark-000005', 'kind': 'Func series start', 'name': '006-func-bold_task-rest_run-1_start', 'target_ids': ['dicoms-000142', 'birch-000013', 'qrinfo-000009', 'psychopy-000004', 'reproevents-000004'], 'dicoms_isotime': '2024-05-28T11:13:22.495000', 'dicoms_duration': 28.0, 'birch_isotime': '2024-05-28T11:07:12.404886', 'birch_duration': 27.99667, 'qrinfo_isotime': '2024-05-28T11:09:00.809000', 'qrinfo_duration': 27.75, 'psychopy_isotime': '2024-05-28T11:07:12.348494', 'psychopy_duration': 27.998782, 'reproevents_isotime': '2024-05-28T11:07:12.383346', 'reproevents_duration': 28.000038}, {'type': 'MarkRecord', 'session_id': 'ses-20240528', 'id': 'mark-000022', 'kind': 'Func series start', 'name': '007-func-bold_task-rest_run-2_start', 'target_ids': ['dicoms-000157', 'birch-000013', 'qrinfo-000009', 'psychopy-000004', 'reproevents-000004'], 'dicoms_isotime': '2024-05-28T11:15:11.502500', 'dicoms_duration': 28.0, 'birch_isotime': '2024-05-28T11:07:12.404886', 'birch_duration': 27.99667, 'qrinfo_isotime': '2024-05-28T11:09:00.809000', 'qrinfo_duration': 27.75, 'psychopy_isotime': '2024-05-28T11:07:12.348494', 'psychopy_duration': 27.998782, 'reproevents_isotime': '2024-05-28T11:07:12.383346', 'reproevents_duration': 28.000038}]
+Exit on   : 2024-08-19 20:45:07.295447
+Exit code : 0

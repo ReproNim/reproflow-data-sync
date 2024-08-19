@@ -1,9 +1,9 @@
 dump_tmap.py tool
-Started on    : 2024-08-19 17:43:48.729510, vmelnik@Uranus
+Started on    : 2024-08-19 20:45:18.199095, vmelnik@Uranus
 Working dir   : /Users/vmelnik/Projects/Dartmouth/branches/reproflow-data-sync/code
 Session path  : /Users/vmelnik/Projects/Dartmouth/branches/typhon/reproflow-data-sync/ses-20240604
 Session ID    : ses-20240604
 generate_tmap(/Users/vmelnik/Projects/Dartmouth/branches/typhon/reproflow-data-sync/ses-20240604/timing-dumps/dump_marks.jsonl)
 Found full mark count 2: [{'type': 'MarkRecord', 'session_id': 'ses-20240604', 'id': 'mark-000018', 'kind': 'Func series start', 'name': '006-func-bold_task-rest_run-2_start', 'target_ids': ['dicoms-000155', 'birch-000002', 'qrinfo-000001', 'psychopy-000001', 'reproevents-000016'], 'dicoms_isotime': '2024-06-04T14:00:31.507500', 'dicoms_duration': 28.0, 'birch_isotime': '2024-06-04T13:54:19.385115', 'birch_duration': 27.991215, 'qrinfo_isotime': '2024-06-04T13:54:19.703000', 'qrinfo_duration': 27.634, 'psychopy_isotime': '2024-06-04T13:54:19.369889', 'psychopy_duration': 27.997664, 'reproevents_isotime': '2024-06-04T13:54:19.377161', 'reproevents_duration': 28.00006}, {'type': 'MarkRecord', 'session_id': 'ses-20240604', 'id': 'mark-000035', 'kind': 'Func series start', 'name': '007-func-bold_task-rest_run-3_start', 'target_ids': ['dicoms-000170', 'birch-000017', 'psychopy-000016', 'reproevents-000031', 'qrinfo-000017'], 'dicoms_isotime': '2024-06-04T14:02:03.485000', 'dicoms_duration': 28.0, 'birch_isotime': '2024-06-04T13:55:50.755185', 'birch_duration': 28.00057, 'qrinfo_isotime': '2024-06-04T13:55:51.070000', 'qrinfo_duration': 17.65, 'psychopy_isotime': '2024-06-04T13:55:50.740145', 'psychopy_duration': 27.997067, 'reproevents_isotime': '2024-06-04T13:55:50.750887', 'reproevents_duration': 28.0}]
-Exit on   : 2024-08-19 17:43:48.740001
+Exit on   : 2024-08-19 20:45:18.210567
 Exit code : 0

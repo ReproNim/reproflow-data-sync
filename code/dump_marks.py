@@ -57,10 +57,10 @@ class SeriesData(BaseModel):
     count: Optional[int] = Field(0, description="Number of object in series")
     swimlane: Optional[object] = Field(None, description="Swimlane model reference")
     isotime_start: Optional[datetime] = Field(None, description="Series start "
-                                                                "datetime")
+                                                                "datetime in local clock")
     isotime_end: Optional[datetime] = Field(None, description="Series end "
                                                                 "datetime w/o "
-                                                              "last item")
+                                                              "last item in local clock")
     interval: Optional[float] = Field(0.0, description="Series interval "
                                                        "in seconds")
     duration: Optional[float] = Field(0.0, description="Series duration w/o last "
@@ -69,6 +69,14 @@ class SeriesData(BaseModel):
                                     description="Interval to next series if any in seconds, "
                                                 "otherwise 0.0. Claculated as"
                                                 "start-start interval between series")
+    # contains approximate global datetime when series started
+    synced_isotime_start: Optional[datetime] = Field(None, description="Series start global"
+                                                                "datetime")
+    # contains approximate global datetime when series ended
+    synced_isotime_end: Optional[datetime] = Field(None, description="Series end global"
+                                                                "datetime w/o "
+                                                              "last item")
+
 
 
 # Define swimlane object model
@@ -187,6 +195,10 @@ def find_swimlane_series(swimlane: SwimlaneModel,
                 sd.name = f"{swimlane.name}-series-{(len(lst)+1)}"
                 sd.isotime_start = evts[0].isotime
                 sd.isotime_end = evts[-1].isotime
+                sd.synced_isotime_start = get_tmap_svc().convert(
+                    swimlane.clock, Clock.ISOTIME, sd.isotime_start)
+                sd.synced_isotime_end = get_tmap_svc().convert(
+                    swimlane.clock, Clock.ISOTIME, sd.isotime_end)
                 sd.interval = (last_isotime - sd.isotime_start).total_seconds() / (sd.count-1)
                 sd.next_series_interval = 0
                 sd.duration = (sd.isotime_end - sd.isotime_start).total_seconds()
@@ -228,6 +240,10 @@ def find_dicoms_func_series(model: DumpModel) -> List[SeriesData]:
         sd.name = series
         sd.isotime_start = sd.events[0].isotime
         sd.isotime_end = sd.events[-1].isotime
+        sd.synced_isotime_start = get_tmap_svc().convert(
+            Clock.DICOMS, Clock.ISOTIME, sd.isotime_start)
+        sd.synced_isotime_end = get_tmap_svc().convert(
+            Clock.DICOMS, Clock.ISOTIME, sd.isotime_end)
         sd.interval = calc_dicoms_series_interval(sd.events)
         sd.next_series_interval = 0.0
         sd.duration = (sd.isotime_end -
@@ -242,8 +258,8 @@ def find_dicoms_func_series(model: DumpModel) -> List[SeriesData]:
 
 # match SeriesData object with another one
 def match_series_data(sd1: SeriesData, sd2: SeriesData) -> bool:
-    #if sd1.name == 'func-bold_task-rest_run-2' and sd2.name == 'birch-series-1':
-    #    logger.debug(f"Match: {sd1} with {sd2}")
+    #if sd1.name == '015-func-bold_task-rest_acq-med1_run-04' and sd2.name == 'birch-series-8':
+    #    logger.debug(f"Matching: {sd1} with {sd2}")
 
     if not sd1 or not sd2:
         return False
@@ -265,8 +281,30 @@ def match_series_data(sd1: SeriesData, sd2: SeriesData) -> bool:
         t_max: float = sd1.next_series_interval * 1.05
         if not (t_min <= sd2.next_series_interval <= t_max):
             return False
+    #else:
+    #    return False
+        #if sd1.next_series_interval!=0.0 and sd2.next_series_interval!=0.0:
+        #    return False
+
+    # match synced start time
+    synced_dt: float = abs((sd1.synced_isotime_start - sd2.synced_isotime_start).total_seconds())
+    # for DICOMs series we allow 120 sec difference
+    if sd1.swimlane.name==Swimlane.DICOMS or sd2.swimlane.name==Swimlane.DICOMS:
+        if synced_dt > 120 :
+            return False
     else:
-        return False
+        if synced_dt > 2.0:
+            return False
+
+
+    logger.debug(f"Matched series data: {sd1.name} / {sd2.name}")
+    logger.debug(f"    count                = {sd1.count} / {sd2.count}")
+    logger.debug(f"    interval             = {sd1.interval} / {sd2.interval}")
+    logger.debug(f"    next_series_interval = {sd1.next_series_interval} / {sd2.next_series_interval}")
+    logger.debug(f"    isotime_start        = {sd1.isotime_start} / {sd2.isotime_start}")
+    logger.debug(f"    isotime_end          = {sd1.isotime_end} / {sd2.isotime_end}")
+    logger.debug(f"    synced_start         = {sd1.synced_isotime_start} / {sd2.synced_isotime_start}")
+    logger.debug(f"    synced_end           = {sd1.synced_isotime_end} / {sd2.synced_isotime_end}")
     return True
 
 
@@ -438,11 +476,12 @@ def generate_marks(model: DumpModel):
                         logger.debug(f"             : {dicoms_id} = {dicoms_isotime}")
                         logger.debug(f"             : {obj_id} = {isotime_2}")
                         mark.target_ids.append(obj_id)
-                        logger.debug(f"             : set {swiml.name}_isotime = {isotime_1}")
-                        setattr(mark, f"{swiml.name}_isotime", isotime_1)
-                        if mark.kind == "Func series start":
-                            logger.debug(f"             : set {swiml.name}_duration = {ser_sd.duration}")
-                            setattr(mark, f"{swiml.name}_duration", ser_sd.duration)
+                        if getattr(mark, f"{swiml.name}_isotime", None) is None:
+                            logger.debug(f"             : set {swiml.name}_isotime= {isotime_1}")
+                            setattr(mark, f"{swiml.name}_isotime", isotime_1)
+                            if mark.kind == "Func series start":
+                                logger.debug(f"             : set {swiml.name}_duration = {ser_sd.duration}")
+                                setattr(mark, f"{swiml.name}_duration", ser_sd.duration)
                         # break next items
                         continue
 
