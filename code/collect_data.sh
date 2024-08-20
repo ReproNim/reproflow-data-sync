@@ -12,12 +12,13 @@ ISODATE=$Y-$M-$D
 
 echo "Collecting data for mdate=$mdate (AKA $ISODATE)"
 
+set -x
 mkdir -p "ses-$mdate"
 cd "ses-$mdate"
 
 mkdir -p {DICOMS,birch,psychopy,reproevents,reprostim-videos}
 
-rsync -a bids@rolando.cns.dartmouth.edu:/inbox/DICOM/$Y/$M/$D/birchtest/* DICOMS/
+rsync -a bids@rolando.cns.dartmouth.edu:/inbox/DICOM/$Y/$M/$D/birchtest*/* DICOMS/
 rsync -a /home/yoh/proj/repronim/reprostim/Examples/exp-alpha/code/{${mdate}*log,qr_code_flips.py} psychopy/
 ssh birch "grep -h '\<${ISODATE}T' /mnt/td/*" >| birch/out.jsonl
 if [ ! -s "birch/out.jsonl" ]; then
@@ -28,4 +29,10 @@ fi
 ssh reprostim@reproiner "cd reprostim/Events/data && grep -l '\<${ISODATE}T' *.csv | head -n 1 | xargs head -n 1 && grep '\<${ISODATE}T' *.csv" > reproevents/events.csv
 
 # only those for which we fetch data, we get them
-cp --reflink=auto `find ~/proj/repronim/reprostim-reproiner/Videos/$Y/$M -size +100 -iname "$Y.$M.$D.*"` reprostim-videos/
+(
+    cd ~/proj/repronim/reprostim-reproiner
+    git fetch origin; git fetch rolando;
+    git merge --ff-only origin/master
+    git annex get -J4 Videos/$Y/$M/$Y.$M.$D-*
+)
+cp --reflink=auto `find ~/proj/repronim/reprostim-reproiner/Videos/$Y/$M -size +100 -iname "$Y.$M.$D-*"` reprostim-videos/
