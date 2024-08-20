@@ -281,6 +281,13 @@ def match_series_data(sd1: SeriesData, sd2: SeriesData) -> bool:
         t_max: float = sd1.next_series_interval * 1.05
         if not (t_min <= sd2.next_series_interval <= t_max):
             return False
+
+    if sd1.next_series_interval==0.0 and sd2.next_series_interval>0:
+        return False
+
+    if sd1.next_series_interval>0 and sd2.next_series_interval==0.0:
+        return False
+
     #else:
     #    return False
         #if sd1.next_series_interval!=0.0 and sd2.next_series_interval!=0.0:
