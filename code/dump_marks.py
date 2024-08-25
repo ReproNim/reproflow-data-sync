@@ -268,35 +268,67 @@ def find_dicoms_func_series(model: DumpModel) -> List[SeriesData]:
 
 # match SeriesData object with another one
 def match_series_data(sd1: SeriesData, sd2: SeriesData) -> bool:
+    # NOTE: the code contains hardcoded bypasses for qrinfo swimlane
+    # because of the current problems with 0.3 sec in first QR code
+    # so ideally it should be disabled in future once we fix the problem
+
+    f_debug: bool = True
     #if sd1.name == '015-func-bold_task-rest_acq-med1_run-04' and sd2.name == 'birch-series-8':
     #    logger.debug(f"Matching: {sd1} with {sd2}")
+    if f_debug:
+        logger.debug(f"Matching: sd1={sd1.name} with sd2={sd2.name}")
 
     if not sd1 or not sd2:
+        if f_debug:
+            logger.debug(f" mismatch_0")
         return False
 
     # match item count
     if sd1.count != sd2.count:
+        if f_debug:
+            logger.debug(f" mismatch_7: {sd1.count} / {sd2.count}")
         return False
+
+    k_min: float = 0.95
+    k_max: float = 1.05
+
+    # for QRINFO we allow 20% difference, because of the current problems with 0.3 sec
+    if sd1.swimlane.name==Swimlane.QRINFO or sd2.swimlane.name==Swimlane.QRINFO:
+        k_min = 0.80
+        k_max = 1.20
+
+    if f_debug:
+        logger.debug(f" use k_min={k_min}, k_max={k_max}")
 
     # match interval corresponds to each other
     if sd1.interval and sd2.interval:
-        t_min: float = sd1.interval * 0.95
-        t_max: float = sd1.interval * 1.05
+        t_min: float = sd1.interval * k_min
+        t_max: float = sd1.interval * k_max
         if not (t_min <= sd2.interval <= t_max):
+            if f_debug:
+                logger.debug(f" mismatch_1: {sd1.interval} / {sd2.interval}")
             return False
 
     # match inter series interval matches as well
     if sd1.next_series_interval and sd2.next_series_interval:
-        t_min: float = sd1.next_series_interval * 0.95
-        t_max: float = sd1.next_series_interval * 1.05
+        t_min: float = sd1.next_series_interval * k_min
+        t_max: float = sd1.next_series_interval * k_max
         if not (t_min <= sd2.next_series_interval <= t_max):
+            if f_debug:
+                logger.debug(f" mismatch_2: {sd1.next_series_interval} / {sd2.next_series_interval}")
             return False
 
-    if sd1.next_series_interval==0.0 and sd2.next_series_interval>0:
-        return False
+    # Kludge, skip check for QRINFO swimlane atm
+    if sd2.swimlane.name!=Swimlane.QRINFO:
+        if sd1.next_series_interval==0.0 and sd2.next_series_interval>0:
+            if f_debug:
+                logger.debug(f" mismatch_3: {sd1.next_series_interval} / {sd2.next_series_interval}")
+            return False
 
-    if sd1.next_series_interval>0 and sd2.next_series_interval==0.0:
-        return False
+        if sd1.next_series_interval>0 and sd2.next_series_interval==0.0:
+            if f_debug:
+                logger.debug(f" mismatch_4: {sd1.next_series_interval} / {sd2.next_series_interval}")
+            return False
 
     #else:
     #    return False
@@ -308,9 +340,13 @@ def match_series_data(sd1: SeriesData, sd2: SeriesData) -> bool:
     # for DICOMs series we allow 120 sec difference
     if sd1.swimlane.name==Swimlane.DICOMS or sd2.swimlane.name==Swimlane.DICOMS:
         if synced_dt > 120 :
+            if f_debug:
+                logger.debug(f" mismatch_5: {sd1.synced_isotime_start} / {sd2.synced_isotime_start}")
             return False
     else:
         if synced_dt > 2.0:
+            if f_debug:
+                logger.debug(f" mismatch_6: {sd1.synced_isotime_start} / {sd2.synced_isotime_start}")
             return False
 
 
@@ -423,11 +459,13 @@ def generate_marks(model: DumpModel):
         map_series: dict = {}
         for swiml in [model.birch, model.qrinfo, model.psychopy,
                       model.reproevents]:
+            birch_sd: SeriesData = map_series.get(Swimlane.BIRCH)
             for ser_sd in swiml.series:
                 # TODO: in future also consider match algorithm based on
                 #       existing table table for previous series
-                if match_series_data(dicoms_sd, ser_sd):
+                if match_series_data(birch_sd if birch_sd else dicoms_sd , ser_sd):
                     map_series[swiml.name] = ser_sd
+                    logger.debug(f"store map_series[{swiml.name}] -> {ser_sd.name}")
                     mark.target_ids.append(ser_sd.events[0].id)
                     setattr(mark, f"{swiml.name}_isotime", ser_sd.isotime_start)
                     setattr(mark, f"{swiml.name}_duration", ser_sd.duration)
@@ -440,7 +478,9 @@ def generate_marks(model: DumpModel):
         # dump_jsonl(mark)
 
         # generate marks for each scan in series
-        for i in range(len(dicoms_sd.events)):
+        c = len(dicoms_sd.events)
+        last_i = c - 1
+        for i in range(c):
             mark = MarkRecord()
             mark.id = generate_id('mark')
             mark.session_id = model.session_id
@@ -448,11 +488,15 @@ def generate_marks(model: DumpModel):
             mark.name = f"{dicoms_sd.name}_scan-{i}"
             mark.target_ids.append(dicoms_sd.events[i].id)
             mark.dicoms_isotime = dicoms_sd.events[i].isotime
-            #mark.dicoms_duration = None
+            # skip duration for last item
+            if i != last_i:
+                mark.dicoms_duration = dicoms_sd.events[i].duration
             for k, v in map_series.items():
                 mark.target_ids.append(v.events[i].id)
                 setattr(mark, f"{k}_isotime", v.events[i].isotime)
-                #setattr(mark, f"{k}_duration", None)
+                # skip duration for last item
+                if i != last_i:
+                    setattr(mark, f"{k}_duration", v.events[i].duration)
             marks.append(mark)
             logger.debug(f"{mark.model_dump_json()}")
             # dump_jsonl(mark)
@@ -481,10 +525,13 @@ def generate_marks(model: DumpModel):
         logger.debug(f"  {m.id} : {m.target_ids}")
 
     # try to match marks with existing tmap also
-    # TODO: in future consider also to use tmap record from
-    #  mark generator if any found
-    logger.debug("Try to match marks with tmap service")
-    for mark in marks:
+    #
+    # by now disable 2nd pass as it produces false results
+    # in future it can be used only when tmap service is configured
+    # with current session data
+    #
+    # logger.debug("Try to match marks with tmap service")
+    for mark in []: # skip by now -->   for mark in marks:
         dicoms_isotime: datetime = mark.dicoms_isotime
         dicoms_cache: dict = {}
         dicoms_id: str = mark.target_ids[0]

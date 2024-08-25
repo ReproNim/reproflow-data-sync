@@ -97,6 +97,7 @@ def generate_tmap(session_id: str, path_marks: str,
 
         tmr: TMapRecord = TMapRecord()
         tmr.isotime = ref_isotime
+        tmr.duration = ref_duration
         tmr.session_id = session_id
         tmr.mark_id = fm.get('id')
         target_ids: List[str] = fm.get('target_ids')
@@ -105,22 +106,27 @@ def generate_tmap(session_id: str, path_marks: str,
         tmr.birch_id = get_dump_id("birch", target_ids)
         tmr.birch_isotime = ref_isotime
         tmr.birch_offset = 0.0
+        tmr.birch_duration = fm.get('birch_duration')
         tmr.birch_deviation = 1.0
         tmr.dicoms_id = get_dump_id("dicoms", target_ids)
         tmr.dicoms_isotime = parse_isotime(fm.get('dicoms_isotime'))
         tmr.dicoms_offset = calc_offset(tmr.dicoms_isotime, tmr.isotime)
+        tmr.dicoms_duration = fm.get('dicoms_duration')
         tmr.dicoms_deviation = calc_deviation(fm, 'dicoms_duration', ref_duration)
         tmr.qrinfo_id = get_dump_id("qrinfo", target_ids)
         tmr.reprostim_video_isotime = parse_isotime(fm.get('qrinfo_isotime'))
         tmr.reprostim_video_offset = calc_offset(tmr.reprostim_video_isotime, tmr.isotime)
+        tmr.reprostim_video_duration = fm.get('qrinfo_duration')
         tmr.reprostim_video_deviation = calc_deviation(fm, 'qrinfo_duration', ref_duration)
         tmr.psychopy_id = get_dump_id("psychopy", target_ids)
         tmr.psychopy_isotime = parse_isotime(fm.get('psychopy_isotime'))
         tmr.psychopy_offset = calc_offset(tmr.psychopy_isotime, tmr.isotime)
+        tmr.psychopy_duration = fm.get('psychopy_duration')
         tmr.psychopy_deviation = calc_deviation(fm, 'psychopy_duration', ref_duration)
         tmr.reproevents_id = get_dump_id("reproevents", target_ids)
         tmr.reproevents_isotime = parse_isotime(fm.get('reproevents_isotime'))
         tmr.reproevents_offset = calc_offset(tmr.reproevents_isotime, tmr.isotime)
+        tmr.reproevents_duration = fm.get('reproevents_duration')
         tmr.reproevents_deviation = calc_deviation(fm, 'reproevents_duration', ref_duration)
         tmap.append(tmr)
         if format == 'jsonl':
