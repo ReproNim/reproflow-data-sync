@@ -71,6 +71,7 @@ Common dump JSON item fields are:
 - `id` - specifies unique dump item ID inside related session.
 - `type` - specifies record class type, to distinguish different items if any inside single dump.
 - `isotime` - specifies datetime in `isotime` format in related swimlane clocks.
+- `duration` - specifies duration in seconds till the next event in related swimlane clocks.
 
 Let's briefly describe each dump:
 - `dump_dicoms.jsonl` JSONL with items generated from DICOMS images:
@@ -86,6 +87,8 @@ Let's briefly describe each dump:
   - `qrinfo_id` - optional, specifies related QR code ID from sessions's `dump_qrinfo.jsonl` file when exits.
 - `dump_qrinfo.jsonl` JSONL with `QrRecord` items corresponding to QR codes logs. Datetime information extracted from `isotime_start` field (where this frame first appeared in captured video).
 - `dump_reproevents.jsonl` JSONL with `ReproeventsRecord` items corresponding to reproevents logs. Datetime information extracted from `client_time_iso` column in CVS file, and entire row is converted to JSON object `data` field.
+  - `duration` - duration in seconds till the next event in related swimlane clocks.
+  - `state_duration` - duration in seconds till the next event when state will be changed to 0.
 - `dump_marks.jsonl` JSONL with `MarkRecord` items corresponding to global events used to synchronize all swimlanes and clocks.
 - `dump_tmap.jsonl` JSONL with `TMapRecord` items specifying datetime mapping information between different clocks based on information and statistics extracted from the current session.
 
@@ -133,7 +136,8 @@ Algorithm proposals for the ReproFlow time synchronization effort:
 - `reproevents` 
   - `isotime` field is precise and reliable, and looks like more precise than birch `iso_time`, fluctuation in range 0.00-0.01 sec.
   - `reproevents` events also matched with DICOMs well close to `birch`, but this is not always 100% match. It's possible that precision is even better than `birch` one, so it should be considered in future when calculating global clock information.
-  - in `ses-20240809` we determined that client time in this logs is not precise and contains a lot of records with the same time, so it's not reliable to use it as a master clock. 
+  - in `ses-20240809` we determined that client time in this logs is not precise and contains a lot of records with the same time, so it's not reliable to use it as a master clock.
+  - in `ses-20240809` we also determined that `server_time` is not consistent and contains gap like 4 or 14 sec, and 7 trigger pulses are missed at all.
 - `psychopy` 
   - `isotime` field is less precise, fluctuation in range 0.00-0.03 sec.
 - `qrinfo` / `reprostim_video`
@@ -155,6 +159,8 @@ Algorithm proposals for the ReproFlow time synchronization effort:
   - [x] `psychopy\20240809_acq-med1_run-01.log` contains only 30 records rather than 150 ones. After manual inspection it looks like it's cut in the middle of the scan at 10:39:06 rather than 10:43:06. So it's broken input data from psychopy.
   - [ ] `qrinfo` it looks like video duration is only 6:37 instead of 32:07 (based on reprostim json metadata and `2024.08.09-10.31.00.087--2024.08.09-11.03.07.318.mkv` file name ), and it contains only 3 short series of QRs. Need in future investigation of `reprostim-videocapture` utility and `ffmpeg` params.
   - [ ] `reproevents` started from `reproevents-000263` it produces invalid data. There are a lot of records in `events.csv/@client_time_iso` with time like `2024-08-09T10:49:39`. Real series time range based on the swimlanes is around `10:47:48`--`10:52:46` and scans count is 150. So it looks like some performance issues on hardware or software side recording events log.
+  - [ ] `reproevents` related to original lines in `events.csv` `638:639`, `747:748` `server_time` 217.389434 and 339.392153 has untypical duration 4 and 14 sec instead of 2 sec. 
+  - [ ] `reproevents` related to `013-func-bold_task-rest_acq-med1_run-02` series with 150 slices contains only 143 events instead of 150 ones, 7 are missed somehow. Series NTP EST time is `10:47:48`--`10:52:46` .
 
 ## TODO:
   - Use DataLad run to execute commands (https://handbook.datalad.org/en/latest/basics/basics-run.html)
