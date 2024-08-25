@@ -1,8 +1,24 @@
 dump_marks.py tool
-Started on    : 2024-08-19 23:06:53.184361, vmelnik@Uranus
+Started on    : 2024-08-25 12:09:26.492906, vmelnik@Uranus
 Working dir   : /Users/vmelnik/Projects/Dartmouth/branches/reproflow-data-sync/code
 Session path  : /Users/vmelnik/Projects/Dartmouth/branches/typhon/reproflow-data-sync/ses-20240809
 Session ID    : ses-20240809
+Skip event object, type is not DicomsRecord: study-000001
+Skip event object, type is not DicomsRecord: series-000001
+Skip event object, type is not DicomsRecord: series-000002
+Skip event object, type is not DicomsRecord: series-000003
+Skip event object, type is not DicomsRecord: series-000004
+Skip event object, type is not DicomsRecord: series-000005
+Skip event object, type is not DicomsRecord: series-000006
+Skip event object, type is not DicomsRecord: series-000007
+Skip event object, type is not DicomsRecord: series-000008
+Skip event object, type is not DicomsRecord: series-000009
+Skip event object, type is not DicomsRecord: series-000010
+Skip event object, type is not DicomsRecord: series-000011
+Skip event object, type is not DicomsRecord: series-000012
+Skip event object, type is not DicomsRecord: series-000013
+Skip event object, type is not DicomsRecord: series-000014
+Skip event object, type is not DicomsRecord: series-000015
 Skip birch series (too small=1): ['birch-000001']
 Skip birch series (too small=1): ['birch-000002']
 Skip birch series (too small=1): ['birch-000003']
@@ -18,77 +34,6 @@ Skip reproevents series (too small=1): ['reproevents-000049']
 Skip reproevents series (too small=1): ['reproevents-000050']
 Skip reproevents series (too small=1): ['reproevents-000051']
 Skip reproevents series (too small=1): ['reproevents-000052']
-Skip reproevents series (too small=1): ['reproevents-000294']
-Skip reproevents series (too small=1): ['reproevents-000295']
-Skip reproevents series (too small=1): ['reproevents-000296']
-Skip reproevents series (too small=1): ['reproevents-000297']
-Skip reproevents series (too small=1): ['reproevents-000298']
-Skip reproevents series (too small=1): ['reproevents-000299']
-Skip reproevents series (too small=1): ['reproevents-000300']
-Skip reproevents series (too small=1): ['reproevents-000301']
-Skip reproevents series (too small=1): ['reproevents-000302']
-Skip reproevents series (too small=1): ['reproevents-000303']
-Skip reproevents series (too small=1): ['reproevents-000304']
-Skip reproevents series (too small=1): ['reproevents-000305']
-Skip reproevents series (too small=1): ['reproevents-000306']
-Skip reproevents series (too small=1): ['reproevents-000307']
-Skip reproevents series (too small=1): ['reproevents-000308']
-Skip reproevents series (too small=1): ['reproevents-000309']
-Skip reproevents series (too small=1): ['reproevents-000310']
-Skip reproevents series (too small=1): ['reproevents-000311']
-Skip reproevents series (too small=1): ['reproevents-000312']
-Skip reproevents series (too small=1): ['reproevents-000313']
-Skip reproevents series (too small=1): ['reproevents-000314']
-Skip reproevents series (too small=1): ['reproevents-000315']
-Skip reproevents series (too small=1): ['reproevents-000316']
-Skip reproevents series (too small=1): ['reproevents-000317']
-Skip reproevents series (too small=1): ['reproevents-000349']
-Skip reproevents series (too small=1): ['reproevents-000350']
-Skip reproevents series (too small=1): ['reproevents-000351']
-Skip reproevents series (too small=1): ['reproevents-000352']
-Skip reproevents series (too small=1): ['reproevents-000353']
-Skip reproevents series (too small=1): ['reproevents-000354']
-Skip reproevents series (too small=1): ['reproevents-000355']
-Skip reproevents series (too small=1): ['reproevents-000356']
-Skip reproevents series (too small=1): ['reproevents-000357']
-Skip reproevents series (too small=1): ['reproevents-000358']
-Skip reproevents series (too small=1): ['reproevents-000359']
-Skip reproevents series (too small=1): ['reproevents-000360']
-Skip reproevents series (too small=1): ['reproevents-000361']
-Skip reproevents series (too small=1): ['reproevents-000362']
-Skip reproevents series (too small=1): ['reproevents-000363']
-Skip reproevents series (too small=1): ['reproevents-000364']
-Skip reproevents series (too small=1): ['reproevents-000365']
-Skip reproevents series (too small=1): ['reproevents-000366']
-Skip reproevents series (too small=1): ['reproevents-000367']
-Skip reproevents series (too small=1): ['reproevents-000368']
-Skip reproevents series (too small=1): ['reproevents-000369']
-Skip reproevents series (too small=1): ['reproevents-000370']
-Skip reproevents series (too small=1): ['reproevents-000371']
-Skip reproevents series (too small=1): ['reproevents-000372']
-Skip reproevents series (too small=1): ['reproevents-000437']
-Skip reproevents series (too small=1): ['reproevents-000438']
-Skip reproevents series (too small=1): ['reproevents-000439']
-Skip reproevents series (too small=1): ['reproevents-000440']
-Skip reproevents series (too small=1): ['reproevents-000441']
-Skip reproevents series (too small=1): ['reproevents-000442']
-Skip reproevents series (too small=1): ['reproevents-000443']
-Skip reproevents series (too small=1): ['reproevents-000444']
-Skip reproevents series (too small=1): ['reproevents-000445']
-Skip reproevents series (too small=1): ['reproevents-000446']
-Skip reproevents series (too small=1): ['reproevents-000447']
-Skip reproevents series (too small=1): ['reproevents-000448']
-Skip reproevents series (too small=1): ['reproevents-000449']
-Skip reproevents series (too small=1): ['reproevents-000450']
-Skip reproevents series (too small=1): ['reproevents-000451']
-Skip reproevents series (too small=1): ['reproevents-000452']
-Skip reproevents series (too small=1): ['reproevents-000453']
-Skip reproevents series (too small=1): ['reproevents-000454']
-Skip reproevents series (too small=1): ['reproevents-000455']
-Skip reproevents series (too small=1): ['reproevents-000456']
-Skip reproevents series (too small=1): ['reproevents-000457']
-Skip reproevents series (too small=1): ['reproevents-000458']
-Skip reproevents series (too small=1): ['reproevents-000459']
 Swimlane: dicoms
   Found 11 dicoms series
   Series: 005-func-bold_task-rest_acq-short1_run-01, count: 15, interval: 2.0, next_series_interval: 452.7, ids: dicoms-000140..dicoms-000154, time: 10:08:25--10:08:53
@@ -128,7 +73,7 @@ Swimlane: psychopy
   Series: psychopy-series-7, count: 150, interval: 1.9999907718120806, next_series_interval: 350.981711, ids: psychopy-000242..psychopy-000391, time: 10:54:23--10:59:21
   Series: psychopy-series-8, count: 150, interval: 1.9999857382550337, next_series_interval: 0, ids: psychopy-000392..psychopy-000541, time: 11:00:14--11:05:12
 Swimlane: reproevents
-  Found 13 reproevents series
+  Found 14 reproevents series
   Series: reproevents-series-1, count: 15, interval: 2.0000032142857145, next_series_interval: 452.409655, ids: reproevents-000001..reproevents-000015, time: 10:01:54--10:02:22
   Series: reproevents-series-2, count: 15, interval: 1.9999987857142858, next_series_interval: 521.602738, ids: reproevents-000016..reproevents-000030, time: 10:09:26--10:09:54
   Series: reproevents-series-3, count: 15, interval: 1.9980901428571427, next_series_interval: 543.849829, ids: reproevents-000031..reproevents-000045, time: 10:18:08--10:18:36
@@ -137,11 +82,12 @@ Swimlane: reproevents
   Series: reproevents-series-6, count: 15, interval: 2.000000214285714, next_series_interval: 105.876306, ids: reproevents-000083..reproevents-000097, time: 10:33:21--10:33:49
   Series: reproevents-series-7, count: 15, interval: 2.0000030714285715, next_series_interval: 180.218577, ids: reproevents-000098..reproevents-000112, time: 10:35:07--10:35:35
   Series: reproevents-series-8, count: 150, interval: 2.000007080536913, next_series_interval: 580.524234, ids: reproevents-000113..reproevents-000262, time: 10:38:08--10:43:06
-  Series: reproevents-series-9, count: 31, interval: 1.9999855999999998, next_series_interval: 111.999559, ids: reproevents-000263..reproevents-000293, time: 10:47:48--10:48:48
-  Series: reproevents-series-10, count: 31, interval: 1.9999974666666667, next_series_interval: 122.008621, ids: reproevents-000318..reproevents-000348, time: 10:49:40--10:50:40
+  Series: reproevents-series-9, count: 55, interval: 2.056865888888889, next_series_interval: 111.999559, ids: reproevents-000263..reproevents-000317, time: 10:47:48--10:49:39
+  Series: reproevents-series-10, count: 55, interval: 2.255214074074074, next_series_interval: 122.008621, ids: reproevents-000318..reproevents-000372, time: 10:49:40--10:51:42
   Series: reproevents-series-11, count: 33, interval: 1.9997274375, next_series_interval: 161.247689, ids: reproevents-000373..reproevents-000405, time: 10:51:42--10:52:46
-  Series: reproevents-series-12, count: 31, interval: 2.0000932666666666, next_series_interval: 520.981534, ids: reproevents-000406..reproevents-000436, time: 10:54:23--10:55:23
-  Series: reproevents-series-13, count: 65, interval: 2.0000054375, next_series_interval: 0, ids: reproevents-000460..reproevents-000524, time: 11:03:04--11:05:12
+  Series: reproevents-series-12, count: 54, interval: 9.81293941509434, next_series_interval: 520.981534, ids: reproevents-000406..reproevents-000459, time: 10:54:23--11:03:03
+  Series: reproevents-series-13, count: 27, interval: 2.000011423076923, next_series_interval: 54.000272, ids: reproevents-000460..reproevents-000486, time: 11:03:04--11:03:56
+  Series: reproevents-series-14, count: 38, interval: 2.0000020540540544, next_series_interval: 0, ids: reproevents-000487..reproevents-000524, time: 11:03:58--11:05:12
 dicoms.005-func-bold_task-rest_acq-short1_run-01 : ['dicoms-000140', 'dicoms-000141', 'dicoms-000142', 'dicoms-000143', 'dicoms-000144', 'dicoms-000145', 'dicoms-000146', 'dicoms-000147', 'dicoms-000148', 'dicoms-000149', 'dicoms-000150', 'dicoms-000151', 'dicoms-000152', 'dicoms-000153', 'dicoms-000154']
 dicoms.006-func-bold_task-rest_acq-short1_run-02 : ['dicoms-000155', 'dicoms-000156', 'dicoms-000157', 'dicoms-000158', 'dicoms-000159', 'dicoms-000160', 'dicoms-000161', 'dicoms-000162', 'dicoms-000163', 'dicoms-000164', 'dicoms-000165', 'dicoms-000166', 'dicoms-000167', 'dicoms-000168', 'dicoms-000169']
 dicoms.007-func-bold_task-rest_acq-short1_run-03 : ['dicoms-000170', 'dicoms-000171', 'dicoms-000172', 'dicoms-000173', 'dicoms-000174', 'dicoms-000175', 'dicoms-000176', 'dicoms-000177', 'dicoms-000178', 'dicoms-000179', 'dicoms-000180', 'dicoms-000181', 'dicoms-000182', 'dicoms-000183', 'dicoms-000184']
@@ -180,11 +126,12 @@ reproevents.reproevents-series-5 : ['reproevents-000068', 'reproevents-000069', 
 reproevents.reproevents-series-6 : ['reproevents-000083', 'reproevents-000084', 'reproevents-000085', 'reproevents-000086', 'reproevents-000087', 'reproevents-000088', 'reproevents-000089', 'reproevents-000090', 'reproevents-000091', 'reproevents-000092', 'reproevents-000093', 'reproevents-000094', 'reproevents-000095', 'reproevents-000096', 'reproevents-000097']
 reproevents.reproevents-series-7 : ['reproevents-000098', 'reproevents-000099', 'reproevents-000100', 'reproevents-000101', 'reproevents-000102', 'reproevents-000103', 'reproevents-000104', 'reproevents-000105', 'reproevents-000106', 'reproevents-000107', 'reproevents-000108', 'reproevents-000109', 'reproevents-000110', 'reproevents-000111', 'reproevents-000112']
 reproevents.reproevents-series-8 : ['reproevents-000113', 'reproevents-000114', 'reproevents-000115', 'reproevents-000116', 'reproevents-000117', 'reproevents-000118', 'reproevents-000119', 'reproevents-000120', 'reproevents-000121', 'reproevents-000122', 'reproevents-000123', 'reproevents-000124', 'reproevents-000125', 'reproevents-000126', 'reproevents-000127', 'reproevents-000128', 'reproevents-000129', 'reproevents-000130', 'reproevents-000131', 'reproevents-000132', 'reproevents-000133', 'reproevents-000134', 'reproevents-000135', 'reproevents-000136', 'reproevents-000137', 'reproevents-000138', 'reproevents-000139', 'reproevents-000140', 'reproevents-000141', 'reproevents-000142', 'reproevents-000143', 'reproevents-000144', 'reproevents-000145', 'reproevents-000146', 'reproevents-000147', 'reproevents-000148', 'reproevents-000149', 'reproevents-000150', 'reproevents-000151', 'reproevents-000152', 'reproevents-000153', 'reproevents-000154', 'reproevents-000155', 'reproevents-000156', 'reproevents-000157', 'reproevents-000158', 'reproevents-000159', 'reproevents-000160', 'reproevents-000161', 'reproevents-000162', 'reproevents-000163', 'reproevents-000164', 'reproevents-000165', 'reproevents-000166', 'reproevents-000167', 'reproevents-000168', 'reproevents-000169', 'reproevents-000170', 'reproevents-000171', 'reproevents-000172', 'reproevents-000173', 'reproevents-000174', 'reproevents-000175', 'reproevents-000176', 'reproevents-000177', 'reproevents-000178', 'reproevents-000179', 'reproevents-000180', 'reproevents-000181', 'reproevents-000182', 'reproevents-000183', 'reproevents-000184', 'reproevents-000185', 'reproevents-000186', 'reproevents-000187', 'reproevents-000188', 'reproevents-000189', 'reproevents-000190', 'reproevents-000191', 'reproevents-000192', 'reproevents-000193', 'reproevents-000194', 'reproevents-000195', 'reproevents-000196', 'reproevents-000197', 'reproevents-000198', 'reproevents-000199', 'reproevents-000200', 'reproevents-000201', 'reproevents-000202', 'reproevents-000203', 'reproevents-000204', 'reproevents-000205', 'reproevents-000206', 'reproevents-000207', 'reproevents-000208', 'reproevents-000209', 'reproevents-000210', 'reproevents-000211', 'reproevents-000212', 'reproevents-000213', 'reproevents-000214', 'reproevents-000215', 'reproevents-000216', 'reproevents-000217', 'reproevents-000218', 'reproevents-000219', 'reproevents-000220', 'reproevents-000221', 'reproevents-000222', 'reproevents-000223', 'reproevents-000224', 'reproevents-000225', 'reproevents-000226', 'reproevents-000227', 'reproevents-000228', 'reproevents-000229', 'reproevents-000230', 'reproevents-000231', 'reproevents-000232', 'reproevents-000233', 'reproevents-000234', 'reproevents-000235', 'reproevents-000236', 'reproevents-000237', 'reproevents-000238', 'reproevents-000239', 'reproevents-000240', 'reproevents-000241', 'reproevents-000242', 'reproevents-000243', 'reproevents-000244', 'reproevents-000245', 'reproevents-000246', 'reproevents-000247', 'reproevents-000248', 'reproevents-000249', 'reproevents-000250', 'reproevents-000251', 'reproevents-000252', 'reproevents-000253', 'reproevents-000254', 'reproevents-000255', 'reproevents-000256', 'reproevents-000257', 'reproevents-000258', 'reproevents-000259', 'reproevents-000260', 'reproevents-000261', 'reproevents-000262']
-reproevents.reproevents-series-9 : ['reproevents-000263', 'reproevents-000264', 'reproevents-000265', 'reproevents-000266', 'reproevents-000267', 'reproevents-000268', 'reproevents-000269', 'reproevents-000270', 'reproevents-000271', 'reproevents-000272', 'reproevents-000273', 'reproevents-000274', 'reproevents-000275', 'reproevents-000276', 'reproevents-000277', 'reproevents-000278', 'reproevents-000279', 'reproevents-000280', 'reproevents-000281', 'reproevents-000282', 'reproevents-000283', 'reproevents-000284', 'reproevents-000285', 'reproevents-000286', 'reproevents-000287', 'reproevents-000288', 'reproevents-000289', 'reproevents-000290', 'reproevents-000291', 'reproevents-000292', 'reproevents-000293']
-reproevents.reproevents-series-10 : ['reproevents-000318', 'reproevents-000319', 'reproevents-000320', 'reproevents-000321', 'reproevents-000322', 'reproevents-000323', 'reproevents-000324', 'reproevents-000325', 'reproevents-000326', 'reproevents-000327', 'reproevents-000328', 'reproevents-000329', 'reproevents-000330', 'reproevents-000331', 'reproevents-000332', 'reproevents-000333', 'reproevents-000334', 'reproevents-000335', 'reproevents-000336', 'reproevents-000337', 'reproevents-000338', 'reproevents-000339', 'reproevents-000340', 'reproevents-000341', 'reproevents-000342', 'reproevents-000343', 'reproevents-000344', 'reproevents-000345', 'reproevents-000346', 'reproevents-000347', 'reproevents-000348']
+reproevents.reproevents-series-9 : ['reproevents-000263', 'reproevents-000264', 'reproevents-000265', 'reproevents-000266', 'reproevents-000267', 'reproevents-000268', 'reproevents-000269', 'reproevents-000270', 'reproevents-000271', 'reproevents-000272', 'reproevents-000273', 'reproevents-000274', 'reproevents-000275', 'reproevents-000276', 'reproevents-000277', 'reproevents-000278', 'reproevents-000279', 'reproevents-000280', 'reproevents-000281', 'reproevents-000282', 'reproevents-000283', 'reproevents-000284', 'reproevents-000285', 'reproevents-000286', 'reproevents-000287', 'reproevents-000288', 'reproevents-000289', 'reproevents-000290', 'reproevents-000291', 'reproevents-000292', 'reproevents-000293', 'reproevents-000294', 'reproevents-000295', 'reproevents-000296', 'reproevents-000297', 'reproevents-000298', 'reproevents-000299', 'reproevents-000300', 'reproevents-000301', 'reproevents-000302', 'reproevents-000303', 'reproevents-000304', 'reproevents-000305', 'reproevents-000306', 'reproevents-000307', 'reproevents-000308', 'reproevents-000309', 'reproevents-000310', 'reproevents-000311', 'reproevents-000312', 'reproevents-000313', 'reproevents-000314', 'reproevents-000315', 'reproevents-000316', 'reproevents-000317']
+reproevents.reproevents-series-10 : ['reproevents-000318', 'reproevents-000319', 'reproevents-000320', 'reproevents-000321', 'reproevents-000322', 'reproevents-000323', 'reproevents-000324', 'reproevents-000325', 'reproevents-000326', 'reproevents-000327', 'reproevents-000328', 'reproevents-000329', 'reproevents-000330', 'reproevents-000331', 'reproevents-000332', 'reproevents-000333', 'reproevents-000334', 'reproevents-000335', 'reproevents-000336', 'reproevents-000337', 'reproevents-000338', 'reproevents-000339', 'reproevents-000340', 'reproevents-000341', 'reproevents-000342', 'reproevents-000343', 'reproevents-000344', 'reproevents-000345', 'reproevents-000346', 'reproevents-000347', 'reproevents-000348', 'reproevents-000349', 'reproevents-000350', 'reproevents-000351', 'reproevents-000352', 'reproevents-000353', 'reproevents-000354', 'reproevents-000355', 'reproevents-000356', 'reproevents-000357', 'reproevents-000358', 'reproevents-000359', 'reproevents-000360', 'reproevents-000361', 'reproevents-000362', 'reproevents-000363', 'reproevents-000364', 'reproevents-000365', 'reproevents-000366', 'reproevents-000367', 'reproevents-000368', 'reproevents-000369', 'reproevents-000370', 'reproevents-000371', 'reproevents-000372']
 reproevents.reproevents-series-11 : ['reproevents-000373', 'reproevents-000374', 'reproevents-000375', 'reproevents-000376', 'reproevents-000377', 'reproevents-000378', 'reproevents-000379', 'reproevents-000380', 'reproevents-000381', 'reproevents-000382', 'reproevents-000383', 'reproevents-000384', 'reproevents-000385', 'reproevents-000386', 'reproevents-000387', 'reproevents-000388', 'reproevents-000389', 'reproevents-000390', 'reproevents-000391', 'reproevents-000392', 'reproevents-000393', 'reproevents-000394', 'reproevents-000395', 'reproevents-000396', 'reproevents-000397', 'reproevents-000398', 'reproevents-000399', 'reproevents-000400', 'reproevents-000401', 'reproevents-000402', 'reproevents-000403', 'reproevents-000404', 'reproevents-000405']
-reproevents.reproevents-series-12 : ['reproevents-000406', 'reproevents-000407', 'reproevents-000408', 'reproevents-000409', 'reproevents-000410', 'reproevents-000411', 'reproevents-000412', 'reproevents-000413', 'reproevents-000414', 'reproevents-000415', 'reproevents-000416', 'reproevents-000417', 'reproevents-000418', 'reproevents-000419', 'reproevents-000420', 'reproevents-000421', 'reproevents-000422', 'reproevents-000423', 'reproevents-000424', 'reproevents-000425', 'reproevents-000426', 'reproevents-000427', 'reproevents-000428', 'reproevents-000429', 'reproevents-000430', 'reproevents-000431', 'reproevents-000432', 'reproevents-000433', 'reproevents-000434', 'reproevents-000435', 'reproevents-000436']
-reproevents.reproevents-series-13 : ['reproevents-000460', 'reproevents-000461', 'reproevents-000462', 'reproevents-000463', 'reproevents-000464', 'reproevents-000465', 'reproevents-000466', 'reproevents-000467', 'reproevents-000468', 'reproevents-000469', 'reproevents-000470', 'reproevents-000471', 'reproevents-000472', 'reproevents-000473', 'reproevents-000474', 'reproevents-000475', 'reproevents-000476', 'reproevents-000477', 'reproevents-000478', 'reproevents-000479', 'reproevents-000480', 'reproevents-000481', 'reproevents-000482', 'reproevents-000483', 'reproevents-000484', 'reproevents-000485', 'reproevents-000486', 'reproevents-000487', 'reproevents-000488', 'reproevents-000489', 'reproevents-000490', 'reproevents-000491', 'reproevents-000492', 'reproevents-000493', 'reproevents-000494', 'reproevents-000495', 'reproevents-000496', 'reproevents-000497', 'reproevents-000498', 'reproevents-000499', 'reproevents-000500', 'reproevents-000501', 'reproevents-000502', 'reproevents-000503', 'reproevents-000504', 'reproevents-000505', 'reproevents-000506', 'reproevents-000507', 'reproevents-000508', 'reproevents-000509', 'reproevents-000510', 'reproevents-000511', 'reproevents-000512', 'reproevents-000513', 'reproevents-000514', 'reproevents-000515', 'reproevents-000516', 'reproevents-000517', 'reproevents-000518', 'reproevents-000519', 'reproevents-000520', 'reproevents-000521', 'reproevents-000522', 'reproevents-000523', 'reproevents-000524']
+reproevents.reproevents-series-12 : ['reproevents-000406', 'reproevents-000407', 'reproevents-000408', 'reproevents-000409', 'reproevents-000410', 'reproevents-000411', 'reproevents-000412', 'reproevents-000413', 'reproevents-000414', 'reproevents-000415', 'reproevents-000416', 'reproevents-000417', 'reproevents-000418', 'reproevents-000419', 'reproevents-000420', 'reproevents-000421', 'reproevents-000422', 'reproevents-000423', 'reproevents-000424', 'reproevents-000425', 'reproevents-000426', 'reproevents-000427', 'reproevents-000428', 'reproevents-000429', 'reproevents-000430', 'reproevents-000431', 'reproevents-000432', 'reproevents-000433', 'reproevents-000434', 'reproevents-000435', 'reproevents-000436', 'reproevents-000437', 'reproevents-000438', 'reproevents-000439', 'reproevents-000440', 'reproevents-000441', 'reproevents-000442', 'reproevents-000443', 'reproevents-000444', 'reproevents-000445', 'reproevents-000446', 'reproevents-000447', 'reproevents-000448', 'reproevents-000449', 'reproevents-000450', 'reproevents-000451', 'reproevents-000452', 'reproevents-000453', 'reproevents-000454', 'reproevents-000455', 'reproevents-000456', 'reproevents-000457', 'reproevents-000458', 'reproevents-000459']
+reproevents.reproevents-series-13 : ['reproevents-000460', 'reproevents-000461', 'reproevents-000462', 'reproevents-000463', 'reproevents-000464', 'reproevents-000465', 'reproevents-000466', 'reproevents-000467', 'reproevents-000468', 'reproevents-000469', 'reproevents-000470', 'reproevents-000471', 'reproevents-000472', 'reproevents-000473', 'reproevents-000474', 'reproevents-000475', 'reproevents-000476', 'reproevents-000477', 'reproevents-000478', 'reproevents-000479', 'reproevents-000480', 'reproevents-000481', 'reproevents-000482', 'reproevents-000483', 'reproevents-000484', 'reproevents-000485', 'reproevents-000486']
+reproevents.reproevents-series-14 : ['reproevents-000487', 'reproevents-000488', 'reproevents-000489', 'reproevents-000490', 'reproevents-000491', 'reproevents-000492', 'reproevents-000493', 'reproevents-000494', 'reproevents-000495', 'reproevents-000496', 'reproevents-000497', 'reproevents-000498', 'reproevents-000499', 'reproevents-000500', 'reproevents-000501', 'reproevents-000502', 'reproevents-000503', 'reproevents-000504', 'reproevents-000505', 'reproevents-000506', 'reproevents-000507', 'reproevents-000508', 'reproevents-000509', 'reproevents-000510', 'reproevents-000511', 'reproevents-000512', 'reproevents-000513', 'reproevents-000514', 'reproevents-000515', 'reproevents-000516', 'reproevents-000517', 'reproevents-000518', 'reproevents-000519', 'reproevents-000520', 'reproevents-000521', 'reproevents-000522', 'reproevents-000523', 'reproevents-000524']
 Matched series data: 005-func-bold_task-rest_acq-short1_run-01 / reproevents-series-1
     count                = 15 / 15
     interval             = 2.0 / 2.0000032142857145
@@ -3491,6 +3438,201 @@ Time matched : 012-func-bold_task-rest_acq-med1_run-01_scan-140
              : -0.39504399999999995 sec, (2024-08-09 10:43:06.058343 - 2024-08-09 10:43:06.453387)
              : dicoms-000385 = 2024-08-09 10:49:19.187500
              : reproevents-000262 = 2024-08-09 10:43:06.453387
+Time matched : 013-func-bold_task-rest_acq-med1_run-02_scan-46
+             : -0.032804000000000055 sec, (2024-08-09 10:49:39.625583 - 2024-08-09 10:49:39.658387)
+             : dicoms-000441 = 2024-08-09 10:55:52.392500
+             : reproevents-000294 = 2024-08-09 10:49:39.658387
+             : set reproevents_isotime= 2024-08-09 10:49:39.625583
+Time matched : 013-func-bold_task-rest_acq-med1_run-02_scan-46
+             : -0.029702000000000006 sec, (2024-08-09 10:49:39.628685 - 2024-08-09 10:49:39.658387)
+             : dicoms-000441 = 2024-08-09 10:55:52.392500
+             : reproevents-000295 = 2024-08-09 10:49:39.658387
+Time matched : 013-func-bold_task-rest_acq-med1_run-02_scan-46
+             : -0.027973000000000026 sec, (2024-08-09 10:49:39.630414 - 2024-08-09 10:49:39.658387)
+             : dicoms-000441 = 2024-08-09 10:55:52.392500
+             : reproevents-000296 = 2024-08-09 10:49:39.658387
+Time matched : 013-func-bold_task-rest_acq-med1_run-02_scan-46
+             : -0.02679699999999996 sec, (2024-08-09 10:49:39.631590 - 2024-08-09 10:49:39.658387)
+             : dicoms-000441 = 2024-08-09 10:55:52.392500
+             : reproevents-000297 = 2024-08-09 10:49:39.658387
+Time matched : 013-func-bold_task-rest_acq-med1_run-02_scan-46
+             : -0.02571800000000002 sec, (2024-08-09 10:49:39.632669 - 2024-08-09 10:49:39.658387)
+             : dicoms-000441 = 2024-08-09 10:55:52.392500
+             : reproevents-000298 = 2024-08-09 10:49:39.658387
+Time matched : 013-func-bold_task-rest_acq-med1_run-02_scan-46
+             : -0.024714000000000014 sec, (2024-08-09 10:49:39.633673 - 2024-08-09 10:49:39.658387)
+             : dicoms-000441 = 2024-08-09 10:55:52.392500
+             : reproevents-000299 = 2024-08-09 10:49:39.658387
+Time matched : 013-func-bold_task-rest_acq-med1_run-02_scan-46
+             : -0.02371000000000001 sec, (2024-08-09 10:49:39.634677 - 2024-08-09 10:49:39.658387)
+             : dicoms-000441 = 2024-08-09 10:55:52.392500
+             : reproevents-000300 = 2024-08-09 10:49:39.658387
+Time matched : 013-func-bold_task-rest_acq-med1_run-02_scan-46
+             : -0.02271599999999996 sec, (2024-08-09 10:49:39.635671 - 2024-08-09 10:49:39.658387)
+             : dicoms-000441 = 2024-08-09 10:55:52.392500
+             : reproevents-000301 = 2024-08-09 10:49:39.658387
+Time matched : 013-func-bold_task-rest_acq-med1_run-02_scan-46
+             : -0.02171999999999996 sec, (2024-08-09 10:49:39.636667 - 2024-08-09 10:49:39.658387)
+             : dicoms-000441 = 2024-08-09 10:55:52.392500
+             : reproevents-000302 = 2024-08-09 10:49:39.658387
+Time matched : 013-func-bold_task-rest_acq-med1_run-02_scan-46
+             : -0.020642999999999967 sec, (2024-08-09 10:49:39.637744 - 2024-08-09 10:49:39.658387)
+             : dicoms-000441 = 2024-08-09 10:55:52.392500
+             : reproevents-000303 = 2024-08-09 10:49:39.658387
+Time matched : 013-func-bold_task-rest_acq-med1_run-02_scan-46
+             : -0.019642999999999966 sec, (2024-08-09 10:49:39.638744 - 2024-08-09 10:49:39.658387)
+             : dicoms-000441 = 2024-08-09 10:55:52.392500
+             : reproevents-000304 = 2024-08-09 10:49:39.658387
+Time matched : 013-func-bold_task-rest_acq-med1_run-02_scan-46
+             : -0.018437000000000037 sec, (2024-08-09 10:49:39.639950 - 2024-08-09 10:49:39.658387)
+             : dicoms-000441 = 2024-08-09 10:55:52.392500
+             : reproevents-000305 = 2024-08-09 10:49:39.658387
+Time matched : 013-func-bold_task-rest_acq-med1_run-02_scan-46
+             : -0.017452000000000023 sec, (2024-08-09 10:49:39.640935 - 2024-08-09 10:49:39.658387)
+             : dicoms-000441 = 2024-08-09 10:55:52.392500
+             : reproevents-000306 = 2024-08-09 10:49:39.658387
+Time matched : 013-func-bold_task-rest_acq-med1_run-02_scan-46
+             : -0.016405000000000003 sec, (2024-08-09 10:49:39.641982 - 2024-08-09 10:49:39.658387)
+             : dicoms-000441 = 2024-08-09 10:55:52.392500
+             : reproevents-000307 = 2024-08-09 10:49:39.658387
+Time matched : 013-func-bold_task-rest_acq-med1_run-02_scan-46
+             : -0.015433999999999948 sec, (2024-08-09 10:49:39.642953 - 2024-08-09 10:49:39.658387)
+             : dicoms-000441 = 2024-08-09 10:55:52.392500
+             : reproevents-000308 = 2024-08-09 10:49:39.658387
+Time matched : 013-func-bold_task-rest_acq-med1_run-02_scan-46
+             : -0.014465999999999979 sec, (2024-08-09 10:49:39.643921 - 2024-08-09 10:49:39.658387)
+             : dicoms-000441 = 2024-08-09 10:55:52.392500
+             : reproevents-000309 = 2024-08-09 10:49:39.658387
+Time matched : 013-func-bold_task-rest_acq-med1_run-02_scan-46
+             : -0.013503000000000043 sec, (2024-08-09 10:49:39.644884 - 2024-08-09 10:49:39.658387)
+             : dicoms-000441 = 2024-08-09 10:55:52.392500
+             : reproevents-000310 = 2024-08-09 10:49:39.658387
+Time matched : 013-func-bold_task-rest_acq-med1_run-02_scan-46
+             : -0.012378 sec, (2024-08-09 10:49:39.646009 - 2024-08-09 10:49:39.658387)
+             : dicoms-000441 = 2024-08-09 10:55:52.392500
+             : reproevents-000311 = 2024-08-09 10:49:39.658387
+Time matched : 013-func-bold_task-rest_acq-med1_run-02_scan-46
+             : -0.011183999999999972 sec, (2024-08-09 10:49:39.647203 - 2024-08-09 10:49:39.658387)
+             : dicoms-000441 = 2024-08-09 10:55:52.392500
+             : reproevents-000312 = 2024-08-09 10:49:39.658387
+Time matched : 013-func-bold_task-rest_acq-med1_run-02_scan-46
+             : -0.010206999999999966 sec, (2024-08-09 10:49:39.648180 - 2024-08-09 10:49:39.658387)
+             : dicoms-000441 = 2024-08-09 10:55:52.392500
+             : reproevents-000313 = 2024-08-09 10:49:39.658387
+Time matched : 013-func-bold_task-rest_acq-med1_run-02_scan-46
+             : -0.009190000000000031 sec, (2024-08-09 10:49:39.649197 - 2024-08-09 10:49:39.658387)
+             : dicoms-000441 = 2024-08-09 10:55:52.392500
+             : reproevents-000314 = 2024-08-09 10:49:39.658387
+Time matched : 013-func-bold_task-rest_acq-med1_run-02_scan-46
+             : -0.008075000000000054 sec, (2024-08-09 10:49:39.650312 - 2024-08-09 10:49:39.658387)
+             : dicoms-000441 = 2024-08-09 10:55:52.392500
+             : reproevents-000315 = 2024-08-09 10:49:39.658387
+Time matched : 013-func-bold_task-rest_acq-med1_run-02_scan-46
+             : -0.0070710000000000495 sec, (2024-08-09 10:49:39.651316 - 2024-08-09 10:49:39.658387)
+             : dicoms-000441 = 2024-08-09 10:55:52.392500
+             : reproevents-000316 = 2024-08-09 10:49:39.658387
+Time matched : 013-func-bold_task-rest_acq-med1_run-02_scan-46
+             : -0.0061069999999999736 sec, (2024-08-09 10:49:39.652280 - 2024-08-09 10:49:39.658387)
+             : dicoms-000441 = 2024-08-09 10:55:52.392500
+             : reproevents-000317 = 2024-08-09 10:49:39.658387
+Time matched : 013-func-bold_task-rest_acq-med1_run-02_scan-103
+             : -0.788799 sec, (2024-08-09 10:51:32.869588 - 2024-08-09 10:51:33.658387)
+             : dicoms-000498 = 2024-08-09 10:57:46.392500
+             : reproevents-000349 = 2024-08-09 10:51:33.658387
+             : set reproevents_isotime= 2024-08-09 10:51:32.869588
+Time matched : 013-func-bold_task-rest_acq-med1_run-02_scan-103
+             : -0.77879 sec, (2024-08-09 10:51:32.879597 - 2024-08-09 10:51:33.658387)
+             : dicoms-000498 = 2024-08-09 10:57:46.392500
+             : reproevents-000350 = 2024-08-09 10:51:33.658387
+Time matched : 013-func-bold_task-rest_acq-med1_run-02_scan-103
+             : -0.7771859999999999 sec, (2024-08-09 10:51:32.881201 - 2024-08-09 10:51:33.658387)
+             : dicoms-000498 = 2024-08-09 10:57:46.392500
+             : reproevents-000351 = 2024-08-09 10:51:33.658387
+Time matched : 013-func-bold_task-rest_acq-med1_run-02_scan-103
+             : -0.775202 sec, (2024-08-09 10:51:32.883185 - 2024-08-09 10:51:33.658387)
+             : dicoms-000498 = 2024-08-09 10:57:46.392500
+             : reproevents-000352 = 2024-08-09 10:51:33.658387
+Time matched : 013-func-bold_task-rest_acq-med1_run-02_scan-103
+             : -0.773743 sec, (2024-08-09 10:51:32.884644 - 2024-08-09 10:51:33.658387)
+             : dicoms-000498 = 2024-08-09 10:57:46.392500
+             : reproevents-000353 = 2024-08-09 10:51:33.658387
+Time matched : 013-func-bold_task-rest_acq-med1_run-02_scan-103
+             : -0.772364 sec, (2024-08-09 10:51:32.886023 - 2024-08-09 10:51:33.658387)
+             : dicoms-000498 = 2024-08-09 10:57:46.392500
+             : reproevents-000354 = 2024-08-09 10:51:33.658387
+Time matched : 013-func-bold_task-rest_acq-med1_run-02_scan-103
+             : -0.770999 sec, (2024-08-09 10:51:32.887388 - 2024-08-09 10:51:33.658387)
+             : dicoms-000498 = 2024-08-09 10:57:46.392500
+             : reproevents-000355 = 2024-08-09 10:51:33.658387
+Time matched : 013-func-bold_task-rest_acq-med1_run-02_scan-103
+             : -0.769776 sec, (2024-08-09 10:51:32.888611 - 2024-08-09 10:51:33.658387)
+             : dicoms-000498 = 2024-08-09 10:57:46.392500
+             : reproevents-000356 = 2024-08-09 10:51:33.658387
+Time matched : 013-func-bold_task-rest_acq-med1_run-02_scan-103
+             : -0.748256 sec, (2024-08-09 10:51:32.910131 - 2024-08-09 10:51:33.658387)
+             : dicoms-000498 = 2024-08-09 10:57:46.392500
+             : reproevents-000357 = 2024-08-09 10:51:33.658387
+Time matched : 013-func-bold_task-rest_acq-med1_run-02_scan-103
+             : -0.7468600000000001 sec, (2024-08-09 10:51:32.911527 - 2024-08-09 10:51:33.658387)
+             : dicoms-000498 = 2024-08-09 10:57:46.392500
+             : reproevents-000358 = 2024-08-09 10:51:33.658387
+Time matched : 013-func-bold_task-rest_acq-med1_run-02_scan-103
+             : -0.745548 sec, (2024-08-09 10:51:32.912839 - 2024-08-09 10:51:33.658387)
+             : dicoms-000498 = 2024-08-09 10:57:46.392500
+             : reproevents-000359 = 2024-08-09 10:51:33.658387
+Time matched : 013-func-bold_task-rest_acq-med1_run-02_scan-103
+             : -0.7441880000000001 sec, (2024-08-09 10:51:32.914199 - 2024-08-09 10:51:33.658387)
+             : dicoms-000498 = 2024-08-09 10:57:46.392500
+             : reproevents-000360 = 2024-08-09 10:51:33.658387
+Time matched : 013-func-bold_task-rest_acq-med1_run-02_scan-103
+             : -0.742919 sec, (2024-08-09 10:51:32.915468 - 2024-08-09 10:51:33.658387)
+             : dicoms-000498 = 2024-08-09 10:57:46.392500
+             : reproevents-000361 = 2024-08-09 10:51:33.658387
+Time matched : 013-func-bold_task-rest_acq-med1_run-02_scan-103
+             : -0.741657 sec, (2024-08-09 10:51:32.916730 - 2024-08-09 10:51:33.658387)
+             : dicoms-000498 = 2024-08-09 10:57:46.392500
+             : reproevents-000362 = 2024-08-09 10:51:33.658387
+Time matched : 013-func-bold_task-rest_acq-med1_run-02_scan-107
+             : 0.695007 sec, (2024-08-09 10:51:42.353394 - 2024-08-09 10:51:41.658387)
+             : dicoms-000502 = 2024-08-09 10:57:54.392500
+             : reproevents-000363 = 2024-08-09 10:51:41.658387
+             : set reproevents_isotime= 2024-08-09 10:51:42.353394
+Time matched : 013-func-bold_task-rest_acq-med1_run-02_scan-107
+             : 0.696054 sec, (2024-08-09 10:51:42.354441 - 2024-08-09 10:51:41.658387)
+             : dicoms-000502 = 2024-08-09 10:57:54.392500
+             : reproevents-000364 = 2024-08-09 10:51:41.658387
+Time matched : 013-func-bold_task-rest_acq-med1_run-02_scan-107
+             : 0.697039 sec, (2024-08-09 10:51:42.355426 - 2024-08-09 10:51:41.658387)
+             : dicoms-000502 = 2024-08-09 10:57:54.392500
+             : reproevents-000365 = 2024-08-09 10:51:41.658387
+Time matched : 013-func-bold_task-rest_acq-med1_run-02_scan-107
+             : 0.698016 sec, (2024-08-09 10:51:42.356403 - 2024-08-09 10:51:41.658387)
+             : dicoms-000502 = 2024-08-09 10:57:54.392500
+             : reproevents-000366 = 2024-08-09 10:51:41.658387
+Time matched : 013-func-bold_task-rest_acq-med1_run-02_scan-107
+             : 0.699091 sec, (2024-08-09 10:51:42.357478 - 2024-08-09 10:51:41.658387)
+             : dicoms-000502 = 2024-08-09 10:57:54.392500
+             : reproevents-000367 = 2024-08-09 10:51:41.658387
+Time matched : 013-func-bold_task-rest_acq-med1_run-02_scan-107
+             : 0.700176 sec, (2024-08-09 10:51:42.358563 - 2024-08-09 10:51:41.658387)
+             : dicoms-000502 = 2024-08-09 10:57:54.392500
+             : reproevents-000368 = 2024-08-09 10:51:41.658387
+Time matched : 013-func-bold_task-rest_acq-med1_run-02_scan-107
+             : 0.701148 sec, (2024-08-09 10:51:42.359535 - 2024-08-09 10:51:41.658387)
+             : dicoms-000502 = 2024-08-09 10:57:54.392500
+             : reproevents-000369 = 2024-08-09 10:51:41.658387
+Time matched : 013-func-bold_task-rest_acq-med1_run-02_scan-107
+             : 0.702115 sec, (2024-08-09 10:51:42.360502 - 2024-08-09 10:51:41.658387)
+             : dicoms-000502 = 2024-08-09 10:57:54.392500
+             : reproevents-000370 = 2024-08-09 10:51:41.658387
+Time matched : 013-func-bold_task-rest_acq-med1_run-02_scan-107
+             : 0.703202 sec, (2024-08-09 10:51:42.361589 - 2024-08-09 10:51:41.658387)
+             : dicoms-000502 = 2024-08-09 10:57:54.392500
+             : reproevents-000371 = 2024-08-09 10:51:41.658387
+Time matched : 013-func-bold_task-rest_acq-med1_run-02_scan-107
+             : 0.704254 sec, (2024-08-09 10:51:42.362641 - 2024-08-09 10:51:41.658387)
+             : dicoms-000502 = 2024-08-09 10:57:54.392500
+             : reproevents-000372 = 2024-08-09 10:51:41.658387
 Time matched : 014-func-bold_task-rest_acq-med1_run-03_start
              : 0.713358 sec, (2024-08-09 10:54:43.841043 - 2024-08-09 10:54:43.127685)
              : dicoms-000545 = 2024-08-09 11:00:55.857500
@@ -3504,7 +3646,7 @@ Time matched : 014-func-bold_task-rest_acq-med1_run-03_start
              : dicoms-000545 = 2024-08-09 11:00:55.857500
              : reproevents-000416 = 2024-08-09 10:54:43.123387
              : set reproevents_isotime= 2024-08-09 10:54:43.838108
-             : set reproevents_duration = 60.002798
+             : set reproevents_duration = 520.085789
 Time matched : 014-func-bold_task-rest_acq-med1_run-03_scan-0
              : 0.713358 sec, (2024-08-09 10:54:43.841043 - 2024-08-09 10:54:43.127685)
              : dicoms-000545 = 2024-08-09 11:00:55.857500
@@ -5346,6 +5488,99 @@ Time matched : 015-func-bold_task-rest_acq-med1_run-04_scan-75
              : -0.687828 sec, (2024-08-09 11:03:02.809817 - 2024-08-09 11:03:03.497645)
              : dicoms-000770 = 2024-08-09 11:09:16.242500
              : psychopy-000476 = 2024-08-09 11:03:03.497645
+Time matched : 015-func-bold_task-rest_acq-med1_run-04_scan-75
+             : 0.311795 sec, (2024-08-09 11:03:03.820182 - 2024-08-09 11:03:03.508387)
+             : dicoms-000770 = 2024-08-09 11:09:16.242500
+             : reproevents-000437 = 2024-08-09 11:03:03.508387
+             : set reproevents_isotime= 2024-08-09 11:03:03.820182
+Time matched : 015-func-bold_task-rest_acq-med1_run-04_scan-75
+             : 0.315151 sec, (2024-08-09 11:03:03.823538 - 2024-08-09 11:03:03.508387)
+             : dicoms-000770 = 2024-08-09 11:09:16.242500
+             : reproevents-000438 = 2024-08-09 11:03:03.508387
+Time matched : 015-func-bold_task-rest_acq-med1_run-04_scan-75
+             : 0.33062 sec, (2024-08-09 11:03:03.839007 - 2024-08-09 11:03:03.508387)
+             : dicoms-000770 = 2024-08-09 11:09:16.242500
+             : reproevents-000439 = 2024-08-09 11:03:03.508387
+Time matched : 015-func-bold_task-rest_acq-med1_run-04_scan-75
+             : 0.332505 sec, (2024-08-09 11:03:03.840892 - 2024-08-09 11:03:03.508387)
+             : dicoms-000770 = 2024-08-09 11:09:16.242500
+             : reproevents-000440 = 2024-08-09 11:03:03.508387
+Time matched : 015-func-bold_task-rest_acq-med1_run-04_scan-75
+             : 0.336378 sec, (2024-08-09 11:03:03.844765 - 2024-08-09 11:03:03.508387)
+             : dicoms-000770 = 2024-08-09 11:09:16.242500
+             : reproevents-000441 = 2024-08-09 11:03:03.508387
+Time matched : 015-func-bold_task-rest_acq-med1_run-04_scan-75
+             : 0.338599 sec, (2024-08-09 11:03:03.846986 - 2024-08-09 11:03:03.508387)
+             : dicoms-000770 = 2024-08-09 11:09:16.242500
+             : reproevents-000442 = 2024-08-09 11:03:03.508387
+Time matched : 015-func-bold_task-rest_acq-med1_run-04_scan-75
+             : 0.340112 sec, (2024-08-09 11:03:03.848499 - 2024-08-09 11:03:03.508387)
+             : dicoms-000770 = 2024-08-09 11:09:16.242500
+             : reproevents-000443 = 2024-08-09 11:03:03.508387
+Time matched : 015-func-bold_task-rest_acq-med1_run-04_scan-75
+             : 0.342699 sec, (2024-08-09 11:03:03.851086 - 2024-08-09 11:03:03.508387)
+             : dicoms-000770 = 2024-08-09 11:09:16.242500
+             : reproevents-000444 = 2024-08-09 11:03:03.508387
+Time matched : 015-func-bold_task-rest_acq-med1_run-04_scan-75
+             : 0.351724 sec, (2024-08-09 11:03:03.860111 - 2024-08-09 11:03:03.508387)
+             : dicoms-000770 = 2024-08-09 11:09:16.242500
+             : reproevents-000445 = 2024-08-09 11:03:03.508387
+Time matched : 015-func-bold_task-rest_acq-med1_run-04_scan-75
+             : 0.354033 sec, (2024-08-09 11:03:03.862420 - 2024-08-09 11:03:03.508387)
+             : dicoms-000770 = 2024-08-09 11:09:16.242500
+             : reproevents-000446 = 2024-08-09 11:03:03.508387
+Time matched : 015-func-bold_task-rest_acq-med1_run-04_scan-75
+             : 0.357715 sec, (2024-08-09 11:03:03.866102 - 2024-08-09 11:03:03.508387)
+             : dicoms-000770 = 2024-08-09 11:09:16.242500
+             : reproevents-000447 = 2024-08-09 11:03:03.508387
+Time matched : 015-func-bold_task-rest_acq-med1_run-04_scan-75
+             : 0.358944 sec, (2024-08-09 11:03:03.867331 - 2024-08-09 11:03:03.508387)
+             : dicoms-000770 = 2024-08-09 11:09:16.242500
+             : reproevents-000448 = 2024-08-09 11:03:03.508387
+Time matched : 015-func-bold_task-rest_acq-med1_run-04_scan-75
+             : 0.360187 sec, (2024-08-09 11:03:03.868574 - 2024-08-09 11:03:03.508387)
+             : dicoms-000770 = 2024-08-09 11:09:16.242500
+             : reproevents-000449 = 2024-08-09 11:03:03.508387
+Time matched : 015-func-bold_task-rest_acq-med1_run-04_scan-75
+             : 0.36145 sec, (2024-08-09 11:03:03.869837 - 2024-08-09 11:03:03.508387)
+             : dicoms-000770 = 2024-08-09 11:09:16.242500
+             : reproevents-000450 = 2024-08-09 11:03:03.508387
+Time matched : 015-func-bold_task-rest_acq-med1_run-04_scan-75
+             : 0.366656 sec, (2024-08-09 11:03:03.875043 - 2024-08-09 11:03:03.508387)
+             : dicoms-000770 = 2024-08-09 11:09:16.242500
+             : reproevents-000451 = 2024-08-09 11:03:03.508387
+Time matched : 015-func-bold_task-rest_acq-med1_run-04_scan-75
+             : 0.370175 sec, (2024-08-09 11:03:03.878562 - 2024-08-09 11:03:03.508387)
+             : dicoms-000770 = 2024-08-09 11:09:16.242500
+             : reproevents-000452 = 2024-08-09 11:03:03.508387
+Time matched : 015-func-bold_task-rest_acq-med1_run-04_scan-75
+             : 0.372926 sec, (2024-08-09 11:03:03.881313 - 2024-08-09 11:03:03.508387)
+             : dicoms-000770 = 2024-08-09 11:09:16.242500
+             : reproevents-000453 = 2024-08-09 11:03:03.508387
+Time matched : 015-func-bold_task-rest_acq-med1_run-04_scan-75
+             : 0.381368 sec, (2024-08-09 11:03:03.889755 - 2024-08-09 11:03:03.508387)
+             : dicoms-000770 = 2024-08-09 11:09:16.242500
+             : reproevents-000454 = 2024-08-09 11:03:03.508387
+Time matched : 015-func-bold_task-rest_acq-med1_run-04_scan-75
+             : 0.383641 sec, (2024-08-09 11:03:03.892028 - 2024-08-09 11:03:03.508387)
+             : dicoms-000770 = 2024-08-09 11:09:16.242500
+             : reproevents-000455 = 2024-08-09 11:03:03.508387
+Time matched : 015-func-bold_task-rest_acq-med1_run-04_scan-75
+             : 0.386 sec, (2024-08-09 11:03:03.894387 - 2024-08-09 11:03:03.508387)
+             : dicoms-000770 = 2024-08-09 11:09:16.242500
+             : reproevents-000456 = 2024-08-09 11:03:03.508387
+Time matched : 015-func-bold_task-rest_acq-med1_run-04_scan-75
+             : 0.394786 sec, (2024-08-09 11:03:03.903173 - 2024-08-09 11:03:03.508387)
+             : dicoms-000770 = 2024-08-09 11:09:16.242500
+             : reproevents-000457 = 2024-08-09 11:03:03.508387
+Time matched : 015-func-bold_task-rest_acq-med1_run-04_scan-75
+             : 0.413525 sec, (2024-08-09 11:03:03.921912 - 2024-08-09 11:03:03.508387)
+             : dicoms-000770 = 2024-08-09 11:09:16.242500
+             : reproevents-000458 = 2024-08-09 11:03:03.508387
+Time matched : 015-func-bold_task-rest_acq-med1_run-04_scan-75
+             : 0.414793 sec, (2024-08-09 11:03:03.923180 - 2024-08-09 11:03:03.508387)
+             : dicoms-000770 = 2024-08-09 11:09:16.242500
+             : reproevents-000459 = 2024-08-09 11:03:03.508387
 Time matched : 015-func-bold_task-rest_acq-med1_run-04_scan-76
              : -0.689407 sec, (2024-08-09 11:03:04.823278 - 2024-08-09 11:03:05.512685)
              : dicoms-000771 = 2024-08-09 11:09:18.242500
@@ -6511,7 +6746,7 @@ Generated marks after pass 2, done:
   mark-000316 : ['dicoms-000438', 'birch-000258', 'psychopy-000135']
   mark-000317 : ['dicoms-000439', 'birch-000259', 'psychopy-000136']
   mark-000318 : ['dicoms-000440', 'birch-000260', 'psychopy-000137']
-  mark-000319 : ['dicoms-000441', 'birch-000261', 'psychopy-000138']
+  mark-000319 : ['dicoms-000441', 'birch-000261', 'psychopy-000138', 'reproevents-000294', 'reproevents-000295', 'reproevents-000296', 'reproevents-000297', 'reproevents-000298', 'reproevents-000299', 'reproevents-000300', 'reproevents-000301', 'reproevents-000302', 'reproevents-000303', 'reproevents-000304', 'reproevents-000305', 'reproevents-000306', 'reproevents-000307', 'reproevents-000308', 'reproevents-000309', 'reproevents-000310', 'reproevents-000311', 'reproevents-000312', 'reproevents-000313', 'reproevents-000314', 'reproevents-000315', 'reproevents-000316', 'reproevents-000317']
   mark-000320 : ['dicoms-000442', 'birch-000262', 'psychopy-000139']
   mark-000321 : ['dicoms-000443', 'birch-000263', 'psychopy-000140']
   mark-000322 : ['dicoms-000444', 'birch-000264', 'psychopy-000141']
@@ -6568,11 +6803,11 @@ Generated marks after pass 2, done:
   mark-000373 : ['dicoms-000495', 'birch-000315', 'psychopy-000192']
   mark-000374 : ['dicoms-000496', 'birch-000316', 'psychopy-000193']
   mark-000375 : ['dicoms-000497', 'birch-000317', 'psychopy-000194']
-  mark-000376 : ['dicoms-000498', 'birch-000318', 'psychopy-000195']
+  mark-000376 : ['dicoms-000498', 'birch-000318', 'psychopy-000195', 'reproevents-000349', 'reproevents-000350', 'reproevents-000351', 'reproevents-000352', 'reproevents-000353', 'reproevents-000354', 'reproevents-000355', 'reproevents-000356', 'reproevents-000357', 'reproevents-000358', 'reproevents-000359', 'reproevents-000360', 'reproevents-000361', 'reproevents-000362']
   mark-000377 : ['dicoms-000499', 'birch-000319', 'psychopy-000196']
   mark-000378 : ['dicoms-000500', 'birch-000320', 'psychopy-000197']
   mark-000379 : ['dicoms-000501', 'birch-000321', 'psychopy-000198']
-  mark-000380 : ['dicoms-000502', 'birch-000322', 'psychopy-000199']
+  mark-000380 : ['dicoms-000502', 'birch-000322', 'psychopy-000199', 'reproevents-000363', 'reproevents-000364', 'reproevents-000365', 'reproevents-000366', 'reproevents-000367', 'reproevents-000368', 'reproevents-000369', 'reproevents-000370', 'reproevents-000371', 'reproevents-000372']
   mark-000381 : ['dicoms-000503', 'birch-000323', 'psychopy-000200']
   mark-000382 : ['dicoms-000504', 'birch-000324', 'psychopy-000201']
   mark-000383 : ['dicoms-000505', 'birch-000325', 'psychopy-000202']
@@ -6844,7 +7079,7 @@ Generated marks after pass 2, done:
   mark-000649 : ['dicoms-000767', 'birch-000587', 'psychopy-000464', 'birch-000596', 'psychopy-000473']
   mark-000650 : ['dicoms-000768', 'birch-000588', 'psychopy-000465', 'birch-000597', 'psychopy-000474']
   mark-000651 : ['dicoms-000769', 'birch-000589', 'psychopy-000466', 'birch-000598', 'psychopy-000475']
-  mark-000652 : ['dicoms-000770', 'birch-000590', 'psychopy-000467', 'birch-000599', 'psychopy-000476']
+  mark-000652 : ['dicoms-000770', 'birch-000590', 'psychopy-000467', 'birch-000599', 'psychopy-000476', 'reproevents-000437', 'reproevents-000438', 'reproevents-000439', 'reproevents-000440', 'reproevents-000441', 'reproevents-000442', 'reproevents-000443', 'reproevents-000444', 'reproevents-000445', 'reproevents-000446', 'reproevents-000447', 'reproevents-000448', 'reproevents-000449', 'reproevents-000450', 'reproevents-000451', 'reproevents-000452', 'reproevents-000453', 'reproevents-000454', 'reproevents-000455', 'reproevents-000456', 'reproevents-000457', 'reproevents-000458', 'reproevents-000459']
   mark-000653 : ['dicoms-000771', 'birch-000591', 'psychopy-000468', 'birch-000600', 'psychopy-000477', 'reproevents-000460']
   mark-000654 : ['dicoms-000772', 'birch-000592', 'psychopy-000469', 'birch-000601', 'psychopy-000478', 'reproevents-000461']
   mark-000655 : ['dicoms-000773', 'birch-000593', 'psychopy-000470', 'birch-000602', 'psychopy-000479', 'reproevents-000462']
@@ -6920,5 +7155,5 @@ Generated marks after pass 2, done:
   mark-000725 : ['dicoms-000843', 'birch-000663', 'psychopy-000540']
   mark-000726 : ['dicoms-000844', 'birch-000664', 'psychopy-000541']
   mark-000727 : ['dicoms-000844', 'birch-000664', 'psychopy-000541']
-Exit on   : 2024-08-19 23:06:58.501957
+Exit on   : 2024-08-25 12:09:32.018524
 Exit code : 0

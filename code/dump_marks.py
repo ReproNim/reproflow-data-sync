@@ -43,6 +43,8 @@ class Swimlane(str, Enum):
 class EventData(BaseModel):
     id: Optional[str] = Field(None, description="Unique ID of the item")
     isotime: Optional[datetime] = Field(None, description="Event datetime timestamp")
+    duration: Optional[float] = Field(None, description="Event duration in seconds "
+                                                        "measured in swimlane clock")
     swimlane: Optional[object] = Field(None, description="Swimlane model reference")
     data: Optional[object] = Field({}, description="Data object")
 
@@ -83,9 +85,14 @@ class SeriesData(BaseModel):
 class SwimlaneModel(BaseModel):
     name: Optional[str] = Field(None, description="Swimlane name")
     clock: Optional[Clock] = Field(None, description="Clock model")
+    event_type: Optional[str] = Field(None, description="Event type filter id any. "
+                                                        "JSONL can contains more that one type")
     isotime_field: Optional[str] = Field(None, description="Field name for item in "
                                                            "swimlane containing "
                                                            "datetime in isotime format")
+    duration_field: Optional[str] = Field(None, description="Optional precalculated "
+                                                              "field with event "
+                                                              "duration in seconds")
     data: Optional[List] = Field([], description="List of raw data object "
                                                  "from JSONL")
     events: Optional[List[EventData]] = Field([], description="List of event items "
@@ -104,6 +111,7 @@ class DumpModel(BaseModel):
                                            description="Birch swimlane")
     dicoms: Optional[SwimlaneModel] = Field(SwimlaneModel(name=Swimlane.DICOMS,
                                                           clock=Clock.DICOMS,
+                                                          event_type="DicomsRecord",
                                                           isotime_field="acquisition_isotime"),
                                             description="DICOMs swimlane")
     psychopy: Optional[SwimlaneModel] = Field(SwimlaneModel(name=Swimlane.PSYCHOPY,
@@ -112,11 +120,14 @@ class DumpModel(BaseModel):
                                               description="PsychoPy swimlane")
     qrinfo: Optional[SwimlaneModel] = Field(SwimlaneModel(name=Swimlane.QRINFO,
                                                           clock=Clock.QRINFO,
+                                                          event_type="QrRecord",
                                                           isotime_field="isotime_start"),
                                             description="QRInfo swimlane")
     reproevents: Optional[SwimlaneModel] = Field(SwimlaneModel(name=Swimlane.REPROEVENTS,
                                                                 clock=Clock.REPROEVENTS,
-                                                                isotime_field="isotime"),
+                                                                event_type="ReproeventsRecord",
+                                                                isotime_field="isotime",
+                                                                duration_field="duration"),
                                                     description="ReproEvents swimlane")
     map_by_id: Optional[dict] = Field({}, description="Map of all objects by "
                                                       "unique ID")
@@ -181,8 +192,7 @@ def find_swimlane_series(swimlane: SwimlaneModel,
             last_isotime = isotime
             continue
 
-        dt: float = (isotime - last_isotime).total_seconds()
-        if dt_min <= dt <= dt_max:
+        if dt_min <= evts[-1].duration <= dt_max:
             evts.append(evt)
         else:
             # consider only more than 5 objects in series
@@ -318,9 +328,31 @@ def match_series_data(sd1: SeriesData, sd2: SeriesData) -> bool:
 def build_swimlane_events(swimlane: SwimlaneModel):
     swimlane.events = []
     for obj in swimlane.data:
+        if swimlane.event_type and obj.get('type') != swimlane.event_type:
+            logger.debug(f"Skip event object, type is not {swimlane.event_type}: {obj.get('id')}")
+            continue
+
         ed: EventData = EventData()
         ed.id = obj.get('id')
         ed.isotime = parse_isotime(obj.get(swimlane.isotime_field))
+        if not ed.isotime:
+            logger.error(f"!!! Invalid isotime for object: {obj}")
+
+        # calculate duration if not provided
+        if swimlane.duration_field:
+            v = obj.get(swimlane.duration_field)
+            # logger.debug(f"Duration of {ed.id}: {v}")
+            ed.duration = float(v)
+        else:
+            if len(swimlane.events)>0:
+                prev_ed = swimlane.events[-1]
+                ed.duration = 0.0
+                #logger.debug(f"prev_ed: {prev_ed.isotime}")
+                #logger.debug(f"ed: {ed.isotime}")
+                prev_ed.duration = (ed.isotime - prev_ed.isotime).total_seconds()
+            else:
+                ed.duration = 0.0
+
         ed.swimlane = swimlane
         ed.data = obj
         swimlane.events.append(ed)

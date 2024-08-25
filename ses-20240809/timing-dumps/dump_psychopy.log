@@ -1,5 +1,5 @@
 dump_psychopy.py tool
-Started on    : 2024-08-19 23:06:49.893386, vmelnik@Uranus
+Started on    : 2024-08-25 12:09:23.443114, vmelnik@Uranus
 Working dir   : /Users/vmelnik/Projects/Dartmouth/branches/reproflow-data-sync/code
 Session path  : /Users/vmelnik/Projects/Dartmouth/branches/typhon/reproflow-data-sync/ses-20240809
 Session ID    : ses-20240809
@@ -627,5 +627,5 @@ Time: 2024-08-09 10:59:18.401478, event: trigger, key0: 5
 Time: 2024-08-09 10:59:20.408600, event: trigger, key0: 5
 Time: 2024-08-09 10:59:22.404460, event: trigger, key0: q
 Skip, out of study range: {'event': 'trigger', 'acqNum': 150, 'logfn': '20240809_acq-med1_run-03.log', 'time': 1723215562.4044602, 'time_formatted': '2024-08-09T10:59:22.404460-04:00', 'keys': ['q'], 'keys_time': 1723215590.4988067, 'keys_time_str': '2024-08-09T10:59:50.498807-04:00', 'time_flip': 1723215590.5823348, 'time_flip_formatted': '2024-08-09T10:59:50.582335-04:00', 'prior_time_off': 1723215591.100769, 'prior_time_off_str': '2024-08-09T10:59:51.100769-04:00'}
-Exit on   : 2024-08-19 23:06:50.788763
+Exit on   : 2024-08-25 12:09:24.263899
 Exit code : 0

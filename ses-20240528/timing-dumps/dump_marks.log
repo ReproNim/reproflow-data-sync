@@ -1,8 +1,16 @@
 dump_marks.py tool
-Started on    : 2024-08-19 23:06:28.614323, vmelnik@Uranus
+Started on    : 2024-08-25 12:09:04.769374, vmelnik@Uranus
 Working dir   : /Users/vmelnik/Projects/Dartmouth/branches/reproflow-data-sync/code
 Session path  : /Users/vmelnik/Projects/Dartmouth/branches/typhon/reproflow-data-sync/ses-20240528
 Session ID    : ses-20240528
+Skip event object, type is not DicomsRecord: study-000001
+Skip event object, type is not DicomsRecord: series-000001
+Skip event object, type is not DicomsRecord: series-000002
+Skip event object, type is not DicomsRecord: series-000003
+Skip event object, type is not DicomsRecord: series-000004
+Skip event object, type is not DicomsRecord: series-000005
+Skip event object, type is not DicomsRecord: series-000006
+Skip event object, type is not DicomsRecord: series-000007
 Skip birch series (too small=1): ['birch-000001']
 Skip birch series (too small=1): ['birch-000002']
 Skip birch series (too small=1): ['birch-000003']
@@ -596,5 +604,5 @@ Generated marks after pass 2, done:
   mark-000036 : ['dicoms-000170', 'birch-000042', 'qrinfo-000022', 'psychopy-000032', 'reproevents-000032', 'birch-000041', 'psychopy-000031', 'reproevents-000031']
   mark-000037 : ['dicoms-000171', 'birch-000043', 'qrinfo-000023', 'psychopy-000033', 'reproevents-000033', 'birch-000042', 'psychopy-000032', 'reproevents-000032']
   mark-000038 : ['dicoms-000171', 'birch-000043', 'qrinfo-000023', 'psychopy-000033', 'reproevents-000033', 'birch-000042', 'psychopy-000032', 'reproevents-000032']
-Exit on   : 2024-08-19 23:06:28.847228
+Exit on   : 2024-08-25 12:09:05.014449
 Exit code : 0
