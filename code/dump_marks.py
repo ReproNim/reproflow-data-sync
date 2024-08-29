@@ -43,6 +43,8 @@ class Swimlane(str, Enum):
 class EventData(BaseModel):
     id: Optional[str] = Field(None, description="Unique ID of the item")
     isotime: Optional[datetime] = Field(None, description="Event datetime timestamp")
+    duration: Optional[float] = Field(None, description="Event duration in seconds "
+                                                        "measured in swimlane clock")
     swimlane: Optional[object] = Field(None, description="Swimlane model reference")
     data: Optional[object] = Field({}, description="Data object")
 
@@ -57,10 +59,10 @@ class SeriesData(BaseModel):
     count: Optional[int] = Field(0, description="Number of object in series")
     swimlane: Optional[object] = Field(None, description="Swimlane model reference")
     isotime_start: Optional[datetime] = Field(None, description="Series start "
-                                                                "datetime")
+                                                                "datetime in local clock")
     isotime_end: Optional[datetime] = Field(None, description="Series end "
                                                                 "datetime w/o "
-                                                              "last item")
+                                                              "last item in local clock")
     interval: Optional[float] = Field(0.0, description="Series interval "
                                                        "in seconds")
     duration: Optional[float] = Field(0.0, description="Series duration w/o last "
@@ -69,15 +71,28 @@ class SeriesData(BaseModel):
                                     description="Interval to next series if any in seconds, "
                                                 "otherwise 0.0. Claculated as"
                                                 "start-start interval between series")
+    # contains approximate global datetime when series started
+    synced_isotime_start: Optional[datetime] = Field(None, description="Series start global"
+                                                                "datetime")
+    # contains approximate global datetime when series ended
+    synced_isotime_end: Optional[datetime] = Field(None, description="Series end global"
+                                                                "datetime w/o "
+                                                              "last item")
+
 
 
 # Define swimlane object model
 class SwimlaneModel(BaseModel):
     name: Optional[str] = Field(None, description="Swimlane name")
     clock: Optional[Clock] = Field(None, description="Clock model")
+    event_type: Optional[str] = Field(None, description="Event type filter id any. "
+                                                        "JSONL can contains more that one type")
     isotime_field: Optional[str] = Field(None, description="Field name for item in "
                                                            "swimlane containing "
                                                            "datetime in isotime format")
+    duration_field: Optional[str] = Field(None, description="Optional precalculated "
+                                                              "field with event "
+                                                              "duration in seconds")
     data: Optional[List] = Field([], description="List of raw data object "
                                                  "from JSONL")
     events: Optional[List[EventData]] = Field([], description="List of event items "
@@ -96,6 +111,7 @@ class DumpModel(BaseModel):
                                            description="Birch swimlane")
     dicoms: Optional[SwimlaneModel] = Field(SwimlaneModel(name=Swimlane.DICOMS,
                                                           clock=Clock.DICOMS,
+                                                          event_type="DicomsRecord",
                                                           isotime_field="acquisition_isotime"),
                                             description="DICOMs swimlane")
     psychopy: Optional[SwimlaneModel] = Field(SwimlaneModel(name=Swimlane.PSYCHOPY,
@@ -104,11 +120,14 @@ class DumpModel(BaseModel):
                                               description="PsychoPy swimlane")
     qrinfo: Optional[SwimlaneModel] = Field(SwimlaneModel(name=Swimlane.QRINFO,
                                                           clock=Clock.QRINFO,
+                                                          event_type="QrRecord",
                                                           isotime_field="isotime_start"),
                                             description="QRInfo swimlane")
     reproevents: Optional[SwimlaneModel] = Field(SwimlaneModel(name=Swimlane.REPROEVENTS,
                                                                 clock=Clock.REPROEVENTS,
-                                                                isotime_field="isotime"),
+                                                                event_type="ReproeventsRecord",
+                                                                isotime_field="isotime",
+                                                                duration_field="duration"),
                                                     description="ReproEvents swimlane")
     map_by_id: Optional[dict] = Field({}, description="Map of all objects by "
                                                       "unique ID")
@@ -173,8 +192,7 @@ def find_swimlane_series(swimlane: SwimlaneModel,
             last_isotime = isotime
             continue
 
-        dt: float = (isotime - last_isotime).total_seconds()
-        if dt_min <= dt <= dt_max:
+        if dt_min <= evts[-1].duration <= dt_max:
             evts.append(evt)
         else:
             # consider only more than 5 objects in series
@@ -187,6 +205,10 @@ def find_swimlane_series(swimlane: SwimlaneModel,
                 sd.name = f"{swimlane.name}-series-{(len(lst)+1)}"
                 sd.isotime_start = evts[0].isotime
                 sd.isotime_end = evts[-1].isotime
+                sd.synced_isotime_start = get_tmap_svc().convert(
+                    swimlane.clock, Clock.ISOTIME, sd.isotime_start)
+                sd.synced_isotime_end = get_tmap_svc().convert(
+                    swimlane.clock, Clock.ISOTIME, sd.isotime_end)
                 sd.interval = (last_isotime - sd.isotime_start).total_seconds() / (sd.count-1)
                 sd.next_series_interval = 0
                 sd.duration = (sd.isotime_end - sd.isotime_start).total_seconds()
@@ -209,7 +231,7 @@ def find_dicoms_func_series(model: DumpModel) -> List[SeriesData]:
     df = pd.DataFrame(model.dicoms.data)
     # filter by type, study and series
     filtered_df = df[
-        (df['type'] == 'DicomRecord') &
+        (df['type'] == 'DicomsRecord') &
         (df['study'] == 'dbic^QA') &
         (df['series'].str.startswith('func-'))
         ]
@@ -228,6 +250,10 @@ def find_dicoms_func_series(model: DumpModel) -> List[SeriesData]:
         sd.name = series
         sd.isotime_start = sd.events[0].isotime
         sd.isotime_end = sd.events[-1].isotime
+        sd.synced_isotime_start = get_tmap_svc().convert(
+            Clock.DICOMS, Clock.ISOTIME, sd.isotime_start)
+        sd.synced_isotime_end = get_tmap_svc().convert(
+            Clock.DICOMS, Clock.ISOTIME, sd.isotime_end)
         sd.interval = calc_dicoms_series_interval(sd.events)
         sd.next_series_interval = 0.0
         sd.duration = (sd.isotime_end -
@@ -242,40 +268,127 @@ def find_dicoms_func_series(model: DumpModel) -> List[SeriesData]:
 
 # match SeriesData object with another one
 def match_series_data(sd1: SeriesData, sd2: SeriesData) -> bool:
-    #if sd1.name == 'func-bold_task-rest_run-2' and sd2.name == 'birch-series-1':
-    #    logger.debug(f"Match: {sd1} with {sd2}")
+    # NOTE: the code contains hardcoded bypasses for qrinfo swimlane
+    # because of the current problems with 0.3 sec in first QR code
+    # so ideally it should be disabled in future once we fix the problem
+
+    f_debug: bool = True
+    #if sd1.name == '015-func-bold_task-rest_acq-med1_run-04' and sd2.name == 'birch-series-8':
+    #    logger.debug(f"Matching: {sd1} with {sd2}")
+    if f_debug:
+        logger.debug(f"Matching: sd1={sd1.name} with sd2={sd2.name}")
 
     if not sd1 or not sd2:
+        if f_debug:
+            logger.debug(f" mismatch_0")
         return False
 
     # match item count
     if sd1.count != sd2.count:
+        if f_debug:
+            logger.debug(f" mismatch_7: {sd1.count} / {sd2.count}")
         return False
+
+    k_min: float = 0.95
+    k_max: float = 1.05
+
+    # for QRINFO we allow 20% difference, because of the current problems with 0.3 sec
+    if sd1.swimlane.name==Swimlane.QRINFO or sd2.swimlane.name==Swimlane.QRINFO:
+        k_min = 0.80
+        k_max = 1.20
+
+    if f_debug:
+        logger.debug(f" use k_min={k_min}, k_max={k_max}")
 
     # match interval corresponds to each other
     if sd1.interval and sd2.interval:
-        t_min: float = sd1.interval * 0.95
-        t_max: float = sd1.interval * 1.05
+        t_min: float = sd1.interval * k_min
+        t_max: float = sd1.interval * k_max
         if not (t_min <= sd2.interval <= t_max):
+            if f_debug:
+                logger.debug(f" mismatch_1: {sd1.interval} / {sd2.interval}")
             return False
 
     # match inter series interval matches as well
     if sd1.next_series_interval and sd2.next_series_interval:
-        t_min: float = sd1.next_series_interval * 0.95
-        t_max: float = sd1.next_series_interval * 1.05
+        t_min: float = sd1.next_series_interval * k_min
+        t_max: float = sd1.next_series_interval * k_max
         if not (t_min <= sd2.next_series_interval <= t_max):
+            if f_debug:
+                logger.debug(f" mismatch_2: {sd1.next_series_interval} / {sd2.next_series_interval}")
+            return False
+
+    # Kludge, skip check for QRINFO swimlane atm
+    if sd2.swimlane.name!=Swimlane.QRINFO:
+        if sd1.next_series_interval==0.0 and sd2.next_series_interval>0:
+            if f_debug:
+                logger.debug(f" mismatch_3: {sd1.next_series_interval} / {sd2.next_series_interval}")
+            return False
+
+        if sd1.next_series_interval>0 and sd2.next_series_interval==0.0:
+            if f_debug:
+                logger.debug(f" mismatch_4: {sd1.next_series_interval} / {sd2.next_series_interval}")
+            return False
+
+    #else:
+    #    return False
+        #if sd1.next_series_interval!=0.0 and sd2.next_series_interval!=0.0:
+        #    return False
+
+    # match synced start time
+    synced_dt: float = abs((sd1.synced_isotime_start - sd2.synced_isotime_start).total_seconds())
+    # for DICOMs series we allow 120 sec difference
+    if sd1.swimlane.name==Swimlane.DICOMS or sd2.swimlane.name==Swimlane.DICOMS:
+        if synced_dt > 120 :
+            if f_debug:
+                logger.debug(f" mismatch_5: {sd1.synced_isotime_start} / {sd2.synced_isotime_start}")
             return False
     else:
-        return False
+        if synced_dt > 2.0:
+            if f_debug:
+                logger.debug(f" mismatch_6: {sd1.synced_isotime_start} / {sd2.synced_isotime_start}")
+            return False
+
+
+    logger.debug(f"Matched series data: {sd1.name} / {sd2.name}")
+    logger.debug(f"    count                = {sd1.count} / {sd2.count}")
+    logger.debug(f"    interval             = {sd1.interval} / {sd2.interval}")
+    logger.debug(f"    next_series_interval = {sd1.next_series_interval} / {sd2.next_series_interval}")
+    logger.debug(f"    isotime_start        = {sd1.isotime_start} / {sd2.isotime_start}")
+    logger.debug(f"    isotime_end          = {sd1.isotime_end} / {sd2.isotime_end}")
+    logger.debug(f"    synced_start         = {sd1.synced_isotime_start} / {sd2.synced_isotime_start}")
+    logger.debug(f"    synced_end           = {sd1.synced_isotime_end} / {sd2.synced_isotime_end}")
     return True
 
 
 def build_swimlane_events(swimlane: SwimlaneModel):
     swimlane.events = []
     for obj in swimlane.data:
+        if swimlane.event_type and obj.get('type') != swimlane.event_type:
+            logger.debug(f"Skip event object, type is not {swimlane.event_type}: {obj.get('id')}")
+            continue
+
         ed: EventData = EventData()
         ed.id = obj.get('id')
         ed.isotime = parse_isotime(obj.get(swimlane.isotime_field))
+        if not ed.isotime:
+            logger.error(f"!!! Invalid isotime for object: {obj}")
+
+        # calculate duration if not provided
+        if swimlane.duration_field:
+            v = obj.get(swimlane.duration_field)
+            # logger.debug(f"Duration of {ed.id}: {v}")
+            ed.duration = float(v)
+        else:
+            if len(swimlane.events)>0:
+                prev_ed = swimlane.events[-1]
+                ed.duration = 0.0
+                #logger.debug(f"prev_ed: {prev_ed.isotime}")
+                #logger.debug(f"ed: {ed.isotime}")
+                prev_ed.duration = (ed.isotime - prev_ed.isotime).total_seconds()
+            else:
+                ed.duration = 0.0
+
         ed.swimlane = swimlane
         ed.data = obj
         swimlane.events.append(ed)
@@ -316,7 +429,8 @@ def build_model(session_id: str, path: str) -> DumpModel:
                          f"count: {sd.count}, "
                          f"interval: {sd.interval}, "
                          f"next_series_interval: {sd.next_series_interval}, "
-                         f"ids: {sd.events[0].id}..{sd.events[-1].id}")
+                         f"ids: {sd.events[0].id}..{sd.events[-1].id}, "
+                         f"time: {sd.events[0].isotime.strftime('%H:%M:%S')}--{sd.events[-1].isotime.strftime('%H:%M:%S')}")
 
     # dump series info and data
     for sl in m.swimlanes:
@@ -345,11 +459,13 @@ def generate_marks(model: DumpModel):
         map_series: dict = {}
         for swiml in [model.birch, model.qrinfo, model.psychopy,
                       model.reproevents]:
+            birch_sd: SeriesData = map_series.get(Swimlane.BIRCH)
             for ser_sd in swiml.series:
                 # TODO: in future also consider match algorithm based on
                 #       existing table table for previous series
-                if match_series_data(dicoms_sd, ser_sd):
+                if match_series_data(birch_sd if birch_sd else dicoms_sd , ser_sd):
                     map_series[swiml.name] = ser_sd
+                    logger.debug(f"store map_series[{swiml.name}] -> {ser_sd.name}")
                     mark.target_ids.append(ser_sd.events[0].id)
                     setattr(mark, f"{swiml.name}_isotime", ser_sd.isotime_start)
                     setattr(mark, f"{swiml.name}_duration", ser_sd.duration)
@@ -362,19 +478,25 @@ def generate_marks(model: DumpModel):
         # dump_jsonl(mark)
 
         # generate marks for each scan in series
-        for i in range(len(dicoms_sd.events)):
+        c = len(dicoms_sd.events)
+        last_i = c - 1
+        for i in range(c):
             mark = MarkRecord()
             mark.id = generate_id('mark')
             mark.session_id = model.session_id
             mark.kind = "Func series scan"
-            mark.name = f"{dicoms_sd.name}_scan_{i}"
+            mark.name = f"{dicoms_sd.name}_scan-{i}"
             mark.target_ids.append(dicoms_sd.events[i].id)
             mark.dicoms_isotime = dicoms_sd.events[i].isotime
-            #mark.dicoms_duration = None
+            # skip duration for last item
+            if i != last_i:
+                mark.dicoms_duration = dicoms_sd.events[i].duration
             for k, v in map_series.items():
                 mark.target_ids.append(v.events[i].id)
                 setattr(mark, f"{k}_isotime", v.events[i].isotime)
-                #setattr(mark, f"{k}_duration", None)
+                # skip duration for last item
+                if i != last_i:
+                    setattr(mark, f"{k}_duration", v.events[i].duration)
             marks.append(mark)
             logger.debug(f"{mark.model_dump_json()}")
             # dump_jsonl(mark)
@@ -403,10 +525,13 @@ def generate_marks(model: DumpModel):
         logger.debug(f"  {m.id} : {m.target_ids}")
 
     # try to match marks with existing tmap also
-    # TODO: in future consider also to use tmap record from
-    #  mark generator if any found
-    logger.debug("Try to match marks with tmap service")
-    for mark in marks:
+    #
+    # by now disable 2nd pass as it produces false results
+    # in future it can be used only when tmap service is configured
+    # with current session data
+    #
+    # logger.debug("Try to match marks with tmap service")
+    for mark in []: # skip by now -->   for mark in marks:
         dicoms_isotime: datetime = mark.dicoms_isotime
         dicoms_cache: dict = {}
         dicoms_id: str = mark.target_ids[0]
@@ -437,11 +562,12 @@ def generate_marks(model: DumpModel):
                         logger.debug(f"             : {dicoms_id} = {dicoms_isotime}")
                         logger.debug(f"             : {obj_id} = {isotime_2}")
                         mark.target_ids.append(obj_id)
-                        logger.debug(f"             : set {swiml.name}_isotime = {isotime_1}")
-                        setattr(mark, f"{swiml.name}_isotime", isotime_1)
-                        if mark.kind == "Func series start":
-                            logger.debug(f"             : set {swiml.name}_duration = {ser_sd.duration}")
-                            setattr(mark, f"{swiml.name}_duration", ser_sd.duration)
+                        if getattr(mark, f"{swiml.name}_isotime", None) is None:
+                            logger.debug(f"             : set {swiml.name}_isotime= {isotime_1}")
+                            setattr(mark, f"{swiml.name}_isotime", isotime_1)
+                            if mark.kind == "Func series start":
+                                logger.debug(f"             : set {swiml.name}_duration = {ser_sd.duration}")
+                                setattr(mark, f"{swiml.name}_duration", ser_sd.duration)
                         # break next items
                         continue
 

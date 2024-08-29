@@ -1,5 +1,5 @@
 dump_psychopy.py tool
-Started on    : 2024-08-14 12:15:54.304395, vmelnik@Uranus
+Started on    : 2024-08-25 14:11:23.677094, vmelnik@Uranus
 Working dir   : /Users/vmelnik/Projects/Dartmouth/branches/reproflow-data-sync/code
 Session path  : /Users/vmelnik/Projects/Dartmouth/branches/typhon/reproflow-data-sync/ses-20240809
 Session ID    : ses-20240809
@@ -9,63 +9,623 @@ Psychopy path : /Users/vmelnik/Projects/Dartmouth/branches/typhon/reproflow-data
 QRInfo path   : /Users/vmelnik/Projects/Dartmouth/branches/typhon/reproflow-data-sync/ses-20240809/timing-dumps/dump_qrinfo.jsonl
 Study range   : dicoms    2024-08-09 09:43:29.692500 - 2024-08-09 11:13:44.242500
               : psychopy  2024-08-09 09:37:16.947645 - 2024-08-09 11:07:31.497645
-Psychopy log files: ['20240809_acq-short1_run-05.log', '20240809_acq-short1_run-06.log', '20240809_acq-short1_run-07.log']
+Loading QRInfo map from /Users/vmelnik/Projects/Dartmouth/branches/typhon/reproflow-data-sync/ses-20240809/timing-dumps/dump_qrinfo.jsonl
+Psychopy log files: ['20240809_acq-short1_run-05.log', '20240809_acq-short1_run-04.log', '20240809_acq-short1_run-06.log', '20240809_acq-short1_run-07.log', '20240809_acq-short1_run-03.log', '20240809_acq-short1_run-02.log', '20240809_acq-short1_run-01.log', '20240809_acq-med1_run-04.log', '20240809_acq-med1_run-01.log', '20240809_acq-med1_run-02.log', '20240809_acq-med1_run-03.log']
 Psychopy log file: /Users/vmelnik/Projects/Dartmouth/branches/typhon/reproflow-data-sync/ses-20240809/psychopy/20240809_acq-short1_run-05.log
-Time: 2024-08-09 10:31:26.817266
-Time: 2024-08-09 10:31:27.665090
-Time: 2024-08-09 10:31:27.795350
-Time: 2024-08-09 10:31:41.273596
-Time: 2024-08-09 10:31:43.340072
-Time: 2024-08-09 10:31:45.263788
-Time: 2024-08-09 10:31:47.255743
-Time: 2024-08-09 10:31:49.264481
-Time: 2024-08-09 10:31:51.279796
-Time: 2024-08-09 10:31:53.265947
-Time: 2024-08-09 10:31:55.271172
-Time: 2024-08-09 10:31:57.269688
-Time: 2024-08-09 10:31:59.277807
-Time: 2024-08-09 10:32:01.277329
-Time: 2024-08-09 10:32:03.269826
-Time: 2024-08-09 10:32:05.280010
-Time: 2024-08-09 10:32:07.267800
-Time: 2024-08-09 10:32:09.263834
+Time: 2024-08-09 10:31:26.817266, event: started, key0: None
+Skip, out of study range: {'event': 'started', 'logfn': '20240809_acq-short1_run-05.log', 'time': 1723213886.8172665, 'time_formatted': '2024-08-09T10:31:26.817266-04:00'}
+Time: 2024-08-09 10:31:27.665090, event: started, key0: None
+Skip, out of study range: {'event': 'started', 'logfn': '20240809_acq-short1_run-05.log', 'time': 1723213887.6650898, 'time_formatted': '2024-08-09T10:31:27.665090-04:00'}
+Time: 2024-08-09 10:31:27.795350, event: trigger, key0: 5
+Time: 2024-08-09 10:31:41.273596, event: trigger, key0: 5
+Time: 2024-08-09 10:31:43.340072, event: trigger, key0: 5
+Time: 2024-08-09 10:31:45.263788, event: trigger, key0: 5
+Time: 2024-08-09 10:31:47.255743, event: trigger, key0: 5
+Time: 2024-08-09 10:31:49.264481, event: trigger, key0: 5
+Time: 2024-08-09 10:31:51.279796, event: trigger, key0: 5
+Time: 2024-08-09 10:31:53.265947, event: trigger, key0: 5
+Time: 2024-08-09 10:31:55.271172, event: trigger, key0: 5
+Time: 2024-08-09 10:31:57.269688, event: trigger, key0: 5
+Time: 2024-08-09 10:31:59.277807, event: trigger, key0: 5
+Time: 2024-08-09 10:32:01.277329, event: trigger, key0: 5
+Time: 2024-08-09 10:32:03.269826, event: trigger, key0: 5
+Time: 2024-08-09 10:32:05.280010, event: trigger, key0: 5
+Time: 2024-08-09 10:32:07.267800, event: trigger, key0: 5
+Time: 2024-08-09 10:32:09.263834, event: trigger, key0: q
+Skip, out of study range: {'event': 'trigger', 'acqNum': 15, 'logfn': '20240809_acq-short1_run-05.log', 'time': 1723213929.2638338, 'time_formatted': '2024-08-09T10:32:09.263834-04:00', 'keys': ['q'], 'keys_time': 1723213934.1496086, 'keys_time_str': '2024-08-09T10:32:14.149609-04:00', 'time_flip': 1723213934.2271583, 'time_flip_formatted': '2024-08-09T10:32:14.227158-04:00', 'prior_time_off': 1723213934.7348545, 'prior_time_off_str': '2024-08-09T10:32:14.734854-04:00'}
+Psychopy log file: /Users/vmelnik/Projects/Dartmouth/branches/typhon/reproflow-data-sync/ses-20240809/psychopy/20240809_acq-short1_run-04.log
+Time: 2024-08-09 10:26:26.853091, event: started, key0: None
+Skip, out of study range: {'event': 'started', 'logfn': '20240809_acq-short1_run-04.log', 'time': 1723213586.853091, 'time_formatted': '2024-08-09T10:26:26.853091-04:00'}
+Time: 2024-08-09 10:26:27.627338, event: started, key0: None
+Skip, out of study range: {'event': 'started', 'logfn': '20240809_acq-short1_run-04.log', 'time': 1723213587.627338, 'time_formatted': '2024-08-09T10:26:27.627338-04:00'}
+Time: 2024-08-09 10:26:27.772295, event: trigger, key0: 5
+Time: 2024-08-09 10:27:12.927251, event: trigger, key0: 5
+Time: 2024-08-09 10:27:14.911392, event: trigger, key0: 5
+Time: 2024-08-09 10:27:16.923563, event: trigger, key0: 5
+Time: 2024-08-09 10:27:18.929843, event: trigger, key0: 5
+Time: 2024-08-09 10:27:20.951689, event: trigger, key0: 5
+Time: 2024-08-09 10:27:22.951368, event: trigger, key0: 5
+Time: 2024-08-09 10:27:24.935754, event: trigger, key0: 5
+Time: 2024-08-09 10:27:26.924663, event: trigger, key0: 5
+Time: 2024-08-09 10:27:28.914724, event: trigger, key0: 5
+Time: 2024-08-09 10:27:30.934897, event: trigger, key0: 5
+Time: 2024-08-09 10:27:32.927372, event: trigger, key0: 5
+Time: 2024-08-09 10:27:34.917403, event: trigger, key0: 5
+Time: 2024-08-09 10:27:36.936887, event: trigger, key0: 5
+Time: 2024-08-09 10:27:38.914628, event: trigger, key0: 5
+Time: 2024-08-09 10:27:40.933817, event: trigger, key0: q
+Skip, out of study range: {'event': 'trigger', 'acqNum': 15, 'logfn': '20240809_acq-short1_run-04.log', 'time': 1723213660.933817, 'time_formatted': '2024-08-09T10:27:40.933817-04:00', 'keys': ['q'], 'keys_time': 1723213665.953221, 'keys_time_str': '2024-08-09T10:27:45.953221-04:00', 'time_flip': 1723213666.0241654, 'time_flip_formatted': '2024-08-09T10:27:46.024165-04:00', 'prior_time_off': 1723213666.5278838, 'prior_time_off_str': '2024-08-09T10:27:46.527884-04:00'}
 Psychopy log file: /Users/vmelnik/Projects/Dartmouth/branches/typhon/reproflow-data-sync/ses-20240809/psychopy/20240809_acq-short1_run-06.log
-Time: 2024-08-09 10:33:09.925791
-Time: 2024-08-09 10:33:10.786375
-Time: 2024-08-09 10:33:10.949511
-Time: 2024-08-09 10:33:22.546908
-Time: 2024-08-09 10:33:24.537445
-Time: 2024-08-09 10:33:26.557040
-Time: 2024-08-09 10:33:28.570926
-Time: 2024-08-09 10:33:30.560818
-Time: 2024-08-09 10:33:32.545312
-Time: 2024-08-09 10:33:34.547226
-Time: 2024-08-09 10:33:36.553371
-Time: 2024-08-09 10:33:38.551801
-Time: 2024-08-09 10:33:40.551983
-Time: 2024-08-09 10:33:42.541588
-Time: 2024-08-09 10:33:44.554472
-Time: 2024-08-09 10:33:46.552420
-Time: 2024-08-09 10:33:48.569647
-Time: 2024-08-09 10:33:50.556797
+Time: 2024-08-09 10:33:09.925791, event: started, key0: None
+Skip, out of study range: {'event': 'started', 'logfn': '20240809_acq-short1_run-06.log', 'time': 1723213989.9257913, 'time_formatted': '2024-08-09T10:33:09.925791-04:00'}
+Time: 2024-08-09 10:33:10.786375, event: started, key0: None
+Skip, out of study range: {'event': 'started', 'logfn': '20240809_acq-short1_run-06.log', 'time': 1723213990.7863746, 'time_formatted': '2024-08-09T10:33:10.786375-04:00'}
+Time: 2024-08-09 10:33:10.949511, event: trigger, key0: 5
+Time: 2024-08-09 10:33:22.546908, event: trigger, key0: 5
+Time: 2024-08-09 10:33:24.537445, event: trigger, key0: 5
+Time: 2024-08-09 10:33:26.557040, event: trigger, key0: 5
+Time: 2024-08-09 10:33:28.570926, event: trigger, key0: 5
+Time: 2024-08-09 10:33:30.560818, event: trigger, key0: 5
+Time: 2024-08-09 10:33:32.545312, event: trigger, key0: 5
+Time: 2024-08-09 10:33:34.547226, event: trigger, key0: 5
+Time: 2024-08-09 10:33:36.553371, event: trigger, key0: 5
+Time: 2024-08-09 10:33:38.551801, event: trigger, key0: 5
+Time: 2024-08-09 10:33:40.551983, event: trigger, key0: 5
+Time: 2024-08-09 10:33:42.541588, event: trigger, key0: 5
+Time: 2024-08-09 10:33:44.554472, event: trigger, key0: 5
+Time: 2024-08-09 10:33:46.552420, event: trigger, key0: 5
+Time: 2024-08-09 10:33:48.569647, event: trigger, key0: 5
+Time: 2024-08-09 10:33:50.556797, event: trigger, key0: q
+Skip, out of study range: {'event': 'trigger', 'acqNum': 15, 'logfn': '20240809_acq-short1_run-06.log', 'time': 1723214030.5567973, 'time_formatted': '2024-08-09T10:33:50.556797-04:00', 'keys': ['q'], 'keys_time': 1723214055.61278, 'keys_time_str': '2024-08-09T10:34:15.612780-04:00', 'time_flip': 1723214055.6907132, 'time_flip_formatted': '2024-08-09T10:34:15.690713-04:00', 'prior_time_off': 1723214056.202021, 'prior_time_off_str': '2024-08-09T10:34:16.202021-04:00'}
 Psychopy log file: /Users/vmelnik/Projects/Dartmouth/branches/typhon/reproflow-data-sync/ses-20240809/psychopy/20240809_acq-short1_run-07.log
-Time: 2024-08-09 10:34:56.535336
-Time: 2024-08-09 10:34:57.340258
-Time: 2024-08-09 10:34:57.503486
-Time: 2024-08-09 10:35:08.434930
-Time: 2024-08-09 10:35:10.430125
-Time: 2024-08-09 10:35:12.432759
-Time: 2024-08-09 10:35:14.409739
-Time: 2024-08-09 10:35:16.443216
-Time: 2024-08-09 10:35:18.428963
-Time: 2024-08-09 10:35:20.421884
-Time: 2024-08-09 10:35:22.426008
-Time: 2024-08-09 10:35:24.428241
-Time: 2024-08-09 10:35:26.420345
-Time: 2024-08-09 10:35:28.427697
-Time: 2024-08-09 10:35:30.429194
-Time: 2024-08-09 10:35:32.417620
-Time: 2024-08-09 10:35:34.426551
-Time: 2024-08-09 10:35:36.418865
-Exit on   : 2024-08-14 12:15:54.388484
+Time: 2024-08-09 10:34:56.535336, event: started, key0: None
+Skip, out of study range: {'event': 'started', 'logfn': '20240809_acq-short1_run-07.log', 'time': 1723214096.5353358, 'time_formatted': '2024-08-09T10:34:56.535336-04:00'}
+Time: 2024-08-09 10:34:57.340258, event: started, key0: None
+Skip, out of study range: {'event': 'started', 'logfn': '20240809_acq-short1_run-07.log', 'time': 1723214097.3402576, 'time_formatted': '2024-08-09T10:34:57.340258-04:00'}
+Time: 2024-08-09 10:34:57.503486, event: trigger, key0: 5
+Time: 2024-08-09 10:35:08.434930, event: trigger, key0: 5
+Time: 2024-08-09 10:35:10.430125, event: trigger, key0: 5
+Time: 2024-08-09 10:35:12.432759, event: trigger, key0: 5
+Time: 2024-08-09 10:35:14.409739, event: trigger, key0: 5
+Time: 2024-08-09 10:35:16.443216, event: trigger, key0: 5
+Time: 2024-08-09 10:35:18.428963, event: trigger, key0: 5
+Time: 2024-08-09 10:35:20.421884, event: trigger, key0: 5
+Time: 2024-08-09 10:35:22.426008, event: trigger, key0: 5
+Time: 2024-08-09 10:35:24.428241, event: trigger, key0: 5
+Time: 2024-08-09 10:35:26.420345, event: trigger, key0: 5
+Time: 2024-08-09 10:35:28.427697, event: trigger, key0: 5
+Time: 2024-08-09 10:35:30.429194, event: trigger, key0: 5
+Time: 2024-08-09 10:35:32.417620, event: trigger, key0: 5
+Time: 2024-08-09 10:35:34.426551, event: trigger, key0: 5
+Time: 2024-08-09 10:35:36.418865, event: trigger, key0: q
+Skip, out of study range: {'event': 'trigger', 'acqNum': 15, 'logfn': '20240809_acq-short1_run-07.log', 'time': 1723214136.4188652, 'time_formatted': '2024-08-09T10:35:36.418865-04:00', 'keys': ['q'], 'keys_time': 1723214148.1335037, 'keys_time_str': '2024-08-09T10:35:48.133504-04:00', 'time_flip': 1723214148.2132964, 'time_flip_formatted': '2024-08-09T10:35:48.213296-04:00', 'prior_time_off': 1723214148.7263675, 'prior_time_off_str': '2024-08-09T10:35:48.726367-04:00'}
+Psychopy log file: /Users/vmelnik/Projects/Dartmouth/branches/typhon/reproflow-data-sync/ses-20240809/psychopy/20240809_acq-short1_run-03.log
+Time: 2024-08-09 10:17:28.154779, event: started, key0: None
+Skip, out of study range: {'event': 'started', 'logfn': '20240809_acq-short1_run-03.log', 'time': 1723213048.1547792, 'time_formatted': '2024-08-09T10:17:28.154779-04:00'}
+Time: 2024-08-09 10:17:28.949339, event: started, key0: None
+Skip, out of study range: {'event': 'started', 'logfn': '20240809_acq-short1_run-03.log', 'time': 1723213048.9493392, 'time_formatted': '2024-08-09T10:17:28.949339-04:00'}
+Psychopy log file: /Users/vmelnik/Projects/Dartmouth/branches/typhon/reproflow-data-sync/ses-20240809/psychopy/20240809_acq-short1_run-02.log
+Time: 2024-08-09 10:09:04.579799, event: started, key0: None
+Skip, out of study range: {'event': 'started', 'logfn': '20240809_acq-short1_run-02.log', 'time': 1723212544.5797994, 'time_formatted': '2024-08-09T10:09:04.579799-04:00'}
+Time: 2024-08-09 10:09:05.411380, event: started, key0: None
+Skip, out of study range: {'event': 'started', 'logfn': '20240809_acq-short1_run-02.log', 'time': 1723212545.41138, 'time_formatted': '2024-08-09T10:09:05.411380-04:00'}
+Time: 2024-08-09 10:09:05.557712, event: trigger, key0: 5
+Time: 2024-08-09 10:09:27.100925, event: trigger, key0: None
+Skip, out of study range: {'event': 'trigger', 'acqNum': 1, 'logfn': '20240809_acq-short1_run-02.log', 'time': 1723212567.1009247, 'time_formatted': '2024-08-09T10:09:27.100925-04:00', 'keys': None, 'keys_time': 1723212687.1011028, 'keys_time_str': '2024-08-09T10:11:27.101103-04:00', 'time_flip': 1723212687.1755307, 'time_flip_formatted': '2024-08-09T10:11:27.175531-04:00', 'prior_time_off': 1723212687.6833653, 'prior_time_off_str': '2024-08-09T10:11:27.683365-04:00'}
+Psychopy log file: /Users/vmelnik/Projects/Dartmouth/branches/typhon/reproflow-data-sync/ses-20240809/psychopy/20240809_acq-short1_run-01.log
+Time: 2024-08-09 10:01:23.949173, event: started, key0: None
+Skip, out of study range: {'event': 'started', 'logfn': '20240809_acq-short1_run-01.log', 'time': 1723212083.9491732, 'time_formatted': '2024-08-09T10:01:23.949173-04:00'}
+Time: 2024-08-09 10:01:24.775996, event: started, key0: None
+Skip, out of study range: {'event': 'started', 'logfn': '20240809_acq-short1_run-01.log', 'time': 1723212084.7759957, 'time_formatted': '2024-08-09T10:01:24.775996-04:00'}
+Time: 2024-08-09 10:01:24.922709, event: trigger, key0: lshift
+Skip, out of study range: {'event': 'trigger', 'acqNum': 0, 'logfn': '20240809_acq-short1_run-01.log', 'time': 1723212084.9227095, 'time_formatted': '2024-08-09T10:01:24.922709-04:00', 'keys': ['lshift'], 'keys_time': 1723212099.3578672, 'keys_time_str': '2024-08-09T10:01:39.357867-04:00', 'time_flip': 1723212099.4370952, 'time_flip_formatted': '2024-08-09T10:01:39.437095-04:00', 'prior_time_off': 1723212099.944857, 'prior_time_off_str': '2024-08-09T10:01:39.944857-04:00'}
+Time: 2024-08-09 10:01:39.945060, event: trigger, key0: q
+Skip, out of study range: {'event': 'trigger', 'acqNum': 1, 'logfn': '20240809_acq-short1_run-01.log', 'time': 1723212099.9450605, 'time_formatted': '2024-08-09T10:01:39.945060-04:00', 'keys': ['q'], 'keys_time': 1723212212.35158, 'keys_time_str': '2024-08-09T10:03:32.351580-04:00', 'time_flip': 1723212212.4135478, 'time_flip_formatted': '2024-08-09T10:03:32.413548-04:00', 'prior_time_off': 1723212212.9209285, 'prior_time_off_str': '2024-08-09T10:03:32.920928-04:00'}
+Psychopy log file: /Users/vmelnik/Projects/Dartmouth/branches/typhon/reproflow-data-sync/ses-20240809/psychopy/20240809_acq-med1_run-04.log
+Time: 2024-08-09 10:59:59.974226, event: started, key0: None
+Skip, out of study range: {'event': 'started', 'logfn': '20240809_acq-med1_run-04.log', 'time': 1723215599.9742255, 'time_formatted': '2024-08-09T10:59:59.974226-04:00'}
+Time: 2024-08-09 11:00:00.834554, event: started, key0: None
+Skip, out of study range: {'event': 'started', 'logfn': '20240809_acq-med1_run-04.log', 'time': 1723215600.8345537, 'time_formatted': '2024-08-09T11:00:00.834554-04:00'}
+Time: 2024-08-09 11:00:00.978256, event: trigger, key0: 5
+Time: 2024-08-09 11:00:15.408020, event: trigger, key0: 5
+Time: 2024-08-09 11:00:17.392112, event: trigger, key0: 5
+Time: 2024-08-09 11:00:19.379989, event: trigger, key0: 5
+Time: 2024-08-09 11:00:21.397328, event: trigger, key0: 5
+Time: 2024-08-09 11:00:23.378247, event: trigger, key0: 5
+Time: 2024-08-09 11:00:25.386910, event: trigger, key0: 5
+Time: 2024-08-09 11:00:27.389862, event: trigger, key0: 5
+Time: 2024-08-09 11:00:29.375347, event: trigger, key0: 5
+Time: 2024-08-09 11:00:31.378892, event: trigger, key0: 5
+Time: 2024-08-09 11:00:33.379918, event: trigger, key0: 5
+Time: 2024-08-09 11:00:35.387649, event: trigger, key0: 5
+Time: 2024-08-09 11:00:37.398031, event: trigger, key0: 5
+Time: 2024-08-09 11:00:39.386830, event: trigger, key0: 5
+Time: 2024-08-09 11:00:41.378839, event: trigger, key0: 5
+Time: 2024-08-09 11:00:43.378043, event: trigger, key0: 5
+Time: 2024-08-09 11:00:45.378542, event: trigger, key0: 5
+Time: 2024-08-09 11:00:47.392126, event: trigger, key0: 5
+Time: 2024-08-09 11:00:49.381978, event: trigger, key0: 5
+Time: 2024-08-09 11:00:51.401412, event: trigger, key0: 5
+Time: 2024-08-09 11:00:53.380645, event: trigger, key0: 5
+Time: 2024-08-09 11:00:55.380284, event: trigger, key0: 5
+Time: 2024-08-09 11:00:57.381520, event: trigger, key0: 5
+Time: 2024-08-09 11:00:59.390251, event: trigger, key0: 5
+Time: 2024-08-09 11:01:01.380714, event: trigger, key0: 5
+Time: 2024-08-09 11:01:03.380814, event: trigger, key0: 5
+Time: 2024-08-09 11:01:05.382494, event: trigger, key0: 5
+Time: 2024-08-09 11:01:07.375297, event: trigger, key0: 5
+Time: 2024-08-09 11:01:09.398940, event: trigger, key0: 5
+Time: 2024-08-09 11:01:11.380791, event: trigger, key0: 5
+Time: 2024-08-09 11:01:13.378458, event: trigger, key0: 5
+Time: 2024-08-09 11:01:15.379890, event: trigger, key0: 5
+Time: 2024-08-09 11:01:17.382018, event: trigger, key0: 5
+Time: 2024-08-09 11:01:19.388435, event: trigger, key0: 5
+Time: 2024-08-09 11:01:21.402564, event: trigger, key0: 5
+Time: 2024-08-09 11:01:23.379478, event: trigger, key0: 5
+Time: 2024-08-09 11:01:25.379785, event: trigger, key0: 5
+Time: 2024-08-09 11:01:27.383401, event: trigger, key0: 5
+Time: 2024-08-09 11:01:29.387327, event: trigger, key0: 5
+Time: 2024-08-09 11:01:31.380123, event: trigger, key0: 5
+Time: 2024-08-09 11:01:33.394918, event: trigger, key0: 5
+Time: 2024-08-09 11:01:35.380284, event: trigger, key0: 5
+Time: 2024-08-09 11:01:37.377856, event: trigger, key0: 5
+Time: 2024-08-09 11:01:39.395622, event: trigger, key0: 5
+Time: 2024-08-09 11:01:41.387372, event: trigger, key0: 5
+Time: 2024-08-09 11:01:43.381646, event: trigger, key0: 5
+Time: 2024-08-09 11:01:45.383133, event: trigger, key0: 5
+Time: 2024-08-09 11:01:47.377711, event: trigger, key0: 5
+Time: 2024-08-09 11:01:49.377928, event: trigger, key0: 5
+Time: 2024-08-09 11:01:51.394008, event: trigger, key0: 5
+Time: 2024-08-09 11:01:53.381547, event: trigger, key0: 5
+Time: 2024-08-09 11:01:55.381086, event: trigger, key0: 5
+Time: 2024-08-09 11:01:57.385962, event: trigger, key0: 5
+Time: 2024-08-09 11:01:59.401880, event: trigger, key0: 5
+Time: 2024-08-09 11:02:01.385045, event: trigger, key0: 5
+Time: 2024-08-09 11:02:03.379422, event: trigger, key0: 5
+Time: 2024-08-09 11:02:05.380735, event: trigger, key0: 5
+Time: 2024-08-09 11:02:07.377888, event: trigger, key0: 5
+Time: 2024-08-09 11:02:09.382026, event: trigger, key0: 5
+Time: 2024-08-09 11:02:11.392028, event: trigger, key0: 5
+Time: 2024-08-09 11:02:13.379969, event: trigger, key0: 5
+Time: 2024-08-09 11:02:15.379443, event: trigger, key0: 5
+Time: 2024-08-09 11:02:17.381131, event: trigger, key0: 5
+Time: 2024-08-09 11:02:19.391660, event: trigger, key0: 5
+Time: 2024-08-09 11:02:21.396576, event: trigger, key0: 5
+Time: 2024-08-09 11:02:23.382872, event: trigger, key0: 5
+Time: 2024-08-09 11:02:25.409164, event: trigger, key0: 5
+Time: 2024-08-09 11:02:27.380676, event: trigger, key0: 5
+Time: 2024-08-09 11:02:29.388308, event: trigger, key0: 5
+Time: 2024-08-09 11:02:31.379462, event: trigger, key0: 5
+Time: 2024-08-09 11:02:33.380203, event: trigger, key0: 5
+Time: 2024-08-09 11:02:35.381172, event: trigger, key0: 5
+Time: 2024-08-09 11:02:37.383215, event: trigger, key0: 5
+Time: 2024-08-09 11:02:39.396573, event: trigger, key0: 5
+Time: 2024-08-09 11:02:41.385573, event: trigger, key0: 5
+Time: 2024-08-09 11:02:43.388740, event: trigger, key0: 5
+Time: 2024-08-09 11:02:45.386104, event: trigger, key0: 5
+Time: 2024-08-09 11:02:47.389427, event: trigger, key0: 5
+Time: 2024-08-09 11:02:49.393359, event: trigger, key0: 5
+Time: 2024-08-09 11:02:51.399133, event: trigger, key0: 5
+Time: 2024-08-09 11:02:53.379899, event: trigger, key0: 5
+Time: 2024-08-09 11:02:55.377663, event: trigger, key0: 5
+Time: 2024-08-09 11:02:57.378395, event: trigger, key0: 5
+Time: 2024-08-09 11:02:59.381234, event: trigger, key0: 5
+Time: 2024-08-09 11:03:01.391325, event: trigger, key0: 5
+Time: 2024-08-09 11:03:03.380255, event: trigger, key0: 5
+Time: 2024-08-09 11:03:05.383781, event: trigger, key0: 5
+Time: 2024-08-09 11:03:07.378977, event: trigger, key0: 5
+Time: 2024-08-09 11:03:09.376864, event: trigger, key0: 5
+Time: 2024-08-09 11:03:11.384072, event: trigger, key0: 5
+Time: 2024-08-09 11:03:13.377555, event: trigger, key0: 5
+Time: 2024-08-09 11:03:15.396288, event: trigger, key0: 5
+Time: 2024-08-09 11:03:17.379956, event: trigger, key0: 5
+Time: 2024-08-09 11:03:19.379260, event: trigger, key0: 5
+Time: 2024-08-09 11:03:21.414967, event: trigger, key0: 5
+Time: 2024-08-09 11:03:23.380865, event: trigger, key0: 5
+Time: 2024-08-09 11:03:25.392428, event: trigger, key0: 5
+Time: 2024-08-09 11:03:27.380809, event: trigger, key0: 5
+Time: 2024-08-09 11:03:29.385591, event: trigger, key0: 5
+Time: 2024-08-09 11:03:31.388840, event: trigger, key0: 5
+Time: 2024-08-09 11:03:33.382575, event: trigger, key0: 5
+Time: 2024-08-09 11:03:35.385049, event: trigger, key0: 5
+Time: 2024-08-09 11:03:37.381121, event: trigger, key0: 5
+Time: 2024-08-09 11:03:39.382771, event: trigger, key0: 5
+Time: 2024-08-09 11:03:41.399802, event: trigger, key0: 5
+Time: 2024-08-09 11:03:43.388008, event: trigger, key0: 5
+Time: 2024-08-09 11:03:45.385757, event: trigger, key0: 5
+Time: 2024-08-09 11:03:47.385660, event: trigger, key0: 5
+Time: 2024-08-09 11:03:49.385802, event: trigger, key0: 5
+Time: 2024-08-09 11:03:51.395614, event: trigger, key0: 5
+Time: 2024-08-09 11:03:53.389034, event: trigger, key0: 5
+Time: 2024-08-09 11:03:55.389856, event: trigger, key0: 5
+Time: 2024-08-09 11:03:57.386613, event: trigger, key0: 5
+Time: 2024-08-09 11:03:59.381226, event: trigger, key0: 5
+Time: 2024-08-09 11:04:01.391233, event: trigger, key0: 5
+Time: 2024-08-09 11:04:03.392897, event: trigger, key0: 5
+Time: 2024-08-09 11:04:05.384660, event: trigger, key0: 5
+Time: 2024-08-09 11:04:07.391097, event: trigger, key0: 5
+Time: 2024-08-09 11:04:09.377918, event: trigger, key0: 5
+Time: 2024-08-09 11:04:11.382012, event: trigger, key0: 5
+Time: 2024-08-09 11:04:13.372661, event: trigger, key0: 5
+Time: 2024-08-09 11:04:15.378289, event: trigger, key0: 5
+Time: 2024-08-09 11:04:17.379822, event: trigger, key0: 5
+Time: 2024-08-09 11:04:19.383929, event: trigger, key0: 5
+Time: 2024-08-09 11:04:21.402742, event: trigger, key0: 5
+Time: 2024-08-09 11:04:23.394381, event: trigger, key0: 5
+Time: 2024-08-09 11:04:25.385908, event: trigger, key0: 5
+Time: 2024-08-09 11:04:27.380355, event: trigger, key0: 5
+Time: 2024-08-09 11:04:29.379204, event: trigger, key0: 5
+Time: 2024-08-09 11:04:31.387405, event: trigger, key0: 5
+Time: 2024-08-09 11:04:33.378982, event: trigger, key0: 5
+Time: 2024-08-09 11:04:35.386658, event: trigger, key0: 5
+Time: 2024-08-09 11:04:37.380118, event: trigger, key0: 5
+Time: 2024-08-09 11:04:39.382496, event: trigger, key0: 5
+Time: 2024-08-09 11:04:41.382717, event: trigger, key0: 5
+Time: 2024-08-09 11:04:43.402780, event: trigger, key0: 5
+Time: 2024-08-09 11:04:45.376906, event: trigger, key0: 5
+Time: 2024-08-09 11:04:47.381085, event: trigger, key0: 5
+Time: 2024-08-09 11:04:49.383632, event: trigger, key0: 5
+Time: 2024-08-09 11:04:51.394246, event: trigger, key0: 5
+Time: 2024-08-09 11:04:53.382422, event: trigger, key0: 5
+Time: 2024-08-09 11:04:55.387999, event: trigger, key0: 5
+Time: 2024-08-09 11:04:57.378736, event: trigger, key0: 5
+Time: 2024-08-09 11:04:59.381309, event: trigger, key0: 5
+Time: 2024-08-09 11:05:01.392571, event: trigger, key0: 5
+Time: 2024-08-09 11:05:03.389757, event: trigger, key0: 5
+Time: 2024-08-09 11:05:05.377779, event: trigger, key0: 5
+Time: 2024-08-09 11:05:07.379336, event: trigger, key0: 5
+Time: 2024-08-09 11:05:09.378033, event: trigger, key0: 5
+Time: 2024-08-09 11:05:11.381001, event: trigger, key0: 5
+Time: 2024-08-09 11:05:13.388004, event: trigger, key0: q
+Skip, out of study range: {'event': 'trigger', 'acqNum': 150, 'logfn': '20240809_acq-med1_run-04.log', 'time': 1723215913.3880036, 'time_formatted': '2024-08-09T11:05:13.388004-04:00', 'keys': ['q'], 'keys_time': 1723215919.5065606, 'keys_time_str': '2024-08-09T11:05:19.506561-04:00', 'time_flip': 1723215919.5776064, 'time_flip_formatted': '2024-08-09T11:05:19.577606-04:00', 'prior_time_off': 1723215920.0948145, 'prior_time_off_str': '2024-08-09T11:05:20.094815-04:00'}
+Psychopy log file: /Users/vmelnik/Projects/Dartmouth/branches/typhon/reproflow-data-sync/ses-20240809/psychopy/20240809_acq-med1_run-01.log
+Time: 2024-08-09 10:37:45.759241, event: started, key0: None
+Skip, out of study range: {'event': 'started', 'logfn': '20240809_acq-med1_run-01.log', 'time': 1723214265.759241, 'time_formatted': '2024-08-09T10:37:45.759241-04:00'}
+Time: 2024-08-09 10:37:46.562028, event: started, key0: None
+Skip, out of study range: {'event': 'started', 'logfn': '20240809_acq-med1_run-01.log', 'time': 1723214266.562028, 'time_formatted': '2024-08-09T10:37:46.562028-04:00'}
+Time: 2024-08-09 10:37:46.692462, event: trigger, key0: 5
+Time: 2024-08-09 10:38:08.651051, event: trigger, key0: 5
+Time: 2024-08-09 10:38:10.651205, event: trigger, key0: 5
+Time: 2024-08-09 10:38:12.654094, event: trigger, key0: 5
+Time: 2024-08-09 10:38:14.645298, event: trigger, key0: 5
+Time: 2024-08-09 10:38:16.651322, event: trigger, key0: 5
+Time: 2024-08-09 10:38:18.650565, event: trigger, key0: 5
+Time: 2024-08-09 10:38:20.652319, event: trigger, key0: 5
+Time: 2024-08-09 10:38:22.657948, event: trigger, key0: 5
+Time: 2024-08-09 10:38:24.634315, event: trigger, key0: 5
+Time: 2024-08-09 10:38:26.659073, event: trigger, key0: 5
+Time: 2024-08-09 10:38:28.650383, event: trigger, key0: 5
+Time: 2024-08-09 10:38:30.652584, event: trigger, key0: 5
+Time: 2024-08-09 10:38:32.660928, event: trigger, key0: 5
+Time: 2024-08-09 10:38:34.651429, event: trigger, key0: 5
+Time: 2024-08-09 10:38:36.656067, event: trigger, key0: 5
+Time: 2024-08-09 10:38:38.634136, event: trigger, key0: 5
+Time: 2024-08-09 10:38:40.651000, event: trigger, key0: 5
+Time: 2024-08-09 10:38:42.650360, event: trigger, key0: 5
+Time: 2024-08-09 10:38:44.651835, event: trigger, key0: 5
+Time: 2024-08-09 10:38:46.644320, event: trigger, key0: 5
+Time: 2024-08-09 10:38:48.654649, event: trigger, key0: 5
+Time: 2024-08-09 10:38:50.641355, event: trigger, key0: 5
+Time: 2024-08-09 10:38:52.650699, event: trigger, key0: 5
+Time: 2024-08-09 10:38:54.658183, event: trigger, key0: 5
+Time: 2024-08-09 10:38:56.651221, event: trigger, key0: 5
+Time: 2024-08-09 10:38:58.634287, event: trigger, key0: 5
+Time: 2024-08-09 10:39:00.652492, event: trigger, key0: 5
+Time: 2024-08-09 10:39:02.651072, event: trigger, key0: 5
+Time: 2024-08-09 10:39:04.651722, event: trigger, key0: 5
+Psychopy log file: /Users/vmelnik/Projects/Dartmouth/branches/typhon/reproflow-data-sync/ses-20240809/psychopy/20240809_acq-med1_run-02.log
+Time: 2024-08-09 10:47:40.185192, event: started, key0: None
+Skip, out of study range: {'event': 'started', 'logfn': '20240809_acq-med1_run-02.log', 'time': 1723214860.185192, 'time_formatted': '2024-08-09T10:47:40.185192-04:00'}
+Time: 2024-08-09 10:47:41.090248, event: started, key0: None
+Skip, out of study range: {'event': 'started', 'logfn': '20240809_acq-med1_run-02.log', 'time': 1723214861.090248, 'time_formatted': '2024-08-09T10:47:41.090248-04:00'}
+Time: 2024-08-09 10:47:41.237444, event: trigger, key0: 5
+Time: 2024-08-09 10:47:49.169393, event: trigger, key0: 5
+Time: 2024-08-09 10:47:51.160692, event: trigger, key0: 5
+Time: 2024-08-09 10:47:53.148170, event: trigger, key0: 5
+Time: 2024-08-09 10:47:55.144147, event: trigger, key0: 5
+Time: 2024-08-09 10:47:57.153745, event: trigger, key0: 5
+Time: 2024-08-09 10:47:59.157428, event: trigger, key0: 5
+Time: 2024-08-09 10:48:01.162472, event: trigger, key0: 5
+Time: 2024-08-09 10:48:03.143352, event: trigger, key0: 5
+Time: 2024-08-09 10:48:05.145410, event: trigger, key0: 5
+Time: 2024-08-09 10:48:07.162335, event: trigger, key0: 5
+Time: 2024-08-09 10:48:09.143913, event: trigger, key0: 5
+Time: 2024-08-09 10:48:11.161459, event: trigger, key0: 5
+Time: 2024-08-09 10:48:13.160743, event: trigger, key0: 5
+Time: 2024-08-09 10:48:15.161073, event: trigger, key0: 5
+Time: 2024-08-09 10:48:17.143727, event: trigger, key0: 5
+Time: 2024-08-09 10:48:19.143158, event: trigger, key0: 5
+Time: 2024-08-09 10:48:21.170421, event: trigger, key0: 5
+Time: 2024-08-09 10:48:23.160245, event: trigger, key0: 5
+Time: 2024-08-09 10:48:25.145447, event: trigger, key0: 5
+Time: 2024-08-09 10:48:27.160750, event: trigger, key0: 5
+Time: 2024-08-09 10:48:29.161696, event: trigger, key0: 5
+Time: 2024-08-09 10:48:31.159743, event: trigger, key0: 5
+Time: 2024-08-09 10:48:33.144167, event: trigger, key0: 5
+Time: 2024-08-09 10:48:35.143216, event: trigger, key0: 5
+Time: 2024-08-09 10:48:37.145864, event: trigger, key0: 5
+Time: 2024-08-09 10:48:39.150983, event: trigger, key0: 5
+Time: 2024-08-09 10:48:41.159977, event: trigger, key0: 5
+Time: 2024-08-09 10:48:43.160875, event: trigger, key0: 5
+Time: 2024-08-09 10:48:45.143142, event: trigger, key0: 5
+Time: 2024-08-09 10:48:47.187351, event: trigger, key0: 5
+Time: 2024-08-09 10:48:49.161707, event: trigger, key0: 5
+Time: 2024-08-09 10:48:51.161662, event: trigger, key0: 5
+Time: 2024-08-09 10:48:53.143235, event: trigger, key0: 5
+Time: 2024-08-09 10:48:55.144477, event: trigger, key0: 5
+Time: 2024-08-09 10:48:57.144486, event: trigger, key0: 5
+Time: 2024-08-09 10:48:59.154246, event: trigger, key0: 5
+Time: 2024-08-09 10:49:01.153681, event: trigger, key0: 5
+Time: 2024-08-09 10:49:03.143366, event: trigger, key0: 5
+Time: 2024-08-09 10:49:05.143160, event: trigger, key0: 5
+Time: 2024-08-09 10:49:07.161116, event: trigger, key0: 5
+Time: 2024-08-09 10:49:09.160244, event: trigger, key0: 5
+Time: 2024-08-09 10:49:11.161214, event: trigger, key0: 5
+Time: 2024-08-09 10:49:13.143627, event: trigger, key0: 5
+Time: 2024-08-09 10:49:15.143747, event: trigger, key0: 5
+Time: 2024-08-09 10:49:17.143613, event: trigger, key0: 5
+Time: 2024-08-09 10:49:19.155018, event: trigger, key0: 5
+Time: 2024-08-09 10:49:21.161297, event: trigger, key0: 5
+Time: 2024-08-09 10:49:23.160230, event: trigger, key0: 5
+Time: 2024-08-09 10:49:25.143398, event: trigger, key0: 5
+Time: 2024-08-09 10:49:27.143241, event: trigger, key0: 5
+Time: 2024-08-09 10:49:29.176968, event: trigger, key0: 5
+Time: 2024-08-09 10:49:31.160775, event: trigger, key0: 5
+Time: 2024-08-09 10:49:33.143433, event: trigger, key0: 5
+Time: 2024-08-09 10:49:35.144564, event: trigger, key0: 5
+Time: 2024-08-09 10:49:37.143243, event: trigger, key0: 5
+Time: 2024-08-09 10:49:39.141873, event: trigger, key0: 5
+Time: 2024-08-09 10:49:41.161969, event: trigger, key0: 5
+Time: 2024-08-09 10:49:43.142266, event: trigger, key0: 5
+Time: 2024-08-09 10:49:45.143007, event: trigger, key0: 5
+Time: 2024-08-09 10:49:47.143864, event: trigger, key0: 5
+Time: 2024-08-09 10:49:49.143532, event: trigger, key0: 5
+Time: 2024-08-09 10:49:51.177189, event: trigger, key0: 5
+Time: 2024-08-09 10:49:53.144469, event: trigger, key0: 5
+Time: 2024-08-09 10:49:55.144681, event: trigger, key0: 5
+Time: 2024-08-09 10:49:57.145165, event: trigger, key0: 5
+Time: 2024-08-09 10:49:59.159881, event: trigger, key0: 5
+Time: 2024-08-09 10:50:01.152726, event: trigger, key0: 5
+Time: 2024-08-09 10:50:03.144220, event: trigger, key0: 5
+Time: 2024-08-09 10:50:05.144928, event: trigger, key0: 5
+Time: 2024-08-09 10:50:07.143932, event: trigger, key0: 5
+Time: 2024-08-09 10:50:09.160918, event: trigger, key0: 5
+Time: 2024-08-09 10:50:11.160417, event: trigger, key0: 5
+Time: 2024-08-09 10:50:13.144637, event: trigger, key0: 5
+Time: 2024-08-09 10:50:15.144159, event: trigger, key0: 5
+Time: 2024-08-09 10:50:17.143559, event: trigger, key0: 5
+Time: 2024-08-09 10:50:19.142927, event: trigger, key0: 5
+Time: 2024-08-09 10:50:21.153401, event: trigger, key0: 5
+Time: 2024-08-09 10:50:23.148386, event: trigger, key0: 5
+Time: 2024-08-09 10:50:25.146807, event: trigger, key0: 5
+Time: 2024-08-09 10:50:27.144606, event: trigger, key0: 5
+Time: 2024-08-09 10:50:29.161317, event: trigger, key0: 5
+Time: 2024-08-09 10:50:31.159761, event: trigger, key0: 5
+Time: 2024-08-09 10:50:33.145325, event: trigger, key0: 5
+Time: 2024-08-09 10:50:35.143678, event: trigger, key0: 5
+Time: 2024-08-09 10:50:37.143670, event: trigger, key0: 5
+Time: 2024-08-09 10:50:39.142956, event: trigger, key0: 5
+Time: 2024-08-09 10:50:41.161691, event: trigger, key0: 5
+Time: 2024-08-09 10:50:43.138687, event: trigger, key0: 5
+Time: 2024-08-09 10:50:45.142639, event: trigger, key0: 5
+Time: 2024-08-09 10:50:47.144900, event: trigger, key0: 5
+Time: 2024-08-09 10:50:49.161871, event: trigger, key0: 5
+Time: 2024-08-09 10:50:51.177758, event: trigger, key0: 5
+Time: 2024-08-09 10:50:53.160661, event: trigger, key0: 5
+Time: 2024-08-09 10:50:55.143525, event: trigger, key0: 5
+Time: 2024-08-09 10:50:57.143445, event: trigger, key0: 5
+Time: 2024-08-09 10:50:59.161265, event: trigger, key0: 5
+Time: 2024-08-09 10:51:01.145753, event: trigger, key0: 5
+Time: 2024-08-09 10:51:03.136080, event: trigger, key0: 5
+Time: 2024-08-09 10:51:05.148881, event: trigger, key0: 5
+Time: 2024-08-09 10:51:07.144704, event: trigger, key0: 5
+Time: 2024-08-09 10:51:09.162478, event: trigger, key0: 5
+Time: 2024-08-09 10:51:11.161114, event: trigger, key0: 5
+Time: 2024-08-09 10:51:13.144044, event: trigger, key0: 5
+Time: 2024-08-09 10:51:15.142869, event: trigger, key0: 5
+Time: 2024-08-09 10:51:17.143710, event: trigger, key0: 5
+Time: 2024-08-09 10:51:19.144347, event: trigger, key0: 5
+Time: 2024-08-09 10:51:21.162251, event: trigger, key0: 5
+Time: 2024-08-09 10:51:23.144203, event: trigger, key0: 5
+Time: 2024-08-09 10:51:25.147750, event: trigger, key0: 5
+Time: 2024-08-09 10:51:27.142858, event: trigger, key0: 5
+Time: 2024-08-09 10:51:29.175889, event: trigger, key0: 5
+Time: 2024-08-09 10:51:31.162710, event: trigger, key0: 5
+Time: 2024-08-09 10:51:33.162810, event: trigger, key0: 5
+Time: 2024-08-09 10:51:35.160703, event: trigger, key0: 5
+Time: 2024-08-09 10:51:37.145553, event: trigger, key0: 5
+Time: 2024-08-09 10:51:39.144556, event: trigger, key0: 5
+Time: 2024-08-09 10:51:41.160204, event: trigger, key0: 5
+Time: 2024-08-09 10:51:43.142121, event: trigger, key0: 5
+Time: 2024-08-09 10:51:45.146717, event: trigger, key0: 5
+Time: 2024-08-09 10:51:47.160569, event: trigger, key0: 5
+Time: 2024-08-09 10:51:49.144040, event: trigger, key0: 5
+Time: 2024-08-09 10:51:51.160856, event: trigger, key0: 5
+Time: 2024-08-09 10:51:53.145805, event: trigger, key0: 5
+Time: 2024-08-09 10:51:55.143683, event: trigger, key0: 5
+Time: 2024-08-09 10:51:57.144554, event: trigger, key0: 5
+Time: 2024-08-09 10:51:59.161392, event: trigger, key0: 5
+Time: 2024-08-09 10:52:01.159824, event: trigger, key0: 5
+Time: 2024-08-09 10:52:03.150844, event: trigger, key0: 5
+Time: 2024-08-09 10:52:05.143921, event: trigger, key0: 5
+Time: 2024-08-09 10:52:07.143355, event: trigger, key0: 5
+Time: 2024-08-09 10:52:09.143343, event: trigger, key0: 5
+Time: 2024-08-09 10:52:11.177724, event: trigger, key0: 5
+Time: 2024-08-09 10:52:13.144399, event: trigger, key0: 5
+Time: 2024-08-09 10:52:15.145201, event: trigger, key0: 5
+Time: 2024-08-09 10:52:17.143578, event: trigger, key0: 5
+Time: 2024-08-09 10:52:19.144799, event: trigger, key0: 5
+Time: 2024-08-09 10:52:21.160126, event: trigger, key0: 5
+Time: 2024-08-09 10:52:23.154082, event: trigger, key0: 5
+Time: 2024-08-09 10:52:25.142247, event: trigger, key0: 5
+Time: 2024-08-09 10:52:27.143535, event: trigger, key0: 5
+Time: 2024-08-09 10:52:29.161724, event: trigger, key0: 5
+Time: 2024-08-09 10:52:31.160440, event: trigger, key0: 5
+Time: 2024-08-09 10:52:33.162459, event: trigger, key0: 5
+Time: 2024-08-09 10:52:35.163040, event: trigger, key0: 5
+Time: 2024-08-09 10:52:37.145132, event: trigger, key0: 5
+Time: 2024-08-09 10:52:39.144259, event: trigger, key0: 5
+Time: 2024-08-09 10:52:41.160750, event: trigger, key0: 5
+Time: 2024-08-09 10:52:43.141424, event: trigger, key0: 5
+Time: 2024-08-09 10:52:45.146070, event: trigger, key0: 5
+Time: 2024-08-09 10:52:47.151822, event: trigger, key0: q
+Skip, out of study range: {'event': 'trigger', 'acqNum': 150, 'logfn': '20240809_acq-med1_run-02.log', 'time': 1723215167.151822, 'time_formatted': '2024-08-09T10:52:47.151822-04:00', 'keys': ['q'], 'keys_time': 1723215175.691163, 'keys_time_str': '2024-08-09T10:52:55.691163-04:00', 'time_flip': 1723215175.7768753, 'time_flip_formatted': '2024-08-09T10:52:55.776875-04:00', 'prior_time_off': 1723215176.2851973, 'prior_time_off_str': '2024-08-09T10:52:56.285197-04:00'}
+Psychopy log file: /Users/vmelnik/Projects/Dartmouth/branches/typhon/reproflow-data-sync/ses-20240809/psychopy/20240809_acq-med1_run-03.log
+Time: 2024-08-09 10:54:11.529870, event: started, key0: None
+Skip, out of study range: {'event': 'started', 'logfn': '20240809_acq-med1_run-03.log', 'time': 1723215251.52987, 'time_formatted': '2024-08-09T10:54:11.529870-04:00'}
+Time: 2024-08-09 10:54:12.330959, event: started, key0: None
+Skip, out of study range: {'event': 'started', 'logfn': '20240809_acq-med1_run-03.log', 'time': 1723215252.3309593, 'time_formatted': '2024-08-09T10:54:12.330959-04:00'}
+Time: 2024-08-09 10:54:12.478610, event: trigger, key0: 5
+Time: 2024-08-09 10:54:24.418478, event: trigger, key0: 5
+Time: 2024-08-09 10:54:26.399587, event: trigger, key0: 5
+Time: 2024-08-09 10:54:28.418952, event: trigger, key0: 5
+Time: 2024-08-09 10:54:30.427002, event: trigger, key0: 5
+Time: 2024-08-09 10:54:32.394392, event: trigger, key0: 5
+Time: 2024-08-09 10:54:34.399162, event: trigger, key0: 5
+Time: 2024-08-09 10:54:36.400641, event: trigger, key0: 5
+Time: 2024-08-09 10:54:38.412283, event: trigger, key0: 5
+Time: 2024-08-09 10:54:40.421242, event: trigger, key0: 5
+Time: 2024-08-09 10:54:42.410555, event: trigger, key0: 5
+Time: 2024-08-09 10:54:44.400583, event: trigger, key0: 5
+Time: 2024-08-09 10:54:46.399407, event: trigger, key0: 5
+Time: 2024-08-09 10:54:48.398705, event: trigger, key0: 5
+Time: 2024-08-09 10:54:50.427053, event: trigger, key0: 5
+Time: 2024-08-09 10:54:52.394923, event: trigger, key0: 5
+Time: 2024-08-09 10:54:54.400667, event: trigger, key0: 5
+Time: 2024-08-09 10:54:56.397222, event: trigger, key0: 5
+Time: 2024-08-09 10:54:58.401418, event: trigger, key0: 5
+Time: 2024-08-09 10:55:00.418293, event: trigger, key0: 5
+Time: 2024-08-09 10:55:02.393458, event: trigger, key0: 5
+Time: 2024-08-09 10:55:04.405623, event: trigger, key0: 5
+Time: 2024-08-09 10:55:06.398745, event: trigger, key0: 5
+Time: 2024-08-09 10:55:08.396627, event: trigger, key0: 5
+Time: 2024-08-09 10:55:10.415601, event: trigger, key0: 5
+Time: 2024-08-09 10:55:12.405148, event: trigger, key0: 5
+Time: 2024-08-09 10:55:14.398970, event: trigger, key0: 5
+Time: 2024-08-09 10:55:16.400352, event: trigger, key0: 5
+Time: 2024-08-09 10:55:18.401548, event: trigger, key0: 5
+Time: 2024-08-09 10:55:20.410273, event: trigger, key0: 5
+Time: 2024-08-09 10:55:22.413109, event: trigger, key0: 5
+Time: 2024-08-09 10:55:24.399724, event: trigger, key0: 5
+Time: 2024-08-09 10:55:26.400265, event: trigger, key0: 5
+Time: 2024-08-09 10:55:28.397039, event: trigger, key0: 5
+Time: 2024-08-09 10:55:30.417331, event: trigger, key0: 5
+Time: 2024-08-09 10:55:32.407174, event: trigger, key0: 5
+Time: 2024-08-09 10:55:34.397953, event: trigger, key0: 5
+Time: 2024-08-09 10:55:36.404909, event: trigger, key0: 5
+Time: 2024-08-09 10:55:38.398356, event: trigger, key0: 5
+Time: 2024-08-09 10:55:40.407054, event: trigger, key0: 5
+Time: 2024-08-09 10:55:42.415096, event: trigger, key0: 5
+Time: 2024-08-09 10:55:44.407413, event: trigger, key0: 5
+Time: 2024-08-09 10:55:46.402982, event: trigger, key0: 5
+Time: 2024-08-09 10:55:48.405942, event: trigger, key0: 5
+Time: 2024-08-09 10:55:50.421743, event: trigger, key0: 5
+Time: 2024-08-09 10:55:52.409010, event: trigger, key0: 5
+Time: 2024-08-09 10:55:54.400315, event: trigger, key0: 5
+Time: 2024-08-09 10:55:56.399317, event: trigger, key0: 5
+Time: 2024-08-09 10:55:58.409727, event: trigger, key0: 5
+Time: 2024-08-09 10:56:00.413036, event: trigger, key0: 5
+Time: 2024-08-09 10:56:02.400194, event: trigger, key0: 5
+Time: 2024-08-09 10:56:04.402597, event: trigger, key0: 5
+Time: 2024-08-09 10:56:06.429525, event: trigger, key0: 5
+Time: 2024-08-09 10:56:08.397102, event: trigger, key0: 5
+Time: 2024-08-09 10:56:10.442374, event: trigger, key0: 5
+Time: 2024-08-09 10:56:12.406838, event: trigger, key0: 5
+Time: 2024-08-09 10:56:14.399128, event: trigger, key0: 5
+Time: 2024-08-09 10:56:16.394787, event: trigger, key0: 5
+Time: 2024-08-09 10:56:18.407089, event: trigger, key0: 5
+Time: 2024-08-09 10:56:20.406044, event: trigger, key0: 5
+Time: 2024-08-09 10:56:22.406485, event: trigger, key0: 5
+Time: 2024-08-09 10:56:24.413197, event: trigger, key0: 5
+Time: 2024-08-09 10:56:26.399971, event: trigger, key0: 5
+Time: 2024-08-09 10:56:28.397968, event: trigger, key0: 5
+Time: 2024-08-09 10:56:30.416053, event: trigger, key0: 5
+Time: 2024-08-09 10:56:32.432685, event: trigger, key0: 5
+Time: 2024-08-09 10:56:34.402875, event: trigger, key0: 5
+Time: 2024-08-09 10:56:36.400694, event: trigger, key0: 5
+Time: 2024-08-09 10:56:38.399806, event: trigger, key0: 5
+Time: 2024-08-09 10:56:40.410415, event: trigger, key0: 5
+Time: 2024-08-09 10:56:42.412887, event: trigger, key0: 5
+Time: 2024-08-09 10:56:44.402497, event: trigger, key0: 5
+Time: 2024-08-09 10:56:46.397204, event: trigger, key0: 5
+Time: 2024-08-09 10:56:48.399971, event: trigger, key0: 5
+Time: 2024-08-09 10:56:50.416296, event: trigger, key0: 5
+Time: 2024-08-09 10:56:52.412816, event: trigger, key0: 5
+Time: 2024-08-09 10:56:54.409899, event: trigger, key0: 5
+Time: 2024-08-09 10:56:56.416411, event: trigger, key0: 5
+Time: 2024-08-09 10:56:58.405732, event: trigger, key0: 5
+Time: 2024-08-09 10:57:00.414684, event: trigger, key0: 5
+Time: 2024-08-09 10:57:02.396041, event: trigger, key0: 5
+Time: 2024-08-09 10:57:04.403645, event: trigger, key0: 5
+Time: 2024-08-09 10:57:06.397172, event: trigger, key0: 5
+Time: 2024-08-09 10:57:08.397014, event: trigger, key0: 5
+Time: 2024-08-09 10:57:10.410642, event: trigger, key0: 5
+Time: 2024-08-09 10:57:12.404538, event: trigger, key0: 5
+Time: 2024-08-09 10:57:14.413782, event: trigger, key0: 5
+Time: 2024-08-09 10:57:16.401869, event: trigger, key0: 5
+Time: 2024-08-09 10:57:18.399130, event: trigger, key0: 5
+Time: 2024-08-09 10:57:20.409387, event: trigger, key0: 5
+Time: 2024-08-09 10:57:22.403387, event: trigger, key0: 5
+Time: 2024-08-09 10:57:24.409503, event: trigger, key0: 5
+Time: 2024-08-09 10:57:26.400607, event: trigger, key0: 5
+Time: 2024-08-09 10:57:28.398377, event: trigger, key0: 5
+Time: 2024-08-09 10:57:30.423971, event: trigger, key0: 5
+Time: 2024-08-09 10:57:32.416650, event: trigger, key0: 5
+Time: 2024-08-09 10:57:34.397296, event: trigger, key0: 5
+Time: 2024-08-09 10:57:36.405779, event: trigger, key0: 5
+Time: 2024-08-09 10:57:38.399711, event: trigger, key0: 5
+Time: 2024-08-09 10:57:40.411502, event: trigger, key0: 5
+Time: 2024-08-09 10:57:42.418150, event: trigger, key0: 5
+Time: 2024-08-09 10:57:44.412099, event: trigger, key0: 5
+Time: 2024-08-09 10:57:46.398332, event: trigger, key0: 5
+Time: 2024-08-09 10:57:48.399122, event: trigger, key0: 5
+Time: 2024-08-09 10:57:50.415111, event: trigger, key0: 5
+Time: 2024-08-09 10:57:52.397760, event: trigger, key0: 5
+Time: 2024-08-09 10:57:54.419495, event: trigger, key0: 5
+Time: 2024-08-09 10:57:56.398109, event: trigger, key0: 5
+Time: 2024-08-09 10:57:58.413607, event: trigger, key0: 5
+Time: 2024-08-09 10:58:00.415727, event: trigger, key0: 5
+Time: 2024-08-09 10:58:02.408754, event: trigger, key0: 5
+Time: 2024-08-09 10:58:04.401119, event: trigger, key0: 5
+Time: 2024-08-09 10:58:06.404601, event: trigger, key0: 5
+Time: 2024-08-09 10:58:08.405826, event: trigger, key0: 5
+Time: 2024-08-09 10:58:10.411454, event: trigger, key0: 5
+Time: 2024-08-09 10:58:12.397897, event: trigger, key0: 5
+Time: 2024-08-09 10:58:14.406298, event: trigger, key0: 5
+Time: 2024-08-09 10:58:16.402747, event: trigger, key0: 5
+Time: 2024-08-09 10:58:18.401261, event: trigger, key0: 5
+Time: 2024-08-09 10:58:20.426968, event: trigger, key0: 5
+Time: 2024-08-09 10:58:22.399716, event: trigger, key0: 5
+Time: 2024-08-09 10:58:24.393122, event: trigger, key0: 5
+Time: 2024-08-09 10:58:26.396910, event: trigger, key0: 5
+Time: 2024-08-09 10:58:28.398754, event: trigger, key0: 5
+Time: 2024-08-09 10:58:30.418032, event: trigger, key0: 5
+Time: 2024-08-09 10:58:32.403821, event: trigger, key0: 5
+Time: 2024-08-09 10:58:34.412416, event: trigger, key0: 5
+Time: 2024-08-09 10:58:36.404787, event: trigger, key0: 5
+Time: 2024-08-09 10:58:38.397856, event: trigger, key0: 5
+Time: 2024-08-09 10:58:40.416663, event: trigger, key0: 5
+Time: 2024-08-09 10:58:42.410763, event: trigger, key0: 5
+Time: 2024-08-09 10:58:44.416887, event: trigger, key0: 5
+Time: 2024-08-09 10:58:46.404461, event: trigger, key0: 5
+Time: 2024-08-09 10:58:48.400616, event: trigger, key0: 5
+Time: 2024-08-09 10:58:50.410304, event: trigger, key0: 5
+Time: 2024-08-09 10:58:52.424622, event: trigger, key0: 5
+Time: 2024-08-09 10:58:54.398770, event: trigger, key0: 5
+Time: 2024-08-09 10:58:56.422875, event: trigger, key0: 5
+Time: 2024-08-09 10:58:58.410055, event: trigger, key0: 5
+Time: 2024-08-09 10:59:00.412649, event: trigger, key0: 5
+Time: 2024-08-09 10:59:02.409183, event: trigger, key0: 5
+Time: 2024-08-09 10:59:04.399876, event: trigger, key0: 5
+Time: 2024-08-09 10:59:06.406180, event: trigger, key0: 5
+Time: 2024-08-09 10:59:08.396442, event: trigger, key0: 5
+Time: 2024-08-09 10:59:10.429233, event: trigger, key0: 5
+Time: 2024-08-09 10:59:12.403054, event: trigger, key0: 5
+Time: 2024-08-09 10:59:14.399509, event: trigger, key0: 5
+Time: 2024-08-09 10:59:16.424755, event: trigger, key0: 5
+Time: 2024-08-09 10:59:18.401478, event: trigger, key0: 5
+Time: 2024-08-09 10:59:20.408600, event: trigger, key0: 5
+Time: 2024-08-09 10:59:22.404460, event: trigger, key0: q
+Skip, out of study range: {'event': 'trigger', 'acqNum': 150, 'logfn': '20240809_acq-med1_run-03.log', 'time': 1723215562.4044602, 'time_formatted': '2024-08-09T10:59:22.404460-04:00', 'keys': ['q'], 'keys_time': 1723215590.4988067, 'keys_time_str': '2024-08-09T10:59:50.498807-04:00', 'time_flip': 1723215590.5823348, 'time_flip_formatted': '2024-08-09T10:59:50.582335-04:00', 'prior_time_off': 1723215591.100769, 'prior_time_off_str': '2024-08-09T10:59:51.100769-04:00'}
+Exit on   : 2024-08-25 14:11:24.483873
 Exit code : 0

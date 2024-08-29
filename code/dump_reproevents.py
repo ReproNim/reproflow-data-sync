@@ -39,10 +39,13 @@ def row_to_model(row, session_id:str, file_name: str):
     data_dict = row.to_dict()
     return ReproeventsRecord(
         isotime=get_reproevents_isotime(row),
+        duration=0.0,
+        state_duration=0.0,
         session_id=session_id,
         id=None,
         file_name=file_name,
         state=int(data_dict['state']),
+        server_time=float(data_dict['server_time']),
         data=data_dict  # Put all as 'data' dictionary
     )
 
@@ -58,14 +61,26 @@ def dump_revents_file(session_id: str, path: str, range_start: datetime,
         obj = row_to_model(row, session_id, file_name)
         if range_start <= obj.isotime <= range_end:
             if obj.state == 1:
+                # calc duration for prev item
+                if len(lst) > 0:
+                    prev_obj = lst[-1]
+                    prev_obj.duration = obj.server_time - prev_obj.server_time
+
                 obj.id = generate_id("reproevents")
                 lst.append(obj)
-                dump_jsonl(obj)
+                #dump_jsonl(obj)
             else:
                 logger.debug(f"Skip reproevents, state is not 1: {obj}")
+                # calc state_duration for prev item
+                if len(lst) > 0:
+                    prev_obj = lst[-1]
+                    prev_obj.state_duration = obj.server_time - prev_obj.server_time
         else:
             logger.debug(f"Skip reproevents, out of study datetime range: {obj}")
 
+    # dump all records to as jsonl
+    for obj in lst:
+        dump_jsonl(obj)
 
 def dump_revents_all(session_id: str, path: str, range_start: datetime,
                     range_end: datetime):

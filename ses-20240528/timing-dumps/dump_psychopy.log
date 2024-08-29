@@ -1,5 +1,5 @@
 dump_psychopy.py tool
-Started on    : 2024-08-14 12:27:54.063433, vmelnik@Uranus
+Started on    : 2024-08-25 14:11:02.652651, vmelnik@Uranus
 Working dir   : /Users/vmelnik/Projects/Dartmouth/branches/reproflow-data-sync/code
 Session path  : /Users/vmelnik/Projects/Dartmouth/branches/typhon/reproflow-data-sync/ses-20240528
 Session ID    : ses-20240528
@@ -9,33 +9,63 @@ Psychopy path : /Users/vmelnik/Projects/Dartmouth/branches/typhon/reproflow-data
 QRInfo path   : /Users/vmelnik/Projects/Dartmouth/branches/typhon/reproflow-data-sync/ses-20240528/timing-dumps/dump_qrinfo.jsonl
 Study range   : dicoms    2024-05-28 11:02:59.930000 - 2024-05-28 11:17:39.502500
               : psychopy  2024-05-28 10:56:47.792389 - 2024-05-28 11:11:27.364889
-Psychopy log files: ['20240528-1.log', '20240528_run-2.log']
-Psychopy log file: /Users/vmelnik/Projects/Dartmouth/branches/typhon/reproflow-data-sync/ses-20240528/psychopy/20240528-1.log
-Time: 2024-05-28 11:05:01.906840
-Time: 2024-05-28 11:05:02.680983
-Time: 2024-05-28 11:05:02.811262
-Time: 2024-05-28 11:06:22.837086
-Time: 2024-05-28 11:06:30.009786
-Time: 2024-05-28 11:06:31.995279
-Time: 2024-05-28 11:06:33.996109
+Loading QRInfo map from /Users/vmelnik/Projects/Dartmouth/branches/typhon/reproflow-data-sync/ses-20240528/timing-dumps/dump_qrinfo.jsonl
+Psychopy log files: ['20240528_run-2.log', '20240528_run-1.log', '20240528-1.log']
 Psychopy log file: /Users/vmelnik/Projects/Dartmouth/branches/typhon/reproflow-data-sync/ses-20240528/psychopy/20240528_run-2.log
-Time: 2024-05-28 11:08:48.215398
-Time: 2024-05-28 11:08:49.015509
-Time: 2024-05-28 11:08:49.144683
-Time: 2024-05-28 11:09:01.179221
-Time: 2024-05-28 11:09:03.145909
-Time: 2024-05-28 11:09:05.146012
-Time: 2024-05-28 11:09:07.181075
-Time: 2024-05-28 11:09:09.145290
-Time: 2024-05-28 11:09:11.146061
-Time: 2024-05-28 11:09:13.164732
-Time: 2024-05-28 11:09:15.144930
-Time: 2024-05-28 11:09:17.160589
-Time: 2024-05-28 11:09:19.163512
-Time: 2024-05-28 11:09:21.153489
-Time: 2024-05-28 11:09:23.164792
-Time: 2024-05-28 11:09:25.163245
-Time: 2024-05-28 11:09:27.146770
-Time: 2024-05-28 11:09:29.144830
-Exit on   : 2024-08-14 12:27:54.108123
+Time: 2024-05-28 11:08:48.215398, event: started, key0: None
+Skip, out of study range: {'event': 'started', 'logfn': '20240528_run-2.log', 'time': 1716908928.2153976, 'time_formatted': '2024-05-28T11:08:48.215398-04:00'}
+Time: 2024-05-28 11:08:49.015509, event: started, key0: None
+Skip, out of study range: {'event': 'started', 'logfn': '20240528_run-2.log', 'time': 1716908929.0155087, 'time_formatted': '2024-05-28T11:08:49.015509-04:00'}
+Time: 2024-05-28 11:08:49.144683, event: trigger, key0: 5
+Time: 2024-05-28 11:09:01.179221, event: trigger, key0: 5
+Time: 2024-05-28 11:09:03.145909, event: trigger, key0: 5
+Time: 2024-05-28 11:09:05.146012, event: trigger, key0: 5
+Time: 2024-05-28 11:09:07.181075, event: trigger, key0: 5
+Time: 2024-05-28 11:09:09.145290, event: trigger, key0: 5
+Time: 2024-05-28 11:09:11.146061, event: trigger, key0: 5
+Time: 2024-05-28 11:09:13.164732, event: trigger, key0: 5
+Time: 2024-05-28 11:09:15.144930, event: trigger, key0: 5
+Time: 2024-05-28 11:09:17.160589, event: trigger, key0: 5
+Time: 2024-05-28 11:09:19.163512, event: trigger, key0: 5
+Time: 2024-05-28 11:09:21.153489, event: trigger, key0: 5
+Time: 2024-05-28 11:09:23.164792, event: trigger, key0: 5
+Time: 2024-05-28 11:09:25.163245, event: trigger, key0: 5
+Time: 2024-05-28 11:09:27.146770, event: trigger, key0: 5
+Time: 2024-05-28 11:09:29.144830, event: trigger, key0: q
+Skip, out of study range: {'event': 'trigger', 'acqNum': 15, 'logfn': '20240528_run-2.log', 'time': 1716908969.1448295, 'time_formatted': '2024-05-28T11:09:29.144830-04:00', 'keys': ['q'], 'keys_time': 1716908974.7514715, 'keys_time_str': '2024-05-28T11:09:34.751472-04:00', 'time_flip': 1716908974.8158102, 'time_flip_formatted': '2024-05-28T11:09:34.815810-04:00'}
+Psychopy log file: /Users/vmelnik/Projects/Dartmouth/branches/typhon/reproflow-data-sync/ses-20240528/psychopy/20240528_run-1.log
+Time: 2024-05-28 11:06:58.795021, event: started, key0: None
+Skip, out of study range: {'event': 'started', 'logfn': '20240528-2.log', 'time': 1716908818.7950213, 'time_formatted': '2024-05-28T11:06:58.795021-04:00'}
+Time: 2024-05-28 11:06:59.559935, event: started, key0: None
+Skip, out of study range: {'event': 'started', 'logfn': '20240528-2.log', 'time': 1716908819.5599353, 'time_formatted': '2024-05-28T11:06:59.559935-04:00'}
+Time: 2024-05-28 11:06:59.686936, event: trigger, key0: 5
+Time: 2024-05-28 11:07:12.926429, event: trigger, key0: 5
+Time: 2024-05-28 11:07:14.906285, event: trigger, key0: 5
+Time: 2024-05-28 11:07:16.904348, event: trigger, key0: 5
+Time: 2024-05-28 11:07:18.905654, event: trigger, key0: 5
+Time: 2024-05-28 11:07:20.912250, event: trigger, key0: 5
+Time: 2024-05-28 11:07:22.921003, event: trigger, key0: 5
+Time: 2024-05-28 11:07:24.914016, event: trigger, key0: 5
+Time: 2024-05-28 11:07:26.906669, event: trigger, key0: 5
+Time: 2024-05-28 11:07:28.904662, event: trigger, key0: 5
+Time: 2024-05-28 11:07:30.909848, event: trigger, key0: 5
+Time: 2024-05-28 11:07:32.925928, event: trigger, key0: 5
+Time: 2024-05-28 11:07:34.917533, event: trigger, key0: 5
+Time: 2024-05-28 11:07:36.908601, event: trigger, key0: 5
+Time: 2024-05-28 11:07:38.908540, event: trigger, key0: 5
+Time: 2024-05-28 11:07:40.921224, event: trigger, key0: q
+Skip, out of study range: {'event': 'trigger', 'acqNum': 15, 'logfn': '20240528-2.log', 'time': 1716908860.921224, 'time_formatted': '2024-05-28T11:07:40.921224-04:00', 'keys': ['q'], 'keys_time': 1716908876.1519237, 'keys_time_str': '2024-05-28T11:07:56.151924-04:00', 'time_flip': 1716908876.2153656, 'time_flip_formatted': '2024-05-28T11:07:56.215366-04:00'}
+Psychopy log file: /Users/vmelnik/Projects/Dartmouth/branches/typhon/reproflow-data-sync/ses-20240528/psychopy/20240528-1.log
+Time: 2024-05-28 11:05:01.906840, event: started, key0: None
+Skip, out of study range: {'event': 'started', 'logfn': '20240528-1.log', 'time': 1716908701.9068398, 'time_formatted': '2024-05-28T11:05:01.906840-04:00'}
+Time: 2024-05-28 11:05:02.680983, event: started, key0: None
+Skip, out of study range: {'event': 'started', 'logfn': '20240528-1.log', 'time': 1716908702.680983, 'time_formatted': '2024-05-28T11:05:02.680983-04:00'}
+Time: 2024-05-28 11:05:02.811262, event: trigger, key0: rshift
+Skip, out of study range: {'event': 'trigger', 'acqNum': 0, 'logfn': '20240528-1.log', 'time': 1716908702.8112624, 'time_formatted': '2024-05-28T11:05:02.811262-04:00', 'keys': ['rshift'], 'keys_time': 1716908782.2445529, 'keys_time_str': '2024-05-28T11:06:22.244553-04:00', 'time_flip': 1716908782.319389, 'time_flip_formatted': '2024-05-28T11:06:22.319389-04:00'}
+Time: 2024-05-28 11:06:22.837086, event: trigger, key0: 5
+Time: 2024-05-28 11:06:30.009786, event: trigger, key0: 5
+Time: 2024-05-28 11:06:31.995279, event: trigger, key0: 5
+Time: 2024-05-28 11:06:33.996109, event: trigger, key0: q
+Skip, out of study range: {'event': 'trigger', 'acqNum': 4, 'logfn': '20240528-1.log', 'time': 1716908793.9961085, 'time_formatted': '2024-05-28T11:06:33.996109-04:00', 'keys': ['q'], 'keys_time': 1716908810.683456, 'keys_time_str': '2024-05-28T11:06:50.683456-04:00', 'time_flip': 1716908810.7511537, 'time_flip_formatted': '2024-05-28T11:06:50.751154-04:00'}
+Exit on   : 2024-08-25 14:11:02.717914
 Exit code : 0
