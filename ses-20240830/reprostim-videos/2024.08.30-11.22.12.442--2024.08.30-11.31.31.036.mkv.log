@@ -1,0 +1,994 @@
+2024-08-30 11:22:12.443 [INFO] [3205271] Session logging begin   : reprostim-videocapture 1.11.0.267, session_logger_2024.08.30-11.22.12.442, start_ts=2024.08.30-11.22.12.442
+2024-08-30 11:22:12.443 [INFO] [3205271]         Video device    : /dev/video2, S/N: B208220302195, USB Capture DVI+, bus info: usb-0000:00:14.0-2
+2024-08-30 11:22:12.443 [INFO] [3205271]                         : 1920x1080, 60 fps
+2024-08-30 11:22:12.443 [INFO] [3205271]         Audio-in device : hw:2,1
+2024-08-30 11:22:12.443 [INFO] [3205271]                         : hdmi/HDMI Capture Volume=95%
+2024-08-30 11:22:12.443 [INFO] [3205271]                         : line-in/Line In Capture Volume=95%
+2024-08-30 11:22:12.443 [INFO] [3205271] REPROSTIM-METADATA-JSON: {"aDev":"hw:2,1","appName":"reprostim-videocapture","cap_isotime_start":"2024-08-30T11:22:12.442467","cap_ts_start":"2024.08.30-11.22.12.442","cx":1920,"cy":1080,"frameRate":"60","json_isotime":"2024-08-30T11:22:12.443095","json_ts":"2024.08.30-11.22.12.443","serial":"B208220302195","type":"session_begin","vDev":"USB Capture DVI+","version":"1.11.0.267"} :REPROSTIM-METADATA-JSON
+2024-08-30 11:22:12.443 [INFO] [3390752] 2024.08.30-11.22.12.442: <SYSTEMCALL> ffmpeg -f alsa -ac 2 -thread_queue_size 40960 -i hw:2,1 -f v4l2 -input_format yuyv422 -framerate 60 -video_size 1920x1080 -thread_queue_size 40960 -i /dev/video2 -c:v libx264 -flush_packets 1   -acodec aac /data/reprostim/Videos/2024/08/2024.08.30-11.22.12.442--.mkv 2>&1
+2024-08-30 11:22:12.543 [INFO] [3205271] 2024.08.30-11.22.12.442:	Started Recording: 
+2024-08-30 11:22:12.543 [INFO] [3205271] Apct Rat: 1920x1080
+2024-08-30 11:22:12.544 [INFO] [3205271] FR: 60
+2024-08-30 11:22:12.544 [INFO] [3390752] ffmpeg version 5.1.5-0+deb12u1 Copyright (c) 2000-2024 the FFmpeg developers
+
+2024-08-30 11:22:12.544 [INFO] [3390752]   built with gcc 12 (Debian 12.2.0-14)
+
+2024-08-30 11:22:12.544 [INFO] [3390752]   configuration: --prefix=/usr --extra-version=0+deb12u1 --toolchain=hardened --libdir=/usr/lib/x86_64-linux-gnu --incdir=/usr/
+2024-08-30 11:22:12.544 [INFO] [3390752] include/x86_64-linux-gnu --arch=amd64 --enable-gpl --disable-stripping --enable-gnutls --enable-ladspa --enable-libaom --enable
+2024-08-30 11:22:12.544 [INFO] [3390752] -libass --enable-libbluray --enable-libbs2b --enable-libcaca --enable-libcdio --enable-libcodec2 --enable-libdav1d --enable-lib
+2024-08-30 11:22:12.544 [INFO] [3390752] flite --enable-libfontconfig --enable-libfreetype --enable-libfribidi --enable-libglslang --enable-libgme --enable-libgsm --ena
+2024-08-30 11:22:12.544 [INFO] [3390752] ble-libjack --enable-libmp3lame --enable-libmysofa --enable-libopenjpeg --enable-libopenmpt --enable-libopus --enable-libpulse 
+2024-08-30 11:22:12.544 [INFO] [3390752] --enable-librabbitmq --enable-librist --enable-librubberband --enable-libshine --enable-libsnappy --enable-libsoxr --enable-lib
+2024-08-30 11:22:12.544 [INFO] [3390752] speex --enable-libsrt --enable-libssh --enable-libsvtav1 --enable-libtheora --enable-libtwolame --enable-libvidstab --enable-li
+2024-08-30 11:22:12.544 [INFO] [3390752] bvorbis --enable-libvpx --enable-libwebp --enable-libx265 --enable-libxml2 --enable-libxvid --enable-libzimg --enable-libzmq --
+2024-08-30 11:22:12.544 [INFO] [3390752] enable-libzvbi --enable-lv2 --enable-omx --enable-openal --enable-opencl --enable-opengl --enable-sdl2 --disable-sndio --enable
+2024-08-30 11:22:12.544 [INFO] [3390752] -libjxl --enable-pocketsphinx --enable-librsvg --enable-libmfx --enable-libdc1394 --enable-libdrm --enable-libiec61883 --enable
+2024-08-30 11:22:12.544 [INFO] [3390752] -chromaprint --enable-frei0r --enable-libx264 --enable-libplacebo --enable-librav1e --enable-shared
+
+2024-08-30 11:22:12.544 [INFO] [3390752]   libavutil      57. 28.100 / 57. 28.100
+
+2024-08-30 11:22:12.544 [INFO] [3390752]   libavcodec     59. 37.100 / 59. 37.100
+
+2024-08-30 11:22:12.544 [INFO] [3390752]   libavformat    59. 27.100 / 59. 27.100
+
+2024-08-30 11:22:12.544 [INFO] [3390752]   libavdevice    59.  7.100 / 59.  7.100
+
+2024-08-30 11:22:12.544 [INFO] [3390752]   libavfilter     8. 44.100 /  8. 44.100
+
+2024-08-30 11:22:12.544 [INFO] [3390752]   libswscale      6.  7.100 /  6.  7.100
+
+2024-08-30 11:22:12.544 [INFO] [3390752]   libswresample   4.  7.100 /  4.  7.100
+
+2024-08-30 11:22:12.544 [INFO] [3390752]   libpostproc    56.  6.100 / 56.  6.100
+
+2024-08-30 11:22:12.550 [INFO] [3390752] Guessed Channel Layout for Input Stream #0.0 : stereo
+
+2024-08-30 11:22:12.550 [INFO] [3390752] Input #0, alsa, from 'hw:2,1':
+
+2024-08-30 11:22:12.550 [INFO] [3390752]   Duration: N/A, start: 1725031332.549424, bitrate: 1536 kb/s
+
+2024-08-30 11:22:12.550 [INFO] [3390752]   Stream #0:0: Audio: pcm_s16le, 48000 Hz, stereo, s16, 1536 kb/s
+
+2024-08-30 11:22:12.598 [INFO] [3390752] Input #1, video4linux2,v4l2, from '/dev/video2':
+
+2024-08-30 11:22:12.598 [INFO] [3390752]   Duration: N/A, start: 19355396.740761, bitrate: 1990656 kb/s
+
+2024-08-30 11:22:12.598 [INFO] [3390752]   Stream #1:0: Video: rawvideo (YUY2 / 0x32595559), yuyv422, 1920x1080, 1990656 kb/s, 60 fps, 60 tbr, 1000k tbn
+
+2024-08-30 11:22:12.599 [INFO] [3390752] Stream mapping:
+
+2024-08-30 11:22:12.599 [INFO] [3390752]   Stream #1:0 -> #0:0 (rawvideo (native) -> h264 (libx264))
+
+2024-08-30 11:22:12.599 [INFO] [3390752]   Stream #0:0 -> #0:1 (pcm_s16le (native) -> aac (native))
+
+2024-08-30 11:22:12.599 [INFO] [3390752] Press [q] to stop, [?] for help
+
+2024-08-30 11:22:12.615 [INFO] [3390752] [libx264 @ 0x559595adfbc0] using cpu capabilities: MMX2 SSE2Fast SSSE3 SSE4.2 AVX FMA3 BMI2 AVX2
+
+2024-08-30 11:22:12.621 [INFO] [3390752] [libx264 @ 0x559595adfbc0] profile High 4:2:2, level 4.2, 4:2:2, 8-bit
+
+2024-08-30 11:22:12.621 [INFO] [3390752] [libx264 @ 0x559595adfbc0] 264 - core 164 r3095 baee400 - H.264/MPEG-4 AVC codec - Copyleft 2003-2022 - http://www.videolan.org
+2024-08-30 11:22:12.621 [INFO] [3390752] /x264.html - options: cabac=1 ref=3 deblock=1:0:0 analyse=0x3:0x113 me=hex subme=7 psy=1 psy_rd=1.00:0.00 mixed_ref=1 me_range=
+2024-08-30 11:22:12.621 [INFO] [3390752] 16 chroma_me=1 trellis=1 8x8dct=1 cqm=0 deadzone=21,11 fast_pskip=1 chroma_qp_offset=-2 threads=6 lookahead_threads=1 sliced_th
+2024-08-30 11:22:12.621 [INFO] [3390752] reads=0 nr=0 decimate=1 interlaced=0 bluray_compat=0 constrained_intra=0 bframes=3 b_pyramid=2 b_adapt=1 b_bias=0 direct=1 weig
+2024-08-30 11:22:12.621 [INFO] [3390752] htb=1 open_gop=0 weightp=2 keyint=250 keyint_min=25 scenecut=40 intra_refresh=0 rc_lookahead=40 rc=crf mbtree=1 crf=23.0 qcomp=
+2024-08-30 11:22:12.621 [INFO] [3390752] 0.60 qpmin=0 qpmax=69 qpstep=4 ip_ratio=1.40 aq=1:1.00
+
+2024-08-30 11:22:12.626 [INFO] [3390752] Output #0, matroska, to '/data/reprostim/Videos/2024/08/2024.08.30-11.22.12.442--.mkv':
+
+2024-08-30 11:22:12.626 [INFO] [3390752]   Metadata:
+
+2024-08-30 11:22:12.626 [INFO] [3390752]     encoder         : Lavf59.27.100
+
+2024-08-30 11:22:12.626 [INFO] [3390752]   Stream #0:0: Video: h264 (H264 / 0x34363248), yuv422p(tv, progressive), 1920x1080, q=2-31, 60 fps, 1k tbn
+
+2024-08-30 11:22:12.626 [INFO] [3390752]     Metadata:
+
+2024-08-30 11:22:12.626 [INFO] [3390752]       encoder         : Lavc59.37.100 libx264
+
+2024-08-30 11:22:12.626 [INFO] [3390752]     Side data:
+
+2024-08-30 11:22:12.626 [INFO] [3390752]       cpb: bitrate max/min/avg: 0/0/0 buffer size: 0 vbv_delay: N/A
+
+2024-08-30 11:22:12.626 [INFO] [3390752]   Stream #0:1: Audio: aac (LC) ([255][0][0][0] / 0x00FF), 48000 Hz, stereo, fltp, 128 kb/s
+
+2024-08-30 11:22:12.626 [INFO] [3390752]     Metadata:
+
+2024-08-30 11:22:12.626 [INFO] [3390752]       encoder         : Lavc59.37.100 aac
+
+2024-08-30 11:22:13.127 [INFO] [3390752] frame=    1 fps=0.0 q=0.0 size=       1kB time=00:00:00.00 bitrate=N/A speed=   0x    frame=   32 fps=0.0 q=0.0 size=       1k
+2024-08-30 11:22:13.683 [INFO] [3390752] B time=00:00:00.00 bitrate=N/A speed=   0x    frame=   47 fps= 44 q=0.0 size=       1kB time=00:00:00.00 bitrate=N/A speed=   
+2024-08-30 11:22:14.683 [INFO] [3390752] 0x    frame=   73 fps= 46 q=31.0 size=       1kB time=00:00:00.36 bitrate=  16.4kbits/s speed=0.229x    frame=  101 fps= 49 q
+2024-08-30 11:22:15.182 [INFO] [3390752] =31.0 size=       1kB time=00:00:00.80 bitrate=   7.3kbits/s speed=0.388x    frame=  130 fps= 50 q=31.0 size=       1kB time=0
+2024-08-30 11:22:15.696 [INFO] [3390752] 0:00:01.30 bitrate=   4.6kbits/s speed=0.504x    frame=  161 fps= 52 q=31.0 size=       1kB time=00:00:01.81 bitrate=   3.3kbi
+2024-08-30 11:22:16.722 [INFO] [3390752] ts/s speed=0.587x    frame=  193 fps= 54 q=31.0 size=       1kB time=00:00:02.34 bitrate=   2.5kbits/s speed=0.653x    frame=
+2024-08-30 11:22:17.229 [INFO] [3390752]   225 fps= 55 q=31.0 size=       1kB time=00:00:02.88 bitrate=   2.1kbits/s speed=0.699x    frame=  257 fps= 56 q=31.0 size=  
+2024-08-30 11:22:17.733 [INFO] [3390752]      1kB time=00:00:03.41 bitrate=   1.7kbits/s speed=0.738x    frame=  288 fps= 56 q=31.0 size=       1kB time=00:00:03.92 bi
+2024-08-30 11:22:18.278 [INFO] [3390752] trate=   1.5kbits/s speed=0.765x    frame=  315 fps= 55 q=31.0 size=     195kB time=00:00:04.37 bitrate= 365.4kbits/s speed=0.
+2024-08-30 11:22:19.314 [INFO] [3390752] 77x    frame=  347 fps= 56 q=31.0 size=     195kB time=00:00:04.90 bitrate= 325.6kbits/s speed=0.792x    frame=  379 fps= 57 
+2024-08-30 11:22:19.859 [INFO] [3390752] q=31.0 size=     195kB time=00:00:05.44 bitrate= 293.7kbits/s speed=0.811x    frame=  411 fps= 57 q=31.0 size=     195kB time=
+2024-08-30 11:22:20.364 [INFO] [3390752] 00:00:05.97 bitrate= 267.5kbits/s speed=0.823x    frame=  443 fps= 57 q=31.0 size=     195kB time=00:00:06.50 bitrate= 245.6kb
+2024-08-30 11:22:21.398 [INFO] [3390752] its/s speed=0.838x    frame=  475 fps= 57 q=31.0 size=     195kB time=00:00:07.04 bitrate= 227.0kbits/s speed=0.851x    frame
+2024-08-30 11:22:21.898 [INFO] [3390752] =  507 fps= 58 q=31.0 size=     195kB time=00:00:07.57 bitrate= 211.0kbits/s speed=0.863x    frame=  537 fps= 58 q=31.0 size= 
+2024-08-30 11:22:22.427 [INFO] [3390752]     195kB time=00:00:08.08 bitrate= 197.7kbits/s speed=0.872x    frame=  562 fps= 57 q=31.0 size=     342kB time=00:00:08.49 b
+2024-08-30 11:22:22.929 [INFO] [3390752] itrate= 330.3kbits/s speed=0.866x    frame=  592 fps= 57 q=31.0 size=     342kB time=00:00:09.00 bitrate= 311.6kbits/s speed=0
+2024-08-30 11:22:23.985 [INFO] [3390752] .871x    frame=  626 fps= 58 q=31.0 size=     342kB time=00:00:09.55 bitrate= 293.4kbits/s speed=0.881x    frame=  657 fps= 5
+2024-08-30 11:22:24.503 [INFO] [3390752] 8 q=31.0 size=     342kB time=00:00:10.07 bitrate= 278.4kbits/s speed=0.885x    frame=  691 fps= 58 q=31.0 size=     342kB tim
+2024-08-30 11:22:25.000 [INFO] [3390752] e=00:00:10.64 bitrate= 263.5kbits/s speed=0.896x    frame=  722 fps= 58 q=31.0 size=     342kB time=00:00:11.15 bitrate= 251.3
+2024-08-30 11:22:26.007 [INFO] [3390752] kbits/s speed=0.901x    frame=  751 fps= 58 q=31.0 size=     342kB time=00:00:11.64 bitrate= 240.7kbits/s speed=0.903x    fra
+2024-08-30 11:22:26.511 [INFO] [3390752] me=  781 fps= 58 q=31.0 size=     342kB time=00:00:12.14 bitrate= 231.0kbits/s speed=0.906x    frame=  806 fps= 58 q=31.0 size
+2024-08-30 11:22:27.048 [INFO] [3390752] =     493kB time=00:00:12.56 bitrate= 321.5kbits/s speed=0.903x    frame=  836 fps= 58 q=31.0 size=     493kB time=00:00:13.05
+2024-08-30 11:22:27.545 [INFO] [3390752]  bitrate= 309.4kbits/s speed=0.904x    frame=  866 fps= 58 q=31.0 size=     493kB time=00:00:13.56 bitrate= 297.8kbits/s speed
+2024-08-30 11:22:28.577 [INFO] [3390752] =0.908x    frame=  896 fps= 58 q=31.0 size=     493kB time=00:00:14.06 bitrate= 287.3kbits/s speed=0.91x    frame=  927 fps= 
+2024-08-30 11:22:29.080 [INFO] [3390752] 58 q=31.0 size=     493kB time=00:00:14.57 bitrate= 277.2kbits/s speed=0.912x    frame=  957 fps= 58 q=31.0 size=     493kB ti
+2024-08-30 11:22:29.583 [INFO] [3390752] me=00:00:15.08 bitrate= 267.8kbits/s speed=0.915x    frame=  989 fps= 58 q=31.0 size=     493kB time=00:00:15.61 bitrate= 258.
+2024-08-30 11:22:30.741 [INFO] [3390752] 7kbits/s speed=0.919x    frame= 1019 fps= 58 q=31.0 size=     493kB time=00:00:16.10 bitrate= 250.8kbits/s speed=0.921x    fr
+2024-08-30 11:22:31.235 [INFO] [3390752] ame= 1046 fps= 58 q=29.0 size=     493kB time=00:00:16.55 bitrate= 244.0kbits/s speed=0.913x    frame= 1075 fps= 58 q=31.0 siz
+2024-08-30 11:22:31.767 [INFO] [3390752] e=     671kB time=00:00:17.04 bitrate= 322.2kbits/s speed=0.915x    frame= 1106 fps= 58 q=31.0 size=     671kB time=00:00:17.5
+2024-08-30 11:22:32.289 [INFO] [3390752] 5 bitrate= 312.9kbits/s speed=0.917x    frame= 1135 fps= 58 q=31.0 size=     671kB time=00:00:18.04 bitrate= 304.4kbits/s spee
+2024-08-30 11:22:33.297 [INFO] [3390752] d=0.917x    frame= 1166 fps= 58 q=31.0 size=     671kB time=00:00:18.55 bitrate= 296.0kbits/s speed=0.919x    frame= 1194 fps
+2024-08-30 11:22:33.822 [INFO] [3390752] = 58 q=31.0 size=     671kB time=00:00:19.03 bitrate= 288.6kbits/s speed=0.92x    frame= 1225 fps= 58 q=31.0 size=     671kB t
+2024-08-30 11:22:34.324 [INFO] [3390752] ime=00:00:19.54 bitrate= 281.1kbits/s speed=0.921x    frame= 1255 fps= 58 q=31.0 size=     671kB time=00:00:20.05 bitrate= 273
+2024-08-30 11:22:35.382 [INFO] [3390752] .9kbits/s speed=0.923x    frame= 1287 fps= 58 q=31.0 size=     671kB time=00:00:20.58 bitrate= 266.8kbits/s speed=0.926x    f
+2024-08-30 11:22:35.833 [INFO] [3390752] rame= 1309 fps= 58 q=31.0 size=     864kB time=00:00:20.95 bitrate= 337.8kbits/s speed=0.922x    frame= 1336 fps= 58 q=31.0 si
+2024-08-30 11:22:36.362 [INFO] [3390752] ze=     864kB time=00:00:21.39 bitrate= 330.7kbits/s speed=0.921x    frame= 1367 fps= 58 q=31.0 size=     864kB time=00:00:21.
+2024-08-30 11:22:36.869 [INFO] [3390752] 90 bitrate= 323.0kbits/s speed=0.922x    frame= 1395 fps= 57 q=31.0 size=     864kB time=00:00:22.37 bitrate= 316.3kbits/s spe
+2024-08-30 11:22:37.915 [INFO] [3390752] ed=0.922x    frame= 1426 fps= 58 q=31.0 size=     864kB time=00:00:22.89 bitrate= 309.2kbits/s speed=0.924x    frame= 1455 fp
+2024-08-30 11:22:38.440 [INFO] [3390752] s= 57 q=31.0 size=     864kB time=00:00:23.38 bitrate= 302.7kbits/s speed=0.924x    frame= 1485 fps= 57 q=31.0 size=     864kB
+2024-08-30 11:22:38.942 [INFO] [3390752]  time=00:00:23.87 bitrate= 296.5kbits/s speed=0.924x    frame= 1513 fps= 57 q=31.0 size=     864kB time=00:00:24.34 bitrate= 2
+2024-08-30 11:22:39.448 [INFO] [3390752] 90.7kbits/s speed=0.924x    frame= 1541 fps= 57 q=31.0 size=     864kB time=00:00:24.81 bitrate= 285.2kbits/s speed=0.924x    
+2024-08-30 11:22:40.498 [INFO] [3390752] frame= 1562 fps= 57 q=31.0 size=    1078kB time=00:00:25.15 bitrate= 351.1kbits/s speed=0.919x    frame= 1590 fps= 57 q=31.0 
+2024-08-30 11:22:40.999 [INFO] [3390752] size=    1078kB time=00:00:25.62 bitrate= 344.7kbits/s speed=0.919x    frame= 1620 fps= 57 q=31.0 size=    1078kB time=00:00:2
+2024-08-30 11:22:41.500 [INFO] [3390752] 6.13 bitrate= 337.9kbits/s speed=0.921x    frame= 1648 fps= 57 q=31.0 size=    1078kB time=00:00:26.60 bitrate= 332.0kbits/s s
+2024-08-30 11:22:42.537 [INFO] [3390752] peed=0.921x    frame= 1677 fps= 57 q=31.0 size=    1078kB time=00:00:27.07 bitrate= 326.2kbits/s speed=0.92x    frame= 1707 f
+2024-08-30 11:22:43.047 [INFO] [3390752] ps= 57 q=31.0 size=    1078kB time=00:00:27.58 bitrate= 320.2kbits/s speed=0.921x    frame= 1735 fps= 57 q=31.0 size=    1078k
+2024-08-30 11:22:43.572 [INFO] [3390752] B time=00:00:28.05 bitrate= 314.8kbits/s speed=0.921x    frame= 1765 fps= 57 q=31.0 size=    1078kB time=00:00:28.54 bitrate= 
+2024-08-30 11:22:44.090 [INFO] [3390752] 309.4kbits/s speed=0.922x    frame= 1793 fps= 57 q=31.0 size=    1078kB time=00:00:29.01 bitrate= 304.4kbits/s speed=0.921x   
+2024-08-30 11:22:45.097 [INFO] [3390752]  frame= 1815 fps= 57 q=31.0 size=    1307kB time=00:00:29.37 bitrate= 364.6kbits/s speed=0.918x    frame= 1840 fps= 57 q=31.0
+2024-08-30 11:22:45.603 [INFO] [3390752]  size=    1307kB time=00:00:29.80 bitrate= 359.4kbits/s speed=0.917x    frame= 1869 fps= 57 q=31.0 size=    1307kB time=00:00:
+2024-08-30 11:22:46.126 [INFO] [3390752] 30.27 bitrate= 353.7kbits/s speed=0.917x    frame= 1897 fps= 57 q=31.0 size=    1307kB time=00:00:30.74 bitrate= 348.4kbits/s 
+2024-08-30 11:22:47.219 [INFO] [3390752] speed=0.917x    frame= 1924 fps= 56 q=31.0 size=    1307kB time=00:00:31.19 bitrate= 343.3kbits/s speed=0.915x    frame= 1943
+2024-08-30 11:22:47.747 [INFO] [3390752]  fps= 56 q=31.0 size=    1307kB time=00:00:31.50 bitrate= 339.9kbits/s speed=0.91x    frame= 1963 fps= 56 q=31.0 size=    1307
+2024-08-30 11:22:48.269 [INFO] [3390752] kB time=00:00:31.84 bitrate= 336.2kbits/s speed=0.906x    frame= 1981 fps= 56 q=31.0 size=    1307kB time=00:00:32.14 bitrate=
+2024-08-30 11:22:48.768 [INFO] [3390752]  333.1kbits/s speed=0.901x    frame= 2001 fps= 55 q=31.0 size=    1307kB time=00:00:32.48 bitrate= 329.6kbits/s speed=0.898x  
+2024-08-30 11:22:49.831 [INFO] [3390752]   frame= 2029 fps= 55 q=31.0 size=    1307kB time=00:00:32.93 bitrate= 325.1kbits/s speed=0.898x    frame= 2052 fps= 55 q=31.
+2024-08-30 11:22:50.337 [INFO] [3390752] 0 size=    1550kB time=00:00:33.32 bitrate= 381.2kbits/s speed=0.895x    frame= 2078 fps= 55 q=31.0 size=    1550kB time=00:00
+2024-08-30 11:22:50.841 [INFO] [3390752] :33.76 bitrate= 376.1kbits/s speed=0.895x    frame= 2105 fps= 55 q=31.0 size=    1550kB time=00:00:34.21 bitrate= 371.2kbits/s
+2024-08-30 11:22:51.892 [INFO] [3390752]  speed=0.895x    frame= 2134 fps= 55 q=31.0 size=    1550kB time=00:00:34.68 bitrate= 366.1kbits/s speed=0.895x    frame= 216
+2024-08-30 11:22:52.395 [INFO] [3390752] 2 fps= 55 q=31.0 size=    1550kB time=00:00:35.15 bitrate= 361.3kbits/s speed=0.895x    frame= 2190 fps= 55 q=31.0 size=    15
+2024-08-30 11:22:52.911 [INFO] [3390752] 50kB time=00:00:35.62 bitrate= 356.5kbits/s speed=0.895x    frame= 2219 fps= 55 q=31.0 size=    1550kB time=00:00:36.11 bitrat
+2024-08-30 11:22:53.424 [INFO] [3390752] e= 351.7kbits/s speed=0.896x    frame= 2246 fps= 55 q=31.0 size=    1550kB time=00:00:36.56 bitrate= 347.4kbits/s speed=0.896x
+2024-08-30 11:22:54.510 [INFO] [3390752]     frame= 2274 fps= 55 q=31.0 size=    1550kB time=00:00:37.03 bitrate= 342.9kbits/s speed=0.896x    frame= 2296 fps= 55 q=2
+2024-08-30 11:22:55.029 [INFO] [3390752] 9.0 size=    1550kB time=00:00:37.40 bitrate= 339.6kbits/s speed=0.892x    frame= 2326 fps= 55 q=31.0 size=    1779kB time=00:
+2024-08-30 11:22:55.529 [INFO] [3390752] 00:37.88 bitrate= 384.6kbits/s speed=0.893x    frame= 2351 fps= 55 q=31.0 size=    1779kB time=00:00:38.31 bitrate= 380.3kbits
+2024-08-30 11:22:56.536 [INFO] [3390752] /s speed=0.892x    frame= 2379 fps= 55 q=31.0 size=    1779kB time=00:00:38.78 bitrate= 375.7kbits/s speed=0.893x    frame= 2
+2024-08-30 11:22:57.051 [INFO] [3390752] 406 fps= 55 q=31.0 size=    1779kB time=00:00:39.23 bitrate= 371.4kbits/s speed=0.893x    frame= 2433 fps= 55 q=31.0 size=    
+2024-08-30 11:22:57.557 [INFO] [3390752] 1779kB time=00:00:39.67 bitrate= 367.2kbits/s speed=0.893x    frame= 2460 fps= 55 q=31.0 size=    1779kB time=00:00:40.12 bitr
+2024-08-30 11:22:58.067 [INFO] [3390752] ate= 363.1kbits/s speed=0.893x    frame= 2491 fps= 55 q=31.0 size=    1779kB time=00:00:40.64 bitrate= 358.5kbits/s speed=0.89
+2024-08-30 11:22:59.321 [INFO] [3390752] 4x    frame= 2517 fps= 55 q=31.0 size=    1779kB time=00:00:41.08 bitrate= 354.6kbits/s speed=0.893x    frame= 2546 fps= 55 q
+2024-08-30 11:22:59.624 [INFO] [3390752] =29.0 size=    1779kB time=00:00:41.55 bitrate= 350.6kbits/s speed=0.893x    frame= 2564 fps= 55 q=31.0 size=    1992kB time=0
+2024-08-30 11:23:00.161 [INFO] [3390752] 0:00:41.85 bitrate= 389.9kbits/s speed=0.89x    frame= 2592 fps= 55 q=31.0 size=    1992kB time=00:00:42.32 bitrate= 385.6kbit
+2024-08-30 11:23:01.221 [INFO] [3390752] s/s speed=0.89x    frame= 2619 fps= 54 q=31.0 size=    1992kB time=00:00:42.77 bitrate= 381.6kbits/s speed=0.89x    frame= 26
+2024-08-30 11:23:01.744 [INFO] [3390752] 47 fps= 54 q=31.0 size=    1992kB time=00:00:43.23 bitrate= 377.4kbits/s speed=0.889x    frame= 2675 fps= 54 q=31.0 size=    1
+2024-08-30 11:23:02.245 [INFO] [3390752] 992kB time=00:00:43.71 bitrate= 373.4kbits/s speed=0.889x    frame= 2703 fps= 54 q=31.0 size=    1992kB time=00:00:44.18 bitra
+2024-08-30 11:23:02.752 [INFO] [3390752] te= 369.4kbits/s speed=0.89x    frame= 2729 fps= 54 q=31.0 size=    1992kB time=00:00:44.60 bitrate= 365.9kbits/s speed=0.889x
+2024-08-30 11:23:03.770 [INFO] [3390752]     frame= 2758 fps= 54 q=31.0 size=    1992kB time=00:00:45.09 bitrate= 361.9kbits/s speed=0.89x    frame= 2786 fps= 54 q=31
+2024-08-30 11:23:04.272 [INFO] [3390752] .0 size=    1992kB time=00:00:45.56 bitrate= 358.2kbits/s speed=0.891x    frame= 2803 fps= 54 q=31.0 size=    2212kB time=00:0
+2024-08-30 11:23:04.797 [INFO] [3390752] 0:45.84 bitrate= 395.2kbits/s speed=0.887x    frame= 2831 fps= 54 q=31.0 size=    2212kB time=00:00:46.31 bitrate= 391.2kbits/
+2024-08-30 11:23:05.780 [INFO] [3390752] s speed=0.888x    frame= 2856 fps= 54 q=31.0 size=    2212kB time=00:00:46.72 bitrate= 387.8kbits/s speed=0.887x    frame= 28
+2024-08-30 11:23:06.302 [INFO] [3390752] 84 fps= 54 q=31.0 size=    2212kB time=00:00:47.18 bitrate= 383.9kbits/s speed=0.887x    frame= 2911 fps= 54 q=31.0 size=    2
+2024-08-30 11:23:06.817 [INFO] [3390752] 212kB time=00:00:47.64 bitrate= 380.3kbits/s speed=0.887x    frame= 2939 fps= 54 q=31.0 size=    2212kB time=00:00:48.10 bitra
+2024-08-30 11:23:07.356 [INFO] [3390752] te= 376.6kbits/s speed=0.887x    frame= 2967 fps= 54 q=31.0 size=    2212kB time=00:00:48.57 bitrate= 373.0kbits/s speed=0.887
+2024-08-30 11:23:08.392 [INFO] [3390752] x    frame= 2991 fps= 54 q=31.0 size=    2212kB time=00:00:48.98 bitrate= 369.9kbits/s speed=0.886x    frame= 3015 fps= 54 q=
+2024-08-30 11:23:08.939 [INFO] [3390752] 31.0 size=    2212kB time=00:00:49.38 bitrate= 366.9kbits/s speed=0.885x    frame= 3044 fps= 54 q=31.0 size=    2212kB time=00
+2024-08-30 11:23:09.426 [INFO] [3390752] :00:49.85 bitrate= 363.4kbits/s speed=0.885x    frame= 3063 fps= 54 q=31.0 size=    2427kB time=00:00:50.17 bitrate= 396.3kbit
+2024-08-30 11:23:10.432 [INFO] [3390752] s/s speed=0.883x    frame= 3090 fps= 54 q=31.0 size=    2427kB time=00:00:50.62 bitrate= 392.8kbits/s speed=0.883x    frame= 
+2024-08-30 11:23:10.976 [INFO] [3390752] 3118 fps= 54 q=31.0 size=    2427kB time=00:00:51.09 bitrate= 389.1kbits/s speed=0.883x    frame= 3145 fps= 54 q=31.0 size=   
+2024-08-30 11:23:11.432 [INFO] [3390752]  2427kB time=00:00:51.54 bitrate= 385.8kbits/s speed=0.884x    frame= 3172 fps= 54 q=31.0 size=    2427kB time=00:00:51.99 bit
+2024-08-30 11:23:11.966 [INFO] [3390752] rate= 382.4kbits/s speed=0.884x    frame= 3199 fps= 54 q=31.0 size=    2427kB time=00:00:52.44 bitrate= 379.2kbits/s speed=0.8
+2024-08-30 11:23:12.982 [INFO] [3390752] 83x    frame= 3227 fps= 54 q=31.0 size=    2427kB time=00:00:52.90 bitrate= 375.8kbits/s speed=0.884x    frame= 3255 fps= 54 
+2024-08-30 11:23:13.488 [INFO] [3390752] q=31.0 size=    2427kB time=00:00:53.37 bitrate= 372.5kbits/s speed=0.884x    frame= 3282 fps= 54 q=31.0 size=    2427kB time=
+2024-08-30 11:23:14.007 [INFO] [3390752] 00:00:53.82 bitrate= 369.4kbits/s speed=0.884x    frame= 3301 fps= 54 q=31.0 size=    2427kB time=00:00:54.14 bitrate= 367.2kb
+2024-08-30 11:23:15.052 [INFO] [3390752] its/s speed=0.882x    frame= 3329 fps= 54 q=31.0 size=    2648kB time=00:00:54.61 bitrate= 397.1kbits/s speed=0.882x    frame
+2024-08-30 11:23:15.573 [INFO] [3390752] = 3356 fps= 54 q=31.0 size=    2648kB time=00:00:55.06 bitrate= 393.9kbits/s speed=0.882x    frame= 3386 fps= 54 q=31.0 size= 
+2024-08-30 11:23:16.117 [INFO] [3390752]    2648kB time=00:00:55.55 bitrate= 390.4kbits/s speed=0.882x    frame= 3414 fps= 54 q=31.0 size=    2648kB time=00:00:56.02 b
+2024-08-30 11:23:16.609 [INFO] [3390752] itrate= 387.1kbits/s speed=0.882x    frame= 3440 fps= 54 q=31.0 size=    2648kB time=00:00:56.46 bitrate= 384.1kbits/s speed=0
+2024-08-30 11:23:17.624 [INFO] [3390752] .882x    frame= 3467 fps= 54 q=31.0 size=    2648kB time=00:00:56.91 bitrate= 381.0kbits/s speed=0.882x    frame= 3493 fps= 5
+2024-08-30 11:23:18.148 [INFO] [3390752] 4 q=31.0 size=    2648kB time=00:00:57.34 bitrate= 378.2kbits/s speed=0.882x    frame= 3521 fps= 54 q=31.0 size=    2648kB tim
+2024-08-30 11:23:18.802 [INFO] [3390752] e=00:00:57.81 bitrate= 375.1kbits/s speed=0.882x    frame= 3547 fps= 54 q=31.0 size=    2648kB time=00:00:58.23 bitrate= 372.4
+2024-08-30 11:23:19.860 [INFO] [3390752] kbits/s speed=0.88x    frame= 3575 fps= 54 q=31.0 size=    2871kB time=00:00:58.71 bitrate= 400.6kbits/s speed=0.88x    frame
+2024-08-30 11:23:20.398 [INFO] [3390752] = 3603 fps= 54 q=31.0 size=    2871kB time=00:00:59.17 bitrate= 397.4kbits/s speed=0.88x    frame= 3631 fps= 54 q=31.0 size=  
+2024-08-30 11:23:20.946 [INFO] [3390752]   2871kB time=00:00:59.64 bitrate= 394.3kbits/s speed=0.88x    frame= 3662 fps= 54 q=31.0 size=    2871kB time=00:01:00.15 bit
+2024-08-30 11:23:21.461 [INFO] [3390752] rate= 390.9kbits/s speed=0.88x    frame= 3690 fps= 54 q=31.0 size=    2871kB time=00:01:00.63 bitrate= 387.9kbits/s speed=0.88
+2024-08-30 11:23:22.531 [INFO] [3390752] x    frame= 3719 fps= 54 q=31.0 size=    2871kB time=00:01:01.11 bitrate= 384.8kbits/s speed=0.881x    frame= 3748 fps= 54 q=
+2024-08-30 11:23:23.028 [INFO] [3390752] 31.0 size=    2871kB time=00:01:01.59 bitrate= 381.8kbits/s speed=0.881x    frame= 3776 fps= 54 q=31.0 size=    2871kB time=00
+2024-08-30 11:23:23.618 [INFO] [3390752] :01:02.05 bitrate= 379.0kbits/s speed=0.881x    frame= 3796 fps= 53 q=29.0 size=    2871kB time=00:01:02.40 bitrate= 376.9kbit
+2024-08-30 11:23:24.664 [INFO] [3390752] s/s speed=0.879x    frame= 3823 fps= 53 q=31.0 size=    3095kB time=00:01:02.84 bitrate= 403.4kbits/s speed=0.879x    frame= 
+2024-08-30 11:23:25.159 [INFO] [3390752] 3853 fps= 53 q=31.0 size=    3095kB time=00:01:03.33 bitrate= 400.2kbits/s speed=0.879x    frame= 3879 fps= 53 q=31.0 size=   
+2024-08-30 11:23:25.664 [INFO] [3390752]  3095kB time=00:01:03.78 bitrate= 397.4kbits/s speed=0.879x    frame= 3908 fps= 53 q=31.0 size=    3095kB time=00:01:04.25 bit
+2024-08-30 11:23:26.193 [INFO] [3390752] rate= 394.5kbits/s speed=0.879x    frame= 3935 fps= 53 q=31.0 size=    3095kB time=00:01:04.70 bitrate= 391.8kbits/s speed=0.8
+2024-08-30 11:23:27.232 [INFO] [3390752] 79x    frame= 3963 fps= 53 q=31.0 size=    3095kB time=00:01:05.17 bitrate= 389.0kbits/s speed=0.88x    frame= 3990 fps= 53 q
+2024-08-30 11:23:27.725 [INFO] [3390752] =31.0 size=    3095kB time=00:01:05.62 bitrate= 386.3kbits/s speed=0.879x    frame= 4016 fps= 53 q=31.0 size=    3095kB time=0
+2024-08-30 11:23:28.252 [INFO] [3390752] 0:01:06.06 bitrate= 383.7kbits/s speed=0.879x    frame= 4045 fps= 53 q=31.0 size=    3095kB time=00:01:06.53 bitrate= 381.0kbi
+2024-08-30 11:23:29.319 [INFO] [3390752] ts/s speed=0.88x    frame= 4061 fps= 53 q=31.0 size=    3332kB time=00:01:06.81 bitrate= 408.5kbits/s speed=0.877x    frame= 
+2024-08-30 11:23:29.796 [INFO] [3390752] 4091 fps= 53 q=31.0 size=    3332kB time=00:01:07.30 bitrate= 405.6kbits/s speed=0.878x    frame= 4115 fps= 53 q=31.0 size=   
+2024-08-30 11:23:30.301 [INFO] [3390752]  3332kB time=00:01:07.71 bitrate= 403.1kbits/s speed=0.877x    frame= 4143 fps= 53 q=31.0 size=    3332kB time=00:01:08.18 bit
+2024-08-30 11:23:30.814 [INFO] [3390752] rate= 400.3kbits/s speed=0.878x    frame= 4169 fps= 53 q=31.0 size=    3332kB time=00:01:08.60 bitrate= 397.9kbits/s speed=0.8
+2024-08-30 11:23:31.888 [INFO] [3390752] 77x    frame= 4197 fps= 53 q=31.0 size=    3332kB time=00:01:09.07 bitrate= 395.1kbits/s speed=0.877x    frame= 4228 fps= 53 
+2024-08-30 11:23:32.399 [INFO] [3390752] q=31.0 size=    3332kB time=00:01:09.59 bitrate= 392.2kbits/s speed=0.878x    frame= 4256 fps= 53 q=31.0 size=    3332kB time=
+2024-08-30 11:23:32.934 [INFO] [3390752] 00:01:10.05 bitrate= 389.6kbits/s speed=0.878x    frame= 4283 fps= 53 q=31.0 size=    3332kB time=00:01:10.50 bitrate= 387.1kb
+2024-08-30 11:23:33.988 [INFO] [3390752] its/s speed=0.878x    frame= 4301 fps= 53 q=31.0 size=    3332kB time=00:01:10.80 bitrate= 385.5kbits/s speed=0.876x    frame
+2024-08-30 11:23:34.473 [INFO] [3390752] = 4329 fps= 53 q=31.0 size=    3563kB time=00:01:11.27 bitrate= 409.5kbits/s speed=0.876x    frame= 4355 fps= 53 q=31.0 size= 
+2024-08-30 11:23:34.975 [INFO] [3390752]    3563kB time=00:01:11.71 bitrate= 406.9kbits/s speed=0.876x    frame= 4382 fps= 53 q=31.0 size=    3563kB time=00:01:12.16 b
+2024-08-30 11:23:35.494 [INFO] [3390752] itrate= 404.4kbits/s speed=0.876x    frame= 4409 fps= 53 q=31.0 size=    3563kB time=00:01:12.61 bitrate= 401.9kbits/s speed=0
+2024-08-30 11:23:36.515 [INFO] [3390752] .876x    frame= 4436 fps= 53 q=31.0 size=    3563kB time=00:01:13.06 bitrate= 399.4kbits/s speed=0.876x    frame= 4464 fps= 5
+2024-08-30 11:23:37.049 [INFO] [3390752] 3 q=31.0 size=    3563kB time=00:01:13.53 bitrate= 396.9kbits/s speed=0.876x    frame= 4491 fps= 53 q=31.0 size=    3563kB tim
+2024-08-30 11:23:37.584 [INFO] [3390752] e=00:01:13.98 bitrate= 394.5kbits/s speed=0.876x    frame= 4520 fps= 53 q=31.0 size=    3563kB time=00:01:14.45 bitrate= 392.0
+2024-08-30 11:23:38.617 [INFO] [3390752] kbits/s speed=0.876x    frame= 4545 fps= 53 q=31.0 size=    3563kB time=00:01:14.88 bitrate= 389.8kbits/s speed=0.876x    fra
+2024-08-30 11:23:39.122 [INFO] [3390752] me= 4562 fps= 53 q=31.0 size=    3797kB time=00:01:15.15 bitrate= 413.9kbits/s speed=0.874x    frame= 4587 fps= 53 q=31.0 size
+2024-08-30 11:23:39.673 [INFO] [3390752] =    3797kB time=00:01:15.58 bitrate= 411.6kbits/s speed=0.874x    frame= 4615 fps= 53 q=31.0 size=    3797kB time=00:01:16.05
+2024-08-30 11:23:40.174 [INFO] [3390752]  bitrate= 409.0kbits/s speed=0.874x    frame= 4642 fps= 53 q=31.0 size=    3797kB time=00:01:16.50 bitrate= 406.6kbits/s speed
+2024-08-30 11:23:41.189 [INFO] [3390752] =0.874x    frame= 4669 fps= 53 q=31.0 size=    3797kB time=00:01:16.94 bitrate= 404.3kbits/s speed=0.874x    frame= 4691 fps=
+2024-08-30 11:23:41.710 [INFO] [3390752]  53 q=31.0 size=    3797kB time=00:01:17.31 bitrate= 402.4kbits/s speed=0.873x    frame= 4712 fps= 53 q=31.0 size=    3797kB t
+2024-08-30 11:23:42.260 [INFO] [3390752] ime=00:01:17.65 bitrate= 400.6kbits/s speed=0.872x    frame= 4740 fps= 53 q=31.0 size=    3797kB time=00:01:18.12 bitrate= 398
+2024-08-30 11:23:43.332 [INFO] [3390752] .2kbits/s speed=0.871x    frame= 4768 fps= 53 q=31.0 size=    3797kB time=00:01:18.58 bitrate= 395.8kbits/s speed=0.871x    f
+2024-08-30 11:23:43.793 [INFO] [3390752] rame= 4795 fps= 53 q=31.0 size=    3797kB time=00:01:19.04 bitrate= 393.6kbits/s speed=0.872x    frame= 4811 fps= 53 q=31.0 si
+2024-08-30 11:23:44.294 [INFO] [3390752] ze=    4023kB time=00:01:19.31 bitrate= 415.5kbits/s speed=0.87x    frame= 4836 fps= 53 q=31.0 size=    4023kB time=00:01:19.7
+2024-08-30 11:23:44.797 [INFO] [3390752] 2 bitrate= 413.4kbits/s speed=0.869x    frame= 4861 fps= 53 q=31.0 size=    4023kB time=00:01:20.15 bitrate= 411.1kbits/s spee
+2024-08-30 11:23:45.861 [INFO] [3390752] d=0.869x    frame= 4889 fps= 53 q=31.0 size=    4023kB time=00:01:20.61 bitrate= 408.8kbits/s speed=0.869x    frame= 4916 fps
+2024-08-30 11:23:46.362 [INFO] [3390752] = 53 q=31.0 size=    4023kB time=00:01:21.06 bitrate= 406.5kbits/s speed=0.869x    frame= 4942 fps= 53 q=31.0 size=    4023kB 
+2024-08-30 11:23:46.892 [INFO] [3390752] time=00:01:21.49 bitrate= 404.4kbits/s speed=0.869x    frame= 4969 fps= 53 q=31.0 size=    4023kB time=00:01:21.93 bitrate= 40
+2024-08-30 11:23:47.421 [INFO] [3390752] 2.2kbits/s speed=0.869x    frame= 4997 fps= 53 q=31.0 size=    4023kB time=00:01:22.41 bitrate= 399.9kbits/s speed=0.869x    
+2024-08-30 11:23:48.556 [INFO] [3390752] frame= 5025 fps= 53 q=31.0 size=    4023kB time=00:01:22.87 bitrate= 397.6kbits/s speed=0.869x    frame= 5047 fps= 53 q=31.0 s
+2024-08-30 11:23:49.070 [INFO] [3390752] ize=    4023kB time=00:01:23.24 bitrate= 395.9kbits/s speed=0.868x    frame= 5074 fps= 53 q=31.0 size=    4246kB time=00:01:23
+2024-08-30 11:23:49.579 [INFO] [3390752] .68 bitrate= 415.7kbits/s speed=0.867x    frame= 5102 fps= 53 q=31.0 size=    4246kB time=00:01:24.16 bitrate= 413.3kbits/s sp
+2024-08-30 11:23:50.596 [INFO] [3390752] eed=0.868x    frame= 5127 fps= 53 q=31.0 size=    4246kB time=00:01:24.58 bitrate= 411.3kbits/s speed=0.868x    frame= 5152 f
+2024-08-30 11:23:51.124 [INFO] [3390752] ps= 53 q=31.0 size=    4246kB time=00:01:24.99 bitrate= 409.3kbits/s speed=0.867x    frame= 5179 fps= 53 q=31.0 size=    4246k
+2024-08-30 11:23:51.626 [INFO] [3390752] B time=00:01:25.43 bitrate= 407.1kbits/s speed=0.867x    frame= 5208 fps= 53 q=31.0 size=    4246kB time=00:01:25.93 bitrate= 
+2024-08-30 11:23:52.155 [INFO] [3390752] 404.8kbits/s speed=0.868x    frame= 5235 fps= 53 q=31.0 size=    4246kB time=00:01:26.37 bitrate= 402.7kbits/s speed=0.868x   
+2024-08-30 11:23:53.189 [INFO] [3390752]  frame= 5262 fps= 53 q=31.0 size=    4246kB time=00:01:26.82 bitrate= 400.6kbits/s speed=0.868x    frame= 5289 fps= 53 q=31.0
+2024-08-30 11:23:53.678 [INFO] [3390752]  size=    4246kB time=00:01:27.27 bitrate= 398.6kbits/s speed=0.868x    frame= 5306 fps= 52 q=31.0 size=    4463kB time=00:01:
+2024-08-30 11:23:54.211 [INFO] [3390752] 27.57 bitrate= 417.5kbits/s speed=0.866x    frame= 5333 fps= 52 q=31.0 size=    4463kB time=00:01:28.02 bitrate= 415.4kbits/s 
+2024-08-30 11:23:55.225 [INFO] [3390752] speed=0.866x    frame= 5360 fps= 52 q=31.0 size=    4463kB time=00:01:28.47 bitrate= 413.2kbits/s speed=0.866x    frame= 5385
+2024-08-30 11:23:55.728 [INFO] [3390752]  fps= 52 q=31.0 size=    4463kB time=00:01:28.87 bitrate= 411.4kbits/s speed=0.866x    frame= 5411 fps= 52 q=31.0 size=    446
+2024-08-30 11:23:56.252 [INFO] [3390752] 3kB time=00:01:29.32 bitrate= 409.3kbits/s speed=0.866x    frame= 5437 fps= 52 q=31.0 size=    4463kB time=00:01:29.75 bitrate
+2024-08-30 11:23:56.797 [INFO] [3390752] = 407.4kbits/s speed=0.866x    frame= 5465 fps= 52 q=31.0 size=    4463kB time=00:01:30.21 bitrate= 405.2kbits/s speed=0.866x 
+2024-08-30 11:23:57.839 [INFO] [3390752]    frame= 5494 fps= 52 q=31.0 size=    4463kB time=00:01:30.68 bitrate= 403.1kbits/s speed=0.866x    frame= 5520 fps= 52 q=31
+2024-08-30 11:23:58.516 [INFO] [3390752] .0 size=    4463kB time=00:01:31.13 bitrate= 401.2kbits/s speed=0.866x    frame= 5546 fps= 52 q=29.0 size=    4463kB time=00:0
+2024-08-30 11:23:59.045 [INFO] [3390752] 1:31.56 bitrate= 399.3kbits/s speed=0.864x    frame= 5575 fps= 52 q=31.0 size=    4692kB time=00:01:32.05 bitrate= 417.6kbits/
+2024-08-30 11:24:00.061 [INFO] [3390752] s speed=0.865x    frame= 5601 fps= 52 q=31.0 size=    4692kB time=00:01:32.47 bitrate= 415.6kbits/s speed=0.865x    frame= 56
+2024-08-30 11:24:00.602 [INFO] [3390752] 27 fps= 52 q=31.0 size=    4692kB time=00:01:32.90 bitrate= 413.7kbits/s speed=0.865x    frame= 5654 fps= 52 q=31.0 size=    4
+2024-08-30 11:24:01.096 [INFO] [3390752] 692kB time=00:01:33.35 bitrate= 411.7kbits/s speed=0.864x    frame= 5682 fps= 52 q=31.0 size=    4692kB time=00:01:33.82 bitra
+2024-08-30 11:24:01.641 [INFO] [3390752] te= 409.7kbits/s speed=0.865x    frame= 5709 fps= 52 q=31.0 size=    4692kB time=00:01:34.27 bitrate= 407.7kbits/s speed=0.865
+2024-08-30 11:24:02.653 [INFO] [3390752] x    frame= 5737 fps= 52 q=31.0 size=    4692kB time=00:01:34.74 bitrate= 405.7kbits/s speed=0.865x    frame= 5761 fps= 52 q=
+2024-08-30 11:24:03.169 [INFO] [3390752] 31.0 size=    4692kB time=00:01:35.14 bitrate= 404.0kbits/s speed=0.865x    frame= 5788 fps= 52 q=31.0 size=    4692kB time=00
+2024-08-30 11:24:03.701 [INFO] [3390752] :01:35.59 bitrate= 402.1kbits/s speed=0.865x    frame= 5805 fps= 52 q=31.0 size=    4913kB time=00:01:35.87 bitrate= 419.8kbit
+2024-08-30 11:24:04.720 [INFO] [3390752] s/s speed=0.863x    frame= 5833 fps= 52 q=31.0 size=    4913kB time=00:01:36.34 bitrate= 417.7kbits/s speed=0.863x    frame= 
+2024-08-30 11:24:05.276 [INFO] [3390752] 5857 fps= 52 q=31.0 size=    4913kB time=00:01:36.74 bitrate= 416.0kbits/s speed=0.863x    frame= 5885 fps= 52 q=31.0 size=   
+2024-08-30 11:24:05.832 [INFO] [3390752]  4913kB time=00:01:37.21 bitrate= 414.0kbits/s speed=0.863x    frame= 5913 fps= 52 q=31.0 size=    4913kB time=00:01:37.68 bit
+2024-08-30 11:24:06.392 [INFO] [3390752] rate= 412.0kbits/s speed=0.863x    frame= 5942 fps= 52 q=31.0 size=    4913kB time=00:01:38.15 bitrate= 410.0kbits/s speed=0.8
+2024-08-30 11:24:07.491 [INFO] [3390752] 63x    frame= 5970 fps= 52 q=31.0 size=    4913kB time=00:01:38.62 bitrate= 408.1kbits/s speed=0.863x    frame= 5998 fps= 52 
+2024-08-30 11:24:08.000 [INFO] [3390752] q=31.0 size=    4913kB time=00:01:39.09 bitrate= 406.1kbits/s speed=0.863x    frame= 6025 fps= 52 q=31.0 size=    4913kB time=
+2024-08-30 11:24:08.563 [INFO] [3390752] 00:01:39.54 bitrate= 404.3kbits/s speed=0.863x    frame= 6045 fps= 52 q=31.0 size=    4913kB time=00:01:39.88 bitrate= 402.9kb
+2024-08-30 11:24:09.582 [INFO] [3390752] its/s speed=0.861x    frame= 6075 fps= 52 q=31.0 size=    5131kB time=00:01:40.37 bitrate= 418.8kbits/s speed=0.862x    frame
+2024-08-30 11:24:10.093 [INFO] [3390752] = 6099 fps= 52 q=31.0 size=    5131kB time=00:01:40.77 bitrate= 417.1kbits/s speed=0.861x    frame= 6124 fps= 52 q=31.0 size= 
+2024-08-30 11:24:10.634 [INFO] [3390752]    5131kB time=00:01:41.20 bitrate= 415.3kbits/s speed=0.861x    frame= 6153 fps= 52 q=31.0 size=    5131kB time=00:01:41.67 b
+2024-08-30 11:24:11.103 [INFO] [3390752] itrate= 413.4kbits/s speed=0.862x    frame= 6177 fps= 52 q=31.0 size=    5131kB time=00:01:42.07 bitrate= 411.8kbits/s speed=0
+2024-08-30 11:24:12.135 [INFO] [3390752] .861x    frame= 6205 fps= 52 q=31.0 size=    5131kB time=00:01:42.55 bitrate= 409.9kbits/s speed=0.862x    frame= 6231 fps= 5
+2024-08-30 11:24:12.644 [INFO] [3390752] 2 q=31.0 size=    5131kB time=00:01:42.97 bitrate= 408.2kbits/s speed=0.861x    frame= 6259 fps= 52 q=31.0 size=    5131kB tim
+2024-08-30 11:24:13.147 [INFO] [3390752] e=00:01:43.44 bitrate= 406.3kbits/s speed=0.862x    frame= 6285 fps= 52 q=31.0 size=    5131kB time=00:01:43.87 bitrate= 404.7
+2024-08-30 11:24:14.212 [INFO] [3390752] kbits/s speed=0.862x    frame= 6304 fps= 52 q=31.0 size=    5348kB time=00:01:44.19 bitrate= 420.5kbits/s speed=0.861x    fra
+2024-08-30 11:24:14.735 [INFO] [3390752] me= 6322 fps= 52 q=31.0 size=    5348kB time=00:01:44.49 bitrate= 419.3kbits/s speed=0.859x    frame= 6345 fps= 52 q=31.0 size
+2024-08-30 11:24:15.252 [INFO] [3390752] =    5348kB time=00:01:44.87 bitrate= 417.8kbits/s speed=0.859x    frame= 6371 fps= 52 q=31.0 size=    5348kB time=00:01:45.32
+2024-08-30 11:24:15.762 [INFO] [3390752]  bitrate= 416.0kbits/s speed=0.859x    frame= 6399 fps= 52 q=31.0 size=    5348kB time=00:01:45.77 bitrate= 414.2kbits/s speed
+2024-08-30 11:24:16.821 [INFO] [3390752] =0.859x    frame= 6425 fps= 52 q=31.0 size=    5348kB time=00:01:46.21 bitrate= 412.5kbits/s speed=0.859x    frame= 6454 fps=
+2024-08-30 11:24:17.345 [INFO] [3390752]  52 q=31.0 size=    5348kB time=00:01:46.68 bitrate= 410.7kbits/s speed=0.859x    frame= 6482 fps= 52 q=31.0 size=    5348kB t
+2024-08-30 11:24:17.846 [INFO] [3390752] ime=00:01:47.15 bitrate= 408.9kbits/s speed=0.859x    frame= 6509 fps= 52 q=31.0 size=    5348kB time=00:01:47.60 bitrate= 407
+2024-08-30 11:24:18.905 [INFO] [3390752] .2kbits/s speed=0.859x    frame= 6537 fps= 52 q=31.0 size=    5348kB time=00:01:48.07 bitrate= 405.4kbits/s speed=0.859x    f
+2024-08-30 11:24:19.415 [INFO] [3390752] rame= 6553 fps= 52 q=31.0 size=    5578kB time=00:01:48.35 bitrate= 421.7kbits/s speed=0.858x    frame= 6581 fps= 52 q=31.0 si
+2024-08-30 11:24:19.926 [INFO] [3390752] ze=    5578kB time=00:01:48.81 bitrate= 419.9kbits/s speed=0.858x    frame= 6607 fps= 52 q=31.0 size=    5578kB time=00:01:49.
+2024-08-30 11:24:20.469 [INFO] [3390752] 24 bitrate= 418.3kbits/s speed=0.858x    frame= 6635 fps= 52 q=31.0 size=    5578kB time=00:01:49.71 bitrate= 416.5kbits/s spe
+2024-08-30 11:24:21.502 [INFO] [3390752] ed=0.858x    frame= 6662 fps= 52 q=31.0 size=    5578kB time=00:01:50.16 bitrate= 414.8kbits/s speed=0.858x    frame= 6689 fp
+2024-08-30 11:24:22.017 [INFO] [3390752] s= 52 q=31.0 size=    5578kB time=00:01:50.61 bitrate= 413.1kbits/s speed=0.858x    frame= 6717 fps= 52 q=31.0 size=    5578kB
+2024-08-30 11:24:22.521 [INFO] [3390752]  time=00:01:51.07 bitrate= 411.4kbits/s speed=0.858x    frame= 6744 fps= 52 q=31.0 size=    5578kB time=00:01:51.53 bitrate= 4
+2024-08-30 11:24:23.023 [INFO] [3390752] 09.7kbits/s speed=0.858x    frame= 6770 fps= 52 q=31.0 size=    5578kB time=00:01:51.95 bitrate= 408.1kbits/s speed=0.858x    
+2024-08-30 11:24:24.042 [INFO] [3390752] frame= 6795 fps= 52 q=31.0 size=    5578kB time=00:01:52.38 bitrate= 406.6kbits/s speed=0.858x    frame= 6813 fps= 52 q=31.0 
+2024-08-30 11:24:24.551 [INFO] [3390752] size=    5798kB time=00:01:52.68 bitrate= 421.5kbits/s speed=0.857x    frame= 6840 fps= 52 q=31.0 size=    5798kB time=00:01:5
+2024-08-30 11:24:25.074 [INFO] [3390752] 3.12 bitrate= 419.8kbits/s speed=0.857x    frame= 6866 fps= 52 q=31.0 size=    5798kB time=00:01:53.55 bitrate= 418.3kbits/s s
+2024-08-30 11:24:26.077 [INFO] [3390752] peed=0.857x    frame= 6893 fps= 52 q=31.0 size=    5798kB time=00:01:54.00 bitrate= 416.6kbits/s speed=0.857x    frame= 6918 
+2024-08-30 11:24:26.615 [INFO] [3390752] fps= 52 q=31.0 size=    5798kB time=00:01:54.43 bitrate= 415.1kbits/s speed=0.857x    frame= 6945 fps= 52 q=31.0 size=    5798
+2024-08-30 11:24:27.087 [INFO] [3390752] kB time=00:01:54.88 bitrate= 413.4kbits/s speed=0.858x    frame= 6971 fps= 52 q=31.0 size=    5798kB time=00:01:55.30 bitrate=
+2024-08-30 11:24:27.617 [INFO] [3390752]  411.9kbits/s speed=0.857x    frame= 6997 fps= 52 q=31.0 size=    5798kB time=00:01:55.75 bitrate= 410.3kbits/s speed=0.857x  
+2024-08-30 11:24:28.760 [INFO] [3390752]   frame= 7024 fps= 52 q=31.0 size=    5798kB time=00:01:56.20 bitrate= 408.7kbits/s speed=0.857x    frame= 7046 fps= 52 q=29.
+2024-08-30 11:24:29.317 [INFO] [3390752] 0 size=    5798kB time=00:01:56.56 bitrate= 407.5kbits/s speed=0.856x    frame= 7076 fps= 52 q=31.0 size=    6029kB time=00:01
+2024-08-30 11:24:29.825 [INFO] [3390752] :57.05 bitrate= 421.9kbits/s speed=0.856x    frame= 7103 fps= 52 q=31.0 size=    6029kB time=00:01:57.50 bitrate= 420.3kbits/s
+2024-08-30 11:24:30.846 [INFO] [3390752]  speed=0.856x    frame= 7131 fps= 52 q=31.0 size=    6029kB time=00:01:57.97 bitrate= 418.7kbits/s speed=0.857x    frame= 715
+2024-08-30 11:24:31.401 [INFO] [3390752] 5 fps= 52 q=31.0 size=    6029kB time=00:01:58.37 bitrate= 417.2kbits/s speed=0.856x    frame= 7183 fps= 52 q=31.0 size=    60
+2024-08-30 11:24:31.899 [INFO] [3390752] 29kB time=00:01:58.84 bitrate= 415.6kbits/s speed=0.856x    frame= 7209 fps= 52 q=31.0 size=    6029kB time=00:01:59.27 bitrat
+2024-08-30 11:24:32.438 [INFO] [3390752] e= 414.1kbits/s speed=0.856x    frame= 7237 fps= 52 q=31.0 size=    6029kB time=00:01:59.74 bitrate= 412.5kbits/s speed=0.856x
+2024-08-30 11:24:33.452 [INFO] [3390752]     frame= 7265 fps= 52 q=31.0 size=    6029kB time=00:02:00.21 bitrate= 410.9kbits/s speed=0.857x    frame= 7291 fps= 52 q=3
+2024-08-30 11:24:33.985 [INFO] [3390752] 1.0 size=    6029kB time=00:02:00.64 bitrate= 409.4kbits/s speed=0.857x    frame= 7309 fps= 52 q=31.0 size=    6260kB time=00:
+2024-08-30 11:24:34.514 [INFO] [3390752] 02:00.94 bitrate= 424.0kbits/s speed=0.855x    frame= 7337 fps= 52 q=31.0 size=    6260kB time=00:02:01.41 bitrate= 422.4kbits
+2024-08-30 11:24:35.518 [INFO] [3390752] /s speed=0.856x    frame= 7363 fps= 52 q=31.0 size=    6260kB time=00:02:01.85 bitrate= 420.9kbits/s speed=0.856x    frame= 7
+2024-08-30 11:24:36.031 [INFO] [3390752] 389 fps= 52 q=31.0 size=    6260kB time=00:02:02.28 bitrate= 419.4kbits/s speed=0.856x    frame= 7416 fps= 52 q=31.0 size=    
+2024-08-30 11:24:36.537 [INFO] [3390752] 6260kB time=00:02:02.73 bitrate= 417.8kbits/s speed=0.856x    frame= 7443 fps= 52 q=31.0 size=    6260kB time=00:02:03.17 bitr
+2024-08-30 11:24:37.040 [INFO] [3390752] ate= 416.3kbits/s speed=0.856x    frame= 7469 fps= 52 q=31.0 size=    6260kB time=00:02:03.60 bitrate= 414.9kbits/s speed=0.85
+2024-08-30 11:24:38.072 [INFO] [3390752] 6x    frame= 7495 fps= 52 q=31.0 size=    6260kB time=00:02:04.05 bitrate= 413.4kbits/s speed=0.856x    frame= 7524 fps= 52 q
+2024-08-30 11:24:38.728 [INFO] [3390752] =31.0 size=    6260kB time=00:02:04.54 bitrate= 411.8kbits/s speed=0.856x    frame= 7547 fps= 52 q=31.0 size=    6260kB time=0
+2024-08-30 11:24:39.224 [INFO] [3390752] 0:02:04.90 bitrate= 410.6kbits/s speed=0.855x    frame= 7572 fps= 52 q=31.0 size=    6498kB time=00:02:05.33 bitrate= 424.7kbi
+2024-08-30 11:24:40.250 [INFO] [3390752] ts/s speed=0.855x    frame= 7598 fps= 52 q=31.0 size=    6498kB time=00:02:05.75 bitrate= 423.3kbits/s speed=0.855x    frame=
+2024-08-30 11:24:40.752 [INFO] [3390752]  7623 fps= 52 q=31.0 size=    6498kB time=00:02:06.18 bitrate= 421.9kbits/s speed=0.855x    frame= 7647 fps= 52 q=31.0 size=  
+2024-08-30 11:24:41.261 [INFO] [3390752]   6498kB time=00:02:06.57 bitrate= 420.6kbits/s speed=0.854x    frame= 7673 fps= 52 q=31.0 size=    6498kB time=00:02:07.01 bi
+2024-08-30 11:24:41.781 [INFO] [3390752] trate= 419.1kbits/s speed=0.854x    frame= 7699 fps= 52 q=31.0 size=    6498kB time=00:02:07.44 bitrate= 417.7kbits/s speed=0.
+2024-08-30 11:24:42.851 [INFO] [3390752] 854x    frame= 7727 fps= 52 q=31.0 size=    6498kB time=00:02:07.91 bitrate= 416.2kbits/s speed=0.854x    frame= 7755 fps= 52
+2024-08-30 11:24:43.394 [INFO] [3390752]  q=31.0 size=    6498kB time=00:02:08.38 bitrate= 414.6kbits/s speed=0.854x    frame= 7783 fps= 52 q=31.0 size=    6498kB time
+2024-08-30 11:24:43.855 [INFO] [3390752] =00:02:08.85 bitrate= 413.1kbits/s speed=0.855x    frame= 7798 fps= 52 q=31.0 size=    6498kB time=00:02:09.09 bitrate= 412.4k
+2024-08-30 11:24:44.883 [INFO] [3390752] bits/s speed=0.853x    frame= 7824 fps= 52 q=31.0 size=    6715kB time=00:02:09.53 bitrate= 424.7kbits/s speed=0.854x    fram
+2024-08-30 11:24:45.406 [INFO] [3390752] e= 7851 fps= 52 q=31.0 size=    6715kB time=00:02:09.98 bitrate= 423.2kbits/s speed=0.854x    frame= 7877 fps= 52 q=31.0 size=
+2024-08-30 11:24:45.945 [INFO] [3390752]     6715kB time=00:02:10.40 bitrate= 421.8kbits/s speed=0.853x    frame= 7905 fps= 52 q=31.0 size=    6715kB time=00:02:10.88 
+2024-08-30 11:24:46.445 [INFO] [3390752] bitrate= 420.3kbits/s speed=0.854x    frame= 7932 fps= 52 q=31.0 size=    6715kB time=00:02:11.32 bitrate= 418.9kbits/s speed=
+2024-08-30 11:24:47.472 [INFO] [3390752] 0.854x    frame= 7951 fps= 52 q=31.0 size=    6715kB time=00:02:11.64 bitrate= 417.9kbits/s speed=0.853x    frame= 7965 fps= 
+2024-08-30 11:24:48.011 [INFO] [3390752] 51 q=31.0 size=    6715kB time=00:02:11.88 bitrate= 417.1kbits/s speed=0.852x    frame= 7993 fps= 51 q=31.0 size=    6715kB ti
+2024-08-30 11:24:48.515 [INFO] [3390752] me=00:02:12.35 bitrate= 415.6kbits/s speed=0.852x    frame= 8019 fps= 51 q=31.0 size=    6715kB time=00:02:12.78 bitrate= 414.
+2024-08-30 11:24:49.760 [INFO] [3390752] 3kbits/s speed=0.852x    frame= 8046 fps= 51 q=29.0 size=    6715kB time=00:02:13.22 bitrate= 412.9kbits/s speed=0.851x    fr
+2024-08-30 11:24:50.295 [INFO] [3390752] ame= 8073 fps= 51 q=31.0 size=    6941kB time=00:02:13.67 bitrate= 425.4kbits/s speed=0.851x    frame= 8103 fps= 51 q=31.0 siz
+2024-08-30 11:24:50.821 [INFO] [3390752] e=    6941kB time=00:02:14.18 bitrate= 423.8kbits/s speed=0.851x    frame= 8130 fps= 51 q=31.0 size=    6941kB time=00:02:14.6
+2024-08-30 11:24:51.331 [INFO] [3390752] 3 bitrate= 422.4kbits/s speed=0.851x    frame= 8157 fps= 51 q=31.0 size=    6941kB time=00:02:15.08 bitrate= 421.0kbits/s spee
+2024-08-30 11:24:52.379 [INFO] [3390752] d=0.851x    frame= 8185 fps= 51 q=31.0 size=    6941kB time=00:02:15.55 bitrate= 419.5kbits/s speed=0.851x    frame= 8215 fps
+2024-08-30 11:24:52.911 [INFO] [3390752] = 51 q=31.0 size=    6941kB time=00:02:16.04 bitrate= 418.0kbits/s speed=0.851x    frame= 8242 fps= 51 q=31.0 size=    6941kB 
+2024-08-30 11:24:53.436 [INFO] [3390752] time=00:02:16.49 bitrate= 416.6kbits/s speed=0.851x    frame= 8269 fps= 51 q=31.0 size=    6941kB time=00:02:16.93 bitrate= 41
+2024-08-30 11:24:54.108 [INFO] [3390752] 5.2kbits/s speed=0.851x    frame= 8297 fps= 51 q=31.0 size=    6941kB time=00:02:17.40 bitrate= 413.8kbits/s speed=0.851x    
+2024-08-30 11:24:55.129 [INFO] [3390752] frame= 8324 fps= 51 q=31.0 size=    7165kB time=00:02:17.85 bitrate= 425.8kbits/s speed=0.851x    frame= 8349 fps= 51 q=31.0 s
+2024-08-30 11:24:55.628 [INFO] [3390752] ize=    7165kB time=00:02:18.28 bitrate= 424.4kbits/s speed=0.851x    frame= 8376 fps= 51 q=31.0 size=    7165kB time=00:02:18
+2024-08-30 11:24:56.142 [INFO] [3390752] .73 bitrate= 423.1kbits/s speed=0.851x    frame= 8402 fps= 51 q=31.0 size=    7165kB time=00:02:19.15 bitrate= 421.8kbits/s sp
+2024-08-30 11:24:57.233 [INFO] [3390752] eed=0.851x    frame= 8430 fps= 51 q=31.0 size=    7165kB time=00:02:19.62 bitrate= 420.4kbits/s speed=0.851x    frame= 8459 f
+2024-08-30 11:24:57.758 [INFO] [3390752] ps= 51 q=31.0 size=    7165kB time=00:02:20.11 bitrate= 418.9kbits/s speed=0.851x    frame= 8487 fps= 51 q=31.0 size=    7165k
+2024-08-30 11:24:58.298 [INFO] [3390752] B time=00:02:20.58 bitrate= 417.5kbits/s speed=0.851x    frame= 8517 fps= 51 q=31.0 size=    7165kB time=00:02:21.07 bitrate= 
+2024-08-30 11:24:58.792 [INFO] [3390752] 416.0kbits/s speed=0.852x    frame= 8543 fps= 51 q=31.0 size=    7165kB time=00:02:21.50 bitrate= 414.8kbits/s speed=0.851x   
+2024-08-30 11:24:59.809 [INFO] [3390752]  frame= 8558 fps= 51 q=31.0 size=    7389kB time=00:02:21.75 bitrate= 427.0kbits/s speed=0.85x    frame= 8586 fps= 51 q=31.0 
+2024-08-30 11:25:00.346 [INFO] [3390752] size=    7389kB time=00:02:22.23 bitrate= 425.6kbits/s speed=0.851x    frame= 8613 fps= 51 q=31.0 size=    7389kB time=00:02:2
+2024-08-30 11:25:00.917 [INFO] [3390752] 2.67 bitrate= 424.2kbits/s speed=0.851x    frame= 8644 fps= 51 q=31.0 size=    7389kB time=00:02:23.19 bitrate= 422.7kbits/s s
+2024-08-30 11:25:01.955 [INFO] [3390752] peed=0.851x    frame= 8671 fps= 51 q=31.0 size=    7389kB time=00:02:23.64 bitrate= 421.4kbits/s speed=0.851x    frame= 8697 
+2024-08-30 11:25:02.469 [INFO] [3390752] fps= 51 q=31.0 size=    7389kB time=00:02:24.08 bitrate= 420.1kbits/s speed=0.851x    frame= 8726 fps= 51 q=31.0 size=    7389
+2024-08-30 11:25:02.965 [INFO] [3390752] kB time=00:02:24.55 bitrate= 418.7kbits/s speed=0.851x    frame= 8751 fps= 51 q=31.0 size=    7389kB time=00:02:24.98 bitrate=
+2024-08-30 11:25:03.481 [INFO] [3390752]  417.5kbits/s speed=0.851x    frame= 8779 fps= 51 q=31.0 size=    7389kB time=00:02:25.45 bitrate= 416.2kbits/s speed=0.851x  
+2024-08-30 11:25:04.518 [INFO] [3390752]   frame= 8796 fps= 51 q=29.0 size=    7389kB time=00:02:25.72 bitrate= 415.4kbits/s speed=0.85x    frame= 8825 fps= 51 q=31.0
+2024-08-30 11:25:05.020 [INFO] [3390752]  size=    7613kB time=00:02:26.21 bitrate= 426.5kbits/s speed=0.85x    frame= 8851 fps= 51 q=31.0 size=    7613kB time=00:02:2
+2024-08-30 11:25:05.569 [INFO] [3390752] 6.64 bitrate= 425.3kbits/s speed=0.851x    frame= 8877 fps= 51 q=31.0 size=    7613kB time=00:02:27.07 bitrate= 424.0kbits/s s
+2024-08-30 11:25:06.563 [INFO] [3390752] peed=0.851x    frame= 8901 fps= 51 q=31.0 size=    7613kB time=00:02:27.47 bitrate= 422.9kbits/s speed=0.85x    frame= 8929 f
+2024-08-30 11:25:07.068 [INFO] [3390752] ps= 51 q=31.0 size=    7613kB time=00:02:27.94 bitrate= 421.5kbits/s speed=0.85x    frame= 8955 fps= 51 q=31.0 size=    7613kB
+2024-08-30 11:25:07.571 [INFO] [3390752]  time=00:02:28.37 bitrate= 420.3kbits/s speed=0.85x    frame= 8981 fps= 51 q=31.0 size=    7613kB time=00:02:28.81 bitrate= 41
+2024-08-30 11:25:08.596 [INFO] [3390752] 9.1kbits/s speed=0.851x    frame= 9007 fps= 51 q=31.0 size=    7613kB time=00:02:29.24 bitrate= 417.9kbits/s speed=0.85x    f
+2024-08-30 11:25:09.133 [INFO] [3390752] rame= 9033 fps= 51 q=31.0 size=    7613kB time=00:02:29.67 bitrate= 416.7kbits/s speed=0.85x    frame= 9051 fps= 51 q=31.0 siz
+2024-08-30 11:25:09.681 [INFO] [3390752] e=    7613kB time=00:02:29.97 bitrate= 415.8kbits/s speed=0.85x    frame= 9079 fps= 51 q=31.0 size=    7823kB time=00:02:30.44
+2024-08-30 11:25:10.216 [INFO] [3390752]  bitrate= 426.0kbits/s speed=0.85x    frame= 9107 fps= 51 q=31.0 size=    7823kB time=00:02:30.91 bitrate= 424.7kbits/s speed=
+2024-08-30 11:25:11.225 [INFO] [3390752] 0.85x    frame= 9134 fps= 51 q=31.0 size=    7823kB time=00:02:31.35 bitrate= 423.4kbits/s speed=0.85x    frame= 9158 fps= 51
+2024-08-30 11:25:11.741 [INFO] [3390752]  q=31.0 size=    7823kB time=00:02:31.76 bitrate= 422.3kbits/s speed=0.85x    frame= 9183 fps= 51 q=31.0 size=    7823kB time=
+2024-08-30 11:25:12.269 [INFO] [3390752] 00:02:32.19 bitrate= 421.1kbits/s speed=0.85x    frame= 9209 fps= 51 q=31.0 size=    7823kB time=00:02:32.61 bitrate= 419.9kbi
+2024-08-30 11:25:13.323 [INFO] [3390752] ts/s speed=0.849x    frame= 9236 fps= 51 q=31.0 size=    7823kB time=00:02:33.06 bitrate= 418.7kbits/s speed=0.85x    frame= 
+2024-08-30 11:25:13.862 [INFO] [3390752] 9263 fps= 51 q=31.0 size=    7823kB time=00:02:33.51 bitrate= 417.5kbits/s speed=0.849x    frame= 9291 fps= 51 q=31.0 size=   
+2024-08-30 11:25:14.336 [INFO] [3390752]  7823kB time=00:02:33.98 bitrate= 416.2kbits/s speed=0.85x    frame= 9307 fps= 51 q=31.0 size=    8041kB time=00:02:34.23 bitr
+2024-08-30 11:25:14.848 [INFO] [3390752] ate= 427.1kbits/s speed=0.849x    frame= 9334 fps= 51 q=31.0 size=    8041kB time=00:02:34.68 bitrate= 425.8kbits/s speed=0.84
+2024-08-30 11:25:15.837 [INFO] [3390752] 9x    frame= 9359 fps= 51 q=31.0 size=    8041kB time=00:02:35.11 bitrate= 424.7kbits/s speed=0.849x    frame= 9385 fps= 51 q
+2024-08-30 11:25:16.348 [INFO] [3390752] =31.0 size=    8041kB time=00:02:35.54 bitrate= 423.5kbits/s speed=0.849x    frame= 9413 fps= 51 q=31.0 size=    8041kB time=0
+2024-08-30 11:25:16.854 [INFO] [3390752] 0:02:36.00 bitrate= 422.2kbits/s speed=0.849x    frame= 9440 fps= 51 q=31.0 size=    8041kB time=00:02:36.45 bitrate= 421.0kbi
+2024-08-30 11:25:17.863 [INFO] [3390752] ts/s speed=0.849x    frame= 9468 fps= 51 q=31.0 size=    8041kB time=00:02:36.92 bitrate= 419.8kbits/s speed=0.849x    frame=
+2024-08-30 11:25:18.380 [INFO] [3390752]  9494 fps= 51 q=31.0 size=    8041kB time=00:02:37.35 bitrate= 418.6kbits/s speed=0.849x    frame= 9522 fps= 51 q=31.0 size=  
+2024-08-30 11:25:19.069 [INFO] [3390752]   8041kB time=00:02:37.82 bitrate= 417.4kbits/s speed=0.85x    frame= 9546 fps= 51 q=29.0 size=    8041kB time=00:02:38.23 bit
+2024-08-30 11:25:19.597 [INFO] [3390752] rate= 416.3kbits/s speed=0.849x    frame= 9573 fps= 51 q=31.0 size=    8252kB time=00:02:38.67 bitrate= 426.0kbits/s speed=0.8
+2024-08-30 11:25:20.643 [INFO] [3390752] 49x    frame= 9600 fps= 51 q=31.0 size=    8252kB time=00:02:39.12 bitrate= 424.8kbits/s speed=0.849x    frame= 9627 fps= 51 
+2024-08-30 11:25:21.145 [INFO] [3390752] q=31.0 size=    8252kB time=00:02:39.57 bitrate= 423.7kbits/s speed=0.849x    frame= 9654 fps= 51 q=31.0 size=    8252kB time=
+2024-08-30 11:25:21.653 [INFO] [3390752] 00:02:40.02 bitrate= 422.5kbits/s speed=0.849x    frame= 9675 fps= 51 q=31.0 size=    8252kB time=00:02:40.38 bitrate= 421.5kb
+2024-08-30 11:25:22.712 [INFO] [3390752] its/s speed=0.848x    frame= 9689 fps= 51 q=31.0 size=    8252kB time=00:02:40.61 bitrate= 420.9kbits/s speed=0.847x    frame
+2024-08-30 11:25:23.216 [INFO] [3390752] = 9715 fps= 51 q=31.0 size=    8252kB time=00:02:41.04 bitrate= 419.8kbits/s speed=0.847x    frame= 9742 fps= 51 q=31.0 size= 
+2024-08-30 11:25:23.749 [INFO] [3390752]    8252kB time=00:02:41.49 bitrate= 418.6kbits/s speed=0.847x    frame= 9768 fps= 51 q=31.0 size=    8252kB time=00:02:41.92 b
+2024-08-30 11:25:24.260 [INFO] [3390752] itrate= 417.5kbits/s speed=0.847x    frame= 9795 fps= 51 q=31.0 size=    8252kB time=00:02:42.38 bitrate= 416.3kbits/s speed=0
+2024-08-30 11:25:25.299 [INFO] [3390752] .847x    frame= 9813 fps= 51 q=31.0 size=    8464kB time=00:02:42.68 bitrate= 426.2kbits/s speed=0.847x    frame= 9841 fps= 5
+2024-08-30 11:25:25.833 [INFO] [3390752] 1 q=31.0 size=    8464kB time=00:02:43.13 bitrate= 425.0kbits/s speed=0.847x    frame= 9869 fps= 51 q=31.0 size=    8464kB tim
+2024-08-30 11:25:26.357 [INFO] [3390752] e=00:02:43.60 bitrate= 423.8kbits/s speed=0.847x    frame= 9897 fps= 51 q=31.0 size=    8464kB time=00:02:44.07 bitrate= 422.6
+2024-08-30 11:25:27.367 [INFO] [3390752] kbits/s speed=0.847x    frame= 9925 fps= 51 q=31.0 size=    8464kB time=00:02:44.54 bitrate= 421.4kbits/s speed=0.847x    fra
+2024-08-30 11:25:27.897 [INFO] [3390752] me= 9952 fps= 51 q=31.0 size=    8464kB time=00:02:44.99 bitrate= 420.3kbits/s speed=0.847x    frame= 9981 fps= 51 q=31.0 size
+2024-08-30 11:25:28.401 [INFO] [3390752] =    8464kB time=00:02:45.48 bitrate= 419.0kbits/s speed=0.847x    frame=10007 fps= 51 q=31.0 size=    8464kB time=00:02:45.90
+2024-08-30 11:25:28.917 [INFO] [3390752]  bitrate= 417.9kbits/s speed=0.847x    frame=10036 fps= 51 q=31.0 size=    8464kB time=00:02:46.39 bitrate= 416.7kbits/s speed
+2024-08-30 11:25:29.968 [INFO] [3390752] =0.848x    frame=10052 fps= 51 q=31.0 size=    8671kB time=00:02:46.65 bitrate= 426.2kbits/s speed=0.847x    frame=10080 fps=
+2024-08-30 11:25:30.463 [INFO] [3390752]  51 q=31.0 size=    8671kB time=00:02:47.12 bitrate= 425.0kbits/s speed=0.847x    frame=10105 fps= 51 q=31.0 size=    8671kB t
+2024-08-30 11:25:30.981 [INFO] [3390752] ime=00:02:47.55 bitrate= 423.9kbits/s speed=0.847x    frame=10131 fps= 51 q=31.0 size=    8671kB time=00:02:47.97 bitrate= 422
+2024-08-30 11:25:32.029 [INFO] [3390752] .9kbits/s speed=0.847x    frame=10157 fps= 51 q=31.0 size=    8671kB time=00:02:48.40 bitrate= 421.8kbits/s speed=0.847x    f
+2024-08-30 11:25:32.582 [INFO] [3390752] rame=10183 fps= 51 q=31.0 size=    8671kB time=00:02:48.85 bitrate= 420.7kbits/s speed=0.847x    frame=10212 fps= 51 q=31.0 si
+2024-08-30 11:25:33.104 [INFO] [3390752] ze=    8671kB time=00:02:49.32 bitrate= 419.5kbits/s speed=0.847x    frame=10240 fps= 51 q=31.0 size=    8671kB time=00:02:49.
+2024-08-30 11:25:33.606 [INFO] [3390752] 79 bitrate= 418.4kbits/s speed=0.847x    frame=10267 fps= 51 q=31.0 size=    8671kB time=00:02:50.23 bitrate= 417.3kbits/s spe
+2024-08-30 11:25:34.662 [INFO] [3390752] ed=0.847x    frame=10294 fps= 51 q=31.0 size=    8671kB time=00:02:50.68 bitrate= 416.2kbits/s speed=0.847x    frame=10315 fp
+2024-08-30 11:25:35.165 [INFO] [3390752] s= 51 q=31.0 size=    8877kB time=00:02:51.04 bitrate= 425.2kbits/s speed=0.847x    frame=10342 fps= 51 q=31.0 size=    8877kB
+2024-08-30 11:25:35.692 [INFO] [3390752]  time=00:02:51.49 bitrate= 424.1kbits/s speed=0.847x    frame=10369 fps= 51 q=31.0 size=    8877kB time=00:02:51.94 bitrate= 4
+2024-08-30 11:25:36.247 [INFO] [3390752] 22.9kbits/s speed=0.847x    frame=10397 fps= 51 q=31.0 size=    8877kB time=00:02:52.41 bitrate= 421.8kbits/s speed=0.847x    
+2024-08-30 11:25:37.281 [INFO] [3390752] frame=10425 fps= 51 q=31.0 size=    8877kB time=00:02:52.88 bitrate= 420.7kbits/s speed=0.847x    frame=10451 fps= 51 q=31.0 
+2024-08-30 11:25:37.787 [INFO] [3390752] size=    8877kB time=00:02:53.31 bitrate= 419.6kbits/s speed=0.847x    frame=10477 fps= 51 q=31.0 size=    8877kB time=00:02:5
+2024-08-30 11:25:38.343 [INFO] [3390752] 3.73 bitrate= 418.6kbits/s speed=0.847x    frame=10505 fps= 51 q=31.0 size=    8877kB time=00:02:54.20 bitrate= 417.5kbits/s s
+2024-08-30 11:25:39.314 [INFO] [3390752] peed=0.847x    frame=10529 fps= 51 q=31.0 size=    8877kB time=00:02:54.61 bitrate= 416.5kbits/s speed=0.847x    frame=10546 
+2024-08-30 11:25:39.851 [INFO] [3390752] fps= 51 q=29.0 size=    8877kB time=00:02:54.88 bitrate= 415.8kbits/s speed=0.846x    frame=10575 fps= 51 q=31.0 size=    9079
+2024-08-30 11:25:40.352 [INFO] [3390752] kB time=00:02:55.38 bitrate= 424.1kbits/s speed=0.846x    frame=10602 fps= 51 q=31.0 size=    9079kB time=00:02:55.82 bitrate=
+2024-08-30 11:25:40.887 [INFO] [3390752]  423.0kbits/s speed=0.846x    frame=10629 fps= 51 q=31.0 size=    9079kB time=00:02:56.27 bitrate= 421.9kbits/s speed=0.846x  
+2024-08-30 11:25:41.950 [INFO] [3390752]   frame=10658 fps= 51 q=31.0 size=    9079kB time=00:02:56.76 bitrate= 420.7kbits/s speed=0.847x    frame=10687 fps= 51 q=31.
+2024-08-30 11:25:42.410 [INFO] [3390752] 0 size=    9079kB time=00:02:57.23 bitrate= 419.6kbits/s speed=0.847x    frame=10712 fps= 51 q=31.0 size=    9079kB time=00:02
+2024-08-30 11:25:42.911 [INFO] [3390752] :57.66 bitrate= 418.6kbits/s speed=0.847x    frame=10738 fps= 51 q=31.0 size=    9079kB time=00:02:58.09 bitrate= 417.6kbits/s
+2024-08-30 11:25:43.971 [INFO] [3390752]  speed=0.847x    frame=10767 fps= 51 q=31.0 size=    9079kB time=00:02:58.58 bitrate= 416.5kbits/s speed=0.847x    frame=1079
+2024-08-30 11:25:44.487 [INFO] [3390752] 3 fps= 51 q=31.0 size=    9079kB time=00:02:59.00 bitrate= 415.5kbits/s speed=0.847x    frame=10809 fps= 51 q=31.0 size=    92
+2024-08-30 11:25:44.999 [INFO] [3390752] 83kB time=00:02:59.28 bitrate= 424.1kbits/s speed=0.846x    frame=10836 fps= 51 q=31.0 size=    9283kB time=00:02:59.73 bitrat
+2024-08-30 11:25:45.501 [INFO] [3390752] e= 423.1kbits/s speed=0.846x    frame=10863 fps= 51 q=31.0 size=    9283kB time=00:03:00.17 bitrate= 422.0kbits/s speed=0.846x
+2024-08-30 11:25:46.532 [INFO] [3390752]     frame=10889 fps= 51 q=31.0 size=    9283kB time=00:03:00.60 bitrate= 421.0kbits/s speed=0.846x    frame=10916 fps= 51 q=3
+2024-08-30 11:25:47.072 [INFO] [3390752] 1.0 size=    9283kB time=00:03:01.05 bitrate= 420.0kbits/s speed=0.846x    frame=10945 fps= 51 q=31.0 size=    9283kB time=00:
+2024-08-30 11:25:47.576 [INFO] [3390752] 03:01.54 bitrate= 418.9kbits/s speed=0.846x    frame=10972 fps= 51 q=31.0 size=    9283kB time=00:03:01.99 bitrate= 417.8kbits
+2024-08-30 11:25:48.637 [INFO] [3390752] /s speed=0.847x    frame=10998 fps= 51 q=31.0 size=    9283kB time=00:03:02.42 bitrate= 416.9kbits/s speed=0.846x    frame=11
+2024-08-30 11:25:49.254 [INFO] [3390752] 024 fps= 51 q=31.0 size=    9283kB time=00:03:02.87 bitrate= 415.8kbits/s speed=0.846x    frame=11046 fps= 51 q=29.0 size=    
+2024-08-30 11:25:49.762 [INFO] [3390752] 9283kB time=00:03:03.23 bitrate= 415.0kbits/s speed=0.846x    frame=11074 fps= 51 q=31.0 size=    9491kB time=00:03:03.70 bitr
+2024-08-30 11:25:50.287 [INFO] [3390752] ate= 423.2kbits/s speed=0.846x    frame=11101 fps= 51 q=31.0 size=    9491kB time=00:03:04.15 bitrate= 422.2kbits/s speed=0.84
+2024-08-30 11:25:51.312 [INFO] [3390752] 6x    frame=11127 fps= 51 q=31.0 size=    9491kB time=00:03:04.57 bitrate= 421.2kbits/s speed=0.846x    frame=11155 fps= 51 q
+2024-08-30 11:25:51.860 [INFO] [3390752] =31.0 size=    9491kB time=00:03:05.04 bitrate= 420.2kbits/s speed=0.846x    frame=11183 fps= 51 q=31.0 size=    9491kB time=0
+2024-08-30 11:25:52.368 [INFO] [3390752] 0:03:05.51 bitrate= 419.1kbits/s speed=0.846x    frame=11209 fps= 51 q=31.0 size=    9491kB time=00:03:05.94 bitrate= 418.1kbi
+2024-08-30 11:25:53.440 [INFO] [3390752] ts/s speed=0.846x    frame=11236 fps= 51 q=31.0 size=    9491kB time=00:03:06.39 bitrate= 417.1kbits/s speed=0.846x    frame=
+2024-08-30 11:25:53.993 [INFO] [3390752] 11264 fps= 51 q=31.0 size=    9491kB time=00:03:06.85 bitrate= 416.1kbits/s speed=0.846x    frame=11291 fps= 51 q=31.0 size=  
+2024-08-30 11:25:54.451 [INFO] [3390752]   9491kB time=00:03:07.30 bitrate= 415.1kbits/s speed=0.846x    frame=11305 fps= 51 q=31.0 size=    9708kB time=00:03:07.54 bi
+2024-08-30 11:25:54.983 [INFO] [3390752] trate= 424.1kbits/s speed=0.845x    frame=11333 fps= 51 q=31.0 size=    9708kB time=00:03:08.01 bitrate= 423.0kbits/s speed=0.
+2024-08-30 11:25:56.033 [INFO] [3390752] 845x    frame=11361 fps= 51 q=31.0 size=    9708kB time=00:03:08.48 bitrate= 422.0kbits/s speed=0.845x    frame=11388 fps= 51
+2024-08-30 11:25:56.545 [INFO] [3390752]  q=31.0 size=    9708kB time=00:03:08.92 bitrate= 421.0kbits/s speed=0.846x    frame=11407 fps= 51 q=31.0 size=    9708kB time
+2024-08-30 11:25:57.072 [INFO] [3390752] =00:03:09.24 bitrate= 420.3kbits/s speed=0.845x    frame=11420 fps= 51 q=31.0 size=    9708kB time=00:03:09.46 bitrate= 419.8k
+2024-08-30 11:25:58.122 [INFO] [3390752] bits/s speed=0.844x    frame=11449 fps= 51 q=31.0 size=    9708kB time=00:03:09.94 bitrate= 418.7kbits/s speed=0.844x    fram
+2024-08-30 11:25:58.626 [INFO] [3390752] e=11476 fps= 51 q=31.0 size=    9708kB time=00:03:10.40 bitrate= 417.7kbits/s speed=0.844x    frame=11503 fps= 51 q=31.0 size=
+2024-08-30 11:25:59.141 [INFO] [3390752]     9708kB time=00:03:10.84 bitrate= 416.7kbits/s speed=0.844x    frame=11529 fps= 51 q=31.0 size=    9708kB time=00:03:11.27 
+2024-08-30 11:25:59.648 [INFO] [3390752] bitrate= 415.8kbits/s speed=0.844x    frame=11548 fps= 51 q=31.0 size=    9708kB time=00:03:11.59 bitrate= 415.1kbits/s speed=
+2024-08-30 11:26:00.667 [INFO] [3390752] 0.844x    frame=11575 fps= 51 q=31.0 size=    9918kB time=00:03:12.04 bitrate= 423.1kbits/s speed=0.844x    frame=11603 fps= 
+2024-08-30 11:26:01.181 [INFO] [3390752] 51 q=31.0 size=    9918kB time=00:03:12.51 bitrate= 422.0kbits/s speed=0.844x    frame=11629 fps= 51 q=31.0 size=    9918kB ti
+2024-08-30 11:26:01.721 [INFO] [3390752] me=00:03:12.93 bitrate= 421.1kbits/s speed=0.844x    frame=11655 fps= 51 q=31.0 size=    9918kB time=00:03:13.38 bitrate= 420.
+2024-08-30 11:26:02.728 [INFO] [3390752] 1kbits/s speed=0.844x    frame=11681 fps= 51 q=31.0 size=    9918kB time=00:03:13.81 bitrate= 419.2kbits/s speed=0.844x    fr
+2024-08-30 11:26:03.235 [INFO] [3390752] ame=11708 fps= 51 q=31.0 size=    9918kB time=00:03:14.25 bitrate= 418.2kbits/s speed=0.844x    frame=11733 fps= 51 q=31.0 siz
+2024-08-30 11:26:03.776 [INFO] [3390752] e=    9918kB time=00:03:14.68 bitrate= 417.3kbits/s speed=0.844x    frame=11759 fps= 51 q=31.0 size=    9918kB time=00:03:15.1
+2024-08-30 11:26:04.289 [INFO] [3390752] 1 bitrate= 416.4kbits/s speed=0.844x    frame=11787 fps= 51 q=31.0 size=    9918kB time=00:03:15.58 bitrate= 415.4kbits/s spee
+2024-08-30 11:26:05.332 [INFO] [3390752] d=0.844x    frame=11805 fps= 51 q=31.0 size=   10129kB time=00:03:15.88 bitrate= 423.6kbits/s speed=0.844x    frame=11831 fps
+2024-08-30 11:26:05.833 [INFO] [3390752] = 51 q=31.0 size=   10129kB time=00:03:16.31 bitrate= 422.7kbits/s speed=0.844x    frame=11855 fps= 51 q=31.0 size=   10129kB 
+2024-08-30 11:26:06.359 [INFO] [3390752] time=00:03:16.71 bitrate= 421.8kbits/s speed=0.843x    frame=11885 fps= 51 q=31.0 size=   10129kB time=00:03:17.20 bitrate= 42
+2024-08-30 11:26:06.900 [INFO] [3390752] 0.7kbits/s speed=0.844x    frame=11913 fps= 51 q=31.0 size=   10129kB time=00:03:17.67 bitrate= 419.8kbits/s speed=0.844x    
+2024-08-30 11:26:07.939 [INFO] [3390752] frame=11941 fps= 51 q=31.0 size=   10129kB time=00:03:18.14 bitrate= 418.7kbits/s speed=0.844x    frame=11969 fps= 51 q=31.0 s
+2024-08-30 11:26:08.448 [INFO] [3390752] ize=   10129kB time=00:03:18.61 bitrate= 417.8kbits/s speed=0.844x    frame=11996 fps= 51 q=31.0 size=   10129kB time=00:03:19
+2024-08-30 11:26:08.984 [INFO] [3390752] .06 bitrate= 416.8kbits/s speed=0.844x    frame=12025 fps= 51 q=31.0 size=   10129kB time=00:03:19.55 bitrate= 415.8kbits/s sp
+2024-08-30 11:26:10.073 [INFO] [3390752] eed=0.844x    frame=12046 fps= 51 q=29.0 size=   10129kB time=00:03:19.89 bitrate= 415.1kbits/s speed=0.844x    frame=12074 f
+2024-08-30 11:26:10.595 [INFO] [3390752] ps= 51 q=31.0 size=   10334kB time=00:03:20.36 bitrate= 422.5kbits/s speed=0.844x    frame=12098 fps= 51 q=31.0 size=   10334k
+2024-08-30 11:26:11.109 [INFO] [3390752] B time=00:03:20.76 bitrate= 421.7kbits/s speed=0.844x    frame=12122 fps= 51 q=31.0 size=   10334kB time=00:03:21.17 bitrate= 
+2024-08-30 11:26:11.634 [INFO] [3390752] 420.8kbits/s speed=0.843x    frame=12147 fps= 51 q=31.0 size=   10334kB time=00:03:21.58 bitrate= 420.0kbits/s speed=0.843x   
+2024-08-30 11:26:12.637 [INFO] [3390752]  frame=12174 fps= 51 q=31.0 size=   10334kB time=00:03:22.02 bitrate= 419.0kbits/s speed=0.843x    frame=12197 fps= 51 q=31.0
+2024-08-30 11:26:13.164 [INFO] [3390752]  size=   10334kB time=00:03:22.40 bitrate= 418.2kbits/s speed=0.843x    frame=12223 fps= 51 q=31.0 size=   10334kB time=00:03:
+2024-08-30 11:26:13.675 [INFO] [3390752] 22.84 bitrate= 417.4kbits/s speed=0.843x    frame=12245 fps= 51 q=31.0 size=   10334kB time=00:03:23.22 bitrate= 416.6kbits/s 
+2024-08-30 11:26:14.934 [INFO] [3390752] speed=0.843x    frame=12271 fps= 51 q=31.0 size=   10334kB time=00:03:23.65 bitrate= 415.7kbits/s speed=0.843x    frame=12297
+2024-08-30 11:26:15.446 [INFO] [3390752]  fps= 51 q=31.0 size=   10334kB time=00:03:24.07 bitrate= 414.8kbits/s speed=0.842x    frame=12323 fps= 51 q=31.0 size=   1053
+2024-08-30 11:26:15.962 [INFO] [3390752] 7kB time=00:03:24.52 bitrate= 422.1kbits/s speed=0.842x    frame=12347 fps= 51 q=31.0 size=   10537kB time=00:03:24.90 bitrate
+2024-08-30 11:26:16.468 [INFO] [3390752] = 421.2kbits/s speed=0.842x    frame=12374 fps= 51 q=31.0 size=   10537kB time=00:03:25.35 bitrate= 420.3kbits/s speed=0.842x 
+2024-08-30 11:26:17.505 [INFO] [3390752]    frame=12399 fps= 51 q=31.0 size=   10537kB time=00:03:25.78 bitrate= 419.5kbits/s speed=0.842x    frame=12426 fps= 51 q=31
+2024-08-30 11:26:18.006 [INFO] [3390752] .0 size=   10537kB time=00:03:26.22 bitrate= 418.6kbits/s speed=0.842x    frame=12449 fps= 51 q=31.0 size=   10537kB time=00:0
+2024-08-30 11:26:18.513 [INFO] [3390752] 3:26.61 bitrate= 417.8kbits/s speed=0.842x    frame=12475 fps= 51 q=31.0 size=   10537kB time=00:03:27.04 bitrate= 416.9kbits/
+2024-08-30 11:26:19.557 [INFO] [3390752] s speed=0.842x    frame=12500 fps= 51 q=31.0 size=   10537kB time=00:03:27.46 bitrate= 416.1kbits/s speed=0.842x    frame=125
+2024-08-30 11:26:20.207 [INFO] [3390752] 26 fps= 51 q=31.0 size=   10537kB time=00:03:27.89 bitrate= 415.2kbits/s speed=0.842x    frame=12546 fps= 51 q=29.0 size=   10
+2024-08-30 11:26:20.712 [INFO] [3390752] 537kB time=00:03:28.23 bitrate= 414.5kbits/s speed=0.841x    frame=12571 fps= 51 q=31.0 size=   10741kB time=00:03:28.64 bitra
+2024-08-30 11:26:21.253 [INFO] [3390752] te= 421.7kbits/s speed=0.841x    frame=12598 fps= 51 q=31.0 size=   10741kB time=00:03:29.09 bitrate= 420.8kbits/s speed=0.841
+2024-08-30 11:26:22.285 [INFO] [3390752] x    frame=12623 fps= 51 q=31.0 size=   10741kB time=00:03:29.51 bitrate= 420.0kbits/s speed=0.841x    frame=12647 fps= 51 q=
+2024-08-30 11:26:22.824 [INFO] [3390752] 31.0 size=   10741kB time=00:03:29.91 bitrate= 419.2kbits/s speed=0.841x    frame=12675 fps= 51 q=31.0 size=   10741kB time=00
+2024-08-30 11:26:23.345 [INFO] [3390752] :03:30.38 bitrate= 418.2kbits/s speed=0.841x    frame=12701 fps= 51 q=31.0 size=   10741kB time=00:03:30.81 bitrate= 417.4kbit
+2024-08-30 11:26:24.401 [INFO] [3390752] s/s speed=0.841x    frame=12727 fps= 51 q=31.0 size=   10741kB time=00:03:31.23 bitrate= 416.6kbits/s speed=0.841x    frame=1
+2024-08-30 11:26:24.862 [INFO] [3390752] 2754 fps= 51 q=31.0 size=   10741kB time=00:03:31.69 bitrate= 415.7kbits/s speed=0.841x    frame=12778 fps= 51 q=31.0 size=   
+2024-08-30 11:26:25.445 [INFO] [3390752] 10741kB time=00:03:32.09 bitrate= 414.9kbits/s speed=0.841x    frame=12796 fps= 51 q=29.0 size=   10741kB time=00:03:32.39 bit
+2024-08-30 11:26:25.967 [INFO] [3390752] rate= 414.3kbits/s speed=0.84x    frame=12823 fps= 51 q=31.0 size=   10937kB time=00:03:32.84 bitrate= 421.0kbits/s speed=0.84
+2024-08-30 11:26:27.007 [INFO] [3390752] x    frame=12848 fps= 51 q=31.0 size=   10937kB time=00:03:33.27 bitrate= 420.1kbits/s speed=0.84x    frame=12873 fps= 51 q=3
+2024-08-30 11:26:27.498 [INFO] [3390752] 1.0 size=   10937kB time=00:03:33.67 bitrate= 419.3kbits/s speed=0.84x    frame=12897 fps= 51 q=31.0 size=   10937kB time=00:0
+2024-08-30 11:26:27.998 [INFO] [3390752] 3:34.08 bitrate= 418.5kbits/s speed=0.84x    frame=12924 fps= 51 q=31.0 size=   10937kB time=00:03:34.52 bitrate= 417.7kbits/s
+2024-08-30 11:26:29.041 [INFO] [3390752]  speed=0.84x    frame=12949 fps= 51 q=31.0 size=   10937kB time=00:03:34.95 bitrate= 416.8kbits/s speed=0.84x    frame=12974 
+2024-08-30 11:26:29.586 [INFO] [3390752] fps= 51 q=31.0 size=   10937kB time=00:03:35.36 bitrate= 416.0kbits/s speed=0.84x    frame=12999 fps= 51 q=31.0 size=   10937k
+2024-08-30 11:26:30.098 [INFO] [3390752] B time=00:03:35.78 bitrate= 415.2kbits/s speed=0.84x    frame=13025 fps= 51 q=31.0 size=   10937kB time=00:03:36.21 bitrate= 4
+2024-08-30 11:26:30.768 [INFO] [3390752] 14.4kbits/s speed=0.84x    frame=13046 fps= 51 q=29.0 size=   10937kB time=00:03:36.55 bitrate= 413.7kbits/s speed=0.839x    
+2024-08-30 11:26:31.797 [INFO] [3390752] frame=13066 fps= 51 q=31.0 size=   11141kB time=00:03:36.89 bitrate= 420.8kbits/s speed=0.838x    frame=13080 fps= 50 q=31.0 s
+2024-08-30 11:26:32.306 [INFO] [3390752] ize=   11141kB time=00:03:37.12 bitrate= 420.3kbits/s speed=0.838x    frame=13095 fps= 50 q=31.0 size=   11141kB time=00:03:37
+2024-08-30 11:26:32.812 [INFO] [3390752] .38 bitrate= 419.8kbits/s speed=0.837x    frame=13120 fps= 50 q=31.0 size=   11141kB time=00:03:37.79 bitrate= 419.0kbits/s sp
+2024-08-30 11:26:33.813 [INFO] [3390752] eed=0.837x    frame=13144 fps= 50 q=31.0 size=   11141kB time=00:03:38.20 bitrate= 418.3kbits/s speed=0.837x    frame=13168 f
+2024-08-30 11:26:34.353 [INFO] [3390752] ps= 50 q=31.0 size=   11141kB time=00:03:38.60 bitrate= 417.5kbits/s speed=0.837x    frame=13193 fps= 50 q=31.0 size=   11141k
+2024-08-30 11:26:34.893 [INFO] [3390752] B time=00:03:39.00 bitrate= 416.7kbits/s speed=0.837x    frame=13219 fps= 50 q=31.0 size=   11141kB time=00:03:39.45 bitrate= 
+2024-08-30 11:26:35.398 [INFO] [3390752] 415.9kbits/s speed=0.837x    frame=13244 fps= 50 q=31.0 size=   11141kB time=00:03:39.86 bitrate= 415.1kbits/s speed=0.837x   
+2024-08-30 11:26:36.691 [INFO] [3390752]  frame=13269 fps= 50 q=31.0 size=   11141kB time=00:03:40.28 bitrate= 414.3kbits/s speed=0.836x    frame=13296 fps= 50 q=29.0
+2024-08-30 11:26:37.198 [INFO] [3390752]  size=   11141kB time=00:03:40.73 bitrate= 413.5kbits/s speed=0.836x    frame=13322 fps= 50 q=31.0 size=   11347kB time=00:03:
+2024-08-30 11:26:37.757 [INFO] [3390752] 41.15 bitrate= 420.3kbits/s speed=0.836x    frame=13348 fps= 50 q=31.0 size=   11347kB time=00:03:41.59 bitrate= 419.5kbits/s 
+2024-08-30 11:26:38.735 [INFO] [3390752] speed=0.836x    frame=13371 fps= 50 q=31.0 size=   11347kB time=00:03:41.97 bitrate= 418.8kbits/s speed=0.836x    frame=13397
+2024-08-30 11:26:39.239 [INFO] [3390752]  fps= 50 q=31.0 size=   11347kB time=00:03:42.42 bitrate= 417.9kbits/s speed=0.836x    frame=13421 fps= 50 q=31.0 size=   1134
+2024-08-30 11:26:39.774 [INFO] [3390752] 7kB time=00:03:42.80 bitrate= 417.2kbits/s speed=0.836x    frame=13447 fps= 50 q=31.0 size=   11347kB time=00:03:43.25 bitrate
+2024-08-30 11:26:40.309 [INFO] [3390752] = 416.4kbits/s speed=0.836x    frame=13473 fps= 50 q=31.0 size=   11347kB time=00:03:43.67 bitrate= 415.6kbits/s speed=0.836x 
+2024-08-30 11:26:41.325 [INFO] [3390752]    frame=13495 fps= 50 q=31.0 size=   11347kB time=00:03:44.04 bitrate= 414.9kbits/s speed=0.835x    frame=13520 fps= 50 q=31
+2024-08-30 11:26:41.841 [INFO] [3390752] .0 size=   11347kB time=00:03:44.47 bitrate= 414.1kbits/s speed=0.835x    frame=13545 fps= 50 q=31.0 size=   11347kB time=00:0
+2024-08-30 11:26:42.337 [INFO] [3390752] 3:44.87 bitrate= 413.4kbits/s speed=0.835x    frame=13560 fps= 50 q=31.0 size=   11551kB time=00:03:45.13 bitrate= 420.3kbits/
+2024-08-30 11:26:43.385 [INFO] [3390752] s speed=0.835x    frame=13586 fps= 50 q=31.0 size=   11551kB time=00:03:45.55 bitrate= 419.5kbits/s speed=0.835x    frame=136
+2024-08-30 11:26:43.877 [INFO] [3390752] 11 fps= 50 q=31.0 size=   11551kB time=00:03:45.98 bitrate= 418.7kbits/s speed=0.835x    frame=13636 fps= 50 q=31.0 size=   11
+2024-08-30 11:26:44.390 [INFO] [3390752] 551kB time=00:03:46.39 bitrate= 418.0kbits/s speed=0.835x    frame=13661 fps= 50 q=31.0 size=   11551kB time=00:03:46.81 bitra
+2024-08-30 11:26:44.898 [INFO] [3390752] te= 417.2kbits/s speed=0.835x    frame=13683 fps= 50 q=31.0 size=   11551kB time=00:03:47.17 bitrate= 416.5kbits/s speed=0.834
+2024-08-30 11:26:45.901 [INFO] [3390752] x    frame=13710 fps= 50 q=31.0 size=   11551kB time=00:03:47.62 bitrate= 415.7kbits/s speed=0.834x    frame=13734 fps= 50 q=
+2024-08-30 11:26:46.445 [INFO] [3390752] 31.0 size=   11551kB time=00:03:48.03 bitrate= 415.0kbits/s speed=0.834x    frame=13760 fps= 50 q=31.0 size=   11551kB time=00
+2024-08-30 11:26:46.935 [INFO] [3390752] :03:48.45 bitrate= 414.2kbits/s speed=0.834x    frame=13785 fps= 50 q=31.0 size=   11551kB time=00:03:48.88 bitrate= 413.4kbit
+2024-08-30 11:26:47.999 [INFO] [3390752] s/s speed=0.834x    frame=13799 fps= 50 q=31.0 size=   11551kB time=00:03:49.11 bitrate= 413.0kbits/s speed=0.834x    frame=1
+2024-08-30 11:26:48.505 [INFO] [3390752] 3825 fps= 50 q=31.0 size=   11751kB time=00:03:49.54 bitrate= 419.4kbits/s speed=0.833x    frame=13851 fps= 50 q=31.0 size=   
+2024-08-30 11:26:49.041 [INFO] [3390752] 11751kB time=00:03:49.97 bitrate= 418.6kbits/s speed=0.834x    frame=13878 fps= 50 q=31.0 size=   11751kB time=00:03:50.42 bit
+2024-08-30 11:26:49.549 [INFO] [3390752] rate= 417.8kbits/s speed=0.834x    frame=13903 fps= 50 q=31.0 size=   11751kB time=00:03:50.84 bitrate= 417.0kbits/s speed=0.8
+2024-08-30 11:26:50.610 [INFO] [3390752] 34x    frame=13929 fps= 50 q=31.0 size=   11751kB time=00:03:51.27 bitrate= 416.2kbits/s speed=0.834x    frame=13956 fps= 50 
+2024-08-30 11:26:51.102 [INFO] [3390752] q=31.0 size=   11751kB time=00:03:51.72 bitrate= 415.4kbits/s speed=0.834x    frame=13981 fps= 50 q=31.0 size=   11751kB time=
+2024-08-30 11:26:51.621 [INFO] [3390752] 00:03:52.14 bitrate= 414.7kbits/s speed=0.834x    frame=14007 fps= 50 q=31.0 size=   11751kB time=00:03:52.57 bitrate= 413.9kb
+2024-08-30 11:26:52.657 [INFO] [3390752] its/s speed=0.834x    frame=14034 fps= 50 q=31.0 size=   11751kB time=00:03:53.02 bitrate= 413.1kbits/s speed=0.834x    frame
+2024-08-30 11:26:53.170 [INFO] [3390752] =14048 fps= 50 q=31.0 size=   11751kB time=00:03:53.26 bitrate= 412.7kbits/s speed=0.833x    frame=14074 fps= 50 q=31.0 size= 
+2024-08-30 11:26:53.678 [INFO] [3390752]   11949kB time=00:03:53.70 bitrate= 418.8kbits/s speed=0.833x    frame=14098 fps= 50 q=31.0 size=   11949kB time=00:03:54.09 b
+2024-08-30 11:26:54.199 [INFO] [3390752] itrate= 418.1kbits/s speed=0.833x    frame=14123 fps= 50 q=31.0 size=   11949kB time=00:03:54.51 bitrate= 417.4kbits/s speed=0
+2024-08-30 11:26:55.234 [INFO] [3390752] .833x    frame=14149 fps= 50 q=31.0 size=   11949kB time=00:03:54.94 bitrate= 416.6kbits/s speed=0.833x    frame=14175 fps= 5
+2024-08-30 11:26:55.783 [INFO] [3390752] 0 q=31.0 size=   11949kB time=00:03:55.37 bitrate= 415.9kbits/s speed=0.833x    frame=14203 fps= 50 q=31.0 size=   11949kB tim
+2024-08-30 11:26:56.294 [INFO] [3390752] e=00:03:55.83 bitrate= 415.0kbits/s speed=0.833x    frame=14229 fps= 50 q=31.0 size=   11949kB time=00:03:56.28 bitrate= 414.3
+2024-08-30 11:26:57.337 [INFO] [3390752] kbits/s speed=0.833x    frame=14255 fps= 50 q=31.0 size=   11949kB time=00:03:56.71 bitrate= 413.5kbits/s speed=0.833x    fra
+2024-08-30 11:26:57.879 [INFO] [3390752] me=14281 fps= 50 q=31.0 size=   11949kB time=00:03:57.14 bitrate= 412.8kbits/s speed=0.833x    frame=14296 fps= 50 q=29.0 size
+2024-08-30 11:26:58.386 [INFO] [3390752] =   11949kB time=00:03:57.39 bitrate= 412.3kbits/s speed=0.832x    frame=14323 fps= 50 q=31.0 size=   12146kB time=00:03:57.84
+2024-08-30 11:26:58.886 [INFO] [3390752]  bitrate= 418.3kbits/s speed=0.832x    frame=14348 fps= 50 q=31.0 size=   12146kB time=00:03:58.27 bitrate= 417.6kbits/s speed
+2024-08-30 11:26:59.952 [INFO] [3390752] =0.832x    frame=14372 fps= 50 q=31.0 size=   12146kB time=00:03:58.65 bitrate= 416.9kbits/s speed=0.832x    frame=14397 fps=
+2024-08-30 11:27:00.485 [INFO] [3390752]  50 q=31.0 size=   12146kB time=00:03:59.08 bitrate= 416.2kbits/s speed=0.832x    frame=14423 fps= 50 q=31.0 size=   12146kB t
+2024-08-30 11:27:01.029 [INFO] [3390752] ime=00:03:59.51 bitrate= 415.4kbits/s speed=0.832x    frame=14450 fps= 50 q=31.0 size=   12146kB time=00:03:59.95 bitrate= 414
+2024-08-30 11:27:02.075 [INFO] [3390752] .7kbits/s speed=0.832x    frame=14475 fps= 50 q=31.0 size=   12146kB time=00:04:00.38 bitrate= 413.9kbits/s speed=0.832x    f
+2024-08-30 11:27:02.575 [INFO] [3390752] rame=14501 fps= 50 q=31.0 size=   12146kB time=00:04:00.81 bitrate= 413.2kbits/s speed=0.832x    frame=14526 fps= 50 q=31.0 si
+2024-08-30 11:27:03.222 [INFO] [3390752] ze=   12146kB time=00:04:01.23 bitrate= 412.5kbits/s speed=0.832x    frame=14546 fps= 50 q=29.0 size=   12146kB time=00:04:01.
+2024-08-30 11:27:03.727 [INFO] [3390752] 55 bitrate= 411.9kbits/s speed=0.831x    frame=14571 fps= 50 q=31.0 size=   12342kB time=00:04:01.98 bitrate= 417.8kbits/s spe
+2024-08-30 11:27:04.749 [INFO] [3390752] ed=0.831x    frame=14597 fps= 50 q=31.0 size=   12342kB time=00:04:02.41 bitrate= 417.1kbits/s speed=0.831x    frame=14622 fp
+2024-08-30 11:27:05.312 [INFO] [3390752] s= 50 q=31.0 size=   12342kB time=00:04:02.83 bitrate= 416.3kbits/s speed=0.831x    frame=14646 fps= 50 q=31.0 size=   12342kB
+2024-08-30 11:27:05.846 [INFO] [3390752]  time=00:04:03.22 bitrate= 415.7kbits/s speed=0.831x    frame=14669 fps= 50 q=31.0 size=   12342kB time=00:04:03.60 bitrate= 4
+2024-08-30 11:27:06.365 [INFO] [3390752] 15.0kbits/s speed=0.831x    frame=14684 fps= 50 q=31.0 size=   12342kB time=00:04:03.85 bitrate= 414.6kbits/s speed=0.83x    
+2024-08-30 11:27:07.432 [INFO] [3390752] frame=14697 fps= 50 q=31.0 size=   12342kB time=00:04:04.07 bitrate= 414.2kbits/s speed=0.829x    frame=14720 fps= 50 q=31.0 s
+2024-08-30 11:27:07.943 [INFO] [3390752] ize=   12342kB time=00:04:04.45 bitrate= 413.6kbits/s speed=0.829x    frame=14742 fps= 50 q=31.0 size=   12342kB time=00:04:04
+2024-08-30 11:27:08.464 [INFO] [3390752] .82 bitrate= 413.0kbits/s speed=0.829x    frame=14767 fps= 50 q=31.0 size=   12342kB time=00:04:05.24 bitrate= 412.3kbits/s sp
+2024-08-30 11:27:09.489 [INFO] [3390752] eed=0.829x    frame=14793 fps= 50 q=31.0 size=   12342kB time=00:04:05.67 bitrate= 411.5kbits/s speed=0.829x    frame=14808 f
+2024-08-30 11:27:10.011 [INFO] [3390752] ps= 50 q=31.0 size=   12533kB time=00:04:05.93 bitrate= 417.5kbits/s speed=0.828x    frame=14834 fps= 50 q=31.0 size=   12533k
+2024-08-30 11:27:10.507 [INFO] [3390752] B time=00:04:06.35 bitrate= 416.8kbits/s speed=0.828x    frame=14859 fps= 50 q=31.0 size=   12533kB time=00:04:06.78 bitrate= 
+2024-08-30 11:27:11.069 [INFO] [3390752] 416.0kbits/s speed=0.828x    frame=14885 fps= 50 q=31.0 size=   12533kB time=00:04:07.21 bitrate= 415.3kbits/s speed=0.828x   
+2024-08-30 11:27:12.087 [INFO] [3390752]  frame=14908 fps= 50 q=31.0 size=   12533kB time=00:04:07.59 bitrate= 414.7kbits/s speed=0.828x    frame=14935 fps= 50 q=31.0
+2024-08-30 11:27:12.609 [INFO] [3390752]  size=   12533kB time=00:04:08.04 bitrate= 413.9kbits/s speed=0.828x    frame=14962 fps= 50 q=31.0 size=   12533kB time=00:04:
+2024-08-30 11:27:13.107 [INFO] [3390752] 08.48 bitrate= 413.2kbits/s speed=0.828x    frame=14987 fps= 50 q=31.0 size=   12533kB time=00:04:08.91 bitrate= 412.5kbits/s 
+2024-08-30 11:27:14.158 [INFO] [3390752] speed=0.828x    frame=15012 fps= 50 q=31.0 size=   12533kB time=00:04:09.32 bitrate= 411.8kbits/s speed=0.828x    frame=15037
+2024-08-30 11:27:14.656 [INFO] [3390752]  fps= 50 q=31.0 size=   12533kB time=00:04:09.74 bitrate= 411.1kbits/s speed=0.828x    frame=15052 fps= 50 q=31.0 size=   1272
+2024-08-30 11:27:15.160 [INFO] [3390752] 4kB time=00:04:10.00 bitrate= 416.9kbits/s speed=0.828x    frame=15077 fps= 50 q=31.0 size=   12724kB time=00:04:10.41 bitrate
+2024-08-30 11:27:15.672 [INFO] [3390752] = 416.2kbits/s speed=0.828x    frame=15099 fps= 50 q=31.0 size=   12724kB time=00:04:10.77 bitrate= 415.6kbits/s speed=0.827x 
+2024-08-30 11:27:16.679 [INFO] [3390752]    frame=15126 fps= 50 q=31.0 size=   12724kB time=00:04:11.22 bitrate= 414.9kbits/s speed=0.828x    frame=15150 fps= 50 q=31
+2024-08-30 11:27:17.217 [INFO] [3390752] .0 size=   12724kB time=00:04:11.62 bitrate= 414.2kbits/s speed=0.827x    frame=15175 fps= 50 q=31.0 size=   12724kB time=00:0
+2024-08-30 11:27:17.760 [INFO] [3390752] 4:12.05 bitrate= 413.5kbits/s speed=0.827x    frame=15201 fps= 50 q=31.0 size=   12724kB time=00:04:12.48 bitrate= 412.8kbits/
+2024-08-30 11:27:18.798 [INFO] [3390752] s speed=0.827x    frame=15227 fps= 50 q=31.0 size=   12724kB time=00:04:12.90 bitrate= 412.1kbits/s speed=0.827x    frame=152
+2024-08-30 11:27:19.313 [INFO] [3390752] 54 fps= 50 q=31.0 size=   12724kB time=00:04:13.35 bitrate= 411.4kbits/s speed=0.827x    frame=15279 fps= 50 q=31.0 size=   12
+2024-08-30 11:27:19.883 [INFO] [3390752] 724kB time=00:04:13.78 bitrate= 410.7kbits/s speed=0.827x    frame=15296 fps= 50 q=29.0 size=   12724kB time=00:04:14.05 bitra
+2024-08-30 11:27:20.399 [INFO] [3390752] te= 410.3kbits/s speed=0.827x    frame=15323 fps= 50 q=31.0 size=   12915kB time=00:04:14.50 bitrate= 415.7kbits/s speed=0.827
+2024-08-30 11:27:21.440 [INFO] [3390752] x    frame=15347 fps= 50 q=31.0 size=   12915kB time=00:04:14.91 bitrate= 415.0kbits/s speed=0.827x    frame=15373 fps= 50 q=
+2024-08-30 11:27:22.021 [INFO] [3390752] 31.0 size=   12915kB time=00:04:15.33 bitrate= 414.3kbits/s speed=0.827x    frame=15399 fps= 50 q=31.0 size=   12915kB time=00
+2024-08-30 11:27:22.528 [INFO] [3390752] :04:15.78 bitrate= 413.6kbits/s speed=0.827x    frame=15422 fps= 50 q=31.0 size=   12915kB time=00:04:16.17 bitrate= 413.0kbit
+2024-08-30 11:27:23.613 [INFO] [3390752] s/s speed=0.827x    frame=15439 fps= 50 q=31.0 size=   12915kB time=00:04:16.44 bitrate= 412.5kbits/s speed=0.826x    frame=1
+2024-08-30 11:27:24.101 [INFO] [3390752] 5461 fps= 50 q=31.0 size=   12915kB time=00:04:16.81 bitrate= 412.0kbits/s speed=0.826x    frame=15485 fps= 50 q=31.0 size=   
+2024-08-30 11:27:24.600 [INFO] [3390752] 12915kB time=00:04:17.21 bitrate= 411.3kbits/s speed=0.826x    frame=15511 fps= 50 q=31.0 size=   12915kB time=00:04:17.64 bit
+2024-08-30 11:27:25.133 [INFO] [3390752] rate= 410.6kbits/s speed=0.826x    frame=15538 fps= 50 q=31.0 size=   12915kB time=00:04:18.09 bitrate= 409.9kbits/s speed=0.8
+2024-08-30 11:27:26.194 [INFO] [3390752] 26x    frame=15552 fps= 50 q=31.0 size=   13103kB time=00:04:18.32 bitrate= 415.5kbits/s speed=0.825x    frame=15579 fps= 50 
+2024-08-30 11:27:26.670 [INFO] [3390752] q=31.0 size=   13103kB time=00:04:18.77 bitrate= 414.8kbits/s speed=0.825x    frame=15603 fps= 50 q=31.0 size=   13103kB time=
+2024-08-30 11:27:27.175 [INFO] [3390752] 00:04:19.17 bitrate= 414.1kbits/s speed=0.825x    frame=15630 fps= 50 q=31.0 size=   13103kB time=00:04:19.62 bitrate= 413.4kb
+2024-08-30 11:27:28.213 [INFO] [3390752] its/s speed=0.825x    frame=15653 fps= 50 q=31.0 size=   13103kB time=00:04:20.00 bitrate= 412.8kbits/s speed=0.825x    frame
+2024-08-30 11:27:28.729 [INFO] [3390752] =15680 fps= 50 q=31.0 size=   13103kB time=00:04:20.45 bitrate= 412.1kbits/s speed=0.825x    frame=15703 fps= 50 q=31.0 size= 
+2024-08-30 11:27:29.247 [INFO] [3390752]   13103kB time=00:04:20.84 bitrate= 411.5kbits/s speed=0.825x    frame=15730 fps= 50 q=31.0 size=   13103kB time=00:04:21.28 b
+2024-08-30 11:27:29.730 [INFO] [3390752] itrate= 410.8kbits/s speed=0.825x    frame=15754 fps= 50 q=31.0 size=   13103kB time=00:04:21.69 bitrate= 410.2kbits/s speed=0
+2024-08-30 11:27:30.892 [INFO] [3390752] .825x    frame=15777 fps= 50 q=31.0 size=   13103kB time=00:04:22.07 bitrate= 409.6kbits/s speed=0.825x    frame=15796 fps= 5
+2024-08-30 11:27:31.416 [INFO] [3390752] 0 q=29.0 size=   13103kB time=00:04:22.40 bitrate= 409.1kbits/s speed=0.824x    frame=15822 fps= 50 q=31.0 size=   13289kB tim
+2024-08-30 11:27:31.925 [INFO] [3390752] e=00:04:22.82 bitrate= 414.2kbits/s speed=0.824x    frame=15845 fps= 50 q=31.0 size=   13289kB time=00:04:23.20 bitrate= 413.6
+2024-08-30 11:27:32.939 [INFO] [3390752] kbits/s speed=0.824x    frame=15872 fps= 50 q=31.0 size=   13289kB time=00:04:23.65 bitrate= 412.9kbits/s speed=0.824x    fra
+2024-08-30 11:27:33.463 [INFO] [3390752] me=15895 fps= 50 q=31.0 size=   13289kB time=00:04:24.04 bitrate= 412.3kbits/s speed=0.824x    frame=15921 fps= 50 q=31.0 size
+2024-08-30 11:27:33.971 [INFO] [3390752] =   13289kB time=00:04:24.48 bitrate= 411.6kbits/s speed=0.824x    frame=15947 fps= 50 q=31.0 size=   13289kB time=00:04:24.91
+2024-08-30 11:27:34.525 [INFO] [3390752]  bitrate= 410.9kbits/s speed=0.824x    frame=15973 fps= 50 q=31.0 size=   13289kB time=00:04:25.34 bitrate= 410.3kbits/s speed
+2024-08-30 11:27:35.497 [INFO] [3390752] =0.824x    frame=15995 fps= 50 q=31.0 size=   13289kB time=00:04:25.70 bitrate= 409.7kbits/s speed=0.824x    frame=16015 fps=
+2024-08-30 11:27:36.057 [INFO] [3390752]  50 q=31.0 size=   13289kB time=00:04:26.04 bitrate= 409.2kbits/s speed=0.824x    frame=16041 fps= 50 q=31.0 size=   13289kB t
+2024-08-30 11:27:36.629 [INFO] [3390752] ime=00:04:26.47 bitrate= 408.5kbits/s speed=0.824x    frame=16054 fps= 50 q=31.0 size=   13475kB time=00:04:26.68 bitrate= 413
+2024-08-30 11:27:37.613 [INFO] [3390752] .9kbits/s speed=0.823x    frame=16071 fps= 50 q=31.0 size=   13475kB time=00:04:26.98 bitrate= 413.5kbits/s speed=0.823x    f
+2024-08-30 11:27:38.133 [INFO] [3390752] rame=16089 fps= 50 q=31.0 size=   13475kB time=00:04:27.28 bitrate= 413.0kbits/s speed=0.822x    frame=16110 fps= 49 q=31.0 si
+2024-08-30 11:27:38.647 [INFO] [3390752] ze=   13475kB time=00:04:27.62 bitrate= 412.5kbits/s speed=0.822x    frame=16135 fps= 49 q=31.0 size=   13475kB time=00:04:28.
+2024-08-30 11:27:39.154 [INFO] [3390752] 05 bitrate= 411.8kbits/s speed=0.822x    frame=16163 fps= 49 q=31.0 size=   13475kB time=00:04:28.51 bitrate= 411.1kbits/s spe
+2024-08-30 11:27:40.168 [INFO] [3390752] ed=0.822x    frame=16192 fps= 50 q=31.0 size=   13475kB time=00:04:28.99 bitrate= 410.4kbits/s speed=0.822x    frame=16219 fp
+2024-08-30 11:27:40.672 [INFO] [3390752] s= 50 q=31.0 size=   13475kB time=00:04:29.43 bitrate= 409.7kbits/s speed=0.823x    frame=16247 fps= 50 q=31.0 size=   13475kB
+2024-08-30 11:27:41.170 [INFO] [3390752]  time=00:04:29.90 bitrate= 409.0kbits/s speed=0.823x    frame=16275 fps= 50 q=31.0 size=   13475kB time=00:04:30.37 bitrate= 4
+2024-08-30 11:27:41.744 [INFO] [3390752] 08.3kbits/s speed=0.823x    frame=16297 fps= 50 q=31.0 size=   13475kB time=00:04:30.73 bitrate= 407.7kbits/s speed=0.823x    
+2024-08-30 11:27:42.768 [INFO] [3390752] frame=16321 fps= 50 q=31.0 size=   13654kB time=00:04:31.14 bitrate= 412.5kbits/s speed=0.823x    frame=16347 fps= 50 q=31.0 
+2024-08-30 11:27:43.269 [INFO] [3390752] size=   13654kB time=00:04:31.57 bitrate= 411.9kbits/s speed=0.823x    frame=16375 fps= 50 q=31.0 size=   13654kB time=00:04:3
+2024-08-30 11:27:43.798 [INFO] [3390752] 2.04 bitrate= 411.2kbits/s speed=0.823x    frame=16402 fps= 50 q=31.0 size=   13654kB time=00:04:32.48 bitrate= 410.5kbits/s s
+2024-08-30 11:27:44.821 [INFO] [3390752] peed=0.823x    frame=16429 fps= 50 q=31.0 size=   13654kB time=00:04:32.93 bitrate= 409.8kbits/s speed=0.823x    frame=16459 
+2024-08-30 11:27:45.340 [INFO] [3390752] fps= 50 q=31.0 size=   13654kB time=00:04:33.45 bitrate= 409.1kbits/s speed=0.823x    frame=16487 fps= 50 q=31.0 size=   13654
+2024-08-30 11:27:45.870 [INFO] [3390752] kB time=00:04:33.92 bitrate= 408.4kbits/s speed=0.823x    frame=16516 fps= 50 q=31.0 size=   13654kB time=00:04:34.39 bitrate=
+2024-08-30 11:27:46.407 [INFO] [3390752]  407.7kbits/s speed=0.823x    frame=16545 fps= 50 q=31.0 size=   13654kB time=00:04:34.87 bitrate= 406.9kbits/s speed=0.823x  
+2024-08-30 11:27:47.447 [INFO] [3390752]   frame=16566 fps= 50 q=31.0 size=   13835kB time=00:04:35.22 bitrate= 411.8kbits/s speed=0.823x    frame=16594 fps= 50 q=31.
+2024-08-30 11:27:47.972 [INFO] [3390752] 0 size=   13835kB time=00:04:35.68 bitrate= 411.1kbits/s speed=0.823x    frame=16621 fps= 50 q=31.0 size=   13835kB time=00:04
+2024-08-30 11:27:48.493 [INFO] [3390752] :36.14 bitrate= 410.4kbits/s speed=0.823x    frame=16649 fps= 50 q=31.0 size=   13835kB time=00:04:36.60 bitrate= 409.7kbits/s
+2024-08-30 11:27:49.521 [INFO] [3390752]  speed=0.823x    frame=16679 fps= 50 q=31.0 size=   13835kB time=00:04:37.11 bitrate= 409.0kbits/s speed=0.824x    frame=1670
+2024-08-30 11:27:50.025 [INFO] [3390752] 6 fps= 50 q=31.0 size=   13835kB time=00:04:37.56 bitrate= 408.3kbits/s speed=0.824x    frame=16733 fps= 50 q=31.0 size=   138
+2024-08-30 11:27:50.564 [INFO] [3390752] 35kB time=00:04:38.01 bitrate= 407.7kbits/s speed=0.824x    frame=16761 fps= 50 q=31.0 size=   13835kB time=00:04:38.48 bitrat
+2024-08-30 11:27:51.125 [INFO] [3390752] e= 407.0kbits/s speed=0.824x    frame=16791 fps= 50 q=31.0 size=   13835kB time=00:04:38.97 bitrate= 406.3kbits/s speed=0.824x
+2024-08-30 11:27:52.113 [INFO] [3390752]     frame=16805 fps= 50 q=31.0 size=   14010kB time=00:04:39.20 bitrate= 411.1kbits/s speed=0.824x    frame=16833 fps= 50 q=3
+2024-08-30 11:27:52.619 [INFO] [3390752] 1.0 size=   14010kB time=00:04:39.67 bitrate= 410.4kbits/s speed=0.824x    frame=16861 fps= 50 q=31.0 size=   14010kB time=00:
+2024-08-30 11:27:53.149 [INFO] [3390752] 04:40.15 bitrate= 409.7kbits/s speed=0.824x    frame=16889 fps= 50 q=31.0 size=   14010kB time=00:04:40.61 bitrate= 409.0kbits
+2024-08-30 11:27:54.176 [INFO] [3390752] /s speed=0.824x    frame=16915 fps= 50 q=31.0 size=   14010kB time=00:04:41.04 bitrate= 408.4kbits/s speed=0.824x    frame=16
+2024-08-30 11:27:54.681 [INFO] [3390752] 946 fps= 50 q=31.0 size=   14010kB time=00:04:41.55 bitrate= 407.6kbits/s speed=0.824x    frame=16971 fps= 50 q=31.0 size=   1
+2024-08-30 11:27:55.185 [INFO] [3390752] 4010kB time=00:04:41.98 bitrate= 407.0kbits/s speed=0.824x    frame=16999 fps= 50 q=31.0 size=   14010kB time=00:04:42.45 bitr
+2024-08-30 11:27:55.713 [INFO] [3390752] ate= 406.3kbits/s speed=0.824x    frame=17028 fps= 50 q=31.0 size=   14010kB time=00:04:42.92 bitrate= 405.7kbits/s speed=0.82
+2024-08-30 11:27:56.824 [INFO] [3390752] 5x    frame=17046 fps= 50 q=29.0 size=   14010kB time=00:04:43.22 bitrate= 405.2kbits/s speed=0.824x    frame=17075 fps= 50 q
+2024-08-30 11:27:57.359 [INFO] [3390752] =31.0 size=   14193kB time=00:04:43.71 bitrate= 409.8kbits/s speed=0.824x    frame=17103 fps= 50 q=31.0 size=   14193kB time=0
+2024-08-30 11:27:57.865 [INFO] [3390752] 0:04:44.17 bitrate= 409.1kbits/s speed=0.824x    frame=17124 fps= 50 q=31.0 size=   14193kB time=00:04:44.52 bitrate= 408.6kbi
+2024-08-30 11:27:58.870 [INFO] [3390752] ts/s speed=0.824x    frame=17144 fps= 50 q=31.0 size=   14193kB time=00:04:44.86 bitrate= 408.2kbits/s speed=0.824x    frame=
+2024-08-30 11:27:59.392 [INFO] [3390752] 17167 fps= 50 q=31.0 size=   14193kB time=00:04:45.24 bitrate= 407.6kbits/s speed=0.824x    frame=17195 fps= 50 q=31.0 size=  
+2024-08-30 11:27:59.898 [INFO] [3390752]  14193kB time=00:04:45.72 bitrate= 406.9kbits/s speed=0.824x    frame=17223 fps= 50 q=31.0 size=   14193kB time=00:04:46.18 bi
+2024-08-30 11:28:00.403 [INFO] [3390752] trate= 406.3kbits/s speed=0.824x    frame=17250 fps= 50 q=31.0 size=   14193kB time=00:04:46.63 bitrate= 405.6kbits/s speed=0.
+2024-08-30 11:28:01.434 [INFO] [3390752] 824x    frame=17280 fps= 50 q=31.0 size=   14193kB time=00:04:47.12 bitrate= 404.9kbits/s speed=0.824x    frame=17298 fps= 50
+2024-08-30 11:28:01.947 [INFO] [3390752]  q=31.0 size=   14193kB time=00:04:47.42 bitrate= 404.5kbits/s speed=0.824x    frame=17300 fps= 50 q=31.0 size=   14364kB time
+2024-08-30 11:28:02.461 [INFO] [3390752] =00:04:47.46 bitrate= 409.3kbits/s speed=0.823x    frame=17311 fps= 49 q=31.0 size=   14364kB time=00:04:47.64 bitrate= 409.1k
+2024-08-30 11:28:03.493 [INFO] [3390752] bits/s speed=0.822x    frame=17340 fps= 49 q=31.0 size=   14364kB time=00:04:48.12 bitrate= 408.4kbits/s speed=0.822x    fram
+2024-08-30 11:28:03.994 [INFO] [3390752] e=17369 fps= 49 q=31.0 size=   14364kB time=00:04:48.61 bitrate= 407.7kbits/s speed=0.823x    frame=17396 fps= 50 q=31.0 size=
+2024-08-30 11:28:04.517 [INFO] [3390752]    14364kB time=00:04:49.06 bitrate= 407.1kbits/s speed=0.823x    frame=17424 fps= 50 q=31.0 size=   14364kB time=00:04:49.53 
+2024-08-30 11:28:05.021 [INFO] [3390752] bitrate= 406.4kbits/s speed=0.823x    frame=17453 fps= 50 q=31.0 size=   14364kB time=00:04:50.00 bitrate= 405.7kbits/s speed=
+2024-08-30 11:28:06.029 [INFO] [3390752] 0.823x    frame=17482 fps= 50 q=31.0 size=   14364kB time=00:04:50.49 bitrate= 405.1kbits/s speed=0.823x    frame=17506 fps= 
+2024-08-30 11:28:06.541 [INFO] [3390752] 50 q=31.0 size=   14364kB time=00:04:50.90 bitrate= 404.5kbits/s speed=0.823x    frame=17534 fps= 50 q=31.0 size=   14364kB ti
+2024-08-30 11:28:07.051 [INFO] [3390752] me=00:04:51.36 bitrate= 403.9kbits/s speed=0.823x    frame=17552 fps= 50 q=31.0 size=   14540kB time=00:04:51.66 bitrate= 408.
+2024-08-30 11:28:08.118 [INFO] [3390752] 4kbits/s speed=0.823x    frame=17581 fps= 50 q=31.0 size=   14540kB time=00:04:52.13 bitrate= 407.7kbits/s speed=0.823x    fr
+2024-08-30 11:28:08.634 [INFO] [3390752] ame=17609 fps= 50 q=31.0 size=   14540kB time=00:04:52.60 bitrate= 407.1kbits/s speed=0.823x    frame=17638 fps= 50 q=31.0 siz
+2024-08-30 11:28:09.143 [INFO] [3390752] e=   14540kB time=00:04:53.09 bitrate= 406.4kbits/s speed=0.823x    frame=17664 fps= 50 q=31.0 size=   14540kB time=00:04:53.5
+2024-08-30 11:28:09.653 [INFO] [3390752] 2 bitrate= 405.8kbits/s speed=0.823x    frame=17691 fps= 50 q=31.0 size=   14540kB time=00:04:53.97 bitrate= 405.2kbits/s spee
+2024-08-30 11:28:10.686 [INFO] [3390752] d=0.823x    frame=17719 fps= 50 q=31.0 size=   14540kB time=00:04:54.44 bitrate= 404.5kbits/s speed=0.823x    frame=17746 fps
+2024-08-30 11:28:11.200 [INFO] [3390752] = 50 q=31.0 size=   14540kB time=00:04:54.89 bitrate= 403.9kbits/s speed=0.824x    frame=17773 fps= 50 q=31.0 size=   14540kB 
+2024-08-30 11:28:11.748 [INFO] [3390752] time=00:04:55.33 bitrate= 403.3kbits/s speed=0.824x    frame=17793 fps= 50 q=29.0 size=   14540kB time=00:04:55.68 bitrate= 40
+2024-08-30 11:28:12.301 [INFO] [3390752] 2.8kbits/s speed=0.823x    frame=17822 fps= 50 q=31.0 size=   14726kB time=00:04:56.17 bitrate= 407.3kbits/s speed=0.823x    
+2024-08-30 11:28:13.322 [INFO] [3390752] frame=17850 fps= 50 q=31.0 size=   14726kB time=00:04:56.62 bitrate= 406.7kbits/s speed=0.823x    frame=17878 fps= 50 q=31.0 s
+2024-08-30 11:28:13.841 [INFO] [3390752] ize=   14726kB time=00:04:57.09 bitrate= 406.1kbits/s speed=0.824x    frame=17906 fps= 50 q=31.0 size=   14726kB time=00:04:57
+2024-08-30 11:28:14.354 [INFO] [3390752] .55 bitrate= 405.4kbits/s speed=0.824x    frame=17934 fps= 50 q=31.0 size=   14726kB time=00:04:58.02 bitrate= 404.8kbits/s sp
+2024-08-30 11:28:15.393 [INFO] [3390752] eed=0.824x    frame=17962 fps= 50 q=31.0 size=   14726kB time=00:04:58.49 bitrate= 404.1kbits/s speed=0.824x    frame=17990 f
+2024-08-30 11:28:15.897 [INFO] [3390752] ps= 50 q=31.0 size=   14726kB time=00:04:58.96 bitrate= 403.5kbits/s speed=0.824x    frame=18019 fps= 50 q=31.0 size=   14726k
+2024-08-30 11:28:16.531 [INFO] [3390752] B time=00:04:59.45 bitrate= 402.9kbits/s speed=0.824x    frame=18043 fps= 50 q=29.0 size=   14726kB time=00:04:59.83 bitrate= 
+2024-08-30 11:28:17.039 [INFO] [3390752] 402.3kbits/s speed=0.824x    frame=18072 fps= 50 q=31.0 size=   14910kB time=00:05:00.33 bitrate= 406.7kbits/s speed=0.824x   
+2024-08-30 11:28:18.081 [INFO] [3390752]  frame=18100 fps= 50 q=31.0 size=   14910kB time=00:05:00.80 bitrate= 406.1kbits/s speed=0.824x    frame=18127 fps= 50 q=31.0
+2024-08-30 11:28:18.594 [INFO] [3390752]  size=   14910kB time=00:05:01.24 bitrate= 405.5kbits/s speed=0.824x    frame=18153 fps= 50 q=31.0 size=   14910kB time=00:05:
+2024-08-30 11:28:19.136 [INFO] [3390752] 01.67 bitrate= 404.9kbits/s speed=0.824x    frame=18180 fps= 50 q=31.0 size=   14910kB time=00:05:02.12 bitrate= 404.3kbits/s 
+2024-08-30 11:28:20.163 [INFO] [3390752] speed=0.824x    frame=18208 fps= 50 q=31.0 size=   14910kB time=00:05:02.58 bitrate= 403.7kbits/s speed=0.824x    frame=18235
+2024-08-30 11:28:20.669 [INFO] [3390752]  fps= 50 q=31.0 size=   14910kB time=00:05:03.03 bitrate= 403.1kbits/s speed=0.824x    frame=18261 fps= 50 q=31.0 size=   1491
+2024-08-30 11:28:21.201 [INFO] [3390752] 0kB time=00:05:03.48 bitrate= 402.5kbits/s speed=0.825x    frame=18288 fps= 50 q=31.0 size=   14910kB time=00:05:03.93 bitrate
+2024-08-30 11:28:21.708 [INFO] [3390752] = 401.9kbits/s speed=0.825x    frame=18306 fps= 50 q=31.0 size=   15078kB time=00:05:04.23 bitrate= 406.0kbits/s speed=0.824x 
+2024-08-30 11:28:22.742 [INFO] [3390752]    frame=18334 fps= 50 q=31.0 size=   15078kB time=00:05:04.70 bitrate= 405.4kbits/s speed=0.824x    frame=18361 fps= 50 q=31
+2024-08-30 11:28:23.252 [INFO] [3390752] .0 size=   15078kB time=00:05:05.15 bitrate= 404.8kbits/s speed=0.824x    frame=18389 fps= 50 q=31.0 size=   15078kB time=00:0
+2024-08-30 11:28:23.773 [INFO] [3390752] 5:05.62 bitrate= 404.2kbits/s speed=0.825x    frame=18418 fps= 50 q=31.0 size=   15078kB time=00:05:06.09 bitrate= 403.5kbits/
+2024-08-30 11:28:24.821 [INFO] [3390752] s speed=0.825x    frame=18446 fps= 50 q=31.0 size=   15078kB time=00:05:06.55 bitrate= 402.9kbits/s speed=0.825x    frame=184
+2024-08-30 11:28:25.328 [INFO] [3390752] 74 fps= 50 q=31.0 size=   15078kB time=00:05:07.03 bitrate= 402.3kbits/s speed=0.825x    frame=18502 fps= 50 q=31.0 size=   15
+2024-08-30 11:28:25.833 [INFO] [3390752] 078kB time=00:05:07.49 bitrate= 401.7kbits/s speed=0.825x    frame=18530 fps= 50 q=31.0 size=   15078kB time=00:05:07.96 bitra
+2024-08-30 11:28:26.338 [INFO] [3390752] te= 401.1kbits/s speed=0.825x    frame=18548 fps= 50 q=31.0 size=   15078kB time=00:05:08.26 bitrate= 400.7kbits/s speed=0.825
+2024-08-30 11:28:27.371 [INFO] [3390752] x    frame=18578 fps= 50 q=31.0 size=   15241kB time=00:05:08.75 bitrate= 404.4kbits/s speed=0.825x    frame=18605 fps= 50 q=
+2024-08-30 11:28:27.885 [INFO] [3390752] 31.0 size=   15241kB time=00:05:09.20 bitrate= 403.8kbits/s speed=0.825x    frame=18624 fps= 50 q=31.0 size=   15241kB time=00
+2024-08-30 11:28:28.395 [INFO] [3390752] :05:09.52 bitrate= 403.4kbits/s speed=0.825x    frame=18651 fps= 50 q=31.0 size=   15308kB time=00:05:09.97 bitrate= 404.6kbit
+2024-08-30 11:28:29.416 [INFO] [3390752] s/s speed=0.825x    frame=18679 fps= 50 q=31.0 size=   15308kB time=00:05:10.44 bitrate= 403.9kbits/s speed=0.825x    frame=1
+2024-08-30 11:28:29.927 [INFO] [3390752] 8707 fps= 50 q=31.0 size=   15308kB time=00:05:10.91 bitrate= 403.3kbits/s speed=0.825x    frame=18735 fps= 50 q=31.0 size=   
+2024-08-30 11:28:30.461 [INFO] [3390752] 15308kB time=00:05:11.37 bitrate= 402.7kbits/s speed=0.825x    frame=18763 fps= 50 q=31.0 size=   15308kB time=00:05:11.85 bit
+2024-08-30 11:28:30.970 [INFO] [3390752] rate= 402.1kbits/s speed=0.825x    frame=18791 fps= 50 q=31.0 size=   15308kB time=00:05:12.32 bitrate= 401.5kbits/s speed=0.8
+2024-08-30 11:28:31.986 [INFO] [3390752] 25x    frame=18820 fps= 50 q=31.0 size=   15308kB time=00:05:12.78 bitrate= 400.9kbits/s speed=0.826x    frame=18846 fps= 50 
+2024-08-30 11:28:32.513 [INFO] [3390752] q=31.0 size=   15308kB time=00:05:13.23 bitrate= 400.3kbits/s speed=0.826x    frame=18852 fps= 50 q=31.0 size=   15308kB time=
+2024-08-30 11:28:33.039 [INFO] [3390752] 00:05:13.32 bitrate= 400.2kbits/s speed=0.825x    frame=18866 fps= 50 q=31.0 size=   15308kB time=00:05:13.55 bitrate= 399.9kb
+2024-08-30 11:28:34.086 [INFO] [3390752] its/s speed=0.824x    frame=18893 fps= 50 q=31.0 size=   15477kB time=00:05:14.00 bitrate= 403.8kbits/s speed=0.824x    frame
+2024-08-30 11:28:34.610 [INFO] [3390752] =18921 fps= 50 q=31.0 size=   15477kB time=00:05:14.47 bitrate= 403.2kbits/s speed=0.824x    frame=18948 fps= 50 q=31.0 size= 
+2024-08-30 11:28:35.128 [INFO] [3390752]   15477kB time=00:05:14.92 bitrate= 402.6kbits/s speed=0.824x    frame=18976 fps= 50 q=31.0 size=   15477kB time=00:05:15.39 b
+2024-08-30 11:28:35.629 [INFO] [3390752] itrate= 402.0kbits/s speed=0.824x    frame=19003 fps= 50 q=31.0 size=   15477kB time=00:05:15.84 bitrate= 401.4kbits/s speed=0
+2024-08-30 11:28:36.715 [INFO] [3390752] .825x    frame=19032 fps= 50 q=31.0 size=   15477kB time=00:05:16.33 bitrate= 400.8kbits/s speed=0.825x    frame=19060 fps= 5
+2024-08-30 11:28:37.460 [INFO] [3390752] 0 q=31.0 size=   15477kB time=00:05:16.79 bitrate= 400.2kbits/s speed=0.825x    frame=19088 fps= 50 q=31.0 size=   15477kB tim
+2024-08-30 11:28:37.962 [INFO] [3390752] e=00:05:17.26 bitrate= 399.6kbits/s speed=0.824x    frame=19117 fps= 50 q=31.0 size=   15627kB time=00:05:17.73 bitrate= 402.9
+2024-08-30 11:28:38.969 [INFO] [3390752] kbits/s speed=0.825x    frame=19143 fps= 50 q=31.0 size=   15627kB time=00:05:18.18 bitrate= 402.3kbits/s speed=0.825x    fra
+2024-08-30 11:28:39.484 [INFO] [3390752] me=19170 fps= 50 q=31.0 size=   15627kB time=00:05:18.63 bitrate= 401.8kbits/s speed=0.825x    frame=19195 fps= 50 q=31.0 size
+2024-08-30 11:28:39.997 [INFO] [3390752] =   15627kB time=00:05:19.04 bitrate= 401.3kbits/s speed=0.825x    frame=19223 fps= 50 q=31.0 size=   15627kB time=00:05:19.51
+2024-08-30 11:28:40.502 [INFO] [3390752]  bitrate= 400.7kbits/s speed=0.825x    frame=19252 fps= 50 q=31.0 size=   15627kB time=00:05:19.99 bitrate= 400.0kbits/s speed
+2024-08-30 11:28:41.544 [INFO] [3390752] =0.825x    frame=19279 fps= 50 q=31.0 size=   15627kB time=00:05:20.44 bitrate= 399.5kbits/s speed=0.825x    frame=19310 fps=
+2024-08-30 11:28:42.036 [INFO] [3390752]  50 q=31.0 size=   15627kB time=00:05:20.95 bitrate= 398.9kbits/s speed=0.825x    frame=19335 fps= 50 q=31.0 size=   15627kB t
+2024-08-30 11:28:42.555 [INFO] [3390752] ime=00:05:21.38 bitrate= 398.3kbits/s speed=0.825x    frame=19353 fps= 50 q=31.0 size=   15797kB time=00:05:21.68 bitrate= 402
+2024-08-30 11:28:43.683 [INFO] [3390752] .3kbits/s speed=0.825x    frame=19383 fps= 50 q=31.0 size=   15797kB time=00:05:22.17 bitrate= 401.7kbits/s speed=0.825x    f
+2024-08-30 11:28:44.202 [INFO] [3390752] rame=19415 fps= 50 q=31.0 size=   15797kB time=00:05:22.71 bitrate= 401.0kbits/s speed=0.825x    frame=19438 fps= 50 q=31.0 si
+2024-08-30 11:28:44.710 [INFO] [3390752] ze=   15868kB time=00:05:23.09 bitrate= 402.3kbits/s speed=0.825x    frame=19470 fps= 50 q=31.0 size=   15868kB time=00:05:23.
+2024-08-30 11:28:45.207 [INFO] [3390752] 62 bitrate= 401.7kbits/s speed=0.825x    frame=19503 fps= 50 q=31.0 size=   15868kB time=00:05:24.18 bitrate= 401.0kbits/s spe
+2024-08-30 11:28:46.235 [INFO] [3390752] ed=0.826x    frame=19556 fps= 50 q=31.0 size=   15868kB time=00:05:25.14 bitrate= 399.8kbits/s speed=0.827x    frame=19610 fp
+2024-08-30 11:28:46.750 [INFO] [3390752] s= 50 q=31.0 size=   15868kB time=00:05:26.09 bitrate= 398.6kbits/s speed=0.828x    frame=19664 fps= 50 q=31.0 size=   15868kB
+2024-08-30 11:28:47.261 [INFO] [3390752]  time=00:05:26.99 bitrate= 397.5kbits/s speed=0.83x    frame=19706 fps= 50 q=31.0 size=   16043kB time=00:05:27.70 bitrate= 40
+2024-08-30 11:28:48.264 [INFO] [3390752] 1.1kbits/s speed=0.83x    frame=19752 fps= 50 q=31.0 size=   16043kB time=00:05:28.46 bitrate= 400.1kbits/s speed=0.831x    f
+2024-08-30 11:28:48.765 [INFO] [3390752] rame=19805 fps= 50 q=31.0 size=   16043kB time=00:05:29.34 bitrate= 399.1kbits/s speed=0.832x    frame=19857 fps= 50 q=31.0 si
+2024-08-30 11:28:49.273 [INFO] [3390752] ze=   16043kB time=00:05:30.21 bitrate= 398.0kbits/s speed=0.834x    frame=19911 fps= 50 q=31.0 size=   16043kB time=00:05:31.
+2024-08-30 11:28:49.778 [INFO] [3390752] 11 bitrate= 396.9kbits/s speed=0.835x    frame=19966 fps= 50 q=31.0 size=   16158kB time=00:05:32.03 bitrate= 398.6kbits/s spe
+2024-08-30 11:28:50.813 [INFO] [3390752] ed=0.836x    frame=20023 fps= 50 q=31.0 size=   16158kB time=00:05:32.97 bitrate= 397.5kbits/s speed=0.837x    frame=20079 fp
+2024-08-30 11:28:51.327 [INFO] [3390752] s= 50 q=31.0 size=   16158kB time=00:05:33.90 bitrate= 396.4kbits/s speed=0.839x    frame=20135 fps= 50 q=31.0 size=   16158kB
+2024-08-30 11:28:51.853 [INFO] [3390752]  time=00:05:34.84 bitrate= 395.3kbits/s speed=0.84x    frame=20186 fps= 51 q=31.0 size=   16272kB time=00:05:35.70 bitrate= 39
+2024-08-30 11:28:52.366 [INFO] [3390752] 7.1kbits/s speed=0.841x    frame=20242 fps= 51 q=31.0 size=   16272kB time=00:05:36.62 bitrate= 396.0kbits/s speed=0.842x    
+2024-08-30 11:28:53.384 [INFO] [3390752] frame=20298 fps= 51 q=31.0 size=   16272kB time=00:05:37.55 bitrate= 394.9kbits/s speed=0.843x    frame=20353 fps= 51 q=31.0 s
+2024-08-30 11:28:53.885 [INFO] [3390752] ize=   16272kB time=00:05:38.47 bitrate= 393.8kbits/s speed=0.845x    frame=20409 fps= 51 q=31.0 size=   16272kB time=00:05:39
+2024-08-30 11:28:54.386 [INFO] [3390752] .41 bitrate= 392.7kbits/s speed=0.846x    frame=20458 fps= 51 q=31.0 size=   16387kB time=00:05:40.22 bitrate= 394.6kbits/s sp
+2024-08-30 11:28:55.395 [INFO] [3390752] eed=0.847x    frame=20514 fps= 51 q=31.0 size=   16387kB time=00:05:41.16 bitrate= 393.5kbits/s speed=0.848x    frame=20569 f
+2024-08-30 11:28:55.903 [INFO] [3390752] ps= 51 q=31.0 size=   16387kB time=00:05:42.07 bitrate= 392.4kbits/s speed=0.849x    frame=20625 fps= 51 q=31.0 size=   16387k
+2024-08-30 11:28:56.407 [INFO] [3390752] B time=00:05:43.01 bitrate= 391.3kbits/s speed=0.851x    frame=20675 fps= 51 q=31.0 size=   16387kB time=00:05:43.85 bitrate= 
+2024-08-30 11:28:56.910 [INFO] [3390752] 390.4kbits/s speed=0.852x    frame=20730 fps= 51 q=31.0 size=   16502kB time=00:05:44.76 bitrate= 392.1kbits/s speed=0.853x   
+2024-08-30 11:28:57.924 [INFO] [3390752]  frame=20784 fps= 51 q=31.0 size=   16502kB time=00:05:45.66 bitrate= 391.1kbits/s speed=0.854x    frame=20841 fps= 51 q=31.0
+2024-08-30 11:28:58.424 [INFO] [3390752]  size=   16502kB time=00:05:46.60 bitrate= 390.0kbits/s speed=0.855x    frame=20897 fps= 51 q=31.0 size=   16502kB time=00:05:
+2024-08-30 11:28:58.928 [INFO] [3390752] 47.54 bitrate= 389.0kbits/s speed=0.856x    frame=20948 fps= 52 q=31.0 size=   16617kB time=00:05:48.39 bitrate= 390.7kbits/s 
+2024-08-30 11:28:59.951 [INFO] [3390752] speed=0.857x    frame=21001 fps= 52 q=31.0 size=   16617kB time=00:05:49.88 bitrate= 389.1kbits/s speed=0.86x    frame=21057 
+2024-08-30 11:29:00.449 [INFO] [3390752] fps= 52 q=31.0 size=   16617kB time=00:05:50.80 bitrate= 388.0kbits/s speed=0.861x    frame=21113 fps= 52 q=31.0 size=   16617
+2024-08-30 11:29:00.952 [INFO] [3390752] kB time=00:05:51.74 bitrate= 387.0kbits/s speed=0.862x    frame=21169 fps= 52 q=31.0 size=   16617kB time=00:05:52.68 bitrate=
+2024-08-30 11:29:01.458 [INFO] [3390752]  386.0kbits/s speed=0.864x    frame=21222 fps= 52 q=31.0 size=   16741kB time=00:05:53.55 bitrate= 387.9kbits/s speed=0.865x  
+2024-08-30 11:29:02.464 [INFO] [3390752]   frame=21276 fps= 52 q=31.0 size=   16741kB time=00:05:54.45 bitrate= 386.9kbits/s speed=0.866x    frame=21332 fps= 52 q=31.
+2024-08-30 11:29:02.971 [INFO] [3390752] 0 size=   16741kB time=00:05:55.39 bitrate= 385.9kbits/s speed=0.867x    frame=21387 fps= 52 q=31.0 size=   16741kB time=00:05
+2024-08-30 11:29:03.471 [INFO] [3390752] :56.30 bitrate= 384.9kbits/s speed=0.868x    frame=21435 fps= 52 q=31.0 size=   16856kB time=00:05:57.11 bitrate= 386.7kbits/s
+2024-08-30 11:29:04.476 [INFO] [3390752]  speed=0.869x    frame=21489 fps= 52 q=31.0 size=   16856kB time=00:05:58.01 bitrate= 385.7kbits/s speed=0.87x    frame=21544
+2024-08-30 11:29:04.985 [INFO] [3390752]  fps= 52 q=31.0 size=   16856kB time=00:05:58.93 bitrate= 384.7kbits/s speed=0.871x    frame=21599 fps= 52 q=31.0 size=   1685
+2024-08-30 11:29:05.486 [INFO] [3390752] 6kB time=00:05:59.84 bitrate= 383.7kbits/s speed=0.873x    frame=21652 fps= 52 q=31.0 size=   16856kB time=00:06:00.72 bitrate
+2024-08-30 11:29:05.988 [INFO] [3390752] = 382.8kbits/s speed=0.874x    frame=21699 fps= 52 q=31.0 size=   16971kB time=00:06:01.51 bitrate= 384.6kbits/s speed=0.875x 
+2024-08-30 11:29:07.003 [INFO] [3390752]    frame=21751 fps= 53 q=31.0 size=   16971kB time=00:06:02.38 bitrate= 383.6kbits/s speed=0.876x    frame=21808 fps= 53 q=31
+2024-08-30 11:29:07.517 [INFO] [3390752] .0 size=   16971kB time=00:06:03.32 bitrate= 382.7kbits/s speed=0.877x    frame=21862 fps= 53 q=31.0 size=   16971kB time=00:0
+2024-08-30 11:29:08.019 [INFO] [3390752] 6:04.22 bitrate= 381.7kbits/s speed=0.878x    frame=21917 fps= 53 q=31.0 size=   16971kB time=00:06:05.14 bitrate= 380.7kbits/
+2024-08-30 11:29:09.029 [INFO] [3390752] s speed=0.879x    frame=21968 fps= 53 q=31.0 size=   17088kB time=00:06:05.99 bitrate= 382.5kbits/s speed=0.88x    frame=2202
+2024-08-30 11:29:09.541 [INFO] [3390752] 2 fps= 53 q=31.0 size=   17088kB time=00:06:06.89 bitrate= 381.5kbits/s speed=0.881x    frame=22074 fps= 53 q=31.0 size=   170
+2024-08-30 11:29:10.046 [INFO] [3390752] 88kB time=00:06:07.76 bitrate= 380.6kbits/s speed=0.882x    frame=22132 fps= 53 q=31.0 size=   17088kB time=00:06:08.72 bitrat
+2024-08-30 11:29:10.558 [INFO] [3390752] e= 379.6kbits/s speed=0.883x    frame=22186 fps= 53 q=31.0 size=   17203kB time=00:06:09.62 bitrate= 381.3kbits/s speed=0.884x
+2024-08-30 11:29:11.579 [INFO] [3390752]     frame=22238 fps= 53 q=31.0 size=   17203kB time=00:06:10.49 bitrate= 380.4kbits/s speed=0.885x    frame=22292 fps= 53 q=3
+2024-08-30 11:29:12.080 [INFO] [3390752] 1.0 size=   17203kB time=00:06:11.39 bitrate= 379.5kbits/s speed=0.886x    frame=22348 fps= 53 q=31.0 size=   17203kB time=00:
+2024-08-30 11:29:12.593 [INFO] [3390752] 06:12.33 bitrate= 378.5kbits/s speed=0.888x    frame=22403 fps= 53 q=31.0 size=   17203kB time=00:06:13.24 bitrate= 377.6kbits
+2024-08-30 11:29:13.625 [INFO] [3390752] /s speed=0.889x    frame=22451 fps= 53 q=31.0 size=   17318kB time=00:06:14.04 bitrate= 379.3kbits/s speed=0.89x    frame=225
+2024-08-30 11:29:14.129 [INFO] [3390752] 07 fps= 53 q=31.0 size=   17318kB time=00:06:14.97 bitrate= 378.3kbits/s speed=0.891x    frame=22564 fps= 54 q=31.0 size=   17
+2024-08-30 11:29:14.646 [INFO] [3390752] 318kB time=00:06:15.93 bitrate= 377.4kbits/s speed=0.892x    frame=22619 fps= 54 q=31.0 size=   17318kB time=00:06:16.85 bitra
+2024-08-30 11:29:15.166 [INFO] [3390752] te= 376.5kbits/s speed=0.893x    frame=22672 fps= 54 q=31.0 size=   17318kB time=00:06:17.72 bitrate= 375.6kbits/s speed=0.894
+2024-08-30 11:29:16.177 [INFO] [3390752] x    frame=22727 fps= 54 q=31.0 size=   17432kB time=00:06:18.64 bitrate= 377.1kbits/s speed=0.895x    frame=22781 fps= 54 q=
+2024-08-30 11:29:16.677 [INFO] [3390752] 31.0 size=   17432kB time=00:06:19.54 bitrate= 376.3kbits/s speed=0.896x    frame=22836 fps= 54 q=31.0 size=   17432kB time=00
+2024-08-30 11:29:17.181 [INFO] [3390752] :06:20.45 bitrate= 375.4kbits/s speed=0.897x    frame=22891 fps= 54 q=31.0 size=   17432kB time=00:06:21.37 bitrate= 374.4kbit
+2024-08-30 11:29:18.183 [INFO] [3390752] s/s speed=0.898x    frame=22944 fps= 54 q=31.0 size=   17547kB time=00:06:22.27 bitrate= 376.0kbits/s speed=0.899x    frame=2
+2024-08-30 11:29:18.691 [INFO] [3390752] 2996 fps= 54 q=31.0 size=   17547kB time=00:06:23.12 bitrate= 375.2kbits/s speed= 0.9x    frame=23047 fps= 54 q=31.0 size=   1
+2024-08-30 11:29:19.192 [INFO] [3390752] 7547kB time=00:06:23.97 bitrate= 374.4kbits/s speed=0.901x    frame=23101 fps= 54 q=31.0 size=   17547kB time=00:06:24.87 bitr
+2024-08-30 11:29:19.705 [INFO] [3390752] ate= 373.5kbits/s speed=0.902x    frame=23152 fps= 54 q=31.0 size=   17547kB time=00:06:25.72 bitrate= 372.7kbits/s speed=0.90
+2024-08-30 11:29:20.736 [INFO] [3390752] 3x    frame=23204 fps= 54 q=31.0 size=   17662kB time=00:06:26.59 bitrate= 374.3kbits/s speed=0.904x    frame=23259 fps= 54 q
+2024-08-30 11:29:21.232 [INFO] [3390752] =31.0 size=   17662kB time=00:06:27.52 bitrate= 373.4kbits/s speed=0.905x    frame=23312 fps= 54 q=31.0 size=   17662kB time=0
+2024-08-30 11:29:21.737 [INFO] [3390752] 0:06:28.39 bitrate= 372.5kbits/s speed=0.906x    frame=23368 fps= 54 q=31.0 size=   17662kB time=00:06:29.33 bitrate= 371.6kbi
+2024-08-30 11:29:22.785 [INFO] [3390752] ts/s speed=0.907x    frame=23421 fps= 55 q=29.0 size=   17662kB time=00:06:30.20 bitrate= 370.8kbits/s speed=0.908x    frame=
+2024-08-30 11:29:23.297 [INFO] [3390752] 23475 fps= 55 q=31.0 size=   17779kB time=00:06:31.10 bitrate= 372.4kbits/s speed=0.909x    frame=23531 fps= 55 q=31.0 size=  
+2024-08-30 11:29:23.799 [INFO] [3390752]  17779kB time=00:06:32.04 bitrate= 371.5kbits/s speed=0.91x    frame=23583 fps= 55 q=31.0 size=   17779kB time=00:06:32.91 bit
+2024-08-30 11:29:24.309 [INFO] [3390752] rate= 370.7kbits/s speed=0.911x    frame=23636 fps= 55 q=31.0 size=   17779kB time=00:06:33.79 bitrate= 369.9kbits/s speed=0.9
+2024-08-30 11:29:25.315 [INFO] [3390752] 12x    frame=23691 fps= 55 q=31.0 size=   17892kB time=00:06:34.70 bitrate= 371.3kbits/s speed=0.913x    frame=23743 fps= 55 
+2024-08-30 11:29:25.815 [INFO] [3390752] q=31.0 size=   17892kB time=00:06:35.58 bitrate= 370.5kbits/s speed=0.914x    frame=23799 fps= 55 q=31.0 size=   17892kB time=
+2024-08-30 11:29:26.336 [INFO] [3390752] 00:06:36.52 bitrate= 369.6kbits/s speed=0.915x    frame=23855 fps= 55 q=31.0 size=   17892kB time=00:06:37.43 bitrate= 368.8kb
+2024-08-30 11:29:27.331 [INFO] [3390752] its/s speed=0.916x    frame=23911 fps= 55 q=31.0 size=   17892kB time=00:06:38.37 bitrate= 367.9kbits/s speed=0.917x    frame
+2024-08-30 11:29:27.837 [INFO] [3390752] =23959 fps= 55 q=31.0 size=   18006kB time=00:06:39.18 bitrate= 369.5kbits/s speed=0.918x    frame=24014 fps= 55 q=31.0 size= 
+2024-08-30 11:29:28.337 [INFO] [3390752]   18006kB time=00:06:40.10 bitrate= 368.7kbits/s speed=0.919x    frame=24068 fps= 55 q=31.0 size=   18006kB time=00:06:41.00 b
+2024-08-30 11:29:28.842 [INFO] [3390752] itrate= 367.8kbits/s speed=0.92x    frame=24122 fps= 55 q=31.0 size=   18006kB time=00:06:41.89 bitrate= 367.0kbits/s speed=0.
+2024-08-30 11:29:29.854 [INFO] [3390752] 921x    frame=24176 fps= 55 q=31.0 size=   18006kB time=00:06:42.79 bitrate= 366.2kbits/s speed=0.922x    frame=24232 fps= 55
+2024-08-30 11:29:30.367 [INFO] [3390752]  q=31.0 size=   18121kB time=00:06:43.73 bitrate= 367.7kbits/s speed=0.923x    frame=24285 fps= 55 q=31.0 size=   18121kB time
+2024-08-30 11:29:30.863 [INFO] [3390752] =00:06:44.60 bitrate= 366.9kbits/s speed=0.924x    frame=24340 fps= 56 q=31.0 size=   18121kB time=00:06:45.52 bitrate= 366.1k
+2024-08-30 11:29:31.869 [INFO] [3390752] bits/s speed=0.925x    frame=24393 fps= 56 q=31.0 size=   18121kB time=00:06:46.42 bitrate= 365.3kbits/s speed=0.926x    fram
+2024-08-30 11:29:32.377 [INFO] [3390752] e=24440 fps= 56 q=31.0 size=   18233kB time=00:06:47.18 bitrate= 366.8kbits/s speed=0.927x    frame=24496 fps= 56 q=31.0 size=
+2024-08-30 11:29:32.872 [INFO] [3390752]    18233kB time=00:06:48.12 bitrate= 366.0kbits/s speed=0.928x    frame=24551 fps= 56 q=31.0 size=   18233kB time=00:06:49.04 
+2024-08-30 11:29:33.378 [INFO] [3390752] bitrate= 365.2kbits/s speed=0.929x    frame=24607 fps= 56 q=31.0 size=   18233kB time=00:06:49.98 bitrate= 364.3kbits/s speed=
+2024-08-30 11:29:34.381 [INFO] [3390752] 0.93x    frame=24661 fps= 56 q=31.0 size=   18233kB time=00:06:50.87 bitrate= 363.5kbits/s speed=0.931x    frame=24711 fps= 5
+2024-08-30 11:29:34.883 [INFO] [3390752] 6 q=31.0 size=   18347kB time=00:06:51.71 bitrate= 365.1kbits/s speed=0.932x    frame=24767 fps= 56 q=31.0 size=   18347kB tim
+2024-08-30 11:29:35.397 [INFO] [3390752] e=00:06:52.65 bitrate= 364.2kbits/s speed=0.933x    frame=24821 fps= 56 q=31.0 size=   18347kB time=00:06:53.54 bitrate= 363.4
+2024-08-30 11:29:36.404 [INFO] [3390752] kbits/s speed=0.934x    frame=24877 fps= 56 q=31.0 size=   18347kB time=00:06:54.48 bitrate= 362.6kbits/s speed=0.935x    fra
+2024-08-30 11:29:36.919 [INFO] [3390752] me=24931 fps= 56 q=31.0 size=   18462kB time=00:06:55.38 bitrate= 364.1kbits/s speed=0.936x    frame=24986 fps= 56 q=31.0 size
+2024-08-30 11:29:37.425 [INFO] [3390752] =   18462kB time=00:06:56.29 bitrate= 363.3kbits/s speed=0.937x    frame=25040 fps= 56 q=31.0 size=   18462kB time=00:06:57.19
+2024-08-30 11:29:37.927 [INFO] [3390752]  bitrate= 362.5kbits/s speed=0.938x    frame=25095 fps= 56 q=31.0 size=   18462kB time=00:06:58.11 bitrate= 361.7kbits/s speed
+2024-08-30 11:29:38.954 [INFO] [3390752] =0.939x    frame=25149 fps= 56 q=31.0 size=   18462kB time=00:06:59.00 bitrate= 360.9kbits/s speed=0.94x    frame=25204 fps= 
+2024-08-30 11:29:39.463 [INFO] [3390752] 56 q=31.0 size=   18578kB time=00:06:59.92 bitrate= 362.4kbits/s speed=0.941x    frame=25257 fps= 57 q=31.0 size=   18578kB ti
+2024-08-30 11:29:39.974 [INFO] [3390752] me=00:07:00.82 bitrate= 361.7kbits/s speed=0.942x    frame=25314 fps= 57 q=31.0 size=   18578kB time=00:07:01.75 bitrate= 360.
+2024-08-30 11:29:41.027 [INFO] [3390752] 9kbits/s speed=0.943x    frame=25366 fps= 57 q=31.0 size=   18578kB time=00:07:02.63 bitrate= 360.1kbits/s speed=0.944x    fr
+2024-08-30 11:29:41.534 [INFO] [3390752] ame=25423 fps= 57 q=31.0 size=   18578kB time=00:07:03.57 bitrate= 359.3kbits/s speed=0.945x    frame=25476 fps= 57 q=31.0 siz
+2024-08-30 11:29:42.045 [INFO] [3390752] e=   18692kB time=00:07:04.47 bitrate= 360.7kbits/s speed=0.946x    frame=25533 fps= 57 q=31.0 size=   18692kB time=00:07:05.4
+2024-08-30 11:29:42.548 [INFO] [3390752] 0 bitrate= 360.0kbits/s speed=0.947x    frame=25587 fps= 57 q=31.0 size=   18692kB time=00:07:06.30 bitrate= 359.2kbits/s spee
+2024-08-30 11:29:43.554 [INFO] [3390752] d=0.947x    frame=25643 fps= 57 q=31.0 size=   18692kB time=00:07:07.24 bitrate= 358.4kbits/s speed=0.948x    frame=25690 fps
+2024-08-30 11:29:44.071 [INFO] [3390752] = 57 q=31.0 size=   18806kB time=00:07:08.02 bitrate= 359.9kbits/s speed=0.949x    frame=25746 fps= 57 q=31.0 size=   18806kB 
+2024-08-30 11:29:44.581 [INFO] [3390752] time=00:07:08.97 bitrate= 359.1kbits/s speed=0.95x    frame=25802 fps= 57 q=31.0 size=   18806kB time=00:07:09.88 bitrate= 358
+2024-08-30 11:29:45.605 [INFO] [3390752] .4kbits/s speed=0.951x    frame=25855 fps= 57 q=31.0 size=   18806kB time=00:07:10.78 bitrate= 357.6kbits/s speed=0.952x    f
+2024-08-30 11:29:46.101 [INFO] [3390752] rame=25912 fps= 57 q=31.0 size=   18806kB time=00:07:11.72 bitrate= 356.9kbits/s speed=0.953x    frame=25964 fps= 57 q=31.0 si
+2024-08-30 11:29:46.604 [INFO] [3390752] ze=   18920kB time=00:07:12.59 bitrate= 358.3kbits/s speed=0.954x    frame=26018 fps= 57 q=31.0 size=   18920kB time=00:07:13.
+2024-08-30 11:29:47.107 [INFO] [3390752] 49 bitrate= 357.5kbits/s speed=0.955x    frame=26073 fps= 57 q=31.0 size=   18920kB time=00:07:14.41 bitrate= 356.8kbits/s spe
+2024-08-30 11:29:48.109 [INFO] [3390752] ed=0.956x    frame=26128 fps= 57 q=31.0 size=   18920kB time=00:07:15.32 bitrate= 356.0kbits/s speed=0.957x    frame=26180 fp
+2024-08-30 11:29:48.615 [INFO] [3390752] s= 57 q=31.0 size=   19033kB time=00:07:16.20 bitrate= 357.4kbits/s speed=0.958x    frame=26232 fps= 58 q=31.0 size=   19033kB
+2024-08-30 11:29:49.123 [INFO] [3390752]  time=00:07:17.05 bitrate= 356.8kbits/s speed=0.958x    frame=26287 fps= 58 q=31.0 size=   19033kB time=00:07:17.97 bitrate= 3
+2024-08-30 11:29:49.617 [INFO] [3390752] 56.0kbits/s speed=0.959x    frame=26338 fps= 58 q=31.0 size=   19033kB time=00:07:18.82 bitrate= 355.3kbits/s speed=0.96x    
+2024-08-30 11:29:50.623 [INFO] [3390752] frame=26394 fps= 58 q=31.0 size=   19033kB time=00:07:19.76 bitrate= 354.6kbits/s speed=0.961x    frame=26441 fps= 58 q=31.0 s
+2024-08-30 11:29:51.120 [INFO] [3390752] ize=   19146kB time=00:07:20.55 bitrate= 356.0kbits/s speed=0.962x    frame=26494 fps= 58 q=31.0 size=   19146kB time=00:07:21
+2024-08-30 11:29:51.632 [INFO] [3390752] .42 bitrate= 355.3kbits/s speed=0.963x    frame=26549 fps= 58 q=31.0 size=   19146kB time=00:07:22.34 bitrate= 354.6kbits/s sp
+2024-08-30 11:29:52.641 [INFO] [3390752] eed=0.964x    frame=26604 fps= 58 q=31.0 size=   19146kB time=00:07:23.26 bitrate= 353.8kbits/s speed=0.965x    frame=26660 f
+2024-08-30 11:29:53.143 [INFO] [3390752] ps= 58 q=31.0 size=   19146kB time=00:07:24.20 bitrate= 353.1kbits/s speed=0.966x    frame=26710 fps= 58 q=31.0 size=   19259k
+2024-08-30 11:29:53.650 [INFO] [3390752] B time=00:07:25.03 bitrate= 354.5kbits/s speed=0.966x    frame=26765 fps= 58 q=31.0 size=   19259kB time=00:07:25.95 bitrate= 
+2024-08-30 11:29:54.152 [INFO] [3390752] 353.8kbits/s speed=0.967x    frame=26819 fps= 58 q=31.0 size=   19259kB time=00:07:26.84 bitrate= 353.1kbits/s speed=0.968x   
+2024-08-30 11:29:55.169 [INFO] [3390752]  frame=26874 fps= 58 q=31.0 size=   19259kB time=00:07:27.76 bitrate= 352.3kbits/s speed=0.969x    frame=26928 fps= 58 q=31.0
+2024-08-30 11:29:55.669 [INFO] [3390752]  size=   19374kB time=00:07:28.66 bitrate= 353.7kbits/s speed=0.97x    frame=26983 fps= 58 q=31.0 size=   19374kB time=00:07:2
+2024-08-30 11:29:56.177 [INFO] [3390752] 9.57 bitrate= 353.0kbits/s speed=0.971x    frame=27038 fps= 58 q=31.0 size=   19374kB time=00:07:30.49 bitrate= 352.3kbits/s s
+2024-08-30 11:29:57.187 [INFO] [3390752] peed=0.972x    frame=27093 fps= 58 q=31.0 size=   19374kB time=00:07:31.41 bitrate= 351.6kbits/s speed=0.973x    frame=27147 
+2024-08-30 11:29:57.686 [INFO] [3390752] fps= 58 q=31.0 size=   19374kB time=00:07:32.31 bitrate= 350.9kbits/s speed=0.974x    frame=27199 fps= 58 q=31.0 size=   19487
+2024-08-30 11:29:58.190 [INFO] [3390752] kB time=00:07:33.18 bitrate= 352.3kbits/s speed=0.974x    frame=27253 fps= 59 q=31.0 size=   19487kB time=00:07:34.08 bitrate=
+2024-08-30 11:29:58.692 [INFO] [3390752]  351.6kbits/s speed=0.975x    frame=27309 fps= 59 q=31.0 size=   19487kB time=00:07:35.02 bitrate= 350.8kbits/s speed=0.976x  
+2024-08-30 11:29:59.701 [INFO] [3390752]   frame=27364 fps= 59 q=31.0 size=   19487kB time=00:07:35.93 bitrate= 350.1kbits/s speed=0.977x    frame=27419 fps= 59 q=31.
+2024-08-30 11:30:00.212 [INFO] [3390752] 0 size=   19487kB time=00:07:36.85 bitrate= 349.4kbits/s speed=0.978x    frame=27466 fps= 59 q=31.0 size=   19601kB time=00:07
+2024-08-30 11:30:00.719 [INFO] [3390752] :37.62 bitrate= 350.9kbits/s speed=0.979x    frame=27522 fps= 59 q=31.0 size=   19601kB time=00:07:38.56 bitrate= 350.2kbits/s
+2024-08-30 11:30:01.713 [INFO] [3390752]  speed=0.98x    frame=27575 fps= 59 q=31.0 size=   19601kB time=00:07:39.45 bitrate= 349.5kbits/s speed=0.98x    frame=27628 
+2024-08-30 11:30:02.224 [INFO] [3390752] fps= 59 q=31.0 size=   19601kB time=00:07:40.32 bitrate= 348.8kbits/s speed=0.981x    frame=27679 fps= 59 q=31.0 size=   19713
+2024-08-30 11:30:02.717 [INFO] [3390752] kB time=00:07:41.18 bitrate= 350.2kbits/s speed=0.982x    frame=27733 fps= 59 q=31.0 size=   19713kB time=00:07:42.07 bitrate=
+2024-08-30 11:30:03.214 [INFO] [3390752]  349.5kbits/s speed=0.983x    frame=27784 fps= 59 q=31.0 size=   19713kB time=00:07:42.93 bitrate= 348.8kbits/s speed=0.984x  
+2024-08-30 11:30:04.230 [INFO] [3390752]   frame=27838 fps= 59 q=31.0 size=   19713kB time=00:07:43.82 bitrate= 348.2kbits/s speed=0.985x    frame=27891 fps= 59 q=31.
+2024-08-30 11:30:04.736 [INFO] [3390752] 0 size=   19713kB time=00:07:44.70 bitrate= 347.5kbits/s speed=0.985x    frame=27944 fps= 59 q=31.0 size=   19826kB time=00:07
+2024-08-30 11:30:05.245 [INFO] [3390752] :45.59 bitrate= 348.8kbits/s speed=0.986x    frame=27999 fps= 59 q=31.0 size=   19826kB time=00:07:46.51 bitrate= 348.2kbits/s
+2024-08-30 11:30:06.242 [INFO] [3390752]  speed=0.987x    frame=28054 fps= 59 q=31.0 size=   19826kB time=00:07:47.43 bitrate= 347.5kbits/s speed=0.988x    frame=2810
+2024-08-30 11:30:06.748 [INFO] [3390752] 4 fps= 59 q=31.0 size=   19826kB time=00:07:48.26 bitrate= 346.8kbits/s speed=0.989x    frame=28158 fps= 59 q=31.0 size=   198
+2024-08-30 11:30:07.255 [INFO] [3390752] 26kB time=00:07:49.16 bitrate= 346.2kbits/s speed=0.989x    frame=28205 fps= 59 q=31.0 size=   19940kB time=00:07:49.95 bitrat
+2024-08-30 11:30:07.756 [INFO] [3390752] e= 347.6kbits/s speed=0.99x    frame=28259 fps= 59 q=31.0 size=   19940kB time=00:07:50.84 bitrate= 346.9kbits/s speed=0.991x 
+2024-08-30 11:30:08.774 [INFO] [3390752]    frame=28313 fps= 60 q=31.0 size=   19940kB time=00:07:51.74 bitrate= 346.3kbits/s speed=0.992x    frame=28368 fps= 60 q=31
+2024-08-30 11:30:09.319 [INFO] [3390752] .0 size=   19940kB time=00:07:52.66 bitrate= 345.6kbits/s speed=0.993x    frame=28422 fps= 60 q=31.0 size=   19940kB time=00:0
+2024-08-30 11:30:09.810 [INFO] [3390752] 7:53.55 bitrate= 344.9kbits/s speed=0.993x    frame=28476 fps= 60 q=31.0 size=   20054kB time=00:07:54.46 bitrate= 346.3kbits/
+2024-08-30 11:30:10.826 [INFO] [3390752] s speed=0.994x    frame=28524 fps= 60 q=31.0 size=   20054kB time=00:07:55.28 bitrate= 345.7kbits/s speed=0.995x    frame=285
+2024-08-30 11:30:11.333 [INFO] [3390752] 65 fps= 60 q=31.0 size=   20054kB time=00:07:55.96 bitrate= 345.2kbits/s speed=0.995x    frame=28599 fps= 60 q=31.0 size=   20
+2024-08-30 11:30:11.841 [INFO] [3390752] 054kB time=00:07:56.52 bitrate= 344.8kbits/s speed=0.995x    frame=28642 fps= 60 q=31.0 size=   20054kB time=00:07:57.24 bitra
+2024-08-30 11:30:12.347 [INFO] [3390752] te= 344.2kbits/s speed=0.996x    frame=28695 fps= 60 q=31.0 size=   20167kB time=00:07:58.12 bitrate= 345.5kbits/s speed=0.997
+2024-08-30 11:30:13.357 [INFO] [3390752] x    frame=28749 fps= 60 q=31.0 size=   20167kB time=00:07:59.16 bitrate= 344.8kbits/s speed=0.998x    frame=28789 fps= 60 q=
+2024-08-30 11:30:13.863 [INFO] [3390752] 31.0 size=   20167kB time=00:07:59.89 bitrate= 344.3kbits/s speed=0.998x    frame=28819 fps= 60 q=31.0 size=   20167kB time=00
+2024-08-30 11:30:14.368 [INFO] [3390752] :08:00.40 bitrate= 343.9kbits/s speed=0.998x    frame=28849 fps= 60 q=31.0 size=   20167kB time=00:08:00.91 bitrate= 343.5kbit
+2024-08-30 11:30:15.383 [INFO] [3390752] s/s speed=0.998x    frame=28880 fps= 60 q=31.0 size=   20167kB time=00:08:01.40 bitrate= 343.2kbits/s speed=0.998x    frame=2
+2024-08-30 11:30:15.892 [INFO] [3390752] 8910 fps= 60 q=31.0 size=   20167kB time=00:08:01.91 bitrate= 342.8kbits/s speed=0.998x    frame=28941 fps= 60 q=31.0 size=   
+2024-08-30 11:30:16.400 [INFO] [3390752] 20283kB time=00:08:02.43 bitrate= 344.4kbits/s speed=0.998x    frame=28971 fps= 60 q=31.0 size=   20283kB time=00:08:02.92 bit
+2024-08-30 11:30:16.902 [INFO] [3390752] rate= 344.1kbits/s speed=0.998x    frame=29001 fps= 60 q=31.0 size=   20283kB time=00:08:03.45 bitrate= 343.7kbits/s speed=0.9
+2024-08-30 11:30:17.904 [INFO] [3390752] 98x    frame=29031 fps= 60 q=31.0 size=   20283kB time=00:08:03.92 bitrate= 343.4kbits/s speed=0.998x    frame=29061 fps= 60 
+2024-08-30 11:30:18.411 [INFO] [3390752] q=31.0 size=   20283kB time=00:08:04.45 bitrate= 343.0kbits/s speed=0.998x    frame=29092 fps= 60 q=31.0 size=   20283kB time=
+2024-08-30 11:30:18.918 [INFO] [3390752] 00:08:04.95 bitrate= 342.6kbits/s speed=0.998x    frame=29122 fps= 60 q=31.0 size=   20283kB time=00:08:05.44 bitrate= 342.3kb
+2024-08-30 11:30:19.925 [INFO] [3390752] its/s speed=0.998x    frame=29152 fps= 60 q=31.0 size=   20283kB time=00:08:05.97 bitrate= 341.9kbits/s speed=0.998x    frame
+2024-08-30 11:30:20.430 [INFO] [3390752] =29183 fps= 60 q=31.0 size=   20396kB time=00:08:06.46 bitrate= 343.5kbits/s speed=0.998x    frame=29213 fps= 60 q=31.0 size= 
+2024-08-30 11:30:20.937 [INFO] [3390752]   20396kB time=00:08:06.95 bitrate= 343.1kbits/s speed=0.998x    frame=29243 fps= 60 q=31.0 size=   20396kB time=00:08:07.48 b
+2024-08-30 11:30:21.439 [INFO] [3390752] itrate= 342.7kbits/s speed=0.998x    frame=29274 fps= 60 q=31.0 size=   20396kB time=00:08:07.97 bitrate= 342.4kbits/s speed=0
+2024-08-30 11:30:22.443 [INFO] [3390752] .998x    frame=29304 fps= 60 q=31.0 size=   20396kB time=00:08:08.49 bitrate= 342.0kbits/s speed=0.998x    frame=29334 fps= 6
+2024-08-30 11:30:22.958 [INFO] [3390752] 0 q=31.0 size=   20396kB time=00:08:09.00 bitrate= 341.7kbits/s speed=0.998x    frame=29365 fps= 60 q=31.0 size=   20396kB tim
+2024-08-30 11:30:23.459 [INFO] [3390752] e=00:08:09.49 bitrate= 341.3kbits/s speed=0.998x    frame=29395 fps= 60 q=31.0 size=   20396kB time=00:08:10.00 bitrate= 341.0
+2024-08-30 11:30:24.461 [INFO] [3390752] kbits/s speed=0.998x    frame=29425 fps= 60 q=31.0 size=   20396kB time=00:08:10.49 bitrate= 340.6kbits/s speed=0.998x    fra
+2024-08-30 11:30:24.963 [INFO] [3390752] me=29455 fps= 60 q=31.0 size=   20510kB time=00:08:11.00 bitrate= 342.2kbits/s speed=0.998x    frame=29485 fps= 60 q=31.0 size
+2024-08-30 11:30:25.466 [INFO] [3390752] =   20510kB time=00:08:11.49 bitrate= 341.8kbits/s speed=0.998x    frame=29515 fps= 60 q=31.0 size=   20510kB time=00:08:11.99
+2024-08-30 11:30:25.977 [INFO] [3390752]  bitrate= 341.5kbits/s speed=0.998x    frame=29546 fps= 60 q=31.0 size=   20510kB time=00:08:12.52 bitrate= 341.1kbits/s speed
+2024-08-30 11:30:26.977 [INFO] [3390752] =0.998x    frame=29576 fps= 60 q=31.0 size=   20510kB time=00:08:13.01 bitrate= 340.8kbits/s speed=0.998x    frame=29606 fps=
+2024-08-30 11:30:27.485 [INFO] [3390752]  60 q=31.0 size=   20510kB time=00:08:13.52 bitrate= 340.4kbits/s speed=0.998x    frame=29636 fps= 60 q=31.0 size=   20510kB t
+2024-08-30 11:30:27.989 [INFO] [3390752] ime=00:08:14.03 bitrate= 340.1kbits/s speed=0.998x    frame=29666 fps= 60 q=31.0 size=   20510kB time=00:08:14.52 bitrate= 339
+2024-08-30 11:30:28.999 [INFO] [3390752] .8kbits/s speed=0.998x    frame=29697 fps= 60 q=31.0 size=   20624kB time=00:08:15.03 bitrate= 341.3kbits/s speed=0.998x    f
+2024-08-30 11:30:29.508 [INFO] [3390752] rame=29727 fps= 60 q=31.0 size=   20624kB time=00:08:15.52 bitrate= 341.0kbits/s speed=0.998x    frame=29758 fps= 60 q=31.0 si
+2024-08-30 11:30:30.008 [INFO] [3390752] ze=   20624kB time=00:08:16.04 bitrate= 340.6kbits/s speed=0.998x    frame=29788 fps= 60 q=31.0 size=   20624kB time=00:08:16.
+2024-08-30 11:30:30.514 [INFO] [3390752] 55 bitrate= 340.3kbits/s speed=0.998x    frame=29818 fps= 60 q=31.0 size=   20624kB time=00:08:17.04 bitrate= 339.9kbits/s spe
+2024-08-30 11:30:31.517 [INFO] [3390752] ed=0.998x    frame=29848 fps= 60 q=31.0 size=   20624kB time=00:08:17.55 bitrate= 339.6kbits/s speed=0.998x    frame=29878 fp
+2024-08-30 11:30:32.027 [INFO] [3390752] s= 60 q=31.0 size=   20624kB time=00:08:18.04 bitrate= 339.2kbits/s speed=0.998x    frame=29909 fps= 60 q=31.0 size=   20624kB
+2024-08-30 11:30:32.525 [INFO] [3390752]  time=00:08:18.55 bitrate= 338.9kbits/s speed=0.998x    frame=29939 fps= 60 q=31.0 size=   20738kB time=00:08:19.09 bitrate= 3
+2024-08-30 11:30:33.029 [INFO] [3390752] 40.4kbits/s speed=0.998x    frame=29969 fps= 60 q=31.0 size=   20738kB time=00:08:19.56 bitrate= 340.1kbits/s speed=0.998x    
+2024-08-30 11:30:34.032 [INFO] [3390752] frame=29999 fps= 60 q=31.0 size=   20738kB time=00:08:20.07 bitrate= 339.7kbits/s speed=0.998x    frame=30029 fps= 60 q=31.0 
+2024-08-30 11:30:34.539 [INFO] [3390752] size=   20738kB time=00:08:20.58 bitrate= 339.4kbits/s speed=0.998x    frame=30059 fps= 60 q=31.0 size=   20738kB time=00:08:2
+2024-08-30 11:30:35.046 [INFO] [3390752] 1.07 bitrate= 339.0kbits/s speed=0.998x    frame=30090 fps= 60 q=31.0 size=   20738kB time=00:08:21.58 bitrate= 338.7kbits/s s
+2024-08-30 11:30:36.047 [INFO] [3390752] peed=0.998x    frame=30120 fps= 60 q=31.0 size=   20738kB time=00:08:22.07 bitrate= 338.4kbits/s speed=0.998x    frame=30150 
+2024-08-30 11:30:36.548 [INFO] [3390752] fps= 60 q=31.0 size=   20738kB time=00:08:22.58 bitrate= 338.0kbits/s speed=0.998x    frame=30180 fps= 60 q=31.0 size=   20852
+2024-08-30 11:30:37.050 [INFO] [3390752] kB time=00:08:23.08 bitrate= 339.5kbits/s speed=0.998x    frame=30210 fps= 60 q=31.0 size=   20852kB time=00:08:23.59 bitrate=
+2024-08-30 11:30:37.551 [INFO] [3390752]  339.2kbits/s speed=0.998x    frame=30240 fps= 60 q=31.0 size=   20852kB time=00:08:24.10 bitrate= 338.8kbits/s speed=0.998x  
+2024-08-30 11:30:38.571 [INFO] [3390752]   frame=30271 fps= 60 q=31.0 size=   20852kB time=00:08:24.59 bitrate= 338.5kbits/s speed=0.998x    frame=30301 fps= 60 q=31.
+2024-08-30 11:30:39.072 [INFO] [3390752] 0 size=   20852kB time=00:08:25.11 bitrate= 338.2kbits/s speed=0.998x    frame=30331 fps= 60 q=31.0 size=   20852kB time=00:08
+2024-08-30 11:30:39.575 [INFO] [3390752] :25.62 bitrate= 337.8kbits/s speed=0.998x    frame=30362 fps= 60 q=31.0 size=   20852kB time=00:08:26.10 bitrate= 337.5kbits/s
+2024-08-30 11:30:40.585 [INFO] [3390752]  speed=0.998x    frame=30392 fps= 60 q=31.0 size=   20852kB time=00:08:26.62 bitrate= 337.2kbits/s speed=0.998x    frame=3042
+2024-08-30 11:30:41.090 [INFO] [3390752] 2 fps= 60 q=31.0 size=   20852kB time=00:08:27.11 bitrate= 336.8kbits/s speed=0.998x    frame=30452 fps= 60 q=31.0 size=   209
+2024-08-30 11:30:41.599 [INFO] [3390752] 66kB time=00:08:27.62 bitrate= 338.3kbits/s speed=0.998x    frame=30483 fps= 60 q=31.0 size=   20966kB time=00:08:28.13 bitrat
+2024-08-30 11:30:42.102 [INFO] [3390752] e= 338.0kbits/s speed=0.998x    frame=30513 fps= 60 q=31.0 size=   20966kB time=00:08:28.63 bitrate= 337.7kbits/s speed=0.998x
+2024-08-30 11:30:43.111 [INFO] [3390752]     frame=30543 fps= 60 q=31.0 size=   20966kB time=00:08:29.14 bitrate= 337.3kbits/s speed=0.998x    frame=30574 fps= 60 q=3
+2024-08-30 11:30:43.613 [INFO] [3390752] 1.0 size=   20966kB time=00:08:29.65 bitrate= 337.0kbits/s speed=0.998x    frame=30604 fps= 60 q=31.0 size=   20966kB time=00:
+2024-08-30 11:30:44.118 [INFO] [3390752] 08:30.14 bitrate= 336.7kbits/s speed=0.998x    frame=30634 fps= 60 q=31.0 size=   20966kB time=00:08:30.65 bitrate= 336.3kbits
+2024-08-30 11:30:45.123 [INFO] [3390752] /s speed=0.998x    frame=30665 fps= 60 q=31.0 size=   20966kB time=00:08:31.16 bitrate= 336.0kbits/s speed=0.998x    frame=30
+2024-08-30 11:30:45.631 [INFO] [3390752] 694 fps= 60 q=31.0 size=   21079kB time=00:08:31.65 bitrate= 337.5kbits/s speed=0.998x    frame=30725 fps= 60 q=31.0 size=   2
+2024-08-30 11:30:46.129 [INFO] [3390752] 1079kB time=00:08:32.16 bitrate= 337.2kbits/s speed=0.998x    frame=30755 fps= 60 q=31.0 size=   21079kB time=00:08:32.66 bitr
+2024-08-30 11:30:46.645 [INFO] [3390752] ate= 336.8kbits/s speed=0.998x    frame=30786 fps= 60 q=31.0 size=   21079kB time=00:08:33.17 bitrate= 336.5kbits/s speed=0.99
+2024-08-30 11:30:47.664 [INFO] [3390752] 8x    frame=30816 fps= 60 q=31.0 size=   21079kB time=00:08:33.70 bitrate= 336.2kbits/s speed=0.998x    frame=30847 fps= 60 q
+2024-08-30 11:30:48.160 [INFO] [3390752] =31.0 size=   21079kB time=00:08:34.19 bitrate= 335.8kbits/s speed=0.998x    frame=30877 fps= 60 q=31.0 size=   21079kB time=0
+2024-08-30 11:30:48.669 [INFO] [3390752] 0:08:34.70 bitrate= 335.5kbits/s speed=0.998x    frame=30907 fps= 60 q=31.0 size=   21079kB time=00:08:35.19 bitrate= 335.2kbi
+2024-08-30 11:30:49.666 [INFO] [3390752] ts/s speed=0.998x    frame=30937 fps= 60 q=31.0 size=   21193kB time=00:08:35.68 bitrate= 336.7kbits/s speed=0.998x    frame=
+2024-08-30 11:30:50.178 [INFO] [3390752] 30967 fps= 60 q=31.0 size=   21193kB time=00:08:36.22 bitrate= 336.3kbits/s speed=0.998x    frame=30998 fps= 60 q=31.0 size=  
+2024-08-30 11:30:50.685 [INFO] [3390752]  21193kB time=00:08:36.71 bitrate= 336.0kbits/s speed=0.998x    frame=31028 fps= 60 q=31.0 size=   21193kB time=00:08:37.22 bi
+2024-08-30 11:30:51.185 [INFO] [3390752] trate= 335.7kbits/s speed=0.998x    frame=31058 fps= 60 q=31.0 size=   21193kB time=00:08:37.71 bitrate= 335.3kbits/s speed=0.
+2024-08-30 11:30:52.196 [INFO] [3390752] 998x    frame=31089 fps= 60 q=31.0 size=   21193kB time=00:08:38.23 bitrate= 335.0kbits/s speed=0.998x    frame=31119 fps= 60
+2024-08-30 11:30:52.703 [INFO] [3390752]  q=31.0 size=   21193kB time=00:08:38.74 bitrate= 334.7kbits/s speed=0.998x    frame=31149 fps= 60 q=31.0 size=   21193kB time
+2024-08-30 11:30:53.205 [INFO] [3390752] =00:08:39.25 bitrate= 334.4kbits/s speed=0.998x    frame=31180 fps= 60 q=31.0 size=   21307kB time=00:08:39.74 bitrate= 335.8k
+2024-08-30 11:30:54.209 [INFO] [3390752] bits/s speed=0.998x    frame=31210 fps= 60 q=31.0 size=   21307kB time=00:08:40.25 bitrate= 335.5kbits/s speed=0.998x    fram
+2024-08-30 11:30:54.716 [INFO] [3390752] e=31240 fps= 60 q=31.0 size=   21307kB time=00:08:40.74 bitrate= 335.2kbits/s speed=0.998x    frame=31270 fps= 60 q=31.0 size=
+2024-08-30 11:30:55.228 [INFO] [3390752]    21307kB time=00:08:41.25 bitrate= 334.9kbits/s speed=0.998x    frame=31301 fps= 60 q=31.0 size=   21307kB time=00:08:41.76 
+2024-08-30 11:30:55.731 [INFO] [3390752] bitrate= 334.5kbits/s speed=0.998x    frame=31331 fps= 60 q=31.0 size=   21307kB time=00:08:42.26 bitrate= 334.2kbits/s speed=
+2024-08-30 11:30:56.729 [INFO] [3390752] 0.998x    frame=31361 fps= 60 q=31.0 size=   21307kB time=00:08:42.77 bitrate= 333.9kbits/s speed=0.998x    frame=31391 fps= 
+2024-08-30 11:30:57.246 [INFO] [3390752] 60 q=31.0 size=   21307kB time=00:08:43.26 bitrate= 333.6kbits/s speed=0.998x    frame=31419 fps= 60 q=31.0 size=   21307kB ti
+2024-08-30 11:30:57.748 [INFO] [3390752] me=00:08:43.73 bitrate= 333.3kbits/s speed=0.998x    frame=31452 fps= 60 q=31.0 size=   21422kB time=00:08:44.31 bitrate= 334.
+2024-08-30 11:30:58.765 [INFO] [3390752] 7kbits/s speed=0.998x    frame=31483 fps= 60 q=31.0 size=   21422kB time=00:08:44.79 bitrate= 334.4kbits/s speed=0.998x    fr
+2024-08-30 11:30:59.269 [INFO] [3390752] ame=31513 fps= 60 q=31.0 size=   21422kB time=00:08:45.28 bitrate= 334.1kbits/s speed=0.998x    frame=31543 fps= 60 q=31.0 siz
+2024-08-30 11:30:59.773 [INFO] [3390752] e=   21422kB time=00:08:45.82 bitrate= 333.7kbits/s speed=0.998x    frame=31573 fps= 60 q=31.0 size=   21422kB time=00:08:46.3
+2024-08-30 11:31:00.275 [INFO] [3390752] 1 bitrate= 333.4kbits/s speed=0.998x    frame=31604 fps= 60 q=31.0 size=   21422kB time=00:08:46.80 bitrate= 333.1kbits/s spee
+2024-08-30 11:31:01.278 [INFO] [3390752] d=0.998x    frame=31634 fps= 60 q=31.0 size=   21422kB time=00:08:47.31 bitrate= 332.8kbits/s speed=0.998x    frame=31664 fps
+2024-08-30 11:31:01.778 [INFO] [3390752] = 60 q=31.0 size=   21422kB time=00:08:47.80 bitrate= 332.5kbits/s speed=0.998x    frame=31694 fps= 60 q=31.0 size=   21534kB 
+2024-08-30 11:31:02.285 [INFO] [3390752] time=00:08:48.31 bitrate= 333.9kbits/s speed=0.998x    frame=31724 fps= 60 q=31.0 size=   21534kB time=00:08:48.82 bitrate= 33
+2024-08-30 11:31:02.786 [INFO] [3390752] 3.6kbits/s speed=0.998x    frame=31755 fps= 60 q=31.0 size=   21534kB time=00:08:49.32 bitrate= 333.3kbits/s speed=0.998x    
+2024-08-30 11:31:03.795 [INFO] [3390752] frame=31785 fps= 60 q=31.0 size=   21534kB time=00:08:49.83 bitrate= 332.9kbits/s speed=0.998x    frame=31815 fps= 60 q=31.0 s
+2024-08-30 11:31:04.301 [INFO] [3390752] ize=   21534kB time=00:08:50.32 bitrate= 332.6kbits/s speed=0.998x    frame=31845 fps= 60 q=31.0 size=   21534kB time=00:08:50
+2024-08-30 11:31:04.800 [INFO] [3390752] .83 bitrate= 332.3kbits/s speed=0.998x    frame=31875 fps= 60 q=31.0 size=   21534kB time=00:08:51.35 bitrate= 332.0kbits/s sp
+2024-08-30 11:31:05.810 [INFO] [3390752] eed=0.998x    frame=31906 fps= 60 q=31.0 size=   21534kB time=00:08:51.86 bitrate= 331.7kbits/s speed=0.998x    frame=31936 f
+2024-08-30 11:31:06.312 [INFO] [3390752] ps= 60 q=31.0 size=   21648kB time=00:08:52.37 bitrate= 333.1kbits/s speed=0.998x    frame=31966 fps= 60 q=31.0 size=   21648k
+2024-08-30 11:31:06.817 [INFO] [3390752] B time=00:08:52.84 bitrate= 332.8kbits/s speed=0.998x    frame=31996 fps= 60 q=31.0 size=   21648kB time=00:08:53.37 bitrate= 
+2024-08-30 11:31:07.318 [INFO] [3390752] 332.5kbits/s speed=0.998x    frame=32026 fps= 60 q=31.0 size=   21648kB time=00:08:53.84 bitrate= 332.2kbits/s speed=0.998x   
+2024-08-30 11:31:08.328 [INFO] [3390752]  frame=32057 fps= 60 q=31.0 size=   21648kB time=00:08:54.35 bitrate= 331.9kbits/s speed=0.998x    frame=32087 fps= 60 q=31.0
+2024-08-30 11:31:08.834 [INFO] [3390752]  size=   21648kB time=00:08:54.87 bitrate= 331.6kbits/s speed=0.998x    frame=32117 fps= 60 q=31.0 size=   21648kB time=00:08:
+2024-08-30 11:31:09.337 [INFO] [3390752] 55.37 bitrate= 331.2kbits/s speed=0.998x    frame=32148 fps= 60 q=31.0 size=   21648kB time=00:08:55.87 bitrate= 330.9kbits/s 
+2024-08-30 11:31:10.345 [INFO] [3390752] speed=0.998x    frame=32178 fps= 60 q=31.0 size=   21763kB time=00:08:56.38 bitrate= 332.4kbits/s speed=0.998x    frame=32208
+2024-08-30 11:31:10.844 [INFO] [3390752]  fps= 60 q=31.0 size=   21763kB time=00:08:56.87 bitrate= 332.1kbits/s speed=0.998x    frame=32238 fps= 60 q=31.0 size=   2176
+2024-08-30 11:31:11.353 [INFO] [3390752] 3kB time=00:08:57.38 bitrate= 331.8kbits/s speed=0.998x    frame=32268 fps= 60 q=31.0 size=   21763kB time=00:08:57.89 bitrate
+2024-08-30 11:31:11.861 [INFO] [3390752] = 331.4kbits/s speed=0.998x    frame=32299 fps= 60 q=31.0 size=   21763kB time=00:08:58.39 bitrate= 331.1kbits/s speed=0.998x 
+2024-08-30 11:31:12.860 [INFO] [3390752]    frame=32329 fps= 60 q=31.0 size=   21763kB time=00:08:58.92 bitrate= 330.8kbits/s speed=0.998x    frame=32359 fps= 60 q=31
+2024-08-30 11:31:13.369 [INFO] [3390752] .0 size=   21763kB time=00:08:59.39 bitrate= 330.5kbits/s speed=0.998x    frame=32389 fps= 60 q=31.0 size=   21763kB time=00:0
+2024-08-30 11:31:13.896 [INFO] [3390752] 8:59.90 bitrate= 330.2kbits/s speed=0.998x    frame=32419 fps= 60 q=31.0 size=   21763kB time=00:09:00.39 bitrate= 329.9kbits/
+2024-08-30 11:31:14.872 [INFO] [3390752] s speed=0.998x    frame=32449 fps= 60 q=31.0 size=   21877kB time=00:09:00.90 bitrate= 331.3kbits/s speed=0.998x    frame=324
+2024-08-30 11:31:15.375 [INFO] [3390752] 80 fps= 60 q=31.0 size=   21877kB time=00:09:01.43 bitrate= 331.0kbits/s speed=0.998x    frame=32510 fps= 60 q=31.0 size=   21
+2024-08-30 11:31:15.876 [INFO] [3390752] 877kB time=00:09:01.91 bitrate= 330.7kbits/s speed=0.998x    frame=32540 fps= 60 q=31.0 size=   21877kB time=00:09:02.42 bitra
+2024-08-30 11:31:16.381 [INFO] [3390752] te= 330.4kbits/s speed=0.998x    frame=32570 fps= 60 q=31.0 size=   21877kB time=00:09:02.91 bitrate= 330.1kbits/s speed=0.998
+2024-08-30 11:31:17.387 [INFO] [3390752] x    frame=32600 fps= 60 q=31.0 size=   21877kB time=00:09:03.42 bitrate= 329.8kbits/s speed=0.998x    frame=32630 fps= 60 q=
+2024-08-30 11:31:17.888 [INFO] [3390752] 31.0 size=   21877kB time=00:09:03.93 bitrate= 329.5kbits/s speed=0.998x    frame=32661 fps= 60 q=31.0 size=   21877kB time=00
+2024-08-30 11:31:18.401 [INFO] [3390752] :09:04.42 bitrate= 329.2kbits/s speed=0.998x    frame=32691 fps= 60 q=31.0 size=   21990kB time=00:09:04.93 bitrate= 330.6kbit
+2024-08-30 11:31:19.405 [INFO] [3390752] s/s speed=0.998x    frame=32721 fps= 60 q=31.0 size=   21990kB time=00:09:05.42 bitrate= 330.3kbits/s speed=0.998x    frame=3
+2024-08-30 11:31:19.903 [INFO] [3390752] 2752 fps= 60 q=31.0 size=   21990kB time=00:09:05.94 bitrate= 330.0kbits/s speed=0.998x    frame=32781 fps= 60 q=31.0 size=   
+2024-08-30 11:31:20.408 [INFO] [3390752] 21990kB time=00:09:06.45 bitrate= 329.7kbits/s speed=0.998x    frame=32812 fps= 60 q=31.0 size=   21990kB time=00:09:06.94 bit
+2024-08-30 11:31:20.911 [INFO] [3390752] rate= 329.4kbits/s speed=0.998x    frame=32842 fps= 60 q=31.0 size=   21990kB time=00:09:07.45 bitrate= 329.0kbits/s speed=0.9
+2024-08-30 11:31:21.920 [INFO] [3390752] 98x    frame=32872 fps= 60 q=31.0 size=   21990kB time=00:09:07.96 bitrate= 328.7kbits/s speed=0.998x    frame=32902 fps= 60 
+2024-08-30 11:31:22.425 [INFO] [3390752] q=31.0 size=   21990kB time=00:09:08.45 bitrate= 328.4kbits/s speed=0.998x    frame=32933 fps= 60 q=31.0 size=   22102kB time=
+2024-08-30 11:31:22.934 [INFO] [3390752] 00:09:08.97 bitrate= 329.8kbits/s speed=0.998x    frame=32963 fps= 60 q=31.0 size=   22102kB time=00:09:09.46 bitrate= 329.5kb
+2024-08-30 11:31:23.951 [INFO] [3390752] its/s speed=0.998x    frame=32994 fps= 60 q=31.0 size=   22102kB time=00:09:09.97 bitrate= 329.2kbits/s speed=0.998x    frame
+2024-08-30 11:31:24.453 [INFO] [3390752] =33024 fps= 60 q=31.0 size=   22102kB time=00:09:10.50 bitrate= 328.9kbits/s speed=0.998x    frame=33055 fps= 60 q=31.0 size= 
+2024-08-30 11:31:24.964 [INFO] [3390752]   22102kB time=00:09:10.99 bitrate= 328.6kbits/s speed=0.998x    frame=33085 fps= 60 q=31.0 size=   22102kB time=00:09:11.51 b
+2024-08-30 11:31:25.461 [INFO] [3390752] itrate= 328.3kbits/s speed=0.998x    frame=33115 fps= 60 q=31.0 size=   22102kB time=00:09:11.99 bitrate= 328.0kbits/s speed=0
+2024-08-30 11:31:26.469 [INFO] [3390752] .998x    frame=33145 fps= 60 q=31.0 size=   22102kB time=00:09:12.48 bitrate= 327.7kbits/s speed=0.998x    frame=33175 fps= 6
+2024-08-30 11:31:26.978 [INFO] [3390752] 0 q=31.0 size=   22102kB time=00:09:13.02 bitrate= 327.4kbits/s speed=0.998x    frame=33206 fps= 60 q=31.0 size=   22215kB tim
+2024-08-30 11:31:27.476 [INFO] [3390752] e=00:09:13.51 bitrate= 328.8kbits/s speed=0.998x    frame=33236 fps= 60 q=31.0 size=   22215kB time=00:09:14.00 bitrate= 328.5
+2024-08-30 11:31:28.483 [INFO] [3390752] kbits/s speed=0.998x    frame=33266 fps= 60 q=31.0 size=   22215kB time=00:09:14.51 bitrate= 328.2kbits/s speed=0.998x    fra
+2024-08-30 11:31:28.984 [INFO] [3390752] me=33296 fps= 60 q=31.0 size=   22215kB time=00:09:15.03 bitrate= 327.9kbits/s speed=0.998x    frame=33326 fps= 60 q=31.0 size
+2024-08-30 11:31:29.484 [INFO] [3390752] =   22215kB time=00:09:15.52 bitrate= 327.6kbits/s speed=0.998x    frame=33356 fps= 60 q=31.0 size=   22215kB time=00:09:16.01
+2024-08-30 11:31:29.993 [INFO] [3390752]  bitrate= 327.3kbits/s speed=0.998x    frame=33387 fps= 60 q=31.0 size=   22215kB time=00:09:16.52 bitrate= 327.0kbits/s speed
+2024-08-30 11:31:30.675 [INFO] [3205271] REPROSTIM-METADATA-JSON: {"cap_isotime_start":"2024-08-30T11:22:12.442467","cap_isotime_stop":"2024-08-30T11:31:30.674987","cap_ts_start":"2024.08.30-11.22.12.442","cap_ts_stop":"2024.08.30-11.31.30.674","json_isotime":"2024-08-30T11:31:30.675022","json_ts":"2024.08.30-11.31.30.675","message":":\tWhack resolution: 1074059228x790536. Stopped recording","type":"capture_stop"} :REPROSTIM-METADATA-JSON
+2024-08-30 11:31:30.675 [INFO] [3205271] stop record says: terminating ffmpeg with SIGINT
+2024-08-30 11:31:30.688 [INFO] [3205271] ffmpeg pid: 3390754
+
+2024-08-30 11:31:30.688 [INFO] [3205271] <> PID of ffmpeg	===> 3390754
+
+2024-08-30 11:31:30.996 [INFO] [3390752] =0.998x    frame=33417 fps= 60 q=31.0 size=   22215kB time=00:09:17.03 bitrate= 326.7kbits/s speed=0.998x    frame=33422 fps=
+2024-08-30 11:31:30.996 [INFO] [3390752]  60 q=-1.0 Lsize=   22356kB time=00:09:17.93 bitrate= 328.2kbits/s speed=0.999x    
+
+2024-08-30 11:31:30.996 [INFO] [3390752] video:13227kB audio:8726kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: 1.834721%
+
+2024-08-30 11:31:30.997 [INFO] [3390752] [libx264 @ 0x559595adfbc0] frame I:137   Avg QP:19.66  size: 18533
+
+2024-08-30 11:31:30.997 [INFO] [3390752] [libx264 @ 0x559595adfbc0] frame P:8532  Avg QP:22.93  size:   642
+
+2024-08-30 11:31:30.997 [INFO] [3390752] [libx264 @ 0x559595adfbc0] frame B:24753 Avg QP:23.18  size:   223
+
+2024-08-30 11:31:30.997 [INFO] [3390752] [libx264 @ 0x559595adfbc0] consecutive B-frames:  1.0%  0.7%  0.4% 98.0%
+
+2024-08-30 11:31:30.997 [INFO] [3390752] [libx264 @ 0x559595adfbc0] mb I  I16..4: 27.1% 70.1%  2.9%
+
+2024-08-30 11:31:30.997 [INFO] [3390752] [libx264 @ 0x559595adfbc0] mb P  I16..4:  0.1%  0.0%  0.0%  P16..4:  5.2%  0.0%  0.3%  0.0%  0.0%    skip:94.3%
+
+2024-08-30 11:31:30.997 [INFO] [3390752] [libx264 @ 0x559595adfbc0] mb B  I16..4:  0.0%  0.0%  0.0%  B16..8:  1.9%  0.0%  0.0%  direct: 0.0%  skip:98.1%  L0:39.7% L1:60
+2024-08-30 11:31:30.997 [INFO] [3390752] .3% BI: 0.0%
+
+2024-08-30 11:31:30.997 [INFO] [3390752] [libx264 @ 0x559595adfbc0] 8x8 transform intra:65.0% inter:79.6%
+
+2024-08-30 11:31:30.997 [INFO] [3390752] [libx264 @ 0x559595adfbc0] coded y,uvDC,uvAC intra: 13.7% 21.5% 2.5% inter: 0.0% 1.6% 0.0%
+
+2024-08-30 11:31:30.997 [INFO] [3390752] [libx264 @ 0x559595adfbc0] i16 v,h,dc,p: 68% 23%  3%  6%
+
+2024-08-30 11:31:30.997 [INFO] [3390752] [libx264 @ 0x559595adfbc0] i8 v,h,dc,ddl,ddr,vr,hd,vl,hu: 57%  8% 33%  1%  0%  0%  0%  0%  1%
+
+2024-08-30 11:31:30.997 [INFO] [3390752] [libx264 @ 0x559595adfbc0] i4 v,h,dc,ddl,ddr,vr,hd,vl,hu: 38% 25% 13%  3%  4%  4%  4%  3%  4%
+
+2024-08-30 11:31:30.997 [INFO] [3390752] [libx264 @ 0x559595adfbc0] i8c dc,h,v,p: 77% 10% 12%  1%
+
+2024-08-30 11:31:30.997 [INFO] [3390752] [libx264 @ 0x559595adfbc0] Weighted P-Frames: Y:0.0% UV:0.0%
+
+2024-08-30 11:31:30.997 [INFO] [3390752] [libx264 @ 0x559595adfbc0] ref P L0: 78.1%  0.5% 16.9%  4.4%  0.0%
+
+2024-08-30 11:31:30.997 [INFO] [3390752] [libx264 @ 0x559595adfbc0] ref B L0: 91.0%  8.7%  0.2%
+
+2024-08-30 11:31:30.997 [INFO] [3390752] [libx264 @ 0x559595adfbc0] ref B L1: 99.4%  0.6%
+
+2024-08-30 11:31:30.997 [INFO] [3390752] [libx264 @ 0x559595adfbc0] kb/s:194.19
+
+2024-08-30 11:31:31.000 [INFO] [3390752] [aac @ 0x559595ae1280] Qavg: 1015.631
+
+2024-08-30 11:31:31.028 [INFO] [3390752] Exiting normally, received signal 2.
+
+2024-08-30 11:31:31.036 [INFO] [3390752] :	Ffmpeg thread terminated. Saving video /data/reprostim/Videos/2024/08/2024.08.30-11.22.12.442--2024.08.30-11.31.31.036.mkv
+2024-08-30 11:31:31.037 [INFO] [3390752] REPROSTIM-METADATA-JSON: {"cap_isotime_start":"2024-08-30T11:22:12.442467","cap_ts_start":"2024.08.30-11.22.12.442","json_isotime":"2024-08-30T11:31:31.036850","json_ts":"2024.08.30-11.31.31.036","message":"ffmpeg thread terminated","type":"session_end"} :REPROSTIM-METADATA-JSON
+2024-08-30 11:31:31.037 [INFO] [3390752] Session logging end: session_logger_2024.08.30-11.22.12.442
