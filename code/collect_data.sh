@@ -19,7 +19,7 @@ cd "ses-$mdate"
 mkdir -p {DICOMS,birch,psychopy,reproevents,reprostim-videos}
 
 rsync -a bids@rolando.cns.dartmouth.edu:/inbox/DICOM/$Y/$M/$D/birchtest*/* DICOMS/
-rsync -a /home/yoh/proj/repronim/reprostim/Examples/exp-alpha/code/{${mdate}*log,qr_code_flips.py} psychopy/
+rsync -a /home/yoh/proj/repronim/reprostim/{${mdate}*log,tools/reprostim-timesync-stimuli} psychopy/
 ssh birch "grep -h '\<${ISODATE}T' /mnt/td/*" >| birch/out.jsonl
 if [ ! -s "birch/out.jsonl" ]; then
     echo "ERROR: nothing from birch!"
