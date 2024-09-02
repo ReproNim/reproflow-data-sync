@@ -1,0 +1,1209 @@
+dump_marks.py tool
+Started on    : 2024-09-02 15:04:28.921591, vmelnik@Uranus
+Working dir   : /Users/vmelnik/Projects/Dartmouth/branches/reproflow-data-sync/code
+Session path  : /Users/vmelnik/Projects/Dartmouth/branches/typhon/reproflow-data-sync/ses-20240830
+Session ID    : ses-20240830
+Skip event object, type is not DicomsRecord: study-000001
+Skip event object, type is not DicomsRecord: series-000001
+Skip event object, type is not DicomsRecord: series-000002
+Skip event object, type is not DicomsRecord: series-000003
+Skip event object, type is not DicomsRecord: series-000004
+Skip event object, type is not DicomsRecord: series-000005
+Skip event object, type is not DicomsRecord: series-000006
+Skip event object, type is not DicomsRecord: series-000007
+Skip event object, type is not DicomsRecord: series-000008
+Skip event object, type is not DicomsRecord: series-000009
+Skip event object, type is not DicomsRecord: series-000010
+Skip event object, type is not DicomsRecord: series-000011
+Skip event object, type is not DicomsRecord: series-000012
+Skip event object, type is not DicomsRecord: series-000013
+Skip event object, type is not DicomsRecord: series-000014
+Skip birch series (too small=1): ['birch-000001']
+Skip birch series (too small=1): ['birch-000002']
+Skip birch series (too small=1): ['birch-000003']
+Skip birch series (too small=1): ['birch-000004']
+Skip birch series (too small=1): ['birch-000005']
+Skip birch series (too small=1): ['birch-000006']
+Skip birch series (too small=1): ['birch-000007']
+Skip birch series (too small=1): ['birch-000008']
+Skip birch series (too small=1): ['birch-000009']
+Skip birch series (too small=1): ['birch-000010']
+Skip birch series (too small=1): ['birch-000011']
+Skip birch series (too small=1): ['birch-000012']
+Skip birch series (too small=1): ['birch-000013']
+Skip birch series (too small=1): ['birch-000014']
+Skip birch series (too small=1): ['birch-000015']
+Skip birch series (too small=1): ['birch-000016']
+Skip birch series (too small=1): ['birch-000017']
+Skip birch series (too small=1): ['birch-000018']
+Skip birch series (too small=1): ['birch-000019']
+Skip birch series (too small=1): ['birch-000020']
+Skip birch series (too small=1): ['birch-000021']
+Skip birch series (too small=1): ['birch-000037']
+Skip birch series (too small=1): ['birch-000068']
+Skip birch series (too small=1): ['birch-000069']
+Skip birch series (too small=1): ['birch-000070']
+Skip birch series (too small=1): ['birch-000086']
+Skip birch series (too small=1): ['birch-000237']
+Swimlane: dicoms
+  Found 10 dicoms series
+  Series: 005-func-bold_task-rest_acq-short1_run-01, count: 15, interval: 2.0, next_series_interval: 135.7575, ids: dicoms-000140..dicoms-000154, time: 11:35:22--11:35:50
+  Series: 006-func-bold_task-rest_acq-short1_run-02, count: 15, interval: 2.0, next_series_interval: 86.01, ids: dicoms-000155..dicoms-000169, time: 11:37:38--11:38:06
+  Series: 007-func-bold_task-rest_acq-short1_run-03, count: 15, interval: 2.0, next_series_interval: 221.0025, ids: dicoms-000170..dicoms-000184, time: 11:39:04--11:39:32
+  Series: 008-func-bold_task-rest_acq-short1_run-04, count: 15, interval: 2.0, next_series_interval: 101.025, ids: dicoms-000185..dicoms-000199, time: 11:42:45--11:43:13
+  Series: 009-func-bold_task-rest_acq-med1_run-01, count: 150, interval: 2.0, next_series_interval: 474.99, ids: dicoms-000200..dicoms-000349, time: 11:44:26--11:49:24
+  Series: 010-func-bold_task-rest_acq-short2_run-01, count: 15, interval: 2.0, next_series_interval: 39.02, ids: dicoms-000350..dicoms-000364, time: 11:52:21--11:52:49
+  Series: 011-func-bold_task-rest_acq-short2_run-02, count: 15, interval: 2.0, next_series_interval: 38.9775, ids: dicoms-000365..dicoms-000379, time: 11:53:00--11:53:28
+  Series: 012-func-bold_task-rest_acq-short2_run-03, count: 15, interval: 2.0, next_series_interval: 38.9825, ids: dicoms-000380..dicoms-000394, time: 11:53:39--11:54:07
+  Series: 013-func-bold_task-rest_acq-short2_run-04, count: 15, interval: 2.0, next_series_interval: 38.01, ids: dicoms-000395..dicoms-000409, time: 11:54:18--11:54:46
+  Series: 014-func-bold_task-rest_acq-short2_run-05, count: 15, interval: 2.0, next_series_interval: 0.0, ids: dicoms-000410..dicoms-000424, time: 11:54:56--11:55:24
+Swimlane: birch
+  Found 5 birch series
+  Series: birch-series-1, count: 15, interval: 2.0010090714285713, next_series_interval: 135.937274, ids: birch-000022..birch-000036, time: 11:35:49--11:36:17
+  Series: birch-series-2, count: 15, interval: 1.9996029285714285, next_series_interval: 86.185922, ids: birch-000038..birch-000052, time: 11:38:05--11:38:33
+  Series: birch-series-3, count: 15, interval: 1.9978359285714284, next_series_interval: 221.434687, ids: birch-000053..birch-000067, time: 11:39:31--11:39:59
+  Series: birch-series-4, count: 15, interval: 1.9999263571428572, next_series_interval: 100.961133, ids: birch-000071..birch-000085, time: 11:43:13--11:43:41
+  Series: birch-series-5, count: 150, interval: 2.000057187919463, next_series_interval: 0, ids: birch-000087..birch-000236, time: 11:44:53--11:49:51
+Swimlane: qrinfo
+  Found 0 qrinfo series
+Swimlane: psychopy
+  Found 2 psychopy series
+  Series: psychopy-series-1, count: 15, interval: 1.999896142857143, next_series_interval: 100.958108, ids: psychopy-000001..psychopy-000015, time: 11:43:13--11:43:41
+  Series: psychopy-series-2, count: 150, interval: 1.9999846375838926, next_series_interval: 0, ids: psychopy-000016..psychopy-000165, time: 11:44:53--11:49:51
+Swimlane: reproevents
+  Found 0 reproevents series
+dicoms.005-func-bold_task-rest_acq-short1_run-01 : ['dicoms-000140', 'dicoms-000141', 'dicoms-000142', 'dicoms-000143', 'dicoms-000144', 'dicoms-000145', 'dicoms-000146', 'dicoms-000147', 'dicoms-000148', 'dicoms-000149', 'dicoms-000150', 'dicoms-000151', 'dicoms-000152', 'dicoms-000153', 'dicoms-000154']
+dicoms.006-func-bold_task-rest_acq-short1_run-02 : ['dicoms-000155', 'dicoms-000156', 'dicoms-000157', 'dicoms-000158', 'dicoms-000159', 'dicoms-000160', 'dicoms-000161', 'dicoms-000162', 'dicoms-000163', 'dicoms-000164', 'dicoms-000165', 'dicoms-000166', 'dicoms-000167', 'dicoms-000168', 'dicoms-000169']
+dicoms.007-func-bold_task-rest_acq-short1_run-03 : ['dicoms-000170', 'dicoms-000171', 'dicoms-000172', 'dicoms-000173', 'dicoms-000174', 'dicoms-000175', 'dicoms-000176', 'dicoms-000177', 'dicoms-000178', 'dicoms-000179', 'dicoms-000180', 'dicoms-000181', 'dicoms-000182', 'dicoms-000183', 'dicoms-000184']
+dicoms.008-func-bold_task-rest_acq-short1_run-04 : ['dicoms-000185', 'dicoms-000186', 'dicoms-000187', 'dicoms-000188', 'dicoms-000189', 'dicoms-000190', 'dicoms-000191', 'dicoms-000192', 'dicoms-000193', 'dicoms-000194', 'dicoms-000195', 'dicoms-000196', 'dicoms-000197', 'dicoms-000198', 'dicoms-000199']
+dicoms.009-func-bold_task-rest_acq-med1_run-01 : ['dicoms-000200', 'dicoms-000201', 'dicoms-000202', 'dicoms-000203', 'dicoms-000204', 'dicoms-000205', 'dicoms-000206', 'dicoms-000207', 'dicoms-000208', 'dicoms-000209', 'dicoms-000210', 'dicoms-000211', 'dicoms-000212', 'dicoms-000213', 'dicoms-000214', 'dicoms-000215', 'dicoms-000216', 'dicoms-000217', 'dicoms-000218', 'dicoms-000219', 'dicoms-000220', 'dicoms-000221', 'dicoms-000222', 'dicoms-000223', 'dicoms-000224', 'dicoms-000225', 'dicoms-000226', 'dicoms-000227', 'dicoms-000228', 'dicoms-000229', 'dicoms-000230', 'dicoms-000231', 'dicoms-000232', 'dicoms-000233', 'dicoms-000234', 'dicoms-000235', 'dicoms-000236', 'dicoms-000237', 'dicoms-000238', 'dicoms-000239', 'dicoms-000240', 'dicoms-000241', 'dicoms-000242', 'dicoms-000243', 'dicoms-000244', 'dicoms-000245', 'dicoms-000246', 'dicoms-000247', 'dicoms-000248', 'dicoms-000249', 'dicoms-000250', 'dicoms-000251', 'dicoms-000252', 'dicoms-000253', 'dicoms-000254', 'dicoms-000255', 'dicoms-000256', 'dicoms-000257', 'dicoms-000258', 'dicoms-000259', 'dicoms-000260', 'dicoms-000261', 'dicoms-000262', 'dicoms-000263', 'dicoms-000264', 'dicoms-000265', 'dicoms-000266', 'dicoms-000267', 'dicoms-000268', 'dicoms-000269', 'dicoms-000270', 'dicoms-000271', 'dicoms-000272', 'dicoms-000273', 'dicoms-000274', 'dicoms-000275', 'dicoms-000276', 'dicoms-000277', 'dicoms-000278', 'dicoms-000279', 'dicoms-000280', 'dicoms-000281', 'dicoms-000282', 'dicoms-000283', 'dicoms-000284', 'dicoms-000285', 'dicoms-000286', 'dicoms-000287', 'dicoms-000288', 'dicoms-000289', 'dicoms-000290', 'dicoms-000291', 'dicoms-000292', 'dicoms-000293', 'dicoms-000294', 'dicoms-000295', 'dicoms-000296', 'dicoms-000297', 'dicoms-000298', 'dicoms-000299', 'dicoms-000300', 'dicoms-000301', 'dicoms-000302', 'dicoms-000303', 'dicoms-000304', 'dicoms-000305', 'dicoms-000306', 'dicoms-000307', 'dicoms-000308', 'dicoms-000309', 'dicoms-000310', 'dicoms-000311', 'dicoms-000312', 'dicoms-000313', 'dicoms-000314', 'dicoms-000315', 'dicoms-000316', 'dicoms-000317', 'dicoms-000318', 'dicoms-000319', 'dicoms-000320', 'dicoms-000321', 'dicoms-000322', 'dicoms-000323', 'dicoms-000324', 'dicoms-000325', 'dicoms-000326', 'dicoms-000327', 'dicoms-000328', 'dicoms-000329', 'dicoms-000330', 'dicoms-000331', 'dicoms-000332', 'dicoms-000333', 'dicoms-000334', 'dicoms-000335', 'dicoms-000336', 'dicoms-000337', 'dicoms-000338', 'dicoms-000339', 'dicoms-000340', 'dicoms-000341', 'dicoms-000342', 'dicoms-000343', 'dicoms-000344', 'dicoms-000345', 'dicoms-000346', 'dicoms-000347', 'dicoms-000348', 'dicoms-000349']
+dicoms.010-func-bold_task-rest_acq-short2_run-01 : ['dicoms-000350', 'dicoms-000351', 'dicoms-000352', 'dicoms-000353', 'dicoms-000354', 'dicoms-000355', 'dicoms-000356', 'dicoms-000357', 'dicoms-000358', 'dicoms-000359', 'dicoms-000360', 'dicoms-000361', 'dicoms-000362', 'dicoms-000363', 'dicoms-000364']
+dicoms.011-func-bold_task-rest_acq-short2_run-02 : ['dicoms-000365', 'dicoms-000366', 'dicoms-000367', 'dicoms-000368', 'dicoms-000369', 'dicoms-000370', 'dicoms-000371', 'dicoms-000372', 'dicoms-000373', 'dicoms-000374', 'dicoms-000375', 'dicoms-000376', 'dicoms-000377', 'dicoms-000378', 'dicoms-000379']
+dicoms.012-func-bold_task-rest_acq-short2_run-03 : ['dicoms-000380', 'dicoms-000381', 'dicoms-000382', 'dicoms-000383', 'dicoms-000384', 'dicoms-000385', 'dicoms-000386', 'dicoms-000387', 'dicoms-000388', 'dicoms-000389', 'dicoms-000390', 'dicoms-000391', 'dicoms-000392', 'dicoms-000393', 'dicoms-000394']
+dicoms.013-func-bold_task-rest_acq-short2_run-04 : ['dicoms-000395', 'dicoms-000396', 'dicoms-000397', 'dicoms-000398', 'dicoms-000399', 'dicoms-000400', 'dicoms-000401', 'dicoms-000402', 'dicoms-000403', 'dicoms-000404', 'dicoms-000405', 'dicoms-000406', 'dicoms-000407', 'dicoms-000408', 'dicoms-000409']
+dicoms.014-func-bold_task-rest_acq-short2_run-05 : ['dicoms-000410', 'dicoms-000411', 'dicoms-000412', 'dicoms-000413', 'dicoms-000414', 'dicoms-000415', 'dicoms-000416', 'dicoms-000417', 'dicoms-000418', 'dicoms-000419', 'dicoms-000420', 'dicoms-000421', 'dicoms-000422', 'dicoms-000423', 'dicoms-000424']
+birch.birch-series-1 : ['birch-000022', 'birch-000023', 'birch-000024', 'birch-000025', 'birch-000026', 'birch-000027', 'birch-000028', 'birch-000029', 'birch-000030', 'birch-000031', 'birch-000032', 'birch-000033', 'birch-000034', 'birch-000035', 'birch-000036']
+birch.birch-series-2 : ['birch-000038', 'birch-000039', 'birch-000040', 'birch-000041', 'birch-000042', 'birch-000043', 'birch-000044', 'birch-000045', 'birch-000046', 'birch-000047', 'birch-000048', 'birch-000049', 'birch-000050', 'birch-000051', 'birch-000052']
+birch.birch-series-3 : ['birch-000053', 'birch-000054', 'birch-000055', 'birch-000056', 'birch-000057', 'birch-000058', 'birch-000059', 'birch-000060', 'birch-000061', 'birch-000062', 'birch-000063', 'birch-000064', 'birch-000065', 'birch-000066', 'birch-000067']
+birch.birch-series-4 : ['birch-000071', 'birch-000072', 'birch-000073', 'birch-000074', 'birch-000075', 'birch-000076', 'birch-000077', 'birch-000078', 'birch-000079', 'birch-000080', 'birch-000081', 'birch-000082', 'birch-000083', 'birch-000084', 'birch-000085']
+birch.birch-series-5 : ['birch-000087', 'birch-000088', 'birch-000089', 'birch-000090', 'birch-000091', 'birch-000092', 'birch-000093', 'birch-000094', 'birch-000095', 'birch-000096', 'birch-000097', 'birch-000098', 'birch-000099', 'birch-000100', 'birch-000101', 'birch-000102', 'birch-000103', 'birch-000104', 'birch-000105', 'birch-000106', 'birch-000107', 'birch-000108', 'birch-000109', 'birch-000110', 'birch-000111', 'birch-000112', 'birch-000113', 'birch-000114', 'birch-000115', 'birch-000116', 'birch-000117', 'birch-000118', 'birch-000119', 'birch-000120', 'birch-000121', 'birch-000122', 'birch-000123', 'birch-000124', 'birch-000125', 'birch-000126', 'birch-000127', 'birch-000128', 'birch-000129', 'birch-000130', 'birch-000131', 'birch-000132', 'birch-000133', 'birch-000134', 'birch-000135', 'birch-000136', 'birch-000137', 'birch-000138', 'birch-000139', 'birch-000140', 'birch-000141', 'birch-000142', 'birch-000143', 'birch-000144', 'birch-000145', 'birch-000146', 'birch-000147', 'birch-000148', 'birch-000149', 'birch-000150', 'birch-000151', 'birch-000152', 'birch-000153', 'birch-000154', 'birch-000155', 'birch-000156', 'birch-000157', 'birch-000158', 'birch-000159', 'birch-000160', 'birch-000161', 'birch-000162', 'birch-000163', 'birch-000164', 'birch-000165', 'birch-000166', 'birch-000167', 'birch-000168', 'birch-000169', 'birch-000170', 'birch-000171', 'birch-000172', 'birch-000173', 'birch-000174', 'birch-000175', 'birch-000176', 'birch-000177', 'birch-000178', 'birch-000179', 'birch-000180', 'birch-000181', 'birch-000182', 'birch-000183', 'birch-000184', 'birch-000185', 'birch-000186', 'birch-000187', 'birch-000188', 'birch-000189', 'birch-000190', 'birch-000191', 'birch-000192', 'birch-000193', 'birch-000194', 'birch-000195', 'birch-000196', 'birch-000197', 'birch-000198', 'birch-000199', 'birch-000200', 'birch-000201', 'birch-000202', 'birch-000203', 'birch-000204', 'birch-000205', 'birch-000206', 'birch-000207', 'birch-000208', 'birch-000209', 'birch-000210', 'birch-000211', 'birch-000212', 'birch-000213', 'birch-000214', 'birch-000215', 'birch-000216', 'birch-000217', 'birch-000218', 'birch-000219', 'birch-000220', 'birch-000221', 'birch-000222', 'birch-000223', 'birch-000224', 'birch-000225', 'birch-000226', 'birch-000227', 'birch-000228', 'birch-000229', 'birch-000230', 'birch-000231', 'birch-000232', 'birch-000233', 'birch-000234', 'birch-000235', 'birch-000236']
+psychopy.psychopy-series-1 : ['psychopy-000001', 'psychopy-000002', 'psychopy-000003', 'psychopy-000004', 'psychopy-000005', 'psychopy-000006', 'psychopy-000007', 'psychopy-000008', 'psychopy-000009', 'psychopy-000010', 'psychopy-000011', 'psychopy-000012', 'psychopy-000013', 'psychopy-000014', 'psychopy-000015']
+psychopy.psychopy-series-2 : ['psychopy-000016', 'psychopy-000017', 'psychopy-000018', 'psychopy-000019', 'psychopy-000020', 'psychopy-000021', 'psychopy-000022', 'psychopy-000023', 'psychopy-000024', 'psychopy-000025', 'psychopy-000026', 'psychopy-000027', 'psychopy-000028', 'psychopy-000029', 'psychopy-000030', 'psychopy-000031', 'psychopy-000032', 'psychopy-000033', 'psychopy-000034', 'psychopy-000035', 'psychopy-000036', 'psychopy-000037', 'psychopy-000038', 'psychopy-000039', 'psychopy-000040', 'psychopy-000041', 'psychopy-000042', 'psychopy-000043', 'psychopy-000044', 'psychopy-000045', 'psychopy-000046', 'psychopy-000047', 'psychopy-000048', 'psychopy-000049', 'psychopy-000050', 'psychopy-000051', 'psychopy-000052', 'psychopy-000053', 'psychopy-000054', 'psychopy-000055', 'psychopy-000056', 'psychopy-000057', 'psychopy-000058', 'psychopy-000059', 'psychopy-000060', 'psychopy-000061', 'psychopy-000062', 'psychopy-000063', 'psychopy-000064', 'psychopy-000065', 'psychopy-000066', 'psychopy-000067', 'psychopy-000068', 'psychopy-000069', 'psychopy-000070', 'psychopy-000071', 'psychopy-000072', 'psychopy-000073', 'psychopy-000074', 'psychopy-000075', 'psychopy-000076', 'psychopy-000077', 'psychopy-000078', 'psychopy-000079', 'psychopy-000080', 'psychopy-000081', 'psychopy-000082', 'psychopy-000083', 'psychopy-000084', 'psychopy-000085', 'psychopy-000086', 'psychopy-000087', 'psychopy-000088', 'psychopy-000089', 'psychopy-000090', 'psychopy-000091', 'psychopy-000092', 'psychopy-000093', 'psychopy-000094', 'psychopy-000095', 'psychopy-000096', 'psychopy-000097', 'psychopy-000098', 'psychopy-000099', 'psychopy-000100', 'psychopy-000101', 'psychopy-000102', 'psychopy-000103', 'psychopy-000104', 'psychopy-000105', 'psychopy-000106', 'psychopy-000107', 'psychopy-000108', 'psychopy-000109', 'psychopy-000110', 'psychopy-000111', 'psychopy-000112', 'psychopy-000113', 'psychopy-000114', 'psychopy-000115', 'psychopy-000116', 'psychopy-000117', 'psychopy-000118', 'psychopy-000119', 'psychopy-000120', 'psychopy-000121', 'psychopy-000122', 'psychopy-000123', 'psychopy-000124', 'psychopy-000125', 'psychopy-000126', 'psychopy-000127', 'psychopy-000128', 'psychopy-000129', 'psychopy-000130', 'psychopy-000131', 'psychopy-000132', 'psychopy-000133', 'psychopy-000134', 'psychopy-000135', 'psychopy-000136', 'psychopy-000137', 'psychopy-000138', 'psychopy-000139', 'psychopy-000140', 'psychopy-000141', 'psychopy-000142', 'psychopy-000143', 'psychopy-000144', 'psychopy-000145', 'psychopy-000146', 'psychopy-000147', 'psychopy-000148', 'psychopy-000149', 'psychopy-000150', 'psychopy-000151', 'psychopy-000152', 'psychopy-000153', 'psychopy-000154', 'psychopy-000155', 'psychopy-000156', 'psychopy-000157', 'psychopy-000158', 'psychopy-000159', 'psychopy-000160', 'psychopy-000161', 'psychopy-000162', 'psychopy-000163', 'psychopy-000164', 'psychopy-000165']
+Matching: sd1=005-func-bold_task-rest_acq-short1_run-01 with sd2=birch-series-1
+ use k_min=0.95, k_max=1.05
+ mismatch_5: 2024-08-30 11:28:51.094213 / 2024-08-30 11:35:49.470111
+Matching: sd1=005-func-bold_task-rest_acq-short1_run-01 with sd2=birch-series-2
+ use k_min=0.95, k_max=1.05
+ mismatch_2: 135.7575 / 86.185922
+Matching: sd1=005-func-bold_task-rest_acq-short1_run-01 with sd2=birch-series-3
+ use k_min=0.95, k_max=1.05
+ mismatch_2: 135.7575 / 221.434687
+Matching: sd1=005-func-bold_task-rest_acq-short1_run-01 with sd2=birch-series-4
+ use k_min=0.95, k_max=1.05
+ mismatch_2: 135.7575 / 100.961133
+Matching: sd1=005-func-bold_task-rest_acq-short1_run-01 with sd2=birch-series-5
+ mismatch_7: 15 / 150
+Matching: sd1=005-func-bold_task-rest_acq-short1_run-01 with sd2=psychopy-series-1
+ use k_min=0.95, k_max=1.05
+ mismatch_2: 135.7575 / 100.958108
+Matching: sd1=005-func-bold_task-rest_acq-short1_run-01 with sd2=psychopy-series-2
+ mismatch_7: 15 / 150
+{"type":"MarkRecord","session_id":"ses-20240830","id":"mark-000001","kind":"Func series start","name":"005-func-bold_task-rest_acq-short1_run-01_start","target_ids":["dicoms-000140"],"dicoms_isotime":"2024-08-30T11:35:22.702500","dicoms_duration":28.0,"birch_isotime":null,"birch_duration":null,"qrinfo_isotime":null,"qrinfo_duration":null,"psychopy_isotime":null,"psychopy_duration":null,"reproevents_isotime":null,"reproevents_duration":null}
+{"type":"MarkRecord","session_id":"ses-20240830","id":"mark-000002","kind":"Func series scan","name":"005-func-bold_task-rest_acq-short1_run-01_scan-0","target_ids":["dicoms-000140"],"dicoms_isotime":"2024-08-30T11:35:22.702500","dicoms_duration":2.0,"birch_isotime":null,"birch_duration":null,"qrinfo_isotime":null,"qrinfo_duration":null,"psychopy_isotime":null,"psychopy_duration":null,"reproevents_isotime":null,"reproevents_duration":null}
+{"type":"MarkRecord","session_id":"ses-20240830","id":"mark-000003","kind":"Func series scan","name":"005-func-bold_task-rest_acq-short1_run-01_scan-1","target_ids":["dicoms-000141"],"dicoms_isotime":"2024-08-30T11:35:24.702500","dicoms_duration":2.0,"birch_isotime":null,"birch_duration":null,"qrinfo_isotime":null,"qrinfo_duration":null,"psychopy_isotime":null,"psychopy_duration":null,"reproevents_isotime":null,"reproevents_duration":null}
+{"type":"MarkRecord","session_id":"ses-20240830","id":"mark-000004","kind":"Func series scan","name":"005-func-bold_task-rest_acq-short1_run-01_scan-2","target_ids":["dicoms-000142"],"dicoms_isotime":"2024-08-30T11:35:26.702500","dicoms_duration":2.0,"birch_isotime":null,"birch_duration":null,"qrinfo_isotime":null,"qrinfo_duration":null,"psychopy_isotime":null,"psychopy_duration":null,"reproevents_isotime":null,"reproevents_duration":null}
+{"type":"MarkRecord","session_id":"ses-20240830","id":"mark-000005","kind":"Func series scan","name":"005-func-bold_task-rest_acq-short1_run-01_scan-3","target_ids":["dicoms-000143"],"dicoms_isotime":"2024-08-30T11:35:28.702500","dicoms_duration":2.0,"birch_isotime":null,"birch_duration":null,"qrinfo_isotime":null,"qrinfo_duration":null,"psychopy_isotime":null,"psychopy_duration":null,"reproevents_isotime":null,"reproevents_duration":null}
+{"type":"MarkRecord","session_id":"ses-20240830","id":"mark-000006","kind":"Func series scan","name":"005-func-bold_task-rest_acq-short1_run-01_scan-4","target_ids":["dicoms-000144"],"dicoms_isotime":"2024-08-30T11:35:30.702500","dicoms_duration":2.0,"birch_isotime":null,"birch_duration":null,"qrinfo_isotime":null,"qrinfo_duration":null,"psychopy_isotime":null,"psychopy_duration":null,"reproevents_isotime":null,"reproevents_duration":null}
+{"type":"MarkRecord","session_id":"ses-20240830","id":"mark-000007","kind":"Func series scan","name":"005-func-bold_task-rest_acq-short1_run-01_scan-5","target_ids":["dicoms-000145"],"dicoms_isotime":"2024-08-30T11:35:32.702500","dicoms_duration":2.0,"birch_isotime":null,"birch_duration":null,"qrinfo_isotime":null,"qrinfo_duration":null,"psychopy_isotime":null,"psychopy_duration":null,"reproevents_isotime":null,"reproevents_duration":null}
+{"type":"MarkRecord","session_id":"ses-20240830","id":"mark-000008","kind":"Func series scan","name":"005-func-bold_task-rest_acq-short1_run-01_scan-6","target_ids":["dicoms-000146"],"dicoms_isotime":"2024-08-30T11:35:34.702500","dicoms_duration":2.0,"birch_isotime":null,"birch_duration":null,"qrinfo_isotime":null,"qrinfo_duration":null,"psychopy_isotime":null,"psychopy_duration":null,"reproevents_isotime":null,"reproevents_duration":null}
+{"type":"MarkRecord","session_id":"ses-20240830","id":"mark-000009","kind":"Func series scan","name":"005-func-bold_task-rest_acq-short1_run-01_scan-7","target_ids":["dicoms-000147"],"dicoms_isotime":"2024-08-30T11:35:36.702500","dicoms_duration":2.0,"birch_isotime":null,"birch_duration":null,"qrinfo_isotime":null,"qrinfo_duration":null,"psychopy_isotime":null,"psychopy_duration":null,"reproevents_isotime":null,"reproevents_duration":null}
+{"type":"MarkRecord","session_id":"ses-20240830","id":"mark-000010","kind":"Func series scan","name":"005-func-bold_task-rest_acq-short1_run-01_scan-8","target_ids":["dicoms-000148"],"dicoms_isotime":"2024-08-30T11:35:38.702500","dicoms_duration":2.0,"birch_isotime":null,"birch_duration":null,"qrinfo_isotime":null,"qrinfo_duration":null,"psychopy_isotime":null,"psychopy_duration":null,"reproevents_isotime":null,"reproevents_duration":null}
+{"type":"MarkRecord","session_id":"ses-20240830","id":"mark-000011","kind":"Func series scan","name":"005-func-bold_task-rest_acq-short1_run-01_scan-9","target_ids":["dicoms-000149"],"dicoms_isotime":"2024-08-30T11:35:40.702500","dicoms_duration":2.0,"birch_isotime":null,"birch_duration":null,"qrinfo_isotime":null,"qrinfo_duration":null,"psychopy_isotime":null,"psychopy_duration":null,"reproevents_isotime":null,"reproevents_duration":null}
+{"type":"MarkRecord","session_id":"ses-20240830","id":"mark-000012","kind":"Func series scan","name":"005-func-bold_task-rest_acq-short1_run-01_scan-10","target_ids":["dicoms-000150"],"dicoms_isotime":"2024-08-30T11:35:42.702500","dicoms_duration":2.0,"birch_isotime":null,"birch_duration":null,"qrinfo_isotime":null,"qrinfo_duration":null,"psychopy_isotime":null,"psychopy_duration":null,"reproevents_isotime":null,"reproevents_duration":null}
+{"type":"MarkRecord","session_id":"ses-20240830","id":"mark-000013","kind":"Func series scan","name":"005-func-bold_task-rest_acq-short1_run-01_scan-11","target_ids":["dicoms-000151"],"dicoms_isotime":"2024-08-30T11:35:44.702500","dicoms_duration":2.0,"birch_isotime":null,"birch_duration":null,"qrinfo_isotime":null,"qrinfo_duration":null,"psychopy_isotime":null,"psychopy_duration":null,"reproevents_isotime":null,"reproevents_duration":null}
+{"type":"MarkRecord","session_id":"ses-20240830","id":"mark-000014","kind":"Func series scan","name":"005-func-bold_task-rest_acq-short1_run-01_scan-12","target_ids":["dicoms-000152"],"dicoms_isotime":"2024-08-30T11:35:46.702500","dicoms_duration":2.0,"birch_isotime":null,"birch_duration":null,"qrinfo_isotime":null,"qrinfo_duration":null,"psychopy_isotime":null,"psychopy_duration":null,"reproevents_isotime":null,"reproevents_duration":null}
+{"type":"MarkRecord","session_id":"ses-20240830","id":"mark-000015","kind":"Func series scan","name":"005-func-bold_task-rest_acq-short1_run-01_scan-13","target_ids":["dicoms-000153"],"dicoms_isotime":"2024-08-30T11:35:48.702500","dicoms_duration":2.0,"birch_isotime":null,"birch_duration":null,"qrinfo_isotime":null,"qrinfo_duration":null,"psychopy_isotime":null,"psychopy_duration":null,"reproevents_isotime":null,"reproevents_duration":null}
+{"type":"MarkRecord","session_id":"ses-20240830","id":"mark-000016","kind":"Func series scan","name":"005-func-bold_task-rest_acq-short1_run-01_scan-14","target_ids":["dicoms-000154"],"dicoms_isotime":"2024-08-30T11:35:50.702500","dicoms_duration":null,"birch_isotime":null,"birch_duration":null,"qrinfo_isotime":null,"qrinfo_duration":null,"psychopy_isotime":null,"psychopy_duration":null,"reproevents_isotime":null,"reproevents_duration":null}
+Mark: type='MarkRecord' session_id='ses-20240830' id='mark-000017' kind='Func series end' name='005-func-bold_task-rest_acq-short1_run-01_end' target_ids=['dicoms-000154'] dicoms_isotime=Timestamp('2024-08-30 11:35:50.702500') dicoms_duration=None birch_isotime=None birch_duration=None qrinfo_isotime=None qrinfo_duration=None psychopy_isotime=None psychopy_duration=None reproevents_isotime=None reproevents_duration=None
+{"type":"MarkRecord","session_id":"ses-20240830","id":"mark-000017","kind":"Func series end","name":"005-func-bold_task-rest_acq-short1_run-01_end","target_ids":["dicoms-000154"],"dicoms_isotime":"2024-08-30T11:35:50.702500","dicoms_duration":null,"birch_isotime":null,"birch_duration":null,"qrinfo_isotime":null,"qrinfo_duration":null,"psychopy_isotime":null,"psychopy_duration":null,"reproevents_isotime":null,"reproevents_duration":null}
+Matching: sd1=006-func-bold_task-rest_acq-short1_run-02 with sd2=birch-series-1
+ use k_min=0.95, k_max=1.05
+ mismatch_2: 86.01 / 135.937274
+Matching: sd1=006-func-bold_task-rest_acq-short1_run-02 with sd2=birch-series-2
+ use k_min=0.95, k_max=1.05
+ mismatch_5: 2024-08-30 11:31:06.851713 / 2024-08-30 11:38:05.407385
+Matching: sd1=006-func-bold_task-rest_acq-short1_run-02 with sd2=birch-series-3
+ use k_min=0.95, k_max=1.05
+ mismatch_2: 86.01 / 221.434687
+Matching: sd1=006-func-bold_task-rest_acq-short1_run-02 with sd2=birch-series-4
+ use k_min=0.95, k_max=1.05
+ mismatch_2: 86.01 / 100.961133
+Matching: sd1=006-func-bold_task-rest_acq-short1_run-02 with sd2=birch-series-5
+ mismatch_7: 15 / 150
+Matching: sd1=006-func-bold_task-rest_acq-short1_run-02 with sd2=psychopy-series-1
+ use k_min=0.95, k_max=1.05
+ mismatch_2: 86.01 / 100.958108
+Matching: sd1=006-func-bold_task-rest_acq-short1_run-02 with sd2=psychopy-series-2
+ mismatch_7: 15 / 150
+{"type":"MarkRecord","session_id":"ses-20240830","id":"mark-000018","kind":"Func series start","name":"006-func-bold_task-rest_acq-short1_run-02_start","target_ids":["dicoms-000155"],"dicoms_isotime":"2024-08-30T11:37:38.460000","dicoms_duration":28.0,"birch_isotime":null,"birch_duration":null,"qrinfo_isotime":null,"qrinfo_duration":null,"psychopy_isotime":null,"psychopy_duration":null,"reproevents_isotime":null,"reproevents_duration":null}
+{"type":"MarkRecord","session_id":"ses-20240830","id":"mark-000019","kind":"Func series scan","name":"006-func-bold_task-rest_acq-short1_run-02_scan-0","target_ids":["dicoms-000155"],"dicoms_isotime":"2024-08-30T11:37:38.460000","dicoms_duration":2.0,"birch_isotime":null,"birch_duration":null,"qrinfo_isotime":null,"qrinfo_duration":null,"psychopy_isotime":null,"psychopy_duration":null,"reproevents_isotime":null,"reproevents_duration":null}
+{"type":"MarkRecord","session_id":"ses-20240830","id":"mark-000020","kind":"Func series scan","name":"006-func-bold_task-rest_acq-short1_run-02_scan-1","target_ids":["dicoms-000156"],"dicoms_isotime":"2024-08-30T11:37:40.460000","dicoms_duration":2.0,"birch_isotime":null,"birch_duration":null,"qrinfo_isotime":null,"qrinfo_duration":null,"psychopy_isotime":null,"psychopy_duration":null,"reproevents_isotime":null,"reproevents_duration":null}
+{"type":"MarkRecord","session_id":"ses-20240830","id":"mark-000021","kind":"Func series scan","name":"006-func-bold_task-rest_acq-short1_run-02_scan-2","target_ids":["dicoms-000157"],"dicoms_isotime":"2024-08-30T11:37:42.460000","dicoms_duration":2.0,"birch_isotime":null,"birch_duration":null,"qrinfo_isotime":null,"qrinfo_duration":null,"psychopy_isotime":null,"psychopy_duration":null,"reproevents_isotime":null,"reproevents_duration":null}
+{"type":"MarkRecord","session_id":"ses-20240830","id":"mark-000022","kind":"Func series scan","name":"006-func-bold_task-rest_acq-short1_run-02_scan-3","target_ids":["dicoms-000158"],"dicoms_isotime":"2024-08-30T11:37:44.460000","dicoms_duration":2.0,"birch_isotime":null,"birch_duration":null,"qrinfo_isotime":null,"qrinfo_duration":null,"psychopy_isotime":null,"psychopy_duration":null,"reproevents_isotime":null,"reproevents_duration":null}
+{"type":"MarkRecord","session_id":"ses-20240830","id":"mark-000023","kind":"Func series scan","name":"006-func-bold_task-rest_acq-short1_run-02_scan-4","target_ids":["dicoms-000159"],"dicoms_isotime":"2024-08-30T11:37:46.460000","dicoms_duration":2.0,"birch_isotime":null,"birch_duration":null,"qrinfo_isotime":null,"qrinfo_duration":null,"psychopy_isotime":null,"psychopy_duration":null,"reproevents_isotime":null,"reproevents_duration":null}
+{"type":"MarkRecord","session_id":"ses-20240830","id":"mark-000024","kind":"Func series scan","name":"006-func-bold_task-rest_acq-short1_run-02_scan-5","target_ids":["dicoms-000160"],"dicoms_isotime":"2024-08-30T11:37:48.460000","dicoms_duration":2.0,"birch_isotime":null,"birch_duration":null,"qrinfo_isotime":null,"qrinfo_duration":null,"psychopy_isotime":null,"psychopy_duration":null,"reproevents_isotime":null,"reproevents_duration":null}
+{"type":"MarkRecord","session_id":"ses-20240830","id":"mark-000025","kind":"Func series scan","name":"006-func-bold_task-rest_acq-short1_run-02_scan-6","target_ids":["dicoms-000161"],"dicoms_isotime":"2024-08-30T11:37:50.460000","dicoms_duration":2.0,"birch_isotime":null,"birch_duration":null,"qrinfo_isotime":null,"qrinfo_duration":null,"psychopy_isotime":null,"psychopy_duration":null,"reproevents_isotime":null,"reproevents_duration":null}
+{"type":"MarkRecord","session_id":"ses-20240830","id":"mark-000026","kind":"Func series scan","name":"006-func-bold_task-rest_acq-short1_run-02_scan-7","target_ids":["dicoms-000162"],"dicoms_isotime":"2024-08-30T11:37:52.460000","dicoms_duration":2.0,"birch_isotime":null,"birch_duration":null,"qrinfo_isotime":null,"qrinfo_duration":null,"psychopy_isotime":null,"psychopy_duration":null,"reproevents_isotime":null,"reproevents_duration":null}
+{"type":"MarkRecord","session_id":"ses-20240830","id":"mark-000027","kind":"Func series scan","name":"006-func-bold_task-rest_acq-short1_run-02_scan-8","target_ids":["dicoms-000163"],"dicoms_isotime":"2024-08-30T11:37:54.460000","dicoms_duration":2.0,"birch_isotime":null,"birch_duration":null,"qrinfo_isotime":null,"qrinfo_duration":null,"psychopy_isotime":null,"psychopy_duration":null,"reproevents_isotime":null,"reproevents_duration":null}
+{"type":"MarkRecord","session_id":"ses-20240830","id":"mark-000028","kind":"Func series scan","name":"006-func-bold_task-rest_acq-short1_run-02_scan-9","target_ids":["dicoms-000164"],"dicoms_isotime":"2024-08-30T11:37:56.460000","dicoms_duration":2.0,"birch_isotime":null,"birch_duration":null,"qrinfo_isotime":null,"qrinfo_duration":null,"psychopy_isotime":null,"psychopy_duration":null,"reproevents_isotime":null,"reproevents_duration":null}
+{"type":"MarkRecord","session_id":"ses-20240830","id":"mark-000029","kind":"Func series scan","name":"006-func-bold_task-rest_acq-short1_run-02_scan-10","target_ids":["dicoms-000165"],"dicoms_isotime":"2024-08-30T11:37:58.460000","dicoms_duration":2.0,"birch_isotime":null,"birch_duration":null,"qrinfo_isotime":null,"qrinfo_duration":null,"psychopy_isotime":null,"psychopy_duration":null,"reproevents_isotime":null,"reproevents_duration":null}
+{"type":"MarkRecord","session_id":"ses-20240830","id":"mark-000030","kind":"Func series scan","name":"006-func-bold_task-rest_acq-short1_run-02_scan-11","target_ids":["dicoms-000166"],"dicoms_isotime":"2024-08-30T11:38:00.460000","dicoms_duration":2.0,"birch_isotime":null,"birch_duration":null,"qrinfo_isotime":null,"qrinfo_duration":null,"psychopy_isotime":null,"psychopy_duration":null,"reproevents_isotime":null,"reproevents_duration":null}
+{"type":"MarkRecord","session_id":"ses-20240830","id":"mark-000031","kind":"Func series scan","name":"006-func-bold_task-rest_acq-short1_run-02_scan-12","target_ids":["dicoms-000167"],"dicoms_isotime":"2024-08-30T11:38:02.460000","dicoms_duration":2.0,"birch_isotime":null,"birch_duration":null,"qrinfo_isotime":null,"qrinfo_duration":null,"psychopy_isotime":null,"psychopy_duration":null,"reproevents_isotime":null,"reproevents_duration":null}
+{"type":"MarkRecord","session_id":"ses-20240830","id":"mark-000032","kind":"Func series scan","name":"006-func-bold_task-rest_acq-short1_run-02_scan-13","target_ids":["dicoms-000168"],"dicoms_isotime":"2024-08-30T11:38:04.460000","dicoms_duration":2.0,"birch_isotime":null,"birch_duration":null,"qrinfo_isotime":null,"qrinfo_duration":null,"psychopy_isotime":null,"psychopy_duration":null,"reproevents_isotime":null,"reproevents_duration":null}
+{"type":"MarkRecord","session_id":"ses-20240830","id":"mark-000033","kind":"Func series scan","name":"006-func-bold_task-rest_acq-short1_run-02_scan-14","target_ids":["dicoms-000169"],"dicoms_isotime":"2024-08-30T11:38:06.460000","dicoms_duration":null,"birch_isotime":null,"birch_duration":null,"qrinfo_isotime":null,"qrinfo_duration":null,"psychopy_isotime":null,"psychopy_duration":null,"reproevents_isotime":null,"reproevents_duration":null}
+Mark: type='MarkRecord' session_id='ses-20240830' id='mark-000034' kind='Func series end' name='006-func-bold_task-rest_acq-short1_run-02_end' target_ids=['dicoms-000169'] dicoms_isotime=Timestamp('2024-08-30 11:38:06.460000') dicoms_duration=None birch_isotime=None birch_duration=None qrinfo_isotime=None qrinfo_duration=None psychopy_isotime=None psychopy_duration=None reproevents_isotime=None reproevents_duration=None
+{"type":"MarkRecord","session_id":"ses-20240830","id":"mark-000034","kind":"Func series end","name":"006-func-bold_task-rest_acq-short1_run-02_end","target_ids":["dicoms-000169"],"dicoms_isotime":"2024-08-30T11:38:06.460000","dicoms_duration":null,"birch_isotime":null,"birch_duration":null,"qrinfo_isotime":null,"qrinfo_duration":null,"psychopy_isotime":null,"psychopy_duration":null,"reproevents_isotime":null,"reproevents_duration":null}
+Matching: sd1=007-func-bold_task-rest_acq-short1_run-03 with sd2=birch-series-1
+ use k_min=0.95, k_max=1.05
+ mismatch_2: 221.0025 / 135.937274
+Matching: sd1=007-func-bold_task-rest_acq-short1_run-03 with sd2=birch-series-2
+ use k_min=0.95, k_max=1.05
+ mismatch_2: 221.0025 / 86.185922
+Matching: sd1=007-func-bold_task-rest_acq-short1_run-03 with sd2=birch-series-3
+ use k_min=0.95, k_max=1.05
+ mismatch_5: 2024-08-30 11:32:32.861713 / 2024-08-30 11:39:31.593307
+Matching: sd1=007-func-bold_task-rest_acq-short1_run-03 with sd2=birch-series-4
+ use k_min=0.95, k_max=1.05
+ mismatch_2: 221.0025 / 100.961133
+Matching: sd1=007-func-bold_task-rest_acq-short1_run-03 with sd2=birch-series-5
+ mismatch_7: 15 / 150
+Matching: sd1=007-func-bold_task-rest_acq-short1_run-03 with sd2=psychopy-series-1
+ use k_min=0.95, k_max=1.05
+ mismatch_2: 221.0025 / 100.958108
+Matching: sd1=007-func-bold_task-rest_acq-short1_run-03 with sd2=psychopy-series-2
+ mismatch_7: 15 / 150
+{"type":"MarkRecord","session_id":"ses-20240830","id":"mark-000035","kind":"Func series start","name":"007-func-bold_task-rest_acq-short1_run-03_start","target_ids":["dicoms-000170"],"dicoms_isotime":"2024-08-30T11:39:04.470000","dicoms_duration":28.0,"birch_isotime":null,"birch_duration":null,"qrinfo_isotime":null,"qrinfo_duration":null,"psychopy_isotime":null,"psychopy_duration":null,"reproevents_isotime":null,"reproevents_duration":null}
+{"type":"MarkRecord","session_id":"ses-20240830","id":"mark-000036","kind":"Func series scan","name":"007-func-bold_task-rest_acq-short1_run-03_scan-0","target_ids":["dicoms-000170"],"dicoms_isotime":"2024-08-30T11:39:04.470000","dicoms_duration":2.0,"birch_isotime":null,"birch_duration":null,"qrinfo_isotime":null,"qrinfo_duration":null,"psychopy_isotime":null,"psychopy_duration":null,"reproevents_isotime":null,"reproevents_duration":null}
+{"type":"MarkRecord","session_id":"ses-20240830","id":"mark-000037","kind":"Func series scan","name":"007-func-bold_task-rest_acq-short1_run-03_scan-1","target_ids":["dicoms-000171"],"dicoms_isotime":"2024-08-30T11:39:06.470000","dicoms_duration":2.0,"birch_isotime":null,"birch_duration":null,"qrinfo_isotime":null,"qrinfo_duration":null,"psychopy_isotime":null,"psychopy_duration":null,"reproevents_isotime":null,"reproevents_duration":null}
+{"type":"MarkRecord","session_id":"ses-20240830","id":"mark-000038","kind":"Func series scan","name":"007-func-bold_task-rest_acq-short1_run-03_scan-2","target_ids":["dicoms-000172"],"dicoms_isotime":"2024-08-30T11:39:08.470000","dicoms_duration":2.0,"birch_isotime":null,"birch_duration":null,"qrinfo_isotime":null,"qrinfo_duration":null,"psychopy_isotime":null,"psychopy_duration":null,"reproevents_isotime":null,"reproevents_duration":null}
+{"type":"MarkRecord","session_id":"ses-20240830","id":"mark-000039","kind":"Func series scan","name":"007-func-bold_task-rest_acq-short1_run-03_scan-3","target_ids":["dicoms-000173"],"dicoms_isotime":"2024-08-30T11:39:10.470000","dicoms_duration":2.0,"birch_isotime":null,"birch_duration":null,"qrinfo_isotime":null,"qrinfo_duration":null,"psychopy_isotime":null,"psychopy_duration":null,"reproevents_isotime":null,"reproevents_duration":null}
+{"type":"MarkRecord","session_id":"ses-20240830","id":"mark-000040","kind":"Func series scan","name":"007-func-bold_task-rest_acq-short1_run-03_scan-4","target_ids":["dicoms-000174"],"dicoms_isotime":"2024-08-30T11:39:12.470000","dicoms_duration":2.0,"birch_isotime":null,"birch_duration":null,"qrinfo_isotime":null,"qrinfo_duration":null,"psychopy_isotime":null,"psychopy_duration":null,"reproevents_isotime":null,"reproevents_duration":null}
+{"type":"MarkRecord","session_id":"ses-20240830","id":"mark-000041","kind":"Func series scan","name":"007-func-bold_task-rest_acq-short1_run-03_scan-5","target_ids":["dicoms-000175"],"dicoms_isotime":"2024-08-30T11:39:14.470000","dicoms_duration":2.0,"birch_isotime":null,"birch_duration":null,"qrinfo_isotime":null,"qrinfo_duration":null,"psychopy_isotime":null,"psychopy_duration":null,"reproevents_isotime":null,"reproevents_duration":null}
+{"type":"MarkRecord","session_id":"ses-20240830","id":"mark-000042","kind":"Func series scan","name":"007-func-bold_task-rest_acq-short1_run-03_scan-6","target_ids":["dicoms-000176"],"dicoms_isotime":"2024-08-30T11:39:16.470000","dicoms_duration":2.0,"birch_isotime":null,"birch_duration":null,"qrinfo_isotime":null,"qrinfo_duration":null,"psychopy_isotime":null,"psychopy_duration":null,"reproevents_isotime":null,"reproevents_duration":null}
+{"type":"MarkRecord","session_id":"ses-20240830","id":"mark-000043","kind":"Func series scan","name":"007-func-bold_task-rest_acq-short1_run-03_scan-7","target_ids":["dicoms-000177"],"dicoms_isotime":"2024-08-30T11:39:18.470000","dicoms_duration":2.0,"birch_isotime":null,"birch_duration":null,"qrinfo_isotime":null,"qrinfo_duration":null,"psychopy_isotime":null,"psychopy_duration":null,"reproevents_isotime":null,"reproevents_duration":null}
+{"type":"MarkRecord","session_id":"ses-20240830","id":"mark-000044","kind":"Func series scan","name":"007-func-bold_task-rest_acq-short1_run-03_scan-8","target_ids":["dicoms-000178"],"dicoms_isotime":"2024-08-30T11:39:20.470000","dicoms_duration":2.0,"birch_isotime":null,"birch_duration":null,"qrinfo_isotime":null,"qrinfo_duration":null,"psychopy_isotime":null,"psychopy_duration":null,"reproevents_isotime":null,"reproevents_duration":null}
+{"type":"MarkRecord","session_id":"ses-20240830","id":"mark-000045","kind":"Func series scan","name":"007-func-bold_task-rest_acq-short1_run-03_scan-9","target_ids":["dicoms-000179"],"dicoms_isotime":"2024-08-30T11:39:22.470000","dicoms_duration":2.0,"birch_isotime":null,"birch_duration":null,"qrinfo_isotime":null,"qrinfo_duration":null,"psychopy_isotime":null,"psychopy_duration":null,"reproevents_isotime":null,"reproevents_duration":null}
+{"type":"MarkRecord","session_id":"ses-20240830","id":"mark-000046","kind":"Func series scan","name":"007-func-bold_task-rest_acq-short1_run-03_scan-10","target_ids":["dicoms-000180"],"dicoms_isotime":"2024-08-30T11:39:24.470000","dicoms_duration":2.0,"birch_isotime":null,"birch_duration":null,"qrinfo_isotime":null,"qrinfo_duration":null,"psychopy_isotime":null,"psychopy_duration":null,"reproevents_isotime":null,"reproevents_duration":null}
+{"type":"MarkRecord","session_id":"ses-20240830","id":"mark-000047","kind":"Func series scan","name":"007-func-bold_task-rest_acq-short1_run-03_scan-11","target_ids":["dicoms-000181"],"dicoms_isotime":"2024-08-30T11:39:26.470000","dicoms_duration":2.0,"birch_isotime":null,"birch_duration":null,"qrinfo_isotime":null,"qrinfo_duration":null,"psychopy_isotime":null,"psychopy_duration":null,"reproevents_isotime":null,"reproevents_duration":null}
+{"type":"MarkRecord","session_id":"ses-20240830","id":"mark-000048","kind":"Func series scan","name":"007-func-bold_task-rest_acq-short1_run-03_scan-12","target_ids":["dicoms-000182"],"dicoms_isotime":"2024-08-30T11:39:28.470000","dicoms_duration":2.0,"birch_isotime":null,"birch_duration":null,"qrinfo_isotime":null,"qrinfo_duration":null,"psychopy_isotime":null,"psychopy_duration":null,"reproevents_isotime":null,"reproevents_duration":null}
+{"type":"MarkRecord","session_id":"ses-20240830","id":"mark-000049","kind":"Func series scan","name":"007-func-bold_task-rest_acq-short1_run-03_scan-13","target_ids":["dicoms-000183"],"dicoms_isotime":"2024-08-30T11:39:30.470000","dicoms_duration":2.0,"birch_isotime":null,"birch_duration":null,"qrinfo_isotime":null,"qrinfo_duration":null,"psychopy_isotime":null,"psychopy_duration":null,"reproevents_isotime":null,"reproevents_duration":null}
+{"type":"MarkRecord","session_id":"ses-20240830","id":"mark-000050","kind":"Func series scan","name":"007-func-bold_task-rest_acq-short1_run-03_scan-14","target_ids":["dicoms-000184"],"dicoms_isotime":"2024-08-30T11:39:32.470000","dicoms_duration":null,"birch_isotime":null,"birch_duration":null,"qrinfo_isotime":null,"qrinfo_duration":null,"psychopy_isotime":null,"psychopy_duration":null,"reproevents_isotime":null,"reproevents_duration":null}
+Mark: type='MarkRecord' session_id='ses-20240830' id='mark-000051' kind='Func series end' name='007-func-bold_task-rest_acq-short1_run-03_end' target_ids=['dicoms-000184'] dicoms_isotime=Timestamp('2024-08-30 11:39:32.470000') dicoms_duration=None birch_isotime=None birch_duration=None qrinfo_isotime=None qrinfo_duration=None psychopy_isotime=None psychopy_duration=None reproevents_isotime=None reproevents_duration=None
+{"type":"MarkRecord","session_id":"ses-20240830","id":"mark-000051","kind":"Func series end","name":"007-func-bold_task-rest_acq-short1_run-03_end","target_ids":["dicoms-000184"],"dicoms_isotime":"2024-08-30T11:39:32.470000","dicoms_duration":null,"birch_isotime":null,"birch_duration":null,"qrinfo_isotime":null,"qrinfo_duration":null,"psychopy_isotime":null,"psychopy_duration":null,"reproevents_isotime":null,"reproevents_duration":null}
+Matching: sd1=008-func-bold_task-rest_acq-short1_run-04 with sd2=birch-series-1
+ use k_min=0.95, k_max=1.05
+ mismatch_2: 101.025 / 135.937274
+Matching: sd1=008-func-bold_task-rest_acq-short1_run-04 with sd2=birch-series-2
+ use k_min=0.95, k_max=1.05
+ mismatch_2: 101.025 / 86.185922
+Matching: sd1=008-func-bold_task-rest_acq-short1_run-04 with sd2=birch-series-3
+ use k_min=0.95, k_max=1.05
+ mismatch_2: 101.025 / 221.434687
+Matching: sd1=008-func-bold_task-rest_acq-short1_run-04 with sd2=birch-series-4
+ use k_min=0.95, k_max=1.05
+ mismatch_5: 2024-08-30 11:36:13.864213 / 2024-08-30 11:43:13.027994
+Matching: sd1=008-func-bold_task-rest_acq-short1_run-04 with sd2=birch-series-5
+ mismatch_7: 15 / 150
+Matching: sd1=008-func-bold_task-rest_acq-short1_run-04 with sd2=psychopy-series-1
+ use k_min=0.95, k_max=1.05
+ mismatch_5: 2024-08-30 11:36:13.864213 / 2024-08-30 11:43:13.017243
+Matching: sd1=008-func-bold_task-rest_acq-short1_run-04 with sd2=psychopy-series-2
+ mismatch_7: 15 / 150
+{"type":"MarkRecord","session_id":"ses-20240830","id":"mark-000052","kind":"Func series start","name":"008-func-bold_task-rest_acq-short1_run-04_start","target_ids":["dicoms-000185"],"dicoms_isotime":"2024-08-30T11:42:45.472500","dicoms_duration":28.0,"birch_isotime":null,"birch_duration":null,"qrinfo_isotime":null,"qrinfo_duration":null,"psychopy_isotime":null,"psychopy_duration":null,"reproevents_isotime":null,"reproevents_duration":null}
+{"type":"MarkRecord","session_id":"ses-20240830","id":"mark-000053","kind":"Func series scan","name":"008-func-bold_task-rest_acq-short1_run-04_scan-0","target_ids":["dicoms-000185"],"dicoms_isotime":"2024-08-30T11:42:45.472500","dicoms_duration":2.0,"birch_isotime":null,"birch_duration":null,"qrinfo_isotime":null,"qrinfo_duration":null,"psychopy_isotime":null,"psychopy_duration":null,"reproevents_isotime":null,"reproevents_duration":null}
+{"type":"MarkRecord","session_id":"ses-20240830","id":"mark-000054","kind":"Func series scan","name":"008-func-bold_task-rest_acq-short1_run-04_scan-1","target_ids":["dicoms-000186"],"dicoms_isotime":"2024-08-30T11:42:47.472500","dicoms_duration":2.0,"birch_isotime":null,"birch_duration":null,"qrinfo_isotime":null,"qrinfo_duration":null,"psychopy_isotime":null,"psychopy_duration":null,"reproevents_isotime":null,"reproevents_duration":null}
+{"type":"MarkRecord","session_id":"ses-20240830","id":"mark-000055","kind":"Func series scan","name":"008-func-bold_task-rest_acq-short1_run-04_scan-2","target_ids":["dicoms-000187"],"dicoms_isotime":"2024-08-30T11:42:49.472500","dicoms_duration":2.0,"birch_isotime":null,"birch_duration":null,"qrinfo_isotime":null,"qrinfo_duration":null,"psychopy_isotime":null,"psychopy_duration":null,"reproevents_isotime":null,"reproevents_duration":null}
+{"type":"MarkRecord","session_id":"ses-20240830","id":"mark-000056","kind":"Func series scan","name":"008-func-bold_task-rest_acq-short1_run-04_scan-3","target_ids":["dicoms-000188"],"dicoms_isotime":"2024-08-30T11:42:51.472500","dicoms_duration":2.0,"birch_isotime":null,"birch_duration":null,"qrinfo_isotime":null,"qrinfo_duration":null,"psychopy_isotime":null,"psychopy_duration":null,"reproevents_isotime":null,"reproevents_duration":null}
+{"type":"MarkRecord","session_id":"ses-20240830","id":"mark-000057","kind":"Func series scan","name":"008-func-bold_task-rest_acq-short1_run-04_scan-4","target_ids":["dicoms-000189"],"dicoms_isotime":"2024-08-30T11:42:53.472500","dicoms_duration":2.0,"birch_isotime":null,"birch_duration":null,"qrinfo_isotime":null,"qrinfo_duration":null,"psychopy_isotime":null,"psychopy_duration":null,"reproevents_isotime":null,"reproevents_duration":null}
+{"type":"MarkRecord","session_id":"ses-20240830","id":"mark-000058","kind":"Func series scan","name":"008-func-bold_task-rest_acq-short1_run-04_scan-5","target_ids":["dicoms-000190"],"dicoms_isotime":"2024-08-30T11:42:55.472500","dicoms_duration":2.0,"birch_isotime":null,"birch_duration":null,"qrinfo_isotime":null,"qrinfo_duration":null,"psychopy_isotime":null,"psychopy_duration":null,"reproevents_isotime":null,"reproevents_duration":null}
+{"type":"MarkRecord","session_id":"ses-20240830","id":"mark-000059","kind":"Func series scan","name":"008-func-bold_task-rest_acq-short1_run-04_scan-6","target_ids":["dicoms-000191"],"dicoms_isotime":"2024-08-30T11:42:57.472500","dicoms_duration":2.0,"birch_isotime":null,"birch_duration":null,"qrinfo_isotime":null,"qrinfo_duration":null,"psychopy_isotime":null,"psychopy_duration":null,"reproevents_isotime":null,"reproevents_duration":null}
+{"type":"MarkRecord","session_id":"ses-20240830","id":"mark-000060","kind":"Func series scan","name":"008-func-bold_task-rest_acq-short1_run-04_scan-7","target_ids":["dicoms-000192"],"dicoms_isotime":"2024-08-30T11:42:59.472500","dicoms_duration":2.0,"birch_isotime":null,"birch_duration":null,"qrinfo_isotime":null,"qrinfo_duration":null,"psychopy_isotime":null,"psychopy_duration":null,"reproevents_isotime":null,"reproevents_duration":null}
+{"type":"MarkRecord","session_id":"ses-20240830","id":"mark-000061","kind":"Func series scan","name":"008-func-bold_task-rest_acq-short1_run-04_scan-8","target_ids":["dicoms-000193"],"dicoms_isotime":"2024-08-30T11:43:01.472500","dicoms_duration":2.0,"birch_isotime":null,"birch_duration":null,"qrinfo_isotime":null,"qrinfo_duration":null,"psychopy_isotime":null,"psychopy_duration":null,"reproevents_isotime":null,"reproevents_duration":null}
+{"type":"MarkRecord","session_id":"ses-20240830","id":"mark-000062","kind":"Func series scan","name":"008-func-bold_task-rest_acq-short1_run-04_scan-9","target_ids":["dicoms-000194"],"dicoms_isotime":"2024-08-30T11:43:03.472500","dicoms_duration":2.0,"birch_isotime":null,"birch_duration":null,"qrinfo_isotime":null,"qrinfo_duration":null,"psychopy_isotime":null,"psychopy_duration":null,"reproevents_isotime":null,"reproevents_duration":null}
+{"type":"MarkRecord","session_id":"ses-20240830","id":"mark-000063","kind":"Func series scan","name":"008-func-bold_task-rest_acq-short1_run-04_scan-10","target_ids":["dicoms-000195"],"dicoms_isotime":"2024-08-30T11:43:05.472500","dicoms_duration":2.0,"birch_isotime":null,"birch_duration":null,"qrinfo_isotime":null,"qrinfo_duration":null,"psychopy_isotime":null,"psychopy_duration":null,"reproevents_isotime":null,"reproevents_duration":null}
+{"type":"MarkRecord","session_id":"ses-20240830","id":"mark-000064","kind":"Func series scan","name":"008-func-bold_task-rest_acq-short1_run-04_scan-11","target_ids":["dicoms-000196"],"dicoms_isotime":"2024-08-30T11:43:07.472500","dicoms_duration":2.0,"birch_isotime":null,"birch_duration":null,"qrinfo_isotime":null,"qrinfo_duration":null,"psychopy_isotime":null,"psychopy_duration":null,"reproevents_isotime":null,"reproevents_duration":null}
+{"type":"MarkRecord","session_id":"ses-20240830","id":"mark-000065","kind":"Func series scan","name":"008-func-bold_task-rest_acq-short1_run-04_scan-12","target_ids":["dicoms-000197"],"dicoms_isotime":"2024-08-30T11:43:09.472500","dicoms_duration":2.0,"birch_isotime":null,"birch_duration":null,"qrinfo_isotime":null,"qrinfo_duration":null,"psychopy_isotime":null,"psychopy_duration":null,"reproevents_isotime":null,"reproevents_duration":null}
+{"type":"MarkRecord","session_id":"ses-20240830","id":"mark-000066","kind":"Func series scan","name":"008-func-bold_task-rest_acq-short1_run-04_scan-13","target_ids":["dicoms-000198"],"dicoms_isotime":"2024-08-30T11:43:11.472500","dicoms_duration":2.0,"birch_isotime":null,"birch_duration":null,"qrinfo_isotime":null,"qrinfo_duration":null,"psychopy_isotime":null,"psychopy_duration":null,"reproevents_isotime":null,"reproevents_duration":null}
+{"type":"MarkRecord","session_id":"ses-20240830","id":"mark-000067","kind":"Func series scan","name":"008-func-bold_task-rest_acq-short1_run-04_scan-14","target_ids":["dicoms-000199"],"dicoms_isotime":"2024-08-30T11:43:13.472500","dicoms_duration":null,"birch_isotime":null,"birch_duration":null,"qrinfo_isotime":null,"qrinfo_duration":null,"psychopy_isotime":null,"psychopy_duration":null,"reproevents_isotime":null,"reproevents_duration":null}
+Mark: type='MarkRecord' session_id='ses-20240830' id='mark-000068' kind='Func series end' name='008-func-bold_task-rest_acq-short1_run-04_end' target_ids=['dicoms-000199'] dicoms_isotime=Timestamp('2024-08-30 11:43:13.472500') dicoms_duration=None birch_isotime=None birch_duration=None qrinfo_isotime=None qrinfo_duration=None psychopy_isotime=None psychopy_duration=None reproevents_isotime=None reproevents_duration=None
+{"type":"MarkRecord","session_id":"ses-20240830","id":"mark-000068","kind":"Func series end","name":"008-func-bold_task-rest_acq-short1_run-04_end","target_ids":["dicoms-000199"],"dicoms_isotime":"2024-08-30T11:43:13.472500","dicoms_duration":null,"birch_isotime":null,"birch_duration":null,"qrinfo_isotime":null,"qrinfo_duration":null,"psychopy_isotime":null,"psychopy_duration":null,"reproevents_isotime":null,"reproevents_duration":null}
+Matching: sd1=009-func-bold_task-rest_acq-med1_run-01 with sd2=birch-series-1
+ mismatch_7: 150 / 15
+Matching: sd1=009-func-bold_task-rest_acq-med1_run-01 with sd2=birch-series-2
+ mismatch_7: 150 / 15
+Matching: sd1=009-func-bold_task-rest_acq-med1_run-01 with sd2=birch-series-3
+ mismatch_7: 150 / 15
+Matching: sd1=009-func-bold_task-rest_acq-med1_run-01 with sd2=birch-series-4
+ mismatch_7: 150 / 15
+Matching: sd1=009-func-bold_task-rest_acq-med1_run-01 with sd2=birch-series-5
+ use k_min=0.95, k_max=1.05
+ mismatch_4: 474.99 / 0
+Matching: sd1=009-func-bold_task-rest_acq-med1_run-01 with sd2=psychopy-series-1
+ mismatch_7: 150 / 15
+Matching: sd1=009-func-bold_task-rest_acq-med1_run-01 with sd2=psychopy-series-2
+ use k_min=0.95, k_max=1.05
+ mismatch_4: 474.99 / 0
+{"type":"MarkRecord","session_id":"ses-20240830","id":"mark-000069","kind":"Func series start","name":"009-func-bold_task-rest_acq-med1_run-01_start","target_ids":["dicoms-000200"],"dicoms_isotime":"2024-08-30T11:44:26.497500","dicoms_duration":298.0,"birch_isotime":null,"birch_duration":null,"qrinfo_isotime":null,"qrinfo_duration":null,"psychopy_isotime":null,"psychopy_duration":null,"reproevents_isotime":null,"reproevents_duration":null}
+{"type":"MarkRecord","session_id":"ses-20240830","id":"mark-000070","kind":"Func series scan","name":"009-func-bold_task-rest_acq-med1_run-01_scan-0","target_ids":["dicoms-000200"],"dicoms_isotime":"2024-08-30T11:44:26.497500","dicoms_duration":2.0,"birch_isotime":null,"birch_duration":null,"qrinfo_isotime":null,"qrinfo_duration":null,"psychopy_isotime":null,"psychopy_duration":null,"reproevents_isotime":null,"reproevents_duration":null}
+{"type":"MarkRecord","session_id":"ses-20240830","id":"mark-000071","kind":"Func series scan","name":"009-func-bold_task-rest_acq-med1_run-01_scan-1","target_ids":["dicoms-000201"],"dicoms_isotime":"2024-08-30T11:44:28.497500","dicoms_duration":2.0,"birch_isotime":null,"birch_duration":null,"qrinfo_isotime":null,"qrinfo_duration":null,"psychopy_isotime":null,"psychopy_duration":null,"reproevents_isotime":null,"reproevents_duration":null}
+{"type":"MarkRecord","session_id":"ses-20240830","id":"mark-000072","kind":"Func series scan","name":"009-func-bold_task-rest_acq-med1_run-01_scan-2","target_ids":["dicoms-000202"],"dicoms_isotime":"2024-08-30T11:44:30.497500","dicoms_duration":2.0,"birch_isotime":null,"birch_duration":null,"qrinfo_isotime":null,"qrinfo_duration":null,"psychopy_isotime":null,"psychopy_duration":null,"reproevents_isotime":null,"reproevents_duration":null}
+{"type":"MarkRecord","session_id":"ses-20240830","id":"mark-000073","kind":"Func series scan","name":"009-func-bold_task-rest_acq-med1_run-01_scan-3","target_ids":["dicoms-000203"],"dicoms_isotime":"2024-08-30T11:44:32.497500","dicoms_duration":2.0,"birch_isotime":null,"birch_duration":null,"qrinfo_isotime":null,"qrinfo_duration":null,"psychopy_isotime":null,"psychopy_duration":null,"reproevents_isotime":null,"reproevents_duration":null}
+{"type":"MarkRecord","session_id":"ses-20240830","id":"mark-000074","kind":"Func series scan","name":"009-func-bold_task-rest_acq-med1_run-01_scan-4","target_ids":["dicoms-000204"],"dicoms_isotime":"2024-08-30T11:44:34.497500","dicoms_duration":2.0,"birch_isotime":null,"birch_duration":null,"qrinfo_isotime":null,"qrinfo_duration":null,"psychopy_isotime":null,"psychopy_duration":null,"reproevents_isotime":null,"reproevents_duration":null}
+{"type":"MarkRecord","session_id":"ses-20240830","id":"mark-000075","kind":"Func series scan","name":"009-func-bold_task-rest_acq-med1_run-01_scan-5","target_ids":["dicoms-000205"],"dicoms_isotime":"2024-08-30T11:44:36.497500","dicoms_duration":2.0,"birch_isotime":null,"birch_duration":null,"qrinfo_isotime":null,"qrinfo_duration":null,"psychopy_isotime":null,"psychopy_duration":null,"reproevents_isotime":null,"reproevents_duration":null}
+{"type":"MarkRecord","session_id":"ses-20240830","id":"mark-000076","kind":"Func series scan","name":"009-func-bold_task-rest_acq-med1_run-01_scan-6","target_ids":["dicoms-000206"],"dicoms_isotime":"2024-08-30T11:44:38.497500","dicoms_duration":2.0,"birch_isotime":null,"birch_duration":null,"qrinfo_isotime":null,"qrinfo_duration":null,"psychopy_isotime":null,"psychopy_duration":null,"reproevents_isotime":null,"reproevents_duration":null}
+{"type":"MarkRecord","session_id":"ses-20240830","id":"mark-000077","kind":"Func series scan","name":"009-func-bold_task-rest_acq-med1_run-01_scan-7","target_ids":["dicoms-000207"],"dicoms_isotime":"2024-08-30T11:44:40.497500","dicoms_duration":2.0,"birch_isotime":null,"birch_duration":null,"qrinfo_isotime":null,"qrinfo_duration":null,"psychopy_isotime":null,"psychopy_duration":null,"reproevents_isotime":null,"reproevents_duration":null}
+{"type":"MarkRecord","session_id":"ses-20240830","id":"mark-000078","kind":"Func series scan","name":"009-func-bold_task-rest_acq-med1_run-01_scan-8","target_ids":["dicoms-000208"],"dicoms_isotime":"2024-08-30T11:44:42.497500","dicoms_duration":2.0,"birch_isotime":null,"birch_duration":null,"qrinfo_isotime":null,"qrinfo_duration":null,"psychopy_isotime":null,"psychopy_duration":null,"reproevents_isotime":null,"reproevents_duration":null}
+{"type":"MarkRecord","session_id":"ses-20240830","id":"mark-000079","kind":"Func series scan","name":"009-func-bold_task-rest_acq-med1_run-01_scan-9","target_ids":["dicoms-000209"],"dicoms_isotime":"2024-08-30T11:44:44.497500","dicoms_duration":2.0,"birch_isotime":null,"birch_duration":null,"qrinfo_isotime":null,"qrinfo_duration":null,"psychopy_isotime":null,"psychopy_duration":null,"reproevents_isotime":null,"reproevents_duration":null}
+{"type":"MarkRecord","session_id":"ses-20240830","id":"mark-000080","kind":"Func series scan","name":"009-func-bold_task-rest_acq-med1_run-01_scan-10","target_ids":["dicoms-000210"],"dicoms_isotime":"2024-08-30T11:44:46.497500","dicoms_duration":2.0,"birch_isotime":null,"birch_duration":null,"qrinfo_isotime":null,"qrinfo_duration":null,"psychopy_isotime":null,"psychopy_duration":null,"reproevents_isotime":null,"reproevents_duration":null}
+{"type":"MarkRecord","session_id":"ses-20240830","id":"mark-000081","kind":"Func series scan","name":"009-func-bold_task-rest_acq-med1_run-01_scan-11","target_ids":["dicoms-000211"],"dicoms_isotime":"2024-08-30T11:44:48.497500","dicoms_duration":2.0,"birch_isotime":null,"birch_duration":null,"qrinfo_isotime":null,"qrinfo_duration":null,"psychopy_isotime":null,"psychopy_duration":null,"reproevents_isotime":null,"reproevents_duration":null}
+{"type":"MarkRecord","session_id":"ses-20240830","id":"mark-000082","kind":"Func series scan","name":"009-func-bold_task-rest_acq-med1_run-01_scan-12","target_ids":["dicoms-000212"],"dicoms_isotime":"2024-08-30T11:44:50.497500","dicoms_duration":2.0,"birch_isotime":null,"birch_duration":null,"qrinfo_isotime":null,"qrinfo_duration":null,"psychopy_isotime":null,"psychopy_duration":null,"reproevents_isotime":null,"reproevents_duration":null}
+{"type":"MarkRecord","session_id":"ses-20240830","id":"mark-000083","kind":"Func series scan","name":"009-func-bold_task-rest_acq-med1_run-01_scan-13","target_ids":["dicoms-000213"],"dicoms_isotime":"2024-08-30T11:44:52.497500","dicoms_duration":2.0,"birch_isotime":null,"birch_duration":null,"qrinfo_isotime":null,"qrinfo_duration":null,"psychopy_isotime":null,"psychopy_duration":null,"reproevents_isotime":null,"reproevents_duration":null}
+{"type":"MarkRecord","session_id":"ses-20240830","id":"mark-000084","kind":"Func series scan","name":"009-func-bold_task-rest_acq-med1_run-01_scan-14","target_ids":["dicoms-000214"],"dicoms_isotime":"2024-08-30T11:44:54.497500","dicoms_duration":2.0,"birch_isotime":null,"birch_duration":null,"qrinfo_isotime":null,"qrinfo_duration":null,"psychopy_isotime":null,"psychopy_duration":null,"reproevents_isotime":null,"reproevents_duration":null}
+{"type":"MarkRecord","session_id":"ses-20240830","id":"mark-000085","kind":"Func series scan","name":"009-func-bold_task-rest_acq-med1_run-01_scan-15","target_ids":["dicoms-000215"],"dicoms_isotime":"2024-08-30T11:44:56.497500","dicoms_duration":2.0,"birch_isotime":null,"birch_duration":null,"qrinfo_isotime":null,"qrinfo_duration":null,"psychopy_isotime":null,"psychopy_duration":null,"reproevents_isotime":null,"reproevents_duration":null}
+{"type":"MarkRecord","session_id":"ses-20240830","id":"mark-000086","kind":"Func series scan","name":"009-func-bold_task-rest_acq-med1_run-01_scan-16","target_ids":["dicoms-000216"],"dicoms_isotime":"2024-08-30T11:44:58.497500","dicoms_duration":2.0,"birch_isotime":null,"birch_duration":null,"qrinfo_isotime":null,"qrinfo_duration":null,"psychopy_isotime":null,"psychopy_duration":null,"reproevents_isotime":null,"reproevents_duration":null}
+{"type":"MarkRecord","session_id":"ses-20240830","id":"mark-000087","kind":"Func series scan","name":"009-func-bold_task-rest_acq-med1_run-01_scan-17","target_ids":["dicoms-000217"],"dicoms_isotime":"2024-08-30T11:45:00.497500","dicoms_duration":2.0,"birch_isotime":null,"birch_duration":null,"qrinfo_isotime":null,"qrinfo_duration":null,"psychopy_isotime":null,"psychopy_duration":null,"reproevents_isotime":null,"reproevents_duration":null}
+{"type":"MarkRecord","session_id":"ses-20240830","id":"mark-000088","kind":"Func series scan","name":"009-func-bold_task-rest_acq-med1_run-01_scan-18","target_ids":["dicoms-000218"],"dicoms_isotime":"2024-08-30T11:45:02.497500","dicoms_duration":2.0,"birch_isotime":null,"birch_duration":null,"qrinfo_isotime":null,"qrinfo_duration":null,"psychopy_isotime":null,"psychopy_duration":null,"reproevents_isotime":null,"reproevents_duration":null}
+{"type":"MarkRecord","session_id":"ses-20240830","id":"mark-000089","kind":"Func series scan","name":"009-func-bold_task-rest_acq-med1_run-01_scan-19","target_ids":["dicoms-000219"],"dicoms_isotime":"2024-08-30T11:45:04.497500","dicoms_duration":2.0,"birch_isotime":null,"birch_duration":null,"qrinfo_isotime":null,"qrinfo_duration":null,"psychopy_isotime":null,"psychopy_duration":null,"reproevents_isotime":null,"reproevents_duration":null}
+{"type":"MarkRecord","session_id":"ses-20240830","id":"mark-000090","kind":"Func series scan","name":"009-func-bold_task-rest_acq-med1_run-01_scan-20","target_ids":["dicoms-000220"],"dicoms_isotime":"2024-08-30T11:45:06.497500","dicoms_duration":2.0,"birch_isotime":null,"birch_duration":null,"qrinfo_isotime":null,"qrinfo_duration":null,"psychopy_isotime":null,"psychopy_duration":null,"reproevents_isotime":null,"reproevents_duration":null}
+{"type":"MarkRecord","session_id":"ses-20240830","id":"mark-000091","kind":"Func series scan","name":"009-func-bold_task-rest_acq-med1_run-01_scan-21","target_ids":["dicoms-000221"],"dicoms_isotime":"2024-08-30T11:45:08.497500","dicoms_duration":2.0,"birch_isotime":null,"birch_duration":null,"qrinfo_isotime":null,"qrinfo_duration":null,"psychopy_isotime":null,"psychopy_duration":null,"reproevents_isotime":null,"reproevents_duration":null}
+{"type":"MarkRecord","session_id":"ses-20240830","id":"mark-000092","kind":"Func series scan","name":"009-func-bold_task-rest_acq-med1_run-01_scan-22","target_ids":["dicoms-000222"],"dicoms_isotime":"2024-08-30T11:45:10.497500","dicoms_duration":2.0,"birch_isotime":null,"birch_duration":null,"qrinfo_isotime":null,"qrinfo_duration":null,"psychopy_isotime":null,"psychopy_duration":null,"reproevents_isotime":null,"reproevents_duration":null}
+{"type":"MarkRecord","session_id":"ses-20240830","id":"mark-000093","kind":"Func series scan","name":"009-func-bold_task-rest_acq-med1_run-01_scan-23","target_ids":["dicoms-000223"],"dicoms_isotime":"2024-08-30T11:45:12.497500","dicoms_duration":2.0,"birch_isotime":null,"birch_duration":null,"qrinfo_isotime":null,"qrinfo_duration":null,"psychopy_isotime":null,"psychopy_duration":null,"reproevents_isotime":null,"reproevents_duration":null}
+{"type":"MarkRecord","session_id":"ses-20240830","id":"mark-000094","kind":"Func series scan","name":"009-func-bold_task-rest_acq-med1_run-01_scan-24","target_ids":["dicoms-000224"],"dicoms_isotime":"2024-08-30T11:45:14.497500","dicoms_duration":2.0,"birch_isotime":null,"birch_duration":null,"qrinfo_isotime":null,"qrinfo_duration":null,"psychopy_isotime":null,"psychopy_duration":null,"reproevents_isotime":null,"reproevents_duration":null}
+{"type":"MarkRecord","session_id":"ses-20240830","id":"mark-000095","kind":"Func series scan","name":"009-func-bold_task-rest_acq-med1_run-01_scan-25","target_ids":["dicoms-000225"],"dicoms_isotime":"2024-08-30T11:45:16.497500","dicoms_duration":2.0,"birch_isotime":null,"birch_duration":null,"qrinfo_isotime":null,"qrinfo_duration":null,"psychopy_isotime":null,"psychopy_duration":null,"reproevents_isotime":null,"reproevents_duration":null}
+{"type":"MarkRecord","session_id":"ses-20240830","id":"mark-000096","kind":"Func series scan","name":"009-func-bold_task-rest_acq-med1_run-01_scan-26","target_ids":["dicoms-000226"],"dicoms_isotime":"2024-08-30T11:45:18.497500","dicoms_duration":2.0,"birch_isotime":null,"birch_duration":null,"qrinfo_isotime":null,"qrinfo_duration":null,"psychopy_isotime":null,"psychopy_duration":null,"reproevents_isotime":null,"reproevents_duration":null}
+{"type":"MarkRecord","session_id":"ses-20240830","id":"mark-000097","kind":"Func series scan","name":"009-func-bold_task-rest_acq-med1_run-01_scan-27","target_ids":["dicoms-000227"],"dicoms_isotime":"2024-08-30T11:45:20.497500","dicoms_duration":2.0,"birch_isotime":null,"birch_duration":null,"qrinfo_isotime":null,"qrinfo_duration":null,"psychopy_isotime":null,"psychopy_duration":null,"reproevents_isotime":null,"reproevents_duration":null}
+{"type":"MarkRecord","session_id":"ses-20240830","id":"mark-000098","kind":"Func series scan","name":"009-func-bold_task-rest_acq-med1_run-01_scan-28","target_ids":["dicoms-000228"],"dicoms_isotime":"2024-08-30T11:45:22.497500","dicoms_duration":2.0,"birch_isotime":null,"birch_duration":null,"qrinfo_isotime":null,"qrinfo_duration":null,"psychopy_isotime":null,"psychopy_duration":null,"reproevents_isotime":null,"reproevents_duration":null}
+{"type":"MarkRecord","session_id":"ses-20240830","id":"mark-000099","kind":"Func series scan","name":"009-func-bold_task-rest_acq-med1_run-01_scan-29","target_ids":["dicoms-000229"],"dicoms_isotime":"2024-08-30T11:45:24.497500","dicoms_duration":2.0,"birch_isotime":null,"birch_duration":null,"qrinfo_isotime":null,"qrinfo_duration":null,"psychopy_isotime":null,"psychopy_duration":null,"reproevents_isotime":null,"reproevents_duration":null}
+{"type":"MarkRecord","session_id":"ses-20240830","id":"mark-000100","kind":"Func series scan","name":"009-func-bold_task-rest_acq-med1_run-01_scan-30","target_ids":["dicoms-000230"],"dicoms_isotime":"2024-08-30T11:45:26.497500","dicoms_duration":2.0,"birch_isotime":null,"birch_duration":null,"qrinfo_isotime":null,"qrinfo_duration":null,"psychopy_isotime":null,"psychopy_duration":null,"reproevents_isotime":null,"reproevents_duration":null}
+{"type":"MarkRecord","session_id":"ses-20240830","id":"mark-000101","kind":"Func series scan","name":"009-func-bold_task-rest_acq-med1_run-01_scan-31","target_ids":["dicoms-000231"],"dicoms_isotime":"2024-08-30T11:45:28.497500","dicoms_duration":2.0,"birch_isotime":null,"birch_duration":null,"qrinfo_isotime":null,"qrinfo_duration":null,"psychopy_isotime":null,"psychopy_duration":null,"reproevents_isotime":null,"reproevents_duration":null}
+{"type":"MarkRecord","session_id":"ses-20240830","id":"mark-000102","kind":"Func series scan","name":"009-func-bold_task-rest_acq-med1_run-01_scan-32","target_ids":["dicoms-000232"],"dicoms_isotime":"2024-08-30T11:45:30.497500","dicoms_duration":2.0,"birch_isotime":null,"birch_duration":null,"qrinfo_isotime":null,"qrinfo_duration":null,"psychopy_isotime":null,"psychopy_duration":null,"reproevents_isotime":null,"reproevents_duration":null}
+{"type":"MarkRecord","session_id":"ses-20240830","id":"mark-000103","kind":"Func series scan","name":"009-func-bold_task-rest_acq-med1_run-01_scan-33","target_ids":["dicoms-000233"],"dicoms_isotime":"2024-08-30T11:45:32.497500","dicoms_duration":2.0,"birch_isotime":null,"birch_duration":null,"qrinfo_isotime":null,"qrinfo_duration":null,"psychopy_isotime":null,"psychopy_duration":null,"reproevents_isotime":null,"reproevents_duration":null}
+{"type":"MarkRecord","session_id":"ses-20240830","id":"mark-000104","kind":"Func series scan","name":"009-func-bold_task-rest_acq-med1_run-01_scan-34","target_ids":["dicoms-000234"],"dicoms_isotime":"2024-08-30T11:45:34.497500","dicoms_duration":2.0,"birch_isotime":null,"birch_duration":null,"qrinfo_isotime":null,"qrinfo_duration":null,"psychopy_isotime":null,"psychopy_duration":null,"reproevents_isotime":null,"reproevents_duration":null}
+{"type":"MarkRecord","session_id":"ses-20240830","id":"mark-000105","kind":"Func series scan","name":"009-func-bold_task-rest_acq-med1_run-01_scan-35","target_ids":["dicoms-000235"],"dicoms_isotime":"2024-08-30T11:45:36.497500","dicoms_duration":2.0,"birch_isotime":null,"birch_duration":null,"qrinfo_isotime":null,"qrinfo_duration":null,"psychopy_isotime":null,"psychopy_duration":null,"reproevents_isotime":null,"reproevents_duration":null}
+{"type":"MarkRecord","session_id":"ses-20240830","id":"mark-000106","kind":"Func series scan","name":"009-func-bold_task-rest_acq-med1_run-01_scan-36","target_ids":["dicoms-000236"],"dicoms_isotime":"2024-08-30T11:45:38.497500","dicoms_duration":2.0,"birch_isotime":null,"birch_duration":null,"qrinfo_isotime":null,"qrinfo_duration":null,"psychopy_isotime":null,"psychopy_duration":null,"reproevents_isotime":null,"reproevents_duration":null}
+{"type":"MarkRecord","session_id":"ses-20240830","id":"mark-000107","kind":"Func series scan","name":"009-func-bold_task-rest_acq-med1_run-01_scan-37","target_ids":["dicoms-000237"],"dicoms_isotime":"2024-08-30T11:45:40.497500","dicoms_duration":2.0,"birch_isotime":null,"birch_duration":null,"qrinfo_isotime":null,"qrinfo_duration":null,"psychopy_isotime":null,"psychopy_duration":null,"reproevents_isotime":null,"reproevents_duration":null}
+{"type":"MarkRecord","session_id":"ses-20240830","id":"mark-000108","kind":"Func series scan","name":"009-func-bold_task-rest_acq-med1_run-01_scan-38","target_ids":["dicoms-000238"],"dicoms_isotime":"2024-08-30T11:45:42.497500","dicoms_duration":2.0,"birch_isotime":null,"birch_duration":null,"qrinfo_isotime":null,"qrinfo_duration":null,"psychopy_isotime":null,"psychopy_duration":null,"reproevents_isotime":null,"reproevents_duration":null}
+{"type":"MarkRecord","session_id":"ses-20240830","id":"mark-000109","kind":"Func series scan","name":"009-func-bold_task-rest_acq-med1_run-01_scan-39","target_ids":["dicoms-000239"],"dicoms_isotime":"2024-08-30T11:45:44.497500","dicoms_duration":2.0,"birch_isotime":null,"birch_duration":null,"qrinfo_isotime":null,"qrinfo_duration":null,"psychopy_isotime":null,"psychopy_duration":null,"reproevents_isotime":null,"reproevents_duration":null}
+{"type":"MarkRecord","session_id":"ses-20240830","id":"mark-000110","kind":"Func series scan","name":"009-func-bold_task-rest_acq-med1_run-01_scan-40","target_ids":["dicoms-000240"],"dicoms_isotime":"2024-08-30T11:45:46.497500","dicoms_duration":2.0,"birch_isotime":null,"birch_duration":null,"qrinfo_isotime":null,"qrinfo_duration":null,"psychopy_isotime":null,"psychopy_duration":null,"reproevents_isotime":null,"reproevents_duration":null}
+{"type":"MarkRecord","session_id":"ses-20240830","id":"mark-000111","kind":"Func series scan","name":"009-func-bold_task-rest_acq-med1_run-01_scan-41","target_ids":["dicoms-000241"],"dicoms_isotime":"2024-08-30T11:45:48.497500","dicoms_duration":2.0,"birch_isotime":null,"birch_duration":null,"qrinfo_isotime":null,"qrinfo_duration":null,"psychopy_isotime":null,"psychopy_duration":null,"reproevents_isotime":null,"reproevents_duration":null}
+{"type":"MarkRecord","session_id":"ses-20240830","id":"mark-000112","kind":"Func series scan","name":"009-func-bold_task-rest_acq-med1_run-01_scan-42","target_ids":["dicoms-000242"],"dicoms_isotime":"2024-08-30T11:45:50.497500","dicoms_duration":2.0,"birch_isotime":null,"birch_duration":null,"qrinfo_isotime":null,"qrinfo_duration":null,"psychopy_isotime":null,"psychopy_duration":null,"reproevents_isotime":null,"reproevents_duration":null}
+{"type":"MarkRecord","session_id":"ses-20240830","id":"mark-000113","kind":"Func series scan","name":"009-func-bold_task-rest_acq-med1_run-01_scan-43","target_ids":["dicoms-000243"],"dicoms_isotime":"2024-08-30T11:45:52.497500","dicoms_duration":2.0,"birch_isotime":null,"birch_duration":null,"qrinfo_isotime":null,"qrinfo_duration":null,"psychopy_isotime":null,"psychopy_duration":null,"reproevents_isotime":null,"reproevents_duration":null}
+{"type":"MarkRecord","session_id":"ses-20240830","id":"mark-000114","kind":"Func series scan","name":"009-func-bold_task-rest_acq-med1_run-01_scan-44","target_ids":["dicoms-000244"],"dicoms_isotime":"2024-08-30T11:45:54.497500","dicoms_duration":2.0,"birch_isotime":null,"birch_duration":null,"qrinfo_isotime":null,"qrinfo_duration":null,"psychopy_isotime":null,"psychopy_duration":null,"reproevents_isotime":null,"reproevents_duration":null}
+{"type":"MarkRecord","session_id":"ses-20240830","id":"mark-000115","kind":"Func series scan","name":"009-func-bold_task-rest_acq-med1_run-01_scan-45","target_ids":["dicoms-000245"],"dicoms_isotime":"2024-08-30T11:45:56.497500","dicoms_duration":2.0,"birch_isotime":null,"birch_duration":null,"qrinfo_isotime":null,"qrinfo_duration":null,"psychopy_isotime":null,"psychopy_duration":null,"reproevents_isotime":null,"reproevents_duration":null}
+{"type":"MarkRecord","session_id":"ses-20240830","id":"mark-000116","kind":"Func series scan","name":"009-func-bold_task-rest_acq-med1_run-01_scan-46","target_ids":["dicoms-000246"],"dicoms_isotime":"2024-08-30T11:45:58.497500","dicoms_duration":2.0,"birch_isotime":null,"birch_duration":null,"qrinfo_isotime":null,"qrinfo_duration":null,"psychopy_isotime":null,"psychopy_duration":null,"reproevents_isotime":null,"reproevents_duration":null}
+{"type":"MarkRecord","session_id":"ses-20240830","id":"mark-000117","kind":"Func series scan","name":"009-func-bold_task-rest_acq-med1_run-01_scan-47","target_ids":["dicoms-000247"],"dicoms_isotime":"2024-08-30T11:46:00.497500","dicoms_duration":2.0,"birch_isotime":null,"birch_duration":null,"qrinfo_isotime":null,"qrinfo_duration":null,"psychopy_isotime":null,"psychopy_duration":null,"reproevents_isotime":null,"reproevents_duration":null}
+{"type":"MarkRecord","session_id":"ses-20240830","id":"mark-000118","kind":"Func series scan","name":"009-func-bold_task-rest_acq-med1_run-01_scan-48","target_ids":["dicoms-000248"],"dicoms_isotime":"2024-08-30T11:46:02.497500","dicoms_duration":2.0,"birch_isotime":null,"birch_duration":null,"qrinfo_isotime":null,"qrinfo_duration":null,"psychopy_isotime":null,"psychopy_duration":null,"reproevents_isotime":null,"reproevents_duration":null}
+{"type":"MarkRecord","session_id":"ses-20240830","id":"mark-000119","kind":"Func series scan","name":"009-func-bold_task-rest_acq-med1_run-01_scan-49","target_ids":["dicoms-000249"],"dicoms_isotime":"2024-08-30T11:46:04.497500","dicoms_duration":2.0,"birch_isotime":null,"birch_duration":null,"qrinfo_isotime":null,"qrinfo_duration":null,"psychopy_isotime":null,"psychopy_duration":null,"reproevents_isotime":null,"reproevents_duration":null}
+{"type":"MarkRecord","session_id":"ses-20240830","id":"mark-000120","kind":"Func series scan","name":"009-func-bold_task-rest_acq-med1_run-01_scan-50","target_ids":["dicoms-000250"],"dicoms_isotime":"2024-08-30T11:46:06.497500","dicoms_duration":2.0,"birch_isotime":null,"birch_duration":null,"qrinfo_isotime":null,"qrinfo_duration":null,"psychopy_isotime":null,"psychopy_duration":null,"reproevents_isotime":null,"reproevents_duration":null}
+{"type":"MarkRecord","session_id":"ses-20240830","id":"mark-000121","kind":"Func series scan","name":"009-func-bold_task-rest_acq-med1_run-01_scan-51","target_ids":["dicoms-000251"],"dicoms_isotime":"2024-08-30T11:46:08.497500","dicoms_duration":2.0,"birch_isotime":null,"birch_duration":null,"qrinfo_isotime":null,"qrinfo_duration":null,"psychopy_isotime":null,"psychopy_duration":null,"reproevents_isotime":null,"reproevents_duration":null}
+{"type":"MarkRecord","session_id":"ses-20240830","id":"mark-000122","kind":"Func series scan","name":"009-func-bold_task-rest_acq-med1_run-01_scan-52","target_ids":["dicoms-000252"],"dicoms_isotime":"2024-08-30T11:46:10.497500","dicoms_duration":2.0,"birch_isotime":null,"birch_duration":null,"qrinfo_isotime":null,"qrinfo_duration":null,"psychopy_isotime":null,"psychopy_duration":null,"reproevents_isotime":null,"reproevents_duration":null}
+{"type":"MarkRecord","session_id":"ses-20240830","id":"mark-000123","kind":"Func series scan","name":"009-func-bold_task-rest_acq-med1_run-01_scan-53","target_ids":["dicoms-000253"],"dicoms_isotime":"2024-08-30T11:46:12.497500","dicoms_duration":2.0,"birch_isotime":null,"birch_duration":null,"qrinfo_isotime":null,"qrinfo_duration":null,"psychopy_isotime":null,"psychopy_duration":null,"reproevents_isotime":null,"reproevents_duration":null}
+{"type":"MarkRecord","session_id":"ses-20240830","id":"mark-000124","kind":"Func series scan","name":"009-func-bold_task-rest_acq-med1_run-01_scan-54","target_ids":["dicoms-000254"],"dicoms_isotime":"2024-08-30T11:46:14.497500","dicoms_duration":2.0,"birch_isotime":null,"birch_duration":null,"qrinfo_isotime":null,"qrinfo_duration":null,"psychopy_isotime":null,"psychopy_duration":null,"reproevents_isotime":null,"reproevents_duration":null}
+{"type":"MarkRecord","session_id":"ses-20240830","id":"mark-000125","kind":"Func series scan","name":"009-func-bold_task-rest_acq-med1_run-01_scan-55","target_ids":["dicoms-000255"],"dicoms_isotime":"2024-08-30T11:46:16.497500","dicoms_duration":2.0,"birch_isotime":null,"birch_duration":null,"qrinfo_isotime":null,"qrinfo_duration":null,"psychopy_isotime":null,"psychopy_duration":null,"reproevents_isotime":null,"reproevents_duration":null}
+{"type":"MarkRecord","session_id":"ses-20240830","id":"mark-000126","kind":"Func series scan","name":"009-func-bold_task-rest_acq-med1_run-01_scan-56","target_ids":["dicoms-000256"],"dicoms_isotime":"2024-08-30T11:46:18.497500","dicoms_duration":2.0,"birch_isotime":null,"birch_duration":null,"qrinfo_isotime":null,"qrinfo_duration":null,"psychopy_isotime":null,"psychopy_duration":null,"reproevents_isotime":null,"reproevents_duration":null}
+{"type":"MarkRecord","session_id":"ses-20240830","id":"mark-000127","kind":"Func series scan","name":"009-func-bold_task-rest_acq-med1_run-01_scan-57","target_ids":["dicoms-000257"],"dicoms_isotime":"2024-08-30T11:46:20.497500","dicoms_duration":2.0,"birch_isotime":null,"birch_duration":null,"qrinfo_isotime":null,"qrinfo_duration":null,"psychopy_isotime":null,"psychopy_duration":null,"reproevents_isotime":null,"reproevents_duration":null}
+{"type":"MarkRecord","session_id":"ses-20240830","id":"mark-000128","kind":"Func series scan","name":"009-func-bold_task-rest_acq-med1_run-01_scan-58","target_ids":["dicoms-000258"],"dicoms_isotime":"2024-08-30T11:46:22.497500","dicoms_duration":2.0,"birch_isotime":null,"birch_duration":null,"qrinfo_isotime":null,"qrinfo_duration":null,"psychopy_isotime":null,"psychopy_duration":null,"reproevents_isotime":null,"reproevents_duration":null}
+{"type":"MarkRecord","session_id":"ses-20240830","id":"mark-000129","kind":"Func series scan","name":"009-func-bold_task-rest_acq-med1_run-01_scan-59","target_ids":["dicoms-000259"],"dicoms_isotime":"2024-08-30T11:46:24.497500","dicoms_duration":2.0,"birch_isotime":null,"birch_duration":null,"qrinfo_isotime":null,"qrinfo_duration":null,"psychopy_isotime":null,"psychopy_duration":null,"reproevents_isotime":null,"reproevents_duration":null}
+{"type":"MarkRecord","session_id":"ses-20240830","id":"mark-000130","kind":"Func series scan","name":"009-func-bold_task-rest_acq-med1_run-01_scan-60","target_ids":["dicoms-000260"],"dicoms_isotime":"2024-08-30T11:46:26.497500","dicoms_duration":2.0,"birch_isotime":null,"birch_duration":null,"qrinfo_isotime":null,"qrinfo_duration":null,"psychopy_isotime":null,"psychopy_duration":null,"reproevents_isotime":null,"reproevents_duration":null}
+{"type":"MarkRecord","session_id":"ses-20240830","id":"mark-000131","kind":"Func series scan","name":"009-func-bold_task-rest_acq-med1_run-01_scan-61","target_ids":["dicoms-000261"],"dicoms_isotime":"2024-08-30T11:46:28.497500","dicoms_duration":2.0,"birch_isotime":null,"birch_duration":null,"qrinfo_isotime":null,"qrinfo_duration":null,"psychopy_isotime":null,"psychopy_duration":null,"reproevents_isotime":null,"reproevents_duration":null}
+{"type":"MarkRecord","session_id":"ses-20240830","id":"mark-000132","kind":"Func series scan","name":"009-func-bold_task-rest_acq-med1_run-01_scan-62","target_ids":["dicoms-000262"],"dicoms_isotime":"2024-08-30T11:46:30.497500","dicoms_duration":2.0,"birch_isotime":null,"birch_duration":null,"qrinfo_isotime":null,"qrinfo_duration":null,"psychopy_isotime":null,"psychopy_duration":null,"reproevents_isotime":null,"reproevents_duration":null}
+{"type":"MarkRecord","session_id":"ses-20240830","id":"mark-000133","kind":"Func series scan","name":"009-func-bold_task-rest_acq-med1_run-01_scan-63","target_ids":["dicoms-000263"],"dicoms_isotime":"2024-08-30T11:46:32.497500","dicoms_duration":2.0,"birch_isotime":null,"birch_duration":null,"qrinfo_isotime":null,"qrinfo_duration":null,"psychopy_isotime":null,"psychopy_duration":null,"reproevents_isotime":null,"reproevents_duration":null}
+{"type":"MarkRecord","session_id":"ses-20240830","id":"mark-000134","kind":"Func series scan","name":"009-func-bold_task-rest_acq-med1_run-01_scan-64","target_ids":["dicoms-000264"],"dicoms_isotime":"2024-08-30T11:46:34.497500","dicoms_duration":2.0,"birch_isotime":null,"birch_duration":null,"qrinfo_isotime":null,"qrinfo_duration":null,"psychopy_isotime":null,"psychopy_duration":null,"reproevents_isotime":null,"reproevents_duration":null}
+{"type":"MarkRecord","session_id":"ses-20240830","id":"mark-000135","kind":"Func series scan","name":"009-func-bold_task-rest_acq-med1_run-01_scan-65","target_ids":["dicoms-000265"],"dicoms_isotime":"2024-08-30T11:46:36.497500","dicoms_duration":2.0,"birch_isotime":null,"birch_duration":null,"qrinfo_isotime":null,"qrinfo_duration":null,"psychopy_isotime":null,"psychopy_duration":null,"reproevents_isotime":null,"reproevents_duration":null}
+{"type":"MarkRecord","session_id":"ses-20240830","id":"mark-000136","kind":"Func series scan","name":"009-func-bold_task-rest_acq-med1_run-01_scan-66","target_ids":["dicoms-000266"],"dicoms_isotime":"2024-08-30T11:46:38.497500","dicoms_duration":2.0,"birch_isotime":null,"birch_duration":null,"qrinfo_isotime":null,"qrinfo_duration":null,"psychopy_isotime":null,"psychopy_duration":null,"reproevents_isotime":null,"reproevents_duration":null}
+{"type":"MarkRecord","session_id":"ses-20240830","id":"mark-000137","kind":"Func series scan","name":"009-func-bold_task-rest_acq-med1_run-01_scan-67","target_ids":["dicoms-000267"],"dicoms_isotime":"2024-08-30T11:46:40.497500","dicoms_duration":2.0,"birch_isotime":null,"birch_duration":null,"qrinfo_isotime":null,"qrinfo_duration":null,"psychopy_isotime":null,"psychopy_duration":null,"reproevents_isotime":null,"reproevents_duration":null}
+{"type":"MarkRecord","session_id":"ses-20240830","id":"mark-000138","kind":"Func series scan","name":"009-func-bold_task-rest_acq-med1_run-01_scan-68","target_ids":["dicoms-000268"],"dicoms_isotime":"2024-08-30T11:46:42.497500","dicoms_duration":2.0,"birch_isotime":null,"birch_duration":null,"qrinfo_isotime":null,"qrinfo_duration":null,"psychopy_isotime":null,"psychopy_duration":null,"reproevents_isotime":null,"reproevents_duration":null}
+{"type":"MarkRecord","session_id":"ses-20240830","id":"mark-000139","kind":"Func series scan","name":"009-func-bold_task-rest_acq-med1_run-01_scan-69","target_ids":["dicoms-000269"],"dicoms_isotime":"2024-08-30T11:46:44.497500","dicoms_duration":2.0,"birch_isotime":null,"birch_duration":null,"qrinfo_isotime":null,"qrinfo_duration":null,"psychopy_isotime":null,"psychopy_duration":null,"reproevents_isotime":null,"reproevents_duration":null}
+{"type":"MarkRecord","session_id":"ses-20240830","id":"mark-000140","kind":"Func series scan","name":"009-func-bold_task-rest_acq-med1_run-01_scan-70","target_ids":["dicoms-000270"],"dicoms_isotime":"2024-08-30T11:46:46.497500","dicoms_duration":2.0,"birch_isotime":null,"birch_duration":null,"qrinfo_isotime":null,"qrinfo_duration":null,"psychopy_isotime":null,"psychopy_duration":null,"reproevents_isotime":null,"reproevents_duration":null}
+{"type":"MarkRecord","session_id":"ses-20240830","id":"mark-000141","kind":"Func series scan","name":"009-func-bold_task-rest_acq-med1_run-01_scan-71","target_ids":["dicoms-000271"],"dicoms_isotime":"2024-08-30T11:46:48.497500","dicoms_duration":2.0,"birch_isotime":null,"birch_duration":null,"qrinfo_isotime":null,"qrinfo_duration":null,"psychopy_isotime":null,"psychopy_duration":null,"reproevents_isotime":null,"reproevents_duration":null}
+{"type":"MarkRecord","session_id":"ses-20240830","id":"mark-000142","kind":"Func series scan","name":"009-func-bold_task-rest_acq-med1_run-01_scan-72","target_ids":["dicoms-000272"],"dicoms_isotime":"2024-08-30T11:46:50.497500","dicoms_duration":2.0,"birch_isotime":null,"birch_duration":null,"qrinfo_isotime":null,"qrinfo_duration":null,"psychopy_isotime":null,"psychopy_duration":null,"reproevents_isotime":null,"reproevents_duration":null}
+{"type":"MarkRecord","session_id":"ses-20240830","id":"mark-000143","kind":"Func series scan","name":"009-func-bold_task-rest_acq-med1_run-01_scan-73","target_ids":["dicoms-000273"],"dicoms_isotime":"2024-08-30T11:46:52.497500","dicoms_duration":2.0,"birch_isotime":null,"birch_duration":null,"qrinfo_isotime":null,"qrinfo_duration":null,"psychopy_isotime":null,"psychopy_duration":null,"reproevents_isotime":null,"reproevents_duration":null}
+{"type":"MarkRecord","session_id":"ses-20240830","id":"mark-000144","kind":"Func series scan","name":"009-func-bold_task-rest_acq-med1_run-01_scan-74","target_ids":["dicoms-000274"],"dicoms_isotime":"2024-08-30T11:46:54.497500","dicoms_duration":2.0,"birch_isotime":null,"birch_duration":null,"qrinfo_isotime":null,"qrinfo_duration":null,"psychopy_isotime":null,"psychopy_duration":null,"reproevents_isotime":null,"reproevents_duration":null}
+{"type":"MarkRecord","session_id":"ses-20240830","id":"mark-000145","kind":"Func series scan","name":"009-func-bold_task-rest_acq-med1_run-01_scan-75","target_ids":["dicoms-000275"],"dicoms_isotime":"2024-08-30T11:46:56.497500","dicoms_duration":2.0,"birch_isotime":null,"birch_duration":null,"qrinfo_isotime":null,"qrinfo_duration":null,"psychopy_isotime":null,"psychopy_duration":null,"reproevents_isotime":null,"reproevents_duration":null}
+{"type":"MarkRecord","session_id":"ses-20240830","id":"mark-000146","kind":"Func series scan","name":"009-func-bold_task-rest_acq-med1_run-01_scan-76","target_ids":["dicoms-000276"],"dicoms_isotime":"2024-08-30T11:46:58.497500","dicoms_duration":2.0,"birch_isotime":null,"birch_duration":null,"qrinfo_isotime":null,"qrinfo_duration":null,"psychopy_isotime":null,"psychopy_duration":null,"reproevents_isotime":null,"reproevents_duration":null}
+{"type":"MarkRecord","session_id":"ses-20240830","id":"mark-000147","kind":"Func series scan","name":"009-func-bold_task-rest_acq-med1_run-01_scan-77","target_ids":["dicoms-000277"],"dicoms_isotime":"2024-08-30T11:47:00.497500","dicoms_duration":2.0,"birch_isotime":null,"birch_duration":null,"qrinfo_isotime":null,"qrinfo_duration":null,"psychopy_isotime":null,"psychopy_duration":null,"reproevents_isotime":null,"reproevents_duration":null}
+{"type":"MarkRecord","session_id":"ses-20240830","id":"mark-000148","kind":"Func series scan","name":"009-func-bold_task-rest_acq-med1_run-01_scan-78","target_ids":["dicoms-000278"],"dicoms_isotime":"2024-08-30T11:47:02.497500","dicoms_duration":2.0,"birch_isotime":null,"birch_duration":null,"qrinfo_isotime":null,"qrinfo_duration":null,"psychopy_isotime":null,"psychopy_duration":null,"reproevents_isotime":null,"reproevents_duration":null}
+{"type":"MarkRecord","session_id":"ses-20240830","id":"mark-000149","kind":"Func series scan","name":"009-func-bold_task-rest_acq-med1_run-01_scan-79","target_ids":["dicoms-000279"],"dicoms_isotime":"2024-08-30T11:47:04.497500","dicoms_duration":2.0,"birch_isotime":null,"birch_duration":null,"qrinfo_isotime":null,"qrinfo_duration":null,"psychopy_isotime":null,"psychopy_duration":null,"reproevents_isotime":null,"reproevents_duration":null}
+{"type":"MarkRecord","session_id":"ses-20240830","id":"mark-000150","kind":"Func series scan","name":"009-func-bold_task-rest_acq-med1_run-01_scan-80","target_ids":["dicoms-000280"],"dicoms_isotime":"2024-08-30T11:47:06.497500","dicoms_duration":2.0,"birch_isotime":null,"birch_duration":null,"qrinfo_isotime":null,"qrinfo_duration":null,"psychopy_isotime":null,"psychopy_duration":null,"reproevents_isotime":null,"reproevents_duration":null}
+{"type":"MarkRecord","session_id":"ses-20240830","id":"mark-000151","kind":"Func series scan","name":"009-func-bold_task-rest_acq-med1_run-01_scan-81","target_ids":["dicoms-000281"],"dicoms_isotime":"2024-08-30T11:47:08.497500","dicoms_duration":2.0,"birch_isotime":null,"birch_duration":null,"qrinfo_isotime":null,"qrinfo_duration":null,"psychopy_isotime":null,"psychopy_duration":null,"reproevents_isotime":null,"reproevents_duration":null}
+{"type":"MarkRecord","session_id":"ses-20240830","id":"mark-000152","kind":"Func series scan","name":"009-func-bold_task-rest_acq-med1_run-01_scan-82","target_ids":["dicoms-000282"],"dicoms_isotime":"2024-08-30T11:47:10.497500","dicoms_duration":2.0,"birch_isotime":null,"birch_duration":null,"qrinfo_isotime":null,"qrinfo_duration":null,"psychopy_isotime":null,"psychopy_duration":null,"reproevents_isotime":null,"reproevents_duration":null}
+{"type":"MarkRecord","session_id":"ses-20240830","id":"mark-000153","kind":"Func series scan","name":"009-func-bold_task-rest_acq-med1_run-01_scan-83","target_ids":["dicoms-000283"],"dicoms_isotime":"2024-08-30T11:47:12.497500","dicoms_duration":2.0,"birch_isotime":null,"birch_duration":null,"qrinfo_isotime":null,"qrinfo_duration":null,"psychopy_isotime":null,"psychopy_duration":null,"reproevents_isotime":null,"reproevents_duration":null}
+{"type":"MarkRecord","session_id":"ses-20240830","id":"mark-000154","kind":"Func series scan","name":"009-func-bold_task-rest_acq-med1_run-01_scan-84","target_ids":["dicoms-000284"],"dicoms_isotime":"2024-08-30T11:47:14.497500","dicoms_duration":2.0,"birch_isotime":null,"birch_duration":null,"qrinfo_isotime":null,"qrinfo_duration":null,"psychopy_isotime":null,"psychopy_duration":null,"reproevents_isotime":null,"reproevents_duration":null}
+{"type":"MarkRecord","session_id":"ses-20240830","id":"mark-000155","kind":"Func series scan","name":"009-func-bold_task-rest_acq-med1_run-01_scan-85","target_ids":["dicoms-000285"],"dicoms_isotime":"2024-08-30T11:47:16.497500","dicoms_duration":2.0,"birch_isotime":null,"birch_duration":null,"qrinfo_isotime":null,"qrinfo_duration":null,"psychopy_isotime":null,"psychopy_duration":null,"reproevents_isotime":null,"reproevents_duration":null}
+{"type":"MarkRecord","session_id":"ses-20240830","id":"mark-000156","kind":"Func series scan","name":"009-func-bold_task-rest_acq-med1_run-01_scan-86","target_ids":["dicoms-000286"],"dicoms_isotime":"2024-08-30T11:47:18.497500","dicoms_duration":2.0,"birch_isotime":null,"birch_duration":null,"qrinfo_isotime":null,"qrinfo_duration":null,"psychopy_isotime":null,"psychopy_duration":null,"reproevents_isotime":null,"reproevents_duration":null}
+{"type":"MarkRecord","session_id":"ses-20240830","id":"mark-000157","kind":"Func series scan","name":"009-func-bold_task-rest_acq-med1_run-01_scan-87","target_ids":["dicoms-000287"],"dicoms_isotime":"2024-08-30T11:47:20.497500","dicoms_duration":2.0,"birch_isotime":null,"birch_duration":null,"qrinfo_isotime":null,"qrinfo_duration":null,"psychopy_isotime":null,"psychopy_duration":null,"reproevents_isotime":null,"reproevents_duration":null}
+{"type":"MarkRecord","session_id":"ses-20240830","id":"mark-000158","kind":"Func series scan","name":"009-func-bold_task-rest_acq-med1_run-01_scan-88","target_ids":["dicoms-000288"],"dicoms_isotime":"2024-08-30T11:47:22.497500","dicoms_duration":2.0,"birch_isotime":null,"birch_duration":null,"qrinfo_isotime":null,"qrinfo_duration":null,"psychopy_isotime":null,"psychopy_duration":null,"reproevents_isotime":null,"reproevents_duration":null}
+{"type":"MarkRecord","session_id":"ses-20240830","id":"mark-000159","kind":"Func series scan","name":"009-func-bold_task-rest_acq-med1_run-01_scan-89","target_ids":["dicoms-000289"],"dicoms_isotime":"2024-08-30T11:47:24.497500","dicoms_duration":2.0,"birch_isotime":null,"birch_duration":null,"qrinfo_isotime":null,"qrinfo_duration":null,"psychopy_isotime":null,"psychopy_duration":null,"reproevents_isotime":null,"reproevents_duration":null}
+{"type":"MarkRecord","session_id":"ses-20240830","id":"mark-000160","kind":"Func series scan","name":"009-func-bold_task-rest_acq-med1_run-01_scan-90","target_ids":["dicoms-000290"],"dicoms_isotime":"2024-08-30T11:47:26.497500","dicoms_duration":2.0,"birch_isotime":null,"birch_duration":null,"qrinfo_isotime":null,"qrinfo_duration":null,"psychopy_isotime":null,"psychopy_duration":null,"reproevents_isotime":null,"reproevents_duration":null}
+{"type":"MarkRecord","session_id":"ses-20240830","id":"mark-000161","kind":"Func series scan","name":"009-func-bold_task-rest_acq-med1_run-01_scan-91","target_ids":["dicoms-000291"],"dicoms_isotime":"2024-08-30T11:47:28.497500","dicoms_duration":2.0,"birch_isotime":null,"birch_duration":null,"qrinfo_isotime":null,"qrinfo_duration":null,"psychopy_isotime":null,"psychopy_duration":null,"reproevents_isotime":null,"reproevents_duration":null}
+{"type":"MarkRecord","session_id":"ses-20240830","id":"mark-000162","kind":"Func series scan","name":"009-func-bold_task-rest_acq-med1_run-01_scan-92","target_ids":["dicoms-000292"],"dicoms_isotime":"2024-08-30T11:47:30.497500","dicoms_duration":2.0,"birch_isotime":null,"birch_duration":null,"qrinfo_isotime":null,"qrinfo_duration":null,"psychopy_isotime":null,"psychopy_duration":null,"reproevents_isotime":null,"reproevents_duration":null}
+{"type":"MarkRecord","session_id":"ses-20240830","id":"mark-000163","kind":"Func series scan","name":"009-func-bold_task-rest_acq-med1_run-01_scan-93","target_ids":["dicoms-000293"],"dicoms_isotime":"2024-08-30T11:47:32.497500","dicoms_duration":2.0,"birch_isotime":null,"birch_duration":null,"qrinfo_isotime":null,"qrinfo_duration":null,"psychopy_isotime":null,"psychopy_duration":null,"reproevents_isotime":null,"reproevents_duration":null}
+{"type":"MarkRecord","session_id":"ses-20240830","id":"mark-000164","kind":"Func series scan","name":"009-func-bold_task-rest_acq-med1_run-01_scan-94","target_ids":["dicoms-000294"],"dicoms_isotime":"2024-08-30T11:47:34.497500","dicoms_duration":2.0,"birch_isotime":null,"birch_duration":null,"qrinfo_isotime":null,"qrinfo_duration":null,"psychopy_isotime":null,"psychopy_duration":null,"reproevents_isotime":null,"reproevents_duration":null}
+{"type":"MarkRecord","session_id":"ses-20240830","id":"mark-000165","kind":"Func series scan","name":"009-func-bold_task-rest_acq-med1_run-01_scan-95","target_ids":["dicoms-000295"],"dicoms_isotime":"2024-08-30T11:47:36.497500","dicoms_duration":2.0,"birch_isotime":null,"birch_duration":null,"qrinfo_isotime":null,"qrinfo_duration":null,"psychopy_isotime":null,"psychopy_duration":null,"reproevents_isotime":null,"reproevents_duration":null}
+{"type":"MarkRecord","session_id":"ses-20240830","id":"mark-000166","kind":"Func series scan","name":"009-func-bold_task-rest_acq-med1_run-01_scan-96","target_ids":["dicoms-000296"],"dicoms_isotime":"2024-08-30T11:47:38.497500","dicoms_duration":2.0,"birch_isotime":null,"birch_duration":null,"qrinfo_isotime":null,"qrinfo_duration":null,"psychopy_isotime":null,"psychopy_duration":null,"reproevents_isotime":null,"reproevents_duration":null}
+{"type":"MarkRecord","session_id":"ses-20240830","id":"mark-000167","kind":"Func series scan","name":"009-func-bold_task-rest_acq-med1_run-01_scan-97","target_ids":["dicoms-000297"],"dicoms_isotime":"2024-08-30T11:47:40.497500","dicoms_duration":2.0,"birch_isotime":null,"birch_duration":null,"qrinfo_isotime":null,"qrinfo_duration":null,"psychopy_isotime":null,"psychopy_duration":null,"reproevents_isotime":null,"reproevents_duration":null}
+{"type":"MarkRecord","session_id":"ses-20240830","id":"mark-000168","kind":"Func series scan","name":"009-func-bold_task-rest_acq-med1_run-01_scan-98","target_ids":["dicoms-000298"],"dicoms_isotime":"2024-08-30T11:47:42.497500","dicoms_duration":2.0,"birch_isotime":null,"birch_duration":null,"qrinfo_isotime":null,"qrinfo_duration":null,"psychopy_isotime":null,"psychopy_duration":null,"reproevents_isotime":null,"reproevents_duration":null}
+{"type":"MarkRecord","session_id":"ses-20240830","id":"mark-000169","kind":"Func series scan","name":"009-func-bold_task-rest_acq-med1_run-01_scan-99","target_ids":["dicoms-000299"],"dicoms_isotime":"2024-08-30T11:47:44.497500","dicoms_duration":2.0,"birch_isotime":null,"birch_duration":null,"qrinfo_isotime":null,"qrinfo_duration":null,"psychopy_isotime":null,"psychopy_duration":null,"reproevents_isotime":null,"reproevents_duration":null}
+{"type":"MarkRecord","session_id":"ses-20240830","id":"mark-000170","kind":"Func series scan","name":"009-func-bold_task-rest_acq-med1_run-01_scan-100","target_ids":["dicoms-000300"],"dicoms_isotime":"2024-08-30T11:47:46.497500","dicoms_duration":2.0,"birch_isotime":null,"birch_duration":null,"qrinfo_isotime":null,"qrinfo_duration":null,"psychopy_isotime":null,"psychopy_duration":null,"reproevents_isotime":null,"reproevents_duration":null}
+{"type":"MarkRecord","session_id":"ses-20240830","id":"mark-000171","kind":"Func series scan","name":"009-func-bold_task-rest_acq-med1_run-01_scan-101","target_ids":["dicoms-000301"],"dicoms_isotime":"2024-08-30T11:47:48.497500","dicoms_duration":2.0,"birch_isotime":null,"birch_duration":null,"qrinfo_isotime":null,"qrinfo_duration":null,"psychopy_isotime":null,"psychopy_duration":null,"reproevents_isotime":null,"reproevents_duration":null}
+{"type":"MarkRecord","session_id":"ses-20240830","id":"mark-000172","kind":"Func series scan","name":"009-func-bold_task-rest_acq-med1_run-01_scan-102","target_ids":["dicoms-000302"],"dicoms_isotime":"2024-08-30T11:47:50.497500","dicoms_duration":2.0,"birch_isotime":null,"birch_duration":null,"qrinfo_isotime":null,"qrinfo_duration":null,"psychopy_isotime":null,"psychopy_duration":null,"reproevents_isotime":null,"reproevents_duration":null}
+{"type":"MarkRecord","session_id":"ses-20240830","id":"mark-000173","kind":"Func series scan","name":"009-func-bold_task-rest_acq-med1_run-01_scan-103","target_ids":["dicoms-000303"],"dicoms_isotime":"2024-08-30T11:47:52.497500","dicoms_duration":2.0,"birch_isotime":null,"birch_duration":null,"qrinfo_isotime":null,"qrinfo_duration":null,"psychopy_isotime":null,"psychopy_duration":null,"reproevents_isotime":null,"reproevents_duration":null}
+{"type":"MarkRecord","session_id":"ses-20240830","id":"mark-000174","kind":"Func series scan","name":"009-func-bold_task-rest_acq-med1_run-01_scan-104","target_ids":["dicoms-000304"],"dicoms_isotime":"2024-08-30T11:47:54.497500","dicoms_duration":2.0,"birch_isotime":null,"birch_duration":null,"qrinfo_isotime":null,"qrinfo_duration":null,"psychopy_isotime":null,"psychopy_duration":null,"reproevents_isotime":null,"reproevents_duration":null}
+{"type":"MarkRecord","session_id":"ses-20240830","id":"mark-000175","kind":"Func series scan","name":"009-func-bold_task-rest_acq-med1_run-01_scan-105","target_ids":["dicoms-000305"],"dicoms_isotime":"2024-08-30T11:47:56.497500","dicoms_duration":2.0,"birch_isotime":null,"birch_duration":null,"qrinfo_isotime":null,"qrinfo_duration":null,"psychopy_isotime":null,"psychopy_duration":null,"reproevents_isotime":null,"reproevents_duration":null}
+{"type":"MarkRecord","session_id":"ses-20240830","id":"mark-000176","kind":"Func series scan","name":"009-func-bold_task-rest_acq-med1_run-01_scan-106","target_ids":["dicoms-000306"],"dicoms_isotime":"2024-08-30T11:47:58.497500","dicoms_duration":2.0,"birch_isotime":null,"birch_duration":null,"qrinfo_isotime":null,"qrinfo_duration":null,"psychopy_isotime":null,"psychopy_duration":null,"reproevents_isotime":null,"reproevents_duration":null}
+{"type":"MarkRecord","session_id":"ses-20240830","id":"mark-000177","kind":"Func series scan","name":"009-func-bold_task-rest_acq-med1_run-01_scan-107","target_ids":["dicoms-000307"],"dicoms_isotime":"2024-08-30T11:48:00.497500","dicoms_duration":2.0,"birch_isotime":null,"birch_duration":null,"qrinfo_isotime":null,"qrinfo_duration":null,"psychopy_isotime":null,"psychopy_duration":null,"reproevents_isotime":null,"reproevents_duration":null}
+{"type":"MarkRecord","session_id":"ses-20240830","id":"mark-000178","kind":"Func series scan","name":"009-func-bold_task-rest_acq-med1_run-01_scan-108","target_ids":["dicoms-000308"],"dicoms_isotime":"2024-08-30T11:48:02.497500","dicoms_duration":2.0,"birch_isotime":null,"birch_duration":null,"qrinfo_isotime":null,"qrinfo_duration":null,"psychopy_isotime":null,"psychopy_duration":null,"reproevents_isotime":null,"reproevents_duration":null}
+{"type":"MarkRecord","session_id":"ses-20240830","id":"mark-000179","kind":"Func series scan","name":"009-func-bold_task-rest_acq-med1_run-01_scan-109","target_ids":["dicoms-000309"],"dicoms_isotime":"2024-08-30T11:48:04.497500","dicoms_duration":2.0,"birch_isotime":null,"birch_duration":null,"qrinfo_isotime":null,"qrinfo_duration":null,"psychopy_isotime":null,"psychopy_duration":null,"reproevents_isotime":null,"reproevents_duration":null}
+{"type":"MarkRecord","session_id":"ses-20240830","id":"mark-000180","kind":"Func series scan","name":"009-func-bold_task-rest_acq-med1_run-01_scan-110","target_ids":["dicoms-000310"],"dicoms_isotime":"2024-08-30T11:48:06.497500","dicoms_duration":2.0,"birch_isotime":null,"birch_duration":null,"qrinfo_isotime":null,"qrinfo_duration":null,"psychopy_isotime":null,"psychopy_duration":null,"reproevents_isotime":null,"reproevents_duration":null}
+{"type":"MarkRecord","session_id":"ses-20240830","id":"mark-000181","kind":"Func series scan","name":"009-func-bold_task-rest_acq-med1_run-01_scan-111","target_ids":["dicoms-000311"],"dicoms_isotime":"2024-08-30T11:48:08.497500","dicoms_duration":2.0,"birch_isotime":null,"birch_duration":null,"qrinfo_isotime":null,"qrinfo_duration":null,"psychopy_isotime":null,"psychopy_duration":null,"reproevents_isotime":null,"reproevents_duration":null}
+{"type":"MarkRecord","session_id":"ses-20240830","id":"mark-000182","kind":"Func series scan","name":"009-func-bold_task-rest_acq-med1_run-01_scan-112","target_ids":["dicoms-000312"],"dicoms_isotime":"2024-08-30T11:48:10.497500","dicoms_duration":2.0,"birch_isotime":null,"birch_duration":null,"qrinfo_isotime":null,"qrinfo_duration":null,"psychopy_isotime":null,"psychopy_duration":null,"reproevents_isotime":null,"reproevents_duration":null}
+{"type":"MarkRecord","session_id":"ses-20240830","id":"mark-000183","kind":"Func series scan","name":"009-func-bold_task-rest_acq-med1_run-01_scan-113","target_ids":["dicoms-000313"],"dicoms_isotime":"2024-08-30T11:48:12.497500","dicoms_duration":2.0,"birch_isotime":null,"birch_duration":null,"qrinfo_isotime":null,"qrinfo_duration":null,"psychopy_isotime":null,"psychopy_duration":null,"reproevents_isotime":null,"reproevents_duration":null}
+{"type":"MarkRecord","session_id":"ses-20240830","id":"mark-000184","kind":"Func series scan","name":"009-func-bold_task-rest_acq-med1_run-01_scan-114","target_ids":["dicoms-000314"],"dicoms_isotime":"2024-08-30T11:48:14.497500","dicoms_duration":2.0,"birch_isotime":null,"birch_duration":null,"qrinfo_isotime":null,"qrinfo_duration":null,"psychopy_isotime":null,"psychopy_duration":null,"reproevents_isotime":null,"reproevents_duration":null}
+{"type":"MarkRecord","session_id":"ses-20240830","id":"mark-000185","kind":"Func series scan","name":"009-func-bold_task-rest_acq-med1_run-01_scan-115","target_ids":["dicoms-000315"],"dicoms_isotime":"2024-08-30T11:48:16.497500","dicoms_duration":2.0,"birch_isotime":null,"birch_duration":null,"qrinfo_isotime":null,"qrinfo_duration":null,"psychopy_isotime":null,"psychopy_duration":null,"reproevents_isotime":null,"reproevents_duration":null}
+{"type":"MarkRecord","session_id":"ses-20240830","id":"mark-000186","kind":"Func series scan","name":"009-func-bold_task-rest_acq-med1_run-01_scan-116","target_ids":["dicoms-000316"],"dicoms_isotime":"2024-08-30T11:48:18.497500","dicoms_duration":2.0,"birch_isotime":null,"birch_duration":null,"qrinfo_isotime":null,"qrinfo_duration":null,"psychopy_isotime":null,"psychopy_duration":null,"reproevents_isotime":null,"reproevents_duration":null}
+{"type":"MarkRecord","session_id":"ses-20240830","id":"mark-000187","kind":"Func series scan","name":"009-func-bold_task-rest_acq-med1_run-01_scan-117","target_ids":["dicoms-000317"],"dicoms_isotime":"2024-08-30T11:48:20.497500","dicoms_duration":2.0,"birch_isotime":null,"birch_duration":null,"qrinfo_isotime":null,"qrinfo_duration":null,"psychopy_isotime":null,"psychopy_duration":null,"reproevents_isotime":null,"reproevents_duration":null}
+{"type":"MarkRecord","session_id":"ses-20240830","id":"mark-000188","kind":"Func series scan","name":"009-func-bold_task-rest_acq-med1_run-01_scan-118","target_ids":["dicoms-000318"],"dicoms_isotime":"2024-08-30T11:48:22.497500","dicoms_duration":2.0,"birch_isotime":null,"birch_duration":null,"qrinfo_isotime":null,"qrinfo_duration":null,"psychopy_isotime":null,"psychopy_duration":null,"reproevents_isotime":null,"reproevents_duration":null}
+{"type":"MarkRecord","session_id":"ses-20240830","id":"mark-000189","kind":"Func series scan","name":"009-func-bold_task-rest_acq-med1_run-01_scan-119","target_ids":["dicoms-000319"],"dicoms_isotime":"2024-08-30T11:48:24.497500","dicoms_duration":2.0,"birch_isotime":null,"birch_duration":null,"qrinfo_isotime":null,"qrinfo_duration":null,"psychopy_isotime":null,"psychopy_duration":null,"reproevents_isotime":null,"reproevents_duration":null}
+{"type":"MarkRecord","session_id":"ses-20240830","id":"mark-000190","kind":"Func series scan","name":"009-func-bold_task-rest_acq-med1_run-01_scan-120","target_ids":["dicoms-000320"],"dicoms_isotime":"2024-08-30T11:48:26.497500","dicoms_duration":2.0,"birch_isotime":null,"birch_duration":null,"qrinfo_isotime":null,"qrinfo_duration":null,"psychopy_isotime":null,"psychopy_duration":null,"reproevents_isotime":null,"reproevents_duration":null}
+{"type":"MarkRecord","session_id":"ses-20240830","id":"mark-000191","kind":"Func series scan","name":"009-func-bold_task-rest_acq-med1_run-01_scan-121","target_ids":["dicoms-000321"],"dicoms_isotime":"2024-08-30T11:48:28.497500","dicoms_duration":2.0,"birch_isotime":null,"birch_duration":null,"qrinfo_isotime":null,"qrinfo_duration":null,"psychopy_isotime":null,"psychopy_duration":null,"reproevents_isotime":null,"reproevents_duration":null}
+{"type":"MarkRecord","session_id":"ses-20240830","id":"mark-000192","kind":"Func series scan","name":"009-func-bold_task-rest_acq-med1_run-01_scan-122","target_ids":["dicoms-000322"],"dicoms_isotime":"2024-08-30T11:48:30.497500","dicoms_duration":2.0,"birch_isotime":null,"birch_duration":null,"qrinfo_isotime":null,"qrinfo_duration":null,"psychopy_isotime":null,"psychopy_duration":null,"reproevents_isotime":null,"reproevents_duration":null}
+{"type":"MarkRecord","session_id":"ses-20240830","id":"mark-000193","kind":"Func series scan","name":"009-func-bold_task-rest_acq-med1_run-01_scan-123","target_ids":["dicoms-000323"],"dicoms_isotime":"2024-08-30T11:48:32.497500","dicoms_duration":2.0,"birch_isotime":null,"birch_duration":null,"qrinfo_isotime":null,"qrinfo_duration":null,"psychopy_isotime":null,"psychopy_duration":null,"reproevents_isotime":null,"reproevents_duration":null}
+{"type":"MarkRecord","session_id":"ses-20240830","id":"mark-000194","kind":"Func series scan","name":"009-func-bold_task-rest_acq-med1_run-01_scan-124","target_ids":["dicoms-000324"],"dicoms_isotime":"2024-08-30T11:48:34.497500","dicoms_duration":2.0,"birch_isotime":null,"birch_duration":null,"qrinfo_isotime":null,"qrinfo_duration":null,"psychopy_isotime":null,"psychopy_duration":null,"reproevents_isotime":null,"reproevents_duration":null}
+{"type":"MarkRecord","session_id":"ses-20240830","id":"mark-000195","kind":"Func series scan","name":"009-func-bold_task-rest_acq-med1_run-01_scan-125","target_ids":["dicoms-000325"],"dicoms_isotime":"2024-08-30T11:48:36.497500","dicoms_duration":2.0,"birch_isotime":null,"birch_duration":null,"qrinfo_isotime":null,"qrinfo_duration":null,"psychopy_isotime":null,"psychopy_duration":null,"reproevents_isotime":null,"reproevents_duration":null}
+{"type":"MarkRecord","session_id":"ses-20240830","id":"mark-000196","kind":"Func series scan","name":"009-func-bold_task-rest_acq-med1_run-01_scan-126","target_ids":["dicoms-000326"],"dicoms_isotime":"2024-08-30T11:48:38.497500","dicoms_duration":2.0,"birch_isotime":null,"birch_duration":null,"qrinfo_isotime":null,"qrinfo_duration":null,"psychopy_isotime":null,"psychopy_duration":null,"reproevents_isotime":null,"reproevents_duration":null}
+{"type":"MarkRecord","session_id":"ses-20240830","id":"mark-000197","kind":"Func series scan","name":"009-func-bold_task-rest_acq-med1_run-01_scan-127","target_ids":["dicoms-000327"],"dicoms_isotime":"2024-08-30T11:48:40.497500","dicoms_duration":2.0,"birch_isotime":null,"birch_duration":null,"qrinfo_isotime":null,"qrinfo_duration":null,"psychopy_isotime":null,"psychopy_duration":null,"reproevents_isotime":null,"reproevents_duration":null}
+{"type":"MarkRecord","session_id":"ses-20240830","id":"mark-000198","kind":"Func series scan","name":"009-func-bold_task-rest_acq-med1_run-01_scan-128","target_ids":["dicoms-000328"],"dicoms_isotime":"2024-08-30T11:48:42.497500","dicoms_duration":2.0,"birch_isotime":null,"birch_duration":null,"qrinfo_isotime":null,"qrinfo_duration":null,"psychopy_isotime":null,"psychopy_duration":null,"reproevents_isotime":null,"reproevents_duration":null}
+{"type":"MarkRecord","session_id":"ses-20240830","id":"mark-000199","kind":"Func series scan","name":"009-func-bold_task-rest_acq-med1_run-01_scan-129","target_ids":["dicoms-000329"],"dicoms_isotime":"2024-08-30T11:48:44.497500","dicoms_duration":2.0,"birch_isotime":null,"birch_duration":null,"qrinfo_isotime":null,"qrinfo_duration":null,"psychopy_isotime":null,"psychopy_duration":null,"reproevents_isotime":null,"reproevents_duration":null}
+{"type":"MarkRecord","session_id":"ses-20240830","id":"mark-000200","kind":"Func series scan","name":"009-func-bold_task-rest_acq-med1_run-01_scan-130","target_ids":["dicoms-000330"],"dicoms_isotime":"2024-08-30T11:48:46.497500","dicoms_duration":2.0,"birch_isotime":null,"birch_duration":null,"qrinfo_isotime":null,"qrinfo_duration":null,"psychopy_isotime":null,"psychopy_duration":null,"reproevents_isotime":null,"reproevents_duration":null}
+{"type":"MarkRecord","session_id":"ses-20240830","id":"mark-000201","kind":"Func series scan","name":"009-func-bold_task-rest_acq-med1_run-01_scan-131","target_ids":["dicoms-000331"],"dicoms_isotime":"2024-08-30T11:48:48.497500","dicoms_duration":2.0,"birch_isotime":null,"birch_duration":null,"qrinfo_isotime":null,"qrinfo_duration":null,"psychopy_isotime":null,"psychopy_duration":null,"reproevents_isotime":null,"reproevents_duration":null}
+{"type":"MarkRecord","session_id":"ses-20240830","id":"mark-000202","kind":"Func series scan","name":"009-func-bold_task-rest_acq-med1_run-01_scan-132","target_ids":["dicoms-000332"],"dicoms_isotime":"2024-08-30T11:48:50.497500","dicoms_duration":2.0,"birch_isotime":null,"birch_duration":null,"qrinfo_isotime":null,"qrinfo_duration":null,"psychopy_isotime":null,"psychopy_duration":null,"reproevents_isotime":null,"reproevents_duration":null}
+{"type":"MarkRecord","session_id":"ses-20240830","id":"mark-000203","kind":"Func series scan","name":"009-func-bold_task-rest_acq-med1_run-01_scan-133","target_ids":["dicoms-000333"],"dicoms_isotime":"2024-08-30T11:48:52.497500","dicoms_duration":2.0,"birch_isotime":null,"birch_duration":null,"qrinfo_isotime":null,"qrinfo_duration":null,"psychopy_isotime":null,"psychopy_duration":null,"reproevents_isotime":null,"reproevents_duration":null}
+{"type":"MarkRecord","session_id":"ses-20240830","id":"mark-000204","kind":"Func series scan","name":"009-func-bold_task-rest_acq-med1_run-01_scan-134","target_ids":["dicoms-000334"],"dicoms_isotime":"2024-08-30T11:48:54.497500","dicoms_duration":2.0,"birch_isotime":null,"birch_duration":null,"qrinfo_isotime":null,"qrinfo_duration":null,"psychopy_isotime":null,"psychopy_duration":null,"reproevents_isotime":null,"reproevents_duration":null}
+{"type":"MarkRecord","session_id":"ses-20240830","id":"mark-000205","kind":"Func series scan","name":"009-func-bold_task-rest_acq-med1_run-01_scan-135","target_ids":["dicoms-000335"],"dicoms_isotime":"2024-08-30T11:48:56.497500","dicoms_duration":2.0,"birch_isotime":null,"birch_duration":null,"qrinfo_isotime":null,"qrinfo_duration":null,"psychopy_isotime":null,"psychopy_duration":null,"reproevents_isotime":null,"reproevents_duration":null}
+{"type":"MarkRecord","session_id":"ses-20240830","id":"mark-000206","kind":"Func series scan","name":"009-func-bold_task-rest_acq-med1_run-01_scan-136","target_ids":["dicoms-000336"],"dicoms_isotime":"2024-08-30T11:48:58.497500","dicoms_duration":2.0,"birch_isotime":null,"birch_duration":null,"qrinfo_isotime":null,"qrinfo_duration":null,"psychopy_isotime":null,"psychopy_duration":null,"reproevents_isotime":null,"reproevents_duration":null}
+{"type":"MarkRecord","session_id":"ses-20240830","id":"mark-000207","kind":"Func series scan","name":"009-func-bold_task-rest_acq-med1_run-01_scan-137","target_ids":["dicoms-000337"],"dicoms_isotime":"2024-08-30T11:49:00.497500","dicoms_duration":2.0,"birch_isotime":null,"birch_duration":null,"qrinfo_isotime":null,"qrinfo_duration":null,"psychopy_isotime":null,"psychopy_duration":null,"reproevents_isotime":null,"reproevents_duration":null}
+{"type":"MarkRecord","session_id":"ses-20240830","id":"mark-000208","kind":"Func series scan","name":"009-func-bold_task-rest_acq-med1_run-01_scan-138","target_ids":["dicoms-000338"],"dicoms_isotime":"2024-08-30T11:49:02.497500","dicoms_duration":2.0,"birch_isotime":null,"birch_duration":null,"qrinfo_isotime":null,"qrinfo_duration":null,"psychopy_isotime":null,"psychopy_duration":null,"reproevents_isotime":null,"reproevents_duration":null}
+{"type":"MarkRecord","session_id":"ses-20240830","id":"mark-000209","kind":"Func series scan","name":"009-func-bold_task-rest_acq-med1_run-01_scan-139","target_ids":["dicoms-000339"],"dicoms_isotime":"2024-08-30T11:49:04.497500","dicoms_duration":2.0,"birch_isotime":null,"birch_duration":null,"qrinfo_isotime":null,"qrinfo_duration":null,"psychopy_isotime":null,"psychopy_duration":null,"reproevents_isotime":null,"reproevents_duration":null}
+{"type":"MarkRecord","session_id":"ses-20240830","id":"mark-000210","kind":"Func series scan","name":"009-func-bold_task-rest_acq-med1_run-01_scan-140","target_ids":["dicoms-000340"],"dicoms_isotime":"2024-08-30T11:49:06.497500","dicoms_duration":2.0,"birch_isotime":null,"birch_duration":null,"qrinfo_isotime":null,"qrinfo_duration":null,"psychopy_isotime":null,"psychopy_duration":null,"reproevents_isotime":null,"reproevents_duration":null}
+{"type":"MarkRecord","session_id":"ses-20240830","id":"mark-000211","kind":"Func series scan","name":"009-func-bold_task-rest_acq-med1_run-01_scan-141","target_ids":["dicoms-000341"],"dicoms_isotime":"2024-08-30T11:49:08.497500","dicoms_duration":2.0,"birch_isotime":null,"birch_duration":null,"qrinfo_isotime":null,"qrinfo_duration":null,"psychopy_isotime":null,"psychopy_duration":null,"reproevents_isotime":null,"reproevents_duration":null}
+{"type":"MarkRecord","session_id":"ses-20240830","id":"mark-000212","kind":"Func series scan","name":"009-func-bold_task-rest_acq-med1_run-01_scan-142","target_ids":["dicoms-000342"],"dicoms_isotime":"2024-08-30T11:49:10.497500","dicoms_duration":2.0,"birch_isotime":null,"birch_duration":null,"qrinfo_isotime":null,"qrinfo_duration":null,"psychopy_isotime":null,"psychopy_duration":null,"reproevents_isotime":null,"reproevents_duration":null}
+{"type":"MarkRecord","session_id":"ses-20240830","id":"mark-000213","kind":"Func series scan","name":"009-func-bold_task-rest_acq-med1_run-01_scan-143","target_ids":["dicoms-000343"],"dicoms_isotime":"2024-08-30T11:49:12.497500","dicoms_duration":2.0,"birch_isotime":null,"birch_duration":null,"qrinfo_isotime":null,"qrinfo_duration":null,"psychopy_isotime":null,"psychopy_duration":null,"reproevents_isotime":null,"reproevents_duration":null}
+{"type":"MarkRecord","session_id":"ses-20240830","id":"mark-000214","kind":"Func series scan","name":"009-func-bold_task-rest_acq-med1_run-01_scan-144","target_ids":["dicoms-000344"],"dicoms_isotime":"2024-08-30T11:49:14.497500","dicoms_duration":2.0,"birch_isotime":null,"birch_duration":null,"qrinfo_isotime":null,"qrinfo_duration":null,"psychopy_isotime":null,"psychopy_duration":null,"reproevents_isotime":null,"reproevents_duration":null}
+{"type":"MarkRecord","session_id":"ses-20240830","id":"mark-000215","kind":"Func series scan","name":"009-func-bold_task-rest_acq-med1_run-01_scan-145","target_ids":["dicoms-000345"],"dicoms_isotime":"2024-08-30T11:49:16.497500","dicoms_duration":2.0,"birch_isotime":null,"birch_duration":null,"qrinfo_isotime":null,"qrinfo_duration":null,"psychopy_isotime":null,"psychopy_duration":null,"reproevents_isotime":null,"reproevents_duration":null}
+{"type":"MarkRecord","session_id":"ses-20240830","id":"mark-000216","kind":"Func series scan","name":"009-func-bold_task-rest_acq-med1_run-01_scan-146","target_ids":["dicoms-000346"],"dicoms_isotime":"2024-08-30T11:49:18.497500","dicoms_duration":2.0,"birch_isotime":null,"birch_duration":null,"qrinfo_isotime":null,"qrinfo_duration":null,"psychopy_isotime":null,"psychopy_duration":null,"reproevents_isotime":null,"reproevents_duration":null}
+{"type":"MarkRecord","session_id":"ses-20240830","id":"mark-000217","kind":"Func series scan","name":"009-func-bold_task-rest_acq-med1_run-01_scan-147","target_ids":["dicoms-000347"],"dicoms_isotime":"2024-08-30T11:49:20.497500","dicoms_duration":2.0,"birch_isotime":null,"birch_duration":null,"qrinfo_isotime":null,"qrinfo_duration":null,"psychopy_isotime":null,"psychopy_duration":null,"reproevents_isotime":null,"reproevents_duration":null}
+{"type":"MarkRecord","session_id":"ses-20240830","id":"mark-000218","kind":"Func series scan","name":"009-func-bold_task-rest_acq-med1_run-01_scan-148","target_ids":["dicoms-000348"],"dicoms_isotime":"2024-08-30T11:49:22.497500","dicoms_duration":2.0,"birch_isotime":null,"birch_duration":null,"qrinfo_isotime":null,"qrinfo_duration":null,"psychopy_isotime":null,"psychopy_duration":null,"reproevents_isotime":null,"reproevents_duration":null}
+{"type":"MarkRecord","session_id":"ses-20240830","id":"mark-000219","kind":"Func series scan","name":"009-func-bold_task-rest_acq-med1_run-01_scan-149","target_ids":["dicoms-000349"],"dicoms_isotime":"2024-08-30T11:49:24.497500","dicoms_duration":null,"birch_isotime":null,"birch_duration":null,"qrinfo_isotime":null,"qrinfo_duration":null,"psychopy_isotime":null,"psychopy_duration":null,"reproevents_isotime":null,"reproevents_duration":null}
+Mark: type='MarkRecord' session_id='ses-20240830' id='mark-000220' kind='Func series end' name='009-func-bold_task-rest_acq-med1_run-01_end' target_ids=['dicoms-000349'] dicoms_isotime=Timestamp('2024-08-30 11:49:24.497500') dicoms_duration=None birch_isotime=None birch_duration=None qrinfo_isotime=None qrinfo_duration=None psychopy_isotime=None psychopy_duration=None reproevents_isotime=None reproevents_duration=None
+{"type":"MarkRecord","session_id":"ses-20240830","id":"mark-000220","kind":"Func series end","name":"009-func-bold_task-rest_acq-med1_run-01_end","target_ids":["dicoms-000349"],"dicoms_isotime":"2024-08-30T11:49:24.497500","dicoms_duration":null,"birch_isotime":null,"birch_duration":null,"qrinfo_isotime":null,"qrinfo_duration":null,"psychopy_isotime":null,"psychopy_duration":null,"reproevents_isotime":null,"reproevents_duration":null}
+Matching: sd1=010-func-bold_task-rest_acq-short2_run-01 with sd2=birch-series-1
+ use k_min=0.95, k_max=1.05
+ mismatch_2: 39.02 / 135.937274
+Matching: sd1=010-func-bold_task-rest_acq-short2_run-01 with sd2=birch-series-2
+ use k_min=0.95, k_max=1.05
+ mismatch_2: 39.02 / 86.185922
+Matching: sd1=010-func-bold_task-rest_acq-short2_run-01 with sd2=birch-series-3
+ use k_min=0.95, k_max=1.05
+ mismatch_2: 39.02 / 221.434687
+Matching: sd1=010-func-bold_task-rest_acq-short2_run-01 with sd2=birch-series-4
+ use k_min=0.95, k_max=1.05
+ mismatch_2: 39.02 / 100.961133
+Matching: sd1=010-func-bold_task-rest_acq-short2_run-01 with sd2=birch-series-5
+ mismatch_7: 15 / 150
+Matching: sd1=010-func-bold_task-rest_acq-short2_run-01 with sd2=psychopy-series-1
+ use k_min=0.95, k_max=1.05
+ mismatch_2: 39.02 / 100.958108
+Matching: sd1=010-func-bold_task-rest_acq-short2_run-01 with sd2=psychopy-series-2
+ mismatch_7: 15 / 150
+{"type":"MarkRecord","session_id":"ses-20240830","id":"mark-000221","kind":"Func series start","name":"010-func-bold_task-rest_acq-short2_run-01_start","target_ids":["dicoms-000350"],"dicoms_isotime":"2024-08-30T11:52:21.487500","dicoms_duration":28.0,"birch_isotime":null,"birch_duration":null,"qrinfo_isotime":null,"qrinfo_duration":null,"psychopy_isotime":null,"psychopy_duration":null,"reproevents_isotime":null,"reproevents_duration":null}
+{"type":"MarkRecord","session_id":"ses-20240830","id":"mark-000222","kind":"Func series scan","name":"010-func-bold_task-rest_acq-short2_run-01_scan-0","target_ids":["dicoms-000350"],"dicoms_isotime":"2024-08-30T11:52:21.487500","dicoms_duration":2.0,"birch_isotime":null,"birch_duration":null,"qrinfo_isotime":null,"qrinfo_duration":null,"psychopy_isotime":null,"psychopy_duration":null,"reproevents_isotime":null,"reproevents_duration":null}
+{"type":"MarkRecord","session_id":"ses-20240830","id":"mark-000223","kind":"Func series scan","name":"010-func-bold_task-rest_acq-short2_run-01_scan-1","target_ids":["dicoms-000351"],"dicoms_isotime":"2024-08-30T11:52:23.487500","dicoms_duration":2.0,"birch_isotime":null,"birch_duration":null,"qrinfo_isotime":null,"qrinfo_duration":null,"psychopy_isotime":null,"psychopy_duration":null,"reproevents_isotime":null,"reproevents_duration":null}
+{"type":"MarkRecord","session_id":"ses-20240830","id":"mark-000224","kind":"Func series scan","name":"010-func-bold_task-rest_acq-short2_run-01_scan-2","target_ids":["dicoms-000352"],"dicoms_isotime":"2024-08-30T11:52:25.487500","dicoms_duration":2.0,"birch_isotime":null,"birch_duration":null,"qrinfo_isotime":null,"qrinfo_duration":null,"psychopy_isotime":null,"psychopy_duration":null,"reproevents_isotime":null,"reproevents_duration":null}
+{"type":"MarkRecord","session_id":"ses-20240830","id":"mark-000225","kind":"Func series scan","name":"010-func-bold_task-rest_acq-short2_run-01_scan-3","target_ids":["dicoms-000353"],"dicoms_isotime":"2024-08-30T11:52:27.487500","dicoms_duration":2.0,"birch_isotime":null,"birch_duration":null,"qrinfo_isotime":null,"qrinfo_duration":null,"psychopy_isotime":null,"psychopy_duration":null,"reproevents_isotime":null,"reproevents_duration":null}
+{"type":"MarkRecord","session_id":"ses-20240830","id":"mark-000226","kind":"Func series scan","name":"010-func-bold_task-rest_acq-short2_run-01_scan-4","target_ids":["dicoms-000354"],"dicoms_isotime":"2024-08-30T11:52:29.487500","dicoms_duration":2.0,"birch_isotime":null,"birch_duration":null,"qrinfo_isotime":null,"qrinfo_duration":null,"psychopy_isotime":null,"psychopy_duration":null,"reproevents_isotime":null,"reproevents_duration":null}
+{"type":"MarkRecord","session_id":"ses-20240830","id":"mark-000227","kind":"Func series scan","name":"010-func-bold_task-rest_acq-short2_run-01_scan-5","target_ids":["dicoms-000355"],"dicoms_isotime":"2024-08-30T11:52:31.487500","dicoms_duration":2.0,"birch_isotime":null,"birch_duration":null,"qrinfo_isotime":null,"qrinfo_duration":null,"psychopy_isotime":null,"psychopy_duration":null,"reproevents_isotime":null,"reproevents_duration":null}
+{"type":"MarkRecord","session_id":"ses-20240830","id":"mark-000228","kind":"Func series scan","name":"010-func-bold_task-rest_acq-short2_run-01_scan-6","target_ids":["dicoms-000356"],"dicoms_isotime":"2024-08-30T11:52:33.487500","dicoms_duration":2.0,"birch_isotime":null,"birch_duration":null,"qrinfo_isotime":null,"qrinfo_duration":null,"psychopy_isotime":null,"psychopy_duration":null,"reproevents_isotime":null,"reproevents_duration":null}
+{"type":"MarkRecord","session_id":"ses-20240830","id":"mark-000229","kind":"Func series scan","name":"010-func-bold_task-rest_acq-short2_run-01_scan-7","target_ids":["dicoms-000357"],"dicoms_isotime":"2024-08-30T11:52:35.487500","dicoms_duration":2.0,"birch_isotime":null,"birch_duration":null,"qrinfo_isotime":null,"qrinfo_duration":null,"psychopy_isotime":null,"psychopy_duration":null,"reproevents_isotime":null,"reproevents_duration":null}
+{"type":"MarkRecord","session_id":"ses-20240830","id":"mark-000230","kind":"Func series scan","name":"010-func-bold_task-rest_acq-short2_run-01_scan-8","target_ids":["dicoms-000358"],"dicoms_isotime":"2024-08-30T11:52:37.487500","dicoms_duration":2.0,"birch_isotime":null,"birch_duration":null,"qrinfo_isotime":null,"qrinfo_duration":null,"psychopy_isotime":null,"psychopy_duration":null,"reproevents_isotime":null,"reproevents_duration":null}
+{"type":"MarkRecord","session_id":"ses-20240830","id":"mark-000231","kind":"Func series scan","name":"010-func-bold_task-rest_acq-short2_run-01_scan-9","target_ids":["dicoms-000359"],"dicoms_isotime":"2024-08-30T11:52:39.487500","dicoms_duration":2.0,"birch_isotime":null,"birch_duration":null,"qrinfo_isotime":null,"qrinfo_duration":null,"psychopy_isotime":null,"psychopy_duration":null,"reproevents_isotime":null,"reproevents_duration":null}
+{"type":"MarkRecord","session_id":"ses-20240830","id":"mark-000232","kind":"Func series scan","name":"010-func-bold_task-rest_acq-short2_run-01_scan-10","target_ids":["dicoms-000360"],"dicoms_isotime":"2024-08-30T11:52:41.487500","dicoms_duration":2.0,"birch_isotime":null,"birch_duration":null,"qrinfo_isotime":null,"qrinfo_duration":null,"psychopy_isotime":null,"psychopy_duration":null,"reproevents_isotime":null,"reproevents_duration":null}
+{"type":"MarkRecord","session_id":"ses-20240830","id":"mark-000233","kind":"Func series scan","name":"010-func-bold_task-rest_acq-short2_run-01_scan-11","target_ids":["dicoms-000361"],"dicoms_isotime":"2024-08-30T11:52:43.487500","dicoms_duration":2.0,"birch_isotime":null,"birch_duration":null,"qrinfo_isotime":null,"qrinfo_duration":null,"psychopy_isotime":null,"psychopy_duration":null,"reproevents_isotime":null,"reproevents_duration":null}
+{"type":"MarkRecord","session_id":"ses-20240830","id":"mark-000234","kind":"Func series scan","name":"010-func-bold_task-rest_acq-short2_run-01_scan-12","target_ids":["dicoms-000362"],"dicoms_isotime":"2024-08-30T11:52:45.487500","dicoms_duration":2.0,"birch_isotime":null,"birch_duration":null,"qrinfo_isotime":null,"qrinfo_duration":null,"psychopy_isotime":null,"psychopy_duration":null,"reproevents_isotime":null,"reproevents_duration":null}
+{"type":"MarkRecord","session_id":"ses-20240830","id":"mark-000235","kind":"Func series scan","name":"010-func-bold_task-rest_acq-short2_run-01_scan-13","target_ids":["dicoms-000363"],"dicoms_isotime":"2024-08-30T11:52:47.487500","dicoms_duration":2.0,"birch_isotime":null,"birch_duration":null,"qrinfo_isotime":null,"qrinfo_duration":null,"psychopy_isotime":null,"psychopy_duration":null,"reproevents_isotime":null,"reproevents_duration":null}
+{"type":"MarkRecord","session_id":"ses-20240830","id":"mark-000236","kind":"Func series scan","name":"010-func-bold_task-rest_acq-short2_run-01_scan-14","target_ids":["dicoms-000364"],"dicoms_isotime":"2024-08-30T11:52:49.487500","dicoms_duration":null,"birch_isotime":null,"birch_duration":null,"qrinfo_isotime":null,"qrinfo_duration":null,"psychopy_isotime":null,"psychopy_duration":null,"reproevents_isotime":null,"reproevents_duration":null}
+Mark: type='MarkRecord' session_id='ses-20240830' id='mark-000237' kind='Func series end' name='010-func-bold_task-rest_acq-short2_run-01_end' target_ids=['dicoms-000364'] dicoms_isotime=Timestamp('2024-08-30 11:52:49.487500') dicoms_duration=None birch_isotime=None birch_duration=None qrinfo_isotime=None qrinfo_duration=None psychopy_isotime=None psychopy_duration=None reproevents_isotime=None reproevents_duration=None
+{"type":"MarkRecord","session_id":"ses-20240830","id":"mark-000237","kind":"Func series end","name":"010-func-bold_task-rest_acq-short2_run-01_end","target_ids":["dicoms-000364"],"dicoms_isotime":"2024-08-30T11:52:49.487500","dicoms_duration":null,"birch_isotime":null,"birch_duration":null,"qrinfo_isotime":null,"qrinfo_duration":null,"psychopy_isotime":null,"psychopy_duration":null,"reproevents_isotime":null,"reproevents_duration":null}
+Matching: sd1=011-func-bold_task-rest_acq-short2_run-02 with sd2=birch-series-1
+ use k_min=0.95, k_max=1.05
+ mismatch_2: 38.9775 / 135.937274
+Matching: sd1=011-func-bold_task-rest_acq-short2_run-02 with sd2=birch-series-2
+ use k_min=0.95, k_max=1.05
+ mismatch_2: 38.9775 / 86.185922
+Matching: sd1=011-func-bold_task-rest_acq-short2_run-02 with sd2=birch-series-3
+ use k_min=0.95, k_max=1.05
+ mismatch_2: 38.9775 / 221.434687
+Matching: sd1=011-func-bold_task-rest_acq-short2_run-02 with sd2=birch-series-4
+ use k_min=0.95, k_max=1.05
+ mismatch_2: 38.9775 / 100.961133
+Matching: sd1=011-func-bold_task-rest_acq-short2_run-02 with sd2=birch-series-5
+ mismatch_7: 15 / 150
+Matching: sd1=011-func-bold_task-rest_acq-short2_run-02 with sd2=psychopy-series-1
+ use k_min=0.95, k_max=1.05
+ mismatch_2: 38.9775 / 100.958108
+Matching: sd1=011-func-bold_task-rest_acq-short2_run-02 with sd2=psychopy-series-2
+ mismatch_7: 15 / 150
+{"type":"MarkRecord","session_id":"ses-20240830","id":"mark-000238","kind":"Func series start","name":"011-func-bold_task-rest_acq-short2_run-02_start","target_ids":["dicoms-000365"],"dicoms_isotime":"2024-08-30T11:53:00.507500","dicoms_duration":28.0,"birch_isotime":null,"birch_duration":null,"qrinfo_isotime":null,"qrinfo_duration":null,"psychopy_isotime":null,"psychopy_duration":null,"reproevents_isotime":null,"reproevents_duration":null}
+{"type":"MarkRecord","session_id":"ses-20240830","id":"mark-000239","kind":"Func series scan","name":"011-func-bold_task-rest_acq-short2_run-02_scan-0","target_ids":["dicoms-000365"],"dicoms_isotime":"2024-08-30T11:53:00.507500","dicoms_duration":2.0,"birch_isotime":null,"birch_duration":null,"qrinfo_isotime":null,"qrinfo_duration":null,"psychopy_isotime":null,"psychopy_duration":null,"reproevents_isotime":null,"reproevents_duration":null}
+{"type":"MarkRecord","session_id":"ses-20240830","id":"mark-000240","kind":"Func series scan","name":"011-func-bold_task-rest_acq-short2_run-02_scan-1","target_ids":["dicoms-000366"],"dicoms_isotime":"2024-08-30T11:53:02.507500","dicoms_duration":2.0,"birch_isotime":null,"birch_duration":null,"qrinfo_isotime":null,"qrinfo_duration":null,"psychopy_isotime":null,"psychopy_duration":null,"reproevents_isotime":null,"reproevents_duration":null}
+{"type":"MarkRecord","session_id":"ses-20240830","id":"mark-000241","kind":"Func series scan","name":"011-func-bold_task-rest_acq-short2_run-02_scan-2","target_ids":["dicoms-000367"],"dicoms_isotime":"2024-08-30T11:53:04.507500","dicoms_duration":2.0,"birch_isotime":null,"birch_duration":null,"qrinfo_isotime":null,"qrinfo_duration":null,"psychopy_isotime":null,"psychopy_duration":null,"reproevents_isotime":null,"reproevents_duration":null}
+{"type":"MarkRecord","session_id":"ses-20240830","id":"mark-000242","kind":"Func series scan","name":"011-func-bold_task-rest_acq-short2_run-02_scan-3","target_ids":["dicoms-000368"],"dicoms_isotime":"2024-08-30T11:53:06.507500","dicoms_duration":2.0,"birch_isotime":null,"birch_duration":null,"qrinfo_isotime":null,"qrinfo_duration":null,"psychopy_isotime":null,"psychopy_duration":null,"reproevents_isotime":null,"reproevents_duration":null}
+{"type":"MarkRecord","session_id":"ses-20240830","id":"mark-000243","kind":"Func series scan","name":"011-func-bold_task-rest_acq-short2_run-02_scan-4","target_ids":["dicoms-000369"],"dicoms_isotime":"2024-08-30T11:53:08.507500","dicoms_duration":2.0,"birch_isotime":null,"birch_duration":null,"qrinfo_isotime":null,"qrinfo_duration":null,"psychopy_isotime":null,"psychopy_duration":null,"reproevents_isotime":null,"reproevents_duration":null}
+{"type":"MarkRecord","session_id":"ses-20240830","id":"mark-000244","kind":"Func series scan","name":"011-func-bold_task-rest_acq-short2_run-02_scan-5","target_ids":["dicoms-000370"],"dicoms_isotime":"2024-08-30T11:53:10.507500","dicoms_duration":2.0,"birch_isotime":null,"birch_duration":null,"qrinfo_isotime":null,"qrinfo_duration":null,"psychopy_isotime":null,"psychopy_duration":null,"reproevents_isotime":null,"reproevents_duration":null}
+{"type":"MarkRecord","session_id":"ses-20240830","id":"mark-000245","kind":"Func series scan","name":"011-func-bold_task-rest_acq-short2_run-02_scan-6","target_ids":["dicoms-000371"],"dicoms_isotime":"2024-08-30T11:53:12.507500","dicoms_duration":2.0,"birch_isotime":null,"birch_duration":null,"qrinfo_isotime":null,"qrinfo_duration":null,"psychopy_isotime":null,"psychopy_duration":null,"reproevents_isotime":null,"reproevents_duration":null}
+{"type":"MarkRecord","session_id":"ses-20240830","id":"mark-000246","kind":"Func series scan","name":"011-func-bold_task-rest_acq-short2_run-02_scan-7","target_ids":["dicoms-000372"],"dicoms_isotime":"2024-08-30T11:53:14.507500","dicoms_duration":2.0,"birch_isotime":null,"birch_duration":null,"qrinfo_isotime":null,"qrinfo_duration":null,"psychopy_isotime":null,"psychopy_duration":null,"reproevents_isotime":null,"reproevents_duration":null}
+{"type":"MarkRecord","session_id":"ses-20240830","id":"mark-000247","kind":"Func series scan","name":"011-func-bold_task-rest_acq-short2_run-02_scan-8","target_ids":["dicoms-000373"],"dicoms_isotime":"2024-08-30T11:53:16.507500","dicoms_duration":2.0,"birch_isotime":null,"birch_duration":null,"qrinfo_isotime":null,"qrinfo_duration":null,"psychopy_isotime":null,"psychopy_duration":null,"reproevents_isotime":null,"reproevents_duration":null}
+{"type":"MarkRecord","session_id":"ses-20240830","id":"mark-000248","kind":"Func series scan","name":"011-func-bold_task-rest_acq-short2_run-02_scan-9","target_ids":["dicoms-000374"],"dicoms_isotime":"2024-08-30T11:53:18.507500","dicoms_duration":2.0,"birch_isotime":null,"birch_duration":null,"qrinfo_isotime":null,"qrinfo_duration":null,"psychopy_isotime":null,"psychopy_duration":null,"reproevents_isotime":null,"reproevents_duration":null}
+{"type":"MarkRecord","session_id":"ses-20240830","id":"mark-000249","kind":"Func series scan","name":"011-func-bold_task-rest_acq-short2_run-02_scan-10","target_ids":["dicoms-000375"],"dicoms_isotime":"2024-08-30T11:53:20.507500","dicoms_duration":2.0,"birch_isotime":null,"birch_duration":null,"qrinfo_isotime":null,"qrinfo_duration":null,"psychopy_isotime":null,"psychopy_duration":null,"reproevents_isotime":null,"reproevents_duration":null}
+{"type":"MarkRecord","session_id":"ses-20240830","id":"mark-000250","kind":"Func series scan","name":"011-func-bold_task-rest_acq-short2_run-02_scan-11","target_ids":["dicoms-000376"],"dicoms_isotime":"2024-08-30T11:53:22.507500","dicoms_duration":2.0,"birch_isotime":null,"birch_duration":null,"qrinfo_isotime":null,"qrinfo_duration":null,"psychopy_isotime":null,"psychopy_duration":null,"reproevents_isotime":null,"reproevents_duration":null}
+{"type":"MarkRecord","session_id":"ses-20240830","id":"mark-000251","kind":"Func series scan","name":"011-func-bold_task-rest_acq-short2_run-02_scan-12","target_ids":["dicoms-000377"],"dicoms_isotime":"2024-08-30T11:53:24.507500","dicoms_duration":2.0,"birch_isotime":null,"birch_duration":null,"qrinfo_isotime":null,"qrinfo_duration":null,"psychopy_isotime":null,"psychopy_duration":null,"reproevents_isotime":null,"reproevents_duration":null}
+{"type":"MarkRecord","session_id":"ses-20240830","id":"mark-000252","kind":"Func series scan","name":"011-func-bold_task-rest_acq-short2_run-02_scan-13","target_ids":["dicoms-000378"],"dicoms_isotime":"2024-08-30T11:53:26.507500","dicoms_duration":2.0,"birch_isotime":null,"birch_duration":null,"qrinfo_isotime":null,"qrinfo_duration":null,"psychopy_isotime":null,"psychopy_duration":null,"reproevents_isotime":null,"reproevents_duration":null}
+{"type":"MarkRecord","session_id":"ses-20240830","id":"mark-000253","kind":"Func series scan","name":"011-func-bold_task-rest_acq-short2_run-02_scan-14","target_ids":["dicoms-000379"],"dicoms_isotime":"2024-08-30T11:53:28.507500","dicoms_duration":null,"birch_isotime":null,"birch_duration":null,"qrinfo_isotime":null,"qrinfo_duration":null,"psychopy_isotime":null,"psychopy_duration":null,"reproevents_isotime":null,"reproevents_duration":null}
+Mark: type='MarkRecord' session_id='ses-20240830' id='mark-000254' kind='Func series end' name='011-func-bold_task-rest_acq-short2_run-02_end' target_ids=['dicoms-000379'] dicoms_isotime=Timestamp('2024-08-30 11:53:28.507500') dicoms_duration=None birch_isotime=None birch_duration=None qrinfo_isotime=None qrinfo_duration=None psychopy_isotime=None psychopy_duration=None reproevents_isotime=None reproevents_duration=None
+{"type":"MarkRecord","session_id":"ses-20240830","id":"mark-000254","kind":"Func series end","name":"011-func-bold_task-rest_acq-short2_run-02_end","target_ids":["dicoms-000379"],"dicoms_isotime":"2024-08-30T11:53:28.507500","dicoms_duration":null,"birch_isotime":null,"birch_duration":null,"qrinfo_isotime":null,"qrinfo_duration":null,"psychopy_isotime":null,"psychopy_duration":null,"reproevents_isotime":null,"reproevents_duration":null}
+Matching: sd1=012-func-bold_task-rest_acq-short2_run-03 with sd2=birch-series-1
+ use k_min=0.95, k_max=1.05
+ mismatch_2: 38.9825 / 135.937274
+Matching: sd1=012-func-bold_task-rest_acq-short2_run-03 with sd2=birch-series-2
+ use k_min=0.95, k_max=1.05
+ mismatch_2: 38.9825 / 86.185922
+Matching: sd1=012-func-bold_task-rest_acq-short2_run-03 with sd2=birch-series-3
+ use k_min=0.95, k_max=1.05
+ mismatch_2: 38.9825 / 221.434687
+Matching: sd1=012-func-bold_task-rest_acq-short2_run-03 with sd2=birch-series-4
+ use k_min=0.95, k_max=1.05
+ mismatch_2: 38.9825 / 100.961133
+Matching: sd1=012-func-bold_task-rest_acq-short2_run-03 with sd2=birch-series-5
+ mismatch_7: 15 / 150
+Matching: sd1=012-func-bold_task-rest_acq-short2_run-03 with sd2=psychopy-series-1
+ use k_min=0.95, k_max=1.05
+ mismatch_2: 38.9825 / 100.958108
+Matching: sd1=012-func-bold_task-rest_acq-short2_run-03 with sd2=psychopy-series-2
+ mismatch_7: 15 / 150
+{"type":"MarkRecord","session_id":"ses-20240830","id":"mark-000255","kind":"Func series start","name":"012-func-bold_task-rest_acq-short2_run-03_start","target_ids":["dicoms-000380"],"dicoms_isotime":"2024-08-30T11:53:39.485000","dicoms_duration":28.0,"birch_isotime":null,"birch_duration":null,"qrinfo_isotime":null,"qrinfo_duration":null,"psychopy_isotime":null,"psychopy_duration":null,"reproevents_isotime":null,"reproevents_duration":null}
+{"type":"MarkRecord","session_id":"ses-20240830","id":"mark-000256","kind":"Func series scan","name":"012-func-bold_task-rest_acq-short2_run-03_scan-0","target_ids":["dicoms-000380"],"dicoms_isotime":"2024-08-30T11:53:39.485000","dicoms_duration":2.0,"birch_isotime":null,"birch_duration":null,"qrinfo_isotime":null,"qrinfo_duration":null,"psychopy_isotime":null,"psychopy_duration":null,"reproevents_isotime":null,"reproevents_duration":null}
+{"type":"MarkRecord","session_id":"ses-20240830","id":"mark-000257","kind":"Func series scan","name":"012-func-bold_task-rest_acq-short2_run-03_scan-1","target_ids":["dicoms-000381"],"dicoms_isotime":"2024-08-30T11:53:41.485000","dicoms_duration":2.0,"birch_isotime":null,"birch_duration":null,"qrinfo_isotime":null,"qrinfo_duration":null,"psychopy_isotime":null,"psychopy_duration":null,"reproevents_isotime":null,"reproevents_duration":null}
+{"type":"MarkRecord","session_id":"ses-20240830","id":"mark-000258","kind":"Func series scan","name":"012-func-bold_task-rest_acq-short2_run-03_scan-2","target_ids":["dicoms-000382"],"dicoms_isotime":"2024-08-30T11:53:43.485000","dicoms_duration":2.0,"birch_isotime":null,"birch_duration":null,"qrinfo_isotime":null,"qrinfo_duration":null,"psychopy_isotime":null,"psychopy_duration":null,"reproevents_isotime":null,"reproevents_duration":null}
+{"type":"MarkRecord","session_id":"ses-20240830","id":"mark-000259","kind":"Func series scan","name":"012-func-bold_task-rest_acq-short2_run-03_scan-3","target_ids":["dicoms-000383"],"dicoms_isotime":"2024-08-30T11:53:45.485000","dicoms_duration":2.0,"birch_isotime":null,"birch_duration":null,"qrinfo_isotime":null,"qrinfo_duration":null,"psychopy_isotime":null,"psychopy_duration":null,"reproevents_isotime":null,"reproevents_duration":null}
+{"type":"MarkRecord","session_id":"ses-20240830","id":"mark-000260","kind":"Func series scan","name":"012-func-bold_task-rest_acq-short2_run-03_scan-4","target_ids":["dicoms-000384"],"dicoms_isotime":"2024-08-30T11:53:47.485000","dicoms_duration":2.0,"birch_isotime":null,"birch_duration":null,"qrinfo_isotime":null,"qrinfo_duration":null,"psychopy_isotime":null,"psychopy_duration":null,"reproevents_isotime":null,"reproevents_duration":null}
+{"type":"MarkRecord","session_id":"ses-20240830","id":"mark-000261","kind":"Func series scan","name":"012-func-bold_task-rest_acq-short2_run-03_scan-5","target_ids":["dicoms-000385"],"dicoms_isotime":"2024-08-30T11:53:49.485000","dicoms_duration":2.0,"birch_isotime":null,"birch_duration":null,"qrinfo_isotime":null,"qrinfo_duration":null,"psychopy_isotime":null,"psychopy_duration":null,"reproevents_isotime":null,"reproevents_duration":null}
+{"type":"MarkRecord","session_id":"ses-20240830","id":"mark-000262","kind":"Func series scan","name":"012-func-bold_task-rest_acq-short2_run-03_scan-6","target_ids":["dicoms-000386"],"dicoms_isotime":"2024-08-30T11:53:51.485000","dicoms_duration":2.0,"birch_isotime":null,"birch_duration":null,"qrinfo_isotime":null,"qrinfo_duration":null,"psychopy_isotime":null,"psychopy_duration":null,"reproevents_isotime":null,"reproevents_duration":null}
+{"type":"MarkRecord","session_id":"ses-20240830","id":"mark-000263","kind":"Func series scan","name":"012-func-bold_task-rest_acq-short2_run-03_scan-7","target_ids":["dicoms-000387"],"dicoms_isotime":"2024-08-30T11:53:53.485000","dicoms_duration":2.0,"birch_isotime":null,"birch_duration":null,"qrinfo_isotime":null,"qrinfo_duration":null,"psychopy_isotime":null,"psychopy_duration":null,"reproevents_isotime":null,"reproevents_duration":null}
+{"type":"MarkRecord","session_id":"ses-20240830","id":"mark-000264","kind":"Func series scan","name":"012-func-bold_task-rest_acq-short2_run-03_scan-8","target_ids":["dicoms-000388"],"dicoms_isotime":"2024-08-30T11:53:55.485000","dicoms_duration":2.0,"birch_isotime":null,"birch_duration":null,"qrinfo_isotime":null,"qrinfo_duration":null,"psychopy_isotime":null,"psychopy_duration":null,"reproevents_isotime":null,"reproevents_duration":null}
+{"type":"MarkRecord","session_id":"ses-20240830","id":"mark-000265","kind":"Func series scan","name":"012-func-bold_task-rest_acq-short2_run-03_scan-9","target_ids":["dicoms-000389"],"dicoms_isotime":"2024-08-30T11:53:57.485000","dicoms_duration":2.0,"birch_isotime":null,"birch_duration":null,"qrinfo_isotime":null,"qrinfo_duration":null,"psychopy_isotime":null,"psychopy_duration":null,"reproevents_isotime":null,"reproevents_duration":null}
+{"type":"MarkRecord","session_id":"ses-20240830","id":"mark-000266","kind":"Func series scan","name":"012-func-bold_task-rest_acq-short2_run-03_scan-10","target_ids":["dicoms-000390"],"dicoms_isotime":"2024-08-30T11:53:59.485000","dicoms_duration":2.0,"birch_isotime":null,"birch_duration":null,"qrinfo_isotime":null,"qrinfo_duration":null,"psychopy_isotime":null,"psychopy_duration":null,"reproevents_isotime":null,"reproevents_duration":null}
+{"type":"MarkRecord","session_id":"ses-20240830","id":"mark-000267","kind":"Func series scan","name":"012-func-bold_task-rest_acq-short2_run-03_scan-11","target_ids":["dicoms-000391"],"dicoms_isotime":"2024-08-30T11:54:01.485000","dicoms_duration":2.0,"birch_isotime":null,"birch_duration":null,"qrinfo_isotime":null,"qrinfo_duration":null,"psychopy_isotime":null,"psychopy_duration":null,"reproevents_isotime":null,"reproevents_duration":null}
+{"type":"MarkRecord","session_id":"ses-20240830","id":"mark-000268","kind":"Func series scan","name":"012-func-bold_task-rest_acq-short2_run-03_scan-12","target_ids":["dicoms-000392"],"dicoms_isotime":"2024-08-30T11:54:03.485000","dicoms_duration":2.0,"birch_isotime":null,"birch_duration":null,"qrinfo_isotime":null,"qrinfo_duration":null,"psychopy_isotime":null,"psychopy_duration":null,"reproevents_isotime":null,"reproevents_duration":null}
+{"type":"MarkRecord","session_id":"ses-20240830","id":"mark-000269","kind":"Func series scan","name":"012-func-bold_task-rest_acq-short2_run-03_scan-13","target_ids":["dicoms-000393"],"dicoms_isotime":"2024-08-30T11:54:05.485000","dicoms_duration":2.0,"birch_isotime":null,"birch_duration":null,"qrinfo_isotime":null,"qrinfo_duration":null,"psychopy_isotime":null,"psychopy_duration":null,"reproevents_isotime":null,"reproevents_duration":null}
+{"type":"MarkRecord","session_id":"ses-20240830","id":"mark-000270","kind":"Func series scan","name":"012-func-bold_task-rest_acq-short2_run-03_scan-14","target_ids":["dicoms-000394"],"dicoms_isotime":"2024-08-30T11:54:07.485000","dicoms_duration":null,"birch_isotime":null,"birch_duration":null,"qrinfo_isotime":null,"qrinfo_duration":null,"psychopy_isotime":null,"psychopy_duration":null,"reproevents_isotime":null,"reproevents_duration":null}
+Mark: type='MarkRecord' session_id='ses-20240830' id='mark-000271' kind='Func series end' name='012-func-bold_task-rest_acq-short2_run-03_end' target_ids=['dicoms-000394'] dicoms_isotime=Timestamp('2024-08-30 11:54:07.485000') dicoms_duration=None birch_isotime=None birch_duration=None qrinfo_isotime=None qrinfo_duration=None psychopy_isotime=None psychopy_duration=None reproevents_isotime=None reproevents_duration=None
+{"type":"MarkRecord","session_id":"ses-20240830","id":"mark-000271","kind":"Func series end","name":"012-func-bold_task-rest_acq-short2_run-03_end","target_ids":["dicoms-000394"],"dicoms_isotime":"2024-08-30T11:54:07.485000","dicoms_duration":null,"birch_isotime":null,"birch_duration":null,"qrinfo_isotime":null,"qrinfo_duration":null,"psychopy_isotime":null,"psychopy_duration":null,"reproevents_isotime":null,"reproevents_duration":null}
+Matching: sd1=013-func-bold_task-rest_acq-short2_run-04 with sd2=birch-series-1
+ use k_min=0.95, k_max=1.05
+ mismatch_2: 38.01 / 135.937274
+Matching: sd1=013-func-bold_task-rest_acq-short2_run-04 with sd2=birch-series-2
+ use k_min=0.95, k_max=1.05
+ mismatch_2: 38.01 / 86.185922
+Matching: sd1=013-func-bold_task-rest_acq-short2_run-04 with sd2=birch-series-3
+ use k_min=0.95, k_max=1.05
+ mismatch_2: 38.01 / 221.434687
+Matching: sd1=013-func-bold_task-rest_acq-short2_run-04 with sd2=birch-series-4
+ use k_min=0.95, k_max=1.05
+ mismatch_2: 38.01 / 100.961133
+Matching: sd1=013-func-bold_task-rest_acq-short2_run-04 with sd2=birch-series-5
+ mismatch_7: 15 / 150
+Matching: sd1=013-func-bold_task-rest_acq-short2_run-04 with sd2=psychopy-series-1
+ use k_min=0.95, k_max=1.05
+ mismatch_2: 38.01 / 100.958108
+Matching: sd1=013-func-bold_task-rest_acq-short2_run-04 with sd2=psychopy-series-2
+ mismatch_7: 15 / 150
+{"type":"MarkRecord","session_id":"ses-20240830","id":"mark-000272","kind":"Func series start","name":"013-func-bold_task-rest_acq-short2_run-04_start","target_ids":["dicoms-000395"],"dicoms_isotime":"2024-08-30T11:54:18.467500","dicoms_duration":28.0,"birch_isotime":null,"birch_duration":null,"qrinfo_isotime":null,"qrinfo_duration":null,"psychopy_isotime":null,"psychopy_duration":null,"reproevents_isotime":null,"reproevents_duration":null}
+{"type":"MarkRecord","session_id":"ses-20240830","id":"mark-000273","kind":"Func series scan","name":"013-func-bold_task-rest_acq-short2_run-04_scan-0","target_ids":["dicoms-000395"],"dicoms_isotime":"2024-08-30T11:54:18.467500","dicoms_duration":2.0,"birch_isotime":null,"birch_duration":null,"qrinfo_isotime":null,"qrinfo_duration":null,"psychopy_isotime":null,"psychopy_duration":null,"reproevents_isotime":null,"reproevents_duration":null}
+{"type":"MarkRecord","session_id":"ses-20240830","id":"mark-000274","kind":"Func series scan","name":"013-func-bold_task-rest_acq-short2_run-04_scan-1","target_ids":["dicoms-000396"],"dicoms_isotime":"2024-08-30T11:54:20.467500","dicoms_duration":2.0,"birch_isotime":null,"birch_duration":null,"qrinfo_isotime":null,"qrinfo_duration":null,"psychopy_isotime":null,"psychopy_duration":null,"reproevents_isotime":null,"reproevents_duration":null}
+{"type":"MarkRecord","session_id":"ses-20240830","id":"mark-000275","kind":"Func series scan","name":"013-func-bold_task-rest_acq-short2_run-04_scan-2","target_ids":["dicoms-000397"],"dicoms_isotime":"2024-08-30T11:54:22.467500","dicoms_duration":2.0,"birch_isotime":null,"birch_duration":null,"qrinfo_isotime":null,"qrinfo_duration":null,"psychopy_isotime":null,"psychopy_duration":null,"reproevents_isotime":null,"reproevents_duration":null}
+{"type":"MarkRecord","session_id":"ses-20240830","id":"mark-000276","kind":"Func series scan","name":"013-func-bold_task-rest_acq-short2_run-04_scan-3","target_ids":["dicoms-000398"],"dicoms_isotime":"2024-08-30T11:54:24.467500","dicoms_duration":2.0,"birch_isotime":null,"birch_duration":null,"qrinfo_isotime":null,"qrinfo_duration":null,"psychopy_isotime":null,"psychopy_duration":null,"reproevents_isotime":null,"reproevents_duration":null}
+{"type":"MarkRecord","session_id":"ses-20240830","id":"mark-000277","kind":"Func series scan","name":"013-func-bold_task-rest_acq-short2_run-04_scan-4","target_ids":["dicoms-000399"],"dicoms_isotime":"2024-08-30T11:54:26.467500","dicoms_duration":2.0,"birch_isotime":null,"birch_duration":null,"qrinfo_isotime":null,"qrinfo_duration":null,"psychopy_isotime":null,"psychopy_duration":null,"reproevents_isotime":null,"reproevents_duration":null}
+{"type":"MarkRecord","session_id":"ses-20240830","id":"mark-000278","kind":"Func series scan","name":"013-func-bold_task-rest_acq-short2_run-04_scan-5","target_ids":["dicoms-000400"],"dicoms_isotime":"2024-08-30T11:54:28.467500","dicoms_duration":2.0,"birch_isotime":null,"birch_duration":null,"qrinfo_isotime":null,"qrinfo_duration":null,"psychopy_isotime":null,"psychopy_duration":null,"reproevents_isotime":null,"reproevents_duration":null}
+{"type":"MarkRecord","session_id":"ses-20240830","id":"mark-000279","kind":"Func series scan","name":"013-func-bold_task-rest_acq-short2_run-04_scan-6","target_ids":["dicoms-000401"],"dicoms_isotime":"2024-08-30T11:54:30.467500","dicoms_duration":2.0,"birch_isotime":null,"birch_duration":null,"qrinfo_isotime":null,"qrinfo_duration":null,"psychopy_isotime":null,"psychopy_duration":null,"reproevents_isotime":null,"reproevents_duration":null}
+{"type":"MarkRecord","session_id":"ses-20240830","id":"mark-000280","kind":"Func series scan","name":"013-func-bold_task-rest_acq-short2_run-04_scan-7","target_ids":["dicoms-000402"],"dicoms_isotime":"2024-08-30T11:54:32.467500","dicoms_duration":2.0,"birch_isotime":null,"birch_duration":null,"qrinfo_isotime":null,"qrinfo_duration":null,"psychopy_isotime":null,"psychopy_duration":null,"reproevents_isotime":null,"reproevents_duration":null}
+{"type":"MarkRecord","session_id":"ses-20240830","id":"mark-000281","kind":"Func series scan","name":"013-func-bold_task-rest_acq-short2_run-04_scan-8","target_ids":["dicoms-000403"],"dicoms_isotime":"2024-08-30T11:54:34.467500","dicoms_duration":2.0,"birch_isotime":null,"birch_duration":null,"qrinfo_isotime":null,"qrinfo_duration":null,"psychopy_isotime":null,"psychopy_duration":null,"reproevents_isotime":null,"reproevents_duration":null}
+{"type":"MarkRecord","session_id":"ses-20240830","id":"mark-000282","kind":"Func series scan","name":"013-func-bold_task-rest_acq-short2_run-04_scan-9","target_ids":["dicoms-000404"],"dicoms_isotime":"2024-08-30T11:54:36.467500","dicoms_duration":2.0,"birch_isotime":null,"birch_duration":null,"qrinfo_isotime":null,"qrinfo_duration":null,"psychopy_isotime":null,"psychopy_duration":null,"reproevents_isotime":null,"reproevents_duration":null}
+{"type":"MarkRecord","session_id":"ses-20240830","id":"mark-000283","kind":"Func series scan","name":"013-func-bold_task-rest_acq-short2_run-04_scan-10","target_ids":["dicoms-000405"],"dicoms_isotime":"2024-08-30T11:54:38.467500","dicoms_duration":2.0,"birch_isotime":null,"birch_duration":null,"qrinfo_isotime":null,"qrinfo_duration":null,"psychopy_isotime":null,"psychopy_duration":null,"reproevents_isotime":null,"reproevents_duration":null}
+{"type":"MarkRecord","session_id":"ses-20240830","id":"mark-000284","kind":"Func series scan","name":"013-func-bold_task-rest_acq-short2_run-04_scan-11","target_ids":["dicoms-000406"],"dicoms_isotime":"2024-08-30T11:54:40.467500","dicoms_duration":2.0,"birch_isotime":null,"birch_duration":null,"qrinfo_isotime":null,"qrinfo_duration":null,"psychopy_isotime":null,"psychopy_duration":null,"reproevents_isotime":null,"reproevents_duration":null}
+{"type":"MarkRecord","session_id":"ses-20240830","id":"mark-000285","kind":"Func series scan","name":"013-func-bold_task-rest_acq-short2_run-04_scan-12","target_ids":["dicoms-000407"],"dicoms_isotime":"2024-08-30T11:54:42.467500","dicoms_duration":2.0,"birch_isotime":null,"birch_duration":null,"qrinfo_isotime":null,"qrinfo_duration":null,"psychopy_isotime":null,"psychopy_duration":null,"reproevents_isotime":null,"reproevents_duration":null}
+{"type":"MarkRecord","session_id":"ses-20240830","id":"mark-000286","kind":"Func series scan","name":"013-func-bold_task-rest_acq-short2_run-04_scan-13","target_ids":["dicoms-000408"],"dicoms_isotime":"2024-08-30T11:54:44.467500","dicoms_duration":2.0,"birch_isotime":null,"birch_duration":null,"qrinfo_isotime":null,"qrinfo_duration":null,"psychopy_isotime":null,"psychopy_duration":null,"reproevents_isotime":null,"reproevents_duration":null}
+{"type":"MarkRecord","session_id":"ses-20240830","id":"mark-000287","kind":"Func series scan","name":"013-func-bold_task-rest_acq-short2_run-04_scan-14","target_ids":["dicoms-000409"],"dicoms_isotime":"2024-08-30T11:54:46.467500","dicoms_duration":null,"birch_isotime":null,"birch_duration":null,"qrinfo_isotime":null,"qrinfo_duration":null,"psychopy_isotime":null,"psychopy_duration":null,"reproevents_isotime":null,"reproevents_duration":null}
+Mark: type='MarkRecord' session_id='ses-20240830' id='mark-000288' kind='Func series end' name='013-func-bold_task-rest_acq-short2_run-04_end' target_ids=['dicoms-000409'] dicoms_isotime=Timestamp('2024-08-30 11:54:46.467500') dicoms_duration=None birch_isotime=None birch_duration=None qrinfo_isotime=None qrinfo_duration=None psychopy_isotime=None psychopy_duration=None reproevents_isotime=None reproevents_duration=None
+{"type":"MarkRecord","session_id":"ses-20240830","id":"mark-000288","kind":"Func series end","name":"013-func-bold_task-rest_acq-short2_run-04_end","target_ids":["dicoms-000409"],"dicoms_isotime":"2024-08-30T11:54:46.467500","dicoms_duration":null,"birch_isotime":null,"birch_duration":null,"qrinfo_isotime":null,"qrinfo_duration":null,"psychopy_isotime":null,"psychopy_duration":null,"reproevents_isotime":null,"reproevents_duration":null}
+Matching: sd1=014-func-bold_task-rest_acq-short2_run-05 with sd2=birch-series-1
+ use k_min=0.95, k_max=1.05
+ mismatch_3: 0.0 / 135.937274
+Matching: sd1=014-func-bold_task-rest_acq-short2_run-05 with sd2=birch-series-2
+ use k_min=0.95, k_max=1.05
+ mismatch_3: 0.0 / 86.185922
+Matching: sd1=014-func-bold_task-rest_acq-short2_run-05 with sd2=birch-series-3
+ use k_min=0.95, k_max=1.05
+ mismatch_3: 0.0 / 221.434687
+Matching: sd1=014-func-bold_task-rest_acq-short2_run-05 with sd2=birch-series-4
+ use k_min=0.95, k_max=1.05
+ mismatch_3: 0.0 / 100.961133
+Matching: sd1=014-func-bold_task-rest_acq-short2_run-05 with sd2=birch-series-5
+ mismatch_7: 15 / 150
+Matching: sd1=014-func-bold_task-rest_acq-short2_run-05 with sd2=psychopy-series-1
+ use k_min=0.95, k_max=1.05
+ mismatch_3: 0.0 / 100.958108
+Matching: sd1=014-func-bold_task-rest_acq-short2_run-05 with sd2=psychopy-series-2
+ mismatch_7: 15 / 150
+{"type":"MarkRecord","session_id":"ses-20240830","id":"mark-000289","kind":"Func series start","name":"014-func-bold_task-rest_acq-short2_run-05_start","target_ids":["dicoms-000410"],"dicoms_isotime":"2024-08-30T11:54:56.477500","dicoms_duration":28.0,"birch_isotime":null,"birch_duration":null,"qrinfo_isotime":null,"qrinfo_duration":null,"psychopy_isotime":null,"psychopy_duration":null,"reproevents_isotime":null,"reproevents_duration":null}
+{"type":"MarkRecord","session_id":"ses-20240830","id":"mark-000290","kind":"Func series scan","name":"014-func-bold_task-rest_acq-short2_run-05_scan-0","target_ids":["dicoms-000410"],"dicoms_isotime":"2024-08-30T11:54:56.477500","dicoms_duration":2.0,"birch_isotime":null,"birch_duration":null,"qrinfo_isotime":null,"qrinfo_duration":null,"psychopy_isotime":null,"psychopy_duration":null,"reproevents_isotime":null,"reproevents_duration":null}
+{"type":"MarkRecord","session_id":"ses-20240830","id":"mark-000291","kind":"Func series scan","name":"014-func-bold_task-rest_acq-short2_run-05_scan-1","target_ids":["dicoms-000411"],"dicoms_isotime":"2024-08-30T11:54:58.477500","dicoms_duration":2.0,"birch_isotime":null,"birch_duration":null,"qrinfo_isotime":null,"qrinfo_duration":null,"psychopy_isotime":null,"psychopy_duration":null,"reproevents_isotime":null,"reproevents_duration":null}
+{"type":"MarkRecord","session_id":"ses-20240830","id":"mark-000292","kind":"Func series scan","name":"014-func-bold_task-rest_acq-short2_run-05_scan-2","target_ids":["dicoms-000412"],"dicoms_isotime":"2024-08-30T11:55:00.477500","dicoms_duration":2.0,"birch_isotime":null,"birch_duration":null,"qrinfo_isotime":null,"qrinfo_duration":null,"psychopy_isotime":null,"psychopy_duration":null,"reproevents_isotime":null,"reproevents_duration":null}
+{"type":"MarkRecord","session_id":"ses-20240830","id":"mark-000293","kind":"Func series scan","name":"014-func-bold_task-rest_acq-short2_run-05_scan-3","target_ids":["dicoms-000413"],"dicoms_isotime":"2024-08-30T11:55:02.477500","dicoms_duration":2.0,"birch_isotime":null,"birch_duration":null,"qrinfo_isotime":null,"qrinfo_duration":null,"psychopy_isotime":null,"psychopy_duration":null,"reproevents_isotime":null,"reproevents_duration":null}
+{"type":"MarkRecord","session_id":"ses-20240830","id":"mark-000294","kind":"Func series scan","name":"014-func-bold_task-rest_acq-short2_run-05_scan-4","target_ids":["dicoms-000414"],"dicoms_isotime":"2024-08-30T11:55:04.477500","dicoms_duration":2.0,"birch_isotime":null,"birch_duration":null,"qrinfo_isotime":null,"qrinfo_duration":null,"psychopy_isotime":null,"psychopy_duration":null,"reproevents_isotime":null,"reproevents_duration":null}
+{"type":"MarkRecord","session_id":"ses-20240830","id":"mark-000295","kind":"Func series scan","name":"014-func-bold_task-rest_acq-short2_run-05_scan-5","target_ids":["dicoms-000415"],"dicoms_isotime":"2024-08-30T11:55:06.477500","dicoms_duration":2.0,"birch_isotime":null,"birch_duration":null,"qrinfo_isotime":null,"qrinfo_duration":null,"psychopy_isotime":null,"psychopy_duration":null,"reproevents_isotime":null,"reproevents_duration":null}
+{"type":"MarkRecord","session_id":"ses-20240830","id":"mark-000296","kind":"Func series scan","name":"014-func-bold_task-rest_acq-short2_run-05_scan-6","target_ids":["dicoms-000416"],"dicoms_isotime":"2024-08-30T11:55:08.477500","dicoms_duration":2.0,"birch_isotime":null,"birch_duration":null,"qrinfo_isotime":null,"qrinfo_duration":null,"psychopy_isotime":null,"psychopy_duration":null,"reproevents_isotime":null,"reproevents_duration":null}
+{"type":"MarkRecord","session_id":"ses-20240830","id":"mark-000297","kind":"Func series scan","name":"014-func-bold_task-rest_acq-short2_run-05_scan-7","target_ids":["dicoms-000417"],"dicoms_isotime":"2024-08-30T11:55:10.477500","dicoms_duration":2.0,"birch_isotime":null,"birch_duration":null,"qrinfo_isotime":null,"qrinfo_duration":null,"psychopy_isotime":null,"psychopy_duration":null,"reproevents_isotime":null,"reproevents_duration":null}
+{"type":"MarkRecord","session_id":"ses-20240830","id":"mark-000298","kind":"Func series scan","name":"014-func-bold_task-rest_acq-short2_run-05_scan-8","target_ids":["dicoms-000418"],"dicoms_isotime":"2024-08-30T11:55:12.477500","dicoms_duration":2.0,"birch_isotime":null,"birch_duration":null,"qrinfo_isotime":null,"qrinfo_duration":null,"psychopy_isotime":null,"psychopy_duration":null,"reproevents_isotime":null,"reproevents_duration":null}
+{"type":"MarkRecord","session_id":"ses-20240830","id":"mark-000299","kind":"Func series scan","name":"014-func-bold_task-rest_acq-short2_run-05_scan-9","target_ids":["dicoms-000419"],"dicoms_isotime":"2024-08-30T11:55:14.477500","dicoms_duration":2.0,"birch_isotime":null,"birch_duration":null,"qrinfo_isotime":null,"qrinfo_duration":null,"psychopy_isotime":null,"psychopy_duration":null,"reproevents_isotime":null,"reproevents_duration":null}
+{"type":"MarkRecord","session_id":"ses-20240830","id":"mark-000300","kind":"Func series scan","name":"014-func-bold_task-rest_acq-short2_run-05_scan-10","target_ids":["dicoms-000420"],"dicoms_isotime":"2024-08-30T11:55:16.477500","dicoms_duration":2.0,"birch_isotime":null,"birch_duration":null,"qrinfo_isotime":null,"qrinfo_duration":null,"psychopy_isotime":null,"psychopy_duration":null,"reproevents_isotime":null,"reproevents_duration":null}
+{"type":"MarkRecord","session_id":"ses-20240830","id":"mark-000301","kind":"Func series scan","name":"014-func-bold_task-rest_acq-short2_run-05_scan-11","target_ids":["dicoms-000421"],"dicoms_isotime":"2024-08-30T11:55:18.477500","dicoms_duration":2.0,"birch_isotime":null,"birch_duration":null,"qrinfo_isotime":null,"qrinfo_duration":null,"psychopy_isotime":null,"psychopy_duration":null,"reproevents_isotime":null,"reproevents_duration":null}
+{"type":"MarkRecord","session_id":"ses-20240830","id":"mark-000302","kind":"Func series scan","name":"014-func-bold_task-rest_acq-short2_run-05_scan-12","target_ids":["dicoms-000422"],"dicoms_isotime":"2024-08-30T11:55:20.477500","dicoms_duration":2.0,"birch_isotime":null,"birch_duration":null,"qrinfo_isotime":null,"qrinfo_duration":null,"psychopy_isotime":null,"psychopy_duration":null,"reproevents_isotime":null,"reproevents_duration":null}
+{"type":"MarkRecord","session_id":"ses-20240830","id":"mark-000303","kind":"Func series scan","name":"014-func-bold_task-rest_acq-short2_run-05_scan-13","target_ids":["dicoms-000423"],"dicoms_isotime":"2024-08-30T11:55:22.477500","dicoms_duration":2.0,"birch_isotime":null,"birch_duration":null,"qrinfo_isotime":null,"qrinfo_duration":null,"psychopy_isotime":null,"psychopy_duration":null,"reproevents_isotime":null,"reproevents_duration":null}
+{"type":"MarkRecord","session_id":"ses-20240830","id":"mark-000304","kind":"Func series scan","name":"014-func-bold_task-rest_acq-short2_run-05_scan-14","target_ids":["dicoms-000424"],"dicoms_isotime":"2024-08-30T11:55:24.477500","dicoms_duration":null,"birch_isotime":null,"birch_duration":null,"qrinfo_isotime":null,"qrinfo_duration":null,"psychopy_isotime":null,"psychopy_duration":null,"reproevents_isotime":null,"reproevents_duration":null}
+Mark: type='MarkRecord' session_id='ses-20240830' id='mark-000305' kind='Func series end' name='014-func-bold_task-rest_acq-short2_run-05_end' target_ids=['dicoms-000424'] dicoms_isotime=Timestamp('2024-08-30 11:55:24.477500') dicoms_duration=None birch_isotime=None birch_duration=None qrinfo_isotime=None qrinfo_duration=None psychopy_isotime=None psychopy_duration=None reproevents_isotime=None reproevents_duration=None
+{"type":"MarkRecord","session_id":"ses-20240830","id":"mark-000305","kind":"Func series end","name":"014-func-bold_task-rest_acq-short2_run-05_end","target_ids":["dicoms-000424"],"dicoms_isotime":"2024-08-30T11:55:24.477500","dicoms_duration":null,"birch_isotime":null,"birch_duration":null,"qrinfo_isotime":null,"qrinfo_duration":null,"psychopy_isotime":null,"psychopy_duration":null,"reproevents_isotime":null,"reproevents_duration":null}
+Dicoms offsets: {}
+Generated marks after pass 1, done:
+  mark-000001 : ['dicoms-000140']
+  mark-000002 : ['dicoms-000140']
+  mark-000003 : ['dicoms-000141']
+  mark-000004 : ['dicoms-000142']
+  mark-000005 : ['dicoms-000143']
+  mark-000006 : ['dicoms-000144']
+  mark-000007 : ['dicoms-000145']
+  mark-000008 : ['dicoms-000146']
+  mark-000009 : ['dicoms-000147']
+  mark-000010 : ['dicoms-000148']
+  mark-000011 : ['dicoms-000149']
+  mark-000012 : ['dicoms-000150']
+  mark-000013 : ['dicoms-000151']
+  mark-000014 : ['dicoms-000152']
+  mark-000015 : ['dicoms-000153']
+  mark-000016 : ['dicoms-000154']
+  mark-000017 : ['dicoms-000154']
+  mark-000018 : ['dicoms-000155']
+  mark-000019 : ['dicoms-000155']
+  mark-000020 : ['dicoms-000156']
+  mark-000021 : ['dicoms-000157']
+  mark-000022 : ['dicoms-000158']
+  mark-000023 : ['dicoms-000159']
+  mark-000024 : ['dicoms-000160']
+  mark-000025 : ['dicoms-000161']
+  mark-000026 : ['dicoms-000162']
+  mark-000027 : ['dicoms-000163']
+  mark-000028 : ['dicoms-000164']
+  mark-000029 : ['dicoms-000165']
+  mark-000030 : ['dicoms-000166']
+  mark-000031 : ['dicoms-000167']
+  mark-000032 : ['dicoms-000168']
+  mark-000033 : ['dicoms-000169']
+  mark-000034 : ['dicoms-000169']
+  mark-000035 : ['dicoms-000170']
+  mark-000036 : ['dicoms-000170']
+  mark-000037 : ['dicoms-000171']
+  mark-000038 : ['dicoms-000172']
+  mark-000039 : ['dicoms-000173']
+  mark-000040 : ['dicoms-000174']
+  mark-000041 : ['dicoms-000175']
+  mark-000042 : ['dicoms-000176']
+  mark-000043 : ['dicoms-000177']
+  mark-000044 : ['dicoms-000178']
+  mark-000045 : ['dicoms-000179']
+  mark-000046 : ['dicoms-000180']
+  mark-000047 : ['dicoms-000181']
+  mark-000048 : ['dicoms-000182']
+  mark-000049 : ['dicoms-000183']
+  mark-000050 : ['dicoms-000184']
+  mark-000051 : ['dicoms-000184']
+  mark-000052 : ['dicoms-000185']
+  mark-000053 : ['dicoms-000185']
+  mark-000054 : ['dicoms-000186']
+  mark-000055 : ['dicoms-000187']
+  mark-000056 : ['dicoms-000188']
+  mark-000057 : ['dicoms-000189']
+  mark-000058 : ['dicoms-000190']
+  mark-000059 : ['dicoms-000191']
+  mark-000060 : ['dicoms-000192']
+  mark-000061 : ['dicoms-000193']
+  mark-000062 : ['dicoms-000194']
+  mark-000063 : ['dicoms-000195']
+  mark-000064 : ['dicoms-000196']
+  mark-000065 : ['dicoms-000197']
+  mark-000066 : ['dicoms-000198']
+  mark-000067 : ['dicoms-000199']
+  mark-000068 : ['dicoms-000199']
+  mark-000069 : ['dicoms-000200']
+  mark-000070 : ['dicoms-000200']
+  mark-000071 : ['dicoms-000201']
+  mark-000072 : ['dicoms-000202']
+  mark-000073 : ['dicoms-000203']
+  mark-000074 : ['dicoms-000204']
+  mark-000075 : ['dicoms-000205']
+  mark-000076 : ['dicoms-000206']
+  mark-000077 : ['dicoms-000207']
+  mark-000078 : ['dicoms-000208']
+  mark-000079 : ['dicoms-000209']
+  mark-000080 : ['dicoms-000210']
+  mark-000081 : ['dicoms-000211']
+  mark-000082 : ['dicoms-000212']
+  mark-000083 : ['dicoms-000213']
+  mark-000084 : ['dicoms-000214']
+  mark-000085 : ['dicoms-000215']
+  mark-000086 : ['dicoms-000216']
+  mark-000087 : ['dicoms-000217']
+  mark-000088 : ['dicoms-000218']
+  mark-000089 : ['dicoms-000219']
+  mark-000090 : ['dicoms-000220']
+  mark-000091 : ['dicoms-000221']
+  mark-000092 : ['dicoms-000222']
+  mark-000093 : ['dicoms-000223']
+  mark-000094 : ['dicoms-000224']
+  mark-000095 : ['dicoms-000225']
+  mark-000096 : ['dicoms-000226']
+  mark-000097 : ['dicoms-000227']
+  mark-000098 : ['dicoms-000228']
+  mark-000099 : ['dicoms-000229']
+  mark-000100 : ['dicoms-000230']
+  mark-000101 : ['dicoms-000231']
+  mark-000102 : ['dicoms-000232']
+  mark-000103 : ['dicoms-000233']
+  mark-000104 : ['dicoms-000234']
+  mark-000105 : ['dicoms-000235']
+  mark-000106 : ['dicoms-000236']
+  mark-000107 : ['dicoms-000237']
+  mark-000108 : ['dicoms-000238']
+  mark-000109 : ['dicoms-000239']
+  mark-000110 : ['dicoms-000240']
+  mark-000111 : ['dicoms-000241']
+  mark-000112 : ['dicoms-000242']
+  mark-000113 : ['dicoms-000243']
+  mark-000114 : ['dicoms-000244']
+  mark-000115 : ['dicoms-000245']
+  mark-000116 : ['dicoms-000246']
+  mark-000117 : ['dicoms-000247']
+  mark-000118 : ['dicoms-000248']
+  mark-000119 : ['dicoms-000249']
+  mark-000120 : ['dicoms-000250']
+  mark-000121 : ['dicoms-000251']
+  mark-000122 : ['dicoms-000252']
+  mark-000123 : ['dicoms-000253']
+  mark-000124 : ['dicoms-000254']
+  mark-000125 : ['dicoms-000255']
+  mark-000126 : ['dicoms-000256']
+  mark-000127 : ['dicoms-000257']
+  mark-000128 : ['dicoms-000258']
+  mark-000129 : ['dicoms-000259']
+  mark-000130 : ['dicoms-000260']
+  mark-000131 : ['dicoms-000261']
+  mark-000132 : ['dicoms-000262']
+  mark-000133 : ['dicoms-000263']
+  mark-000134 : ['dicoms-000264']
+  mark-000135 : ['dicoms-000265']
+  mark-000136 : ['dicoms-000266']
+  mark-000137 : ['dicoms-000267']
+  mark-000138 : ['dicoms-000268']
+  mark-000139 : ['dicoms-000269']
+  mark-000140 : ['dicoms-000270']
+  mark-000141 : ['dicoms-000271']
+  mark-000142 : ['dicoms-000272']
+  mark-000143 : ['dicoms-000273']
+  mark-000144 : ['dicoms-000274']
+  mark-000145 : ['dicoms-000275']
+  mark-000146 : ['dicoms-000276']
+  mark-000147 : ['dicoms-000277']
+  mark-000148 : ['dicoms-000278']
+  mark-000149 : ['dicoms-000279']
+  mark-000150 : ['dicoms-000280']
+  mark-000151 : ['dicoms-000281']
+  mark-000152 : ['dicoms-000282']
+  mark-000153 : ['dicoms-000283']
+  mark-000154 : ['dicoms-000284']
+  mark-000155 : ['dicoms-000285']
+  mark-000156 : ['dicoms-000286']
+  mark-000157 : ['dicoms-000287']
+  mark-000158 : ['dicoms-000288']
+  mark-000159 : ['dicoms-000289']
+  mark-000160 : ['dicoms-000290']
+  mark-000161 : ['dicoms-000291']
+  mark-000162 : ['dicoms-000292']
+  mark-000163 : ['dicoms-000293']
+  mark-000164 : ['dicoms-000294']
+  mark-000165 : ['dicoms-000295']
+  mark-000166 : ['dicoms-000296']
+  mark-000167 : ['dicoms-000297']
+  mark-000168 : ['dicoms-000298']
+  mark-000169 : ['dicoms-000299']
+  mark-000170 : ['dicoms-000300']
+  mark-000171 : ['dicoms-000301']
+  mark-000172 : ['dicoms-000302']
+  mark-000173 : ['dicoms-000303']
+  mark-000174 : ['dicoms-000304']
+  mark-000175 : ['dicoms-000305']
+  mark-000176 : ['dicoms-000306']
+  mark-000177 : ['dicoms-000307']
+  mark-000178 : ['dicoms-000308']
+  mark-000179 : ['dicoms-000309']
+  mark-000180 : ['dicoms-000310']
+  mark-000181 : ['dicoms-000311']
+  mark-000182 : ['dicoms-000312']
+  mark-000183 : ['dicoms-000313']
+  mark-000184 : ['dicoms-000314']
+  mark-000185 : ['dicoms-000315']
+  mark-000186 : ['dicoms-000316']
+  mark-000187 : ['dicoms-000317']
+  mark-000188 : ['dicoms-000318']
+  mark-000189 : ['dicoms-000319']
+  mark-000190 : ['dicoms-000320']
+  mark-000191 : ['dicoms-000321']
+  mark-000192 : ['dicoms-000322']
+  mark-000193 : ['dicoms-000323']
+  mark-000194 : ['dicoms-000324']
+  mark-000195 : ['dicoms-000325']
+  mark-000196 : ['dicoms-000326']
+  mark-000197 : ['dicoms-000327']
+  mark-000198 : ['dicoms-000328']
+  mark-000199 : ['dicoms-000329']
+  mark-000200 : ['dicoms-000330']
+  mark-000201 : ['dicoms-000331']
+  mark-000202 : ['dicoms-000332']
+  mark-000203 : ['dicoms-000333']
+  mark-000204 : ['dicoms-000334']
+  mark-000205 : ['dicoms-000335']
+  mark-000206 : ['dicoms-000336']
+  mark-000207 : ['dicoms-000337']
+  mark-000208 : ['dicoms-000338']
+  mark-000209 : ['dicoms-000339']
+  mark-000210 : ['dicoms-000340']
+  mark-000211 : ['dicoms-000341']
+  mark-000212 : ['dicoms-000342']
+  mark-000213 : ['dicoms-000343']
+  mark-000214 : ['dicoms-000344']
+  mark-000215 : ['dicoms-000345']
+  mark-000216 : ['dicoms-000346']
+  mark-000217 : ['dicoms-000347']
+  mark-000218 : ['dicoms-000348']
+  mark-000219 : ['dicoms-000349']
+  mark-000220 : ['dicoms-000349']
+  mark-000221 : ['dicoms-000350']
+  mark-000222 : ['dicoms-000350']
+  mark-000223 : ['dicoms-000351']
+  mark-000224 : ['dicoms-000352']
+  mark-000225 : ['dicoms-000353']
+  mark-000226 : ['dicoms-000354']
+  mark-000227 : ['dicoms-000355']
+  mark-000228 : ['dicoms-000356']
+  mark-000229 : ['dicoms-000357']
+  mark-000230 : ['dicoms-000358']
+  mark-000231 : ['dicoms-000359']
+  mark-000232 : ['dicoms-000360']
+  mark-000233 : ['dicoms-000361']
+  mark-000234 : ['dicoms-000362']
+  mark-000235 : ['dicoms-000363']
+  mark-000236 : ['dicoms-000364']
+  mark-000237 : ['dicoms-000364']
+  mark-000238 : ['dicoms-000365']
+  mark-000239 : ['dicoms-000365']
+  mark-000240 : ['dicoms-000366']
+  mark-000241 : ['dicoms-000367']
+  mark-000242 : ['dicoms-000368']
+  mark-000243 : ['dicoms-000369']
+  mark-000244 : ['dicoms-000370']
+  mark-000245 : ['dicoms-000371']
+  mark-000246 : ['dicoms-000372']
+  mark-000247 : ['dicoms-000373']
+  mark-000248 : ['dicoms-000374']
+  mark-000249 : ['dicoms-000375']
+  mark-000250 : ['dicoms-000376']
+  mark-000251 : ['dicoms-000377']
+  mark-000252 : ['dicoms-000378']
+  mark-000253 : ['dicoms-000379']
+  mark-000254 : ['dicoms-000379']
+  mark-000255 : ['dicoms-000380']
+  mark-000256 : ['dicoms-000380']
+  mark-000257 : ['dicoms-000381']
+  mark-000258 : ['dicoms-000382']
+  mark-000259 : ['dicoms-000383']
+  mark-000260 : ['dicoms-000384']
+  mark-000261 : ['dicoms-000385']
+  mark-000262 : ['dicoms-000386']
+  mark-000263 : ['dicoms-000387']
+  mark-000264 : ['dicoms-000388']
+  mark-000265 : ['dicoms-000389']
+  mark-000266 : ['dicoms-000390']
+  mark-000267 : ['dicoms-000391']
+  mark-000268 : ['dicoms-000392']
+  mark-000269 : ['dicoms-000393']
+  mark-000270 : ['dicoms-000394']
+  mark-000271 : ['dicoms-000394']
+  mark-000272 : ['dicoms-000395']
+  mark-000273 : ['dicoms-000395']
+  mark-000274 : ['dicoms-000396']
+  mark-000275 : ['dicoms-000397']
+  mark-000276 : ['dicoms-000398']
+  mark-000277 : ['dicoms-000399']
+  mark-000278 : ['dicoms-000400']
+  mark-000279 : ['dicoms-000401']
+  mark-000280 : ['dicoms-000402']
+  mark-000281 : ['dicoms-000403']
+  mark-000282 : ['dicoms-000404']
+  mark-000283 : ['dicoms-000405']
+  mark-000284 : ['dicoms-000406']
+  mark-000285 : ['dicoms-000407']
+  mark-000286 : ['dicoms-000408']
+  mark-000287 : ['dicoms-000409']
+  mark-000288 : ['dicoms-000409']
+  mark-000289 : ['dicoms-000410']
+  mark-000290 : ['dicoms-000410']
+  mark-000291 : ['dicoms-000411']
+  mark-000292 : ['dicoms-000412']
+  mark-000293 : ['dicoms-000413']
+  mark-000294 : ['dicoms-000414']
+  mark-000295 : ['dicoms-000415']
+  mark-000296 : ['dicoms-000416']
+  mark-000297 : ['dicoms-000417']
+  mark-000298 : ['dicoms-000418']
+  mark-000299 : ['dicoms-000419']
+  mark-000300 : ['dicoms-000420']
+  mark-000301 : ['dicoms-000421']
+  mark-000302 : ['dicoms-000422']
+  mark-000303 : ['dicoms-000423']
+  mark-000304 : ['dicoms-000424']
+  mark-000305 : ['dicoms-000424']
+Done match marks with tmap service
+Generated marks after pass 2, done:
+  mark-000001 : ['dicoms-000140']
+  mark-000002 : ['dicoms-000140']
+  mark-000003 : ['dicoms-000141']
+  mark-000004 : ['dicoms-000142']
+  mark-000005 : ['dicoms-000143']
+  mark-000006 : ['dicoms-000144']
+  mark-000007 : ['dicoms-000145']
+  mark-000008 : ['dicoms-000146']
+  mark-000009 : ['dicoms-000147']
+  mark-000010 : ['dicoms-000148']
+  mark-000011 : ['dicoms-000149']
+  mark-000012 : ['dicoms-000150']
+  mark-000013 : ['dicoms-000151']
+  mark-000014 : ['dicoms-000152']
+  mark-000015 : ['dicoms-000153']
+  mark-000016 : ['dicoms-000154']
+  mark-000017 : ['dicoms-000154']
+  mark-000018 : ['dicoms-000155']
+  mark-000019 : ['dicoms-000155']
+  mark-000020 : ['dicoms-000156']
+  mark-000021 : ['dicoms-000157']
+  mark-000022 : ['dicoms-000158']
+  mark-000023 : ['dicoms-000159']
+  mark-000024 : ['dicoms-000160']
+  mark-000025 : ['dicoms-000161']
+  mark-000026 : ['dicoms-000162']
+  mark-000027 : ['dicoms-000163']
+  mark-000028 : ['dicoms-000164']
+  mark-000029 : ['dicoms-000165']
+  mark-000030 : ['dicoms-000166']
+  mark-000031 : ['dicoms-000167']
+  mark-000032 : ['dicoms-000168']
+  mark-000033 : ['dicoms-000169']
+  mark-000034 : ['dicoms-000169']
+  mark-000035 : ['dicoms-000170']
+  mark-000036 : ['dicoms-000170']
+  mark-000037 : ['dicoms-000171']
+  mark-000038 : ['dicoms-000172']
+  mark-000039 : ['dicoms-000173']
+  mark-000040 : ['dicoms-000174']
+  mark-000041 : ['dicoms-000175']
+  mark-000042 : ['dicoms-000176']
+  mark-000043 : ['dicoms-000177']
+  mark-000044 : ['dicoms-000178']
+  mark-000045 : ['dicoms-000179']
+  mark-000046 : ['dicoms-000180']
+  mark-000047 : ['dicoms-000181']
+  mark-000048 : ['dicoms-000182']
+  mark-000049 : ['dicoms-000183']
+  mark-000050 : ['dicoms-000184']
+  mark-000051 : ['dicoms-000184']
+  mark-000052 : ['dicoms-000185']
+  mark-000053 : ['dicoms-000185']
+  mark-000054 : ['dicoms-000186']
+  mark-000055 : ['dicoms-000187']
+  mark-000056 : ['dicoms-000188']
+  mark-000057 : ['dicoms-000189']
+  mark-000058 : ['dicoms-000190']
+  mark-000059 : ['dicoms-000191']
+  mark-000060 : ['dicoms-000192']
+  mark-000061 : ['dicoms-000193']
+  mark-000062 : ['dicoms-000194']
+  mark-000063 : ['dicoms-000195']
+  mark-000064 : ['dicoms-000196']
+  mark-000065 : ['dicoms-000197']
+  mark-000066 : ['dicoms-000198']
+  mark-000067 : ['dicoms-000199']
+  mark-000068 : ['dicoms-000199']
+  mark-000069 : ['dicoms-000200']
+  mark-000070 : ['dicoms-000200']
+  mark-000071 : ['dicoms-000201']
+  mark-000072 : ['dicoms-000202']
+  mark-000073 : ['dicoms-000203']
+  mark-000074 : ['dicoms-000204']
+  mark-000075 : ['dicoms-000205']
+  mark-000076 : ['dicoms-000206']
+  mark-000077 : ['dicoms-000207']
+  mark-000078 : ['dicoms-000208']
+  mark-000079 : ['dicoms-000209']
+  mark-000080 : ['dicoms-000210']
+  mark-000081 : ['dicoms-000211']
+  mark-000082 : ['dicoms-000212']
+  mark-000083 : ['dicoms-000213']
+  mark-000084 : ['dicoms-000214']
+  mark-000085 : ['dicoms-000215']
+  mark-000086 : ['dicoms-000216']
+  mark-000087 : ['dicoms-000217']
+  mark-000088 : ['dicoms-000218']
+  mark-000089 : ['dicoms-000219']
+  mark-000090 : ['dicoms-000220']
+  mark-000091 : ['dicoms-000221']
+  mark-000092 : ['dicoms-000222']
+  mark-000093 : ['dicoms-000223']
+  mark-000094 : ['dicoms-000224']
+  mark-000095 : ['dicoms-000225']
+  mark-000096 : ['dicoms-000226']
+  mark-000097 : ['dicoms-000227']
+  mark-000098 : ['dicoms-000228']
+  mark-000099 : ['dicoms-000229']
+  mark-000100 : ['dicoms-000230']
+  mark-000101 : ['dicoms-000231']
+  mark-000102 : ['dicoms-000232']
+  mark-000103 : ['dicoms-000233']
+  mark-000104 : ['dicoms-000234']
+  mark-000105 : ['dicoms-000235']
+  mark-000106 : ['dicoms-000236']
+  mark-000107 : ['dicoms-000237']
+  mark-000108 : ['dicoms-000238']
+  mark-000109 : ['dicoms-000239']
+  mark-000110 : ['dicoms-000240']
+  mark-000111 : ['dicoms-000241']
+  mark-000112 : ['dicoms-000242']
+  mark-000113 : ['dicoms-000243']
+  mark-000114 : ['dicoms-000244']
+  mark-000115 : ['dicoms-000245']
+  mark-000116 : ['dicoms-000246']
+  mark-000117 : ['dicoms-000247']
+  mark-000118 : ['dicoms-000248']
+  mark-000119 : ['dicoms-000249']
+  mark-000120 : ['dicoms-000250']
+  mark-000121 : ['dicoms-000251']
+  mark-000122 : ['dicoms-000252']
+  mark-000123 : ['dicoms-000253']
+  mark-000124 : ['dicoms-000254']
+  mark-000125 : ['dicoms-000255']
+  mark-000126 : ['dicoms-000256']
+  mark-000127 : ['dicoms-000257']
+  mark-000128 : ['dicoms-000258']
+  mark-000129 : ['dicoms-000259']
+  mark-000130 : ['dicoms-000260']
+  mark-000131 : ['dicoms-000261']
+  mark-000132 : ['dicoms-000262']
+  mark-000133 : ['dicoms-000263']
+  mark-000134 : ['dicoms-000264']
+  mark-000135 : ['dicoms-000265']
+  mark-000136 : ['dicoms-000266']
+  mark-000137 : ['dicoms-000267']
+  mark-000138 : ['dicoms-000268']
+  mark-000139 : ['dicoms-000269']
+  mark-000140 : ['dicoms-000270']
+  mark-000141 : ['dicoms-000271']
+  mark-000142 : ['dicoms-000272']
+  mark-000143 : ['dicoms-000273']
+  mark-000144 : ['dicoms-000274']
+  mark-000145 : ['dicoms-000275']
+  mark-000146 : ['dicoms-000276']
+  mark-000147 : ['dicoms-000277']
+  mark-000148 : ['dicoms-000278']
+  mark-000149 : ['dicoms-000279']
+  mark-000150 : ['dicoms-000280']
+  mark-000151 : ['dicoms-000281']
+  mark-000152 : ['dicoms-000282']
+  mark-000153 : ['dicoms-000283']
+  mark-000154 : ['dicoms-000284']
+  mark-000155 : ['dicoms-000285']
+  mark-000156 : ['dicoms-000286']
+  mark-000157 : ['dicoms-000287']
+  mark-000158 : ['dicoms-000288']
+  mark-000159 : ['dicoms-000289']
+  mark-000160 : ['dicoms-000290']
+  mark-000161 : ['dicoms-000291']
+  mark-000162 : ['dicoms-000292']
+  mark-000163 : ['dicoms-000293']
+  mark-000164 : ['dicoms-000294']
+  mark-000165 : ['dicoms-000295']
+  mark-000166 : ['dicoms-000296']
+  mark-000167 : ['dicoms-000297']
+  mark-000168 : ['dicoms-000298']
+  mark-000169 : ['dicoms-000299']
+  mark-000170 : ['dicoms-000300']
+  mark-000171 : ['dicoms-000301']
+  mark-000172 : ['dicoms-000302']
+  mark-000173 : ['dicoms-000303']
+  mark-000174 : ['dicoms-000304']
+  mark-000175 : ['dicoms-000305']
+  mark-000176 : ['dicoms-000306']
+  mark-000177 : ['dicoms-000307']
+  mark-000178 : ['dicoms-000308']
+  mark-000179 : ['dicoms-000309']
+  mark-000180 : ['dicoms-000310']
+  mark-000181 : ['dicoms-000311']
+  mark-000182 : ['dicoms-000312']
+  mark-000183 : ['dicoms-000313']
+  mark-000184 : ['dicoms-000314']
+  mark-000185 : ['dicoms-000315']
+  mark-000186 : ['dicoms-000316']
+  mark-000187 : ['dicoms-000317']
+  mark-000188 : ['dicoms-000318']
+  mark-000189 : ['dicoms-000319']
+  mark-000190 : ['dicoms-000320']
+  mark-000191 : ['dicoms-000321']
+  mark-000192 : ['dicoms-000322']
+  mark-000193 : ['dicoms-000323']
+  mark-000194 : ['dicoms-000324']
+  mark-000195 : ['dicoms-000325']
+  mark-000196 : ['dicoms-000326']
+  mark-000197 : ['dicoms-000327']
+  mark-000198 : ['dicoms-000328']
+  mark-000199 : ['dicoms-000329']
+  mark-000200 : ['dicoms-000330']
+  mark-000201 : ['dicoms-000331']
+  mark-000202 : ['dicoms-000332']
+  mark-000203 : ['dicoms-000333']
+  mark-000204 : ['dicoms-000334']
+  mark-000205 : ['dicoms-000335']
+  mark-000206 : ['dicoms-000336']
+  mark-000207 : ['dicoms-000337']
+  mark-000208 : ['dicoms-000338']
+  mark-000209 : ['dicoms-000339']
+  mark-000210 : ['dicoms-000340']
+  mark-000211 : ['dicoms-000341']
+  mark-000212 : ['dicoms-000342']
+  mark-000213 : ['dicoms-000343']
+  mark-000214 : ['dicoms-000344']
+  mark-000215 : ['dicoms-000345']
+  mark-000216 : ['dicoms-000346']
+  mark-000217 : ['dicoms-000347']
+  mark-000218 : ['dicoms-000348']
+  mark-000219 : ['dicoms-000349']
+  mark-000220 : ['dicoms-000349']
+  mark-000221 : ['dicoms-000350']
+  mark-000222 : ['dicoms-000350']
+  mark-000223 : ['dicoms-000351']
+  mark-000224 : ['dicoms-000352']
+  mark-000225 : ['dicoms-000353']
+  mark-000226 : ['dicoms-000354']
+  mark-000227 : ['dicoms-000355']
+  mark-000228 : ['dicoms-000356']
+  mark-000229 : ['dicoms-000357']
+  mark-000230 : ['dicoms-000358']
+  mark-000231 : ['dicoms-000359']
+  mark-000232 : ['dicoms-000360']
+  mark-000233 : ['dicoms-000361']
+  mark-000234 : ['dicoms-000362']
+  mark-000235 : ['dicoms-000363']
+  mark-000236 : ['dicoms-000364']
+  mark-000237 : ['dicoms-000364']
+  mark-000238 : ['dicoms-000365']
+  mark-000239 : ['dicoms-000365']
+  mark-000240 : ['dicoms-000366']
+  mark-000241 : ['dicoms-000367']
+  mark-000242 : ['dicoms-000368']
+  mark-000243 : ['dicoms-000369']
+  mark-000244 : ['dicoms-000370']
+  mark-000245 : ['dicoms-000371']
+  mark-000246 : ['dicoms-000372']
+  mark-000247 : ['dicoms-000373']
+  mark-000248 : ['dicoms-000374']
+  mark-000249 : ['dicoms-000375']
+  mark-000250 : ['dicoms-000376']
+  mark-000251 : ['dicoms-000377']
+  mark-000252 : ['dicoms-000378']
+  mark-000253 : ['dicoms-000379']
+  mark-000254 : ['dicoms-000379']
+  mark-000255 : ['dicoms-000380']
+  mark-000256 : ['dicoms-000380']
+  mark-000257 : ['dicoms-000381']
+  mark-000258 : ['dicoms-000382']
+  mark-000259 : ['dicoms-000383']
+  mark-000260 : ['dicoms-000384']
+  mark-000261 : ['dicoms-000385']
+  mark-000262 : ['dicoms-000386']
+  mark-000263 : ['dicoms-000387']
+  mark-000264 : ['dicoms-000388']
+  mark-000265 : ['dicoms-000389']
+  mark-000266 : ['dicoms-000390']
+  mark-000267 : ['dicoms-000391']
+  mark-000268 : ['dicoms-000392']
+  mark-000269 : ['dicoms-000393']
+  mark-000270 : ['dicoms-000394']
+  mark-000271 : ['dicoms-000394']
+  mark-000272 : ['dicoms-000395']
+  mark-000273 : ['dicoms-000395']
+  mark-000274 : ['dicoms-000396']
+  mark-000275 : ['dicoms-000397']
+  mark-000276 : ['dicoms-000398']
+  mark-000277 : ['dicoms-000399']
+  mark-000278 : ['dicoms-000400']
+  mark-000279 : ['dicoms-000401']
+  mark-000280 : ['dicoms-000402']
+  mark-000281 : ['dicoms-000403']
+  mark-000282 : ['dicoms-000404']
+  mark-000283 : ['dicoms-000405']
+  mark-000284 : ['dicoms-000406']
+  mark-000285 : ['dicoms-000407']
+  mark-000286 : ['dicoms-000408']
+  mark-000287 : ['dicoms-000409']
+  mark-000288 : ['dicoms-000409']
+  mark-000289 : ['dicoms-000410']
+  mark-000290 : ['dicoms-000410']
+  mark-000291 : ['dicoms-000411']
+  mark-000292 : ['dicoms-000412']
+  mark-000293 : ['dicoms-000413']
+  mark-000294 : ['dicoms-000414']
+  mark-000295 : ['dicoms-000415']
+  mark-000296 : ['dicoms-000416']
+  mark-000297 : ['dicoms-000417']
+  mark-000298 : ['dicoms-000418']
+  mark-000299 : ['dicoms-000419']
+  mark-000300 : ['dicoms-000420']
+  mark-000301 : ['dicoms-000421']
+  mark-000302 : ['dicoms-000422']
+  mark-000303 : ['dicoms-000423']
+  mark-000304 : ['dicoms-000424']
+  mark-000305 : ['dicoms-000424']
+Exit on   : 2024-09-02 15:04:29.548083
+Exit code : 0

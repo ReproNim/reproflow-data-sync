@@ -1,0 +1,9 @@
+dump_tmap.py tool
+Started on    : 2024-09-02 15:04:30.852339, vmelnik@Uranus
+Working dir   : /Users/vmelnik/Projects/Dartmouth/branches/reproflow-data-sync/code
+Session path  : /Users/vmelnik/Projects/Dartmouth/branches/typhon/reproflow-data-sync/ses-20240830
+Session ID    : ses-20240830
+generate_tmap(/Users/vmelnik/Projects/Dartmouth/branches/typhon/reproflow-data-sync/ses-20240830/timing-dumps/dump_marks.jsonl)
+Full/completed mark not found in /Users/vmelnik/Projects/Dartmouth/branches/typhon/reproflow-data-sync/ses-20240830/timing-dumps/dump_marks.jsonl
+Exit on   : 2024-09-02 15:04:30.856639
+Exit code : 1
