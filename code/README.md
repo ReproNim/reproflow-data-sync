@@ -174,6 +174,10 @@ Algorithm proposals for the ReproFlow time synchronization effort:
     - root log in reproiner started recording 11:31:56, and stopped 11:48:03, somehow ffmpeg thread was terminated. And then at 11:56:13 capture was terminated by data/notification from device (Whack resolution).
   - [ ] DICOMS MRI clock in this study has offset around -27 sec in contrast to +391 sec in previous session. This 7 minutes gap or jump causes current match series algorithm to fail. Probably to see other swimlanes tmap record will be created manually for this series in `code/repronim_tmap.jsonl` file.
   - [ ] `dump_reproevents.py` bad performance, need to optimize it (execution time around 40 sec).
+  - [ ] `reproevents/events.csv` doesn't contain any valid `client_time_iso` data. If possible we should look for older *.csv file if any:
+    - started at : 2024-08-30T`15:47:03`.055736-04:00
+    - ended   at : 2024-08-30T`20:02:33`.580731-04:00
+    - but study range which in ISO time was `11:35:49 - 11:55:52`.
 
 ## TODO:
   - Use DataLad run to execute commands (https://handbook.datalad.org/en/latest/basics/basics-run.html)
