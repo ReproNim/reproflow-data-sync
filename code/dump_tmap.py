@@ -42,8 +42,8 @@ def find_partial_marks(marks: List) -> List[dict]:
     lst: List[dict] = []
     for obj in marks:
         if (obj.get('type')=='MarkRecord' and
-            obj.get('birch_isotime') is not None and
-            (obj.get('dicoms_isotime') is not None or
+            (obj.get('birch_isotime') is not None or
+            obj.get('dicoms_isotime') is not None or
             obj.get('qrinfo_isotime') is not None or
             obj.get('reproevents_isotime') is not None or
             obj.get('psychopy_isotime') is not None)):

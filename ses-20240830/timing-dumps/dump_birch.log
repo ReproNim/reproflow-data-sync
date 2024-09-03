@@ -1,5 +1,5 @@
 dump_birch.py tool
-Started on    : 2024-09-02 15:03:54.990832, vmelnik@Uranus
+Started on    : 2024-09-03 12:54:50.362220, vmelnik@Uranus
 Working dir   : /Users/vmelnik/Projects/Dartmouth/branches/reproflow-data-sync/code
 Session path  : /Users/vmelnik/Projects/Dartmouth/branches/typhon/reproflow-data-sync/ses-20240830
 Session ID    : ses-20240830
@@ -7,7 +7,7 @@ Dumps path    : /Users/vmelnik/Projects/Dartmouth/branches/typhon/reproflow-data
 DICOMS dump   : /Users/vmelnik/Projects/Dartmouth/branches/typhon/reproflow-data-sync/ses-20240830/timing-dumps/dump_dicoms.jsonl
 Birch path    : /Users/vmelnik/Projects/Dartmouth/branches/typhon/reproflow-data-sync/ses-20240830/birch
 Study range   : dicoms 2024-08-30 11:21:52.667500 - 2024-08-30 11:57:24.477500
-              : birch  2024-08-30 11:15:21.059213 - 2024-08-30 11:50:52.869213
+              : birch  2024-08-30 11:22:19.667500 - 2024-08-30 11:57:51.477500
 Reading birch directory: /Users/vmelnik/Projects/Dartmouth/branches/typhon/reproflow-data-sync/ses-20240830/birch
   out.jsonl
 Processing    : /Users/vmelnik/Projects/Dartmouth/branches/typhon/reproflow-data-sync/ses-20240830/birch/out.jsonl
@@ -1362,12 +1362,19 @@ Skipping out of study range isotime=2024-08-30T11:13:21.207890,  {'epoch_time': 
   2024-08-30T11:14:21.204541 240 1
 Skipping out of study range isotime=2024-08-30T11:14:21.204541,  {'epoch_time': 1725030861.2045414, 'iso_time': '2024-08-30T11:14:21.204541-04:00', 'time': -3354.9081850000002, 'alink_byte': 240, 'alink_flags': 1}
   2024-08-30T11:15:21.204544 240 1
+Skipping out of study range isotime=2024-08-30T11:15:21.204544,  {'epoch_time': 1725030921.2045443, 'iso_time': '2024-08-30T11:15:21.204544-04:00', 'time': -3294.907408, 'alink_byte': 240, 'alink_flags': 1}
   2024-08-30T11:16:21.241463 240 1
+Skipping out of study range isotime=2024-08-30T11:16:21.241463,  {'epoch_time': 1725030981.241463, 'iso_time': '2024-08-30T11:16:21.241463-04:00', 'time': -3234.907006, 'alink_byte': 240, 'alink_flags': 1}
   2024-08-30T11:17:21.206292 240 1
+Skipping out of study range isotime=2024-08-30T11:17:21.206292,  {'epoch_time': 1725031041.2062917, 'iso_time': '2024-08-30T11:17:21.206292-04:00', 'time': -3174.906979, 'alink_byte': 240, 'alink_flags': 1}
   2024-08-30T11:18:21.206973 240 1
+Skipping out of study range isotime=2024-08-30T11:18:21.206973,  {'epoch_time': 1725031101.2069726, 'iso_time': '2024-08-30T11:18:21.206973-04:00', 'time': -3114.906827, 'alink_byte': 240, 'alink_flags': 1}
   2024-08-30T11:19:21.208239 240 1
+Skipping out of study range isotime=2024-08-30T11:19:21.208239,  {'epoch_time': 1725031161.2082388, 'iso_time': '2024-08-30T11:19:21.208239-04:00', 'time': -3054.906051, 'alink_byte': 240, 'alink_flags': 1}
   2024-08-30T11:20:21.216151 240 1
+Skipping out of study range isotime=2024-08-30T11:20:21.216151,  {'epoch_time': 1725031221.2161505, 'iso_time': '2024-08-30T11:20:21.216151-04:00', 'time': -2994.905898, 'alink_byte': 240, 'alink_flags': 1}
   2024-08-30T11:21:21.210450 240 1
+Skipping out of study range isotime=2024-08-30T11:21:21.210450,  {'epoch_time': 1725031281.2104504, 'iso_time': '2024-08-30T11:21:21.210450-04:00', 'time': -2934.9058720000003, 'alink_byte': 240, 'alink_flags': 1}
   2024-08-30T11:22:21.216562 240 1
   2024-08-30T11:23:21.208094 240 1
   2024-08-30T11:24:21.214175 240 1
@@ -1809,234 +1816,157 @@ Skipping by alink_byte/alink_flags filter {'epoch_time': 1725032991.9705822, 'is
   2024-08-30T11:49:51.997648 240 1
   2024-08-30T11:50:51.996397 240 1
   2024-08-30T11:51:51.988533 240 1
-Skipping out of study range isotime=2024-08-30T11:51:51.988533,  {'epoch_time': 1725033111.9885325, 'iso_time': '2024-08-30T11:51:51.988533-04:00', 'time': -1104.1149879999998, 'alink_byte': 240, 'alink_flags': 1}
 Skipping by alink_byte/alink_flags filter {'epoch_time': 1725033168.6752567, 'iso_time': '2024-08-30T11:52:48.675257-04:00', 'time': -1047.428465, 'alink_byte': 496, 'alink_flags': 2}
   2024-08-30T11:52:48.702265 240 1
-Skipping out of study range isotime=2024-08-30T11:52:48.702265,  {'epoch_time': 1725033168.7022645, 'iso_time': '2024-08-30T11:52:48.702265-04:00', 'time': -1047.40846, 'alink_byte': 240, 'alink_flags': 1}
 Skipping by alink_byte/alink_flags filter {'epoch_time': 1725033170.6866038, 'iso_time': '2024-08-30T11:52:50.686604-04:00', 'time': -1045.4284550000002, 'alink_byte': 496, 'alink_flags': 2}
   2024-08-30T11:52:50.726809 240 1
-Skipping out of study range isotime=2024-08-30T11:52:50.726809,  {'epoch_time': 1725033170.726809, 'iso_time': '2024-08-30T11:52:50.726809-04:00', 'time': -1045.40845, 'alink_byte': 240, 'alink_flags': 1}
 Skipping by alink_byte/alink_flags filter {'epoch_time': 1725033172.6837647, 'iso_time': '2024-08-30T11:52:52.683765-04:00', 'time': -1043.428445, 'alink_byte': 496, 'alink_flags': 2}
   2024-08-30T11:52:52.696290 240 1
-Skipping out of study range isotime=2024-08-30T11:52:52.696290,  {'epoch_time': 1725033172.6962905, 'iso_time': '2024-08-30T11:52:52.696290-04:00', 'time': -1043.408445, 'alink_byte': 240, 'alink_flags': 1}
 Skipping by alink_byte/alink_flags filter {'epoch_time': 1725033174.681517, 'iso_time': '2024-08-30T11:52:54.681517-04:00', 'time': -1041.42841, 'alink_byte': 496, 'alink_flags': 2}
   2024-08-30T11:52:54.706451 240 1
-Skipping out of study range isotime=2024-08-30T11:52:54.706451,  {'epoch_time': 1725033174.706451, 'iso_time': '2024-08-30T11:52:54.706451-04:00', 'time': -1041.4083999999998, 'alink_byte': 240, 'alink_flags': 1}
 Skipping by alink_byte/alink_flags filter {'epoch_time': 1725033176.6768239, 'iso_time': '2024-08-30T11:52:56.676824-04:00', 'time': -1039.428425, 'alink_byte': 496, 'alink_flags': 2}
   2024-08-30T11:52:56.703799 240 1
-Skipping out of study range isotime=2024-08-30T11:52:56.703799,  {'epoch_time': 1725033176.7037988, 'iso_time': '2024-08-30T11:52:56.703799-04:00', 'time': -1039.408425, 'alink_byte': 240, 'alink_flags': 1}
 Skipping by alink_byte/alink_flags filter {'epoch_time': 1725033178.6873744, 'iso_time': '2024-08-30T11:52:58.687374-04:00', 'time': -1037.4284200000002, 'alink_byte': 496, 'alink_flags': 2}
   2024-08-30T11:52:58.729000 240 1
-Skipping out of study range isotime=2024-08-30T11:52:58.729000,  {'epoch_time': 1725033178.7290003, 'iso_time': '2024-08-30T11:52:58.729000-04:00', 'time': -1037.4084200000002, 'alink_byte': 240, 'alink_flags': 1}
 Skipping by alink_byte/alink_flags filter {'epoch_time': 1725033180.6778495, 'iso_time': '2024-08-30T11:53:00.677850-04:00', 'time': -1035.428409, 'alink_byte': 496, 'alink_flags': 2}
   2024-08-30T11:53:00.718686 240 1
-Skipping out of study range isotime=2024-08-30T11:53:00.718686,  {'epoch_time': 1725033180.7186859, 'iso_time': '2024-08-30T11:53:00.718686-04:00', 'time': -1035.408399, 'alink_byte': 240, 'alink_flags': 1}
 Skipping by alink_byte/alink_flags filter {'epoch_time': 1725033182.6764693, 'iso_time': '2024-08-30T11:53:02.676469-04:00', 'time': -1033.4284040000002, 'alink_byte': 496, 'alink_flags': 2}
   2024-08-30T11:53:02.701355 240 1
-Skipping out of study range isotime=2024-08-30T11:53:02.701355,  {'epoch_time': 1725033182.701355, 'iso_time': '2024-08-30T11:53:02.701355-04:00', 'time': -1033.408399, 'alink_byte': 240, 'alink_flags': 1}
 Skipping by alink_byte/alink_flags filter {'epoch_time': 1725033184.6846504, 'iso_time': '2024-08-30T11:53:04.684650-04:00', 'time': -1031.4283639999999, 'alink_byte': 496, 'alink_flags': 2}
   2024-08-30T11:53:04.697266 240 1
-Skipping out of study range isotime=2024-08-30T11:53:04.697266,  {'epoch_time': 1725033184.6972663, 'iso_time': '2024-08-30T11:53:04.697266-04:00', 'time': -1031.408364, 'alink_byte': 240, 'alink_flags': 1}
 Skipping by alink_byte/alink_flags filter {'epoch_time': 1725033186.6818838, 'iso_time': '2024-08-30T11:53:06.681884-04:00', 'time': -1029.4283839999998, 'alink_byte': 496, 'alink_flags': 2}
   2024-08-30T11:53:06.696525 240 1
-Skipping out of study range isotime=2024-08-30T11:53:06.696525,  {'epoch_time': 1725033186.6965249, 'iso_time': '2024-08-30T11:53:06.696525-04:00', 'time': -1029.408379, 'alink_byte': 240, 'alink_flags': 1}
 Skipping by alink_byte/alink_flags filter {'epoch_time': 1725033188.6778984, 'iso_time': '2024-08-30T11:53:08.677898-04:00', 'time': -1027.428379, 'alink_byte': 496, 'alink_flags': 2}
   2024-08-30T11:53:08.732312 240 1
-Skipping out of study range isotime=2024-08-30T11:53:08.732312,  {'epoch_time': 1725033188.7323122, 'iso_time': '2024-08-30T11:53:08.732312-04:00', 'time': -1027.4083690000002, 'alink_byte': 240, 'alink_flags': 1}
 Skipping by alink_byte/alink_flags filter {'epoch_time': 1725033190.6760526, 'iso_time': '2024-08-30T11:53:10.676053-04:00', 'time': -1025.4283639999999, 'alink_byte': 496, 'alink_flags': 2}
   2024-08-30T11:53:10.716341 240 1
-Skipping out of study range isotime=2024-08-30T11:53:10.716341,  {'epoch_time': 1725033190.7163415, 'iso_time': '2024-08-30T11:53:10.716341-04:00', 'time': -1025.408359, 'alink_byte': 240, 'alink_flags': 1}
 Skipping by alink_byte/alink_flags filter {'epoch_time': 1725033192.675657, 'iso_time': '2024-08-30T11:53:12.675657-04:00', 'time': -1023.4283540000001, 'alink_byte': 496, 'alink_flags': 2}
   2024-08-30T11:53:12.700582 240 1
-Skipping out of study range isotime=2024-08-30T11:53:12.700582,  {'epoch_time': 1725033192.700582, 'iso_time': '2024-08-30T11:53:12.700582-04:00', 'time': -1023.408359, 'alink_byte': 240, 'alink_flags': 1}
 Skipping by alink_byte/alink_flags filter {'epoch_time': 1725033194.6850522, 'iso_time': '2024-08-30T11:53:14.685052-04:00', 'time': -1021.4283190000001, 'alink_byte': 496, 'alink_flags': 2}
   2024-08-30T11:53:14.697601 240 1
-Skipping out of study range isotime=2024-08-30T11:53:14.697601,  {'epoch_time': 1725033194.6976008, 'iso_time': '2024-08-30T11:53:14.697601-04:00', 'time': -1021.4083190000001, 'alink_byte': 240, 'alink_flags': 1}
 Skipping by alink_byte/alink_flags filter {'epoch_time': 1725033196.6802812, 'iso_time': '2024-08-30T11:53:16.680281-04:00', 'time': -1019.4283439999999, 'alink_byte': 496, 'alink_flags': 2}
   2024-08-30T11:53:16.707360 240 1
-Skipping out of study range isotime=2024-08-30T11:53:16.707360,  {'epoch_time': 1725033196.7073596, 'iso_time': '2024-08-30T11:53:16.707360-04:00', 'time': -1019.4083340000002, 'alink_byte': 240, 'alink_flags': 1}
 Skipping by alink_byte/alink_flags filter {'epoch_time': 1725033207.5510402, 'iso_time': '2024-08-30T11:53:27.551040-04:00', 'time': -1008.5543910000001, 'alink_byte': 496, 'alink_flags': 2}
   2024-08-30T11:53:27.575961 240 1
-Skipping out of study range isotime=2024-08-30T11:53:27.575961,  {'epoch_time': 1725033207.575961, 'iso_time': '2024-08-30T11:53:27.575961-04:00', 'time': -1008.5343910000001, 'alink_byte': 240, 'alink_flags': 1}
 Skipping by alink_byte/alink_flags filter {'epoch_time': 1725033209.5583498, 'iso_time': '2024-08-30T11:53:29.558350-04:00', 'time': -1006.5543510000002, 'alink_byte': 496, 'alink_flags': 2}
   2024-08-30T11:53:29.570890 240 1
-Skipping out of study range isotime=2024-08-30T11:53:29.570890,  {'epoch_time': 1725033209.5708897, 'iso_time': '2024-08-30T11:53:29.570890-04:00', 'time': -1006.5343459999999, 'alink_byte': 240, 'alink_flags': 1}
 Skipping by alink_byte/alink_flags filter {'epoch_time': 1725033211.5545533, 'iso_time': '2024-08-30T11:53:31.554553-04:00', 'time': -1004.554376, 'alink_byte': 496, 'alink_flags': 2}
   2024-08-30T11:53:31.581538 240 1
-Skipping out of study range isotime=2024-08-30T11:53:31.581538,  {'epoch_time': 1725033211.5815382, 'iso_time': '2024-08-30T11:53:31.581538-04:00', 'time': -1004.5343710000002, 'alink_byte': 240, 'alink_flags': 1}
 Skipping by alink_byte/alink_flags filter {'epoch_time': 1725033213.554734, 'iso_time': '2024-08-30T11:53:33.554734-04:00', 'time': -1002.5543659999998, 'alink_byte': 496, 'alink_flags': 2}
   2024-08-30T11:53:33.569710 240 1
-Skipping out of study range isotime=2024-08-30T11:53:33.569710,  {'epoch_time': 1725033213.5697098, 'iso_time': '2024-08-30T11:53:33.569710-04:00', 'time': -1002.5343659999999, 'alink_byte': 240, 'alink_flags': 1}
 Skipping by alink_byte/alink_flags filter {'epoch_time': 1725033215.560806, 'iso_time': '2024-08-30T11:53:35.560806-04:00', 'time': -1000.5543360000001, 'alink_byte': 496, 'alink_flags': 2}
   2024-08-30T11:53:35.602070 240 1
-Skipping out of study range isotime=2024-08-30T11:53:35.602070,  {'epoch_time': 1725033215.6020703, 'iso_time': '2024-08-30T11:53:35.602070-04:00', 'time': -1000.534326, 'alink_byte': 240, 'alink_flags': 1}
 Skipping by alink_byte/alink_flags filter {'epoch_time': 1725033217.5540457, 'iso_time': '2024-08-30T11:53:37.554046-04:00', 'time': -998.5543459999999, 'alink_byte': 496, 'alink_flags': 2}
   2024-08-30T11:53:37.596020 240 1
-Skipping out of study range isotime=2024-08-30T11:53:37.596020,  {'epoch_time': 1725033217.5960197, 'iso_time': '2024-08-30T11:53:37.596020-04:00', 'time': -998.534341, 'alink_byte': 240, 'alink_flags': 1}
 Skipping by alink_byte/alink_flags filter {'epoch_time': 1725033219.548262, 'iso_time': '2024-08-30T11:53:39.548262-04:00', 'time': -996.554306, 'alink_byte': 496, 'alink_flags': 2}
   2024-08-30T11:53:39.589572 240 1
-Skipping out of study range isotime=2024-08-30T11:53:39.589572,  {'epoch_time': 1725033219.5895722, 'iso_time': '2024-08-30T11:53:39.589572-04:00', 'time': -996.534341, 'alink_byte': 240, 'alink_flags': 1}
 Skipping by alink_byte/alink_flags filter {'epoch_time': 1725033221.5512342, 'iso_time': '2024-08-30T11:53:41.551234-04:00', 'time': -994.5543360000001, 'alink_byte': 496, 'alink_flags': 2}
   2024-08-30T11:53:41.576157 240 1
-Skipping out of study range isotime=2024-08-30T11:53:41.576157,  {'epoch_time': 1725033221.5761573, 'iso_time': '2024-08-30T11:53:41.576157-04:00', 'time': -994.534326, 'alink_byte': 240, 'alink_flags': 1}
 Skipping by alink_byte/alink_flags filter {'epoch_time': 1725033223.55746, 'iso_time': '2024-08-30T11:53:43.557460-04:00', 'time': -992.554326, 'alink_byte': 496, 'alink_flags': 2}
   2024-08-30T11:53:43.570008 240 1
-Skipping out of study range isotime=2024-08-30T11:53:43.570008,  {'epoch_time': 1725033223.5700076, 'iso_time': '2024-08-30T11:53:43.570008-04:00', 'time': -992.5343160000002, 'alink_byte': 240, 'alink_flags': 1}
 Skipping by alink_byte/alink_flags filter {'epoch_time': 1725033225.55045, 'iso_time': '2024-08-30T11:53:45.550450-04:00', 'time': -990.554286, 'alink_byte': 496, 'alink_flags': 2}
   2024-08-30T11:53:45.589659 240 1
-Skipping out of study range isotime=2024-08-30T11:53:45.589659,  {'epoch_time': 1725033225.5896587, 'iso_time': '2024-08-30T11:53:45.589659-04:00', 'time': -990.5342759999999, 'alink_byte': 240, 'alink_flags': 1}
 Skipping by alink_byte/alink_flags filter {'epoch_time': 1725033227.5559015, 'iso_time': '2024-08-30T11:53:47.555902-04:00', 'time': -988.554306, 'alink_byte': 496, 'alink_flags': 2}
   2024-08-30T11:53:47.570470 240 1
-Skipping out of study range isotime=2024-08-30T11:53:47.570470,  {'epoch_time': 1725033227.5704703, 'iso_time': '2024-08-30T11:53:47.570470-04:00', 'time': -988.5343010000001, 'alink_byte': 240, 'alink_flags': 1}
 Skipping by alink_byte/alink_flags filter {'epoch_time': 1725033229.548308, 'iso_time': '2024-08-30T11:53:49.548308-04:00', 'time': -986.5542660000001, 'alink_byte': 496, 'alink_flags': 2}
   2024-08-30T11:53:49.573227 240 1
-Skipping out of study range isotime=2024-08-30T11:53:49.573227,  {'epoch_time': 1725033229.5732272, 'iso_time': '2024-08-30T11:53:49.573227-04:00', 'time': -986.5342609999998, 'alink_byte': 240, 'alink_flags': 1}
 Skipping by alink_byte/alink_flags filter {'epoch_time': 1725033231.5504384, 'iso_time': '2024-08-30T11:53:51.550438-04:00', 'time': -984.554286, 'alink_byte': 496, 'alink_flags': 2}
   2024-08-30T11:53:51.575350 240 1
-Skipping out of study range isotime=2024-08-30T11:53:51.575350,  {'epoch_time': 1725033231.5753496, 'iso_time': '2024-08-30T11:53:51.575350-04:00', 'time': -984.5342799999999, 'alink_byte': 240, 'alink_flags': 1}
 Skipping by alink_byte/alink_flags filter {'epoch_time': 1725033233.557118, 'iso_time': '2024-08-30T11:53:53.557118-04:00', 'time': -982.5542759999998, 'alink_byte': 496, 'alink_flags': 2}
   2024-08-30T11:53:53.569572 240 1
-Skipping out of study range isotime=2024-08-30T11:53:53.569572,  {'epoch_time': 1725033233.5695724, 'iso_time': '2024-08-30T11:53:53.569572-04:00', 'time': -982.5342700000001, 'alink_byte': 240, 'alink_flags': 1}
 Skipping by alink_byte/alink_flags filter {'epoch_time': 1725033235.5505023, 'iso_time': '2024-08-30T11:53:55.550502-04:00', 'time': -980.5542409999998, 'alink_byte': 496, 'alink_flags': 2}
   2024-08-30T11:53:55.589817 240 1
-Skipping out of study range isotime=2024-08-30T11:53:55.589817,  {'epoch_time': 1725033235.5898168, 'iso_time': '2024-08-30T11:53:55.589817-04:00', 'time': -980.5342350000001, 'alink_byte': 240, 'alink_flags': 1}
 Skipping by alink_byte/alink_flags filter {'epoch_time': 1725033246.3838582, 'iso_time': '2024-08-30T11:54:06.383858-04:00', 'time': -969.7297429999999, 'alink_byte': 496, 'alink_flags': 2}
   2024-08-30T11:54:06.398548 240 1
-Skipping out of study range isotime=2024-08-30T11:54:06.398548,  {'epoch_time': 1725033246.3985484, 'iso_time': '2024-08-30T11:54:06.398548-04:00', 'time': -969.709738, 'alink_byte': 240, 'alink_flags': 1}
 Skipping by alink_byte/alink_flags filter {'epoch_time': 1725033248.3760135, 'iso_time': '2024-08-30T11:54:08.376014-04:00', 'time': -967.7297330000001, 'alink_byte': 496, 'alink_flags': 2}
   2024-08-30T11:54:08.400939 240 1
-Skipping out of study range isotime=2024-08-30T11:54:08.400939,  {'epoch_time': 1725033248.4009392, 'iso_time': '2024-08-30T11:54:08.400939-04:00', 'time': -967.7097279999998, 'alink_byte': 240, 'alink_flags': 1}
 Skipping by alink_byte/alink_flags filter {'epoch_time': 1725033250.380062, 'iso_time': '2024-08-30T11:54:10.380062-04:00', 'time': -965.729703, 'alink_byte': 496, 'alink_flags': 2}
   2024-08-30T11:54:10.392597 240 1
-Skipping out of study range isotime=2024-08-30T11:54:10.392597,  {'epoch_time': 1725033250.3925972, 'iso_time': '2024-08-30T11:54:10.392597-04:00', 'time': -965.7096929999998, 'alink_byte': 240, 'alink_flags': 1}
 Skipping by alink_byte/alink_flags filter {'epoch_time': 1725033252.3851633, 'iso_time': '2024-08-30T11:54:12.385163-04:00', 'time': -963.7296980000001, 'alink_byte': 496, 'alink_flags': 2}
   2024-08-30T11:54:12.425333 240 1
-Skipping out of study range isotime=2024-08-30T11:54:12.425333,  {'epoch_time': 1725033252.4253335, 'iso_time': '2024-08-30T11:54:12.425333-04:00', 'time': -963.7096980000001, 'alink_byte': 240, 'alink_flags': 1}
 Skipping by alink_byte/alink_flags filter {'epoch_time': 1725033254.4044752, 'iso_time': '2024-08-30T11:54:14.404475-04:00', 'time': -961.7296580000002, 'alink_byte': 496, 'alink_flags': 2}
   2024-08-30T11:54:14.405438 240 1
-Skipping out of study range isotime=2024-08-30T11:54:14.405438,  {'epoch_time': 1725033254.4054384, 'iso_time': '2024-08-30T11:54:14.405438-04:00', 'time': -961.7096529999999, 'alink_byte': 240, 'alink_flags': 1}
 Skipping by alink_byte/alink_flags filter {'epoch_time': 1725033256.3945165, 'iso_time': '2024-08-30T11:54:16.394516-04:00', 'time': -959.7296980000001, 'alink_byte': 496, 'alink_flags': 2}
   2024-08-30T11:54:16.395553 240 1
-Skipping out of study range isotime=2024-08-30T11:54:16.395553,  {'epoch_time': 1725033256.395553, 'iso_time': '2024-08-30T11:54:16.395553-04:00', 'time': -959.7096929999998, 'alink_byte': 240, 'alink_flags': 1}
 Skipping by alink_byte/alink_flags filter {'epoch_time': 1725033258.3777354, 'iso_time': '2024-08-30T11:54:18.377735-04:00', 'time': -957.7296879999999, 'alink_byte': 496, 'alink_flags': 2}
   2024-08-30T11:54:18.414675 240 1
-Skipping out of study range isotime=2024-08-30T11:54:18.414675,  {'epoch_time': 1725033258.414675, 'iso_time': '2024-08-30T11:54:18.414675-04:00', 'time': -957.7096820000002, 'alink_byte': 240, 'alink_flags': 1}
 Skipping by alink_byte/alink_flags filter {'epoch_time': 1725033260.3724542, 'iso_time': '2024-08-30T11:54:20.372454-04:00', 'time': -955.7296630000001, 'alink_byte': 496, 'alink_flags': 2}
   2024-08-30T11:54:20.397457 240 1
-Skipping out of study range isotime=2024-08-30T11:54:20.397457,  {'epoch_time': 1725033260.397457, 'iso_time': '2024-08-30T11:54:20.397457-04:00', 'time': -955.709648, 'alink_byte': 240, 'alink_flags': 1}
 Skipping by alink_byte/alink_flags filter {'epoch_time': 1725033262.3800192, 'iso_time': '2024-08-30T11:54:22.380019-04:00', 'time': -953.7296729999998, 'alink_byte': 496, 'alink_flags': 2}
   2024-08-30T11:54:22.420477 240 1
-Skipping out of study range isotime=2024-08-30T11:54:22.420477,  {'epoch_time': 1725033262.4204774, 'iso_time': '2024-08-30T11:54:22.420477-04:00', 'time': -953.7096670000001, 'alink_byte': 240, 'alink_flags': 1}
 Skipping by alink_byte/alink_flags filter {'epoch_time': 1725033264.3763292, 'iso_time': '2024-08-30T11:54:24.376329-04:00', 'time': -951.7296329999999, 'alink_byte': 496, 'alink_flags': 2}
   2024-08-30T11:54:24.403253 240 1
-Skipping out of study range isotime=2024-08-30T11:54:24.403253,  {'epoch_time': 1725033264.4032533, 'iso_time': '2024-08-30T11:54:24.403253-04:00', 'time': -951.7096270000002, 'alink_byte': 240, 'alink_flags': 1}
 Skipping by alink_byte/alink_flags filter {'epoch_time': 1725033266.3722677, 'iso_time': '2024-08-30T11:54:26.372268-04:00', 'time': -949.7296529999999, 'alink_byte': 496, 'alink_flags': 2}
   2024-08-30T11:54:26.397266 240 1
-Skipping out of study range isotime=2024-08-30T11:54:26.397266,  {'epoch_time': 1725033266.3972661, 'iso_time': '2024-08-30T11:54:26.397266-04:00', 'time': -949.7096470000001, 'alink_byte': 240, 'alink_flags': 1}
 Skipping by alink_byte/alink_flags filter {'epoch_time': 1725033268.3758612, 'iso_time': '2024-08-30T11:54:28.375861-04:00', 'time': -947.7296430000001, 'alink_byte': 496, 'alink_flags': 2}
   2024-08-30T11:54:28.428054 240 1
-Skipping out of study range isotime=2024-08-30T11:54:28.428054,  {'epoch_time': 1725033268.4280543, 'iso_time': '2024-08-30T11:54:28.428054-04:00', 'time': -947.709636, 'alink_byte': 240, 'alink_flags': 1}
 Skipping by alink_byte/alink_flags filter {'epoch_time': 1725033270.3797116, 'iso_time': '2024-08-30T11:54:30.379712-04:00', 'time': -945.729613, 'alink_byte': 496, 'alink_flags': 2}
   2024-08-30T11:54:30.392250 240 1
-Skipping out of study range isotime=2024-08-30T11:54:30.392250,  {'epoch_time': 1725033270.39225, 'iso_time': '2024-08-30T11:54:30.392250-04:00', 'time': -945.709601, 'alink_byte': 240, 'alink_flags': 1}
 Skipping by alink_byte/alink_flags filter {'epoch_time': 1725033272.3837106, 'iso_time': '2024-08-30T11:54:32.383711-04:00', 'time': -943.7296270000002, 'alink_byte': 496, 'alink_flags': 2}
   2024-08-30T11:54:32.396267 240 1
-Skipping out of study range isotime=2024-08-30T11:54:32.396267,  {'epoch_time': 1725033272.396267, 'iso_time': '2024-08-30T11:54:32.396267-04:00', 'time': -943.709621, 'alink_byte': 240, 'alink_flags': 1}
 Skipping by alink_byte/alink_flags filter {'epoch_time': 1725033274.3757632, 'iso_time': '2024-08-30T11:54:34.375763-04:00', 'time': -941.7295869999998, 'alink_byte': 496, 'alink_flags': 2}
   2024-08-30T11:54:34.415454 240 1
-Skipping out of study range isotime=2024-08-30T11:54:34.415454,  {'epoch_time': 1725033274.415454, 'iso_time': '2024-08-30T11:54:34.415454-04:00', 'time': -941.7095800000002, 'alink_byte': 240, 'alink_flags': 1}
 Skipping by alink_byte/alink_flags filter {'epoch_time': 1725033285.2258608, 'iso_time': '2024-08-30T11:54:45.225861-04:00', 'time': -930.8860049999998, 'alink_byte': 496, 'alink_flags': 2}
   2024-08-30T11:54:45.238364 240 1
-Skipping out of study range isotime=2024-08-30T11:54:45.238364,  {'epoch_time': 1725033285.2383645, 'iso_time': '2024-08-30T11:54:45.238364-04:00', 'time': -930.866, 'alink_byte': 240, 'alink_flags': 1}
 Skipping by alink_byte/alink_flags filter {'epoch_time': 1725033287.2174299, 'iso_time': '2024-08-30T11:54:47.217430-04:00', 'time': -928.886, 'alink_byte': 496, 'alink_flags': 2}
   2024-08-30T11:54:47.242329 240 1
-Skipping out of study range isotime=2024-08-30T11:54:47.242329,  {'epoch_time': 1725033287.2423291, 'iso_time': '2024-08-30T11:54:47.242329-04:00', 'time': -928.866, 'alink_byte': 240, 'alink_flags': 1}
 Skipping by alink_byte/alink_flags filter {'epoch_time': 1725033289.2223008, 'iso_time': '2024-08-30T11:54:49.222301-04:00', 'time': -926.8859600000001, 'alink_byte': 496, 'alink_flags': 2}
   2024-08-30T11:54:49.263065 240 1
-Skipping out of study range isotime=2024-08-30T11:54:49.263065,  {'epoch_time': 1725033289.263065, 'iso_time': '2024-08-30T11:54:49.263065-04:00', 'time': -926.8659550000002, 'alink_byte': 240, 'alink_flags': 1}
 Skipping by alink_byte/alink_flags filter {'epoch_time': 1725033291.215345, 'iso_time': '2024-08-30T11:54:51.215345-04:00', 'time': -924.8859849999999, 'alink_byte': 496, 'alink_flags': 2}
   2024-08-30T11:54:51.242256 240 1
-Skipping out of study range isotime=2024-08-30T11:54:51.242256,  {'epoch_time': 1725033291.2422562, 'iso_time': '2024-08-30T11:54:51.242256-04:00', 'time': -924.86598, 'alink_byte': 240, 'alink_flags': 1}
 Skipping by alink_byte/alink_flags filter {'epoch_time': 1725033293.220766, 'iso_time': '2024-08-30T11:54:53.220766-04:00', 'time': -922.8859750000001, 'alink_byte': 496, 'alink_flags': 2}
   2024-08-30T11:54:53.245691 240 1
-Skipping out of study range isotime=2024-08-30T11:54:53.245691,  {'epoch_time': 1725033293.2456908, 'iso_time': '2024-08-30T11:54:53.245691-04:00', 'time': -922.8659699999998, 'alink_byte': 240, 'alink_flags': 1}
 Skipping by alink_byte/alink_flags filter {'epoch_time': 1725033295.2238307, 'iso_time': '2024-08-30T11:54:55.223831-04:00', 'time': -920.8859640000001, 'alink_byte': 496, 'alink_flags': 2}
   2024-08-30T11:54:55.236370 240 1
-Skipping out of study range isotime=2024-08-30T11:54:55.236370,  {'epoch_time': 1725033295.2363696, 'iso_time': '2024-08-30T11:54:55.236370-04:00', 'time': -920.8659539999999, 'alink_byte': 240, 'alink_flags': 1}
 Skipping by alink_byte/alink_flags filter {'epoch_time': 1725033297.2168233, 'iso_time': '2024-08-30T11:54:57.216823-04:00', 'time': -918.8859539999999, 'alink_byte': 496, 'alink_flags': 2}
   2024-08-30T11:54:57.257192 240 1
-Skipping out of study range isotime=2024-08-30T11:54:57.257192,  {'epoch_time': 1725033297.2571921, 'iso_time': '2024-08-30T11:54:57.257192-04:00', 'time': -918.8659539999999, 'alink_byte': 240, 'alink_flags': 1}
 Skipping by alink_byte/alink_flags filter {'epoch_time': 1725033299.237321, 'iso_time': '2024-08-30T11:54:59.237321-04:00', 'time': -916.885914, 'alink_byte': 496, 'alink_flags': 2}
   2024-08-30T11:54:59.238260 240 1
-Skipping out of study range isotime=2024-08-30T11:54:59.238260,  {'epoch_time': 1725033299.2382598, 'iso_time': '2024-08-30T11:54:59.238260-04:00', 'time': -916.8659090000001, 'alink_byte': 240, 'alink_flags': 1}
 Skipping by alink_byte/alink_flags filter {'epoch_time': 1725033301.2185748, 'iso_time': '2024-08-30T11:55:01.218575-04:00', 'time': -914.8859390000002, 'alink_byte': 496, 'alink_flags': 2}
   2024-08-30T11:55:01.255440 240 1
-Skipping out of study range isotime=2024-08-30T11:55:01.255440,  {'epoch_time': 1725033301.2554402, 'iso_time': '2024-08-30T11:55:01.255440-04:00', 'time': -914.8659339999999, 'alink_byte': 240, 'alink_flags': 1}
 Skipping by alink_byte/alink_flags filter {'epoch_time': 1725033303.2251866, 'iso_time': '2024-08-30T11:55:03.225187-04:00', 'time': -912.885929, 'alink_byte': 496, 'alink_flags': 2}
   2024-08-30T11:55:03.237721 240 1
-Skipping out of study range isotime=2024-08-30T11:55:03.237721,  {'epoch_time': 1725033303.2377214, 'iso_time': '2024-08-30T11:55:03.237721-04:00', 'time': -912.8659189999998, 'alink_byte': 240, 'alink_flags': 1}
 Skipping by alink_byte/alink_flags filter {'epoch_time': 1725033305.2204936, 'iso_time': '2024-08-30T11:55:05.220494-04:00', 'time': -910.885914, 'alink_byte': 496, 'alink_flags': 2}
   2024-08-30T11:55:05.259835 240 1
-Skipping out of study range isotime=2024-08-30T11:55:05.259835,  {'epoch_time': 1725033305.2598348, 'iso_time': '2024-08-30T11:55:05.259835-04:00', 'time': -910.8659040000002, 'alink_byte': 240, 'alink_flags': 1}
 Skipping by alink_byte/alink_flags filter {'epoch_time': 1725033307.215637, 'iso_time': '2024-08-30T11:55:07.215637-04:00', 'time': -908.885914, 'alink_byte': 496, 'alink_flags': 2}
   2024-08-30T11:55:07.242557 240 1
-Skipping out of study range isotime=2024-08-30T11:55:07.242557,  {'epoch_time': 1725033307.2425568, 'iso_time': '2024-08-30T11:55:07.242557-04:00', 'time': -908.8659090000001, 'alink_byte': 240, 'alink_flags': 1}
 Skipping by alink_byte/alink_flags filter {'epoch_time': 1725033309.2201138, 'iso_time': '2024-08-30T11:55:09.220114-04:00', 'time': -906.8858690000002, 'alink_byte': 496, 'alink_flags': 2}
   2024-08-30T11:55:09.245027 240 1
-Skipping out of study range isotime=2024-08-30T11:55:09.245027,  {'epoch_time': 1725033309.2450273, 'iso_time': '2024-08-30T11:55:09.245027-04:00', 'time': -906.8658690000002, 'alink_byte': 240, 'alink_flags': 1}
 Skipping by alink_byte/alink_flags filter {'epoch_time': 1725033311.2239509, 'iso_time': '2024-08-30T11:55:11.223951-04:00', 'time': -904.885894, 'alink_byte': 496, 'alink_flags': 2}
   2024-08-30T11:55:11.238650 240 1
-Skipping out of study range isotime=2024-08-30T11:55:11.238650,  {'epoch_time': 1725033311.2386496, 'iso_time': '2024-08-30T11:55:11.238650-04:00', 'time': -904.865894, 'alink_byte': 240, 'alink_flags': 1}
 Skipping by alink_byte/alink_flags filter {'epoch_time': 1725033313.2176707, 'iso_time': '2024-08-30T11:55:13.217671-04:00', 'time': -902.8858839999998, 'alink_byte': 496, 'alink_flags': 2}
   2024-08-30T11:55:13.242614 240 1
-Skipping out of study range isotime=2024-08-30T11:55:13.242614,  {'epoch_time': 1725033313.2426138, 'iso_time': '2024-08-30T11:55:13.242614-04:00', 'time': -902.8658839999998, 'alink_byte': 240, 'alink_flags': 1}
 Skipping by alink_byte/alink_flags filter {'epoch_time': 1725033324.1398964, 'iso_time': '2024-08-30T11:55:24.139896-04:00', 'time': -891.9623259999998, 'alink_byte': 496, 'alink_flags': 2}
   2024-08-30T11:55:24.166825 240 1
-Skipping out of study range isotime=2024-08-30T11:55:24.166825,  {'epoch_time': 1725033324.1668253, 'iso_time': '2024-08-30T11:55:24.166825-04:00', 'time': -891.942321, 'alink_byte': 240, 'alink_flags': 1}
 Skipping by alink_byte/alink_flags filter {'epoch_time': 1725033326.1460996, 'iso_time': '2024-08-30T11:55:26.146100-04:00', 'time': -889.9623000000001, 'alink_byte': 496, 'alink_flags': 2}
   2024-08-30T11:55:26.171043 240 1
-Skipping out of study range isotime=2024-08-30T11:55:26.171043,  {'epoch_time': 1725033326.1710432, 'iso_time': '2024-08-30T11:55:26.171043-04:00', 'time': -889.9422909999998, 'alink_byte': 240, 'alink_flags': 1}
 Skipping by alink_byte/alink_flags filter {'epoch_time': 1725033328.1392748, 'iso_time': '2024-08-30T11:55:28.139275-04:00', 'time': -887.962305, 'alink_byte': 496, 'alink_flags': 2}
   2024-08-30T11:55:28.179025 240 1
-Skipping out of study range isotime=2024-08-30T11:55:28.179025,  {'epoch_time': 1725033328.179025, 'iso_time': '2024-08-30T11:55:28.179025-04:00', 'time': -887.9423059999999, 'alink_byte': 240, 'alink_flags': 1}
 Skipping by alink_byte/alink_flags filter {'epoch_time': 1725033330.1477332, 'iso_time': '2024-08-30T11:55:30.147733-04:00', 'time': -885.96227, 'alink_byte': 496, 'alink_flags': 2}
   2024-08-30T11:55:30.188301 240 1
-Skipping out of study range isotime=2024-08-30T11:55:30.188301,  {'epoch_time': 1725033330.188301, 'iso_time': '2024-08-30T11:55:30.188301-04:00', 'time': -885.942266, 'alink_byte': 240, 'alink_flags': 1}
 Skipping by alink_byte/alink_flags filter {'epoch_time': 1725033332.1456788, 'iso_time': '2024-08-30T11:55:32.145679-04:00', 'time': -883.962289, 'alink_byte': 496, 'alink_flags': 2}
   2024-08-30T11:55:32.170614 240 1
-Skipping out of study range isotime=2024-08-30T11:55:32.170614,  {'epoch_time': 1725033332.1706138, 'iso_time': '2024-08-30T11:55:32.170614-04:00', 'time': -883.942286, 'alink_byte': 240, 'alink_flags': 1}
 Skipping by alink_byte/alink_flags filter {'epoch_time': 1725033334.1433196, 'iso_time': '2024-08-30T11:55:34.143320-04:00', 'time': -881.9622789999999, 'alink_byte': 496, 'alink_flags': 2}
   2024-08-30T11:55:34.168267 240 1
-Skipping out of study range isotime=2024-08-30T11:55:34.168267,  {'epoch_time': 1725033334.1682673, 'iso_time': '2024-08-30T11:55:34.168267-04:00', 'time': -881.9422760000002, 'alink_byte': 240, 'alink_flags': 1}
 Skipping by alink_byte/alink_flags filter {'epoch_time': 1725033336.1397257, 'iso_time': '2024-08-30T11:55:36.139726-04:00', 'time': -879.96225, 'alink_byte': 496, 'alink_flags': 2}
   2024-08-30T11:55:36.166708 240 1
-Skipping out of study range isotime=2024-08-30T11:55:36.166708,  {'epoch_time': 1725033336.1667082, 'iso_time': '2024-08-30T11:55:36.166708-04:00', 'time': -879.9422460000001, 'alink_byte': 240, 'alink_flags': 1}
 Skipping by alink_byte/alink_flags filter {'epoch_time': 1725033338.1512706, 'iso_time': '2024-08-30T11:55:38.151271-04:00', 'time': -877.962266, 'alink_byte': 496, 'alink_flags': 2}
   2024-08-30T11:55:38.191588 240 1
-Skipping out of study range isotime=2024-08-30T11:55:38.191588,  {'epoch_time': 1725033338.1915884, 'iso_time': '2024-08-30T11:55:38.191588-04:00', 'time': -877.9422610000001, 'alink_byte': 240, 'alink_flags': 1}
 Skipping by alink_byte/alink_flags filter {'epoch_time': 1725033340.1414082, 'iso_time': '2024-08-30T11:55:40.141408-04:00', 'time': -875.9622210000002, 'alink_byte': 496, 'alink_flags': 2}
   2024-08-30T11:55:40.181695 240 1
-Skipping out of study range isotime=2024-08-30T11:55:40.181695,  {'epoch_time': 1725033340.1816945, 'iso_time': '2024-08-30T11:55:40.181695-04:00', 'time': -875.9422209999998, 'alink_byte': 240, 'alink_flags': 1}
 Skipping by alink_byte/alink_flags filter {'epoch_time': 1725033342.1396694, 'iso_time': '2024-08-30T11:55:42.139669-04:00', 'time': -873.962246, 'alink_byte': 496, 'alink_flags': 2}
   2024-08-30T11:55:42.164594 240 1
-Skipping out of study range isotime=2024-08-30T11:55:42.164594,  {'epoch_time': 1725033342.1645942, 'iso_time': '2024-08-30T11:55:42.164594-04:00', 'time': -873.9422460000001, 'alink_byte': 240, 'alink_flags': 1}
 Skipping by alink_byte/alink_flags filter {'epoch_time': 1725033344.141693, 'iso_time': '2024-08-30T11:55:44.141693-04:00', 'time': -871.9622410000002, 'alink_byte': 496, 'alink_flags': 2}
   2024-08-30T11:55:44.166614 240 1
-Skipping out of study range isotime=2024-08-30T11:55:44.166614,  {'epoch_time': 1725033344.1666138, 'iso_time': '2024-08-30T11:55:44.166614-04:00', 'time': -871.9422359999999, 'alink_byte': 240, 'alink_flags': 1}
 Skipping by alink_byte/alink_flags filter {'epoch_time': 1725033346.150138, 'iso_time': '2024-08-30T11:55:46.150138-04:00', 'time': -869.962211, 'alink_byte': 496, 'alink_flags': 2}
   2024-08-30T11:55:46.162677 240 1
-Skipping out of study range isotime=2024-08-30T11:55:46.162677,  {'epoch_time': 1725033346.162677, 'iso_time': '2024-08-30T11:55:46.162677-04:00', 'time': -869.9422009999998, 'alink_byte': 240, 'alink_flags': 1}
 Skipping by alink_byte/alink_flags filter {'epoch_time': 1725033348.1480138, 'iso_time': '2024-08-30T11:55:48.148014-04:00', 'time': -867.9622159999999, 'alink_byte': 496, 'alink_flags': 2}
   2024-08-30T11:55:48.160556 240 1
-Skipping out of study range isotime=2024-08-30T11:55:48.160556,  {'epoch_time': 1725033348.160556, 'iso_time': '2024-08-30T11:55:48.160556-04:00', 'time': -867.9422159999999, 'alink_byte': 240, 'alink_flags': 1}
 Skipping by alink_byte/alink_flags filter {'epoch_time': 1725033350.144562, 'iso_time': '2024-08-30T11:55:50.144562-04:00', 'time': -865.962176, 'alink_byte': 496, 'alink_flags': 2}
   2024-08-30T11:55:50.171486 240 1
-Skipping out of study range isotime=2024-08-30T11:55:50.171486,  {'epoch_time': 1725033350.171486, 'iso_time': '2024-08-30T11:55:50.171486-04:00', 'time': -865.942176, 'alink_byte': 240, 'alink_flags': 1}
 Skipping by alink_byte/alink_flags filter {'epoch_time': 1725033352.151637, 'iso_time': '2024-08-30T11:55:52.151637-04:00', 'time': -863.9622060000002, 'alink_byte': 496, 'alink_flags': 2}
   2024-08-30T11:55:52.166183 240 1
-Skipping out of study range isotime=2024-08-30T11:55:52.166183,  {'epoch_time': 1725033352.1661832, 'iso_time': '2024-08-30T11:55:52.166183-04:00', 'time': -863.9422, 'alink_byte': 240, 'alink_flags': 1}
   2024-08-30T11:56:52.173147 240 1
-Skipping out of study range isotime=2024-08-30T11:56:52.173147,  {'epoch_time': 1725033412.1731472, 'iso_time': '2024-08-30T11:56:52.173147-04:00', 'time': -803.941229, 'alink_byte': 240, 'alink_flags': 1}
   2024-08-30T11:57:52.162346 240 1
 Skipping out of study range isotime=2024-08-30T11:57:52.162346,  {'epoch_time': 1725033472.1623456, 'iso_time': '2024-08-30T11:57:52.162346-04:00', 'time': -743.9404519999998, 'alink_byte': 240, 'alink_flags': 1}
   2024-08-30T11:58:52.161266 240 1
@@ -2548,5 +2478,5 @@ Skipping by alink_byte/alink_flags filter {'epoch_time': 1725048444.8779676, 'is
 Skipping out of study range isotime=2024-08-30T16:07:24.878901,  {'epoch_time': 1725048444.8789008, 'iso_time': '2024-08-30T16:07:24.878901-04:00', 'time': -2951.025071, 'alink_byte': 252, 'alink_flags': 1}
 Skipping by alink_byte/alink_flags filter {'time': 0, 'tick': 1162634349, 'description': 'Handheld auto-detected', 'epoch_time': 1725048468.0667102, 'iso_time': '2024-08-30T16:07:48.066710-04:00', 'handheld': 'HHSC-TRK-2', 'gains': [0, 0, 0, 0, 21, 20, 19, 20]}
 Skipping by alink_byte/alink_flags filter {'time': 0, 'tick': 1165010663, 'description': 'Output mode selected.', 'epoch_time': 1725048470.443008, 'iso_time': '2024-08-30T16:07:50.443008-04:00', 'output_mode': 'HID_TRACK_COMP'}
-Exit on   : 2024-09-02 15:03:56.652188
+Exit on   : 2024-09-03 12:54:52.201977
 Exit code : 0

@@ -172,7 +172,8 @@ Algorithm proposals for the ReproFlow time synchronization effort:
       - 2024-08-30 11:46:56.080 [INFO] [3393844] frame=`34190` fps= 38 q=31.0 size=   19967kB time=00:09:28.97 bitrate= 287.5kbits/s speed=0.632x DTS 19356550163393, next:569
       - parse_wQR detected frame count: `34154`
     - root log in reproiner started recording 11:31:56, and stopped 11:48:03, somehow ffmpeg thread was terminated. And then at 11:56:13 capture was terminated by data/notification from device (Whack resolution).
-  - DICOMS MRI clock in this study has offset around -27 sec in contrast to +391 sec in previous session. This 7 minutes gap or jump causes current match series algorithm to fail. Probably to see other swimlanes tmap record will be created manually for this series in `code/repronim_tmap.jsonl` file.    
+  - [ ] DICOMS MRI clock in this study has offset around -27 sec in contrast to +391 sec in previous session. This 7 minutes gap or jump causes current match series algorithm to fail. Probably to see other swimlanes tmap record will be created manually for this series in `code/repronim_tmap.jsonl` file.
+  - [ ] `dump_reproevents.py` bad performance, need to optimize it (execution time around 40 sec).
 
 ## TODO:
   - Use DataLad run to execute commands (https://handbook.datalad.org/en/latest/basics/basics-run.html)
