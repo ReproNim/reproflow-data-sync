@@ -161,6 +161,18 @@ Algorithm proposals for the ReproFlow time synchronization effort:
   - [ ] `reproevents` started from `reproevents-000263` it produces invalid data. There are a lot of records in `events.csv/@client_time_iso` with time like `2024-08-09T10:49:39`. Real series time range based on the swimlanes is around `10:47:48`--`10:52:46` and scans count is 150. So it looks like some performance issues on hardware or software side recording events log.
   - [ ] `reproevents` related to original lines in `events.csv` `638:639`, `747:748` `server_time` 217.389434 and 339.392153 has untypical duration 4 and 14 sec instead of 2 sec. 
   - [ ] `reproevents` related to `013-func-bold_task-rest_acq-med1_run-02` series with 150 slices contains only 143 events instead of 150 ones, 7 are missed somehow. Series NTP EST time is `10:47:48`--`10:52:46` .
+- `ses-20240830`
+  - [ ] !!! No QR code recorded at all. DICOMS time is `11:35:22 -- 11:55:24`, 150 series started at `11:44:26` for 5 mins and this video file `2024.08.30-11.31.56.000--2024.08.30-11.48.03.377.mkv` should contain QR codes. But we see there error:
+    - Video duration significant mismatch (real/file name): `569.2333333333333` sec vs `967.377` sec
+    - Interesting thing is that in mkv.log file we see that fps was 59-60 and then dropped to 40-38 e.g.:
+      - 2024-08-30 11:32:01.276 [INFO] [3393844] frame=  305 `fps= 60` q=31.0 size=     192kB time=00:00:04.22 bitrate= 372.6kbits/s speed=0.825x    
+      - 2024-08-30 11:42:43.949 [INFO] [3393844] frame=27567 `fps= 43` q=31.0 size=   17555kB time=00:07:40.13 bitrate= 312.5kbits/s speed=0.71x    
+      - 2024-08-30 11:46:55.547 [INFO] [3393844] frame=34185 `fps= 38` q=31.0 size=   19967kB time=00:09:28.89 bitrate= 287.5kbits/s speed=0.633x    
+    - Also we can see that last frame was around 11:46, and count more or less corrseponds to number of frames in video:
+      - 2024-08-30 11:46:56.080 [INFO] [3393844] frame=`34190` fps= 38 q=31.0 size=   19967kB time=00:09:28.97 bitrate= 287.5kbits/s speed=0.632x DTS 19356550163393, next:569
+      - parse_wQR detected frame count: `34154`
+    - root log in reproiner started recording 11:31:56, and stopped 11:48:03, somehow ffmpeg thread was terminated. And then at 11:56:13 capture was terminated by data/notification from device (Whack resolution).
+  - DICOMS MRI clock in this study has offset around -27 sec in contrast to +391 sec in previous session. This 7 minutes gap or jump causes current match series algorithm to fail. Probably to see other swimlanes tmap record will be created manually for this series in `code/repronim_tmap.jsonl` file.    
 
 ## TODO:
   - Use DataLad run to execute commands (https://handbook.datalad.org/en/latest/basics/basics-run.html)
