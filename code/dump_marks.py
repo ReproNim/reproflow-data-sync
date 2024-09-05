@@ -358,6 +358,8 @@ def match_series_data(sd1: SeriesData, sd2: SeriesData) -> bool:
     logger.debug(f"    isotime_end          = {sd1.isotime_end} / {sd2.isotime_end}")
     logger.debug(f"    synced_start         = {sd1.synced_isotime_start} / {sd2.synced_isotime_start}")
     logger.debug(f"    synced_end           = {sd1.synced_isotime_end} / {sd2.synced_isotime_end}")
+    logger.debug(f"    series 1 IDs         = {sd1.events[0].id} .. {sd1.events[-1].id}")
+    logger.debug(f"    series 2 IDs         = {sd2.events[0].id} .. {sd2.events[-1].id}")
     return True
 
 
@@ -425,12 +427,15 @@ def build_model(session_id: str, path: str) -> DumpModel:
         logger.debug(f"Swimlane: {sl.name}")
         logger.debug(f"  Found {len(sl.series)} {sl.name} series")
         for sd in sl.series:
+            isotime_start: datetime = sd.synced_isotime_start
+            isotime_end: datetime = sd.synced_isotime_end
             logger.debug(f"  Series: {sd.name}, "
                          f"count: {sd.count}, "
-                         f"interval: {sd.interval}, "
-                         f"next_series_interval: {sd.next_series_interval}, "
+                         f"interval: {sd.interval:.3f}, "
+                         f"next_series_interval: {sd.next_series_interval:.2f}, "
                          f"ids: {sd.events[0].id}..{sd.events[-1].id}, "
-                         f"time: {sd.events[0].isotime.strftime('%H:%M:%S')}--{sd.events[-1].isotime.strftime('%H:%M:%S')}")
+                         f"clock time: {sd.events[0].isotime.strftime('%H:%M:%S')}--{sd.events[-1].isotime.strftime('%H:%M:%S')}, "
+                         f"isotime: {isotime_start.strftime('%H:%M:%S')}--{isotime_end.strftime('%H:%M:%S')}")
 
     # dump series info and data
     for sl in m.swimlanes:

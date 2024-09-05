@@ -1,5 +1,5 @@
 dump_marks.py tool
-Started on    : 2024-09-03 12:55:24.525143, vmelnik@Uranus
+Started on    : 2024-09-05 10:51:22.693802, vmelnik@Uranus
 Working dir   : /Users/vmelnik/Projects/Dartmouth/branches/reproflow-data-sync/code
 Session path  : /Users/vmelnik/Projects/Dartmouth/branches/typhon/reproflow-data-sync/ses-20240830
 Session ID    : ses-20240830
@@ -42,39 +42,39 @@ Skip birch series (too small=1): ['birch-000231']
 Skip birch series (too small=1): ['birch-000307']
 Swimlane: dicoms
   Found 10 dicoms series
-  Series: 005-func-bold_task-rest_acq-short1_run-01, count: 15, interval: 2.0, next_series_interval: 135.7575, ids: dicoms-000140..dicoms-000154, time: 11:35:22--11:35:50
-  Series: 006-func-bold_task-rest_acq-short1_run-02, count: 15, interval: 2.0, next_series_interval: 86.01, ids: dicoms-000155..dicoms-000169, time: 11:37:38--11:38:06
-  Series: 007-func-bold_task-rest_acq-short1_run-03, count: 15, interval: 2.0, next_series_interval: 221.0025, ids: dicoms-000170..dicoms-000184, time: 11:39:04--11:39:32
-  Series: 008-func-bold_task-rest_acq-short1_run-04, count: 15, interval: 2.0, next_series_interval: 101.025, ids: dicoms-000185..dicoms-000199, time: 11:42:45--11:43:13
-  Series: 009-func-bold_task-rest_acq-med1_run-01, count: 150, interval: 2.0, next_series_interval: 474.99, ids: dicoms-000200..dicoms-000349, time: 11:44:26--11:49:24
-  Series: 010-func-bold_task-rest_acq-short2_run-01, count: 15, interval: 2.0, next_series_interval: 39.02, ids: dicoms-000350..dicoms-000364, time: 11:52:21--11:52:49
-  Series: 011-func-bold_task-rest_acq-short2_run-02, count: 15, interval: 2.0, next_series_interval: 38.9775, ids: dicoms-000365..dicoms-000379, time: 11:53:00--11:53:28
-  Series: 012-func-bold_task-rest_acq-short2_run-03, count: 15, interval: 2.0, next_series_interval: 38.9825, ids: dicoms-000380..dicoms-000394, time: 11:53:39--11:54:07
-  Series: 013-func-bold_task-rest_acq-short2_run-04, count: 15, interval: 2.0, next_series_interval: 38.01, ids: dicoms-000395..dicoms-000409, time: 11:54:18--11:54:46
-  Series: 014-func-bold_task-rest_acq-short2_run-05, count: 15, interval: 2.0, next_series_interval: 0.0, ids: dicoms-000410..dicoms-000424, time: 11:54:56--11:55:24
+  Series: 005-func-bold_task-rest_acq-short1_run-01, count: 15, interval: 2.000, next_series_interval: 135.76, ids: dicoms-000140..dicoms-000154, clock time: 11:35:22--11:35:50, isotime: 11:35:49--11:36:17
+  Series: 006-func-bold_task-rest_acq-short1_run-02, count: 15, interval: 2.000, next_series_interval: 86.01, ids: dicoms-000155..dicoms-000169, clock time: 11:37:38--11:38:06, isotime: 11:38:05--11:38:33
+  Series: 007-func-bold_task-rest_acq-short1_run-03, count: 15, interval: 2.000, next_series_interval: 221.00, ids: dicoms-000170..dicoms-000184, clock time: 11:39:04--11:39:32, isotime: 11:39:31--11:39:59
+  Series: 008-func-bold_task-rest_acq-short1_run-04, count: 15, interval: 2.000, next_series_interval: 101.03, ids: dicoms-000185..dicoms-000199, clock time: 11:42:45--11:43:13, isotime: 11:43:12--11:43:40
+  Series: 009-func-bold_task-rest_acq-med1_run-01, count: 150, interval: 2.000, next_series_interval: 474.99, ids: dicoms-000200..dicoms-000349, clock time: 11:44:26--11:49:24, isotime: 11:44:53--11:49:51
+  Series: 010-func-bold_task-rest_acq-short2_run-01, count: 15, interval: 2.000, next_series_interval: 39.02, ids: dicoms-000350..dicoms-000364, clock time: 11:52:21--11:52:49, isotime: 11:52:48--11:53:16
+  Series: 011-func-bold_task-rest_acq-short2_run-02, count: 15, interval: 2.000, next_series_interval: 38.98, ids: dicoms-000365..dicoms-000379, clock time: 11:53:00--11:53:28, isotime: 11:53:27--11:53:55
+  Series: 012-func-bold_task-rest_acq-short2_run-03, count: 15, interval: 2.000, next_series_interval: 38.98, ids: dicoms-000380..dicoms-000394, clock time: 11:53:39--11:54:07, isotime: 11:54:06--11:54:34
+  Series: 013-func-bold_task-rest_acq-short2_run-04, count: 15, interval: 2.000, next_series_interval: 38.01, ids: dicoms-000395..dicoms-000409, clock time: 11:54:18--11:54:46, isotime: 11:54:45--11:55:13
+  Series: 014-func-bold_task-rest_acq-short2_run-05, count: 15, interval: 2.000, next_series_interval: 0.00, ids: dicoms-000410..dicoms-000424, clock time: 11:54:56--11:55:24, isotime: 11:55:23--11:55:51
 Swimlane: birch
   Found 10 birch series
-  Series: birch-series-1, count: 15, interval: 2.0010090714285713, next_series_interval: 135.937274, ids: birch-000015..birch-000029, time: 11:35:49--11:36:17
-  Series: birch-series-2, count: 15, interval: 1.9996029285714285, next_series_interval: 86.185922, ids: birch-000031..birch-000045, time: 11:38:05--11:38:33
-  Series: birch-series-3, count: 15, interval: 1.9978359285714284, next_series_interval: 221.434687, ids: birch-000046..birch-000060, time: 11:39:31--11:39:59
-  Series: birch-series-4, count: 15, interval: 1.9999263571428572, next_series_interval: 100.961133, ids: birch-000064..birch-000078, time: 11:43:13--11:43:41
-  Series: birch-series-5, count: 150, interval: 2.000057187919463, next_series_interval: 474.713138, ids: birch-000080..birch-000229, time: 11:44:53--11:49:51
-  Series: birch-series-6, count: 15, interval: 2.0003639285714288, next_series_interval: 38.873696, ids: birch-000232..birch-000246, time: 11:52:48--11:53:16
-  Series: birch-series-7, count: 15, interval: 2.0009897142857143, next_series_interval: 38.822587, ids: birch-000247..birch-000261, time: 11:53:27--11:53:55
-  Series: birch-series-8, count: 15, interval: 2.0012075714285715, next_series_interval: 38.839816, ids: birch-000262..birch-000276, time: 11:54:06--11:54:34
-  Series: birch-series-9, count: 15, interval: 2.0003035714285713, next_series_interval: 38.928461, ids: birch-000277..birch-000291, time: 11:54:45--11:55:13
-  Series: birch-series-10, count: 15, interval: 1.999954142857143, next_series_interval: 0, ids: birch-000292..birch-000306, time: 11:55:24--11:55:52
+  Series: birch-series-1, count: 15, interval: 2.001, next_series_interval: 135.94, ids: birch-000015..birch-000029, clock time: 11:35:49--11:36:17, isotime: 11:35:49--11:36:17
+  Series: birch-series-2, count: 15, interval: 2.000, next_series_interval: 86.19, ids: birch-000031..birch-000045, clock time: 11:38:05--11:38:33, isotime: 11:38:05--11:38:33
+  Series: birch-series-3, count: 15, interval: 1.998, next_series_interval: 221.43, ids: birch-000046..birch-000060, clock time: 11:39:31--11:39:59, isotime: 11:39:31--11:39:59
+  Series: birch-series-4, count: 15, interval: 2.000, next_series_interval: 100.96, ids: birch-000064..birch-000078, clock time: 11:43:13--11:43:41, isotime: 11:43:13--11:43:41
+  Series: birch-series-5, count: 150, interval: 2.000, next_series_interval: 474.71, ids: birch-000080..birch-000229, clock time: 11:44:53--11:49:51, isotime: 11:44:53--11:49:51
+  Series: birch-series-6, count: 15, interval: 2.000, next_series_interval: 38.87, ids: birch-000232..birch-000246, clock time: 11:52:48--11:53:16, isotime: 11:52:48--11:53:16
+  Series: birch-series-7, count: 15, interval: 2.001, next_series_interval: 38.82, ids: birch-000247..birch-000261, clock time: 11:53:27--11:53:55, isotime: 11:53:27--11:53:55
+  Series: birch-series-8, count: 15, interval: 2.001, next_series_interval: 38.84, ids: birch-000262..birch-000276, clock time: 11:54:06--11:54:34, isotime: 11:54:06--11:54:34
+  Series: birch-series-9, count: 15, interval: 2.000, next_series_interval: 38.93, ids: birch-000277..birch-000291, clock time: 11:54:45--11:55:13, isotime: 11:54:45--11:55:13
+  Series: birch-series-10, count: 15, interval: 2.000, next_series_interval: 0.00, ids: birch-000292..birch-000306, clock time: 11:55:24--11:55:52, isotime: 11:55:24--11:55:52
 Swimlane: qrinfo
   Found 0 qrinfo series
 Swimlane: psychopy
   Found 7 psychopy series
-  Series: psychopy-series-1, count: 15, interval: 1.999896142857143, next_series_interval: 100.958108, ids: psychopy-000001..psychopy-000015, time: 11:43:13--11:43:41
-  Series: psychopy-series-2, count: 150, interval: 1.9999846375838926, next_series_interval: 474.706355, ids: psychopy-000016..psychopy-000165, time: 11:44:53--11:49:51
-  Series: psychopy-series-3, count: 15, interval: 1.9999390714285714, next_series_interval: 38.87205, ids: psychopy-000166..psychopy-000180, time: 11:52:48--11:53:16
-  Series: psychopy-series-4, count: 15, interval: 2.0000142142857142, next_series_interval: 38.825471, ids: psychopy-000181..psychopy-000195, time: 11:53:27--11:53:55
-  Series: psychopy-series-5, count: 15, interval: 1.9999412142857143, next_series_interval: 38.843158, ids: psychopy-000196..psychopy-000210, time: 11:54:06--11:54:34
-  Series: psychopy-series-6, count: 15, interval: 2.0000140714285712, next_series_interval: 38.923304, ids: psychopy-000211..psychopy-000225, time: 11:54:45--11:55:13
-  Series: psychopy-series-7, count: 15, interval: 2.000013714285714, next_series_interval: 0, ids: psychopy-000226..psychopy-000240, time: 11:55:24--11:55:52
+  Series: psychopy-series-1, count: 15, interval: 2.000, next_series_interval: 100.96, ids: psychopy-000001..psychopy-000015, clock time: 11:43:13--11:43:41, isotime: 11:43:13--11:43:41
+  Series: psychopy-series-2, count: 150, interval: 2.000, next_series_interval: 474.71, ids: psychopy-000016..psychopy-000165, clock time: 11:44:53--11:49:51, isotime: 11:44:53--11:49:51
+  Series: psychopy-series-3, count: 15, interval: 2.000, next_series_interval: 38.87, ids: psychopy-000166..psychopy-000180, clock time: 11:52:48--11:53:16, isotime: 11:52:48--11:53:16
+  Series: psychopy-series-4, count: 15, interval: 2.000, next_series_interval: 38.83, ids: psychopy-000181..psychopy-000195, clock time: 11:53:27--11:53:55, isotime: 11:53:27--11:53:55
+  Series: psychopy-series-5, count: 15, interval: 2.000, next_series_interval: 38.84, ids: psychopy-000196..psychopy-000210, clock time: 11:54:06--11:54:34, isotime: 11:54:06--11:54:34
+  Series: psychopy-series-6, count: 15, interval: 2.000, next_series_interval: 38.92, ids: psychopy-000211..psychopy-000225, clock time: 11:54:45--11:55:13, isotime: 11:54:45--11:55:13
+  Series: psychopy-series-7, count: 15, interval: 2.000, next_series_interval: 0.00, ids: psychopy-000226..psychopy-000240, clock time: 11:55:24--11:55:52, isotime: 11:55:24--11:55:52
 Swimlane: reproevents
   Found 0 reproevents series
 dicoms.005-func-bold_task-rest_acq-short1_run-01 : ['dicoms-000140', 'dicoms-000141', 'dicoms-000142', 'dicoms-000143', 'dicoms-000144', 'dicoms-000145', 'dicoms-000146', 'dicoms-000147', 'dicoms-000148', 'dicoms-000149', 'dicoms-000150', 'dicoms-000151', 'dicoms-000152', 'dicoms-000153', 'dicoms-000154']
@@ -114,6 +114,8 @@ Matched series data: 005-func-bold_task-rest_acq-short1_run-01 / birch-series-1
     isotime_end          = 2024-08-30 11:35:50.702500 / 2024-08-30 11:36:17.484238
     synced_start         = 2024-08-30 11:35:49.702500 / 2024-08-30 11:35:49.470111
     synced_end           = 2024-08-30 11:36:17.702500 / 2024-08-30 11:36:17.484238
+    series 1 IDs         = dicoms-000140 .. dicoms-000154
+    series 2 IDs         = birch-000015 .. birch-000029
 store map_series[birch] -> birch-series-1
 Matching: sd1=birch-series-1 with sd2=psychopy-series-1
  use k_min=0.95, k_max=1.05
@@ -166,6 +168,8 @@ Matched series data: 006-func-bold_task-rest_acq-short1_run-02 / birch-series-2
     isotime_end          = 2024-08-30 11:38:06.460000 / 2024-08-30 11:38:33.401826
     synced_start         = 2024-08-30 11:38:05.460000 / 2024-08-30 11:38:05.407385
     synced_end           = 2024-08-30 11:38:33.460000 / 2024-08-30 11:38:33.401826
+    series 1 IDs         = dicoms-000155 .. dicoms-000169
+    series 2 IDs         = birch-000031 .. birch-000045
 store map_series[birch] -> birch-series-2
 Matching: sd1=birch-series-2 with sd2=psychopy-series-1
  use k_min=0.95, k_max=1.05
@@ -221,6 +225,8 @@ Matched series data: 007-func-bold_task-rest_acq-short1_run-03 / birch-series-3
     isotime_end          = 2024-08-30 11:39:32.470000 / 2024-08-30 11:39:59.563010
     synced_start         = 2024-08-30 11:39:31.470000 / 2024-08-30 11:39:31.593307
     synced_end           = 2024-08-30 11:39:59.470000 / 2024-08-30 11:39:59.563010
+    series 1 IDs         = dicoms-000170 .. dicoms-000184
+    series 2 IDs         = birch-000046 .. birch-000060
 store map_series[birch] -> birch-series-3
 Matching: sd1=birch-series-3 with sd2=psychopy-series-1
  use k_min=0.95, k_max=1.05
@@ -279,6 +285,8 @@ Matched series data: 008-func-bold_task-rest_acq-short1_run-04 / birch-series-4
     isotime_end          = 2024-08-30 11:43:13.472500 / 2024-08-30 11:43:41.026963
     synced_start         = 2024-08-30 11:43:12.472500 / 2024-08-30 11:43:13.027994
     synced_end           = 2024-08-30 11:43:40.472500 / 2024-08-30 11:43:41.026963
+    series 1 IDs         = dicoms-000185 .. dicoms-000199
+    series 2 IDs         = birch-000064 .. birch-000078
 store map_series[birch] -> birch-series-4
 Matching: sd1=birch-series-4 with sd2=psychopy-series-1
  use k_min=0.95, k_max=1.05
@@ -290,6 +298,8 @@ Matched series data: birch-series-4 / psychopy-series-1
     isotime_end          = 2024-08-30 11:43:41.026963 / 2024-08-30 11:43:41.010437
     synced_start         = 2024-08-30 11:43:13.027994 / 2024-08-30 11:43:13.017243
     synced_end           = 2024-08-30 11:43:41.026963 / 2024-08-30 11:43:41.015789
+    series 1 IDs         = birch-000064 .. birch-000078
+    series 2 IDs         = psychopy-000001 .. psychopy-000015
 store map_series[psychopy] -> psychopy-series-1
 {"type":"MarkRecord","session_id":"ses-20240830","id":"mark-000052","kind":"Func series start","name":"008-func-bold_task-rest_acq-short1_run-04_start","target_ids":["dicoms-000185","birch-000064","psychopy-000001"],"dicoms_isotime":"2024-08-30T11:42:45.472500","dicoms_duration":28.0,"birch_isotime":"2024-08-30T11:43:13.027994","birch_duration":27.998969,"qrinfo_isotime":null,"qrinfo_duration":null,"psychopy_isotime":"2024-08-30T11:43:13.011891","psychopy_duration":27.998546,"reproevents_isotime":null,"reproevents_duration":null}
 {"type":"MarkRecord","session_id":"ses-20240830","id":"mark-000053","kind":"Func series scan","name":"008-func-bold_task-rest_acq-short1_run-04_scan-0","target_ids":["dicoms-000185","birch-000064","psychopy-000001"],"dicoms_isotime":"2024-08-30T11:42:45.472500","dicoms_duration":2.0,"birch_isotime":"2024-08-30T11:43:13.027994","birch_duration":1.99891,"qrinfo_isotime":null,"qrinfo_duration":null,"psychopy_isotime":"2024-08-30T11:43:13.011891","psychopy_duration":1.9950160000000001,"reproevents_isotime":null,"reproevents_duration":null}
@@ -327,6 +337,8 @@ Matched series data: 009-func-bold_task-rest_acq-med1_run-01 / birch-series-5
     isotime_end          = 2024-08-30 11:49:24.497500 / 2024-08-30 11:49:51.997648
     synced_start         = 2024-08-30 11:44:53.497500 / 2024-08-30 11:44:53.989127
     synced_end           = 2024-08-30 11:49:51.497500 / 2024-08-30 11:49:51.997648
+    series 1 IDs         = dicoms-000200 .. dicoms-000349
+    series 2 IDs         = birch-000080 .. birch-000229
 store map_series[birch] -> birch-series-5
 Matching: sd1=birch-series-5 with sd2=psychopy-series-1
  mismatch_7: 150 / 15
@@ -340,6 +352,8 @@ Matched series data: birch-series-5 / psychopy-series-2
     isotime_end          = 2024-08-30 11:49:51.997648 / 2024-08-30 11:49:51.967710
     synced_start         = 2024-08-30 11:44:53.989127 / 2024-08-30 11:44:53.975351
     synced_end           = 2024-08-30 11:49:51.997648 / 2024-08-30 11:49:51.973062
+    series 1 IDs         = birch-000080 .. birch-000229
+    series 2 IDs         = psychopy-000016 .. psychopy-000165
 store map_series[psychopy] -> psychopy-series-2
 {"type":"MarkRecord","session_id":"ses-20240830","id":"mark-000069","kind":"Func series start","name":"009-func-bold_task-rest_acq-med1_run-01_start","target_ids":["dicoms-000200","birch-000080","psychopy-000016"],"dicoms_isotime":"2024-08-30T11:44:26.497500","dicoms_duration":298.0,"birch_isotime":"2024-08-30T11:44:53.989127","birch_duration":298.008521,"qrinfo_isotime":null,"qrinfo_duration":null,"psychopy_isotime":"2024-08-30T11:44:53.969999","psychopy_duration":297.997711,"reproevents_isotime":null,"reproevents_duration":null}
 {"type":"MarkRecord","session_id":"ses-20240830","id":"mark-000070","kind":"Func series scan","name":"009-func-bold_task-rest_acq-med1_run-01_scan-0","target_ids":["dicoms-000200","birch-000080","psychopy-000016"],"dicoms_isotime":"2024-08-30T11:44:26.497500","dicoms_duration":2.0,"birch_isotime":"2024-08-30T11:44:53.989127","birch_duration":2.031719,"qrinfo_isotime":null,"qrinfo_duration":null,"psychopy_isotime":"2024-08-30T11:44:53.969999","psychopy_duration":1.998648,"reproevents_isotime":null,"reproevents_duration":null}
@@ -518,6 +532,8 @@ Matched series data: 010-func-bold_task-rest_acq-short2_run-01 / birch-series-6
     isotime_end          = 2024-08-30 11:52:49.487500 / 2024-08-30 11:53:16.707360
     synced_start         = 2024-08-30 11:52:48.487500 / 2024-08-30 11:52:48.702265
     synced_end           = 2024-08-30 11:53:16.487500 / 2024-08-30 11:53:16.707360
+    series 1 IDs         = dicoms-000350 .. dicoms-000364
+    series 2 IDs         = birch-000232 .. birch-000246
 store map_series[birch] -> birch-series-6
 Matching: sd1=birch-series-6 with sd2=psychopy-series-1
  use k_min=0.95, k_max=1.05
@@ -534,6 +550,8 @@ Matched series data: birch-series-6 / psychopy-series-3
     isotime_end          = 2024-08-30 11:53:16.707360 / 2024-08-30 11:53:16.675501
     synced_start         = 2024-08-30 11:52:48.702265 / 2024-08-30 11:52:48.681706
     synced_end           = 2024-08-30 11:53:16.707360 / 2024-08-30 11:53:16.680853
+    series 1 IDs         = birch-000232 .. birch-000246
+    series 2 IDs         = psychopy-000166 .. psychopy-000180
 store map_series[psychopy] -> psychopy-series-3
 {"type":"MarkRecord","session_id":"ses-20240830","id":"mark-000221","kind":"Func series start","name":"010-func-bold_task-rest_acq-short2_run-01_start","target_ids":["dicoms-000350","birch-000232","psychopy-000166"],"dicoms_isotime":"2024-08-30T11:52:21.487500","dicoms_duration":28.0,"birch_isotime":"2024-08-30T11:52:48.702265","birch_duration":28.005095,"qrinfo_isotime":null,"qrinfo_duration":null,"psychopy_isotime":"2024-08-30T11:52:48.676354","psychopy_duration":27.999147,"reproevents_isotime":null,"reproevents_duration":null}
 {"type":"MarkRecord","session_id":"ses-20240830","id":"mark-000222","kind":"Func series scan","name":"010-func-bold_task-rest_acq-short2_run-01_scan-0","target_ids":["dicoms-000350","birch-000232","psychopy-000166"],"dicoms_isotime":"2024-08-30T11:52:21.487500","dicoms_duration":2.0,"birch_isotime":"2024-08-30T11:52:48.702265","birch_duration":2.024544,"qrinfo_isotime":null,"qrinfo_duration":null,"psychopy_isotime":"2024-08-30T11:52:48.676354","psychopy_duration":1.998904,"reproevents_isotime":null,"reproevents_duration":null}
@@ -577,6 +595,8 @@ Matched series data: 011-func-bold_task-rest_acq-short2_run-02 / birch-series-6
     isotime_end          = 2024-08-30 11:53:28.507500 / 2024-08-30 11:53:16.707360
     synced_start         = 2024-08-30 11:53:27.507500 / 2024-08-30 11:52:48.702265
     synced_end           = 2024-08-30 11:53:55.507500 / 2024-08-30 11:53:16.707360
+    series 1 IDs         = dicoms-000365 .. dicoms-000379
+    series 2 IDs         = birch-000232 .. birch-000246
 store map_series[birch] -> birch-series-6
 Matching: sd1=birch-series-6 with sd2=psychopy-series-1
  use k_min=0.95, k_max=1.05
@@ -593,6 +613,8 @@ Matched series data: birch-series-6 / psychopy-series-3
     isotime_end          = 2024-08-30 11:53:16.707360 / 2024-08-30 11:53:16.675501
     synced_start         = 2024-08-30 11:52:48.702265 / 2024-08-30 11:52:48.681706
     synced_end           = 2024-08-30 11:53:16.707360 / 2024-08-30 11:53:16.680853
+    series 1 IDs         = birch-000232 .. birch-000246
+    series 2 IDs         = psychopy-000166 .. psychopy-000180
 store map_series[psychopy] -> psychopy-series-3
 {"type":"MarkRecord","session_id":"ses-20240830","id":"mark-000238","kind":"Func series start","name":"011-func-bold_task-rest_acq-short2_run-02_start","target_ids":["dicoms-000365","birch-000232","psychopy-000166"],"dicoms_isotime":"2024-08-30T11:53:00.507500","dicoms_duration":28.0,"birch_isotime":"2024-08-30T11:52:48.702265","birch_duration":28.005095,"qrinfo_isotime":null,"qrinfo_duration":null,"psychopy_isotime":"2024-08-30T11:52:48.676354","psychopy_duration":27.999147,"reproevents_isotime":null,"reproevents_duration":null}
 {"type":"MarkRecord","session_id":"ses-20240830","id":"mark-000239","kind":"Func series scan","name":"011-func-bold_task-rest_acq-short2_run-02_scan-0","target_ids":["dicoms-000365","birch-000232","psychopy-000166"],"dicoms_isotime":"2024-08-30T11:53:00.507500","dicoms_duration":2.0,"birch_isotime":"2024-08-30T11:52:48.702265","birch_duration":2.024544,"qrinfo_isotime":null,"qrinfo_duration":null,"psychopy_isotime":"2024-08-30T11:52:48.676354","psychopy_duration":1.998904,"reproevents_isotime":null,"reproevents_duration":null}
@@ -636,6 +658,8 @@ Matched series data: 012-func-bold_task-rest_acq-short2_run-03 / birch-series-6
     isotime_end          = 2024-08-30 11:54:07.485000 / 2024-08-30 11:53:16.707360
     synced_start         = 2024-08-30 11:54:06.485000 / 2024-08-30 11:52:48.702265
     synced_end           = 2024-08-30 11:54:34.485000 / 2024-08-30 11:53:16.707360
+    series 1 IDs         = dicoms-000380 .. dicoms-000394
+    series 2 IDs         = birch-000232 .. birch-000246
 store map_series[birch] -> birch-series-6
 Matching: sd1=birch-series-6 with sd2=psychopy-series-1
  use k_min=0.95, k_max=1.05
@@ -652,6 +676,8 @@ Matched series data: birch-series-6 / psychopy-series-3
     isotime_end          = 2024-08-30 11:53:16.707360 / 2024-08-30 11:53:16.675501
     synced_start         = 2024-08-30 11:52:48.702265 / 2024-08-30 11:52:48.681706
     synced_end           = 2024-08-30 11:53:16.707360 / 2024-08-30 11:53:16.680853
+    series 1 IDs         = birch-000232 .. birch-000246
+    series 2 IDs         = psychopy-000166 .. psychopy-000180
 store map_series[psychopy] -> psychopy-series-3
 {"type":"MarkRecord","session_id":"ses-20240830","id":"mark-000255","kind":"Func series start","name":"012-func-bold_task-rest_acq-short2_run-03_start","target_ids":["dicoms-000380","birch-000232","psychopy-000166"],"dicoms_isotime":"2024-08-30T11:53:39.485000","dicoms_duration":28.0,"birch_isotime":"2024-08-30T11:52:48.702265","birch_duration":28.005095,"qrinfo_isotime":null,"qrinfo_duration":null,"psychopy_isotime":"2024-08-30T11:52:48.676354","psychopy_duration":27.999147,"reproevents_isotime":null,"reproevents_duration":null}
 {"type":"MarkRecord","session_id":"ses-20240830","id":"mark-000256","kind":"Func series scan","name":"012-func-bold_task-rest_acq-short2_run-03_scan-0","target_ids":["dicoms-000380","birch-000232","psychopy-000166"],"dicoms_isotime":"2024-08-30T11:53:39.485000","dicoms_duration":2.0,"birch_isotime":"2024-08-30T11:52:48.702265","birch_duration":2.024544,"qrinfo_isotime":null,"qrinfo_duration":null,"psychopy_isotime":"2024-08-30T11:52:48.676354","psychopy_duration":1.998904,"reproevents_isotime":null,"reproevents_duration":null}
@@ -695,6 +721,8 @@ Matched series data: 013-func-bold_task-rest_acq-short2_run-04 / birch-series-6
     isotime_end          = 2024-08-30 11:54:46.467500 / 2024-08-30 11:53:16.707360
     synced_start         = 2024-08-30 11:54:45.467500 / 2024-08-30 11:52:48.702265
     synced_end           = 2024-08-30 11:55:13.467500 / 2024-08-30 11:53:16.707360
+    series 1 IDs         = dicoms-000395 .. dicoms-000409
+    series 2 IDs         = birch-000232 .. birch-000246
 store map_series[birch] -> birch-series-6
 Matching: sd1=birch-series-6 with sd2=psychopy-series-1
  use k_min=0.95, k_max=1.05
@@ -711,6 +739,8 @@ Matched series data: birch-series-6 / psychopy-series-3
     isotime_end          = 2024-08-30 11:53:16.707360 / 2024-08-30 11:53:16.675501
     synced_start         = 2024-08-30 11:52:48.702265 / 2024-08-30 11:52:48.681706
     synced_end           = 2024-08-30 11:53:16.707360 / 2024-08-30 11:53:16.680853
+    series 1 IDs         = birch-000232 .. birch-000246
+    series 2 IDs         = psychopy-000166 .. psychopy-000180
 store map_series[psychopy] -> psychopy-series-3
 {"type":"MarkRecord","session_id":"ses-20240830","id":"mark-000272","kind":"Func series start","name":"013-func-bold_task-rest_acq-short2_run-04_start","target_ids":["dicoms-000395","birch-000232","psychopy-000166"],"dicoms_isotime":"2024-08-30T11:54:18.467500","dicoms_duration":28.0,"birch_isotime":"2024-08-30T11:52:48.702265","birch_duration":28.005095,"qrinfo_isotime":null,"qrinfo_duration":null,"psychopy_isotime":"2024-08-30T11:52:48.676354","psychopy_duration":27.999147,"reproevents_isotime":null,"reproevents_duration":null}
 {"type":"MarkRecord","session_id":"ses-20240830","id":"mark-000273","kind":"Func series scan","name":"013-func-bold_task-rest_acq-short2_run-04_scan-0","target_ids":["dicoms-000395","birch-000232","psychopy-000166"],"dicoms_isotime":"2024-08-30T11:54:18.467500","dicoms_duration":2.0,"birch_isotime":"2024-08-30T11:52:48.702265","birch_duration":2.024544,"qrinfo_isotime":null,"qrinfo_duration":null,"psychopy_isotime":"2024-08-30T11:52:48.676354","psychopy_duration":1.998904,"reproevents_isotime":null,"reproevents_duration":null}
@@ -766,6 +796,8 @@ Matched series data: 014-func-bold_task-rest_acq-short2_run-05 / birch-series-10
     isotime_end          = 2024-08-30 11:55:24.477500 / 2024-08-30 11:55:52.166183
     synced_start         = 2024-08-30 11:55:23.477500 / 2024-08-30 11:55:24.166825
     synced_end           = 2024-08-30 11:55:51.477500 / 2024-08-30 11:55:52.166183
+    series 1 IDs         = dicoms-000410 .. dicoms-000424
+    series 2 IDs         = birch-000292 .. birch-000306
 store map_series[birch] -> birch-series-10
 Matching: sd1=birch-series-10 with sd2=psychopy-series-1
  use k_min=0.95, k_max=1.05
@@ -794,6 +826,8 @@ Matched series data: birch-series-10 / psychopy-series-7
     isotime_end          = 2024-08-30 11:55:52.166183 / 2024-08-30 11:55:52.140529
     synced_start         = 2024-08-30 11:55:24.166825 / 2024-08-30 11:55:24.145689
     synced_end           = 2024-08-30 11:55:52.166183 / 2024-08-30 11:55:52.145881
+    series 1 IDs         = birch-000292 .. birch-000306
+    series 2 IDs         = psychopy-000226 .. psychopy-000240
 store map_series[psychopy] -> psychopy-series-7
 {"type":"MarkRecord","session_id":"ses-20240830","id":"mark-000289","kind":"Func series start","name":"014-func-bold_task-rest_acq-short2_run-05_start","target_ids":["dicoms-000410","birch-000292","psychopy-000226"],"dicoms_isotime":"2024-08-30T11:54:56.477500","dicoms_duration":28.0,"birch_isotime":"2024-08-30T11:55:24.166825","birch_duration":27.999358,"qrinfo_isotime":null,"qrinfo_duration":null,"psychopy_isotime":"2024-08-30T11:55:24.140337","psychopy_duration":28.000192,"reproevents_isotime":null,"reproevents_duration":null}
 {"type":"MarkRecord","session_id":"ses-20240830","id":"mark-000290","kind":"Func series scan","name":"014-func-bold_task-rest_acq-short2_run-05_scan-0","target_ids":["dicoms-000410","birch-000292","psychopy-000226"],"dicoms_isotime":"2024-08-30T11:54:56.477500","dicoms_duration":2.0,"birch_isotime":"2024-08-30T11:55:24.166825","birch_duration":2.004218,"qrinfo_isotime":null,"qrinfo_duration":null,"psychopy_isotime":"2024-08-30T11:55:24.140337","psychopy_duration":2.000069,"reproevents_isotime":null,"reproevents_duration":null}
@@ -1427,5 +1461,5 @@ Generated marks after pass 2, done:
   mark-000303 : ['dicoms-000423', 'birch-000305', 'psychopy-000239']
   mark-000304 : ['dicoms-000424', 'birch-000306', 'psychopy-000240']
   mark-000305 : ['dicoms-000424', 'birch-000306', 'psychopy-000240']
-Exit on   : 2024-09-03 12:55:25.231927
+Exit on   : 2024-09-05 10:51:23.353941
 Exit code : 0

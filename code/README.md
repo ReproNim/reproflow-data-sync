@@ -178,6 +178,9 @@ Algorithm proposals for the ReproFlow time synchronization effort:
     - started at : 2024-08-30T`15:47:03`.055736-04:00
     - ended   at : 2024-08-30T`20:02:33`.580731-04:00
     - but study range which in ISO time was `11:35:49 - 11:55:52`.
+  - [ ] `psychopy` logs conatins only last 7 series, and not 10 ones. Some information listed below:
+    - Time for first 3 series: `11:35:49 - 11:39:59` 
+    - `20240830_acq-short1_run-01.log`, `20240830_acq-short1_run-02.log`, `20240830_acq-short1_run-03.log` contains only 2 header records end no event data at all.
 
 ## TODO:
   - Use DataLad run to execute commands (https://handbook.datalad.org/en/latest/basics/basics-run.html)
