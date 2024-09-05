@@ -95,3 +95,15 @@ I think all went well.  There was first fast QR code flashing on the screen real
 
 - we did few more med1 runs.  I lost connection to birch and reproiner -- smaug seems to be down!
 
+
+# VMDOCUA notes
+
+- `ses-20240809`
+  - [x] under investigation, produces performance issues which partially are fixed, and swimlane matching issues.
+  - [x] `birch` data for first 3 func scan x15 is omitted somehow and started from `008-func-bold_task-rest_acq-short1_run-04` at 10:27:12. This is ok for provided logs, somehow birch device is restarted in the middle of the scan.
+  - [x] `psychopy` data for first 3 func scan x15 is omitted somehow and started from `008-func-bold_task-rest_acq-short1_run-04` at 10:27:12. This is ok for provided logs.
+  - [x] `psychopy\20240809_acq-med1_run-01.log` contains only 30 records rather than 150 ones. After manual inspection it looks like it's cut in the middle of the scan at 10:39:06 rather than 10:43:06. So it's broken input data from psychopy.
+  - [ ] `qrinfo` it looks like video duration is only 6:37 instead of 32:07 (based on reprostim json metadata and `2024.08.09-10.31.00.087--2024.08.09-11.03.07.318.mkv` file name ), and it contains only 3 short series of QRs. Need in future investigation of `reprostim-videocapture` utility and `ffmpeg` params.
+  - [ ] `reproevents` started from `reproevents-000263` it produces invalid data. There are a lot of records in `events.csv/@client_time_iso` with time like `2024-08-09T10:49:39`. Real series time range based on the swimlanes is around `10:47:48`--`10:52:46` and scans count is 150. So it looks like some performance issues on hardware or software side recording events log.
+  - [ ] `reproevents` related to original lines in `events.csv` `638:639`, `747:748` `server_time` 217.389434 and 339.392153 has untypical duration 4 and 14 sec instead of 2 sec. 
+  - [ ] `reproevents` related to `013-func-bold_task-rest_acq-med1_run-02` series with 150 slices contains only 143 events instead of 150 ones, 7 are missed somehow. Series NTP EST time is `10:47:48`--`10:52:46` .

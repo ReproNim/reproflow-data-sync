@@ -145,42 +145,7 @@ Algorithm proposals for the ReproFlow time synchronization effort:
   - first QR code in each series has strange datetime offset around +0.320 sec (or 20 frames later on 60.0 FPS video) from other QR codes. Most likely it's related to Python script code presenting QR in experiments.
   - QR codes processing is not fast, looks like `reprostim/Parsing/generate_qrinfo.sh` script execution time is around x1-x4 slower comparing to related video, e.g. for 5 minutes video like 1920x1080, 60 FPS it can take up to 20 minutes to process. So in future it would be good idea to optimize `parse_wQR.py` script for better performance on demand.
 
-- `ses-20240528`
-  - problem to match other swimlanes with DICOMs at this moment, WiP. 
-  - [ ] `qrinfo` data is not clean and consistent, but we have item with id `qrinfo-000006` and `keys_time_str` as `2024-05-28T11:06:29.435718-04:00`. This corresponds to `psychopy-000001`. Use this mapping between psychopy and qrinfo to match both swimlanes.
-  - [ ] `dumps` series `005-func-bold_task-rest_run-1` has only 2 scans. And it looks like we have some small series in `qrinfo` and `psychopy` logs. Need to investigate this and if possible include series in marks.
-- `ses-20240604`
-  - produces most matches at this moment, but still some issues with psychopy, reprostim_video etc.
-  - [ ] `dicoms` series `008-func-bold_task-rest_run-4_start` has invalid mapping with birch,psychopy and reproevents and as result invalid dicoms_offset 448 sec instead of 372 sec.
-- `ses-20240809`
-  - [x] under investigation, produces performance issues which partially are fixed, and swimlane matching issues.
-  - [x] `birch` data for first 3 func scan x15 is omitted somehow and started from `008-func-bold_task-rest_acq-short1_run-04` at 10:27:12. This is ok for provided logs, somehow birch device is restarted in the middle of the scan.
-  - [x] `psychopy` data for first 3 func scan x15 is omitted somehow and started from `008-func-bold_task-rest_acq-short1_run-04` at 10:27:12. This is ok for provided logs.
-  - [x] `psychopy\20240809_acq-med1_run-01.log` contains only 30 records rather than 150 ones. After manual inspection it looks like it's cut in the middle of the scan at 10:39:06 rather than 10:43:06. So it's broken input data from psychopy.
-  - [ ] `qrinfo` it looks like video duration is only 6:37 instead of 32:07 (based on reprostim json metadata and `2024.08.09-10.31.00.087--2024.08.09-11.03.07.318.mkv` file name ), and it contains only 3 short series of QRs. Need in future investigation of `reprostim-videocapture` utility and `ffmpeg` params.
-  - [ ] `reproevents` started from `reproevents-000263` it produces invalid data. There are a lot of records in `events.csv/@client_time_iso` with time like `2024-08-09T10:49:39`. Real series time range based on the swimlanes is around `10:47:48`--`10:52:46` and scans count is 150. So it looks like some performance issues on hardware or software side recording events log.
-  - [ ] `reproevents` related to original lines in `events.csv` `638:639`, `747:748` `server_time` 217.389434 and 339.392153 has untypical duration 4 and 14 sec instead of 2 sec. 
-  - [ ] `reproevents` related to `013-func-bold_task-rest_acq-med1_run-02` series with 150 slices contains only 143 events instead of 150 ones, 7 are missed somehow. Series NTP EST time is `10:47:48`--`10:52:46` .
-- `ses-20240830`
-  - [ ] !!! No QR codes recorded at all. DICOMS time is `11:35:22 -- 11:55:24`, 150 series started at `11:44:26` for 5 mins and this video file `2024.08.30-11.31.56.000--2024.08.30-11.48.03.377.mkv` should contain QR codes. But we see there error:
-    - Video duration significant mismatch (real/file name): `569.2333333333333` sec vs `967.377` sec
-    - Interesting thing is that in mkv.log file we see that fps was 59-60 and then dropped to 40-38 e.g.:
-      - 2024-08-30 11:32:01.276 [INFO] [3393844] frame=  305 `fps= 60` q=31.0 size=     192kB time=00:00:04.22 bitrate= 372.6kbits/s speed=0.825x    
-      - 2024-08-30 11:42:43.949 [INFO] [3393844] frame=27567 `fps= 43` q=31.0 size=   17555kB time=00:07:40.13 bitrate= 312.5kbits/s speed=0.71x    
-      - 2024-08-30 11:46:55.547 [INFO] [3393844] frame=34185 `fps= 38` q=31.0 size=   19967kB time=00:09:28.89 bitrate= 287.5kbits/s speed=0.633x    
-    - Also we can see that the last frame was around 11:46, and it more or less corresponds to frames count in video:
-      - 2024-08-30 11:46:56.080 [INFO] [3393844] frame=`34190` fps= 38 q=31.0 size=   19967kB time=00:09:28.97 bitrate= 287.5kbits/s speed=0.632x DTS 19356550163393, next:569
-      - parse_wQR detected frame count: `34154`
-    - root log in reproiner started recording 11:31:56, and stopped 11:48:03, somehow ffmpeg thread was terminated. And then at 11:56:13 capture was terminated by data/notification from device (Whack resolution).
-  - [ ] DICOMS MRI clock in this study has offset around -27 sec in contrast to +391 sec in previous session. This 7 minutes gap or jump causes current match series algorithm to fail. Probably to see other swimlanes tmap record will be created manually for this series in `code/repronim_tmap.jsonl` file. Note: think about some command line option to dump_marks to explicitly specify clock offset, to stick and force specific time, rather than manual editing of tmap JSONL file. 
-  - [ ] `dump_reproevents.py` bad performance, need to optimize it (execution time around 40 sec).
-  - [ ] `reproevents/events.csv` doesn't contain any valid `client_time_iso` data. If possible we should look for older *.csv file if any:
-    - started at : 2024-08-30T`15:47:03`.055736-04:00
-    - ended   at : 2024-08-30T`20:02:33`.580731-04:00
-    - but study range which in ISO time was `11:35:49 - 11:55:52`.
-  - [ ] `psychopy` logs conatins only last 7 series, and not 10 ones. Some information listed below:
-    - Time for first 3 series: `11:35:49 - 11:39:59` 
-    - `20240830_acq-short1_run-01.log`, `20240830_acq-short1_run-02.log`, `20240830_acq-short1_run-03.log` contains only 2 header records and no event data at all.
+
 
 ## TODO:
   - Use DataLad run to execute commands (https://handbook.datalad.org/en/latest/basics/basics-run.html)
