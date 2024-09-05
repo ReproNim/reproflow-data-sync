@@ -26,7 +26,7 @@ if [ ! -s "birch/out.jsonl" ]; then
 fi
 
 # figure out which file has it first and then grep from all files records
-ssh reprostim@reproiner "cd reprostim/Events/data && grep -l '\<${ISODATE}T' *.csv | head -n 1 | xargs head -n 1 && grep '\<${ISODATE}T' *.csv" > reproevents/events.csv
+ssh reprostim@reproiner "cd reprostim/Events/data && grep -l '\<${ISODATE}T' *.csv | head -n 1 | xargs head -n 1 && grep -h '\<${ISODATE}T' *.csv" > reproevents/events.csv
 
 # only those for which we fetch data, we get them
 (
