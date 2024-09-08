@@ -266,12 +266,12 @@ def find_dicoms_func_series(model: DumpModel) -> List[SeriesData]:
     return lst
 
 
-# match SeriesData object with another one
-def match_series_data(sd1: SeriesData, sd2: SeriesData) -> bool:
+# match SeriesData object with another one and return score result if any
+def match_series_data(sd1: SeriesData, sd2: SeriesData) -> (bool, float):
     # NOTE: the code contains hardcoded bypasses for qrinfo swimlane
     # because of the current problems with 0.3 sec in first QR code
     # so ideally it should be disabled in future once we fix the problem
-
+    score: float = 0.0
     f_debug: bool = True
     #if sd1.name == '015-func-bold_task-rest_acq-med1_run-04' and sd2.name == 'birch-series-8':
     #    logger.debug(f"Matching: {sd1} with {sd2}")
@@ -281,13 +281,13 @@ def match_series_data(sd1: SeriesData, sd2: SeriesData) -> bool:
     if not sd1 or not sd2:
         if f_debug:
             logger.debug(f" mismatch_0")
-        return False
+        return False, score
 
     # match item count
     if sd1.count != sd2.count:
         if f_debug:
             logger.debug(f" mismatch_7: {sd1.count} / {sd2.count}")
-        return False
+        return False, score
 
     k_min: float = 0.95
     k_max: float = 1.05
@@ -307,7 +307,7 @@ def match_series_data(sd1: SeriesData, sd2: SeriesData) -> bool:
         if not (t_min <= sd2.interval <= t_max):
             if f_debug:
                 logger.debug(f" mismatch_1: {sd1.interval} / {sd2.interval}")
-            return False
+            return False, score
 
     # match inter series interval matches as well
     if sd1.next_series_interval and sd2.next_series_interval:
@@ -316,19 +316,19 @@ def match_series_data(sd1: SeriesData, sd2: SeriesData) -> bool:
         if not (t_min <= sd2.next_series_interval <= t_max):
             if f_debug:
                 logger.debug(f" mismatch_2: {sd1.next_series_interval} / {sd2.next_series_interval}")
-            return False
+            return False, score
 
     # Kludge, skip check for QRINFO swimlane atm
     if sd2.swimlane.name!=Swimlane.QRINFO:
         if sd1.next_series_interval==0.0 and sd2.next_series_interval>0:
             if f_debug:
                 logger.debug(f" mismatch_3: {sd1.next_series_interval} / {sd2.next_series_interval}")
-            return False
+            return False, score
 
         if sd1.next_series_interval>0 and sd2.next_series_interval==0.0:
             if f_debug:
                 logger.debug(f" mismatch_4: {sd1.next_series_interval} / {sd2.next_series_interval}")
-            return False
+            return False, score
 
     #else:
     #    return False
@@ -342,15 +342,17 @@ def match_series_data(sd1: SeriesData, sd2: SeriesData) -> bool:
         if synced_dt > 120 :
             if f_debug:
                 logger.debug(f" mismatch_5: {sd1.synced_isotime_start} / {sd2.synced_isotime_start}")
-            return False
+            return False, score
     else:
         if synced_dt > 2.0:
             if f_debug:
                 logger.debug(f" mismatch_6: {sd1.synced_isotime_start} / {sd2.synced_isotime_start}")
-            return False
+            return False, score
 
+    score += synced_dt
 
     logger.debug(f"Matched series data: {sd1.name} / {sd2.name}")
+    logger.debug(f"    score                = {score}")
     logger.debug(f"    count                = {sd1.count} / {sd2.count}")
     logger.debug(f"    interval             = {sd1.interval} / {sd2.interval}")
     logger.debug(f"    next_series_interval = {sd1.next_series_interval} / {sd2.next_series_interval}")
@@ -360,7 +362,31 @@ def match_series_data(sd1: SeriesData, sd2: SeriesData) -> bool:
     logger.debug(f"    synced_end           = {sd1.synced_isotime_end} / {sd2.synced_isotime_end}")
     logger.debug(f"    series 1 IDs         = {sd1.events[0].id} .. {sd1.events[-1].id}")
     logger.debug(f"    series 2 IDs         = {sd2.events[0].id} .. {sd2.events[-1].id}")
-    return True
+    return True, score
+
+
+def match_series(sd1: SeriesData, series: List[SeriesData]) -> SeriesData:
+    best_sd: SeriesData = None
+    best_score: float = None
+    for sd2 in series:
+        match, score = match_series_data(sd1, sd2)
+        if match:
+            if best_sd:
+               if score < best_score:
+                   best_sd = sd2
+                   best_score = score
+            else:
+                best_sd = sd2
+                best_score = score
+        else:
+            # break cycle if found match previously
+            if best_sd:
+                break
+
+    if best_sd:
+        logger.debug(f"Matched series: {sd1.name} -> {best_sd.name}")
+        logger.debug(f"         score: {best_score}")
+    return best_sd
 
 
 def build_swimlane_events(swimlane: SwimlaneModel):
@@ -464,19 +490,19 @@ def generate_marks(model: DumpModel):
         map_series: dict = {}
         for swiml in [model.birch, model.qrinfo, model.psychopy,
                       model.reproevents]:
+            #logger.debug(f"match with swiml={swiml.name}")
             birch_sd: SeriesData = map_series.get(Swimlane.BIRCH)
-            for ser_sd in swiml.series:
-                # TODO: in future also consider match algorithm based on
-                #       existing table table for previous series
-                if match_series_data(birch_sd if birch_sd else dicoms_sd , ser_sd):
-                    map_series[swiml.name] = ser_sd
-                    logger.debug(f"store map_series[{swiml.name}] -> {ser_sd.name}")
-                    mark.target_ids.append(ser_sd.events[0].id)
-                    setattr(mark, f"{swiml.name}_isotime", ser_sd.isotime_start)
-                    setattr(mark, f"{swiml.name}_duration", ser_sd.duration)
-                    offset[ser_sd.name] = (dicoms_sd.isotime_start -
-                                           ser_sd.isotime_start).total_seconds()
-                    break
+            match_sd: SeriesData = match_series(birch_sd if birch_sd
+                                                else dicoms_sd,
+                                                swiml.series)
+            if match_sd:
+                map_series[swiml.name] = match_sd
+                logger.debug(f"store map_series[{swiml.name}] -> {match_sd.name}")
+                mark.target_ids.append(match_sd.events[0].id)
+                setattr(mark, f"{swiml.name}_isotime", match_sd.isotime_start)
+                setattr(mark, f"{swiml.name}_duration", match_sd.duration)
+                offset[match_sd.name] = (dicoms_sd.isotime_start -
+                                       match_sd.isotime_start).total_seconds()
 
         marks.append(mark)
         logger.debug(f"{mark.model_dump_json()}")
