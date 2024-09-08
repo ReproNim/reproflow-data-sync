@@ -57,7 +57,11 @@ def dump_revents_file(session_id: str, path: str, range_start: datetime,
     file_name: str = os.path.basename(path)
     lst: List[ReproeventsRecord] = []
 
+    c_after_end: int = 0
     for _, row in df.iterrows():
+        if c_after_end>100:
+            logger.debug(f"Skip reproevents processing, too many records after the range end")
+            break
         obj = row_to_model(row, session_id, file_name)
         if range_start <= obj.isotime <= range_end:
             if obj.state == 1:
@@ -77,6 +81,8 @@ def dump_revents_file(session_id: str, path: str, range_start: datetime,
                     prev_obj.state_duration = obj.server_time - prev_obj.server_time
         else:
             logger.debug(f"Skip reproevents, out of study datetime range: {obj}")
+            if obj.isotime > range_end:
+                c_after_end += 1
 
     # dump all records to as jsonl
     for obj in lst:
