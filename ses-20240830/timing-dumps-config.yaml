@@ -1,0 +1,12 @@
+# provide custom DICOMs offset to fix time gap
+# due to time correction
+
+clock_offsets:
+  dicoms: -26.78
+
+# skip swimlanes for sessions to force building of tmap anyway
+skip_swimlanes:
+  # somehow no QR codes exist in this session
+  - qrinfo
+  # no events in this session somehow
+  - reproevents

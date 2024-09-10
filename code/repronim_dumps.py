@@ -1,9 +1,32 @@
 from datetime import datetime
-from typing import Tuple, Optional, List
+from typing import Tuple, Optional, List, Set
 from pydantic import BaseModel, Field
+import yaml
+import os
+import logging
+
+from repronim_timing import TMapService
+
+logger = logging.getLogger(__name__)
+logger.setLevel(logging.INFO)
+
 
 # placeholder for common code to be used in the dump scripts
 # data model, functions, etc.
+
+######################################################################
+# Dumps config model
+class DumpsConfig(BaseModel):
+    clock_offsets: Optional[dict] = Field(dict(), description="Optional clock "
+                                                            "offsets from NTP time "
+                                                            "to fix/force "
+                                                            "manually certain "
+                                                            "swimlanes. Key is clock "
+                                                            "name and value is float "
+                                                            "offset like in tmap.")
+    skip_swimlanes: Optional[Set[str]] = Field(set(), description="List of swimlanes to "
+                                                               "be skipped when calculating "
+                                                               "tmap.")
 
 
 ######################################################################
@@ -143,3 +166,45 @@ class MarkRecord(BaseModel):
                                                                      "time in ISO format")
     reproevents_duration: Optional[float] = Field(None, description="Reproevents series duration "
                                                                     "in seconds")
+
+######################################################################
+# Dumps config implementation
+_dumps_config: Optional[DumpsConfig] = None
+
+def get_config() -> DumpsConfig:
+    """
+    Returns the global DumpsConfig instance. If it's not initialized,
+    raises an error.
+    """
+    global _dumps_config
+    if _dumps_config is None:
+        raise RuntimeError("DumpsConfig has not been initialized. "
+                           "Call init_config() first.")
+    return _dumps_config
+
+def init_config(session_path: str) -> DumpsConfig:
+    global _dumps_config
+    if _dumps_config is None:
+        config_path = os.path.join(session_path,
+                                   'timing-dumps-config.yaml')
+        if os.path.exists(config_path):
+            logger.info(f"Loading dumps config from {config_path}")
+            with open(config_path, 'r') as f:
+                config_data = yaml.safe_load(f)
+            _dumps_config = DumpsConfig(**config_data)
+        else:
+            logger.info(f"No dumps config found under {config_path} path, "
+                         f"using defaults")
+            _dumps_config = DumpsConfig()
+    return _dumps_config
+
+def do_config(session_path: str, tmap_svc: TMapService) -> DumpsConfig:
+    # load dumps config:
+    cfg: DumpsConfig = init_config(session_path)
+    if cfg.clock_offsets:
+        logger.debug(f"clock_offsets: {cfg.clock_offsets}")
+        for clock, offset in cfg.clock_offsets.items():
+            tmap_svc.force_offset(clock, offset)
+    if cfg.skip_swimlanes:
+        logger.debug(f"skip_swimlanes: {cfg.skip_swimlanes}")
+

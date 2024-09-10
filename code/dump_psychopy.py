@@ -12,6 +12,7 @@ import logging
 import jsonlines
 import pandas as pd
 
+from repronim_dumps import DumpsConfig, do_config
 from repronim_timing import (TMapService, Clock, dump_jsonl,
                              find_study_range, generate_id,
                              get_session_id, get_tmap_svc)
@@ -142,6 +143,8 @@ def main(ctx, path: str, log_level):
     # load tmap service
     _tmp_svc = get_tmap_svc()
 
+    # load dumps config:
+    cfg: DumpsConfig = do_config(path, _tmp_svc)
 
     # find the study range
     range_start, range_end = find_study_range(dump_dicoms_path)

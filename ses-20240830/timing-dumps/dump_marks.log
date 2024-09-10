@@ -1,8 +1,12 @@
 dump_marks.py tool
-Started on    : 2024-09-08 11:25:17.466058, vmelnik@Uranus
+Started on    : 2024-09-10 14:22:00.493106, vmelnik@Uranus
 Working dir   : /Users/vmelnik/Projects/Dartmouth/branches/reproflow-data-sync/code
 Session path  : /Users/vmelnik/Projects/Dartmouth/branches/typhon/reproflow-data-sync/ses-20240830
 Session ID    : ses-20240830
+Loading tmap  : /Users/vmelnik/Projects/Dartmouth/branches/reproflow-data-sync/code/repronim_tmap.jsonl
+              : TMap marks count 5 : [0]=2024-05-28T11:09:00.647672, [1]=2024-06-04T13:54:19.385115, [2]=2024-08-09T10:31:40.686521, [3]=2024-08-09T10:33:21.970882, [4]=2024-08-09T10:35:07.839213
+Loading dumps config from /Users/vmelnik/Projects/Dartmouth/branches/typhon/reproflow-data-sync/ses-20240830/timing-dumps-config.yaml
+forcing offset for dicoms: -26.780000
 Skip event object, type is not DicomsRecord: study-000001
 Skip event object, type is not DicomsRecord: series-000001
 Skip event object, type is not DicomsRecord: series-000002
@@ -18,6 +22,66 @@ Skip event object, type is not DicomsRecord: series-000011
 Skip event object, type is not DicomsRecord: series-000012
 Skip event object, type is not DicomsRecord: series-000013
 Skip event object, type is not DicomsRecord: series-000014
+overriding offset for Clock.DICOMS: -26.780000
+from_offset=-26.78, to_offset=0.0
+offset=26.78
+overriding offset for Clock.DICOMS: -26.780000
+from_offset=-26.78, to_offset=0.0
+offset=26.78
+overriding offset for Clock.DICOMS: -26.780000
+from_offset=-26.78, to_offset=0.0
+offset=26.78
+overriding offset for Clock.DICOMS: -26.780000
+from_offset=-26.78, to_offset=0.0
+offset=26.78
+overriding offset for Clock.DICOMS: -26.780000
+from_offset=-26.78, to_offset=0.0
+offset=26.78
+overriding offset for Clock.DICOMS: -26.780000
+from_offset=-26.78, to_offset=0.0
+offset=26.78
+overriding offset for Clock.DICOMS: -26.780000
+from_offset=-26.78, to_offset=0.0
+offset=26.78
+overriding offset for Clock.DICOMS: -26.780000
+from_offset=-26.78, to_offset=0.0
+offset=26.78
+overriding offset for Clock.DICOMS: -26.780000
+from_offset=-26.78, to_offset=0.0
+offset=26.78
+overriding offset for Clock.DICOMS: -26.780000
+from_offset=-26.78, to_offset=0.0
+offset=26.78
+overriding offset for Clock.DICOMS: -26.780000
+from_offset=-26.78, to_offset=0.0
+offset=26.78
+overriding offset for Clock.DICOMS: -26.780000
+from_offset=-26.78, to_offset=0.0
+offset=26.78
+overriding offset for Clock.DICOMS: -26.780000
+from_offset=-26.78, to_offset=0.0
+offset=26.78
+overriding offset for Clock.DICOMS: -26.780000
+from_offset=-26.78, to_offset=0.0
+offset=26.78
+overriding offset for Clock.DICOMS: -26.780000
+from_offset=-26.78, to_offset=0.0
+offset=26.78
+overriding offset for Clock.DICOMS: -26.780000
+from_offset=-26.78, to_offset=0.0
+offset=26.78
+overriding offset for Clock.DICOMS: -26.780000
+from_offset=-26.78, to_offset=0.0
+offset=26.78
+overriding offset for Clock.DICOMS: -26.780000
+from_offset=-26.78, to_offset=0.0
+offset=26.78
+overriding offset for Clock.DICOMS: -26.780000
+from_offset=-26.78, to_offset=0.0
+offset=26.78
+overriding offset for Clock.DICOMS: -26.780000
+from_offset=-26.78, to_offset=0.0
+offset=26.78
 Skip birch series (too small=1): ['birch-000001']
 Skip birch series (too small=1): ['birch-000002']
 Skip birch series (too small=1): ['birch-000003']
@@ -32,14 +96,82 @@ Skip birch series (too small=1): ['birch-000011']
 Skip birch series (too small=1): ['birch-000012']
 Skip birch series (too small=1): ['birch-000013']
 Skip birch series (too small=1): ['birch-000014']
+from_offset=0.0, to_offset=0.0
+offset=0.0
+from_offset=0.0, to_offset=0.0
+offset=0.0
 Skip birch series (too small=1): ['birch-000030']
+from_offset=0.0, to_offset=0.0
+offset=0.0
+from_offset=0.0, to_offset=0.0
+offset=0.0
+from_offset=0.0, to_offset=0.0
+offset=0.0
+from_offset=0.0, to_offset=0.0
+offset=0.0
 Skip birch series (too small=1): ['birch-000061']
 Skip birch series (too small=1): ['birch-000062']
 Skip birch series (too small=1): ['birch-000063']
+from_offset=0.0, to_offset=0.0
+offset=0.0
+from_offset=0.0, to_offset=0.0
+offset=0.0
 Skip birch series (too small=1): ['birch-000079']
+from_offset=0.0, to_offset=0.0
+offset=0.0
+from_offset=0.0, to_offset=0.0
+offset=0.0
 Skip birch series (too small=1): ['birch-000230']
 Skip birch series (too small=1): ['birch-000231']
+from_offset=0.0, to_offset=0.0
+offset=0.0
+from_offset=0.0, to_offset=0.0
+offset=0.0
+from_offset=0.0, to_offset=0.0
+offset=0.0
+from_offset=0.0, to_offset=0.0
+offset=0.0
+from_offset=0.0, to_offset=0.0
+offset=0.0
+from_offset=0.0, to_offset=0.0
+offset=0.0
+from_offset=0.0, to_offset=0.0
+offset=0.0
+from_offset=0.0, to_offset=0.0
+offset=0.0
+from_offset=0.0, to_offset=0.0
+offset=0.0
+from_offset=0.0, to_offset=0.0
+offset=0.0
 Skip birch series (too small=1): ['birch-000307']
+from_offset=-0.005352000000000023, to_offset=0.0
+offset=0.005352000000000023
+from_offset=-0.005352000000000023, to_offset=0.0
+offset=0.005352000000000023
+from_offset=-0.005352000000000023, to_offset=0.0
+offset=0.005352000000000023
+from_offset=-0.005352000000000023, to_offset=0.0
+offset=0.005352000000000023
+from_offset=-0.005352000000000023, to_offset=0.0
+offset=0.005352000000000023
+from_offset=-0.005352000000000023, to_offset=0.0
+offset=0.005352000000000023
+from_offset=-0.005352000000000023, to_offset=0.0
+offset=0.005352000000000023
+from_offset=-0.005352000000000023, to_offset=0.0
+offset=0.005352000000000023
+from_offset=-0.005352000000000023, to_offset=0.0
+offset=0.005352000000000023
+from_offset=-0.005352000000000023, to_offset=0.0
+offset=0.005352000000000023
+from_offset=-0.005352000000000023, to_offset=0.0
+offset=0.005352000000000023
+from_offset=-0.005352000000000023, to_offset=0.0
+offset=0.005352000000000023
+from_offset=-0.005352000000000023, to_offset=0.0
+offset=0.005352000000000023
+from_offset=-0.005352000000000023, to_offset=0.0
+offset=0.005352000000000023
 Swimlane: dicoms
   Found 10 dicoms series
   Series: 005-func-bold_task-rest_acq-short1_run-01, count: 15, interval: 2.000, next_series_interval: 135.76, ids: dicoms-000140..dicoms-000154, clock time: 11:35:22--11:35:50, isotime: 11:35:49--11:36:17
@@ -107,21 +239,21 @@ psychopy.psychopy-series-7 : ['psychopy-000226', 'psychopy-000227', 'psychopy-00
 Matching: sd1=005-func-bold_task-rest_acq-short1_run-01 with sd2=birch-series-1
  use k_min=0.95, k_max=1.05
 Matched series data: 005-func-bold_task-rest_acq-short1_run-01 / birch-series-1
-    score                = 0.232389
+    score                = 0.012389
     count                = 15 / 15
     interval             = 2.0 / 2.0010090714285713
     next_series_interval = 135.7575 / 135.937274
     isotime_start        = 2024-08-30 11:35:22.702500 / 2024-08-30 11:35:49.470111
     isotime_end          = 2024-08-30 11:35:50.702500 / 2024-08-30 11:36:17.484238
-    synced_start         = 2024-08-30 11:35:49.702500 / 2024-08-30 11:35:49.470111
-    synced_end           = 2024-08-30 11:36:17.702500 / 2024-08-30 11:36:17.484238
+    synced_start         = 2024-08-30 11:35:49.482500 / 2024-08-30 11:35:49.470111
+    synced_end           = 2024-08-30 11:36:17.482500 / 2024-08-30 11:36:17.484238
     series 1 IDs         = dicoms-000140 .. dicoms-000154
     series 2 IDs         = birch-000015 .. birch-000029
 Matching: sd1=005-func-bold_task-rest_acq-short1_run-01 with sd2=birch-series-2
  use k_min=0.95, k_max=1.05
  mismatch_2: 135.7575 / 86.185922
 Matched series: 005-func-bold_task-rest_acq-short1_run-01 -> birch-series-1
-         score: 0.232389
+         score: 0.012389
 store map_series[birch] -> birch-series-1
 Matching: sd1=birch-series-1 with sd2=psychopy-series-1
  use k_min=0.95, k_max=1.05
@@ -167,21 +299,21 @@ Matching: sd1=006-func-bold_task-rest_acq-short1_run-02 with sd2=birch-series-1
 Matching: sd1=006-func-bold_task-rest_acq-short1_run-02 with sd2=birch-series-2
  use k_min=0.95, k_max=1.05
 Matched series data: 006-func-bold_task-rest_acq-short1_run-02 / birch-series-2
-    score                = 0.052615
+    score                = 0.167385
     count                = 15 / 15
     interval             = 2.0 / 1.9996029285714285
     next_series_interval = 86.01 / 86.185922
     isotime_start        = 2024-08-30 11:37:38.460000 / 2024-08-30 11:38:05.407385
     isotime_end          = 2024-08-30 11:38:06.460000 / 2024-08-30 11:38:33.401826
-    synced_start         = 2024-08-30 11:38:05.460000 / 2024-08-30 11:38:05.407385
-    synced_end           = 2024-08-30 11:38:33.460000 / 2024-08-30 11:38:33.401826
+    synced_start         = 2024-08-30 11:38:05.240000 / 2024-08-30 11:38:05.407385
+    synced_end           = 2024-08-30 11:38:33.240000 / 2024-08-30 11:38:33.401826
     series 1 IDs         = dicoms-000155 .. dicoms-000169
     series 2 IDs         = birch-000031 .. birch-000045
 Matching: sd1=006-func-bold_task-rest_acq-short1_run-02 with sd2=birch-series-3
  use k_min=0.95, k_max=1.05
  mismatch_2: 86.01 / 221.434687
 Matched series: 006-func-bold_task-rest_acq-short1_run-02 -> birch-series-2
-         score: 0.052615
+         score: 0.167385
 store map_series[birch] -> birch-series-2
 Matching: sd1=birch-series-2 with sd2=psychopy-series-1
  use k_min=0.95, k_max=1.05
@@ -230,21 +362,21 @@ Matching: sd1=007-func-bold_task-rest_acq-short1_run-03 with sd2=birch-series-2
 Matching: sd1=007-func-bold_task-rest_acq-short1_run-03 with sd2=birch-series-3
  use k_min=0.95, k_max=1.05
 Matched series data: 007-func-bold_task-rest_acq-short1_run-03 / birch-series-3
-    score                = 0.12330700000000006
+    score                = 0.34330700000000003
     count                = 15 / 15
     interval             = 2.0 / 1.9978359285714284
     next_series_interval = 221.0025 / 221.434687
     isotime_start        = 2024-08-30 11:39:04.470000 / 2024-08-30 11:39:31.593307
     isotime_end          = 2024-08-30 11:39:32.470000 / 2024-08-30 11:39:59.563010
-    synced_start         = 2024-08-30 11:39:31.470000 / 2024-08-30 11:39:31.593307
-    synced_end           = 2024-08-30 11:39:59.470000 / 2024-08-30 11:39:59.563010
+    synced_start         = 2024-08-30 11:39:31.250000 / 2024-08-30 11:39:31.593307
+    synced_end           = 2024-08-30 11:39:59.250000 / 2024-08-30 11:39:59.563010
     series 1 IDs         = dicoms-000170 .. dicoms-000184
     series 2 IDs         = birch-000046 .. birch-000060
 Matching: sd1=007-func-bold_task-rest_acq-short1_run-03 with sd2=birch-series-4
  use k_min=0.95, k_max=1.05
  mismatch_2: 221.0025 / 100.961133
 Matched series: 007-func-bold_task-rest_acq-short1_run-03 -> birch-series-3
-         score: 0.12330700000000006
+         score: 0.34330700000000003
 store map_series[birch] -> birch-series-3
 Matching: sd1=birch-series-3 with sd2=psychopy-series-1
  use k_min=0.95, k_max=1.05
@@ -296,20 +428,20 @@ Matching: sd1=008-func-bold_task-rest_acq-short1_run-04 with sd2=birch-series-3
 Matching: sd1=008-func-bold_task-rest_acq-short1_run-04 with sd2=birch-series-4
  use k_min=0.95, k_max=1.05
 Matched series data: 008-func-bold_task-rest_acq-short1_run-04 / birch-series-4
-    score                = 0.5554939999999999
+    score                = 0.775494
     count                = 15 / 15
     interval             = 2.0 / 1.9999263571428572
     next_series_interval = 101.025 / 100.961133
     isotime_start        = 2024-08-30 11:42:45.472500 / 2024-08-30 11:43:13.027994
     isotime_end          = 2024-08-30 11:43:13.472500 / 2024-08-30 11:43:41.026963
-    synced_start         = 2024-08-30 11:43:12.472500 / 2024-08-30 11:43:13.027994
-    synced_end           = 2024-08-30 11:43:40.472500 / 2024-08-30 11:43:41.026963
+    synced_start         = 2024-08-30 11:43:12.252500 / 2024-08-30 11:43:13.027994
+    synced_end           = 2024-08-30 11:43:40.252500 / 2024-08-30 11:43:41.026963
     series 1 IDs         = dicoms-000185 .. dicoms-000199
     series 2 IDs         = birch-000064 .. birch-000078
 Matching: sd1=008-func-bold_task-rest_acq-short1_run-04 with sd2=birch-series-5
  mismatch_7: 15 / 150
 Matched series: 008-func-bold_task-rest_acq-short1_run-04 -> birch-series-4
-         score: 0.5554939999999999
+         score: 0.775494
 store map_series[birch] -> birch-series-4
 Matching: sd1=birch-series-4 with sd2=psychopy-series-1
  use k_min=0.95, k_max=1.05
@@ -358,20 +490,20 @@ Matching: sd1=009-func-bold_task-rest_acq-med1_run-01 with sd2=birch-series-4
 Matching: sd1=009-func-bold_task-rest_acq-med1_run-01 with sd2=birch-series-5
  use k_min=0.95, k_max=1.05
 Matched series data: 009-func-bold_task-rest_acq-med1_run-01 / birch-series-5
-    score                = 0.49162700000000004
+    score                = 0.711627
     count                = 150 / 150
     interval             = 2.0 / 2.000057187919463
     next_series_interval = 474.99 / 474.713138
     isotime_start        = 2024-08-30 11:44:26.497500 / 2024-08-30 11:44:53.989127
     isotime_end          = 2024-08-30 11:49:24.497500 / 2024-08-30 11:49:51.997648
-    synced_start         = 2024-08-30 11:44:53.497500 / 2024-08-30 11:44:53.989127
-    synced_end           = 2024-08-30 11:49:51.497500 / 2024-08-30 11:49:51.997648
+    synced_start         = 2024-08-30 11:44:53.277500 / 2024-08-30 11:44:53.989127
+    synced_end           = 2024-08-30 11:49:51.277500 / 2024-08-30 11:49:51.997648
     series 1 IDs         = dicoms-000200 .. dicoms-000349
     series 2 IDs         = birch-000080 .. birch-000229
 Matching: sd1=009-func-bold_task-rest_acq-med1_run-01 with sd2=birch-series-6
  mismatch_7: 150 / 15
 Matched series: 009-func-bold_task-rest_acq-med1_run-01 -> birch-series-5
-         score: 0.49162700000000004
+         score: 0.711627
 store map_series[birch] -> birch-series-5
 Matching: sd1=birch-series-5 with sd2=psychopy-series-1
  mismatch_7: 150 / 15
@@ -563,60 +695,60 @@ Matching: sd1=010-func-bold_task-rest_acq-short2_run-01 with sd2=birch-series-5
 Matching: sd1=010-func-bold_task-rest_acq-short2_run-01 with sd2=birch-series-6
  use k_min=0.95, k_max=1.05
 Matched series data: 010-func-bold_task-rest_acq-short2_run-01 / birch-series-6
-    score                = 0.21476499999999998
+    score                = 0.43476499999999996
     count                = 15 / 15
     interval             = 2.0 / 2.0003639285714288
     next_series_interval = 39.02 / 38.873696
     isotime_start        = 2024-08-30 11:52:21.487500 / 2024-08-30 11:52:48.702265
     isotime_end          = 2024-08-30 11:52:49.487500 / 2024-08-30 11:53:16.707360
-    synced_start         = 2024-08-30 11:52:48.487500 / 2024-08-30 11:52:48.702265
-    synced_end           = 2024-08-30 11:53:16.487500 / 2024-08-30 11:53:16.707360
+    synced_start         = 2024-08-30 11:52:48.267500 / 2024-08-30 11:52:48.702265
+    synced_end           = 2024-08-30 11:53:16.267500 / 2024-08-30 11:53:16.707360
     series 1 IDs         = dicoms-000350 .. dicoms-000364
     series 2 IDs         = birch-000232 .. birch-000246
 Matching: sd1=010-func-bold_task-rest_acq-short2_run-01 with sd2=birch-series-7
  use k_min=0.95, k_max=1.05
 Matched series data: 010-func-bold_task-rest_acq-short2_run-01 / birch-series-7
-    score                = 39.088461
+    score                = 39.308461
     count                = 15 / 15
     interval             = 2.0 / 2.0009897142857143
     next_series_interval = 39.02 / 38.822587
     isotime_start        = 2024-08-30 11:52:21.487500 / 2024-08-30 11:53:27.575961
     isotime_end          = 2024-08-30 11:52:49.487500 / 2024-08-30 11:53:55.589817
-    synced_start         = 2024-08-30 11:52:48.487500 / 2024-08-30 11:53:27.575961
-    synced_end           = 2024-08-30 11:53:16.487500 / 2024-08-30 11:53:55.589817
+    synced_start         = 2024-08-30 11:52:48.267500 / 2024-08-30 11:53:27.575961
+    synced_end           = 2024-08-30 11:53:16.267500 / 2024-08-30 11:53:55.589817
     series 1 IDs         = dicoms-000350 .. dicoms-000364
     series 2 IDs         = birch-000247 .. birch-000261
 Matching: sd1=010-func-bold_task-rest_acq-short2_run-01 with sd2=birch-series-8
  use k_min=0.95, k_max=1.05
 Matched series data: 010-func-bold_task-rest_acq-short2_run-01 / birch-series-8
-    score                = 77.911048
+    score                = 78.131048
     count                = 15 / 15
     interval             = 2.0 / 2.0012075714285715
     next_series_interval = 39.02 / 38.839816
     isotime_start        = 2024-08-30 11:52:21.487500 / 2024-08-30 11:54:06.398548
     isotime_end          = 2024-08-30 11:52:49.487500 / 2024-08-30 11:54:34.415454
-    synced_start         = 2024-08-30 11:52:48.487500 / 2024-08-30 11:54:06.398548
-    synced_end           = 2024-08-30 11:53:16.487500 / 2024-08-30 11:54:34.415454
+    synced_start         = 2024-08-30 11:52:48.267500 / 2024-08-30 11:54:06.398548
+    synced_end           = 2024-08-30 11:53:16.267500 / 2024-08-30 11:54:34.415454
     series 1 IDs         = dicoms-000350 .. dicoms-000364
     series 2 IDs         = birch-000262 .. birch-000276
 Matching: sd1=010-func-bold_task-rest_acq-short2_run-01 with sd2=birch-series-9
  use k_min=0.95, k_max=1.05
 Matched series data: 010-func-bold_task-rest_acq-short2_run-01 / birch-series-9
-    score                = 116.750864
+    score                = 116.970864
     count                = 15 / 15
     interval             = 2.0 / 2.0003035714285713
     next_series_interval = 39.02 / 38.928461
     isotime_start        = 2024-08-30 11:52:21.487500 / 2024-08-30 11:54:45.238364
     isotime_end          = 2024-08-30 11:52:49.487500 / 2024-08-30 11:55:13.242614
-    synced_start         = 2024-08-30 11:52:48.487500 / 2024-08-30 11:54:45.238364
-    synced_end           = 2024-08-30 11:53:16.487500 / 2024-08-30 11:55:13.242614
+    synced_start         = 2024-08-30 11:52:48.267500 / 2024-08-30 11:54:45.238364
+    synced_end           = 2024-08-30 11:53:16.267500 / 2024-08-30 11:55:13.242614
     series 1 IDs         = dicoms-000350 .. dicoms-000364
     series 2 IDs         = birch-000277 .. birch-000291
 Matching: sd1=010-func-bold_task-rest_acq-short2_run-01 with sd2=birch-series-10
  use k_min=0.95, k_max=1.05
  mismatch_4: 39.02 / 0
 Matched series: 010-func-bold_task-rest_acq-short2_run-01 -> birch-series-6
-         score: 0.21476499999999998
+         score: 0.43476499999999996
 store map_series[birch] -> birch-series-6
 Matching: sd1=birch-series-6 with sd2=psychopy-series-1
  use k_min=0.95, k_max=1.05
@@ -677,60 +809,60 @@ Matching: sd1=011-func-bold_task-rest_acq-short2_run-02 with sd2=birch-series-5
 Matching: sd1=011-func-bold_task-rest_acq-short2_run-02 with sd2=birch-series-6
  use k_min=0.95, k_max=1.05
 Matched series data: 011-func-bold_task-rest_acq-short2_run-02 / birch-series-6
-    score                = 38.805235
+    score                = 38.585235
     count                = 15 / 15
     interval             = 2.0 / 2.0003639285714288
     next_series_interval = 38.9775 / 38.873696
     isotime_start        = 2024-08-30 11:53:00.507500 / 2024-08-30 11:52:48.702265
     isotime_end          = 2024-08-30 11:53:28.507500 / 2024-08-30 11:53:16.707360
-    synced_start         = 2024-08-30 11:53:27.507500 / 2024-08-30 11:52:48.702265
-    synced_end           = 2024-08-30 11:53:55.507500 / 2024-08-30 11:53:16.707360
+    synced_start         = 2024-08-30 11:53:27.287500 / 2024-08-30 11:52:48.702265
+    synced_end           = 2024-08-30 11:53:55.287500 / 2024-08-30 11:53:16.707360
     series 1 IDs         = dicoms-000365 .. dicoms-000379
     series 2 IDs         = birch-000232 .. birch-000246
 Matching: sd1=011-func-bold_task-rest_acq-short2_run-02 with sd2=birch-series-7
  use k_min=0.95, k_max=1.05
 Matched series data: 011-func-bold_task-rest_acq-short2_run-02 / birch-series-7
-    score                = 0.068461
+    score                = 0.28846099999999997
     count                = 15 / 15
     interval             = 2.0 / 2.0009897142857143
     next_series_interval = 38.9775 / 38.822587
     isotime_start        = 2024-08-30 11:53:00.507500 / 2024-08-30 11:53:27.575961
     isotime_end          = 2024-08-30 11:53:28.507500 / 2024-08-30 11:53:55.589817
-    synced_start         = 2024-08-30 11:53:27.507500 / 2024-08-30 11:53:27.575961
-    synced_end           = 2024-08-30 11:53:55.507500 / 2024-08-30 11:53:55.589817
+    synced_start         = 2024-08-30 11:53:27.287500 / 2024-08-30 11:53:27.575961
+    synced_end           = 2024-08-30 11:53:55.287500 / 2024-08-30 11:53:55.589817
     series 1 IDs         = dicoms-000365 .. dicoms-000379
     series 2 IDs         = birch-000247 .. birch-000261
 Matching: sd1=011-func-bold_task-rest_acq-short2_run-02 with sd2=birch-series-8
  use k_min=0.95, k_max=1.05
 Matched series data: 011-func-bold_task-rest_acq-short2_run-02 / birch-series-8
-    score                = 38.891048
+    score                = 39.111048
     count                = 15 / 15
     interval             = 2.0 / 2.0012075714285715
     next_series_interval = 38.9775 / 38.839816
     isotime_start        = 2024-08-30 11:53:00.507500 / 2024-08-30 11:54:06.398548
     isotime_end          = 2024-08-30 11:53:28.507500 / 2024-08-30 11:54:34.415454
-    synced_start         = 2024-08-30 11:53:27.507500 / 2024-08-30 11:54:06.398548
-    synced_end           = 2024-08-30 11:53:55.507500 / 2024-08-30 11:54:34.415454
+    synced_start         = 2024-08-30 11:53:27.287500 / 2024-08-30 11:54:06.398548
+    synced_end           = 2024-08-30 11:53:55.287500 / 2024-08-30 11:54:34.415454
     series 1 IDs         = dicoms-000365 .. dicoms-000379
     series 2 IDs         = birch-000262 .. birch-000276
 Matching: sd1=011-func-bold_task-rest_acq-short2_run-02 with sd2=birch-series-9
  use k_min=0.95, k_max=1.05
 Matched series data: 011-func-bold_task-rest_acq-short2_run-02 / birch-series-9
-    score                = 77.730864
+    score                = 77.950864
     count                = 15 / 15
     interval             = 2.0 / 2.0003035714285713
     next_series_interval = 38.9775 / 38.928461
     isotime_start        = 2024-08-30 11:53:00.507500 / 2024-08-30 11:54:45.238364
     isotime_end          = 2024-08-30 11:53:28.507500 / 2024-08-30 11:55:13.242614
-    synced_start         = 2024-08-30 11:53:27.507500 / 2024-08-30 11:54:45.238364
-    synced_end           = 2024-08-30 11:53:55.507500 / 2024-08-30 11:55:13.242614
+    synced_start         = 2024-08-30 11:53:27.287500 / 2024-08-30 11:54:45.238364
+    synced_end           = 2024-08-30 11:53:55.287500 / 2024-08-30 11:55:13.242614
     series 1 IDs         = dicoms-000365 .. dicoms-000379
     series 2 IDs         = birch-000277 .. birch-000291
 Matching: sd1=011-func-bold_task-rest_acq-short2_run-02 with sd2=birch-series-10
  use k_min=0.95, k_max=1.05
  mismatch_4: 38.9775 / 0
 Matched series: 011-func-bold_task-rest_acq-short2_run-02 -> birch-series-7
-         score: 0.068461
+         score: 0.28846099999999997
 store map_series[birch] -> birch-series-7
 Matching: sd1=birch-series-7 with sd2=psychopy-series-1
  use k_min=0.95, k_max=1.05
@@ -794,60 +926,60 @@ Matching: sd1=012-func-bold_task-rest_acq-short2_run-03 with sd2=birch-series-5
 Matching: sd1=012-func-bold_task-rest_acq-short2_run-03 with sd2=birch-series-6
  use k_min=0.95, k_max=1.05
 Matched series data: 012-func-bold_task-rest_acq-short2_run-03 / birch-series-6
-    score                = 77.782735
+    score                = 77.562735
     count                = 15 / 15
     interval             = 2.0 / 2.0003639285714288
     next_series_interval = 38.9825 / 38.873696
     isotime_start        = 2024-08-30 11:53:39.485000 / 2024-08-30 11:52:48.702265
     isotime_end          = 2024-08-30 11:54:07.485000 / 2024-08-30 11:53:16.707360
-    synced_start         = 2024-08-30 11:54:06.485000 / 2024-08-30 11:52:48.702265
-    synced_end           = 2024-08-30 11:54:34.485000 / 2024-08-30 11:53:16.707360
+    synced_start         = 2024-08-30 11:54:06.265000 / 2024-08-30 11:52:48.702265
+    synced_end           = 2024-08-30 11:54:34.265000 / 2024-08-30 11:53:16.707360
     series 1 IDs         = dicoms-000380 .. dicoms-000394
     series 2 IDs         = birch-000232 .. birch-000246
 Matching: sd1=012-func-bold_task-rest_acq-short2_run-03 with sd2=birch-series-7
  use k_min=0.95, k_max=1.05
 Matched series data: 012-func-bold_task-rest_acq-short2_run-03 / birch-series-7
-    score                = 38.909039
+    score                = 38.689039
     count                = 15 / 15
     interval             = 2.0 / 2.0009897142857143
     next_series_interval = 38.9825 / 38.822587
     isotime_start        = 2024-08-30 11:53:39.485000 / 2024-08-30 11:53:27.575961
     isotime_end          = 2024-08-30 11:54:07.485000 / 2024-08-30 11:53:55.589817
-    synced_start         = 2024-08-30 11:54:06.485000 / 2024-08-30 11:53:27.575961
-    synced_end           = 2024-08-30 11:54:34.485000 / 2024-08-30 11:53:55.589817
+    synced_start         = 2024-08-30 11:54:06.265000 / 2024-08-30 11:53:27.575961
+    synced_end           = 2024-08-30 11:54:34.265000 / 2024-08-30 11:53:55.589817
     series 1 IDs         = dicoms-000380 .. dicoms-000394
     series 2 IDs         = birch-000247 .. birch-000261
 Matching: sd1=012-func-bold_task-rest_acq-short2_run-03 with sd2=birch-series-8
  use k_min=0.95, k_max=1.05
 Matched series data: 012-func-bold_task-rest_acq-short2_run-03 / birch-series-8
-    score                = 0.086452
+    score                = 0.133548
     count                = 15 / 15
     interval             = 2.0 / 2.0012075714285715
     next_series_interval = 38.9825 / 38.839816
     isotime_start        = 2024-08-30 11:53:39.485000 / 2024-08-30 11:54:06.398548
     isotime_end          = 2024-08-30 11:54:07.485000 / 2024-08-30 11:54:34.415454
-    synced_start         = 2024-08-30 11:54:06.485000 / 2024-08-30 11:54:06.398548
-    synced_end           = 2024-08-30 11:54:34.485000 / 2024-08-30 11:54:34.415454
+    synced_start         = 2024-08-30 11:54:06.265000 / 2024-08-30 11:54:06.398548
+    synced_end           = 2024-08-30 11:54:34.265000 / 2024-08-30 11:54:34.415454
     series 1 IDs         = dicoms-000380 .. dicoms-000394
     series 2 IDs         = birch-000262 .. birch-000276
 Matching: sd1=012-func-bold_task-rest_acq-short2_run-03 with sd2=birch-series-9
  use k_min=0.95, k_max=1.05
 Matched series data: 012-func-bold_task-rest_acq-short2_run-03 / birch-series-9
-    score                = 38.753364
+    score                = 38.973364
     count                = 15 / 15
     interval             = 2.0 / 2.0003035714285713
     next_series_interval = 38.9825 / 38.928461
     isotime_start        = 2024-08-30 11:53:39.485000 / 2024-08-30 11:54:45.238364
     isotime_end          = 2024-08-30 11:54:07.485000 / 2024-08-30 11:55:13.242614
-    synced_start         = 2024-08-30 11:54:06.485000 / 2024-08-30 11:54:45.238364
-    synced_end           = 2024-08-30 11:54:34.485000 / 2024-08-30 11:55:13.242614
+    synced_start         = 2024-08-30 11:54:06.265000 / 2024-08-30 11:54:45.238364
+    synced_end           = 2024-08-30 11:54:34.265000 / 2024-08-30 11:55:13.242614
     series 1 IDs         = dicoms-000380 .. dicoms-000394
     series 2 IDs         = birch-000277 .. birch-000291
 Matching: sd1=012-func-bold_task-rest_acq-short2_run-03 with sd2=birch-series-10
  use k_min=0.95, k_max=1.05
  mismatch_4: 38.9825 / 0
 Matched series: 012-func-bold_task-rest_acq-short2_run-03 -> birch-series-8
-         score: 0.086452
+         score: 0.133548
 store map_series[birch] -> birch-series-8
 Matching: sd1=birch-series-8 with sd2=psychopy-series-1
  use k_min=0.95, k_max=1.05
@@ -914,60 +1046,60 @@ Matching: sd1=013-func-bold_task-rest_acq-short2_run-04 with sd2=birch-series-5
 Matching: sd1=013-func-bold_task-rest_acq-short2_run-04 with sd2=birch-series-6
  use k_min=0.95, k_max=1.05
 Matched series data: 013-func-bold_task-rest_acq-short2_run-04 / birch-series-6
-    score                = 116.765235
+    score                = 116.545235
     count                = 15 / 15
     interval             = 2.0 / 2.0003639285714288
     next_series_interval = 38.01 / 38.873696
     isotime_start        = 2024-08-30 11:54:18.467500 / 2024-08-30 11:52:48.702265
     isotime_end          = 2024-08-30 11:54:46.467500 / 2024-08-30 11:53:16.707360
-    synced_start         = 2024-08-30 11:54:45.467500 / 2024-08-30 11:52:48.702265
-    synced_end           = 2024-08-30 11:55:13.467500 / 2024-08-30 11:53:16.707360
+    synced_start         = 2024-08-30 11:54:45.247500 / 2024-08-30 11:52:48.702265
+    synced_end           = 2024-08-30 11:55:13.247500 / 2024-08-30 11:53:16.707360
     series 1 IDs         = dicoms-000395 .. dicoms-000409
     series 2 IDs         = birch-000232 .. birch-000246
 Matching: sd1=013-func-bold_task-rest_acq-short2_run-04 with sd2=birch-series-7
  use k_min=0.95, k_max=1.05
 Matched series data: 013-func-bold_task-rest_acq-short2_run-04 / birch-series-7
-    score                = 77.891539
+    score                = 77.671539
     count                = 15 / 15
     interval             = 2.0 / 2.0009897142857143
     next_series_interval = 38.01 / 38.822587
     isotime_start        = 2024-08-30 11:54:18.467500 / 2024-08-30 11:53:27.575961
     isotime_end          = 2024-08-30 11:54:46.467500 / 2024-08-30 11:53:55.589817
-    synced_start         = 2024-08-30 11:54:45.467500 / 2024-08-30 11:53:27.575961
-    synced_end           = 2024-08-30 11:55:13.467500 / 2024-08-30 11:53:55.589817
+    synced_start         = 2024-08-30 11:54:45.247500 / 2024-08-30 11:53:27.575961
+    synced_end           = 2024-08-30 11:55:13.247500 / 2024-08-30 11:53:55.589817
     series 1 IDs         = dicoms-000395 .. dicoms-000409
     series 2 IDs         = birch-000247 .. birch-000261
 Matching: sd1=013-func-bold_task-rest_acq-short2_run-04 with sd2=birch-series-8
  use k_min=0.95, k_max=1.05
 Matched series data: 013-func-bold_task-rest_acq-short2_run-04 / birch-series-8
-    score                = 39.068952
+    score                = 38.848952
     count                = 15 / 15
     interval             = 2.0 / 2.0012075714285715
     next_series_interval = 38.01 / 38.839816
     isotime_start        = 2024-08-30 11:54:18.467500 / 2024-08-30 11:54:06.398548
     isotime_end          = 2024-08-30 11:54:46.467500 / 2024-08-30 11:54:34.415454
-    synced_start         = 2024-08-30 11:54:45.467500 / 2024-08-30 11:54:06.398548
-    synced_end           = 2024-08-30 11:55:13.467500 / 2024-08-30 11:54:34.415454
+    synced_start         = 2024-08-30 11:54:45.247500 / 2024-08-30 11:54:06.398548
+    synced_end           = 2024-08-30 11:55:13.247500 / 2024-08-30 11:54:34.415454
     series 1 IDs         = dicoms-000395 .. dicoms-000409
     series 2 IDs         = birch-000262 .. birch-000276
 Matching: sd1=013-func-bold_task-rest_acq-short2_run-04 with sd2=birch-series-9
  use k_min=0.95, k_max=1.05
 Matched series data: 013-func-bold_task-rest_acq-short2_run-04 / birch-series-9
-    score                = 0.229136
+    score                = 0.009136
     count                = 15 / 15
     interval             = 2.0 / 2.0003035714285713
     next_series_interval = 38.01 / 38.928461
     isotime_start        = 2024-08-30 11:54:18.467500 / 2024-08-30 11:54:45.238364
     isotime_end          = 2024-08-30 11:54:46.467500 / 2024-08-30 11:55:13.242614
-    synced_start         = 2024-08-30 11:54:45.467500 / 2024-08-30 11:54:45.238364
-    synced_end           = 2024-08-30 11:55:13.467500 / 2024-08-30 11:55:13.242614
+    synced_start         = 2024-08-30 11:54:45.247500 / 2024-08-30 11:54:45.238364
+    synced_end           = 2024-08-30 11:55:13.247500 / 2024-08-30 11:55:13.242614
     series 1 IDs         = dicoms-000395 .. dicoms-000409
     series 2 IDs         = birch-000277 .. birch-000291
 Matching: sd1=013-func-bold_task-rest_acq-short2_run-04 with sd2=birch-series-10
  use k_min=0.95, k_max=1.05
  mismatch_4: 38.01 / 0
 Matched series: 013-func-bold_task-rest_acq-short2_run-04 -> birch-series-9
-         score: 0.229136
+         score: 0.009136
 store map_series[birch] -> birch-series-9
 Matching: sd1=birch-series-9 with sd2=psychopy-series-1
  use k_min=0.95, k_max=1.05
@@ -1049,18 +1181,18 @@ Matching: sd1=014-func-bold_task-rest_acq-short2_run-05 with sd2=birch-series-9
 Matching: sd1=014-func-bold_task-rest_acq-short2_run-05 with sd2=birch-series-10
  use k_min=0.95, k_max=1.05
 Matched series data: 014-func-bold_task-rest_acq-short2_run-05 / birch-series-10
-    score                = 0.689325
+    score                = 0.9093249999999999
     count                = 15 / 15
     interval             = 2.0 / 1.999954142857143
     next_series_interval = 0.0 / 0
     isotime_start        = 2024-08-30 11:54:56.477500 / 2024-08-30 11:55:24.166825
     isotime_end          = 2024-08-30 11:55:24.477500 / 2024-08-30 11:55:52.166183
-    synced_start         = 2024-08-30 11:55:23.477500 / 2024-08-30 11:55:24.166825
-    synced_end           = 2024-08-30 11:55:51.477500 / 2024-08-30 11:55:52.166183
+    synced_start         = 2024-08-30 11:55:23.257500 / 2024-08-30 11:55:24.166825
+    synced_end           = 2024-08-30 11:55:51.257500 / 2024-08-30 11:55:52.166183
     series 1 IDs         = dicoms-000410 .. dicoms-000424
     series 2 IDs         = birch-000292 .. birch-000306
 Matched series: 014-func-bold_task-rest_acq-short2_run-05 -> birch-series-10
-         score: 0.689325
+         score: 0.9093249999999999
 store map_series[birch] -> birch-series-10
 Matching: sd1=birch-series-10 with sd2=psychopy-series-1
  use k_min=0.95, k_max=1.05
@@ -1727,5 +1859,5 @@ Generated marks after pass 2, done:
   mark-000303 : ['dicoms-000423', 'birch-000305', 'psychopy-000239']
   mark-000304 : ['dicoms-000424', 'birch-000306', 'psychopy-000240']
   mark-000305 : ['dicoms-000424', 'birch-000306', 'psychopy-000240']
-Exit on   : 2024-09-08 11:25:18.146064
+Exit on   : 2024-09-10 14:22:01.298435
 Exit code : 0

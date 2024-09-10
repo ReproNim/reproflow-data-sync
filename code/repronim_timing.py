@@ -11,6 +11,7 @@ import pandas as pd
 import logging
 
 logger = logging.getLogger(__name__)
+logger.setLevel(logging.DEBUG)
 
 # placeholder for common timing code in ReproNim projects
 
@@ -236,6 +237,7 @@ def get_tmap_deviation(clock: Clock, tmap: TMapRecord) -> float:
 class TMapService:
     def __init__(self, path_or_marks: str | List = None):
         self.marks = []
+        self._force_offset = {}
         if path_or_marks:
             self.load(path_or_marks)
 
@@ -259,8 +261,8 @@ class TMapService:
             return from_dt
 
         # calculate offset
-        from_offset: float = get_tmap_offset(from_clock, tmap)
-        to_offset: float = get_tmap_offset(to_clock, tmap)
+        from_offset: float = self.get_offset(from_clock, tmap)
+        to_offset: float = self.get_offset(to_clock, tmap)
         logger.debug(f"from_offset={from_offset}, to_offset={to_offset}")
         offset: float = to_offset - from_offset
         logger.debug(f"offset={offset}")
@@ -284,6 +286,22 @@ class TMapService:
                 break
             last_mark = mark
         return last_mark
+
+    # force offset for certain clock
+    def force_offset(self, clock: Clock, offset: float):
+        if offset is None:
+            if clock in self._force_offset:
+                del self._force_offset[clock]
+        else:
+            logger.debug("forcing offset for %s: %f", clock, offset)
+            self._force_offset[clock] = offset
+
+    # override clock offset if any
+    def get_offset(self, clock: Clock, tmap: TMapRecord) -> float:
+        if self._force_offset.get(clock) is not None:
+            logger.debug("overriding offset for %s: %f", clock, self._force_offset[clock])
+            return self._force_offset[clock]
+        return get_tmap_offset(clock, tmap)
 
     # load marks from file
     def load(self, path_or_marks: str | List):

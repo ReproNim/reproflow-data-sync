@@ -19,7 +19,8 @@ import logging
 from repronim_timing import (TMapService, Clock, parse_jsonl,
                              generate_id, dump_jsonl,
                              get_session_id, get_tmap_svc)
-from repronim_dumps import MarkRecord
+from repronim_dumps import (MarkRecord, init_config, get_config,
+                            DumpsConfig, do_config)
 
 # initialize the logger
 # Note: all logs goes to stderr
@@ -644,6 +645,9 @@ def main(ctx, path: str, log_level):
 
     # load tmap service
     _tmp_svc = get_tmap_svc()
+
+    # load dumps config:
+    cfg: DumpsConfig = do_config(path, _tmp_svc)
 
     model: DumpModel = build_model(session_id, path_dumps)
     #logger.debug(f"Model: {model}")
