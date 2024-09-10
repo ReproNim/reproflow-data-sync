@@ -1,5 +1,5 @@
 dump_reproevents.py tool
-Started on    : 2024-09-10 14:21:59.562720, vmelnik@Uranus
+Started on    : 2024-09-10 17:33:25.067887, vmelnik@Uranus
 Working dir   : /Users/vmelnik/Projects/Dartmouth/branches/reproflow-data-sync/code
 Session path  : /Users/vmelnik/Projects/Dartmouth/branches/typhon/reproflow-data-sync/ses-20240830
 Session ID    : ses-20240830
@@ -123,5 +123,5 @@ Skip reproevents, out of study datetime range: type='ReproeventsRecord' isotime=
 Skip reproevents, out of study datetime range: type='ReproeventsRecord' isotime=Timestamp('2024-08-30 17:00:00.678938') duration=0.0 state_duration=0.0 session_id='ses-20240830' id=None file_name='events.csv' state=1 server_time=985.760055 data={'callback_duration_us': '2024-08-30T11:58:00-04:00.csv:223', 'state': 1, 'client_time': 1725051600.6789384, 'client_time_iso': '2024-08-30T17:00:00.678938-04:00', 'pin': 6, 'callback_duration': 0.000223, 'server_time': 985.760055, 'action': '-ACK', 'roundtrip_delay': nan, 'id': 100}
 Skip reproevents, out of study datetime range: type='ReproeventsRecord' isotime=Timestamp('2024-08-30 17:00:00.699105') duration=0.0 state_duration=0.0 session_id='ses-20240830' id=None file_name='events.csv' state=0 server_time=985.780073 data={'callback_duration_us': '2024-08-30T11:58:00-04:00.csv:224', 'state': 0, 'client_time': 1725051600.6991053, 'client_time_iso': '2024-08-30T17:00:00.699105-04:00', 'pin': 6, 'callback_duration': 0.000224, 'server_time': 985.780073, 'action': '-ACK', 'roundtrip_delay': nan, 'id': 101}
 Skip reproevents processing, too many records after the range end
-Exit on   : 2024-09-10 14:21:59.772507
+Exit on   : 2024-09-10 17:33:25.264640
 Exit code : 0

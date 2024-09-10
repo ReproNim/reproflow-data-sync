@@ -1,5 +1,5 @@
 dump_reproevents.py tool
-Started on    : 2024-09-10 14:21:31.561304, vmelnik@Uranus
+Started on    : 2024-09-10 17:32:58.961394, vmelnik@Uranus
 Working dir   : /Users/vmelnik/Projects/Dartmouth/branches/reproflow-data-sync/code
 Session path  : /Users/vmelnik/Projects/Dartmouth/branches/typhon/reproflow-data-sync/ses-20240604
 Session ID    : ses-20240604
@@ -2741,5 +2741,5 @@ Skip reproevents, state is not 1: type='ReproeventsRecord' isotime=Timestamp('20
 Skip reproevents, state is not 1: type='ReproeventsRecord' isotime=Timestamp('2024-06-04 13:57:31.532095') duration=0.0 state_duration=0.0 session_id='ses-20240604' id=None file_name='events.csv' state=0 server_time=866.499036 data={'callback_duration_us': '2024-03-26T14:17:27-04:00.csv:223', 'state': 0, 'client_time': 1717523851.5320947, 'client_time_iso': '2024-06-04T13:57:31.532095-04:00', 'pin': 6, 'callback_duration': 0.000223, 'server_time': 866.499036, 'action': '-ACK', 'roundtrip_delay': nan, 'id': 1249276}
 Skip reproevents, state is not 1: type='ReproeventsRecord' isotime=Timestamp('2024-06-04 13:57:33.531923') duration=0.0 state_duration=0.0 session_id='ses-20240604' id=None file_name='events.csv' state=0 server_time=868.499097 data={'callback_duration_us': '2024-03-26T14:17:27-04:00.csv:226', 'state': 0, 'client_time': 1717523853.5319226, 'client_time_iso': '2024-06-04T13:57:33.531923-04:00', 'pin': 6, 'callback_duration': 0.000226, 'server_time': 868.499097, 'action': '-ACK', 'roundtrip_delay': nan, 'id': 1249278}
 Skip reproevents, state is not 1: type='ReproeventsRecord' isotime=Timestamp('2024-06-04 13:57:35.531915') duration=0.0 state_duration=0.0 session_id='ses-20240604' id=None file_name='events.csv' state=0 server_time=870.499135 data={'callback_duration_us': '2024-03-26T14:17:27-04:00.csv:221', 'state': 0, 'client_time': 1717523855.5319147, 'client_time_iso': '2024-06-04T13:57:35.531915-04:00', 'pin': 6, 'callback_duration': 0.000221, 'server_time': 870.499135, 'action': '-ACK', 'roundtrip_delay': nan, 'id': 1249280}
-Exit on   : 2024-09-10 14:21:34.165053
+Exit on   : 2024-09-10 17:33:01.397784
 Exit code : 0

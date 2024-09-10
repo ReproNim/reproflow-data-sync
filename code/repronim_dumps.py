@@ -207,4 +207,5 @@ def do_config(session_path: str, tmap_svc: TMapService) -> DumpsConfig:
             tmap_svc.force_offset(clock, offset)
     if cfg.skip_swimlanes:
         logger.debug(f"skip_swimlanes: {cfg.skip_swimlanes}")
+    return cfg
 

@@ -288,7 +288,7 @@ class TMapService:
         return last_mark
 
     # force offset for certain clock
-    def force_offset(self, clock: Clock, offset: float):
+    def force_offset(self, clock: str, offset: float):
         if offset is None:
             if clock in self._force_offset:
                 del self._force_offset[clock]
@@ -298,9 +298,11 @@ class TMapService:
 
     # override clock offset if any
     def get_offset(self, clock: Clock, tmap: TMapRecord) -> float:
-        if self._force_offset.get(clock) is not None:
-            logger.debug("overriding offset for %s: %f", clock, self._force_offset[clock])
-            return self._force_offset[clock]
+        if self._force_offset.get(clock.value) is not None:
+            logger.debug("overriding offset for %s: %f",
+                         clock,
+                         self._force_offset[clock.value])
+            return self._force_offset[clock.value]
         return get_tmap_offset(clock, tmap)
 
     # load marks from file

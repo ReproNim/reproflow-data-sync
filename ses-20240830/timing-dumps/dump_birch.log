@@ -1,5 +1,5 @@
 dump_birch.py tool
-Started on    : 2024-09-10 14:21:55.808526, vmelnik@Uranus
+Started on    : 2024-09-10 17:33:21.635253, vmelnik@Uranus
 Working dir   : /Users/vmelnik/Projects/Dartmouth/branches/reproflow-data-sync/code
 Session path  : /Users/vmelnik/Projects/Dartmouth/branches/typhon/reproflow-data-sync/ses-20240830
 Session ID    : ses-20240830
@@ -2488,5 +2488,5 @@ Skipping by alink_byte/alink_flags filter {'epoch_time': 1725048444.8779676, 'is
 Skipping out of study range isotime=2024-08-30T16:07:24.878901,  {'epoch_time': 1725048444.8789008, 'iso_time': '2024-08-30T16:07:24.878901-04:00', 'time': -2951.025071, 'alink_byte': 252, 'alink_flags': 1}
 Skipping by alink_byte/alink_flags filter {'time': 0, 'tick': 1162634349, 'description': 'Handheld auto-detected', 'epoch_time': 1725048468.0667102, 'iso_time': '2024-08-30T16:07:48.066710-04:00', 'handheld': 'HHSC-TRK-2', 'gains': [0, 0, 0, 0, 21, 20, 19, 20]}
 Skipping by alink_byte/alink_flags filter {'time': 0, 'tick': 1165010663, 'description': 'Output mode selected.', 'epoch_time': 1725048470.443008, 'iso_time': '2024-08-30T16:07:50.443008-04:00', 'output_mode': 'HID_TRACK_COMP'}
-Exit on   : 2024-09-10 14:21:57.738437
+Exit on   : 2024-09-10 17:33:23.425975
 Exit code : 0

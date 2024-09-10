@@ -1,9 +1,55 @@
 dump_tmap.py tool
-Started on    : 2024-09-10 14:22:02.033373, vmelnik@Uranus
+Started on    : 2024-09-10 17:33:27.281801, vmelnik@Uranus
 Working dir   : /Users/vmelnik/Projects/Dartmouth/branches/reproflow-data-sync/code
 Session path  : /Users/vmelnik/Projects/Dartmouth/branches/typhon/reproflow-data-sync/ses-20240830
 Session ID    : ses-20240830
+Loading tmap  : /Users/vmelnik/Projects/Dartmouth/branches/reproflow-data-sync/code/repronim_tmap.jsonl
+              : TMap marks count 5 : [0]=2024-05-28T11:09:00.647672, [1]=2024-06-04T13:54:19.385115, [2]=2024-08-09T10:31:40.686521, [3]=2024-08-09T10:33:21.970882, [4]=2024-08-09T10:35:07.839213
+Loading dumps config from /Users/vmelnik/Projects/Dartmouth/branches/typhon/reproflow-data-sync/ses-20240830/timing-dumps-config.yaml
+forcing offset for dicoms: -26.780000
 generate_tmap(/Users/vmelnik/Projects/Dartmouth/branches/typhon/reproflow-data-sync/ses-20240830/timing-dumps/dump_marks.jsonl)
-Full/completed mark not found in /Users/vmelnik/Projects/Dartmouth/branches/typhon/reproflow-data-sync/ses-20240830/timing-dumps/dump_marks.jsonl
-Exit on   : 2024-09-10 14:22:02.039319
-Exit code : 1
+Found full mark count 7: [{'type': 'MarkRecord', 'session_id': 'ses-20240830', 'id': 'mark-000052', 'kind': 'Func series start', 'name': '008-func-bold_task-rest_acq-short1_run-04_start', 'target_ids': ['dicoms-000185', 'birch-000064', 'psychopy-000001'], 'dicoms_isotime': '2024-08-30T11:42:45.472500', 'dicoms_duration': 28.0, 'birch_isotime': '2024-08-30T11:43:13.027994', 'birch_duration': 27.998969, 'qrinfo_isotime': None, 'qrinfo_duration': None, 'psychopy_isotime': '2024-08-30T11:43:13.011891', 'psychopy_duration': 27.998546, 'reproevents_isotime': None, 'reproevents_duration': None}, {'type': 'MarkRecord', 'session_id': 'ses-20240830', 'id': 'mark-000069', 'kind': 'Func series start', 'name': '009-func-bold_task-rest_acq-med1_run-01_start', 'target_ids': ['dicoms-000200', 'birch-000080', 'psychopy-000016'], 'dicoms_isotime': '2024-08-30T11:44:26.497500', 'dicoms_duration': 298.0, 'birch_isotime': '2024-08-30T11:44:53.989127', 'birch_duration': 298.008521, 'qrinfo_isotime': None, 'qrinfo_duration': None, 'psychopy_isotime': '2024-08-30T11:44:53.969999', 'psychopy_duration': 297.997711, 'reproevents_isotime': None, 'reproevents_duration': None}, {'type': 'MarkRecord', 'session_id': 'ses-20240830', 'id': 'mark-000221', 'kind': 'Func series start', 'name': '010-func-bold_task-rest_acq-short2_run-01_start', 'target_ids': ['dicoms-000350', 'birch-000232', 'psychopy-000166'], 'dicoms_isotime': '2024-08-30T11:52:21.487500', 'dicoms_duration': 28.0, 'birch_isotime': '2024-08-30T11:52:48.702265', 'birch_duration': 28.005095, 'qrinfo_isotime': None, 'qrinfo_duration': None, 'psychopy_isotime': '2024-08-30T11:52:48.676354', 'psychopy_duration': 27.999147, 'reproevents_isotime': None, 'reproevents_duration': None}, {'type': 'MarkRecord', 'session_id': 'ses-20240830', 'id': 'mark-000238', 'kind': 'Func series start', 'name': '011-func-bold_task-rest_acq-short2_run-02_start', 'target_ids': ['dicoms-000365', 'birch-000247', 'psychopy-000181'], 'dicoms_isotime': '2024-08-30T11:53:00.507500', 'dicoms_duration': 28.0, 'birch_isotime': '2024-08-30T11:53:27.575961', 'birch_duration': 28.013856, 'qrinfo_isotime': None, 'qrinfo_duration': None, 'psychopy_isotime': '2024-08-30T11:53:27.548404', 'psychopy_duration': 28.000199, 'reproevents_isotime': None, 'reproevents_duration': None}, {'type': 'MarkRecord', 'session_id': 'ses-20240830', 'id': 'mark-000255', 'kind': 'Func series start', 'name': '012-func-bold_task-rest_acq-short2_run-03_start', 'target_ids': ['dicoms-000380', 'birch-000262', 'psychopy-000196'], 'dicoms_isotime': '2024-08-30T11:53:39.485000', 'dicoms_duration': 28.0, 'birch_isotime': '2024-08-30T11:54:06.398548', 'birch_duration': 28.016906, 'qrinfo_isotime': None, 'qrinfo_duration': None, 'psychopy_isotime': '2024-08-30T11:54:06.373875', 'psychopy_duration': 27.999177, 'reproevents_isotime': None, 'reproevents_duration': None}, {'type': 'MarkRecord', 'session_id': 'ses-20240830', 'id': 'mark-000272', 'kind': 'Func series start', 'name': '013-func-bold_task-rest_acq-short2_run-04_start', 'target_ids': ['dicoms-000395', 'birch-000277', 'psychopy-000211'], 'dicoms_isotime': '2024-08-30T11:54:18.467500', 'dicoms_duration': 28.0, 'birch_isotime': '2024-08-30T11:54:45.238364', 'birch_duration': 28.00425, 'qrinfo_isotime': None, 'qrinfo_duration': None, 'psychopy_isotime': '2024-08-30T11:54:45.217033', 'psychopy_duration': 28.000197, 'reproevents_isotime': None, 'reproevents_duration': None}, {'type': 'MarkRecord', 'session_id': 'ses-20240830', 'id': 'mark-000289', 'kind': 'Func series start', 'name': '014-func-bold_task-rest_acq-short2_run-05_start', 'target_ids': ['dicoms-000410', 'birch-000292', 'psychopy-000226'], 'dicoms_isotime': '2024-08-30T11:54:56.477500', 'dicoms_duration': 28.0, 'birch_isotime': '2024-08-30T11:55:24.166825', 'birch_duration': 27.999358, 'qrinfo_isotime': None, 'qrinfo_duration': None, 'psychopy_isotime': '2024-08-30T11:55:24.140337', 'psychopy_duration': 28.000192, 'reproevents_isotime': None, 'reproevents_duration': None}]
+from_offset=0.0, to_offset=0.314787
+offset=0.314787
+Calculate artifical [qrinfo] clock isotime: 2024-08-30 11:43:13.342781
+from_offset=0.0, to_offset=-0.0005020000000000024
+offset=-0.0005020000000000024
+Calculate artifical [reproevents] clock isotime: 2024-08-30 11:43:13.027492001
+from_offset=0.0, to_offset=0.314787
+offset=0.314787
+Calculate artifical [qrinfo] clock isotime: 2024-08-30 11:44:54.303914
+from_offset=0.0, to_offset=-0.0005020000000000024
+offset=-0.0005020000000000024
+Calculate artifical [reproevents] clock isotime: 2024-08-30 11:44:53.988625001
+from_offset=0.0, to_offset=0.314787
+offset=0.314787
+Calculate artifical [qrinfo] clock isotime: 2024-08-30 11:52:49.017052
+from_offset=0.0, to_offset=-0.0005020000000000024
+offset=-0.0005020000000000024
+Calculate artifical [reproevents] clock isotime: 2024-08-30 11:52:48.701763001
+from_offset=0.0, to_offset=0.314787
+offset=0.314787
+Calculate artifical [qrinfo] clock isotime: 2024-08-30 11:53:27.890748
+from_offset=0.0, to_offset=-0.0005020000000000024
+offset=-0.0005020000000000024
+Calculate artifical [reproevents] clock isotime: 2024-08-30 11:53:27.575459001
+from_offset=0.0, to_offset=0.314787
+offset=0.314787
+Calculate artifical [qrinfo] clock isotime: 2024-08-30 11:54:06.713335
+from_offset=0.0, to_offset=-0.0005020000000000024
+offset=-0.0005020000000000024
+Calculate artifical [reproevents] clock isotime: 2024-08-30 11:54:06.398046001
+from_offset=0.0, to_offset=0.314787
+offset=0.314787
+Calculate artifical [qrinfo] clock isotime: 2024-08-30 11:54:45.553151
+from_offset=0.0, to_offset=-0.0005020000000000024
+offset=-0.0005020000000000024
+Calculate artifical [reproevents] clock isotime: 2024-08-30 11:54:45.237862001
+from_offset=0.0, to_offset=0.314787
+offset=0.314787
+Calculate artifical [qrinfo] clock isotime: 2024-08-30 11:55:24.481612
+from_offset=0.0, to_offset=-0.0005020000000000024
+offset=-0.0005020000000000024
+Calculate artifical [reproevents] clock isotime: 2024-08-30 11:55:24.166323001
+Exit on   : 2024-09-10 17:33:27.304307
+Exit code : 0

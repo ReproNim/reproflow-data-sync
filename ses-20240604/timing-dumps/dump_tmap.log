@@ -1,9 +1,12 @@
 dump_tmap.py tool
-Started on    : 2024-09-10 14:21:35.806339, vmelnik@Uranus
+Started on    : 2024-09-10 17:33:02.982867, vmelnik@Uranus
 Working dir   : /Users/vmelnik/Projects/Dartmouth/branches/reproflow-data-sync/code
 Session path  : /Users/vmelnik/Projects/Dartmouth/branches/typhon/reproflow-data-sync/ses-20240604
 Session ID    : ses-20240604
+Loading tmap  : /Users/vmelnik/Projects/Dartmouth/branches/reproflow-data-sync/code/repronim_tmap.jsonl
+              : TMap marks count 5 : [0]=2024-05-28T11:09:00.647672, [1]=2024-06-04T13:54:19.385115, [2]=2024-08-09T10:31:40.686521, [3]=2024-08-09T10:33:21.970882, [4]=2024-08-09T10:35:07.839213
+No dumps config found under /Users/vmelnik/Projects/Dartmouth/branches/typhon/reproflow-data-sync/ses-20240604/timing-dumps-config.yaml path, using defaults
 generate_tmap(/Users/vmelnik/Projects/Dartmouth/branches/typhon/reproflow-data-sync/ses-20240604/timing-dumps/dump_marks.jsonl)
 Found full mark count 1: [{'type': 'MarkRecord', 'session_id': 'ses-20240604', 'id': 'mark-000018', 'kind': 'Func series start', 'name': '006-func-bold_task-rest_run-2_start', 'target_ids': ['dicoms-000155', 'birch-000002', 'qrinfo-000001', 'psychopy-000001', 'reproevents-000016'], 'dicoms_isotime': '2024-06-04T14:00:31.507500', 'dicoms_duration': 28.0, 'birch_isotime': '2024-06-04T13:54:19.385115', 'birch_duration': 27.991215, 'qrinfo_isotime': '2024-06-04T13:54:19.703000', 'qrinfo_duration': 27.634, 'psychopy_isotime': '2024-06-04T13:54:19.369889', 'psychopy_duration': 27.997664, 'reproevents_isotime': '2024-06-04T13:54:19.377161', 'reproevents_duration': 28.00006}]
-Exit on   : 2024-09-10 14:21:35.814037
+Exit on   : 2024-09-10 17:33:02.989744
 Exit code : 0
