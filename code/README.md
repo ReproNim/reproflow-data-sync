@@ -98,6 +98,31 @@ TBD:
 ### Code and Tools
 TBD: 
 
+### Ad-hoc command line invocations
+
+While investigating the offsets on 20240912, following commands were used
+to look at the offset between AcquisitionTime and the time extract from SOP for
+the first volume in each series 
+
+    for v in *run*/0000011.dcm; do t_acq=$(dcmdump +P 0008,0032 $v | tr '\n' ' ' | sed -e 's,.*\[,,' -e 's,\].*,,g') ; t_sl1=$(dcmdump +P 0008,2112 $v | grep ReferencedSOPInstanceUID | head -n 1 | sed -e 's,.*.20240830\(......\)\(...\).*,\1.\2,g'); d=$(python -c "f=lambda x:int(str(x)[2:4])*60+float(str(x)[4:]); print(f($t_acq) - f($t_sl1))"); echo -e "$v\t$t_acq\t$t_sl1\tdiff=$d"; done
+
+which showed:
+
+    005-func-bold_task-rest_acq-short1_run-01/0000011.dcm	113522.702500	113522.436	diff=0.2664999999997235
+    006-func-bold_task-rest_acq-short1_run-02/0000011.dcm	113738.460000	113737.791	diff=0.668999999999869
+    007-func-bold_task-rest_acq-short1_run-03/0000011.dcm	113904.470000	113903.955	diff=0.5149999999998727
+    008-func-bold_task-rest_acq-short1_run-04/0000011.dcm	114245.472500	114245.420	diff=0.05249999999978172
+    009-func-bold_task-rest_acq-med1_run-01/0000011.dcm	114426.497500	114426.384	diff=0.11349999999993088
+    010-func-bold_task-rest_acq-short2_run-01/0000011.dcm	115221.487500	115221.860	diff=-0.37249999999994543
+    011-func-bold_task-rest_acq-short2_run-02/0000011.dcm	115300.507500	115259.954	diff=0.5534999999999854
+    012-func-bold_task-rest_acq-short2_run-03/0000011.dcm	115339.485000	115338.778	diff=0.7070000000003347
+    013-func-bold_task-rest_acq-short2_run-04/0000011.dcm	115418.467500	115417.619	diff=0.8485000000000582
+    014-func-bold_task-rest_acq-short2_run-05/0000011.dcm	115456.477500	115456.545	diff=-0.06750000000010914
+
+which we then compared to jumps in offsets within dicom_offsets -- found
+not congruency so far, but it might be worth adding a column on this
+difference.
+
 ## Algorithm
 Algorithm proposals for the ReproFlow time synchronization effort:
 - Collect data from different sources: psychopy logs, DICOMs, and videos with QR codes with `collect_data.sh` script. As result it should produce session folder like `ses-20240604` with all necessary data and structure listed below:
