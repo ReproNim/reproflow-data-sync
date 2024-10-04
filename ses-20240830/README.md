@@ -29,6 +29,7 @@
 
     note that we did not pass args so I had to use exec explicitly, also screen was 1 whioch is odd
 
+* short1_run-04.log -- should be good
 * med just one run-01 -- were getting short on time
 
 * 5 short ones automatically starting after each other -- with a single psychopy for all of them acq-short2_run-01-05.log
@@ -52,12 +53,14 @@ see similar jumps in offset?
       - 2024-08-30 11:46:56.080 [INFO] [3393844] frame=`34190` fps= 38 q=31.0 size=   19967kB time=00:09:28.97 bitrate= 287.5kbits/s speed=0.632x DTS 19356550163393, next:569
       - parse_wQR detected frame count: `34154`
     - root log in reproiner started recording 11:31:56, and stopped 11:48:03, somehow ffmpeg thread was terminated. And then at 11:56:13 capture was terminated by data/notification from device (Whack resolution).
-  - [ ] DICOMS MRI clock in this study has offset around -27 sec in contrast to +391 sec in previous session. This 7 minutes gap or jump causes current match series algorithm to fail. Probably to see other swimlanes tmap record will be created manually for this series in `code/repronim_tmap.jsonl` file. Note: think about some command line option to dump_marks to explicitly specify clock offset, to stick and force specific time, rather than manual editing of tmap JSONL file. 
+  - [x] DICOMS MRI clock in this study has offset around -27 sec in contrast to +391 sec in previous session. This 7 minutes gap or jump causes current match series algorithm to fail. Probably to see other swimlanes tmap record will be created manually for this series in `code/repronim_tmap.jsonl` file. Note: think about some command line option to dump_marks to explicitly specify clock offset, to stick and force specific time, rather than manual editing of tmap JSONL file. 
   - [ ] `dump_reproevents.py` bad performance, need to optimize it (execution time around 40 sec).
-  - [ ] `reproevents/events.csv` doesn't contain any valid `client_time_iso` data. If possible we should look for older *.csv file if any:
+  - [x] `reproevents/events.csv` doesn't contain any valid `client_time_iso` data. If possible we should look for older *.csv file if any:
     - started at : 2024-08-30T`15:47:03`.055736-04:00
     - ended   at : 2024-08-30T`20:02:33`.580731-04:00
     - but study range which in ISO time was `11:35:49 - 11:55:52`.
-  - [ ] `psychopy` logs conatins only last 7 series, and not 10 ones. Some information listed below:
+    - FIXED: was including the filename from which it was grepped, fixed in the `code/collect_data.sh`
+  - [x] `psychopy` logs contains only last 7 series, and not 10 ones. Some information listed below:
     - Time for first 3 series: `11:35:49 - 11:39:59` 
     - `20240830_acq-short1_run-01.log`, `20240830_acq-short1_run-02.log`, `20240830_acq-short1_run-03.log` contains only 2 header records and no event data at all.
+    - NOTE: all above is as expected, since (according to notes on the top), first 3 were f.cked up.
