@@ -101,6 +101,23 @@ class Clock(str, Enum):
     REPROSTIM_VIDEO = "reprostim_video"
 
 
+# Define period data model
+class TPeriodData(BaseModel):
+    key: Optional[str] = Field(None, description="Unique tmap key "
+                                                  "for back reference")
+    duration: Optional[float] = Field(
+        0.0, description="Reference period duration in seconds")
+    deviation: Optional[float] = Field(
+        1.0, description="Reference period deviation related to master clock")
+    dicoms_duration: Optional[float] = Field(
+        0.0, description="DICOMs period duration in seconds")
+    dicoms_deviation: Optional[float] = Field(
+        1.0, description="DICOMs period deviation related to master clock")
+    dicoms_valid: Optional[bool] = Field(
+        False, description="Specified DICOMs is valid and corresponds "
+                           "to expected deviations")
+
+
 # Define abstract timing map model
 class TMapRecord(BaseModel):
     isotime: Optional[datetime] = Field(
@@ -233,13 +250,91 @@ def get_tmap_deviation(clock: Clock, tmap: TMapRecord) -> float:
         raise ValueError(f"Unknown clock: {clock}")
 
 
+# get tmap unique key
+def get_tmap_key(tmap: TMapRecord) -> str:
+    return f"{tmap.session_id}|{tmap.mark_id}"
+
+
 # Define ReproNim timing map service
 class TMapService:
     def __init__(self, path_or_marks: str | List = None):
         self.marks = []
+        self.periods = {}
+        self.avg_period = TPeriodData()
         self._force_offset = {}
         if path_or_marks:
             self.load(path_or_marks)
+
+    # adjust clock offset using correction
+    def adjust_offset(self, offset: float,
+                      clock: Clock,
+                      dt: datetime,
+                      tmap: TMapRecord) -> float:
+        # limit to DICOMs clock only atm
+        if clock!=Clock.DICOMS:
+            return offset
+
+        # skip correction when offset manually is specified/hardcoded
+        if self._force_offset.get(clock.value) is not None:
+            return offset
+
+        tp: TPeriodData = self.get_period(tmap)
+        if not tp:
+            logger.debug("use avg period")
+            tp = self.avg_period
+
+        # delta sec
+        d: float = (dt - tmap.isotime).total_seconds()
+        correction: float = d * tp.dicoms_deviation - d
+        adjusted_offset: float = offset + correction
+        return adjusted_offset
+
+    # calculate inter-series periods based on sequential
+    # and sorted marks data
+    def calc_periods(self):
+        ap: TPeriodData = TPeriodData(valid = True,
+                                      duration=0.0,
+                                      deviation=1.0,
+                                      dicoms_duration=0.0,
+                                      dicoms_deviation=1.0,
+                                      dicoms_valid = True)
+        prev_mark: TMapRecord = None
+        for mark in self.marks:
+            if prev_mark:
+                tp: TPeriodData = TPeriodData()
+                tp.key = get_tmap_key(prev_mark)
+                tp.duration = (mark.isotime - prev_mark.isotime).total_seconds()
+                tp.deviation = 1.0
+                tp.dicoms_duration = (mark.dicoms_isotime -
+                                      prev_mark.dicoms_isotime).total_seconds()
+                if tp.duration and tp.duration!=0:
+                    tp.dicoms_deviation = tp.dicoms_duration/tp.duration
+                expected_offset: float = (prev_mark.dicoms_offset +
+                                          tp.duration * tp.dicoms_deviation -
+                                          tp.dicoms_duration)
+                offset_diff: float = expected_offset-mark.dicoms_offset
+                # detected clock correction, mark period as invalid
+                # tune this 30 sec interval later
+                tp.dicoms_valid = True if abs(offset_diff) < 30.0 else False
+                # logger.debug(f"expected_offset={expected_offset} / real={mark.dicoms_offset}, diff={offset_diff}, duration={tp.duration}, delta={tp.duration * tp.dicoms_deviation}")
+                # logger.debug(f"DELTA = {1000*(tp.dicoms_deviation-mark.dicoms_deviation)}")
+                self.periods[tp.key] = tp
+
+                # for valid periods calculate global average deviation
+                # where each valid deviation added proportionally to the
+                # period duration
+                if tp.dicoms_valid:
+                    ap.duration += tp.duration
+                    ap.dicoms_duration += tp.dicoms_duration;
+                    ap.dicoms_deviation += (tp.dicoms_duration/100)*tp.dicoms_deviation
+
+            prev_mark = mark
+
+        if ap.dicoms_duration!=0:
+            ap.dicoms_deviation /= ap.dicoms_duration / 100
+        ap.duration = round(ap.duration, 1)
+        ap.dicoms_duration = round(ap.dicoms_duration, 1)
+        self.avg_period = ap
 
     # convert datetime from one ReproNim clock to another
     def convert(self,
@@ -262,12 +357,25 @@ class TMapService:
 
         # calculate offset
         from_offset: float = self.get_offset(from_clock, tmap)
+        from_offset = self.adjust_offset(from_offset,
+                                         from_clock, from_dt, tmap)
         to_offset: float = self.get_offset(to_clock, tmap)
+        to_offset = self.adjust_offset(to_offset, to_clock,
+                                       from_dt, tmap)
         logger.debug(f"from_offset={from_offset}, to_offset={to_offset}")
         offset: float = to_offset - from_offset
         logger.debug(f"offset={offset}")
 
         return from_dt + pd.Timedelta(offset, unit='s')
+
+    # for debug purposes report tmap table, calculated periods and
+    # global average periods if any
+    def dump_periods(self):
+        for i, m in enumerate(self.marks):
+            p: TPeriodData = self.get_period(m)
+            logger.info(f"[{i:03}] mark   : {m.model_dump_json()}")
+            logger.info(f"[{i:03}] period : {p.model_dump_json() if p else None}")
+        logger.info(f"avg period   : {self.avg_period.model_dump_json()}")
 
     # find tmap record by datetime and clock in sorted
     # list of marks
@@ -305,6 +413,11 @@ class TMapService:
             return self._force_offset[clock.value]
         return get_tmap_offset(clock, tmap)
 
+    # get period by tmap/mark
+    def get_period(self, tmap: TMapRecord) -> TPeriodData:
+        key: str = get_tmap_key(tmap)
+        return self.periods.get(key)
+
     # load marks from file
     def load(self, path_or_marks: str | List):
         if isinstance(path_or_marks, str):
@@ -316,6 +429,7 @@ class TMapService:
 
         # sort by isotime
         self.marks.sort(key=lambda x: x.isotime)
+        self.calc_periods()
 
     def to_label(self) -> str:
         # dump number of marks and each mark in format [N]=isotime
