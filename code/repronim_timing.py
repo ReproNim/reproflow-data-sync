@@ -283,6 +283,12 @@ class TMapService:
             logger.debug("use avg period")
             tp = self.avg_period
 
+        # for invalid periods use average deviation
+        # but in future this can be tuned up on demand
+        if not tp.dicoms_valid:
+            logger.debug("use avg period instead of invalid one")
+            tp = self.avg_period
+
         # delta sec
         d: float = (dt - tmap.isotime).total_seconds()
         correction: float = d * tp.dicoms_deviation - d
