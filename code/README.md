@@ -98,6 +98,31 @@ TBD:
 ### Code and Tools
 TBD: 
 
+### Ad-hoc command line invocations
+
+While investigating the offsets on 20240912, following commands were used
+to look at the offset between AcquisitionTime and the time extract from SOP for
+the first volume in each series 
+
+    for v in *run*/0000011.dcm; do t_acq=$(dcmdump +P 0008,0032 $v | tr '\n' ' ' | sed -e 's,.*\[,,' -e 's,\].*,,g') ; t_sl1=$(dcmdump +P 0008,2112 $v | grep ReferencedSOPInstanceUID | head -n 1 | sed -e 's,.*.20240830\(......\)\(...\).*,\1.\2,g'); d=$(python -c "f=lambda x:int(str(x)[2:4])*60+float(str(x)[4:]); print(f($t_acq) - f($t_sl1))"); echo -e "$v\t$t_acq\t$t_sl1\tdiff=$d"; done
+
+which showed:
+
+    005-func-bold_task-rest_acq-short1_run-01/0000011.dcm	113522.702500	113522.436	diff=0.2664999999997235
+    006-func-bold_task-rest_acq-short1_run-02/0000011.dcm	113738.460000	113737.791	diff=0.668999999999869
+    007-func-bold_task-rest_acq-short1_run-03/0000011.dcm	113904.470000	113903.955	diff=0.5149999999998727
+    008-func-bold_task-rest_acq-short1_run-04/0000011.dcm	114245.472500	114245.420	diff=0.05249999999978172
+    009-func-bold_task-rest_acq-med1_run-01/0000011.dcm	114426.497500	114426.384	diff=0.11349999999993088
+    010-func-bold_task-rest_acq-short2_run-01/0000011.dcm	115221.487500	115221.860	diff=-0.37249999999994543
+    011-func-bold_task-rest_acq-short2_run-02/0000011.dcm	115300.507500	115259.954	diff=0.5534999999999854
+    012-func-bold_task-rest_acq-short2_run-03/0000011.dcm	115339.485000	115338.778	diff=0.7070000000003347
+    013-func-bold_task-rest_acq-short2_run-04/0000011.dcm	115418.467500	115417.619	diff=0.8485000000000582
+    014-func-bold_task-rest_acq-short2_run-05/0000011.dcm	115456.477500	115456.545	diff=-0.06750000000010914
+
+which we then compared to jumps in offsets within dicom_offsets -- found
+not congruency so far, but it might be worth adding a column on this
+difference.
+
 ## Algorithm
 Algorithm proposals for the ReproFlow time synchronization effort:
 - Collect data from different sources: psychopy logs, DICOMs, and videos with QR codes with `collect_data.sh` script. As result it should produce session folder like `ses-20240604` with all necessary data and structure listed below:
@@ -145,22 +170,7 @@ Algorithm proposals for the ReproFlow time synchronization effort:
   - first QR code in each series has strange datetime offset around +0.320 sec (or 20 frames later on 60.0 FPS video) from other QR codes. Most likely it's related to Python script code presenting QR in experiments.
   - QR codes processing is not fast, looks like `reprostim/Parsing/generate_qrinfo.sh` script execution time is around x1-x4 slower comparing to related video, e.g. for 5 minutes video like 1920x1080, 60 FPS it can take up to 20 minutes to process. So in future it would be good idea to optimize `parse_wQR.py` script for better performance on demand.
 
-- `ses-20240528`
-  - problem to match other swimlanes with DICOMs at this moment, WiP. 
-  - [ ] `qrinfo` data is not clean and consistent, but we have item with id `qrinfo-000006` and `keys_time_str` as `2024-05-28T11:06:29.435718-04:00`. This corresponds to `psychopy-000001`. Use this mapping between psychopy and qrinfo to match both swimlanes.
-  - [ ] `dumps` series `005-func-bold_task-rest_run-1` has only 2 scans. And it looks like we have some small series in `qrinfo` and `psychopy` logs. Need to investigate this and if possible include series in marks.
-- `ses-20240604`
-  - produces most matches at this moment, but still some issues with psychopy, reprostim_video etc.
-  - [ ] `dicoms` series `008-func-bold_task-rest_run-4_start` has invalid mapping with birch,psychopy and reproevents and as result invalid dicoms_offset 448 sec instead of 372 sec.
-- `ses-20240809`
-  - [x] under investigation, produces performance issues which partially are fixed, and swimlane matching issues.
-  - [x] `birch` data for first 3 func scan x15 is omitted somehow and started from `008-func-bold_task-rest_acq-short1_run-04` at 10:27:12. This is ok for provided logs, somehow birch device is restarted in the middle of the scan.
-  - [x] `psychopy` data for first 3 func scan x15 is omitted somehow and started from `008-func-bold_task-rest_acq-short1_run-04` at 10:27:12. This is ok for provided logs.
-  - [x] `psychopy\20240809_acq-med1_run-01.log` contains only 30 records rather than 150 ones. After manual inspection it looks like it's cut in the middle of the scan at 10:39:06 rather than 10:43:06. So it's broken input data from psychopy.
-  - [ ] `qrinfo` it looks like video duration is only 6:37 instead of 32:07 (based on reprostim json metadata and `2024.08.09-10.31.00.087--2024.08.09-11.03.07.318.mkv` file name ), and it contains only 3 short series of QRs. Need in future investigation of `reprostim-videocapture` utility and `ffmpeg` params.
-  - [ ] `reproevents` started from `reproevents-000263` it produces invalid data. There are a lot of records in `events.csv/@client_time_iso` with time like `2024-08-09T10:49:39`. Real series time range based on the swimlanes is around `10:47:48`--`10:52:46` and scans count is 150. So it looks like some performance issues on hardware or software side recording events log.
-  - [ ] `reproevents` related to original lines in `events.csv` `638:639`, `747:748` `server_time` 217.389434 and 339.392153 has untypical duration 4 and 14 sec instead of 2 sec. 
-  - [ ] `reproevents` related to `013-func-bold_task-rest_acq-med1_run-02` series with 150 slices contains only 143 events instead of 150 ones, 7 are missed somehow. Series NTP EST time is `10:47:48`--`10:52:46` .
+
 
 ## TODO:
   - Use DataLad run to execute commands (https://handbook.datalad.org/en/latest/basics/basics-run.html)
