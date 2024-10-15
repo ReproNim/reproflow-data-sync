@@ -1,0 +1,17 @@
+# Sample configuration file for "timing-dumps" scripts
+# to be placed in the certain session directory
+
+# Provide custom clock offset to fix time gap
+# manually
+clock_offsets:
+#  dicoms: 0.0
+
+# Specify clock/swimlanes to be skipped
+# for sessions to force building of tmap anyway
+skip_swimlanes:
+#  - birch
+#  - dicoms
+#  - psychopy
+#  - qrinfo
+#  - reproevents
+#  - reprostim_video
