@@ -1,0 +1,155 @@
+#!/usr/bin/env python3
+# TODO: review https://psychopy.org/api/sound/playback.html and possibly use PTB's 
+# facilities in PsychoPy for precise audio placement in time.
+#
+from time import time, sleep
+t0 = time()
+
+import glob
+import sys
+import os
+import json
+from datetime import datetime
+
+import qrcode
+from psychopy import prefs
+prefs.hardware['audioLib'] = ['ptb', 'pyo','pygame']
+from psychopy import sound
+from psychopy import visual, core, event, clock
+
+import numpy as np
+
+# 'interval'
+mode = 'event'
+interval = 2
+
+
+logfn = sys.argv[1]
+# logfn = "../data/{0}/run{1}_logfile.csv".format(acqNum, runNum)
+if os.path.exists(logfn):
+    raise RuntimeError(f"Log file {logfn} already exists")
+
+def get_iso_time(t):
+    return datetime.fromtimestamp(t).astimezone().isoformat()
+
+def get_times():
+    t = time()
+    return t, get_iso_time(t)
+
+
+def mkrec(**kwargs):
+    t, tstr = get_times()
+    kwargs.update({
+        "logfn": logfn,
+        "time": t,
+        "time_formatted": tstr,
+        "mode": mode,
+    })
+    if mode == 'interval':
+        kwargs['interval'] = interval
+    return kwargs
+
+
+from psychopy import sound, core
+
+# Function to play a beep at a specific frequency and duration
+def play_beep(frequency, duration, volume=1.0):
+    # Create a sound object with the specified frequency
+    beep = sound.Sound(frequency, secs=duration, volume=volume)
+    beep.play()
+    sound_time = get_times()
+    core.wait(duration)  # Wait for the beep to finish
+    return sound_time
+
+
+# print(json.dumps(mkrec(blah=123), indent=4))
+
+f = open(logfn, "w")
+
+def log(rec):
+    f.write(json.dumps(rec).rstrip() + os.linesep)
+
+win = visual.Window(fullscr=True, screen=int(sys.argv[2]))
+win.mouseVisible = False # hides the mouse pointer 
+
+log(mkrec(event="started", start_time=t0, start_time_formatted=get_iso_time(t0)))
+
+message = visual.TextStim(win, text="""Waiting for scanner trigger.\nInstructions
+        for Participant...""")
+message.draw()
+
+fixation = visual.TextStim(win, text='+')
+reproinMessage = visual.TextStim(win, text="", pos=(0, -.7),
+        height=.05)
+
+win.flip()
+
+
+fixation.draw()  # Change properties of existing stim
+win.flip()
+
+spd = 0.500 # Stimulus Presentation Duration
+soa = 6.000 # Stimulus Onset Asynchrony
+ntrials = 300
+iwt = 5 # Initial Wait Time between scanner trigger and first stimulus
+
+stim_images = []
+stim_names = []
+keys = []  # None received/expected
+
+clk = clock.Clock()
+t_start = time()
+
+
+for acqNum in range(ntrials):
+
+    rec = mkrec(
+        event="trigger",
+        acqNum=acqNum
+    )
+
+    if mode == 'event':
+        print("Waiting for an event")
+        keys = event.waitKeys(maxWait=120) # keyList=['5'])
+    elif mode == 'interval': 
+        target_time = t_start + acqNum * interval
+        to_wait = target_time - time()
+        # sleep some part of it if long enough
+        if to_wait >= .2:
+            sleep(to_wait * 0.7)
+        # busy loop without sleep to not miss it
+        while time() < target_time:
+            pass
+    else:
+        raise ValueError(mode)
+   
+    freq = 2000 + (100*acqNum)
+    beep = sound.Sound(freq, secs=0.5, volume=0.8, sampleRate=44100, stereo=True)
+    beep.play()
+    rec['sound_time'] = get_times()
+    rec['sound_freq'] = freq
+    rec['keys'] = keys
+    tkeys, tkeys_str = get_times()
+    rec["keys_time"] = tkeys
+    rec["keys_time_str"] = tkeys_str
+    qr = visual.ImageStim(win,
+                          qrcode.make(json.dumps(rec)),
+                          pos=(0, 0)
+                          )
+    qr.size = qr.size *1 
+    qr.draw()
+    win.flip()
+    tflip, tflip_str = get_times()
+    rec['time_flip'] = tflip
+    rec['time_flip_formatted'] = tflip_str
+    core.wait(0.5)
+    fixation.draw()
+    win.flip()
+    toff, toff_str = get_times()
+    rec['prior_time_off'] = toff
+    rec['prior_time_off_str'] = toff_str
+    log(rec)
+    if 'q' in keys:
+        break
+
+f.close()

@@ -11,6 +11,8 @@ now it is psychopy-2024.2.1 in ~/miniconda3
 
   so we should be ok with sound
 
+  - tested some recordings done by others later in the day (not in this repo) -- sounds recorded well!
+
 - chatted with chatgpt 
 
   - chatgpt-psychopy-1.py -- basic to get things going
@@ -19,4 +21,5 @@ now it is psychopy-2024.2.1 in ~/miniconda3
  
 - committed changes which should have produced some sound but none came out TODO
 
-- TODO: copy data!
+- copied the data
+  - apparently no birch!  I guess was rebooted and not remounted :-/
