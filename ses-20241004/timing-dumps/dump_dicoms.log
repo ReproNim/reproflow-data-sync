@@ -1,0 +1,1088 @@
+dump_dicoms.py tool
+Started on    : 2024-10-25 16:35:27.686146, vmelnik@Uranus
+Working dir   : /Users/vmelnik/Projects/Dartmouth/branches/reproflow-data-sync/code
+Session path  : /Users/vmelnik/Projects/Dartmouth/branches/typhon/reproflow-data-sync/ses-20241004
+Session ID    : ses-20241004
+DICOMS path   : /Users/vmelnik/Projects/Dartmouth/branches/typhon/reproflow-data-sync/ses-20241004/DICOMS
+Reading DICOM root : /Users/vmelnik/Projects/Dartmouth/branches/typhon/reproflow-data-sync/ses-20241004/DICOMS
+Reading DICOM dir  : 001-anat-scout_ses-{date}
+  0000011.dcm
+    Study           = dbic^QA
+    Series          = anat-scout_ses-{date}
+    AcquisitionDate = 20241004
+    AcquisitionTime = 093012.917500
+  0000021.dcm
+    Study           = dbic^QA
+    Series          = anat-scout_ses-{date}
+    AcquisitionDate = 20241004
+    AcquisitionTime = 093012.917500
+  0000031.dcm
+    Study           = dbic^QA
+    Series          = anat-scout_ses-{date}
+    AcquisitionDate = 20241004
+    AcquisitionTime = 093012.917500
+  0000041.dcm
+    Study           = dbic^QA
+    Series          = anat-scout_ses-{date}
+    AcquisitionDate = 20241004
+    AcquisitionTime = 093012.917500
+  0000051.dcm
+    Study           = dbic^QA
+    Series          = anat-scout_ses-{date}
+    AcquisitionDate = 20241004
+    AcquisitionTime = 093012.917500
+  0000061.dcm
+    Study           = dbic^QA
+    Series          = anat-scout_ses-{date}
+    AcquisitionDate = 20241004
+    AcquisitionTime = 093012.917500
+  0000071.dcm
+    Study           = dbic^QA
+    Series          = anat-scout_ses-{date}
+    AcquisitionDate = 20241004
+    AcquisitionTime = 093012.917500
+  0000081.dcm
+    Study           = dbic^QA
+    Series          = anat-scout_ses-{date}
+    AcquisitionDate = 20241004
+    AcquisitionTime = 093012.917500
+  0000091.dcm
+    Study           = dbic^QA
+    Series          = anat-scout_ses-{date}
+    AcquisitionDate = 20241004
+    AcquisitionTime = 093012.917500
+  0000101.dcm
+    Study           = dbic^QA
+    Series          = anat-scout_ses-{date}
+    AcquisitionDate = 20241004
+    AcquisitionTime = 093012.917500
+  0000111.dcm
+    Study           = dbic^QA
+    Series          = anat-scout_ses-{date}
+    AcquisitionDate = 20241004
+    AcquisitionTime = 093012.917500
+  0000121.dcm
+    Study           = dbic^QA
+    Series          = anat-scout_ses-{date}
+    AcquisitionDate = 20241004
+    AcquisitionTime = 093012.917500
+  0000131.dcm
+    Study           = dbic^QA
+    Series          = anat-scout_ses-{date}
+    AcquisitionDate = 20241004
+    AcquisitionTime = 093012.917500
+  0000141.dcm
+    Study           = dbic^QA
+    Series          = anat-scout_ses-{date}
+    AcquisitionDate = 20241004
+    AcquisitionTime = 093012.917500
+  0000151.dcm
+    Study           = dbic^QA
+    Series          = anat-scout_ses-{date}
+    AcquisitionDate = 20241004
+    AcquisitionTime = 093012.917500
+  0000161.dcm
+    Study           = dbic^QA
+    Series          = anat-scout_ses-{date}
+    AcquisitionDate = 20241004
+    AcquisitionTime = 093012.917500
+  0000171.dcm
+    Study           = dbic^QA
+    Series          = anat-scout_ses-{date}
+    AcquisitionDate = 20241004
+    AcquisitionTime = 093012.917500
+  0000181.dcm
+    Study           = dbic^QA
+    Series          = anat-scout_ses-{date}
+    AcquisitionDate = 20241004
+    AcquisitionTime = 093012.917500
+  0000191.dcm
+    Study           = dbic^QA
+    Series          = anat-scout_ses-{date}
+    AcquisitionDate = 20241004
+    AcquisitionTime = 093012.917500
+  0000201.dcm
+    Study           = dbic^QA
+    Series          = anat-scout_ses-{date}
+    AcquisitionDate = 20241004
+    AcquisitionTime = 093012.917500
+  0000211.dcm
+    Study           = dbic^QA
+    Series          = anat-scout_ses-{date}
+    AcquisitionDate = 20241004
+    AcquisitionTime = 093012.917500
+  0000221.dcm
+    Study           = dbic^QA
+    Series          = anat-scout_ses-{date}
+    AcquisitionDate = 20241004
+    AcquisitionTime = 093012.917500
+  0000231.dcm
+    Study           = dbic^QA
+    Series          = anat-scout_ses-{date}
+    AcquisitionDate = 20241004
+    AcquisitionTime = 093012.917500
+  0000241.dcm
+    Study           = dbic^QA
+    Series          = anat-scout_ses-{date}
+    AcquisitionDate = 20241004
+    AcquisitionTime = 093012.917500
+  0000251.dcm
+    Study           = dbic^QA
+    Series          = anat-scout_ses-{date}
+    AcquisitionDate = 20241004
+    AcquisitionTime = 093012.917500
+  0000261.dcm
+    Study           = dbic^QA
+    Series          = anat-scout_ses-{date}
+    AcquisitionDate = 20241004
+    AcquisitionTime = 093012.917500
+  0000271.dcm
+    Study           = dbic^QA
+    Series          = anat-scout_ses-{date}
+    AcquisitionDate = 20241004
+    AcquisitionTime = 093012.917500
+  0000281.dcm
+    Study           = dbic^QA
+    Series          = anat-scout_ses-{date}
+    AcquisitionDate = 20241004
+    AcquisitionTime = 093012.917500
+  0000291.dcm
+    Study           = dbic^QA
+    Series          = anat-scout_ses-{date}
+    AcquisitionDate = 20241004
+    AcquisitionTime = 093012.917500
+  0000301.dcm
+    Study           = dbic^QA
+    Series          = anat-scout_ses-{date}
+    AcquisitionDate = 20241004
+    AcquisitionTime = 093012.917500
+  0000311.dcm
+    Study           = dbic^QA
+    Series          = anat-scout_ses-{date}
+    AcquisitionDate = 20241004
+    AcquisitionTime = 093012.917500
+  0000321.dcm
+    Study           = dbic^QA
+    Series          = anat-scout_ses-{date}
+    AcquisitionDate = 20241004
+    AcquisitionTime = 093012.917500
+  0000331.dcm
+    Study           = dbic^QA
+    Series          = anat-scout_ses-{date}
+    AcquisitionDate = 20241004
+    AcquisitionTime = 093012.917500
+  0000341.dcm
+    Study           = dbic^QA
+    Series          = anat-scout_ses-{date}
+    AcquisitionDate = 20241004
+    AcquisitionTime = 093012.917500
+  0000351.dcm
+    Study           = dbic^QA
+    Series          = anat-scout_ses-{date}
+    AcquisitionDate = 20241004
+    AcquisitionTime = 093012.917500
+  0000361.dcm
+    Study           = dbic^QA
+    Series          = anat-scout_ses-{date}
+    AcquisitionDate = 20241004
+    AcquisitionTime = 093012.917500
+  0000371.dcm
+    Study           = dbic^QA
+    Series          = anat-scout_ses-{date}
+    AcquisitionDate = 20241004
+    AcquisitionTime = 093012.917500
+  0000381.dcm
+    Study           = dbic^QA
+    Series          = anat-scout_ses-{date}
+    AcquisitionDate = 20241004
+    AcquisitionTime = 093012.917500
+  0000391.dcm
+    Study           = dbic^QA
+    Series          = anat-scout_ses-{date}
+    AcquisitionDate = 20241004
+    AcquisitionTime = 093012.917500
+  0000401.dcm
+    Study           = dbic^QA
+    Series          = anat-scout_ses-{date}
+    AcquisitionDate = 20241004
+    AcquisitionTime = 093012.917500
+  0000411.dcm
+    Study           = dbic^QA
+    Series          = anat-scout_ses-{date}
+    AcquisitionDate = 20241004
+    AcquisitionTime = 093012.917500
+  0000421.dcm
+    Study           = dbic^QA
+    Series          = anat-scout_ses-{date}
+    AcquisitionDate = 20241004
+    AcquisitionTime = 093012.917500
+  0000431.dcm
+    Study           = dbic^QA
+    Series          = anat-scout_ses-{date}
+    AcquisitionDate = 20241004
+    AcquisitionTime = 093012.917500
+  0000441.dcm
+    Study           = dbic^QA
+    Series          = anat-scout_ses-{date}
+    AcquisitionDate = 20241004
+    AcquisitionTime = 093012.917500
+  0000451.dcm
+    Study           = dbic^QA
+    Series          = anat-scout_ses-{date}
+    AcquisitionDate = 20241004
+    AcquisitionTime = 093012.917500
+  0000461.dcm
+    Study           = dbic^QA
+    Series          = anat-scout_ses-{date}
+    AcquisitionDate = 20241004
+    AcquisitionTime = 093012.917500
+  0000471.dcm
+    Study           = dbic^QA
+    Series          = anat-scout_ses-{date}
+    AcquisitionDate = 20241004
+    AcquisitionTime = 093012.917500
+  0000481.dcm
+    Study           = dbic^QA
+    Series          = anat-scout_ses-{date}
+    AcquisitionDate = 20241004
+    AcquisitionTime = 093012.917500
+  0000491.dcm
+    Study           = dbic^QA
+    Series          = anat-scout_ses-{date}
+    AcquisitionDate = 20241004
+    AcquisitionTime = 093012.917500
+  0000501.dcm
+    Study           = dbic^QA
+    Series          = anat-scout_ses-{date}
+    AcquisitionDate = 20241004
+    AcquisitionTime = 093012.917500
+  0000511.dcm
+    Study           = dbic^QA
+    Series          = anat-scout_ses-{date}
+    AcquisitionDate = 20241004
+    AcquisitionTime = 093012.917500
+  0000521.dcm
+    Study           = dbic^QA
+    Series          = anat-scout_ses-{date}
+    AcquisitionDate = 20241004
+    AcquisitionTime = 093012.917500
+  0000531.dcm
+    Study           = dbic^QA
+    Series          = anat-scout_ses-{date}
+    AcquisitionDate = 20241004
+    AcquisitionTime = 093012.917500
+  0000541.dcm
+    Study           = dbic^QA
+    Series          = anat-scout_ses-{date}
+    AcquisitionDate = 20241004
+    AcquisitionTime = 093012.917500
+  0000551.dcm
+    Study           = dbic^QA
+    Series          = anat-scout_ses-{date}
+    AcquisitionDate = 20241004
+    AcquisitionTime = 093012.917500
+  0000561.dcm
+    Study           = dbic^QA
+    Series          = anat-scout_ses-{date}
+    AcquisitionDate = 20241004
+    AcquisitionTime = 093012.917500
+  0000571.dcm
+    Study           = dbic^QA
+    Series          = anat-scout_ses-{date}
+    AcquisitionDate = 20241004
+    AcquisitionTime = 093012.917500
+  0000581.dcm
+    Study           = dbic^QA
+    Series          = anat-scout_ses-{date}
+    AcquisitionDate = 20241004
+    AcquisitionTime = 093012.917500
+  0000591.dcm
+    Study           = dbic^QA
+    Series          = anat-scout_ses-{date}
+    AcquisitionDate = 20241004
+    AcquisitionTime = 093012.917500
+  0000601.dcm
+    Study           = dbic^QA
+    Series          = anat-scout_ses-{date}
+    AcquisitionDate = 20241004
+    AcquisitionTime = 093012.917500
+  0000611.dcm
+    Study           = dbic^QA
+    Series          = anat-scout_ses-{date}
+    AcquisitionDate = 20241004
+    AcquisitionTime = 093012.917500
+  0000621.dcm
+    Study           = dbic^QA
+    Series          = anat-scout_ses-{date}
+    AcquisitionDate = 20241004
+    AcquisitionTime = 093012.917500
+  0000631.dcm
+    Study           = dbic^QA
+    Series          = anat-scout_ses-{date}
+    AcquisitionDate = 20241004
+    AcquisitionTime = 093012.917500
+  0000641.dcm
+    Study           = dbic^QA
+    Series          = anat-scout_ses-{date}
+    AcquisitionDate = 20241004
+    AcquisitionTime = 093012.917500
+  0000651.dcm
+    Study           = dbic^QA
+    Series          = anat-scout_ses-{date}
+    AcquisitionDate = 20241004
+    AcquisitionTime = 093012.917500
+  0000661.dcm
+    Study           = dbic^QA
+    Series          = anat-scout_ses-{date}
+    AcquisitionDate = 20241004
+    AcquisitionTime = 093012.917500
+  0000671.dcm
+    Study           = dbic^QA
+    Series          = anat-scout_ses-{date}
+    AcquisitionDate = 20241004
+    AcquisitionTime = 093012.917500
+  0000681.dcm
+    Study           = dbic^QA
+    Series          = anat-scout_ses-{date}
+    AcquisitionDate = 20241004
+    AcquisitionTime = 093012.917500
+  0000691.dcm
+    Study           = dbic^QA
+    Series          = anat-scout_ses-{date}
+    AcquisitionDate = 20241004
+    AcquisitionTime = 093012.917500
+  0000701.dcm
+    Study           = dbic^QA
+    Series          = anat-scout_ses-{date}
+    AcquisitionDate = 20241004
+    AcquisitionTime = 093012.917500
+  0000711.dcm
+    Study           = dbic^QA
+    Series          = anat-scout_ses-{date}
+    AcquisitionDate = 20241004
+    AcquisitionTime = 093012.917500
+  0000721.dcm
+    Study           = dbic^QA
+    Series          = anat-scout_ses-{date}
+    AcquisitionDate = 20241004
+    AcquisitionTime = 093012.917500
+  0000731.dcm
+    Study           = dbic^QA
+    Series          = anat-scout_ses-{date}
+    AcquisitionDate = 20241004
+    AcquisitionTime = 093012.917500
+  0000741.dcm
+    Study           = dbic^QA
+    Series          = anat-scout_ses-{date}
+    AcquisitionDate = 20241004
+    AcquisitionTime = 093012.917500
+  0000751.dcm
+    Study           = dbic^QA
+    Series          = anat-scout_ses-{date}
+    AcquisitionDate = 20241004
+    AcquisitionTime = 093012.917500
+  0000761.dcm
+    Study           = dbic^QA
+    Series          = anat-scout_ses-{date}
+    AcquisitionDate = 20241004
+    AcquisitionTime = 093012.917500
+  0000771.dcm
+    Study           = dbic^QA
+    Series          = anat-scout_ses-{date}
+    AcquisitionDate = 20241004
+    AcquisitionTime = 093012.917500
+  0000781.dcm
+    Study           = dbic^QA
+    Series          = anat-scout_ses-{date}
+    AcquisitionDate = 20241004
+    AcquisitionTime = 093012.917500
+  0000791.dcm
+    Study           = dbic^QA
+    Series          = anat-scout_ses-{date}
+    AcquisitionDate = 20241004
+    AcquisitionTime = 093012.917500
+  0000801.dcm
+    Study           = dbic^QA
+    Series          = anat-scout_ses-{date}
+    AcquisitionDate = 20241004
+    AcquisitionTime = 093012.917500
+  0000811.dcm
+    Study           = dbic^QA
+    Series          = anat-scout_ses-{date}
+    AcquisitionDate = 20241004
+    AcquisitionTime = 093012.917500
+  0000821.dcm
+    Study           = dbic^QA
+    Series          = anat-scout_ses-{date}
+    AcquisitionDate = 20241004
+    AcquisitionTime = 093012.917500
+  0000831.dcm
+    Study           = dbic^QA
+    Series          = anat-scout_ses-{date}
+    AcquisitionDate = 20241004
+    AcquisitionTime = 093012.917500
+  0000841.dcm
+    Study           = dbic^QA
+    Series          = anat-scout_ses-{date}
+    AcquisitionDate = 20241004
+    AcquisitionTime = 093012.917500
+  0000851.dcm
+    Study           = dbic^QA
+    Series          = anat-scout_ses-{date}
+    AcquisitionDate = 20241004
+    AcquisitionTime = 093012.917500
+  0000861.dcm
+    Study           = dbic^QA
+    Series          = anat-scout_ses-{date}
+    AcquisitionDate = 20241004
+    AcquisitionTime = 093012.917500
+  0000871.dcm
+    Study           = dbic^QA
+    Series          = anat-scout_ses-{date}
+    AcquisitionDate = 20241004
+    AcquisitionTime = 093012.917500
+  0000881.dcm
+    Study           = dbic^QA
+    Series          = anat-scout_ses-{date}
+    AcquisitionDate = 20241004
+    AcquisitionTime = 093012.917500
+  0000891.dcm
+    Study           = dbic^QA
+    Series          = anat-scout_ses-{date}
+    AcquisitionDate = 20241004
+    AcquisitionTime = 093012.917500
+  0000901.dcm
+    Study           = dbic^QA
+    Series          = anat-scout_ses-{date}
+    AcquisitionDate = 20241004
+    AcquisitionTime = 093012.917500
+  0000911.dcm
+    Study           = dbic^QA
+    Series          = anat-scout_ses-{date}
+    AcquisitionDate = 20241004
+    AcquisitionTime = 093012.917500
+  0000921.dcm
+    Study           = dbic^QA
+    Series          = anat-scout_ses-{date}
+    AcquisitionDate = 20241004
+    AcquisitionTime = 093012.917500
+  0000931.dcm
+    Study           = dbic^QA
+    Series          = anat-scout_ses-{date}
+    AcquisitionDate = 20241004
+    AcquisitionTime = 093012.917500
+  0000941.dcm
+    Study           = dbic^QA
+    Series          = anat-scout_ses-{date}
+    AcquisitionDate = 20241004
+    AcquisitionTime = 093012.917500
+  0000951.dcm
+    Study           = dbic^QA
+    Series          = anat-scout_ses-{date}
+    AcquisitionDate = 20241004
+    AcquisitionTime = 093012.917500
+  0000961.dcm
+    Study           = dbic^QA
+    Series          = anat-scout_ses-{date}
+    AcquisitionDate = 20241004
+    AcquisitionTime = 093012.917500
+  0000971.dcm
+    Study           = dbic^QA
+    Series          = anat-scout_ses-{date}
+    AcquisitionDate = 20241004
+    AcquisitionTime = 093012.917500
+  0000981.dcm
+    Study           = dbic^QA
+    Series          = anat-scout_ses-{date}
+    AcquisitionDate = 20241004
+    AcquisitionTime = 093012.917500
+  0000991.dcm
+    Study           = dbic^QA
+    Series          = anat-scout_ses-{date}
+    AcquisitionDate = 20241004
+    AcquisitionTime = 093012.917500
+  0001001.dcm
+    Study           = dbic^QA
+    Series          = anat-scout_ses-{date}
+    AcquisitionDate = 20241004
+    AcquisitionTime = 093012.917500
+  0001011.dcm
+    Study           = dbic^QA
+    Series          = anat-scout_ses-{date}
+    AcquisitionDate = 20241004
+    AcquisitionTime = 093012.917500
+  0001021.dcm
+    Study           = dbic^QA
+    Series          = anat-scout_ses-{date}
+    AcquisitionDate = 20241004
+    AcquisitionTime = 093012.917500
+  0001031.dcm
+    Study           = dbic^QA
+    Series          = anat-scout_ses-{date}
+    AcquisitionDate = 20241004
+    AcquisitionTime = 093012.917500
+  0001041.dcm
+    Study           = dbic^QA
+    Series          = anat-scout_ses-{date}
+    AcquisitionDate = 20241004
+    AcquisitionTime = 093012.917500
+  0001051.dcm
+    Study           = dbic^QA
+    Series          = anat-scout_ses-{date}
+    AcquisitionDate = 20241004
+    AcquisitionTime = 093012.917500
+  0001061.dcm
+    Study           = dbic^QA
+    Series          = anat-scout_ses-{date}
+    AcquisitionDate = 20241004
+    AcquisitionTime = 093012.917500
+  0001071.dcm
+    Study           = dbic^QA
+    Series          = anat-scout_ses-{date}
+    AcquisitionDate = 20241004
+    AcquisitionTime = 093012.917500
+  0001081.dcm
+    Study           = dbic^QA
+    Series          = anat-scout_ses-{date}
+    AcquisitionDate = 20241004
+    AcquisitionTime = 093012.917500
+  0001091.dcm
+    Study           = dbic^QA
+    Series          = anat-scout_ses-{date}
+    AcquisitionDate = 20241004
+    AcquisitionTime = 093012.917500
+  0001101.dcm
+    Study           = dbic^QA
+    Series          = anat-scout_ses-{date}
+    AcquisitionDate = 20241004
+    AcquisitionTime = 093012.917500
+  0001111.dcm
+    Study           = dbic^QA
+    Series          = anat-scout_ses-{date}
+    AcquisitionDate = 20241004
+    AcquisitionTime = 093012.917500
+  0001121.dcm
+    Study           = dbic^QA
+    Series          = anat-scout_ses-{date}
+    AcquisitionDate = 20241004
+    AcquisitionTime = 093012.917500
+  0001131.dcm
+    Study           = dbic^QA
+    Series          = anat-scout_ses-{date}
+    AcquisitionDate = 20241004
+    AcquisitionTime = 093012.917500
+  0001141.dcm
+    Study           = dbic^QA
+    Series          = anat-scout_ses-{date}
+    AcquisitionDate = 20241004
+    AcquisitionTime = 093012.917500
+  0001151.dcm
+    Study           = dbic^QA
+    Series          = anat-scout_ses-{date}
+    AcquisitionDate = 20241004
+    AcquisitionTime = 093012.917500
+  0001161.dcm
+    Study           = dbic^QA
+    Series          = anat-scout_ses-{date}
+    AcquisitionDate = 20241004
+    AcquisitionTime = 093012.917500
+  0001171.dcm
+    Study           = dbic^QA
+    Series          = anat-scout_ses-{date}
+    AcquisitionDate = 20241004
+    AcquisitionTime = 093012.917500
+  0001181.dcm
+    Study           = dbic^QA
+    Series          = anat-scout_ses-{date}
+    AcquisitionDate = 20241004
+    AcquisitionTime = 093012.917500
+  0001191.dcm
+    Study           = dbic^QA
+    Series          = anat-scout_ses-{date}
+    AcquisitionDate = 20241004
+    AcquisitionTime = 093012.917500
+  0001201.dcm
+    Study           = dbic^QA
+    Series          = anat-scout_ses-{date}
+    AcquisitionDate = 20241004
+    AcquisitionTime = 093012.917500
+  0001211.dcm
+    Study           = dbic^QA
+    Series          = anat-scout_ses-{date}
+    AcquisitionDate = 20241004
+    AcquisitionTime = 093012.917500
+  0001221.dcm
+    Study           = dbic^QA
+    Series          = anat-scout_ses-{date}
+    AcquisitionDate = 20241004
+    AcquisitionTime = 093012.917500
+  0001231.dcm
+    Study           = dbic^QA
+    Series          = anat-scout_ses-{date}
+    AcquisitionDate = 20241004
+    AcquisitionTime = 093012.917500
+  0001241.dcm
+    Study           = dbic^QA
+    Series          = anat-scout_ses-{date}
+    AcquisitionDate = 20241004
+    AcquisitionTime = 093012.917500
+  0001251.dcm
+    Study           = dbic^QA
+    Series          = anat-scout_ses-{date}
+    AcquisitionDate = 20241004
+    AcquisitionTime = 093012.917500
+  0001261.dcm
+    Study           = dbic^QA
+    Series          = anat-scout_ses-{date}
+    AcquisitionDate = 20241004
+    AcquisitionTime = 093012.917500
+  0001271.dcm
+    Study           = dbic^QA
+    Series          = anat-scout_ses-{date}
+    AcquisitionDate = 20241004
+    AcquisitionTime = 093012.917500
+  0001281.dcm
+    Study           = dbic^QA
+    Series          = anat-scout_ses-{date}
+    AcquisitionDate = 20241004
+    AcquisitionTime = 093012.917500
+Reading DICOM dir  : 002-anat-scout_ses-{date}_MPR_sag
+  0000011.dcm
+    Study           = dbic^QA
+    Series          = anat-scout_ses-{date}_MPR_sag
+    AcquisitionDate = 20241004
+    AcquisitionTime = 093012.917500
+  0000021.dcm
+    Study           = dbic^QA
+    Series          = anat-scout_ses-{date}_MPR_sag
+    AcquisitionDate = 20241004
+    AcquisitionTime = 093012.917500
+  0000031.dcm
+    Study           = dbic^QA
+    Series          = anat-scout_ses-{date}_MPR_sag
+    AcquisitionDate = 20241004
+    AcquisitionTime = 093012.917500
+  0000041.dcm
+    Study           = dbic^QA
+    Series          = anat-scout_ses-{date}_MPR_sag
+    AcquisitionDate = 20241004
+    AcquisitionTime = 093012.917500
+  0000051.dcm
+    Study           = dbic^QA
+    Series          = anat-scout_ses-{date}_MPR_sag
+    AcquisitionDate = 20241004
+    AcquisitionTime = 093012.917500
+Reading DICOM dir  : 003-anat-scout_ses-{date}_MPR_cor
+  0000011.dcm
+    Study           = dbic^QA
+    Series          = anat-scout_ses-{date}_MPR_cor
+    AcquisitionDate = 20241004
+    AcquisitionTime = 093012.917500
+  0000021.dcm
+    Study           = dbic^QA
+    Series          = anat-scout_ses-{date}_MPR_cor
+    AcquisitionDate = 20241004
+    AcquisitionTime = 093012.917500
+  0000031.dcm
+    Study           = dbic^QA
+    Series          = anat-scout_ses-{date}_MPR_cor
+    AcquisitionDate = 20241004
+    AcquisitionTime = 093012.917500
+Reading DICOM dir  : 004-anat-scout_ses-{date}_MPR_tra
+  0000011.dcm
+    Study           = dbic^QA
+    Series          = anat-scout_ses-{date}_MPR_tra
+    AcquisitionDate = 20241004
+    AcquisitionTime = 093012.917500
+  0000021.dcm
+    Study           = dbic^QA
+    Series          = anat-scout_ses-{date}_MPR_tra
+    AcquisitionDate = 20241004
+    AcquisitionTime = 093012.917500
+  0000031.dcm
+    Study           = dbic^QA
+    Series          = anat-scout_ses-{date}_MPR_tra
+    AcquisitionDate = 20241004
+    AcquisitionTime = 093012.917500
+Reading DICOM dir  : 005-func-bold_task-rest_acq-short1_run-01
+  0000011.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-short1_run-01
+    AcquisitionDate = 20241004
+    AcquisitionTime = 093105.742500
+  0000021.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-short1_run-01
+    AcquisitionDate = 20241004
+    AcquisitionTime = 093107.742500
+  0000031.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-short1_run-01
+    AcquisitionDate = 20241004
+    AcquisitionTime = 093109.742500
+  0000041.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-short1_run-01
+    AcquisitionDate = 20241004
+    AcquisitionTime = 093111.742500
+  0000051.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-short1_run-01
+    AcquisitionDate = 20241004
+    AcquisitionTime = 093113.742500
+  0000061.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-short1_run-01
+    AcquisitionDate = 20241004
+    AcquisitionTime = 093115.742500
+  0000071.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-short1_run-01
+    AcquisitionDate = 20241004
+    AcquisitionTime = 093117.742500
+  0000081.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-short1_run-01
+    AcquisitionDate = 20241004
+    AcquisitionTime = 093119.742500
+  0000091.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-short1_run-01
+    AcquisitionDate = 20241004
+    AcquisitionTime = 093121.742500
+  0000101.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-short1_run-01
+    AcquisitionDate = 20241004
+    AcquisitionTime = 093123.742500
+  0000111.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-short1_run-01
+    AcquisitionDate = 20241004
+    AcquisitionTime = 093125.742500
+  0000121.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-short1_run-01
+    AcquisitionDate = 20241004
+    AcquisitionTime = 093127.742500
+  0000131.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-short1_run-01
+    AcquisitionDate = 20241004
+    AcquisitionTime = 093129.742500
+  0000141.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-short1_run-01
+    AcquisitionDate = 20241004
+    AcquisitionTime = 093131.742500
+  0000151.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-short1_run-01
+    AcquisitionDate = 20241004
+    AcquisitionTime = 093133.742500
+Reading DICOM dir  : 006-func-bold_task-rest_acq-short1_run-02
+  0000011.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-short1_run-02
+    AcquisitionDate = 20241004
+    AcquisitionTime = 093215.490000
+  0000021.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-short1_run-02
+    AcquisitionDate = 20241004
+    AcquisitionTime = 093217.490000
+  0000031.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-short1_run-02
+    AcquisitionDate = 20241004
+    AcquisitionTime = 093219.490000
+  0000041.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-short1_run-02
+    AcquisitionDate = 20241004
+    AcquisitionTime = 093221.490000
+  0000051.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-short1_run-02
+    AcquisitionDate = 20241004
+    AcquisitionTime = 093223.490000
+  0000061.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-short1_run-02
+    AcquisitionDate = 20241004
+    AcquisitionTime = 093225.490000
+  0000071.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-short1_run-02
+    AcquisitionDate = 20241004
+    AcquisitionTime = 093227.490000
+  0000081.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-short1_run-02
+    AcquisitionDate = 20241004
+    AcquisitionTime = 093229.490000
+  0000091.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-short1_run-02
+    AcquisitionDate = 20241004
+    AcquisitionTime = 093231.490000
+  0000101.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-short1_run-02
+    AcquisitionDate = 20241004
+    AcquisitionTime = 093233.490000
+  0000111.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-short1_run-02
+    AcquisitionDate = 20241004
+    AcquisitionTime = 093235.490000
+  0000121.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-short1_run-02
+    AcquisitionDate = 20241004
+    AcquisitionTime = 093237.490000
+  0000131.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-short1_run-02
+    AcquisitionDate = 20241004
+    AcquisitionTime = 093239.490000
+  0000141.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-short1_run-02
+    AcquisitionDate = 20241004
+    AcquisitionTime = 093241.490000
+  0000151.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-short1_run-02
+    AcquisitionDate = 20241004
+    AcquisitionTime = 093243.490000
+Reading DICOM dir  : 007-func-bold_task-rest_acq-short1_run-03
+  0000011.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-short1_run-03
+    AcquisitionDate = 20241004
+    AcquisitionTime = 093333.510000
+  0000021.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-short1_run-03
+    AcquisitionDate = 20241004
+    AcquisitionTime = 093335.510000
+  0000031.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-short1_run-03
+    AcquisitionDate = 20241004
+    AcquisitionTime = 093337.510000
+  0000041.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-short1_run-03
+    AcquisitionDate = 20241004
+    AcquisitionTime = 093339.510000
+  0000051.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-short1_run-03
+    AcquisitionDate = 20241004
+    AcquisitionTime = 093341.510000
+  0000061.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-short1_run-03
+    AcquisitionDate = 20241004
+    AcquisitionTime = 093343.510000
+  0000071.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-short1_run-03
+    AcquisitionDate = 20241004
+    AcquisitionTime = 093345.510000
+  0000081.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-short1_run-03
+    AcquisitionDate = 20241004
+    AcquisitionTime = 093347.510000
+  0000091.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-short1_run-03
+    AcquisitionDate = 20241004
+    AcquisitionTime = 093349.510000
+  0000101.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-short1_run-03
+    AcquisitionDate = 20241004
+    AcquisitionTime = 093351.510000
+  0000111.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-short1_run-03
+    AcquisitionDate = 20241004
+    AcquisitionTime = 093353.510000
+  0000121.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-short1_run-03
+    AcquisitionDate = 20241004
+    AcquisitionTime = 093355.510000
+  0000131.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-short1_run-03
+    AcquisitionDate = 20241004
+    AcquisitionTime = 093357.510000
+  0000141.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-short1_run-03
+    AcquisitionDate = 20241004
+    AcquisitionTime = 093359.510000
+  0000151.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-short1_run-03
+    AcquisitionDate = 20241004
+    AcquisitionTime = 093401.510000
+Reading DICOM dir  : 008-func-bold_task-rest_acq-short1_run-04
+  0000011.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-short1_run-04
+    AcquisitionDate = 20241004
+    AcquisitionTime = 093514.505000
+  0000021.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-short1_run-04
+    AcquisitionDate = 20241004
+    AcquisitionTime = 093516.505000
+  0000031.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-short1_run-04
+    AcquisitionDate = 20241004
+    AcquisitionTime = 093518.505000
+  0000041.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-short1_run-04
+    AcquisitionDate = 20241004
+    AcquisitionTime = 093520.505000
+  0000051.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-short1_run-04
+    AcquisitionDate = 20241004
+    AcquisitionTime = 093522.505000
+  0000061.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-short1_run-04
+    AcquisitionDate = 20241004
+    AcquisitionTime = 093524.505000
+  0000071.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-short1_run-04
+    AcquisitionDate = 20241004
+    AcquisitionTime = 093526.505000
+  0000081.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-short1_run-04
+    AcquisitionDate = 20241004
+    AcquisitionTime = 093528.505000
+  0000091.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-short1_run-04
+    AcquisitionDate = 20241004
+    AcquisitionTime = 093530.505000
+  0000101.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-short1_run-04
+    AcquisitionDate = 20241004
+    AcquisitionTime = 093532.505000
+  0000111.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-short1_run-04
+    AcquisitionDate = 20241004
+    AcquisitionTime = 093534.505000
+  0000121.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-short1_run-04
+    AcquisitionDate = 20241004
+    AcquisitionTime = 093536.505000
+  0000131.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-short1_run-04
+    AcquisitionDate = 20241004
+    AcquisitionTime = 093538.505000
+  0000141.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-short1_run-04
+    AcquisitionDate = 20241004
+    AcquisitionTime = 093540.505000
+  0000151.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-short1_run-04
+    AcquisitionDate = 20241004
+    AcquisitionTime = 093542.505000
+Reading DICOM dir  : 009-func-bold_task-rest_acq-short1_run-05
+  0000011.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-short1_run-05
+    AcquisitionDate = 20241004
+    AcquisitionTime = 093622.497500
+  0000021.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-short1_run-05
+    AcquisitionDate = 20241004
+    AcquisitionTime = 093624.497500
+  0000031.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-short1_run-05
+    AcquisitionDate = 20241004
+    AcquisitionTime = 093626.497500
+  0000041.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-short1_run-05
+    AcquisitionDate = 20241004
+    AcquisitionTime = 093628.497500
+  0000051.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-short1_run-05
+    AcquisitionDate = 20241004
+    AcquisitionTime = 093630.497500
+  0000061.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-short1_run-05
+    AcquisitionDate = 20241004
+    AcquisitionTime = 093632.497500
+  0000071.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-short1_run-05
+    AcquisitionDate = 20241004
+    AcquisitionTime = 093634.497500
+  0000081.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-short1_run-05
+    AcquisitionDate = 20241004
+    AcquisitionTime = 093636.497500
+  0000091.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-short1_run-05
+    AcquisitionDate = 20241004
+    AcquisitionTime = 093638.497500
+  0000101.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-short1_run-05
+    AcquisitionDate = 20241004
+    AcquisitionTime = 093640.497500
+  0000111.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-short1_run-05
+    AcquisitionDate = 20241004
+    AcquisitionTime = 093642.497500
+  0000121.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-short1_run-05
+    AcquisitionDate = 20241004
+    AcquisitionTime = 093644.497500
+  0000131.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-short1_run-05
+    AcquisitionDate = 20241004
+    AcquisitionTime = 093646.497500
+  0000141.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-short1_run-05
+    AcquisitionDate = 20241004
+    AcquisitionTime = 093648.497500
+  0000151.dcm
+    Study           = dbic^QA
+    Series          = func-bold_task-rest_acq-short1_run-05
+    AcquisitionDate = 20241004
+    AcquisitionTime = 093650.497500
+Exit on   : 2024-10-25 16:35:28.006055
+Exit code : 0
