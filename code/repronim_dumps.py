@@ -24,6 +24,8 @@ class DumpsConfig(BaseModel):
                                                             "swimlanes. Key is clock "
                                                             "name and value is float "
                                                             "offset like in tmap.")
+    ref_swimlane: Optional[str] = Field("birch", description="Reference swimlane used for "
+                                                             "master clocks, default is birch.")
     skip_swimlanes: Optional[Set[str]] = Field(set(), description="List of swimlanes to "
                                                                "be skipped when calculating "
                                                                "tmap.")
