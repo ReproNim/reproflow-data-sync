@@ -1,5 +1,5 @@
 dump_birch.py tool
-Started on    : 2024-09-10 17:33:08.046019, vmelnik@Uranus
+Started on    : 2024-10-29 18:03:13.498884, vmelnik@Uranus
 Working dir   : /Users/vmelnik/Projects/Dartmouth/branches/reproflow-data-sync/code
 Session path  : /Users/vmelnik/Projects/Dartmouth/branches/typhon/reproflow-data-sync/ses-20240809
 Session ID    : ses-20240809
@@ -7,14 +7,15 @@ Dumps path    : /Users/vmelnik/Projects/Dartmouth/branches/typhon/reproflow-data
 DICOMS dump   : /Users/vmelnik/Projects/Dartmouth/branches/typhon/reproflow-data-sync/ses-20240809/timing-dumps/dump_dicoms.jsonl
 Birch path    : /Users/vmelnik/Projects/Dartmouth/branches/typhon/reproflow-data-sync/ses-20240809/birch
 Loading tmap  : /Users/vmelnik/Projects/Dartmouth/branches/reproflow-data-sync/code/repronim_tmap.jsonl
-              : TMap marks count 5 : [0]=2024-05-28T11:09:00.647672, [1]=2024-06-04T13:54:19.385115, [2]=2024-08-09T10:31:40.686521, [3]=2024-08-09T10:33:21.970882, [4]=2024-08-09T10:35:07.839213
+              : TMap marks count 13 : [0]=2024-05-28T11:09:00.647672, [1]=2024-06-04T13:54:19.385115, [2]=2024-08-09T10:31:40.686521, [3]=2024-08-09T10:33:21.970882, [4]=2024-08-09T10:35:07.839213, [5]=2024-08-30T11:43:13.027994, [6]=2024-08-30T11:44:53.989127, [7]=2024-08-30T11:52:48.702265, [8]=2024-08-30T11:53:27.575961, [9]=2024-08-30T11:54:06.398548, [10]=2024-08-30T11:54:45.238364, [11]=2024-08-30T11:55:24.166825, [12]=2024-10-04T09:36:38.766137
 No dumps config found under /Users/vmelnik/Projects/Dartmouth/branches/typhon/reproflow-data-sync/ses-20240809/timing-dumps-config.yaml path, using defaults
 Study range   : dicoms 2024-08-09 09:43:29.692500 - 2024-08-09 11:13:44.242500
-from_offset=372.122385, to_offset=0.0
-offset=-372.122385
-from_offset=391.608287, to_offset=0.0
-offset=-391.608287
-              : birch  2024-08-09 09:37:17.570115 - 2024-08-09 11:07:12.634213
+from_offset=391.19878208556236, to_offset=0.0
+offset=-391.19878208556236
+use avg period instead of invalid one
+from_offset=391.6411056906031, to_offset=0.0
+offset=-391.6411056906031
+              : birch  2024-08-09 09:36:58.493717914 - 2024-08-09 11:07:12.601394309
 Reading birch directory: /Users/vmelnik/Projects/Dartmouth/branches/typhon/reproflow-data-sync/ses-20240809/birch
   out.jsonl
 Processing    : /Users/vmelnik/Projects/Dartmouth/branches/typhon/reproflow-data-sync/ses-20240809/birch/out.jsonl
@@ -2187,5 +2188,5 @@ Skipping by alink_byte/alink_flags filter {'epoch_time': 1723262217.7557075, 'is
 Skipping by alink_byte/alink_flags filter {'epoch_time': 1723262277.7494802, 'iso_time': '2024-08-09T23:57:57.749480-04:00', 'time': 1494.560415, 'alink_byte': 240, 'alink_flags': 0}
 Skipping by alink_byte/alink_flags filter {'epoch_time': 1723262337.7533286, 'iso_time': '2024-08-09T23:58:57.753329-04:00', 'time': 1554.560442, 'alink_byte': 240, 'alink_flags': 0}
 Skipping by alink_byte/alink_flags filter {'epoch_time': 1723262397.752992, 'iso_time': '2024-08-09T23:59:57.752992-04:00', 'time': 1614.5609679999998, 'alink_byte': 240, 'alink_flags': 0}
-Exit on   : 2024-09-10 17:33:10.397214
+Exit on   : 2024-10-29 18:03:16.129997
 Exit code : 0

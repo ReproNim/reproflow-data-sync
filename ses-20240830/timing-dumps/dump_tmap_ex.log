@@ -1,10 +1,10 @@
 dump_tmap.py tool
-Started on    : 2024-09-10 17:33:27.941521, vmelnik@Uranus
+Started on    : 2024-10-29 18:03:35.259960, vmelnik@Uranus
 Working dir   : /Users/vmelnik/Projects/Dartmouth/branches/reproflow-data-sync/code
 Session path  : /Users/vmelnik/Projects/Dartmouth/branches/typhon/reproflow-data-sync/ses-20240830
 Session ID    : ses-20240830
 Loading tmap  : /Users/vmelnik/Projects/Dartmouth/branches/reproflow-data-sync/code/repronim_tmap.jsonl
-              : TMap marks count 5 : [0]=2024-05-28T11:09:00.647672, [1]=2024-06-04T13:54:19.385115, [2]=2024-08-09T10:31:40.686521, [3]=2024-08-09T10:33:21.970882, [4]=2024-08-09T10:35:07.839213
+              : TMap marks count 13 : [0]=2024-05-28T11:09:00.647672, [1]=2024-06-04T13:54:19.385115, [2]=2024-08-09T10:31:40.686521, [3]=2024-08-09T10:33:21.970882, [4]=2024-08-09T10:35:07.839213, [5]=2024-08-30T11:43:13.027994, [6]=2024-08-30T11:44:53.989127, [7]=2024-08-30T11:52:48.702265, [8]=2024-08-30T11:53:27.575961, [9]=2024-08-30T11:54:06.398548, [10]=2024-08-30T11:54:45.238364, [11]=2024-08-30T11:55:24.166825, [12]=2024-10-04T09:36:38.766137
 Loading dumps config from /Users/vmelnik/Projects/Dartmouth/branches/typhon/reproflow-data-sync/ses-20240830/timing-dumps-config.yaml
 forcing offset for dicoms: -26.780000
 generate_tmap(/Users/vmelnik/Projects/Dartmouth/branches/typhon/reproflow-data-sync/ses-20240830/timing-dumps/dump_marks.jsonl)
@@ -1839,5 +1839,5 @@ Calculate artifical [qrinfo] clock isotime: 2024-08-30 11:55:52.480970
 from_offset=0.0, to_offset=-0.0005020000000000024
 offset=-0.0005020000000000024
 Calculate artifical [reproevents] clock isotime: 2024-08-30 11:55:52.165681001
-Exit on   : 2024-09-10 17:33:28.622609
+Exit on   : 2024-10-29 18:03:35.981047
 Exit code : 0

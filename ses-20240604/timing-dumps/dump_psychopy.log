@@ -1,5 +1,5 @@
 dump_psychopy.py tool
-Started on    : 2024-09-10 17:32:58.233010, vmelnik@Uranus
+Started on    : 2024-10-29 18:03:01.944874, vmelnik@Uranus
 Working dir   : /Users/vmelnik/Projects/Dartmouth/branches/reproflow-data-sync/code
 Session path  : /Users/vmelnik/Projects/Dartmouth/branches/typhon/reproflow-data-sync/ses-20240604
 Session ID    : ses-20240604
@@ -8,14 +8,14 @@ DICOMS dump   : /Users/vmelnik/Projects/Dartmouth/branches/typhon/reproflow-data
 Psychopy path : /Users/vmelnik/Projects/Dartmouth/branches/typhon/reproflow-data-sync/ses-20240604/psychopy
 QRInfo path   : /Users/vmelnik/Projects/Dartmouth/branches/typhon/reproflow-data-sync/ses-20240604/timing-dumps/dump_qrinfo.jsonl
 Loading tmap  : /Users/vmelnik/Projects/Dartmouth/branches/reproflow-data-sync/code/repronim_tmap.jsonl
-              : TMap marks count 5 : [0]=2024-05-28T11:09:00.647672, [1]=2024-06-04T13:54:19.385115, [2]=2024-08-09T10:31:40.686521, [3]=2024-08-09T10:33:21.970882, [4]=2024-08-09T10:35:07.839213
+              : TMap marks count 13 : [0]=2024-05-28T11:09:00.647672, [1]=2024-06-04T13:54:19.385115, [2]=2024-08-09T10:31:40.686521, [3]=2024-08-09T10:33:21.970882, [4]=2024-08-09T10:35:07.839213, [5]=2024-08-30T11:43:13.027994, [6]=2024-08-30T11:44:53.989127, [7]=2024-08-30T11:52:48.702265, [8]=2024-08-30T11:53:27.575961, [9]=2024-08-30T11:54:06.398548, [10]=2024-08-30T11:54:45.238364, [11]=2024-08-30T11:55:24.166825, [12]=2024-10-04T09:36:38.766137
 No dumps config found under /Users/vmelnik/Projects/Dartmouth/branches/typhon/reproflow-data-sync/ses-20240604/timing-dumps-config.yaml path, using defaults
 Study range   : dicoms    2024-06-04 13:50:51.985000 - 2024-06-04 14:05:47.492500
-from_offset=370.854828, to_offset=-0.06638599999999995
-offset=-370.921214
-from_offset=372.122385, to_offset=-0.015225999999999962
-offset=-372.137611
-              : psychopy  2024-06-04 13:44:41.063786 - 2024-06-04 13:59:35.354889
+from_offset=372.12195733869567, to_offset=-0.06638599999999995
+offset=-372.1883433386957
+from_offset=372.1246930360809, to_offset=-0.015225999999999962
+offset=-372.13991903608087
+              : psychopy  2024-06-04 13:44:39.796656661 - 2024-06-04 13:59:35.352580964
 Loading QRInfo map from /Users/vmelnik/Projects/Dartmouth/branches/typhon/reproflow-data-sync/ses-20240604/timing-dumps/dump_qrinfo.jsonl
 Psychopy log files: ['20240604_run-4.log', '20240604_run-2.log', '20240604_run-3.log', '20240604_run-1.log']
 Psychopy log file: /Users/vmelnik/Projects/Dartmouth/branches/typhon/reproflow-data-sync/ses-20240604/psychopy/20240604_run-4.log
@@ -89,5 +89,5 @@ Time: 2024-06-04 13:51:53.722600, event: started, key0: None
 Skip, out of study range: {'event': 'started', 'logfn': '20240604_run-1.log', 'time': 1717523513.7226005, 'time_formatted': '2024-06-04T13:51:53.722600-04:00'}
 Time: 2024-06-04 13:51:54.538619, event: started, key0: None
 Skip, out of study range: {'event': 'started', 'logfn': '20240604_run-1.log', 'time': 1717523514.5386186, 'time_formatted': '2024-06-04T13:51:54.538619-04:00'}
-Exit on   : 2024-09-10 17:32:58.321979
+Exit on   : 2024-10-29 18:03:02.035929
 Exit code : 0

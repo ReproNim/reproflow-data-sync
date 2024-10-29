@@ -71,6 +71,15 @@ def calc_deviation(mark, field_name: str, ref_duration: float) -> float:
         return duration / ref_duration
 
 
+def calc_duration(cfg: DumpsConfig,
+                  fm,
+                  clock: Clock,
+                  ref_duration: float) -> float:
+    if clock in cfg.skip_swimlanes:
+        return ref_duration
+    return fm.get(f'{clock.value}_duration')
+
+
 def calc_isotime(cfg: DumpsConfig, mark,
                  clock: Clock, ref_isotime) -> datetime:
     swimlane = clock.value
@@ -132,27 +141,27 @@ def generate_tmap(cfg: DumpsConfig, session_id: str, path_marks: str,
         tmr.birch_id = get_dump_id("birch", target_ids)
         tmr.birch_isotime = ref_isotime
         tmr.birch_offset = 0.0
-        tmr.birch_duration = fm.get('birch_duration')
+        tmr.birch_duration = calc_duration(cfg, fm, Clock.BIRCH, ref_duration)
         tmr.birch_deviation = 1.0
         tmr.dicoms_id = get_dump_id("dicoms", target_ids)
         tmr.dicoms_isotime = calc_isotime(cfg, fm, Clock.DICOMS, ref_isotime)
         tmr.dicoms_offset = calc_offset(tmr.dicoms_isotime, tmr.isotime)
-        tmr.dicoms_duration = fm.get('dicoms_duration')
+        tmr.dicoms_duration = calc_duration(cfg, fm, Clock.DICOMS, ref_duration)
         tmr.dicoms_deviation = calc_deviation(fm, 'dicoms_duration', ref_duration)
         tmr.qrinfo_id = get_dump_id("qrinfo", target_ids)
         tmr.reprostim_video_isotime = calc_isotime(cfg, fm, Clock.QRINFO, ref_isotime)
         tmr.reprostim_video_offset = calc_offset(tmr.reprostim_video_isotime, tmr.isotime)
-        tmr.reprostim_video_duration = fm.get('qrinfo_duration')
+        tmr.reprostim_video_duration = calc_duration(cfg, fm, Clock.QRINFO, ref_duration)
         tmr.reprostim_video_deviation = calc_deviation(fm, 'qrinfo_duration', ref_duration)
         tmr.psychopy_id = get_dump_id("psychopy", target_ids)
         tmr.psychopy_isotime = calc_isotime(cfg, fm, Clock.PSYCHOPY, ref_isotime)
         tmr.psychopy_offset = calc_offset(tmr.psychopy_isotime, tmr.isotime)
-        tmr.psychopy_duration = fm.get('psychopy_duration')
+        tmr.psychopy_duration = calc_duration(cfg, fm, Clock.PSYCHOPY, ref_duration)
         tmr.psychopy_deviation = calc_deviation(fm, 'psychopy_duration', ref_duration)
         tmr.reproevents_id = get_dump_id("reproevents", target_ids)
         tmr.reproevents_isotime = calc_isotime(cfg, fm, Clock.REPROEVENTS, ref_isotime)
         tmr.reproevents_offset = calc_offset(tmr.reproevents_isotime, tmr.isotime)
-        tmr.reproevents_duration = fm.get('reproevents_duration')
+        tmr.reproevents_duration = calc_duration(cfg, fm, Clock.REPROEVENTS, ref_duration)
         tmr.reproevents_deviation = calc_deviation(fm, 'reproevents_duration', ref_duration)
         tmap.append(tmr)
         if format == 'jsonl':

@@ -1,5 +1,5 @@
 dump_reproevents.py tool
-Started on    : 2024-09-10 17:33:25.067887, vmelnik@Uranus
+Started on    : 2024-10-29 18:03:32.165839, vmelnik@Uranus
 Working dir   : /Users/vmelnik/Projects/Dartmouth/branches/reproflow-data-sync/code
 Session path  : /Users/vmelnik/Projects/Dartmouth/branches/typhon/reproflow-data-sync/ses-20240830
 Session ID    : ses-20240830
@@ -7,7 +7,7 @@ Dumps path    : /Users/vmelnik/Projects/Dartmouth/branches/typhon/reproflow-data
 DICOMS dump   : /Users/vmelnik/Projects/Dartmouth/branches/typhon/reproflow-data-sync/ses-20240830/timing-dumps/dump_dicoms.jsonl
 Reproevents path: /Users/vmelnik/Projects/Dartmouth/branches/typhon/reproflow-data-sync/ses-20240830/reproevents
 Loading tmap  : /Users/vmelnik/Projects/Dartmouth/branches/reproflow-data-sync/code/repronim_tmap.jsonl
-              : TMap marks count 5 : [0]=2024-05-28T11:09:00.647672, [1]=2024-06-04T13:54:19.385115, [2]=2024-08-09T10:31:40.686521, [3]=2024-08-09T10:33:21.970882, [4]=2024-08-09T10:35:07.839213
+              : TMap marks count 13 : [0]=2024-05-28T11:09:00.647672, [1]=2024-06-04T13:54:19.385115, [2]=2024-08-09T10:31:40.686521, [3]=2024-08-09T10:33:21.970882, [4]=2024-08-09T10:35:07.839213, [5]=2024-08-30T11:43:13.027994, [6]=2024-08-30T11:44:53.989127, [7]=2024-08-30T11:52:48.702265, [8]=2024-08-30T11:53:27.575961, [9]=2024-08-30T11:54:06.398548, [10]=2024-08-30T11:54:45.238364, [11]=2024-08-30T11:55:24.166825, [12]=2024-10-04T09:36:38.766137
 Loading dumps config from /Users/vmelnik/Projects/Dartmouth/branches/typhon/reproflow-data-sync/ses-20240830/timing-dumps-config.yaml
 forcing offset for dicoms: -26.780000
 Study range   : dicoms      2024-08-30 11:21:52.667500 - 2024-08-30 11:57:24.477500
@@ -123,5 +123,5 @@ Skip reproevents, out of study datetime range: type='ReproeventsRecord' isotime=
 Skip reproevents, out of study datetime range: type='ReproeventsRecord' isotime=Timestamp('2024-08-30 17:00:00.678938') duration=0.0 state_duration=0.0 session_id='ses-20240830' id=None file_name='events.csv' state=1 server_time=985.760055 data={'callback_duration_us': '2024-08-30T11:58:00-04:00.csv:223', 'state': 1, 'client_time': 1725051600.6789384, 'client_time_iso': '2024-08-30T17:00:00.678938-04:00', 'pin': 6, 'callback_duration': 0.000223, 'server_time': 985.760055, 'action': '-ACK', 'roundtrip_delay': nan, 'id': 100}
 Skip reproevents, out of study datetime range: type='ReproeventsRecord' isotime=Timestamp('2024-08-30 17:00:00.699105') duration=0.0 state_duration=0.0 session_id='ses-20240830' id=None file_name='events.csv' state=0 server_time=985.780073 data={'callback_duration_us': '2024-08-30T11:58:00-04:00.csv:224', 'state': 0, 'client_time': 1725051600.6991053, 'client_time_iso': '2024-08-30T17:00:00.699105-04:00', 'pin': 6, 'callback_duration': 0.000224, 'server_time': 985.780073, 'action': '-ACK', 'roundtrip_delay': nan, 'id': 101}
 Skip reproevents processing, too many records after the range end
-Exit on   : 2024-09-10 17:33:25.264640
+Exit on   : 2024-10-29 18:03:32.377088
 Exit code : 0

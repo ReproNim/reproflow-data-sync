@@ -1,10 +1,10 @@
 dump_marks.py tool
-Started on    : 2024-10-29 17:42:46.105549, vmelnik@Uranus
+Started on    : 2024-10-29 18:03:41.510875, vmelnik@Uranus
 Working dir   : /Users/vmelnik/Projects/Dartmouth/branches/reproflow-data-sync/code
 Session path  : /Users/vmelnik/Projects/Dartmouth/branches/typhon/reproflow-data-sync/ses-20241004
 Session ID    : ses-20241004
 Loading tmap  : /Users/vmelnik/Projects/Dartmouth/branches/reproflow-data-sync/code/repronim_tmap.jsonl
-              : TMap marks count 12 : [0]=2024-05-28T11:09:00.647672, [1]=2024-06-04T13:54:19.385115, [2]=2024-08-09T10:31:40.686521, [3]=2024-08-09T10:33:21.970882, [4]=2024-08-09T10:35:07.839213, [5]=2024-08-30T11:43:13.027994, [6]=2024-08-30T11:44:53.989127, [7]=2024-08-30T11:52:48.702265, [8]=2024-08-30T11:53:27.575961, [9]=2024-08-30T11:54:06.398548, [10]=2024-08-30T11:54:45.238364, [11]=2024-08-30T11:55:24.166825
+              : TMap marks count 13 : [0]=2024-05-28T11:09:00.647672, [1]=2024-06-04T13:54:19.385115, [2]=2024-08-09T10:31:40.686521, [3]=2024-08-09T10:33:21.970882, [4]=2024-08-09T10:35:07.839213, [5]=2024-08-30T11:43:13.027994, [6]=2024-08-30T11:44:53.989127, [7]=2024-08-30T11:52:48.702265, [8]=2024-08-30T11:53:27.575961, [9]=2024-08-30T11:54:06.398548, [10]=2024-08-30T11:54:45.238364, [11]=2024-08-30T11:55:24.166825, [12]=2024-10-04T09:36:38.766137
 Loading dumps config from /Users/vmelnik/Projects/Dartmouth/branches/typhon/reproflow-data-sync/ses-20241004/timing-dumps-config.yaml
 forcing offset for dicoms: -17.000000
 Skip event object, type is not DicomsRecord: study-000001
@@ -47,10 +47,10 @@ offset=17.0
 overriding offset for Clock.DICOMS: -17.000000
 from_offset=-17.0, to_offset=0.0
 offset=17.0
-from_offset=0.314787, to_offset=0.0
-offset=-0.314787
-from_offset=0.314787, to_offset=0.0
-offset=-0.314787
+from_offset=0.056863, to_offset=0.0
+offset=-0.056863
+from_offset=0.056863, to_offset=0.0
+offset=-0.056863
 Skip qrinfo series (too small=1): ['qrinfo-000016']
 from_offset=-0.026487999999999956, to_offset=0.0
 offset=0.026487999999999956
@@ -68,10 +68,10 @@ from_offset=-0.026487999999999956, to_offset=0.0
 offset=0.026487999999999956
 from_offset=-0.026487999999999956, to_offset=0.0
 offset=0.026487999999999956
-from_offset=-0.026487999999999956, to_offset=0.0
-offset=0.026487999999999956
-from_offset=-0.026487999999999956, to_offset=0.0
-offset=0.026487999999999956
+from_offset=0.08218, to_offset=0.0
+offset=-0.08218
+from_offset=0.08218, to_offset=0.0
+offset=-0.08218
 from_offset=-0.0005020000000000024, to_offset=0.0
 offset=0.0005020000000000024
 from_offset=-0.0005020000000000024, to_offset=0.0
@@ -88,10 +88,10 @@ from_offset=-0.0005020000000000024, to_offset=0.0
 offset=0.0005020000000000024
 from_offset=-0.0005020000000000024, to_offset=0.0
 offset=0.0005020000000000024
-from_offset=-0.0005020000000000024, to_offset=0.0
-offset=0.0005020000000000024
-from_offset=-0.0005020000000000024, to_offset=0.0
-offset=0.0005020000000000024
+from_offset=0.0, to_offset=0.0
+offset=0.0
+from_offset=0.0, to_offset=0.0
+offset=0.0
 Swimlane: dicoms
   Found 5 dicoms series
   Series: 005-func-bold_task-rest_acq-short1_run-01, count: 15, interval: 2.000, next_series_interval: 69.75, ids: dicoms-000140..dicoms-000154, clock time: 09:31:05--09:31:33, isotime: 09:31:22--09:31:50
@@ -136,7 +136,7 @@ reproevents.reproevents-series-4 : ['reproevents-000046', 'reproevents-000047', 
 reproevents.reproevents-series-5 : ['reproevents-000061', 'reproevents-000062', 'reproevents-000063', 'reproevents-000064', 'reproevents-000065', 'reproevents-000066', 'reproevents-000067', 'reproevents-000068', 'reproevents-000069', 'reproevents-000070', 'reproevents-000071', 'reproevents-000072', 'reproevents-000073', 'reproevents-000074', 'reproevents-000075']
 Matching: sd1=005-func-bold_task-rest_acq-short1_run-01 with sd2=qrinfo-series-1
  use k_min=0.8, k_max=1.2
- mismatch_5: 2024-10-04 09:31:22.742500 / 2024-10-04 09:36:38.508213
+ mismatch_5: 2024-10-04 09:31:22.742500 / 2024-10-04 09:36:38.766137
 Matching: sd1=005-func-bold_task-rest_acq-short1_run-01 with sd2=psychopy-series-1
  use k_min=0.95, k_max=1.05
 Matched series data: 005-func-bold_task-rest_acq-short1_run-01 / psychopy-series-1
@@ -195,7 +195,7 @@ Mark: type='MarkRecord' session_id='ses-20241004' id='mark-000017' kind='Func se
 {"type":"MarkRecord","session_id":"ses-20241004","id":"mark-000017","kind":"Func series end","name":"005-func-bold_task-rest_acq-short1_run-01_end","target_ids":["dicoms-000154","psychopy-000015","reproevents-000015"],"dicoms_isotime":"2024-10-04T09:31:33.742500","dicoms_duration":null,"birch_isotime":null,"birch_duration":null,"qrinfo_isotime":null,"qrinfo_duration":null,"psychopy_isotime":"2024-10-04T09:31:50.085509","psychopy_duration":null,"reproevents_isotime":"2024-10-04T09:31:50.092973","reproevents_duration":null}
 Matching: sd1=006-func-bold_task-rest_acq-short1_run-02 with sd2=qrinfo-series-1
  use k_min=0.8, k_max=1.2
- mismatch_5: 2024-10-04 09:32:32.490000 / 2024-10-04 09:36:38.508213
+ mismatch_5: 2024-10-04 09:32:32.490000 / 2024-10-04 09:36:38.766137
 Matching: sd1=006-func-bold_task-rest_acq-short1_run-02 with sd2=psychopy-series-1
  use k_min=0.95, k_max=1.05
  mismatch_2: 78.02 / 69.409791
@@ -260,7 +260,7 @@ Mark: type='MarkRecord' session_id='ses-20241004' id='mark-000034' kind='Func se
 {"type":"MarkRecord","session_id":"ses-20241004","id":"mark-000034","kind":"Func series end","name":"006-func-bold_task-rest_acq-short1_run-02_end","target_ids":["dicoms-000169","psychopy-000030","reproevents-000030"],"dicoms_isotime":"2024-10-04T09:32:43.490000","dicoms_duration":null,"birch_isotime":null,"birch_duration":null,"qrinfo_isotime":null,"qrinfo_duration":null,"psychopy_isotime":"2024-10-04T09:32:59.506065","psychopy_duration":null,"reproevents_isotime":"2024-10-04T09:32:59.513211","reproevents_duration":null}
 Matching: sd1=007-func-bold_task-rest_acq-short1_run-03 with sd2=qrinfo-series-1
  use k_min=0.8, k_max=1.2
- mismatch_5: 2024-10-04 09:33:50.510000 / 2024-10-04 09:36:38.508213
+ mismatch_5: 2024-10-04 09:33:50.510000 / 2024-10-04 09:36:38.766137
 Matching: sd1=007-func-bold_task-rest_acq-short1_run-03 with sd2=psychopy-series-1
  use k_min=0.95, k_max=1.05
  mismatch_2: 100.995 / 69.409791
@@ -331,7 +331,7 @@ Mark: type='MarkRecord' session_id='ses-20241004' id='mark-000051' kind='Func se
 {"type":"MarkRecord","session_id":"ses-20241004","id":"mark-000051","kind":"Func series end","name":"007-func-bold_task-rest_acq-short1_run-03_end","target_ids":["dicoms-000184","psychopy-000045","reproevents-000045"],"dicoms_isotime":"2024-10-04T09:34:01.510000","dicoms_duration":null,"birch_isotime":null,"birch_duration":null,"qrinfo_isotime":null,"qrinfo_duration":null,"psychopy_isotime":"2024-10-04T09:34:17.376736","psychopy_duration":null,"reproevents_isotime":"2024-10-04T09:34:17.383189","reproevents_duration":null}
 Matching: sd1=008-func-bold_task-rest_acq-short1_run-04 with sd2=qrinfo-series-1
  use k_min=0.8, k_max=1.2
- mismatch_5: 2024-10-04 09:35:31.505000 / 2024-10-04 09:36:38.508213
+ mismatch_5: 2024-10-04 09:35:31.505000 / 2024-10-04 09:36:38.766137
 Matching: sd1=008-func-bold_task-rest_acq-short1_run-04 with sd2=psychopy-series-1
  use k_min=0.95, k_max=1.05
  mismatch_5: 2024-10-04 09:35:31.505000 / 2024-10-04 09:31:22.152286
@@ -409,18 +409,18 @@ Mark: type='MarkRecord' session_id='ses-20241004' id='mark-000068' kind='Func se
 Matching: sd1=009-func-bold_task-rest_acq-short1_run-05 with sd2=qrinfo-series-1
  use k_min=0.8, k_max=1.2
 Matched series data: 009-func-bold_task-rest_acq-short1_run-05 / qrinfo-series-1
-    score                = 0.989287
+    score                = 0.731363
     count                = 15 / 15
     interval             = 2.0 / 1.9880714285714285
     next_series_interval = 0.0 / 0
     isotime_start        = 2024-10-04 09:36:22.497500 / 2024-10-04 09:36:38.823000
     isotime_end          = 2024-10-04 09:36:50.497500 / 2024-10-04 09:37:06.656000
-    synced_start         = 2024-10-04 09:36:39.497500 / 2024-10-04 09:36:38.508213
-    synced_end           = 2024-10-04 09:37:07.497500 / 2024-10-04 09:37:06.341213
+    synced_start         = 2024-10-04 09:36:39.497500 / 2024-10-04 09:36:38.766137
+    synced_end           = 2024-10-04 09:37:07.497500 / 2024-10-04 09:37:06.599137
     series 1 IDs         = dicoms-000200 .. dicoms-000214
     series 2 IDs         = qrinfo-000001 .. qrinfo-000015
 Matched series: 009-func-bold_task-rest_acq-short1_run-05 -> qrinfo-series-1
-         score: 0.989287
+         score: 0.731363
 store map_series[qrinfo] -> qrinfo-series-1
 Matching: sd1=009-func-bold_task-rest_acq-short1_run-05 with sd2=psychopy-series-1
  use k_min=0.95, k_max=1.05
@@ -437,18 +437,18 @@ Matching: sd1=009-func-bold_task-rest_acq-short1_run-05 with sd2=psychopy-series
 Matching: sd1=009-func-bold_task-rest_acq-short1_run-05 with sd2=psychopy-series-5
  use k_min=0.95, k_max=1.05
 Matched series data: 009-func-bold_task-rest_acq-short1_run-05 / psychopy-series-5
-    score                = 0.622695
+    score                = 0.731363
     count                = 15 / 15
     interval             = 2.0 / 1.9936161428571428
     next_series_interval = 0.0 / 0
     isotime_start        = 2024-10-04 09:36:22.497500 / 2024-10-04 09:36:38.848317
     isotime_end          = 2024-10-04 09:36:50.497500 / 2024-10-04 09:37:06.758943
-    synced_start         = 2024-10-04 09:36:39.497500 / 2024-10-04 09:36:38.874805
-    synced_end           = 2024-10-04 09:37:07.497500 / 2024-10-04 09:37:06.785431
+    synced_start         = 2024-10-04 09:36:39.497500 / 2024-10-04 09:36:38.766137
+    synced_end           = 2024-10-04 09:37:07.497500 / 2024-10-04 09:37:06.676763
     series 1 IDs         = dicoms-000200 .. dicoms-000214
     series 2 IDs         = psychopy-000061 .. psychopy-000075
 Matched series: 009-func-bold_task-rest_acq-short1_run-05 -> psychopy-series-5
-         score: 0.622695
+         score: 0.731363
 store map_series[psychopy] -> psychopy-series-5
 Matching: sd1=009-func-bold_task-rest_acq-short1_run-05 with sd2=reproevents-series-1
  use k_min=0.95, k_max=1.05
@@ -465,18 +465,18 @@ Matching: sd1=009-func-bold_task-rest_acq-short1_run-05 with sd2=reproevents-ser
 Matching: sd1=009-func-bold_task-rest_acq-short1_run-05 with sd2=reproevents-series-5
  use k_min=0.95, k_max=1.05
 Matched series data: 009-func-bold_task-rest_acq-short1_run-05 / reproevents-series-5
-    score                = 0.730861
+    score                = 0.731363
     count                = 15 / 15
     interval             = 2.0 / 1.9999918571428572
     next_series_interval = 0.0 / 0
     isotime_start        = 2024-10-04 09:36:22.497500 / 2024-10-04 09:36:38.766137
     isotime_end          = 2024-10-04 09:36:50.497500 / 2024-10-04 09:37:06.766023
-    synced_start         = 2024-10-04 09:36:39.497500 / 2024-10-04 09:36:38.766638999
-    synced_end           = 2024-10-04 09:37:07.497500 / 2024-10-04 09:37:06.766524999
+    synced_start         = 2024-10-04 09:36:39.497500 / 2024-10-04 09:36:38.766137
+    synced_end           = 2024-10-04 09:37:07.497500 / 2024-10-04 09:37:06.766023
     series 1 IDs         = dicoms-000200 .. dicoms-000214
     series 2 IDs         = reproevents-000061 .. reproevents-000075
 Matched series: 009-func-bold_task-rest_acq-short1_run-05 -> reproevents-series-5
-         score: 0.730861
+         score: 0.731363
 store map_series[reproevents] -> reproevents-series-5
 {"type":"MarkRecord","session_id":"ses-20241004","id":"mark-000069","kind":"Func series start","name":"009-func-bold_task-rest_acq-short1_run-05_start","target_ids":["dicoms-000200","qrinfo-000001","psychopy-000061","reproevents-000061"],"dicoms_isotime":"2024-10-04T09:36:22.497500","dicoms_duration":28.0,"birch_isotime":null,"birch_duration":null,"qrinfo_isotime":"2024-10-04T09:36:38.823000","qrinfo_duration":27.833,"psychopy_isotime":"2024-10-04T09:36:38.848317","psychopy_duration":27.910626,"reproevents_isotime":"2024-10-04T09:36:38.766137","reproevents_duration":27.999886}
 {"type":"MarkRecord","session_id":"ses-20241004","id":"mark-000070","kind":"Func series scan","name":"009-func-bold_task-rest_acq-short1_run-05_scan-0","target_ids":["dicoms-000200","qrinfo-000001","psychopy-000061","reproevents-000061"],"dicoms_isotime":"2024-10-04T09:36:22.497500","dicoms_duration":2.0,"birch_isotime":null,"birch_duration":null,"qrinfo_isotime":"2024-10-04T09:36:38.823000","qrinfo_duration":1.85,"psychopy_isotime":"2024-10-04T09:36:38.848317","psychopy_duration":1.9103759999999999,"reproevents_isotime":"2024-10-04T09:36:38.766137","reproevents_duration":2.0000440000000026}
@@ -670,5 +670,5 @@ Generated marks after pass 2, done:
   mark-000083 : ['dicoms-000213', 'qrinfo-000014', 'psychopy-000074', 'reproevents-000074']
   mark-000084 : ['dicoms-000214', 'qrinfo-000015', 'psychopy-000075', 'reproevents-000075']
   mark-000085 : ['dicoms-000214', 'qrinfo-000015', 'psychopy-000075', 'reproevents-000075']
-Exit on   : 2024-10-29 17:42:46.393775
+Exit on   : 2024-10-29 18:03:41.797171
 Exit code : 0

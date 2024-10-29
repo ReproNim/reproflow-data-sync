@@ -1,5 +1,5 @@
 dump_reproevents.py tool
-Started on    : 2024-09-10 17:32:58.961394, vmelnik@Uranus
+Started on    : 2024-10-29 18:03:02.864502, vmelnik@Uranus
 Working dir   : /Users/vmelnik/Projects/Dartmouth/branches/reproflow-data-sync/code
 Session path  : /Users/vmelnik/Projects/Dartmouth/branches/typhon/reproflow-data-sync/ses-20240604
 Session ID    : ses-20240604
@@ -7,14 +7,14 @@ Dumps path    : /Users/vmelnik/Projects/Dartmouth/branches/typhon/reproflow-data
 DICOMS dump   : /Users/vmelnik/Projects/Dartmouth/branches/typhon/reproflow-data-sync/ses-20240604/timing-dumps/dump_dicoms.jsonl
 Reproevents path: /Users/vmelnik/Projects/Dartmouth/branches/typhon/reproflow-data-sync/ses-20240604/reproevents
 Loading tmap  : /Users/vmelnik/Projects/Dartmouth/branches/reproflow-data-sync/code/repronim_tmap.jsonl
-              : TMap marks count 5 : [0]=2024-05-28T11:09:00.647672, [1]=2024-06-04T13:54:19.385115, [2]=2024-08-09T10:31:40.686521, [3]=2024-08-09T10:33:21.970882, [4]=2024-08-09T10:35:07.839213
+              : TMap marks count 13 : [0]=2024-05-28T11:09:00.647672, [1]=2024-06-04T13:54:19.385115, [2]=2024-08-09T10:31:40.686521, [3]=2024-08-09T10:33:21.970882, [4]=2024-08-09T10:35:07.839213, [5]=2024-08-30T11:43:13.027994, [6]=2024-08-30T11:44:53.989127, [7]=2024-08-30T11:52:48.702265, [8]=2024-08-30T11:53:27.575961, [9]=2024-08-30T11:54:06.398548, [10]=2024-08-30T11:54:45.238364, [11]=2024-08-30T11:55:24.166825, [12]=2024-10-04T09:36:38.766137
 No dumps config found under /Users/vmelnik/Projects/Dartmouth/branches/typhon/reproflow-data-sync/ses-20240604/timing-dumps-config.yaml path, using defaults
 Study range   : dicoms      2024-06-04 13:50:51.985000 - 2024-06-04 14:05:47.492500
-from_offset=370.854828, to_offset=-0.03325
-offset=-370.888078
-from_offset=372.122385, to_offset=-0.007954000000000017
-offset=-372.130339
-              : reproevents 2024-06-04 13:44:41.096922 - 2024-06-04 13:59:35.362161
+from_offset=372.12195733869567, to_offset=-0.03325
+offset=-372.1552073386957
+from_offset=372.1246930360809, to_offset=-0.007954000000000017
+offset=-372.13264703608087
+              : reproevents 2024-06-04 13:44:39.829792661 - 2024-06-04 13:59:35.359852964
 Reading reproevent dir : /Users/vmelnik/Projects/Dartmouth/branches/typhon/reproflow-data-sync/ses-20240604/reproevents
   events.csv
 Processing reproevents : /Users/vmelnik/Projects/Dartmouth/branches/typhon/reproflow-data-sync/ses-20240604/reproevents/events.csv
@@ -2741,5 +2741,5 @@ Skip reproevents, state is not 1: type='ReproeventsRecord' isotime=Timestamp('20
 Skip reproevents, state is not 1: type='ReproeventsRecord' isotime=Timestamp('2024-06-04 13:57:31.532095') duration=0.0 state_duration=0.0 session_id='ses-20240604' id=None file_name='events.csv' state=0 server_time=866.499036 data={'callback_duration_us': '2024-03-26T14:17:27-04:00.csv:223', 'state': 0, 'client_time': 1717523851.5320947, 'client_time_iso': '2024-06-04T13:57:31.532095-04:00', 'pin': 6, 'callback_duration': 0.000223, 'server_time': 866.499036, 'action': '-ACK', 'roundtrip_delay': nan, 'id': 1249276}
 Skip reproevents, state is not 1: type='ReproeventsRecord' isotime=Timestamp('2024-06-04 13:57:33.531923') duration=0.0 state_duration=0.0 session_id='ses-20240604' id=None file_name='events.csv' state=0 server_time=868.499097 data={'callback_duration_us': '2024-03-26T14:17:27-04:00.csv:226', 'state': 0, 'client_time': 1717523853.5319226, 'client_time_iso': '2024-06-04T13:57:33.531923-04:00', 'pin': 6, 'callback_duration': 0.000226, 'server_time': 868.499097, 'action': '-ACK', 'roundtrip_delay': nan, 'id': 1249278}
 Skip reproevents, state is not 1: type='ReproeventsRecord' isotime=Timestamp('2024-06-04 13:57:35.531915') duration=0.0 state_duration=0.0 session_id='ses-20240604' id=None file_name='events.csv' state=0 server_time=870.499135 data={'callback_duration_us': '2024-03-26T14:17:27-04:00.csv:221', 'state': 0, 'client_time': 1717523855.5319147, 'client_time_iso': '2024-06-04T13:57:35.531915-04:00', 'pin': 6, 'callback_duration': 0.000221, 'server_time': 870.499135, 'action': '-ACK', 'roundtrip_delay': nan, 'id': 1249280}
-Exit on   : 2024-09-10 17:33:01.397784
+Exit on   : 2024-10-29 18:03:05.705284
 Exit code : 0
