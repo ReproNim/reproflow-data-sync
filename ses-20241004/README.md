@@ -1,3 +1,5 @@
+### Overview `ses-20241004`
+
 - could not find existing psychopy venv/conda env which works. Creating new...
 
 now it is psychopy-2024.2.1 in ~/miniconda3
@@ -28,11 +30,16 @@ now it is psychopy-2024.2.1 in ~/miniconda3
 - copied the data
   - apparently no birch!  I guess was rebooted and not remounted :-/
 
-Results/problems found in timing-dumps:
+### Results/problems found in `timing-dumps`:
   - `dicoms` - 5 func scans for 15 images each. Somehow predicted ISO time differs from expected one. e.g predicted time is `09:30:35` but real one is `09:31:22`, !!! differs in 47 seconds and this should be `TODO:` investigated (??? problem of algorithm or it was corrected manually on MRI side). In case this is result of MRI clock correction, we should force offset for `dicoms` swimlane manually and re-run dumps.    
   - `birch` - no records at all, ATM this is critical as birch considered as master clock and core to synchronize all other devices. But maybe we need to `TODO:` investigate and discuss possible workarounds in this case.
   - `psychopy` - OK, matched well with 5's series.
   - `reproevents` - OK, matched well with 5's series.
   - `qrinfo` - Failed:
     - Found QR codes in video only for last series `009-func-bold_task-rest_acq-short1_run-05`.
-    - Matched incorrectly between in `dump_tmap_ex.csv`. Actually codes `qrinfo-000001`-`qrinfo-000015` corresponds to only the latest 5-th series, but it somehow matched 2 times for series `008-func-bold_task-rest_acq-short1_run-04` and `009-func-bold_task-rest_acq-short1_run-05`. So `TODO:` algorithm should be revised to improve quality. Yes this is most likely related to no-`birch` info or invalid `dicoms` ISO time, but anyway, code should more robust and accurate. 
+    - Matched incorrectly between in `dump_tmap_ex.csv`. Actually codes `qrinfo-000001`-`qrinfo-000015` corresponds to only the latest 5-th series, but it somehow matched 2 times for series `008-func-bold_task-rest_acq-short1_run-04` and `009-func-bold_task-rest_acq-short1_run-05`. So `TODO:` algorithm should be revised to improve quality. Yes this is most likely related to no-`birch` info or invalid `dicoms` ISO time, but anyway, code should more robust and accurate.
+
+### Fixes in `timing-dumps` (WiP):
+  - `dicoms` offset was set manually explicitly in `timing-dumps-config.yaml`.
+  - `birch` swimlane was disabled in the session.
+  - `reproevents` was selected as master clock via `ref_swimlane` dump config parameter.
