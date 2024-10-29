@@ -268,7 +268,7 @@ def find_dicoms_func_series(model: DumpModel) -> List[SeriesData]:
 
 
 # match SeriesData object with another one and return score result if any
-def match_series_data(sd1: SeriesData, sd2: SeriesData) -> (bool, float):
+def match_series_data(cfg: DumpsConfig, sd1: SeriesData, sd2: SeriesData) -> (bool, float):
     # NOTE: the code contains hardcoded bypasses for qrinfo swimlane
     # because of the current problems with 0.3 sec in first QR code
     # so ideally it should be disabled in future once we fix the problem
@@ -340,7 +340,10 @@ def match_series_data(sd1: SeriesData, sd2: SeriesData) -> (bool, float):
     synced_dt: float = abs((sd1.synced_isotime_start - sd2.synced_isotime_start).total_seconds())
     # for DICOMs series we allow 120 sec difference
     if sd1.swimlane.name==Swimlane.DICOMS or sd2.swimlane.name==Swimlane.DICOMS:
-        if synced_dt > 120 :
+        # make interval strict in case DICOMS correction provided manually
+        dicoms_dt = 2.0 if Swimlane.DICOMS in cfg.clock_offsets else 120.0
+        # logger.debug(f"dicoms_dt={dicoms_dt}")
+        if synced_dt > dicoms_dt :
             if f_debug:
                 logger.debug(f" mismatch_5: {sd1.synced_isotime_start} / {sd2.synced_isotime_start}")
             return False, score
@@ -366,11 +369,12 @@ def match_series_data(sd1: SeriesData, sd2: SeriesData) -> (bool, float):
     return True, score
 
 
-def match_series(sd1: SeriesData, series: List[SeriesData]) -> SeriesData:
+def match_series(cfg: DumpsConfig, sd1: SeriesData,
+                 series: List[SeriesData]) -> SeriesData:
     best_sd: SeriesData = None
     best_score: float = None
     for sd2 in series:
-        match, score = match_series_data(sd1, sd2)
+        match, score = match_series_data(cfg, sd1, sd2)
         if match:
             if best_sd:
                if score < best_score:
@@ -472,7 +476,7 @@ def build_model(session_id: str, path: str) -> DumpModel:
     return m
 
 
-def generate_marks(model: DumpModel):
+def generate_marks(cfg: DumpsConfig, model: DumpModel):
 
     marks: List[MarkRecord] = []
     offset: dict = {}
@@ -492,8 +496,9 @@ def generate_marks(model: DumpModel):
         for swiml in [model.birch, model.qrinfo, model.psychopy,
                       model.reproevents]:
             #logger.debug(f"match with swiml={swiml.name}")
-            birch_sd: SeriesData = map_series.get(Swimlane.BIRCH)
-            match_sd: SeriesData = match_series(birch_sd if birch_sd
+            ref_sd: SeriesData = map_series.get(cfg.ref_swimlane) # Swimlane.BIRCH
+            #logger.debug(f"ref_sd={cfg.ref_swimlane}")
+            match_sd: SeriesData = match_series(cfg, ref_sd if ref_sd
                                                 else dicoms_sd,
                                                 swiml.series)
             if match_sd:
@@ -652,7 +657,7 @@ def main(ctx, path: str, log_level):
     model: DumpModel = build_model(session_id, path_dumps)
     #logger.debug(f"Model: {model}")
 
-    generate_marks(model)
+    generate_marks(cfg, model)
     return 0
 
 
