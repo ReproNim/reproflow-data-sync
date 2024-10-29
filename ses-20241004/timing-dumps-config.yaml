@@ -4,6 +4,10 @@
 clock_offsets:
   dicoms: -17.00
 
+# in ses-20241004, we don't have birch,
+#  so select reproevents as master clock
+ref_swimlane: reproevents
+
 # skip swimlanes for sessions to force building of tmap anyway
 skip_swimlanes:
   # no events in this session somehow for birch

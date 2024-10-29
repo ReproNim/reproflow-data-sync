@@ -1,5 +1,5 @@
 dump_marks.py tool
-Started on    : 2024-10-29 14:16:17.769414, vmelnik@Uranus
+Started on    : 2024-10-29 14:55:04.669683, vmelnik@Uranus
 Working dir   : /Users/vmelnik/Projects/Dartmouth/branches/reproflow-data-sync/code
 Session path  : /Users/vmelnik/Projects/Dartmouth/branches/typhon/reproflow-data-sync/ses-20241004
 Session ID    : ses-20241004
@@ -683,5 +683,5 @@ Generated marks after pass 2, done:
   mark-000083 : ['dicoms-000213', 'qrinfo-000014', 'psychopy-000074', 'reproevents-000074']
   mark-000084 : ['dicoms-000214', 'qrinfo-000015', 'psychopy-000075', 'reproevents-000075']
   mark-000085 : ['dicoms-000214', 'qrinfo-000015', 'psychopy-000075', 'reproevents-000075']
-Exit on   : 2024-10-29 14:16:18.065747
+Exit on   : 2024-10-29 14:55:04.958548
 Exit code : 0

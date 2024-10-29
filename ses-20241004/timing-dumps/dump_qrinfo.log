@@ -1,5 +1,5 @@
 dump_qrinfo.py tool
-Started on    : 2024-10-29 14:16:14.187044, vmelnik@Uranus
+Started on    : 2024-10-29 14:55:01.371788, vmelnik@Uranus
 Working dir   : /Users/vmelnik/Projects/Dartmouth/branches/reproflow-data-sync/code
 Session path  : /Users/vmelnik/Projects/Dartmouth/branches/typhon/reproflow-data-sync/ses-20241004
 Session ID    : ses-20241004
@@ -40,5 +40,5 @@ Processing QR : /Users/vmelnik/Projects/Dartmouth/branches/typhon/reproflow-data
   2024.10.04-09.36.21.256--2024.10.04-09.41.26.388.qrinfo.jsonl
 Processing QR : /Users/vmelnik/Projects/Dartmouth/branches/typhon/reproflow-data-sync/ses-20241004/timing-reprostim-videos/2024.10.04-09.36.21.256--2024.10.04-09.41.26.388.qrinfo.jsonl
   Skipping 2024.10.04-09.36.21.256--2024.10.04-09.41.26.388.qrinfo.log
-Exit on   : 2024-10-29 14:16:14.217394
+Exit on   : 2024-10-29 14:55:01.397097
 Exit code : 0

@@ -1,5 +1,5 @@
 dump_dicoms.py tool
-Started on    : 2024-10-29 14:16:12.728083, vmelnik@Uranus
+Started on    : 2024-10-29 14:55:00.180175, vmelnik@Uranus
 Working dir   : /Users/vmelnik/Projects/Dartmouth/branches/reproflow-data-sync/code
 Session path  : /Users/vmelnik/Projects/Dartmouth/branches/typhon/reproflow-data-sync/ses-20241004
 Session ID    : ses-20241004
@@ -1084,5 +1084,5 @@ Reading DICOM dir  : 009-func-bold_task-rest_acq-short1_run-05
     Series          = func-bold_task-rest_acq-short1_run-05
     AcquisitionDate = 20241004
     AcquisitionTime = 093650.497500
-Exit on   : 2024-10-29 14:16:13.379165
+Exit on   : 2024-10-29 14:55:00.628997
 Exit code : 0

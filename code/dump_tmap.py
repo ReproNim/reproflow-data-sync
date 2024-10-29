@@ -116,8 +116,8 @@ def generate_tmap(cfg: DumpsConfig, session_id: str, path_marks: str,
 
     tmap: List[TMapRecord] = []
     for fm in fmarks:
-        ref_isotime: datetime = parse_isotime(fm.get('birch_isotime'))
-        ref_duration = fm.get('birch_duration')
+        ref_isotime: datetime = parse_isotime(fm.get(f'{cfg.ref_swimlane}_isotime'))
+        ref_duration = fm.get(f'{cfg.ref_swimlane}_duration')
         if not ref_duration is None:
             ref_duration = float(ref_duration)
 
