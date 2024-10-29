@@ -1,0 +1,10 @@
+# provide custom DICOMs offset to fix time gap
+# due to time correction
+
+clock_offsets:
+  dicoms: -17.00
+
+# skip swimlanes for sessions to force building of tmap anyway
+skip_swimlanes:
+  # no events in this session somehow for birch
+  - birch
