@@ -38,6 +38,7 @@ now it is psychopy-2024.2.1 in ~/miniconda3
   - `qrinfo` - Failed:
     - Found QR codes in video only for last series `009-func-bold_task-rest_acq-short1_run-05`.
     - Matched incorrectly between in `dump_tmap_ex.csv`. Actually codes `qrinfo-000001`-`qrinfo-000015` corresponds to only the latest 5-th series, but it somehow matched 2 times for series `008-func-bold_task-rest_acq-short1_run-04` and `009-func-bold_task-rest_acq-short1_run-05`. So `TODO:` algorithm should be revised to improve quality. Yes this is most likely related to no-`birch` info or invalid `dicoms` ISO time, but anyway, code should more robust and accurate.
+    - `reprostim_video_offset` changed from 0.2-0.3s to 0.06s. This is good, but still not perfect. Can be related to the optimization in the ffmpeg params.
 
 ### Fixes in `timing-dumps` (WiP):
   - `dicoms` offset was set manually explicitly in `timing-dumps-config.yaml`.
