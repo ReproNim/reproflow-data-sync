@@ -1,0 +1,116 @@
+reprostim timesync-stimuli
+2025-01-27 11:38:49,574 [INFO] main script started
+pygame 2.6.1 (SDL 2.28.4, Python 3.10.0)
+Hello from the pygame community. https://www.pygame.org/contribute.html
+2025-01-27 11:38:51,505 [INFO] starting loop with 100 trials...
+Waiting for an event
+Waiting for an event
+Waiting for an event
+Waiting for an event
+Waiting for an event
+Waiting for an event
+Waiting for an event
+Waiting for an event
+Waiting for an event
+Waiting for an event
+Waiting for an event
+Waiting for an event
+Waiting for an event
+Waiting for an event
+Waiting for an event
+Waiting for an event
+Waiting for an event
+Waiting for an event
+Waiting for an event
+Waiting for an event
+Waiting for an event
+2025-01-27 11:40:38,229 [INFO] main script finished
+2025-01-27 11:40:38,230 [INFO] Output log renamed: output_2025.01.27-11.38.49.574--.log -> output_2025.01.27-11.38.49.574--2025.01.27-11.40.38.230.log
+2025-01-27 11:40:38,230 [INFO] reprostim timesync-stimuli script finished: 0
+2025-01-27 11:40:38,231 [INFO] Exit on   : 2025-01-27 11:40:38.231002
+2025-01-27 11:40:38,231 [INFO] Exit code : 0
+0.5405 	DEBUG 	Opening message catalog /home/yoh/deb/gits/pkg-exppsy/psychopy/psychopy/localization/../app/locale/en_US/LC_MESSAGE/messages.mo for locale en_US
+0.5406 	DEBUG 	Locale for 'en_US' not found. Using default.
+1.2215 	INFO 	Trying to load audio library: sounddevice
+1.2216 	INFO 	sound is using audioLib: sounddevice
+1.2216 	WARNING 	We strongly recommend you activate the PTB sound engine in PsychoPy prefs as the preferred audio engine. Its timing is vastly superior. Your prefs are currently set to use ['sounddevice'] (in that order).
+1.2220 	WARNING 	Monitor specification not found. Creating a temporary one...
+1.2856 	WARNING 	User requested fullscreen with size [800 600], but screen is actually [1920, 1080]. Using actual size
+1.4485 	INFO 	Using renderer 'Mesa Intel(R) Graphics (ADL GT2)' for graphics
+1.4486 	INFO 	OpenGL version supported by driver is 4..
+1.4594 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+1.4602 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+1.4609 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+1.4620 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+1.4632 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+1.4638 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+1.4647 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+1.4659 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+1.4661 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+1.4663 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+1.4672 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+1.4680 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+1.4688 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+1.4695 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+1.4702 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+1.4711 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+1.4719 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+1.4722 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+1.4726 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+1.4738 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+1.4740 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+1.4743 	DEBUG 	Uploading Texture Font fontname to graphics card
+1.4775 	DEBUG 	Upload of Texture Font fontname complete
+1.4819 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+1.4830 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+1.4841 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+1.4843 	DEBUG 	Uploading Texture Font fontname to graphics card
+1.4853 	DEBUG 	Upload of Texture Font fontname complete
+1.8351 	EXP 	Created window1 = Window(allowGUI=True, allowStencil=False, autoLog=True, backendConf=UNKNOWN, backgroundFit=<method-wrapper '__getattribute__' of attributeSetter object at 0x7f40983ad1b0>, backgroundImage=<method-wrapper '__getattribute__' of attributeSetter object at 0x7f40983ad150>, bitsMode=UNKNOWN, blendMode='avg', bpc=(8, 8, 8), color=array([0, 0, 0]), colorSpace='rgb', depthBits=8, fullscr=True, gamma=None, gammaErrorPolicy='raise', infoMsg=UNKNOWN, lms=UNKNOWN, monitor=<psychopy.monitors.calibTools.Monitor object at 0x7f40b726c8e0>, multiSample=False, name='window1', numSamples=2, pos=[0.0, 0.0], screen=1, size=array([1920, 1080]), stencilBits=0, stereo=False, title='PsychoPy', units='norm', useFBO=False, useRetina=False, viewOri=0.0, viewPos=None, viewScale=None, waitBlanking=True, winType='pyglet')
+1.8352 	EXP 	window1: backgroundImage = None
+1.8352 	EXP 	window1: backgroundFit = 'cover'
+1.8831 	EXP 	Created unnamed TextStim = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, draggable=False, flipHoriz=False, flipVert=False, font='', fontFiles=[], height=0.1, italic=False, languageStyle='LTR', name='unnamed TextStim', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text=str(...), units='norm', win=Window(...), wrapWidth=1)
+1.8851 	EXP 	Created unnamed TextStim = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, draggable=False, flipHoriz=False, flipVert=False, font='', fontFiles=[], height=0.1, italic=False, languageStyle='LTR', name='unnamed TextStim', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='+', units='norm', win=Window(...), wrapWidth=1)
+1.8866 	EXP 	Created unnamed TextStim = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, draggable=False, flipHoriz=False, flipVert=False, font='', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='unnamed TextStim', opacity=1.0, ori=0.0, pos=array([ 0. , -0.7]), rgb=UNKNOWN, text='', units='norm', win=Window(...), wrapWidth=1)
+69.1756 	DATA 	Keypress: 5
+69.2477 	EXP 	Created unnamed ImageStim = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, draggable=False, flipHoriz=False, flipVert=False, image=PilImage(...), interpolate=False, mask=None, maskParams=None, name='unnamed ImageStim', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([0.96875   , 1.72222222]), texRes=128, units='norm', win=Window(...))
+71.0049 	DATA 	Keypress: 5
+71.0934 	EXP 	Created unnamed ImageStim = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, draggable=False, flipHoriz=False, flipVert=False, image=PilImage(...), interpolate=False, mask=None, maskParams=None, name='unnamed ImageStim', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([0.96875   , 1.72222222]), texRes=128, units='norm', win=Window(...))
+72.8349 	DATA 	Keypress: 5
+72.8995 	EXP 	Created unnamed ImageStim = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, draggable=False, flipHoriz=False, flipVert=False, image=PilImage(...), interpolate=False, mask=None, maskParams=None, name='unnamed ImageStim', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([0.96875   , 1.72222222]), texRes=128, units='norm', win=Window(...))
+74.6648 	DATA 	Keypress: 5
+74.7333 	EXP 	Created unnamed ImageStim = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, draggable=False, flipHoriz=False, flipVert=False, image=PilImage(...), interpolate=False, mask=None, maskParams=None, name='unnamed ImageStim', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([0.96875   , 1.72222222]), texRes=128, units='norm', win=Window(...))
+76.4950 	DATA 	Keypress: 5
+76.5758 	EXP 	Created unnamed ImageStim = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, draggable=False, flipHoriz=False, flipVert=False, image=PilImage(...), interpolate=False, mask=None, maskParams=None, name='unnamed ImageStim', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([0.96875   , 1.72222222]), texRes=128, units='norm', win=Window(...))
+78.3249 	DATA 	Keypress: 5
+78.4143 	EXP 	Created unnamed ImageStim = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, draggable=False, flipHoriz=False, flipVert=False, image=PilImage(...), interpolate=False, mask=None, maskParams=None, name='unnamed ImageStim', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([0.96875   , 1.72222222]), texRes=128, units='norm', win=Window(...))
+80.1548 	DATA 	Keypress: 5
+80.2228 	EXP 	Created unnamed ImageStim = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, draggable=False, flipHoriz=False, flipVert=False, image=PilImage(...), interpolate=False, mask=None, maskParams=None, name='unnamed ImageStim', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([0.96875   , 1.72222222]), texRes=128, units='norm', win=Window(...))
+81.9849 	DATA 	Keypress: 5
+82.0733 	EXP 	Created unnamed ImageStim = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, draggable=False, flipHoriz=False, flipVert=False, image=PilImage(...), interpolate=False, mask=None, maskParams=None, name='unnamed ImageStim', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([0.96875   , 1.72222222]), texRes=128, units='norm', win=Window(...))
+83.8149 	DATA 	Keypress: 5
+83.8820 	EXP 	Created unnamed ImageStim = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, draggable=False, flipHoriz=False, flipVert=False, image=PilImage(...), interpolate=False, mask=None, maskParams=None, name='unnamed ImageStim', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([0.96875   , 1.72222222]), texRes=128, units='norm', win=Window(...))
+85.6449 	DATA 	Keypress: 5
+85.7134 	EXP 	Created unnamed ImageStim = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, draggable=False, flipHoriz=False, flipVert=False, image=PilImage(...), interpolate=False, mask=None, maskParams=None, name='unnamed ImageStim', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([0.96875   , 1.72222222]), texRes=128, units='norm', win=Window(...))
+87.4749 	DATA 	Keypress: 5
+87.5749 	EXP 	Created unnamed ImageStim = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, draggable=False, flipHoriz=False, flipVert=False, image=PilImage(...), interpolate=False, mask=None, maskParams=None, name='unnamed ImageStim', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([0.96875   , 1.72222222]), texRes=128, units='norm', win=Window(...))
+89.3050 	DATA 	Keypress: 5
+89.3817 	EXP 	Created unnamed ImageStim = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, draggable=False, flipHoriz=False, flipVert=False, image=PilImage(...), interpolate=False, mask=None, maskParams=None, name='unnamed ImageStim', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([0.96875   , 1.72222222]), texRes=128, units='norm', win=Window(...))
+91.1350 	DATA 	Keypress: 5
+91.2029 	EXP 	Created unnamed ImageStim = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, draggable=False, flipHoriz=False, flipVert=False, image=PilImage(...), interpolate=False, mask=None, maskParams=None, name='unnamed ImageStim', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([0.96875   , 1.72222222]), texRes=128, units='norm', win=Window(...))
+92.9650 	DATA 	Keypress: 5
+93.0558 	EXP 	Created unnamed ImageStim = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, draggable=False, flipHoriz=False, flipVert=False, image=PilImage(...), interpolate=False, mask=None, maskParams=None, name='unnamed ImageStim', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([0.96875   , 1.72222222]), texRes=128, units='norm', win=Window(...))
+94.7949 	DATA 	Keypress: 5
+94.8743 	EXP 	Created unnamed ImageStim = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, draggable=False, flipHoriz=False, flipVert=False, image=PilImage(...), interpolate=False, mask=None, maskParams=None, name='unnamed ImageStim', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([0.96875   , 1.72222222]), texRes=128, units='norm', win=Window(...))
+96.6249 	DATA 	Keypress: 5
+96.6955 	EXP 	Created unnamed ImageStim = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, draggable=False, flipHoriz=False, flipVert=False, image=PilImage(...), interpolate=False, mask=None, maskParams=None, name='unnamed ImageStim', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([0.96875   , 1.72222222]), texRes=128, units='norm', win=Window(...))
+98.4551 	DATA 	Keypress: 5
+98.5226 	EXP 	Created unnamed ImageStim = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, draggable=False, flipHoriz=False, flipVert=False, image=PilImage(...), interpolate=False, mask=None, maskParams=None, name='unnamed ImageStim', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([0.96875   , 1.72222222]), texRes=128, units='norm', win=Window(...))
+100.2851 	DATA 	Keypress: 5
+100.3621 	EXP 	Created unnamed ImageStim = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, draggable=False, flipHoriz=False, flipVert=False, image=PilImage(...), interpolate=False, mask=None, maskParams=None, name='unnamed ImageStim', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([0.96875   , 1.72222222]), texRes=128, units='norm', win=Window(...))
+102.1150 	DATA 	Keypress: 5
+102.1794 	EXP 	Created unnamed ImageStim = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, draggable=False, flipHoriz=False, flipVert=False, image=PilImage(...), interpolate=False, mask=None, maskParams=None, name='unnamed ImageStim', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([0.96875   , 1.72222222]), texRes=128, units='norm', win=Window(...))
+103.9450 	DATA 	Keypress: 5
+104.0207 	EXP 	Created unnamed ImageStim = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, draggable=False, flipHoriz=False, flipVert=False, image=PilImage(...), interpolate=False, mask=None, maskParams=None, name='unnamed ImageStim', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([0.96875   , 1.72222222]), texRes=128, units='norm', win=Window(...))
+108.0231 	DATA 	Keypress: q
+108.1084 	EXP 	Created unnamed ImageStim = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, draggable=False, flipHoriz=False, flipVert=False, image=PilImage(...), interpolate=False, mask=None, maskParams=None, name='unnamed ImageStim', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([0.96875   , 1.72222222]), texRes=128, units='norm', win=Window(...))
