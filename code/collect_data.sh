@@ -19,14 +19,21 @@ cd "ses-$mdate"
 mkdir -p {DICOMS,birch,psychopy,reproevents,reprostim-videos}
 
 rsync -a bids@rolando.cns.dartmouth.edu:/inbox/DICOM/$Y/$M/$D/birchtest*/* DICOMS/
-rsync -a /home/yoh/proj/repronim/reprostim/{${mdate}*log,tools/reprostim-timesync-stimuli} psychopy/
+# OLD way
+#rsync -a /home/yoh/proj/repronim/reprostim/{${mdate}*log,tools/reprostim-timesync-stimuli} psychopy/
+# NEW way -- from "incoming" folder right here
+
+rsync -a incoming/output*log psychopy/
+
 ssh birch "grep -h '\<${ISODATE}T' /mnt/td/*" >| birch/out.jsonl || :
 if [ ! -s "birch/out.jsonl" ]; then
     echo "WARNING: nothing from birch!"
 fi
 
+# TODO: figure out how to restart Horea's code, skip for now.
+#
 # figure out which file has it first and then grep from all files records
-ssh reprostim@reproiner "cd reprostim/Events/data && grep -l '\<${ISODATE}T' *.csv | head -n 1 | xargs head -n 1 && grep -h '\<${ISODATE}T' *.csv" > reproevents/events.csv
+# ssh reprostim@reproiner "cd reprostim/Events/data && grep -l '\<${ISODATE}T' *.csv | head -n 1 | xargs head -n 1 && grep -h '\<${ISODATE}T' *.csv" > reproevents/events.csv
 
 # only those for which we fetch data, we get them
 (
