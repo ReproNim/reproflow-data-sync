@@ -70,7 +70,7 @@ class SeriesData(BaseModel):
                                                        "item at this moment")
     next_series_interval: Optional[float] = Field(0.0,
                                     description="Interval to next series if any in seconds, "
-                                                "otherwise 0.0. Claculated as"
+                                                "otherwise 0.0. Calculated as"
                                                 "start-start interval between series")
     # contains approximate global datetime when series started
     synced_isotime_start: Optional[datetime] = Field(None, description="Series start global"
