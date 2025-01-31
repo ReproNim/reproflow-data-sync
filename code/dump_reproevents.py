@@ -51,8 +51,24 @@ def row_to_model(row, session_id:str, file_name: str):
 def dump_revents_file(session_id: str, path: str, range_start: datetime,
                     range_end: datetime):
     logger.debug(f"Processing reproevents : {path}")
+
     # Read CSV file into a pandas DataFrame
-    df = pd.read_csv(path)
+    df = None
+    try:
+        df = pd.read_csv(path)
+        logger.debug("CSV file loaded successfully.")
+    except FileNotFoundError:
+        logger.error(f"The file '{path}' does not exist.")
+    except pd.errors.EmptyDataError:
+        logger.error(f"The file '{path}' is empty.")
+    except pd.errors.ParserError as pe:
+        logger.error(f"The file '{path}' contains invalid data or cannot be parsed: {pe}")
+    except Exception as e:
+        logger.error(f"Unexpected error: {e}")
+
+    if not df:
+        return
+
     file_name: str = os.path.basename(path)
     lst: List[ReproeventsRecord] = []
 

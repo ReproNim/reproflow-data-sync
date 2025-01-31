@@ -26,9 +26,9 @@ Known swimlanes listed below, but it's possible this list will be extended in th
 ### Clocks
 Each ReproNim system part and related swimlane has own clock. 
 
-All clocks values serialized into string as `isotime` format. It's variation of ISO 8601 format with microseconds and no-timezone. Timezone info removed to simplify readability and maintenance, but this format implictly treat is as `America/New_York` region (-04:00)  e.g. sample value is `2024-08-09T10:27:24.341075`, but it corresponds to `2024-08-09T10:27:24.341075-04:00` in real world. 
+All clocks values serialized into string as `isotime` format. It's variation of ISO 8601 format with microseconds and no-timezone. Timezone info removed to simplify readability and maintenance, but this format implicitly treat is as `America/New_York` region (-04:00)  e.g. sample value is `2024-08-09T10:27:24.341075`, but it corresponds to `2024-08-09T10:27:24.341075-04:00` in real world. 
 
-In addition to swimlanes internal timing, there is also global clock - `isotime`. It respresents absolute global time in ISO format, and it's used to synchronize all swimlanes together. 
+In addition to swimlanes internal timing, there is also global clock - `isotime`. It represents absolute global time in ISO format, and it's used to synchronize all swimlanes together. 
 
 Global clock timing information is currently sticked to `birch` clock, which mean both are the same. This was done as initial step to start development. But in nature it should not be bound any clocks, and can be set as independent clock, e.g. calculated from different swimlanes or taken somehow from NTP server, etc.
 
@@ -133,7 +133,7 @@ Algorithm proposals for the ReproFlow time synchronization effort:
   - `reprostim-videos` folder with captured videos in *.mkv format and corresponding *.mkv.log files with reprostim metadata.
 - Parse DICOMs with `code/dump_dicoms.py` tool. It produces JSONL file with timing data, image data, sessions data and study data.
   - `./dump_dicoms.py --log-level DEBUG /data/repronim/reproflow-data-sync/ses-20240604 >dump_dicoms.jsonl 2> dump_dicoms.log` 
-- Parse videos with QR codes from session `reprostim-videos` folder with `reprostim/Parse/parse_wQR.py` tool and place results under `timing-reprostim-video` location. At this moment it's unclear how to merge or split this data. So as initial step we consider single video file containing all QR codes. The tool takes long time to proceed video, so we cached result manually in `timing-reprostim-videos` folder for prorotype/development purposes.
+- Parse videos with QR codes from session `reprostim-videos` folder with `reprostim/Parse/parse_wQR.py` tool and place results under `timing-reprostim-video` location. At this moment it's unclear how to merge or split this data. So as initial step we consider single video file containing all QR codes. The tool takes long time to proceed video, so we cached result manually in `timing-reprostim-videos` folder for prototype/development purposes.
   - `./parse_wQR.py --log-level DEBUG /data/repronim/reproflow-data-sync/ses-20240604/reprostim-videos/2024.06.04.13.51.36.620_2024.06.04.13.58.20.763.mkv > 2024.06.04.13.51.36.620_2024.06.04.13.58.20.763.qrinfo.jsonl 2> 2024.06.04.13.51.36.620_2024.06.04.13.58.20.763.qrinfo.log`
   - Note: consider parsing only videos that intersect with MRI study time range -+ 60 minutes.
   - Analyze QR code duration comparing to video script delay set to 0.5 sec at this moment.

@@ -1,0 +1,24 @@
+dump_tmap.py tool
+Started on    : 2025-01-31 14:25:23.813446, vmelnik@Uranus.local
+Working dir   : /Users/vmelnik/Projects/Dartmouth/branches/reproflow-data-sync/code
+Session path  : /Users/vmelnik/Projects/Dartmouth/branches/typhon/reproflow-data-sync/ses-20250127
+Session ID    : ses-20250127
+Loading tmap  : /Users/vmelnik/Projects/Dartmouth/branches/reproflow-data-sync/code/repronim_tmap.jsonl
+              : TMap marks count 13 : [0]=2024-05-28T11:09:00.647672, [1]=2024-06-04T13:54:19.385115, [2]=2024-08-09T10:31:40.686521, [3]=2024-08-09T10:33:21.970882, [4]=2024-08-09T10:35:07.839213, [5]=2024-08-30T11:43:13.027994, [6]=2024-08-30T11:44:53.989127, [7]=2024-08-30T11:52:48.702265, [8]=2024-08-30T11:53:27.575961, [9]=2024-08-30T11:54:06.398548, [10]=2024-08-30T11:54:45.238364, [11]=2024-08-30T11:55:24.166825, [12]=2024-10-04T09:36:38.766137
+Loading dumps config from /Users/vmelnik/Projects/Dartmouth/branches/typhon/reproflow-data-sync/ses-20250127/timing-dumps-config.yaml
+generate_tmap(/Users/vmelnik/Projects/Dartmouth/branches/typhon/reproflow-data-sync/ses-20250127/timing-dumps/dump_marks.jsonl)
+Found full mark count 4: [{'type': 'MarkRecord', 'session_id': 'ses-20250127', 'id': 'mark-000005', 'kind': 'Func series start', 'name': '006-func-bold_task-rest_acq-short1_run-01_start', 'target_ids': ['dicoms-000142', 'birch-000001', 'qrinfo-000001', 'psychopy-000001'], 'dicoms_isotime': '2025-01-27T11:33:19.892500', 'dicoms_duration': 34.77, 'birch_isotime': '2025-01-27T11:32:59.479677', 'birch_duration': 34.770966, 'qrinfo_isotime': '2025-01-27T11:32:59.286000', 'qrinfo_duration': 34.733, 'psychopy_isotime': '2025-01-27T11:32:59.490496', 'psychopy_duration': 34.787247, 'reproevents_isotime': None, 'reproevents_duration': None}, {'type': 'MarkRecord', 'session_id': 'ses-20250127', 'id': 'mark-000027', 'kind': 'Func series start', 'name': '007-func-bold_task-rest_acq-short1_run-02_start', 'target_ids': ['dicoms-000162', 'birch-000021', 'qrinfo-000024', 'psychopy-000021'], 'dicoms_isotime': '2025-01-27T11:35:09.900000', 'dicoms_duration': 34.77, 'birch_isotime': '2025-01-27T11:34:49.109530', 'birch_duration': 34.769516, 'qrinfo_isotime': '2025-01-27T11:34:48.919000', 'qrinfo_duration': 34.734, 'psychopy_isotime': '2025-01-27T11:34:49.121253', 'psychopy_duration': 34.782392, 'reproevents_isotime': None, 'reproevents_duration': None}, {'type': 'MarkRecord', 'session_id': 'ses-20250127', 'id': 'mark-000071', 'kind': 'Func series start', 'name': '009-func-bold_task-rest_acq-short1_run-04_start', 'target_ids': ['dicoms-000202', 'birch-000061', 'qrinfo-000065', 'psychopy-000060'], 'dicoms_isotime': '2025-01-27T11:40:19.890000', 'dicoms_duration': 34.77, 'birch_isotime': '2025-01-27T11:39:58.768193', 'birch_duration': 34.770357, 'qrinfo_isotime': '2025-01-27T11:39:58.705000', 'qrinfo_duration': 34.75, 'psychopy_isotime': '2025-01-27T11:39:58.779267', 'psychopy_duration': 34.778875, 'reproevents_isotime': None, 'reproevents_duration': None}, {'type': 'MarkRecord', 'session_id': 'ses-20250127', 'id': 'mark-000093', 'kind': 'Func series start', 'name': '010-func-bold_task-rest_acq-short1_run-05_start', 'target_ids': ['dicoms-000222', 'birch-000081', 'qrinfo-000086', 'psychopy-000080'], 'dicoms_isotime': '2025-01-27T11:42:33.897500', 'dicoms_duration': 34.77, 'birch_isotime': '2025-01-27T11:42:12.846650', 'birch_duration': 34.771689, 'qrinfo_isotime': '2025-01-27T11:42:12.805000', 'qrinfo_duration': 34.717, 'psychopy_isotime': '2025-01-27T11:42:12.857190', 'psychopy_duration': 34.775628, 'reproevents_isotime': None, 'reproevents_duration': None}]
+from_offset=0.0, to_offset=0.0
+offset=0.0
+Calculate artifical [reproevents] clock isotime: 2025-01-27 11:32:59.479677
+from_offset=0.0, to_offset=0.0
+offset=0.0
+Calculate artifical [reproevents] clock isotime: 2025-01-27 11:34:49.109530
+from_offset=0.0, to_offset=0.0
+offset=0.0
+Calculate artifical [reproevents] clock isotime: 2025-01-27 11:39:58.768193
+from_offset=0.0, to_offset=0.0
+offset=0.0
+Calculate artifical [reproevents] clock isotime: 2025-01-27 11:42:12.846650
+Exit on   : 2025-01-31 14:25:23.839445
+Exit code : 0

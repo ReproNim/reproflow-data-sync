@@ -1,0 +1,158 @@
+dump_psychopy.py tool
+Started on    : 2025-01-31 14:25:19.228913, vmelnik@Uranus.local
+Working dir   : /Users/vmelnik/Projects/Dartmouth/branches/reproflow-data-sync/code
+Session path  : /Users/vmelnik/Projects/Dartmouth/branches/typhon/reproflow-data-sync/ses-20250127
+Session ID    : ses-20250127
+Dumps path    : /Users/vmelnik/Projects/Dartmouth/branches/typhon/reproflow-data-sync/ses-20250127/timing-dumps
+DICOMS dump   : /Users/vmelnik/Projects/Dartmouth/branches/typhon/reproflow-data-sync/ses-20250127/timing-dumps/dump_dicoms.jsonl
+Psychopy path : /Users/vmelnik/Projects/Dartmouth/branches/typhon/reproflow-data-sync/ses-20250127/psychopy
+QRInfo path   : /Users/vmelnik/Projects/Dartmouth/branches/typhon/reproflow-data-sync/ses-20250127/timing-dumps/dump_qrinfo.jsonl
+Loading tmap  : /Users/vmelnik/Projects/Dartmouth/branches/reproflow-data-sync/code/repronim_tmap.jsonl
+              : TMap marks count 13 : [0]=2024-05-28T11:09:00.647672, [1]=2024-06-04T13:54:19.385115, [2]=2024-08-09T10:31:40.686521, [3]=2024-08-09T10:33:21.970882, [4]=2024-08-09T10:35:07.839213, [5]=2024-08-30T11:43:13.027994, [6]=2024-08-30T11:44:53.989127, [7]=2024-08-30T11:52:48.702265, [8]=2024-08-30T11:53:27.575961, [9]=2024-08-30T11:54:06.398548, [10]=2024-08-30T11:54:45.238364, [11]=2024-08-30T11:55:24.166825, [12]=2024-10-04T09:36:38.766137
+Loading dumps config from /Users/vmelnik/Projects/Dartmouth/branches/typhon/reproflow-data-sync/ses-20250127/timing-dumps-config.yaml
+Study range   : dicoms    2025-01-27 11:27:01.925000 - 2025-01-27 11:45:08.667500
+use avg period
+from_offset=124.5979707554226, to_offset=0.08218
+offset=-124.5157907554226
+use avg period
+from_offset=124.61336767079878, to_offset=0.08218
+offset=-124.53118767079879
+              : psychopy  2025-01-27 11:24:57.409209245 - 2025-01-27 11:43:04.136312329
+Loading QRInfo map from /Users/vmelnik/Projects/Dartmouth/branches/typhon/reproflow-data-sync/ses-20250127/timing-dumps/dump_qrinfo.jsonl
+Psychopy log files: ['output_2025.01.27-11.41.58.533--2025.01.27-11.42.52.165.log', 'output_2025.01.27-11.32.33.419--2025.01.27-11.33.45.114.log', 'output_2025.01.27-11.34.23.808--2025.01.27-11.34.29.764.log', 'output_2025.01.27-11.38.49.574--2025.01.27-11.40.38.230.log', 'output_2025.01.27-11.34.32.575--2025.01.27-11.35.27.852.log', 'output_2025.01.27-11.36.43.465--2025.01.27-11.37.36.144.log', 'output_2025.01.27-11.30.24.316--.log']
+Psychopy log file: /Users/vmelnik/Projects/Dartmouth/branches/typhon/reproflow-data-sync/ses-20250127/psychopy/output_2025.01.27-11.41.58.533--2025.01.27-11.42.52.165.log
+Time: 2025-01-27 11:42:00.391140, event: started, key0: None
+Skip, out of study range: {'event': 'started', 'start_time': 1737996118.4588447, 'start_time_formatted': '2025-01-27T11:41:58.458845-05:00', 'logfn': 'output_2025.01.27-11.41.58.533--.log', 'time': 1737996120.3911395, 'time_formatted': '2025-01-27T11:42:00.391140-05:00', 'mode': 'event'}
+Time: 2025-01-27 11:42:00.469566, event: trigger, key0: 5
+Time: 2025-01-27 11:42:13.454078, event: trigger, key0: 5
+Time: 2025-01-27 11:42:15.270554, event: trigger, key0: 5
+Time: 2025-01-27 11:42:17.107606, event: trigger, key0: 5
+Time: 2025-01-27 11:42:18.942943, event: trigger, key0: 5
+Time: 2025-01-27 11:42:20.756488, event: trigger, key0: 5
+Time: 2025-01-27 11:42:22.588286, event: trigger, key0: 5
+Time: 2025-01-27 11:42:24.421408, event: trigger, key0: 5
+Time: 2025-01-27 11:42:26.248110, event: trigger, key0: 5
+Time: 2025-01-27 11:42:28.096743, event: trigger, key0: 5
+Time: 2025-01-27 11:42:29.932062, event: trigger, key0: 5
+Time: 2025-01-27 11:42:31.758510, event: trigger, key0: 5
+Time: 2025-01-27 11:42:33.582069, event: trigger, key0: 5
+Time: 2025-01-27 11:42:35.398252, event: trigger, key0: 5
+Time: 2025-01-27 11:42:37.241295, event: trigger, key0: 5
+Time: 2025-01-27 11:42:39.058502, event: trigger, key0: 5
+Time: 2025-01-27 11:42:40.892553, event: trigger, key0: 5
+Time: 2025-01-27 11:42:42.731484, event: trigger, key0: 5
+Time: 2025-01-27 11:42:44.549018, event: trigger, key0: 5
+Time: 2025-01-27 11:42:46.378579, event: trigger, key0: 5
+Time: 2025-01-27 11:42:48.208080, event: trigger, key0: q
+Skip, out of study range: {'event': 'trigger', 'acqNum': 20, 'logfn': 'output_2025.01.27-11.41.58.533--.log', 'time': 1737996168.2080796, 'time_formatted': '2025-01-27T11:42:48.208080-05:00', 'mode': 'event', 'a_time': 1737996171.5783772, 'a_time_str': '2025-01-27T11:42:51.578377-05:00', 'a_data': 20, 'a_codec': 'FSK', 'a_f0': 1000, 'a_f1': 5000, 'a_pre_delay': 0.1, 'a_post_delay': 0.1, 'a_duration': 0.648, 'keys': ['q'], 'keys_time': 1737996171.5784068, 'keys_time_str': '2025-01-27T11:42:51.578407-05:00', 'time_flip': 1737996171.6472108, 'time_flip_formatted': '2025-01-27T11:42:51.647211-05:00', 'prior_time_off': 1737996172.1643639, 'prior_time_off_str': '2025-01-27T11:42:52.164364-05:00'}
+Psychopy log file: /Users/vmelnik/Projects/Dartmouth/branches/typhon/reproflow-data-sync/ses-20250127/psychopy/output_2025.01.27-11.32.33.419--2025.01.27-11.33.45.114.log
+Time: 2025-01-27 11:32:35.189660, event: started, key0: None
+Skip, out of study range: {'event': 'started', 'start_time': 1737995553.340848, 'start_time_formatted': '2025-01-27T11:32:33.340848-05:00', 'logfn': 'output_2025.01.27-11.32.33.419--.log', 'time': 1737995555.1896598, 'time_formatted': '2025-01-27T11:32:35.189660-05:00', 'mode': 'event'}
+Time: 2025-01-27 11:32:35.269738, event: trigger, key0: 5
+Time: 2025-01-27 11:33:00.067978, event: trigger, key0: 5
+Time: 2025-01-27 11:33:01.905223, event: trigger, key0: 5
+Time: 2025-01-27 11:33:03.749166, event: trigger, key0: 5
+Time: 2025-01-27 11:33:05.592452, event: trigger, key0: 5
+Time: 2025-01-27 11:33:07.388451, event: trigger, key0: 5
+Time: 2025-01-27 11:33:09.220116, event: trigger, key0: 5
+Time: 2025-01-27 11:33:11.061043, event: trigger, key0: 5
+Time: 2025-01-27 11:33:12.884803, event: trigger, key0: 5
+Time: 2025-01-27 11:33:14.733249, event: trigger, key0: 5
+Time: 2025-01-27 11:33:16.549338, event: trigger, key0: 5
+Time: 2025-01-27 11:33:18.375113, event: trigger, key0: 5
+Time: 2025-01-27 11:33:20.203372, event: trigger, key0: 5
+Time: 2025-01-27 11:33:22.044181, event: trigger, key0: 5
+Time: 2025-01-27 11:33:23.884642, event: trigger, key0: 5
+Time: 2025-01-27 11:33:25.705700, event: trigger, key0: 5
+Time: 2025-01-27 11:33:27.535278, event: trigger, key0: 5
+Time: 2025-01-27 11:33:29.348114, event: trigger, key0: 5
+Time: 2025-01-27 11:33:31.194397, event: trigger, key0: 5
+Time: 2025-01-27 11:33:33.012449, event: trigger, key0: 5
+Time: 2025-01-27 11:33:34.852765, event: trigger, key0: q
+Skip, out of study range: {'event': 'trigger', 'acqNum': 20, 'logfn': 'output_2025.01.27-11.32.33.419--.log', 'time': 1737995614.852765, 'time_formatted': '2025-01-27T11:33:34.852765-05:00', 'mode': 'event', 'a_time': 1737995624.5484536, 'a_time_str': '2025-01-27T11:33:44.548454-05:00', 'a_data': 20, 'a_codec': 'FSK', 'a_f0': 1000, 'a_f1': 5000, 'a_pre_delay': 0.1, 'a_post_delay': 0.1, 'a_duration': 0.648, 'keys': ['q'], 'keys_time': 1737995624.5484855, 'keys_time_str': '2025-01-27T11:33:44.548486-05:00', 'time_flip': 1737995624.608695, 'time_flip_formatted': '2025-01-27T11:33:44.608695-05:00', 'prior_time_off': 1737995625.1136913, 'prior_time_off_str': '2025-01-27T11:33:45.113691-05:00'}
+Psychopy log file: /Users/vmelnik/Projects/Dartmouth/branches/typhon/reproflow-data-sync/ses-20250127/psychopy/output_2025.01.27-11.34.23.808--2025.01.27-11.34.29.764.log
+Time: 2025-01-27 11:34:25.571965, event: started, key0: None
+Skip, out of study range: {'event': 'started', 'start_time': 1737995663.7372582, 'start_time_formatted': '2025-01-27T11:34:23.737258-05:00', 'logfn': 'output_2025.01.27-11.34.23.808--.log', 'time': 1737995665.5719645, 'time_formatted': '2025-01-27T11:34:25.571965-05:00', 'mode': 'event'}
+Time: 2025-01-27 11:34:25.635638, event: trigger, key0: c
+Skip, out of study range: {'event': 'trigger', 'acqNum': 0, 'logfn': 'output_2025.01.27-11.34.23.808--.log', 'time': 1737995665.635638, 'time_formatted': '2025-01-27T11:34:25.635638-05:00', 'mode': 'event', 'a_time': 1737995667.213874, 'a_time_str': '2025-01-27T11:34:27.213874-05:00', 'a_data': 0, 'a_codec': 'FSK', 'a_f0': 1000, 'a_f1': 5000, 'a_pre_delay': 0.1, 'a_post_delay': 0.1, 'a_duration': 0.648, 'keys': ['c'], 'keys_time': 1737995667.2139037, 'keys_time_str': '2025-01-27T11:34:27.213904-05:00', 'time_flip': 1737995667.279863, 'time_flip_formatted': '2025-01-27T11:34:27.279863-05:00', 'prior_time_off': 1737995667.7874486, 'prior_time_off_str': '2025-01-27T11:34:27.787449-05:00'}
+Time: 2025-01-27 11:34:27.787721, event: trigger, key0: q
+Skip, out of study range: {'event': 'trigger', 'acqNum': 1, 'logfn': 'output_2025.01.27-11.34.23.808--.log', 'time': 1737995667.7877214, 'time_formatted': '2025-01-27T11:34:27.787721-05:00', 'mode': 'event', 'a_time': 1737995669.2009504, 'a_time_str': '2025-01-27T11:34:29.200950-05:00', 'a_data': 1, 'a_codec': 'FSK', 'a_f0': 1000, 'a_f1': 5000, 'a_pre_delay': 0.1, 'a_post_delay': 0.1, 'a_duration': 0.648, 'keys': ['q'], 'keys_time': 1737995669.20098, 'keys_time_str': '2025-01-27T11:34:29.200980-05:00', 'time_flip': 1737995669.2619948, 'time_flip_formatted': '2025-01-27T11:34:29.261995-05:00', 'prior_time_off': 1737995669.7639759, 'prior_time_off_str': '2025-01-27T11:34:29.763976-05:00'}
+Psychopy log file: /Users/vmelnik/Projects/Dartmouth/branches/typhon/reproflow-data-sync/ses-20250127/psychopy/output_2025.01.27-11.38.49.574--2025.01.27-11.40.38.230.log
+Time: 2025-01-27 11:38:51.426781, event: started, key0: None
+Skip, out of study range: {'event': 'started', 'start_time': 1737995929.4838722, 'start_time_formatted': '2025-01-27T11:38:49.483872-05:00', 'logfn': 'output_2025.01.27-11.38.49.574--.log', 'time': 1737995931.4267807, 'time_formatted': '2025-01-27T11:38:51.426781-05:00', 'mode': 'event'}
+Time: 2025-01-27 11:38:51.505544, event: trigger, key0: 5
+Time: 2025-01-27 11:39:59.372780, event: trigger, key0: 5
+Time: 2025-01-27 11:40:01.206193, event: trigger, key0: 5
+Time: 2025-01-27 11:40:03.023639, event: trigger, key0: 5
+Time: 2025-01-27 11:40:04.848536, event: trigger, key0: 5
+Time: 2025-01-27 11:40:06.693597, event: trigger, key0: 5
+Time: 2025-01-27 11:40:08.526831, event: trigger, key0: 5
+Time: 2025-01-27 11:40:10.337912, event: trigger, key0: 5
+Time: 2025-01-27 11:40:12.181976, event: trigger, key0: 5
+Time: 2025-01-27 11:40:13.992392, event: trigger, key0: 5
+Time: 2025-01-27 11:40:15.830395, event: trigger, key0: 5
+Time: 2025-01-27 11:40:17.692284, event: trigger, key0: 5
+Time: 2025-01-27 11:40:19.490023, event: trigger, key0: 5
+Time: 2025-01-27 11:40:21.320782, event: trigger, key0: 5
+Time: 2025-01-27 11:40:23.166520, event: trigger, key0: 5
+Time: 2025-01-27 11:40:24.997703, event: trigger, key0: 5
+Time: 2025-01-27 11:40:26.809596, event: trigger, key0: 5
+Time: 2025-01-27 11:40:28.642793, event: trigger, key0: 5
+Time: 2025-01-27 11:40:30.488288, event: trigger, key0: 5
+Time: 2025-01-27 11:40:32.298066, event: trigger, key0: 5
+Time: 2025-01-27 11:40:34.138111, event: trigger, key0: q
+Skip, out of study range: {'event': 'trigger', 'acqNum': 20, 'logfn': 'output_2025.01.27-11.38.49.574--.log', 'time': 1737996034.138111, 'time_formatted': '2025-01-27T11:40:34.138111-05:00', 'mode': 'event', 'a_time': 1737996037.6377351, 'a_time_str': '2025-01-27T11:40:37.637735-05:00', 'a_data': 20, 'a_codec': 'FSK', 'a_f0': 1000, 'a_f1': 5000, 'a_pre_delay': 0.1, 'a_post_delay': 0.1, 'a_duration': 0.648, 'keys': ['q'], 'keys_time': 1737996037.6377788, 'keys_time_str': '2025-01-27T11:40:37.637779-05:00', 'time_flip': 1737996037.7121484, 'time_flip_formatted': '2025-01-27T11:40:37.712148-05:00', 'prior_time_off': 1737996038.2293375, 'prior_time_off_str': '2025-01-27T11:40:38.229337-05:00'}
+Psychopy log file: /Users/vmelnik/Projects/Dartmouth/branches/typhon/reproflow-data-sync/ses-20250127/psychopy/output_2025.01.27-11.34.32.575--2025.01.27-11.35.27.852.log
+Time: 2025-01-27 11:34:34.477954, event: started, key0: None
+Skip, out of study range: {'event': 'started', 'start_time': 1737995672.4832215, 'start_time_formatted': '2025-01-27T11:34:32.483222-05:00', 'logfn': 'output_2025.01.27-11.34.32.575--.log', 'time': 1737995674.4779544, 'time_formatted': '2025-01-27T11:34:34.477954-05:00', 'mode': 'event'}
+Time: 2025-01-27 11:34:34.557622, event: trigger, key0: 5
+Time: 2025-01-27 11:34:49.697530, event: trigger, key0: 5
+Time: 2025-01-27 11:34:51.519521, event: trigger, key0: 5
+Time: 2025-01-27 11:34:53.373368, event: trigger, key0: 5
+Time: 2025-01-27 11:34:55.178568, event: trigger, key0: 5
+Time: 2025-01-27 11:34:57.029928, event: trigger, key0: 5
+Time: 2025-01-27 11:34:58.852204, event: trigger, key0: 5
+Time: 2025-01-27 11:35:00.686049, event: trigger, key0: 5
+Time: 2025-01-27 11:35:02.504954, event: trigger, key0: 5
+Time: 2025-01-27 11:35:04.342294, event: trigger, key0: 5
+Time: 2025-01-27 11:35:06.184414, event: trigger, key0: 5
+Time: 2025-01-27 11:35:07.992127, event: trigger, key0: 5
+Time: 2025-01-27 11:35:09.836836, event: trigger, key0: 5
+Time: 2025-01-27 11:35:11.648610, event: trigger, key0: 5
+Time: 2025-01-27 11:35:13.503053, event: trigger, key0: 5
+Time: 2025-01-27 11:35:15.323258, event: trigger, key0: 5
+Time: 2025-01-27 11:35:17.161437, event: trigger, key0: 5
+Time: 2025-01-27 11:35:18.981591, event: trigger, key0: 5
+Time: 2025-01-27 11:35:20.805376, event: trigger, key0: 5
+Time: 2025-01-27 11:35:22.648233, event: trigger, key0: 5
+Time: 2025-01-27 11:35:24.479047, event: trigger, key0: q
+Skip, out of study range: {'event': 'trigger', 'acqNum': 20, 'logfn': 'output_2025.01.27-11.34.32.575--.log', 'time': 1737995724.4790468, 'time_formatted': '2025-01-27T11:35:24.479047-05:00', 'mode': 'event', 'a_time': 1737995727.2714374, 'a_time_str': '2025-01-27T11:35:27.271437-05:00', 'a_data': 20, 'a_codec': 'FSK', 'a_f0': 1000, 'a_f1': 5000, 'a_pre_delay': 0.1, 'a_post_delay': 0.1, 'a_duration': 0.648, 'keys': ['q'], 'keys_time': 1737995727.271467, 'keys_time_str': '2025-01-27T11:35:27.271467-05:00', 'time_flip': 1737995727.3435864, 'time_flip_formatted': '2025-01-27T11:35:27.343586-05:00', 'prior_time_off': 1737995727.8511117, 'prior_time_off_str': '2025-01-27T11:35:27.851112-05:00'}
+Psychopy log file: /Users/vmelnik/Projects/Dartmouth/branches/typhon/reproflow-data-sync/ses-20250127/psychopy/output_2025.01.27-11.36.43.465--2025.01.27-11.37.36.144.log
+Time: 2025-01-27 11:36:45.423537, event: started, key0: None
+Skip, out of study range: {'event': 'started', 'start_time': 1737995803.3892868, 'start_time_formatted': '2025-01-27T11:36:43.389287-05:00', 'logfn': 'output_2025.01.27-11.36.43.465--.log', 'time': 1737995805.4235368, 'time_formatted': '2025-01-27T11:36:45.423537-05:00', 'mode': 'event'}
+Time: 2025-01-27 11:36:45.489143, event: trigger, key0: 5
+Time: 2025-01-27 11:36:58.244930, event: trigger, key0: 5
+Time: 2025-01-27 11:37:00.075010, event: trigger, key0: 5
+Time: 2025-01-27 11:37:01.911596, event: trigger, key0: 5
+Time: 2025-01-27 11:37:03.738313, event: trigger, key0: 5
+Time: 2025-01-27 11:37:05.563994, event: trigger, key0: 5
+Time: 2025-01-27 11:37:07.403071, event: trigger, key0: 5
+Time: 2025-01-27 11:37:09.239796, event: trigger, key0: 5
+Time: 2025-01-27 11:37:11.072309, event: trigger, key0: 5
+Time: 2025-01-27 11:37:14.732674, event: trigger, key0: 5
+Time: 2025-01-27 11:37:16.549806, event: trigger, key0: 5
+Time: 2025-01-27 11:37:18.387307, event: trigger, key0: 5
+Time: 2025-01-27 11:37:20.199369, event: trigger, key0: 5
+Time: 2025-01-27 11:37:22.053434, event: trigger, key0: 5
+Time: 2025-01-27 11:37:23.889971, event: trigger, key0: 5
+Time: 2025-01-27 11:37:25.714158, event: trigger, key0: 5
+Time: 2025-01-27 11:37:27.557213, event: trigger, key0: 5
+Time: 2025-01-27 11:37:29.390950, event: trigger, key0: 5
+Time: 2025-01-27 11:37:31.194870, event: trigger, key0: 5
+Time: 2025-01-27 11:37:33.024731, event: trigger, key0: q
+Skip, out of study range: {'event': 'trigger', 'acqNum': 19, 'logfn': 'output_2025.01.27-11.36.43.465--.log', 'time': 1737995853.0247307, 'time_formatted': '2025-01-27T11:37:33.024731-05:00', 'mode': 'event', 'a_time': 1737995855.5628896, 'a_time_str': '2025-01-27T11:37:35.562890-05:00', 'a_data': 19, 'a_codec': 'FSK', 'a_f0': 1000, 'a_f1': 5000, 'a_pre_delay': 0.1, 'a_post_delay': 0.1, 'a_duration': 0.648, 'keys': ['q'], 'keys_time': 1737995855.5629234, 'keys_time_str': '2025-01-27T11:37:35.562923-05:00', 'time_flip': 1737995855.6324272, 'time_flip_formatted': '2025-01-27T11:37:35.632427-05:00', 'prior_time_off': 1737995856.1436348, 'prior_time_off_str': '2025-01-27T11:37:36.143635-05:00'}
+Psychopy log file: /Users/vmelnik/Projects/Dartmouth/branches/typhon/reproflow-data-sync/ses-20250127/psychopy/output_2025.01.27-11.30.24.316--.log
+Time: 2025-01-27 11:30:26.118149, event: started, key0: None
+Skip, out of study range: {'event': 'started', 'start_time': 1737995424.2326145, 'start_time_formatted': '2025-01-27T11:30:24.232615-05:00', 'logfn': 'output_2025.01.27-11.30.24.316--.log', 'time': 1737995426.1181493, 'time_formatted': '2025-01-27T11:30:26.118149-05:00', 'mode': 'event'}
+Exit on   : 2025-01-31 14:25:19.578507
+Exit code : 0
