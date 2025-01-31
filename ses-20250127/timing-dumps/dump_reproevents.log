@@ -1,0 +1,65 @@
+dump_reproevents.py tool
+Started on    : 2025-01-31 14:25:20.938062, vmelnik@Uranus.local
+Working dir   : /Users/vmelnik/Projects/Dartmouth/branches/reproflow-data-sync/code
+Session path  : /Users/vmelnik/Projects/Dartmouth/branches/typhon/reproflow-data-sync/ses-20250127
+Session ID    : ses-20250127
+Dumps path    : /Users/vmelnik/Projects/Dartmouth/branches/typhon/reproflow-data-sync/ses-20250127/timing-dumps
+DICOMS dump   : /Users/vmelnik/Projects/Dartmouth/branches/typhon/reproflow-data-sync/ses-20250127/timing-dumps/dump_dicoms.jsonl
+Reproevents path: /Users/vmelnik/Projects/Dartmouth/branches/typhon/reproflow-data-sync/ses-20250127/reproevents
+Loading tmap  : /Users/vmelnik/Projects/Dartmouth/branches/reproflow-data-sync/code/repronim_tmap.jsonl
+              : TMap marks count 13 : [0]=2024-05-28T11:09:00.647672, [1]=2024-06-04T13:54:19.385115, [2]=2024-08-09T10:31:40.686521, [3]=2024-08-09T10:33:21.970882, [4]=2024-08-09T10:35:07.839213, [5]=2024-08-30T11:43:13.027994, [6]=2024-08-30T11:44:53.989127, [7]=2024-08-30T11:52:48.702265, [8]=2024-08-30T11:53:27.575961, [9]=2024-08-30T11:54:06.398548, [10]=2024-08-30T11:54:45.238364, [11]=2024-08-30T11:55:24.166825, [12]=2024-10-04T09:36:38.766137
+Loading dumps config from /Users/vmelnik/Projects/Dartmouth/branches/typhon/reproflow-data-sync/ses-20250127/timing-dumps-config.yaml
+Study range   : dicoms      2025-01-27 11:27:01.925000 - 2025-01-27 11:45:08.667500
+use avg period
+from_offset=124.5979707554226, to_offset=0.0
+offset=-124.5979707554226
+use avg period
+from_offset=124.61336767079878, to_offset=0.0
+offset=-124.61336767079878
+              : reproevents 2025-01-27 11:24:57.327029245 - 2025-01-27 11:43:04.054132329
+Reading reproevent dir : /Users/vmelnik/Projects/Dartmouth/branches/typhon/reproflow-data-sync/ses-20250127/reproevents
+  events.csv
+Processing reproevents : /Users/vmelnik/Projects/Dartmouth/branches/typhon/reproflow-data-sync/ses-20250127/reproevents/events.csv
+Traceback (most recent call last):
+  File "/Users/vmelnik/Projects/Dartmouth/branches/reproflow-data-sync/code/./dump_reproevents.py", line 170, in <module>
+    code = main(standalone_mode=False)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/vmelnik/Projects/Dartmouth/branches/reproflow-data-sync/code/venv/lib/python3.12/site-packages/click/core.py", line 1157, in __call__
+    return self.main(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/vmelnik/Projects/Dartmouth/branches/reproflow-data-sync/code/venv/lib/python3.12/site-packages/click/core.py", line 1078, in main
+    rv = self.invoke(ctx)
+         ^^^^^^^^^^^^^^^^
+  File "/Users/vmelnik/Projects/Dartmouth/branches/reproflow-data-sync/code/venv/lib/python3.12/site-packages/click/core.py", line 1434, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/vmelnik/Projects/Dartmouth/branches/reproflow-data-sync/code/venv/lib/python3.12/site-packages/click/core.py", line 783, in invoke
+    return __callback(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/vmelnik/Projects/Dartmouth/branches/reproflow-data-sync/code/venv/lib/python3.12/site-packages/click/decorators.py", line 33, in new_func
+    return f(get_current_context(), *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/vmelnik/Projects/Dartmouth/branches/reproflow-data-sync/code/./dump_reproevents.py", line 164, in main
+    dump_revents_all(session_id, revents_path,
+  File "/Users/vmelnik/Projects/Dartmouth/branches/reproflow-data-sync/code/./dump_reproevents.py", line 98, in dump_revents_all
+    dump_revents_file(session_id, filepath,
+  File "/Users/vmelnik/Projects/Dartmouth/branches/reproflow-data-sync/code/./dump_reproevents.py", line 55, in dump_revents_file
+    df = pd.read_csv(path)
+         ^^^^^^^^^^^^^^^^^
+  File "/Users/vmelnik/Projects/Dartmouth/branches/reproflow-data-sync/code/venv/lib/python3.12/site-packages/pandas/io/parsers/readers.py", line 1026, in read_csv
+    return _read(filepath_or_buffer, kwds)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/vmelnik/Projects/Dartmouth/branches/reproflow-data-sync/code/venv/lib/python3.12/site-packages/pandas/io/parsers/readers.py", line 620, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/vmelnik/Projects/Dartmouth/branches/reproflow-data-sync/code/venv/lib/python3.12/site-packages/pandas/io/parsers/readers.py", line 1620, in __init__
+    self._engine = self._make_engine(f, self.engine)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/vmelnik/Projects/Dartmouth/branches/reproflow-data-sync/code/venv/lib/python3.12/site-packages/pandas/io/parsers/readers.py", line 1898, in _make_engine
+    return mapping[engine](f, **self.options)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/vmelnik/Projects/Dartmouth/branches/reproflow-data-sync/code/venv/lib/python3.12/site-packages/pandas/io/parsers/c_parser_wrapper.py", line 93, in __init__
+    self._reader = parsers.TextReader(src, **kwds)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "parsers.pyx", line 581, in pandas._libs.parsers.TextReader.__cinit__
+pandas.errors.EmptyDataError: No columns to parse from file
