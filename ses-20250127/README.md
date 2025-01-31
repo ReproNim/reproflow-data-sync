@@ -91,7 +91,7 @@ PsychoPy3, version 2025.1.0 (c)Jonathan Peirce 2018, GNU GPL license
     ```
     it generates `ses-20250127/timing-dumps` folder, and it was committed to git.
   
-### Results
+### Results & Observations
 
 - 0 `reproevents` series as no data provided. There is also error in 
   `dump_reproevents.log`, should be fixed?.
@@ -103,3 +103,4 @@ PsychoPy3, version 2025.1.0 (c)Jonathan Peirce 2018, GNU GPL license
   split the 3rd series into 2 series with 8 and 11 images each or 19 
   totally instead of 20 ones. It should be investigated what is the cause and what
   happened with 9-th image in 3rd scan (008-func-bold_task-rest_acq-short1_run-03).
+- `dump_qrinfo.jsonl` contains only video QR codes and no audio ones.
