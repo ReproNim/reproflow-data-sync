@@ -94,13 +94,29 @@ PsychoPy3, version 2025.1.0 (c)Jonathan Peirce 2018, GNU GPL license
 ### Results & Observations
 
 - 0 `reproevents` series as no data provided. There is also error in 
-  `dump_reproevents.log`, should be fixed?.
-- based on DICOMs we have 6 func scans - first is only 2 frames, and the rest 5
+  `dump_reproevents.log`, which is fixed now.
+- Based on DICOMs we have 6 func scans - first is only 2 frames, and the rest 5
   contains 20 images each and interval is 1.83s (rather than 15/2.0 we had before).
-- first series with 2 frames is not handled and considered to be series (maybe it's ok).
+- First series with 2 frames is not handled and considered to be series (maybe it's ok).
 - `birch` found all 5 long series for 20 images and interval 1.83s correctly.
 - `qrinfo` and `psychopy` somehow found 6 series, for unknown reasons they 
   split the 3rd series into 2 series with 8 and 11 images each or 19 
   totally instead of 20 ones. It should be investigated what is the cause and what
   happened with 9-th image in 3rd scan (008-func-bold_task-rest_acq-short1_run-03).
+- After looking at `psychopy` logs and recorded video found:
+  - Scan drop recorded in `psychopy` `output_2025.01.27-11.36.43.465--2025.01.27-11.37.36.144.log`:
+    ```jsonl
+    {"event": "trigger", "acqNum": 8, "logfn": "output_2025.01.27-11.36.43.465--.log", "time": 1737995831.072309, "time_formatted": "2025-01-27T11:37:11.072309-05:00", "mode": "event", "a_time": 1737995834.1524897, "a_time_str": "2025-01-27T11:37:14.152490-05:00", "a_data": 8, "a_codec": "FSK", "a_f0": 1000, "a_f1": 5000, "a_pre_delay": 0.1, "a_post_delay": 0.1, "a_duration": 0.648, "keys": ["5"], "keys_time": 1737995834.152525, "keys_time_str": "2025-01-27T11:37:14.152525-05:00", "time_flip": 1737995834.2256658, "time_flip_formatted": "2025-01-27T11:37:14.225666-05:00", "prior_time_off": 1737995834.7325563, "prior_time_off_str": "2025-01-27T11:37:14.732556-05:00"}
+    {"event": "trigger", "acqNum": 9, "logfn": "output_2025.01.27-11.36.43.465--.log", "time": 1737995834.7326736, "time_formatted": "2025-01-27T11:37:14.732674-05:00", "mode": "event", "a_time": 1737995835.984098, "a_time_str": "2025-01-27T11:37:15.984098-05:00", "a_data": 9, "a_codec": "FSK", "a_f0": 1000, "a_f1": 5000, "a_pre_delay": 0.1, "a_post_delay": 0.1, "a_duration": 0.648, "keys": ["5"], "keys_time": 1737995835.9841313, "keys_time_str": "2025-01-27T11:37:15.984131-05:00", "time_flip": 1737995836.0421019, "time_flip_formatted": "2025-01-27T11:37:16.042102-05:00", "prior_time_off": 1737995836.5496328, "prior_time_off_str": "2025-01-27T11:37:16.549633-05:00"}
+    ```
+  - We can see that `acqNum` is sequential 8 -> 9, but time delta is 3.66s rather than 1.83s. 
+  - This means that either no signal was received for 9-th image by pscychopy/timesync_stimuli or it was missed by script somehow inside. 
+- Missed scan time interval is between 11:37:10 and 11:37:14.
 - `dump_qrinfo.jsonl` contains only video QR codes and no audio ones.
+- `dump_tmap.jsonl` contains only 4 series, the broken one explained above is not 
+   included, so this is good.
+- TBD: investigate `dump_tmap_ex.csv` series mapping data to check current 
+  match algorithm accuracy.
+- TODO: add session `tmap` data to global `repronim_tmap.jsonl` table.
+- TODO: work on `qr-parse` reprostim sub-command code to parse audio codes as 
+  well from recorded videos.
