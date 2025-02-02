@@ -23,7 +23,7 @@ As the events information contains trigger pulses as well, in principle it
 makes it relatively trivial to align those if automatically captured.
 
 Videos are trickier and hence we want to automate collection of
-"callibration" data samples while performing regular MRI QA.
+"calibration" data samples while performing regular MRI QA.
 
 See https://github.com/ReproNim/reprostim/issues/13 for more diagrams and
 information.

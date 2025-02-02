@@ -90,6 +90,10 @@ PsychoPy3, version 2025.1.0 (c)Jonathan Peirce 2018, GNU GPL license
     cp -rv $DATA_DIR/ses-20250127/timing-dumps $GIT_DIR/ses-20250127
     ```
     it generates `ses-20250127/timing-dumps` folder, and it was committed to git.
+  - added `manually ses-20250127/timing-dumps/dump_tmap.jsonl` content to the 
+    end of `code/repronim_tmap.jsonl` file.
+  - to double-check: generated timing dumps with updated global `repronim_tmap.jsonl`
+    date to make sure all is good.
   
 ### Results & Observations
 
