@@ -1,0 +1,12 @@
+# provide custom DICOMs offset to fix time gap
+# due to time correction if any
+
+# clock_offsets:
+#   dicoms: -17.00
+
+# ref_swimlane: reproevents
+
+# skip swimlanes for sessions to force building of tmap anyway
+skip_swimlanes:
+  # we don't have reproevents in ses-20250127
+  - reproevents

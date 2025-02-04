@@ -93,7 +93,7 @@ def calc_isotime(cfg: DumpsConfig, mark,
             t = get_tmap_svc().convert(Clock.ISOTIME,
                                        clock,
                                        ref_isotime)
-            logger.debug(f"Calculate artifical [{swimlane}] clock isotime: {t}")
+            logger.debug(f"Calculate artificial [{swimlane}] clock isotime: {t}")
             return t
     return None
 
