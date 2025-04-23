@@ -1,0 +1,1803 @@
+reprostim timesync-stimuli
+2025-04-23 12:15:59,510 [INFO] reprostim timesync-stimuli script started
+2025-04-23 12:15:59,511 [INFO] main script started
+pygame 2.6.1 (SDL 2.28.4, Python 3.10.0)
+Hello from the pygame community. https://www.pygame.org/contribute.html
+Window activated
+Waiting for an event...
+Series [0] started
+Trigger pulse: acq=0, series=0, keys=['5']
+Waiting for an event...
+Trigger pulse: acq=1, series=0, keys=['5']
+Waiting for an event...
+Trigger pulse: acq=2, series=0, keys=['5']
+Waiting for an event...
+Trigger pulse: acq=3, series=0, keys=['5']
+Waiting for an event...
+Trigger pulse: acq=4, series=0, keys=['5']
+Waiting for an event...
+Trigger pulse: acq=5, series=0, keys=['5']
+Waiting for an event...
+Trigger pulse: acq=6, series=0, keys=['5']
+Waiting for an event...
+Trigger pulse: acq=7, series=0, keys=['5']
+Waiting for an event...
+Trigger pulse: acq=8, series=0, keys=['5']
+Waiting for an event...
+Trigger pulse: acq=9, series=0, keys=['5']
+Waiting for an event...
+Trigger pulse: acq=10, series=0, keys=['5']
+Waiting for an event...
+Trigger pulse: acq=11, series=0, keys=['5']
+Waiting for an event...
+Trigger pulse: acq=12, series=0, keys=['5']
+Waiting for an event...
+Trigger pulse: acq=13, series=0, keys=['5']
+Waiting for an event...
+Trigger pulse: acq=14, series=0, keys=['5']
+Waiting for an event...
+Trigger pulse: acq=15, series=0, keys=['5']
+Waiting for an event...
+Trigger pulse: acq=16, series=0, keys=['5']
+Waiting for an event...
+Trigger pulse: acq=17, series=0, keys=['5']
+Waiting for an event...
+Trigger pulse: acq=18, series=0, keys=['5']
+Waiting for an event...
+Trigger pulse: acq=19, series=0, keys=['5']
+Waiting for an event...
+Trigger pulse: acq=20, series=0, keys=['5']
+Waiting for an event...
+Trigger pulse: acq=21, series=0, keys=['5']
+Waiting for an event...
+Trigger pulse: acq=22, series=0, keys=['5']
+Waiting for an event...
+Trigger pulse: acq=23, series=0, keys=['5']
+Waiting for an event...
+Trigger pulse: acq=24, series=0, keys=['5']
+Waiting for an event...
+Trigger pulse: acq=25, series=0, keys=['5']
+Waiting for an event...
+Trigger pulse: acq=26, series=0, keys=['5']
+Waiting for an event...
+Trigger pulse: acq=27, series=0, keys=['5']
+Waiting for an event...
+Trigger pulse: acq=28, series=0, keys=['5']
+Waiting for an event...
+Trigger pulse: acq=29, series=0, keys=['5']
+Waiting for an event...
+Trigger pulse: acq=30, series=0, keys=['5']
+Waiting for an event...
+Trigger pulse: acq=31, series=0, keys=['5']
+Waiting for an event...
+Trigger pulse: acq=32, series=0, keys=['5']
+Waiting for an event...
+Trigger pulse: acq=33, series=0, keys=['5']
+Waiting for an event...
+Trigger pulse: acq=34, series=0, keys=['5']
+Waiting for an event...
+Trigger pulse: acq=35, series=0, keys=['5']
+Waiting for an event...
+Trigger pulse: acq=36, series=0, keys=['5']
+Waiting for an event...
+Trigger pulse: acq=37, series=0, keys=['5']
+Waiting for an event...
+Trigger pulse: acq=38, series=0, keys=['5']
+Waiting for an event...
+Trigger pulse: acq=39, series=0, keys=['5']
+Waiting for an event...
+Trigger pulse: acq=40, series=0, keys=['5']
+Waiting for an event...
+Trigger pulse: acq=41, series=0, keys=['5']
+Waiting for an event...
+Trigger pulse: acq=42, series=0, keys=['5']
+Waiting for an event...
+Trigger pulse: acq=43, series=0, keys=['5']
+Waiting for an event...
+Trigger pulse: acq=44, series=0, keys=['5']
+Waiting for an event...
+Trigger pulse: acq=45, series=0, keys=['5']
+Waiting for an event...
+Trigger pulse: acq=46, series=0, keys=['5']
+Waiting for an event...
+Trigger pulse: acq=47, series=0, keys=['5']
+Waiting for an event...
+Trigger pulse: acq=48, series=0, keys=['5']
+Waiting for an event...
+Trigger pulse: acq=49, series=0, keys=['5']
+Waiting for an event...
+Series [0] ended, trigger count: 50
+Series [1] started
+Trigger pulse: acq=50, series=1, keys=['5']
+Waiting for an event...
+Trigger pulse: acq=51, series=1, keys=['5']
+Waiting for an event...
+Trigger pulse: acq=52, series=1, keys=['5']
+Waiting for an event...
+Trigger pulse: acq=53, series=1, keys=['5']
+Waiting for an event...
+Trigger pulse: acq=54, series=1, keys=['5']
+Waiting for an event...
+Trigger pulse: acq=55, series=1, keys=['5']
+Waiting for an event...
+Trigger pulse: acq=56, series=1, keys=['5']
+Waiting for an event...
+Trigger pulse: acq=57, series=1, keys=['5']
+Waiting for an event...
+Trigger pulse: acq=58, series=1, keys=['5']
+Waiting for an event...
+Trigger pulse: acq=59, series=1, keys=['5']
+Waiting for an event...
+Trigger pulse: acq=60, series=1, keys=['5']
+Waiting for an event...
+Trigger pulse: acq=61, series=1, keys=['5']
+Waiting for an event...
+Trigger pulse: acq=62, series=1, keys=['5']
+Waiting for an event...
+Trigger pulse: acq=63, series=1, keys=['5']
+Waiting for an event...
+Trigger pulse: acq=64, series=1, keys=['5']
+Waiting for an event...
+Trigger pulse: acq=65, series=1, keys=['5']
+Waiting for an event...
+Trigger pulse: acq=66, series=1, keys=['5']
+Waiting for an event...
+Trigger pulse: acq=67, series=1, keys=['5']
+Waiting for an event...
+Trigger pulse: acq=68, series=1, keys=['5']
+Waiting for an event...
+Trigger pulse: acq=69, series=1, keys=['5']
+Waiting for an event...
+Trigger pulse: acq=70, series=1, keys=['5']
+Waiting for an event...
+Trigger pulse: acq=71, series=1, keys=['5']
+Waiting for an event...
+Trigger pulse: acq=72, series=1, keys=['5']
+Waiting for an event...
+Trigger pulse: acq=73, series=1, keys=['5']
+Waiting for an event...
+Trigger pulse: acq=74, series=1, keys=['5']
+Waiting for an event...
+Trigger pulse: acq=75, series=1, keys=['5']
+Waiting for an event...
+Trigger pulse: acq=76, series=1, keys=['5']
+Waiting for an event...
+Trigger pulse: acq=77, series=1, keys=['5']
+Waiting for an event...
+Trigger pulse: acq=78, series=1, keys=['5']
+Waiting for an event...
+Trigger pulse: acq=79, series=1, keys=['5']
+Waiting for an event...
+Trigger pulse: acq=80, series=1, keys=['5']
+Waiting for an event...
+Trigger pulse: acq=81, series=1, keys=['5']
+Waiting for an event...
+Trigger pulse: acq=82, series=1, keys=['5']
+Waiting for an event...
+Trigger pulse: acq=83, series=1, keys=['5']
+Waiting for an event...
+Trigger pulse: acq=84, series=1, keys=['5']
+Waiting for an event...
+Trigger pulse: acq=85, series=1, keys=['5']
+Waiting for an event...
+Trigger pulse: acq=86, series=1, keys=['5']
+Waiting for an event...
+Trigger pulse: acq=87, series=1, keys=['5']
+Waiting for an event...
+Trigger pulse: acq=88, series=1, keys=['5']
+Waiting for an event...
+Trigger pulse: acq=89, series=1, keys=['5']
+Waiting for an event...
+Trigger pulse: acq=90, series=1, keys=['5']
+Waiting for an event...
+Trigger pulse: acq=91, series=1, keys=['5']
+Waiting for an event...
+Trigger pulse: acq=92, series=1, keys=['5']
+Waiting for an event...
+Trigger pulse: acq=93, series=1, keys=['5']
+Waiting for an event...
+Trigger pulse: acq=94, series=1, keys=['5']
+Waiting for an event...
+Trigger pulse: acq=95, series=1, keys=['5']
+Waiting for an event...
+Trigger pulse: acq=96, series=1, keys=['5']
+Waiting for an event...
+Trigger pulse: acq=97, series=1, keys=['5']
+Waiting for an event...
+Trigger pulse: acq=98, series=1, keys=['5']
+Waiting for an event...
+Trigger pulse: acq=99, series=1, keys=['5']
+Waiting for an event...
+Series [1] ended, trigger count: 50
+Series [2] started
+Trigger pulse: acq=100, series=2, keys=['5']
+Waiting for an event...
+Trigger pulse: acq=101, series=2, keys=['5']
+Waiting for an event...
+Trigger pulse: acq=102, series=2, keys=['5']
+Waiting for an event...
+Trigger pulse: acq=103, series=2, keys=['5']
+Waiting for an event...
+Trigger pulse: acq=104, series=2, keys=['5']
+Waiting for an event...
+Trigger pulse: acq=105, series=2, keys=['5']
+Waiting for an event...
+Trigger pulse: acq=106, series=2, keys=['5']
+Waiting for an event...
+Trigger pulse: acq=107, series=2, keys=['5']
+Waiting for an event...
+Trigger pulse: acq=108, series=2, keys=['5']
+Waiting for an event...
+Trigger pulse: acq=109, series=2, keys=['5']
+Waiting for an event...
+Trigger pulse: acq=110, series=2, keys=['5']
+Waiting for an event...
+Trigger pulse: acq=111, series=2, keys=['5']
+Waiting for an event...
+Trigger pulse: acq=112, series=2, keys=['5']
+Waiting for an event...
+Trigger pulse: acq=113, series=2, keys=['5']
+Waiting for an event...
+Trigger pulse: acq=114, series=2, keys=['5']
+Waiting for an event...
+Trigger pulse: acq=115, series=2, keys=['5']
+Waiting for an event...
+Trigger pulse: acq=116, series=2, keys=['5']
+Waiting for an event...
+Trigger pulse: acq=117, series=2, keys=['5']
+Waiting for an event...
+Trigger pulse: acq=118, series=2, keys=['5']
+Waiting for an event...
+Trigger pulse: acq=119, series=2, keys=['5']
+Waiting for an event...
+Trigger pulse: acq=120, series=2, keys=['5']
+Waiting for an event...
+Trigger pulse: acq=121, series=2, keys=['5']
+Waiting for an event...
+Trigger pulse: acq=122, series=2, keys=['5']
+Waiting for an event...
+Trigger pulse: acq=123, series=2, keys=['5']
+Waiting for an event...
+Trigger pulse: acq=124, series=2, keys=['5']
+Waiting for an event...
+Trigger pulse: acq=125, series=2, keys=['5']
+Waiting for an event...
+Trigger pulse: acq=126, series=2, keys=['5']
+Waiting for an event...
+Trigger pulse: acq=127, series=2, keys=['5']
+Waiting for an event...
+Trigger pulse: acq=128, series=2, keys=['5']
+Waiting for an event...
+Trigger pulse: acq=129, series=2, keys=['5']
+Waiting for an event...
+Trigger pulse: acq=130, series=2, keys=['5']
+Waiting for an event...
+Trigger pulse: acq=131, series=2, keys=['5']
+Waiting for an event...
+Trigger pulse: acq=132, series=2, keys=['5']
+Waiting for an event...
+Trigger pulse: acq=133, series=2, keys=['5']
+Waiting for an event...
+Trigger pulse: acq=134, series=2, keys=['5']
+Waiting for an event...
+Trigger pulse: acq=135, series=2, keys=['5']
+Waiting for an event...
+Trigger pulse: acq=136, series=2, keys=['5']
+Waiting for an event...
+Trigger pulse: acq=137, series=2, keys=['5']
+Waiting for an event...
+Trigger pulse: acq=138, series=2, keys=['5']
+Waiting for an event...
+Trigger pulse: acq=139, series=2, keys=['5']
+Waiting for an event...
+Trigger pulse: acq=140, series=2, keys=['5']
+Waiting for an event...
+Trigger pulse: acq=141, series=2, keys=['5']
+Waiting for an event...
+Trigger pulse: acq=142, series=2, keys=['5']
+Waiting for an event...
+Trigger pulse: acq=143, series=2, keys=['5']
+Waiting for an event...
+Trigger pulse: acq=144, series=2, keys=['5']
+Waiting for an event...
+Trigger pulse: acq=145, series=2, keys=['5']
+Waiting for an event...
+Trigger pulse: acq=146, series=2, keys=['5']
+Waiting for an event...
+Trigger pulse: acq=147, series=2, keys=['5']
+Waiting for an event...
+Trigger pulse: acq=148, series=2, keys=['5']
+Waiting for an event...
+Trigger pulse: acq=149, series=2, keys=['5']
+Waiting for an event...
+Series [2] ended, trigger count: 50
+Series [3] started
+Trigger pulse: acq=150, series=3, keys=['q']
+Series [3] ended, trigger count: 1
+2025-04-23 12:20:54,408 [INFO] main script finished
+2025-04-23 12:20:54,409 [INFO] Output log renamed: output_2025.04.23-12.15.59.511--.log -> output_2025.04.23-12.15.59.511--2025.04.23-12.20.54.409.log
+2025-04-23 12:20:54,409 [INFO] reprostim timesync-stimuli script finished: 0
+2025-04-23 12:20:54,409 [INFO] Exit on   : 2025-04-23 12:20:54.409708
+2025-04-23 12:20:54,409 [INFO] Exit code : 0
+0.5321 	DEBUG 	Opening message catalog /home/yoh/deb/gits/pkg-exppsy/psychopy/psychopy/localization/../app/locale/en_US/LC_MESSAGE/messages.mo for locale en_US
+0.5322 	DEBUG 	Locale for 'en_US' not found. Using default.
+1.3988 	INFO 	Trying to load audio library: sounddevice
+1.3989 	INFO 	sound is using audioLib: sounddevice
+1.3989 	WARNING 	We strongly recommend you activate the PTB sound engine in PsychoPy prefs as the preferred audio engine. Its timing is vastly superior. Your prefs are currently set to use ['sounddevice'] (in that order).
+1.3994 	WARNING 	Monitor specification not found. Creating a temporary one...
+1.4428 	WARNING 	User requested fullscreen with size [1920 1080], but screen is actually [1680, 1050]. Using actual size
+1.5838 	INFO 	Using renderer 'Mesa Intel(R) Iris(R) Xe Graphics (ADL GT2)' for graphics
+1.5838 	INFO 	OpenGL version supported by driver is 4..
+1.6006 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+1.6015 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+1.6024 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+1.6037 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+1.6050 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+1.6056 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+1.6065 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+1.6078 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+1.6080 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+1.6082 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+1.6093 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+1.6103 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+1.6111 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+1.6121 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+1.6128 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+1.6139 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+1.6148 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+1.6152 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+1.6157 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+1.6171 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+1.6175 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+1.6178 	DEBUG 	Uploading Texture Font fontname to graphics card
+1.6227 	DEBUG 	Upload of Texture Font fontname complete
+1.6284 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+1.6298 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+1.6312 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+1.6314 	DEBUG 	Uploading Texture Font fontname to graphics card
+1.6325 	DEBUG 	Upload of Texture Font fontname complete
+1.9800 	EXP 	Created timesync-stimuli = Window(allowGUI=True, allowStencil=False, autoLog=True, backendConf=UNKNOWN, backgroundFit=<method-wrapper '__getattribute__' of attributeSetter object at 0x7f67ef4211e0>, backgroundImage=<method-wrapper '__getattribute__' of attributeSetter object at 0x7f67ef421180>, bitsMode=UNKNOWN, blendMode='avg', bpc=(8, 8, 8), color=array([0, 0, 0]), colorSpace='rgb', depthBits=8, fullscr=True, gamma=None, gammaErrorPolicy='raise', infoMsg=UNKNOWN, lms=UNKNOWN, monitor=<psychopy.monitors.calibTools.Monitor object at 0x7f68145c36a0>, multiSample=False, name='timesync-stimuli', numSamples=2, pos=[0.0, 0.0], screen=1, size=array([1680, 1050]), stencilBits=0, stereo=False, title='ReproStim timesync-stimuli v0.7.8', units='norm', useFBO=False, useRetina=False, viewOri=0.0, viewPos=None, viewScale=None, waitBlanking=True, winType='pyglet')
+1.9801 	EXP 	timesync-stimuli: backgroundImage = None
+1.9802 	EXP 	timesync-stimuli: backgroundFit = 'cover'
+2.0400 	EXP 	Created unnamed TextStim = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, draggable=False, flipHoriz=False, flipVert=False, font='', fontFiles=[], height=0.1, italic=False, languageStyle='LTR', name='unnamed TextStim', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text=str(...), units='norm', win=Window(...), wrapWidth=1)
+2.0426 	EXP 	Created unnamed TextStim = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, draggable=False, flipHoriz=False, flipVert=False, font='', fontFiles=[], height=0.1, italic=False, languageStyle='LTR', name='unnamed TextStim', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='+', units='norm', win=Window(...), wrapWidth=1)
+2.0439 	EXP 	Created unnamed TextStim = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, draggable=False, flipHoriz=False, flipVert=False, font='', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='unnamed TextStim', opacity=1.0, ori=0.0, pos=array([ 0. , -0.7]), rgb=UNKNOWN, text='', units='norm', win=Window(...), wrapWidth=1)
+2.2804 	DATA 	No keypress (maxWait exceeded)
+2.4805 	DATA 	No keypress (maxWait exceeded)
+2.6805 	DATA 	No keypress (maxWait exceeded)
+2.8805 	DATA 	No keypress (maxWait exceeded)
+3.0806 	DATA 	No keypress (maxWait exceeded)
+3.2806 	DATA 	No keypress (maxWait exceeded)
+3.4806 	DATA 	No keypress (maxWait exceeded)
+3.6807 	DATA 	No keypress (maxWait exceeded)
+3.8807 	DATA 	No keypress (maxWait exceeded)
+4.0807 	DATA 	No keypress (maxWait exceeded)
+4.2808 	DATA 	No keypress (maxWait exceeded)
+4.4808 	DATA 	No keypress (maxWait exceeded)
+4.6808 	DATA 	No keypress (maxWait exceeded)
+4.8809 	DATA 	No keypress (maxWait exceeded)
+5.0809 	DATA 	No keypress (maxWait exceeded)
+5.2809 	DATA 	No keypress (maxWait exceeded)
+5.4809 	DATA 	No keypress (maxWait exceeded)
+5.6810 	DATA 	No keypress (maxWait exceeded)
+5.8810 	DATA 	No keypress (maxWait exceeded)
+6.0810 	DATA 	No keypress (maxWait exceeded)
+6.2811 	DATA 	No keypress (maxWait exceeded)
+6.4811 	DATA 	No keypress (maxWait exceeded)
+6.6811 	DATA 	No keypress (maxWait exceeded)
+6.8811 	DATA 	No keypress (maxWait exceeded)
+7.0812 	DATA 	No keypress (maxWait exceeded)
+7.2812 	DATA 	No keypress (maxWait exceeded)
+7.4812 	DATA 	No keypress (maxWait exceeded)
+7.6813 	DATA 	No keypress (maxWait exceeded)
+7.8813 	DATA 	No keypress (maxWait exceeded)
+8.0813 	DATA 	No keypress (maxWait exceeded)
+8.2813 	DATA 	No keypress (maxWait exceeded)
+8.4814 	DATA 	No keypress (maxWait exceeded)
+8.6814 	DATA 	No keypress (maxWait exceeded)
+8.8814 	DATA 	No keypress (maxWait exceeded)
+9.0814 	DATA 	No keypress (maxWait exceeded)
+9.2815 	DATA 	No keypress (maxWait exceeded)
+9.4815 	DATA 	No keypress (maxWait exceeded)
+9.6815 	DATA 	No keypress (maxWait exceeded)
+9.8816 	DATA 	No keypress (maxWait exceeded)
+10.0816 	DATA 	No keypress (maxWait exceeded)
+10.2816 	DATA 	No keypress (maxWait exceeded)
+10.4816 	DATA 	No keypress (maxWait exceeded)
+10.6817 	DATA 	No keypress (maxWait exceeded)
+10.8817 	DATA 	No keypress (maxWait exceeded)
+11.0817 	DATA 	No keypress (maxWait exceeded)
+11.2817 	DATA 	No keypress (maxWait exceeded)
+11.4818 	DATA 	No keypress (maxWait exceeded)
+11.6818 	DATA 	No keypress (maxWait exceeded)
+11.8818 	DATA 	No keypress (maxWait exceeded)
+12.0819 	DATA 	No keypress (maxWait exceeded)
+12.2819 	DATA 	No keypress (maxWait exceeded)
+12.4819 	DATA 	No keypress (maxWait exceeded)
+12.6820 	DATA 	No keypress (maxWait exceeded)
+12.8820 	DATA 	No keypress (maxWait exceeded)
+13.0820 	DATA 	No keypress (maxWait exceeded)
+13.2820 	DATA 	No keypress (maxWait exceeded)
+13.4821 	DATA 	No keypress (maxWait exceeded)
+13.6821 	DATA 	No keypress (maxWait exceeded)
+13.8821 	DATA 	No keypress (maxWait exceeded)
+14.0822 	DATA 	No keypress (maxWait exceeded)
+14.2822 	DATA 	No keypress (maxWait exceeded)
+14.4822 	DATA 	No keypress (maxWait exceeded)
+14.6822 	DATA 	No keypress (maxWait exceeded)
+14.8823 	DATA 	No keypress (maxWait exceeded)
+15.0823 	DATA 	No keypress (maxWait exceeded)
+15.2823 	DATA 	No keypress (maxWait exceeded)
+15.4823 	DATA 	No keypress (maxWait exceeded)
+15.6824 	DATA 	No keypress (maxWait exceeded)
+15.8824 	DATA 	No keypress (maxWait exceeded)
+16.0824 	DATA 	No keypress (maxWait exceeded)
+16.2824 	DATA 	No keypress (maxWait exceeded)
+16.4825 	DATA 	No keypress (maxWait exceeded)
+16.6825 	DATA 	No keypress (maxWait exceeded)
+16.8825 	DATA 	No keypress (maxWait exceeded)
+17.0826 	DATA 	No keypress (maxWait exceeded)
+17.2826 	DATA 	No keypress (maxWait exceeded)
+17.4826 	DATA 	No keypress (maxWait exceeded)
+17.6826 	DATA 	No keypress (maxWait exceeded)
+17.8827 	DATA 	No keypress (maxWait exceeded)
+18.0827 	DATA 	No keypress (maxWait exceeded)
+18.2827 	DATA 	No keypress (maxWait exceeded)
+18.4827 	DATA 	No keypress (maxWait exceeded)
+18.6828 	DATA 	No keypress (maxWait exceeded)
+18.8828 	DATA 	No keypress (maxWait exceeded)
+19.0828 	DATA 	No keypress (maxWait exceeded)
+19.2829 	DATA 	No keypress (maxWait exceeded)
+19.4829 	DATA 	No keypress (maxWait exceeded)
+19.6829 	DATA 	No keypress (maxWait exceeded)
+19.8829 	DATA 	No keypress (maxWait exceeded)
+20.0830 	DATA 	No keypress (maxWait exceeded)
+20.2830 	DATA 	No keypress (maxWait exceeded)
+20.4830 	DATA 	No keypress (maxWait exceeded)
+20.6830 	DATA 	No keypress (maxWait exceeded)
+20.8831 	DATA 	No keypress (maxWait exceeded)
+21.0831 	DATA 	No keypress (maxWait exceeded)
+21.2831 	DATA 	No keypress (maxWait exceeded)
+21.4832 	DATA 	No keypress (maxWait exceeded)
+21.6832 	DATA 	No keypress (maxWait exceeded)
+21.8832 	DATA 	No keypress (maxWait exceeded)
+22.0832 	DATA 	No keypress (maxWait exceeded)
+22.2833 	DATA 	No keypress (maxWait exceeded)
+22.4833 	DATA 	No keypress (maxWait exceeded)
+22.6833 	DATA 	No keypress (maxWait exceeded)
+22.8833 	DATA 	No keypress (maxWait exceeded)
+23.0834 	DATA 	No keypress (maxWait exceeded)
+23.2834 	DATA 	No keypress (maxWait exceeded)
+23.4834 	DATA 	No keypress (maxWait exceeded)
+23.6834 	DATA 	No keypress (maxWait exceeded)
+23.8835 	DATA 	No keypress (maxWait exceeded)
+24.0835 	DATA 	No keypress (maxWait exceeded)
+24.2835 	DATA 	No keypress (maxWait exceeded)
+24.4836 	DATA 	No keypress (maxWait exceeded)
+24.6836 	DATA 	No keypress (maxWait exceeded)
+24.8836 	DATA 	No keypress (maxWait exceeded)
+25.0836 	DATA 	No keypress (maxWait exceeded)
+25.2837 	DATA 	No keypress (maxWait exceeded)
+25.4837 	DATA 	No keypress (maxWait exceeded)
+25.6837 	DATA 	No keypress (maxWait exceeded)
+25.8838 	DATA 	No keypress (maxWait exceeded)
+26.0838 	DATA 	No keypress (maxWait exceeded)
+26.2838 	DATA 	No keypress (maxWait exceeded)
+26.4838 	DATA 	No keypress (maxWait exceeded)
+26.6839 	DATA 	No keypress (maxWait exceeded)
+26.8839 	DATA 	No keypress (maxWait exceeded)
+27.0840 	DATA 	No keypress (maxWait exceeded)
+27.2840 	DATA 	No keypress (maxWait exceeded)
+27.4840 	DATA 	No keypress (maxWait exceeded)
+27.6840 	DATA 	No keypress (maxWait exceeded)
+27.8841 	DATA 	No keypress (maxWait exceeded)
+28.0841 	DATA 	No keypress (maxWait exceeded)
+28.2841 	DATA 	No keypress (maxWait exceeded)
+28.4841 	DATA 	No keypress (maxWait exceeded)
+28.6842 	DATA 	No keypress (maxWait exceeded)
+28.8842 	DATA 	No keypress (maxWait exceeded)
+29.0842 	DATA 	No keypress (maxWait exceeded)
+29.2842 	DATA 	No keypress (maxWait exceeded)
+29.4842 	DATA 	No keypress (maxWait exceeded)
+29.6843 	DATA 	No keypress (maxWait exceeded)
+29.8843 	DATA 	No keypress (maxWait exceeded)
+30.0843 	DATA 	No keypress (maxWait exceeded)
+30.2843 	DATA 	No keypress (maxWait exceeded)
+30.4844 	DATA 	No keypress (maxWait exceeded)
+30.6844 	DATA 	No keypress (maxWait exceeded)
+30.8844 	DATA 	No keypress (maxWait exceeded)
+31.0844 	DATA 	No keypress (maxWait exceeded)
+31.2844 	DATA 	No keypress (maxWait exceeded)
+31.4845 	DATA 	No keypress (maxWait exceeded)
+31.6845 	DATA 	No keypress (maxWait exceeded)
+31.8845 	DATA 	No keypress (maxWait exceeded)
+32.0845 	DATA 	No keypress (maxWait exceeded)
+32.2846 	DATA 	No keypress (maxWait exceeded)
+32.4846 	DATA 	No keypress (maxWait exceeded)
+32.6846 	DATA 	No keypress (maxWait exceeded)
+32.8847 	DATA 	No keypress (maxWait exceeded)
+33.0847 	DATA 	No keypress (maxWait exceeded)
+33.2847 	DATA 	No keypress (maxWait exceeded)
+33.4847 	DATA 	No keypress (maxWait exceeded)
+33.6848 	DATA 	No keypress (maxWait exceeded)
+33.8848 	DATA 	No keypress (maxWait exceeded)
+34.0848 	DATA 	No keypress (maxWait exceeded)
+34.2848 	DATA 	No keypress (maxWait exceeded)
+34.4849 	DATA 	No keypress (maxWait exceeded)
+34.6849 	DATA 	No keypress (maxWait exceeded)
+34.8849 	DATA 	No keypress (maxWait exceeded)
+35.0849 	DATA 	No keypress (maxWait exceeded)
+35.2850 	DATA 	No keypress (maxWait exceeded)
+35.4850 	DATA 	No keypress (maxWait exceeded)
+35.6850 	DATA 	No keypress (maxWait exceeded)
+35.8850 	DATA 	No keypress (maxWait exceeded)
+36.0851 	DATA 	No keypress (maxWait exceeded)
+36.2851 	DATA 	No keypress (maxWait exceeded)
+36.4851 	DATA 	No keypress (maxWait exceeded)
+36.6851 	DATA 	No keypress (maxWait exceeded)
+36.8852 	DATA 	No keypress (maxWait exceeded)
+37.0852 	DATA 	No keypress (maxWait exceeded)
+37.2852 	DATA 	No keypress (maxWait exceeded)
+37.4852 	DATA 	No keypress (maxWait exceeded)
+37.6853 	DATA 	No keypress (maxWait exceeded)
+37.8853 	DATA 	No keypress (maxWait exceeded)
+38.0853 	DATA 	No keypress (maxWait exceeded)
+38.2853 	DATA 	No keypress (maxWait exceeded)
+38.4854 	DATA 	No keypress (maxWait exceeded)
+38.6854 	DATA 	No keypress (maxWait exceeded)
+38.8854 	DATA 	No keypress (maxWait exceeded)
+39.0854 	DATA 	No keypress (maxWait exceeded)
+39.2855 	DATA 	No keypress (maxWait exceeded)
+39.4855 	DATA 	No keypress (maxWait exceeded)
+39.6855 	DATA 	No keypress (maxWait exceeded)
+39.8855 	DATA 	No keypress (maxWait exceeded)
+40.0856 	DATA 	No keypress (maxWait exceeded)
+40.2856 	DATA 	No keypress (maxWait exceeded)
+40.4856 	DATA 	No keypress (maxWait exceeded)
+40.6856 	DATA 	No keypress (maxWait exceeded)
+40.8857 	DATA 	No keypress (maxWait exceeded)
+41.0857 	DATA 	No keypress (maxWait exceeded)
+41.2857 	DATA 	No keypress (maxWait exceeded)
+41.4857 	DATA 	No keypress (maxWait exceeded)
+41.6858 	DATA 	No keypress (maxWait exceeded)
+41.8858 	DATA 	No keypress (maxWait exceeded)
+42.0858 	DATA 	No keypress (maxWait exceeded)
+42.2859 	DATA 	No keypress (maxWait exceeded)
+42.4859 	DATA 	No keypress (maxWait exceeded)
+42.6859 	DATA 	No keypress (maxWait exceeded)
+42.8859 	DATA 	No keypress (maxWait exceeded)
+43.0860 	DATA 	No keypress (maxWait exceeded)
+43.2860 	DATA 	No keypress (maxWait exceeded)
+43.4860 	DATA 	No keypress (maxWait exceeded)
+43.6860 	DATA 	No keypress (maxWait exceeded)
+43.8861 	DATA 	No keypress (maxWait exceeded)
+44.0861 	DATA 	No keypress (maxWait exceeded)
+44.2861 	DATA 	No keypress (maxWait exceeded)
+44.4862 	DATA 	No keypress (maxWait exceeded)
+44.6862 	DATA 	No keypress (maxWait exceeded)
+44.8862 	DATA 	No keypress (maxWait exceeded)
+45.0863 	DATA 	No keypress (maxWait exceeded)
+45.2863 	DATA 	No keypress (maxWait exceeded)
+45.4863 	DATA 	No keypress (maxWait exceeded)
+45.6863 	DATA 	No keypress (maxWait exceeded)
+45.8863 	DATA 	No keypress (maxWait exceeded)
+46.0864 	DATA 	No keypress (maxWait exceeded)
+46.2864 	DATA 	No keypress (maxWait exceeded)
+46.4864 	DATA 	No keypress (maxWait exceeded)
+46.6864 	DATA 	No keypress (maxWait exceeded)
+46.8864 	DATA 	No keypress (maxWait exceeded)
+47.0865 	DATA 	No keypress (maxWait exceeded)
+47.2865 	DATA 	No keypress (maxWait exceeded)
+47.4865 	DATA 	No keypress (maxWait exceeded)
+47.6865 	DATA 	No keypress (maxWait exceeded)
+47.8866 	DATA 	No keypress (maxWait exceeded)
+48.0866 	DATA 	No keypress (maxWait exceeded)
+48.2866 	DATA 	No keypress (maxWait exceeded)
+48.4866 	DATA 	No keypress (maxWait exceeded)
+48.6867 	DATA 	No keypress (maxWait exceeded)
+48.8867 	DATA 	No keypress (maxWait exceeded)
+49.0867 	DATA 	No keypress (maxWait exceeded)
+49.2867 	DATA 	No keypress (maxWait exceeded)
+49.4868 	DATA 	No keypress (maxWait exceeded)
+49.6868 	DATA 	No keypress (maxWait exceeded)
+49.8868 	DATA 	No keypress (maxWait exceeded)
+50.0868 	DATA 	No keypress (maxWait exceeded)
+50.2869 	DATA 	No keypress (maxWait exceeded)
+50.4869 	DATA 	No keypress (maxWait exceeded)
+50.6869 	DATA 	No keypress (maxWait exceeded)
+50.8869 	DATA 	No keypress (maxWait exceeded)
+51.0870 	DATA 	No keypress (maxWait exceeded)
+51.2870 	DATA 	No keypress (maxWait exceeded)
+51.4870 	DATA 	No keypress (maxWait exceeded)
+51.6870 	DATA 	No keypress (maxWait exceeded)
+51.8871 	DATA 	No keypress (maxWait exceeded)
+52.0871 	DATA 	No keypress (maxWait exceeded)
+52.2871 	DATA 	No keypress (maxWait exceeded)
+52.4871 	DATA 	No keypress (maxWait exceeded)
+52.6872 	DATA 	No keypress (maxWait exceeded)
+52.8872 	DATA 	No keypress (maxWait exceeded)
+53.0872 	DATA 	No keypress (maxWait exceeded)
+53.2872 	DATA 	No keypress (maxWait exceeded)
+53.4873 	DATA 	No keypress (maxWait exceeded)
+53.6873 	DATA 	No keypress (maxWait exceeded)
+53.8873 	DATA 	No keypress (maxWait exceeded)
+54.0873 	DATA 	No keypress (maxWait exceeded)
+54.2874 	DATA 	No keypress (maxWait exceeded)
+54.4874 	DATA 	No keypress (maxWait exceeded)
+54.6874 	DATA 	No keypress (maxWait exceeded)
+54.8874 	DATA 	No keypress (maxWait exceeded)
+55.0875 	DATA 	No keypress (maxWait exceeded)
+55.2875 	DATA 	No keypress (maxWait exceeded)
+55.4875 	DATA 	No keypress (maxWait exceeded)
+55.6876 	DATA 	No keypress (maxWait exceeded)
+55.8876 	DATA 	No keypress (maxWait exceeded)
+56.0876 	DATA 	No keypress (maxWait exceeded)
+56.2876 	DATA 	No keypress (maxWait exceeded)
+56.4877 	DATA 	No keypress (maxWait exceeded)
+56.6877 	DATA 	No keypress (maxWait exceeded)
+56.8877 	DATA 	No keypress (maxWait exceeded)
+57.0878 	DATA 	No keypress (maxWait exceeded)
+57.2878 	DATA 	No keypress (maxWait exceeded)
+57.4878 	DATA 	No keypress (maxWait exceeded)
+57.6878 	DATA 	No keypress (maxWait exceeded)
+57.8879 	DATA 	No keypress (maxWait exceeded)
+58.0879 	DATA 	No keypress (maxWait exceeded)
+58.2879 	DATA 	No keypress (maxWait exceeded)
+58.4879 	DATA 	No keypress (maxWait exceeded)
+58.6879 	DATA 	No keypress (maxWait exceeded)
+58.8880 	DATA 	No keypress (maxWait exceeded)
+59.0880 	DATA 	No keypress (maxWait exceeded)
+59.2880 	DATA 	No keypress (maxWait exceeded)
+59.4881 	DATA 	No keypress (maxWait exceeded)
+59.6881 	DATA 	No keypress (maxWait exceeded)
+59.8881 	DATA 	No keypress (maxWait exceeded)
+60.0881 	DATA 	No keypress (maxWait exceeded)
+60.2882 	DATA 	No keypress (maxWait exceeded)
+60.4882 	DATA 	No keypress (maxWait exceeded)
+60.6882 	DATA 	No keypress (maxWait exceeded)
+60.8883 	DATA 	No keypress (maxWait exceeded)
+61.0883 	DATA 	No keypress (maxWait exceeded)
+61.2883 	DATA 	No keypress (maxWait exceeded)
+61.4883 	DATA 	No keypress (maxWait exceeded)
+61.6884 	DATA 	No keypress (maxWait exceeded)
+61.8884 	DATA 	No keypress (maxWait exceeded)
+62.0884 	DATA 	No keypress (maxWait exceeded)
+62.2884 	DATA 	No keypress (maxWait exceeded)
+62.4885 	DATA 	No keypress (maxWait exceeded)
+62.6885 	DATA 	No keypress (maxWait exceeded)
+62.8885 	DATA 	No keypress (maxWait exceeded)
+63.0886 	DATA 	No keypress (maxWait exceeded)
+63.2886 	DATA 	No keypress (maxWait exceeded)
+63.4886 	DATA 	No keypress (maxWait exceeded)
+63.6887 	DATA 	No keypress (maxWait exceeded)
+63.8887 	DATA 	No keypress (maxWait exceeded)
+64.0887 	DATA 	No keypress (maxWait exceeded)
+64.2887 	DATA 	No keypress (maxWait exceeded)
+64.4888 	DATA 	No keypress (maxWait exceeded)
+64.6888 	DATA 	No keypress (maxWait exceeded)
+64.8888 	DATA 	No keypress (maxWait exceeded)
+65.0888 	DATA 	No keypress (maxWait exceeded)
+65.2889 	DATA 	No keypress (maxWait exceeded)
+65.4889 	DATA 	No keypress (maxWait exceeded)
+65.6889 	DATA 	No keypress (maxWait exceeded)
+65.8889 	DATA 	No keypress (maxWait exceeded)
+66.0890 	DATA 	No keypress (maxWait exceeded)
+66.2890 	DATA 	No keypress (maxWait exceeded)
+66.4890 	DATA 	No keypress (maxWait exceeded)
+66.6890 	DATA 	No keypress (maxWait exceeded)
+66.8891 	DATA 	No keypress (maxWait exceeded)
+67.0891 	DATA 	No keypress (maxWait exceeded)
+67.2891 	DATA 	No keypress (maxWait exceeded)
+67.4891 	DATA 	No keypress (maxWait exceeded)
+67.6891 	DATA 	No keypress (maxWait exceeded)
+67.8892 	DATA 	No keypress (maxWait exceeded)
+68.0892 	DATA 	No keypress (maxWait exceeded)
+68.2892 	DATA 	No keypress (maxWait exceeded)
+68.4892 	DATA 	No keypress (maxWait exceeded)
+68.6893 	DATA 	No keypress (maxWait exceeded)
+68.8893 	DATA 	No keypress (maxWait exceeded)
+69.0893 	DATA 	No keypress (maxWait exceeded)
+69.2893 	DATA 	No keypress (maxWait exceeded)
+69.4894 	DATA 	No keypress (maxWait exceeded)
+69.6894 	DATA 	No keypress (maxWait exceeded)
+69.8894 	DATA 	No keypress (maxWait exceeded)
+70.0894 	DATA 	No keypress (maxWait exceeded)
+70.2895 	DATA 	No keypress (maxWait exceeded)
+70.4895 	DATA 	No keypress (maxWait exceeded)
+70.6895 	DATA 	No keypress (maxWait exceeded)
+70.8895 	DATA 	No keypress (maxWait exceeded)
+71.0896 	DATA 	No keypress (maxWait exceeded)
+71.2896 	DATA 	No keypress (maxWait exceeded)
+71.4896 	DATA 	No keypress (maxWait exceeded)
+71.6896 	DATA 	No keypress (maxWait exceeded)
+71.8897 	DATA 	No keypress (maxWait exceeded)
+72.0897 	DATA 	No keypress (maxWait exceeded)
+72.2897 	DATA 	No keypress (maxWait exceeded)
+72.4897 	DATA 	No keypress (maxWait exceeded)
+72.6898 	DATA 	No keypress (maxWait exceeded)
+72.8898 	DATA 	No keypress (maxWait exceeded)
+73.0898 	DATA 	No keypress (maxWait exceeded)
+73.2899 	DATA 	No keypress (maxWait exceeded)
+73.4899 	DATA 	No keypress (maxWait exceeded)
+73.6900 	DATA 	No keypress (maxWait exceeded)
+73.8900 	DATA 	No keypress (maxWait exceeded)
+74.0900 	DATA 	No keypress (maxWait exceeded)
+74.2900 	DATA 	No keypress (maxWait exceeded)
+74.4901 	DATA 	No keypress (maxWait exceeded)
+74.6901 	DATA 	No keypress (maxWait exceeded)
+74.8901 	DATA 	No keypress (maxWait exceeded)
+75.0901 	DATA 	No keypress (maxWait exceeded)
+75.2902 	DATA 	No keypress (maxWait exceeded)
+75.4902 	DATA 	No keypress (maxWait exceeded)
+75.6902 	DATA 	No keypress (maxWait exceeded)
+75.8902 	DATA 	No keypress (maxWait exceeded)
+76.0354 	DATA 	Keypress: 5
+76.0978 	EXP 	Created unnamed ImageStim = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, draggable=False, flipHoriz=False, flipVert=False, image=PilImage(...), interpolate=False, mask=None, maskParams=None, name='unnamed ImageStim', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([1.10714286, 1.77142857]), texRes=128, units='norm', win=Window(...))
+76.5505 	DATA 	Keypress: 5
+76.8329 	DATA 	No keypress (maxWait exceeded)
+77.0330 	DATA 	No keypress (maxWait exceeded)
+77.0652 	DATA 	Keypress: 5
+77.1217 	EXP 	Created unnamed ImageStim = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, draggable=False, flipHoriz=False, flipVert=False, image=PilImage(...), interpolate=False, mask=None, maskParams=None, name='unnamed ImageStim', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([1.10714286, 1.77142857]), texRes=128, units='norm', win=Window(...))
+77.5800 	DATA 	Keypress: 5
+77.8490 	DATA 	No keypress (maxWait exceeded)
+78.0491 	DATA 	No keypress (maxWait exceeded)
+78.0948 	DATA 	Keypress: 5
+78.1604 	EXP 	Created unnamed ImageStim = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, draggable=False, flipHoriz=False, flipVert=False, image=PilImage(...), interpolate=False, mask=None, maskParams=None, name='unnamed ImageStim', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([1.10714286, 1.77142857]), texRes=128, units='norm', win=Window(...))
+78.6104 	DATA 	Keypress: 5
+78.8834 	DATA 	No keypress (maxWait exceeded)
+79.0834 	DATA 	No keypress (maxWait exceeded)
+79.1247 	DATA 	Keypress: 5
+79.1799 	EXP 	Created unnamed ImageStim = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, draggable=False, flipHoriz=False, flipVert=False, image=PilImage(...), interpolate=False, mask=None, maskParams=None, name='unnamed ImageStim', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([1.10714286, 1.77142857]), texRes=128, units='norm', win=Window(...))
+79.6407 	DATA 	Keypress: 5
+79.9163 	DATA 	No keypress (maxWait exceeded)
+80.1164 	DATA 	No keypress (maxWait exceeded)
+80.1548 	DATA 	Keypress: 5
+80.2125 	EXP 	Created unnamed ImageStim = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, draggable=False, flipHoriz=False, flipVert=False, image=PilImage(...), interpolate=False, mask=None, maskParams=None, name='unnamed ImageStim', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([1.10714286, 1.77142857]), texRes=128, units='norm', win=Window(...))
+80.6700 	DATA 	Keypress: 5
+80.9497 	DATA 	No keypress (maxWait exceeded)
+81.1498 	DATA 	No keypress (maxWait exceeded)
+81.1848 	DATA 	Keypress: 5
+81.2414 	EXP 	Created unnamed ImageStim = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, draggable=False, flipHoriz=False, flipVert=False, image=PilImage(...), interpolate=False, mask=None, maskParams=None, name='unnamed ImageStim', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([1.10714286, 1.77142857]), texRes=128, units='norm', win=Window(...))
+81.7000 	DATA 	Keypress: 5
+81.9665 	DATA 	No keypress (maxWait exceeded)
+82.1665 	DATA 	No keypress (maxWait exceeded)
+82.2149 	DATA 	Keypress: 5
+82.2780 	EXP 	Created unnamed ImageStim = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, draggable=False, flipHoriz=False, flipVert=False, image=PilImage(...), interpolate=False, mask=None, maskParams=None, name='unnamed ImageStim', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([1.10714286, 1.77142857]), texRes=128, units='norm', win=Window(...))
+82.7300 	DATA 	Keypress: 5
+83.0168 	DATA 	No keypress (maxWait exceeded)
+83.2169 	DATA 	No keypress (maxWait exceeded)
+83.2447 	DATA 	Keypress: 5
+83.2985 	EXP 	Created unnamed ImageStim = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, draggable=False, flipHoriz=False, flipVert=False, image=PilImage(...), interpolate=False, mask=None, maskParams=None, name='unnamed ImageStim', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([1.10714286, 1.77142857]), texRes=128, units='norm', win=Window(...))
+83.7598 	DATA 	Keypress: 5
+84.0331 	DATA 	No keypress (maxWait exceeded)
+84.2331 	DATA 	No keypress (maxWait exceeded)
+84.2749 	DATA 	Keypress: 5
+84.3307 	EXP 	Created unnamed ImageStim = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, draggable=False, flipHoriz=False, flipVert=False, image=PilImage(...), interpolate=False, mask=None, maskParams=None, name='unnamed ImageStim', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([1.10714286, 1.77142857]), texRes=128, units='norm', win=Window(...))
+84.7904 	DATA 	Keypress: 5
+85.0663 	DATA 	No keypress (maxWait exceeded)
+85.2664 	DATA 	No keypress (maxWait exceeded)
+85.3050 	DATA 	Keypress: 5
+85.3573 	EXP 	Created unnamed ImageStim = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, draggable=False, flipHoriz=False, flipVert=False, image=PilImage(...), interpolate=False, mask=None, maskParams=None, name='unnamed ImageStim', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([1.10714286, 1.77142857]), texRes=128, units='norm', win=Window(...))
+85.8203 	DATA 	Keypress: 5
+86.0824 	DATA 	No keypress (maxWait exceeded)
+86.2824 	DATA 	No keypress (maxWait exceeded)
+86.3349 	DATA 	Keypress: 5
+86.3932 	EXP 	Created unnamed ImageStim = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, draggable=False, flipHoriz=False, flipVert=False, image=PilImage(...), interpolate=False, mask=None, maskParams=None, name='unnamed ImageStim', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([1.10714286, 1.77142857]), texRes=128, units='norm', win=Window(...))
+86.8500 	DATA 	Keypress: 5
+87.1156 	DATA 	No keypress (maxWait exceeded)
+87.3156 	DATA 	No keypress (maxWait exceeded)
+87.3650 	DATA 	Keypress: 5
+87.4290 	EXP 	Created unnamed ImageStim = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, draggable=False, flipHoriz=False, flipVert=False, image=PilImage(...), interpolate=False, mask=None, maskParams=None, name='unnamed ImageStim', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([1.10714286, 1.77142857]), texRes=128, units='norm', win=Window(...))
+87.8803 	DATA 	Keypress: 5
+88.1665 	DATA 	No keypress (maxWait exceeded)
+88.3666 	DATA 	No keypress (maxWait exceeded)
+88.3948 	DATA 	Keypress: 5
+88.4591 	EXP 	Created unnamed ImageStim = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, draggable=False, flipHoriz=False, flipVert=False, image=PilImage(...), interpolate=False, mask=None, maskParams=None, name='unnamed ImageStim', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([1.10714286, 1.77142857]), texRes=128, units='norm', win=Window(...))
+88.9100 	DATA 	Keypress: 5
+89.1830 	DATA 	No keypress (maxWait exceeded)
+89.3830 	DATA 	No keypress (maxWait exceeded)
+89.4248 	DATA 	Keypress: 5
+89.4809 	EXP 	Created unnamed ImageStim = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, draggable=False, flipHoriz=False, flipVert=False, image=PilImage(...), interpolate=False, mask=None, maskParams=None, name='unnamed ImageStim', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([1.10714286, 1.77142857]), texRes=128, units='norm', win=Window(...))
+89.9401 	DATA 	Keypress: 5
+90.2160 	DATA 	No keypress (maxWait exceeded)
+90.4161 	DATA 	No keypress (maxWait exceeded)
+90.4548 	DATA 	Keypress: 5
+90.5130 	EXP 	Created unnamed ImageStim = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, draggable=False, flipHoriz=False, flipVert=False, image=PilImage(...), interpolate=False, mask=None, maskParams=None, name='unnamed ImageStim', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([1.10714286, 1.77142857]), texRes=128, units='norm', win=Window(...))
+90.9700 	DATA 	Keypress: 5
+91.2513 	DATA 	No keypress (maxWait exceeded)
+91.4513 	DATA 	No keypress (maxWait exceeded)
+91.4849 	DATA 	Keypress: 5
+91.5550 	EXP 	Created unnamed ImageStim = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, draggable=False, flipHoriz=False, flipVert=False, image=PilImage(...), interpolate=False, mask=None, maskParams=None, name='unnamed ImageStim', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([1.10714286, 1.77142857]), texRes=128, units='norm', win=Window(...))
+92.0003 	DATA 	Keypress: 5
+92.2827 	DATA 	No keypress (maxWait exceeded)
+92.4827 	DATA 	No keypress (maxWait exceeded)
+92.5149 	DATA 	Keypress: 5
+92.5872 	EXP 	Created unnamed ImageStim = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, draggable=False, flipHoriz=False, flipVert=False, image=PilImage(...), interpolate=False, mask=None, maskParams=None, name='unnamed ImageStim', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([1.10714286, 1.77142857]), texRes=128, units='norm', win=Window(...))
+93.0304 	DATA 	Keypress: 5
+93.3171 	DATA 	No keypress (maxWait exceeded)
+93.5172 	DATA 	No keypress (maxWait exceeded)
+93.5449 	DATA 	Keypress: 5
+93.6008 	EXP 	Created unnamed ImageStim = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, draggable=False, flipHoriz=False, flipVert=False, image=PilImage(...), interpolate=False, mask=None, maskParams=None, name='unnamed ImageStim', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([1.10714286, 1.77142857]), texRes=128, units='norm', win=Window(...))
+94.0602 	DATA 	Keypress: 5
+94.3331 	DATA 	No keypress (maxWait exceeded)
+94.5331 	DATA 	No keypress (maxWait exceeded)
+94.5750 	DATA 	Keypress: 5
+94.6322 	EXP 	Created unnamed ImageStim = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, draggable=False, flipHoriz=False, flipVert=False, image=PilImage(...), interpolate=False, mask=None, maskParams=None, name='unnamed ImageStim', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([1.10714286, 1.77142857]), texRes=128, units='norm', win=Window(...))
+95.0902 	DATA 	Keypress: 5
+95.3686 	DATA 	No keypress (maxWait exceeded)
+95.5687 	DATA 	No keypress (maxWait exceeded)
+95.6049 	DATA 	Keypress: 5
+95.6677 	EXP 	Created unnamed ImageStim = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, draggable=False, flipHoriz=False, flipVert=False, image=PilImage(...), interpolate=False, mask=None, maskParams=None, name='unnamed ImageStim', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([1.10714286, 1.77142857]), texRes=128, units='norm', win=Window(...))
+96.1205 	DATA 	Keypress: 5
+96.4004 	DATA 	No keypress (maxWait exceeded)
+96.6004 	DATA 	No keypress (maxWait exceeded)
+96.6349 	DATA 	Keypress: 5
+96.6915 	EXP 	Created unnamed ImageStim = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, draggable=False, flipHoriz=False, flipVert=False, image=PilImage(...), interpolate=False, mask=None, maskParams=None, name='unnamed ImageStim', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([1.10714286, 1.77142857]), texRes=128, units='norm', win=Window(...))
+97.1500 	DATA 	Keypress: 5
+97.4177 	DATA 	No keypress (maxWait exceeded)
+97.6177 	DATA 	No keypress (maxWait exceeded)
+97.6651 	DATA 	Keypress: 5
+97.7310 	EXP 	Created unnamed ImageStim = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, draggable=False, flipHoriz=False, flipVert=False, image=PilImage(...), interpolate=False, mask=None, maskParams=None, name='unnamed ImageStim', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([1.10714286, 1.77142857]), texRes=128, units='norm', win=Window(...))
+98.1802 	DATA 	Keypress: 5
+98.4670 	DATA 	No keypress (maxWait exceeded)
+98.6671 	DATA 	No keypress (maxWait exceeded)
+98.6949 	DATA 	Keypress: 5
+98.7491 	EXP 	Created unnamed ImageStim = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, draggable=False, flipHoriz=False, flipVert=False, image=PilImage(...), interpolate=False, mask=None, maskParams=None, name='unnamed ImageStim', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([1.10714286, 1.77142857]), texRes=128, units='norm', win=Window(...))
+99.2101 	DATA 	Keypress: 5
+99.4841 	DATA 	No keypress (maxWait exceeded)
+99.6842 	DATA 	No keypress (maxWait exceeded)
+99.7251 	DATA 	Keypress: 5
+99.7777 	EXP 	Created unnamed ImageStim = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, draggable=False, flipHoriz=False, flipVert=False, image=PilImage(...), interpolate=False, mask=None, maskParams=None, name='unnamed ImageStim', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([1.10714286, 1.77142857]), texRes=128, units='norm', win=Window(...))
+100.2402 	DATA 	Keypress: 5
+100.5167 	DATA 	No keypress (maxWait exceeded)
+100.7168 	DATA 	No keypress (maxWait exceeded)
+100.7550 	DATA 	Keypress: 5
+100.8104 	EXP 	Created unnamed ImageStim = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, draggable=False, flipHoriz=False, flipVert=False, image=PilImage(...), interpolate=False, mask=None, maskParams=None, name='unnamed ImageStim', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([1.10714286, 1.77142857]), texRes=128, units='norm', win=Window(...))
+101.2704 	DATA 	Keypress: 5
+101.5330 	DATA 	No keypress (maxWait exceeded)
+101.7330 	DATA 	No keypress (maxWait exceeded)
+101.7850 	DATA 	Keypress: 5
+101.8583 	EXP 	Created unnamed ImageStim = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, draggable=False, flipHoriz=False, flipVert=False, image=PilImage(...), interpolate=False, mask=None, maskParams=None, name='unnamed ImageStim', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([1.10714286, 1.77142857]), texRes=128, units='norm', win=Window(...))
+102.3000 	DATA 	Keypress: 5
+102.5833 	DATA 	No keypress (maxWait exceeded)
+102.7833 	DATA 	No keypress (maxWait exceeded)
+102.8148 	DATA 	Keypress: 5
+102.8715 	EXP 	Created unnamed ImageStim = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, draggable=False, flipHoriz=False, flipVert=False, image=PilImage(...), interpolate=False, mask=None, maskParams=None, name='unnamed ImageStim', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([1.10714286, 1.77142857]), texRes=128, units='norm', win=Window(...))
+103.3303 	DATA 	Keypress: 5
+103.5991 	DATA 	No keypress (maxWait exceeded)
+103.7992 	DATA 	No keypress (maxWait exceeded)
+103.8449 	DATA 	Keypress: 5
+103.9033 	EXP 	Created unnamed ImageStim = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, draggable=False, flipHoriz=False, flipVert=False, image=PilImage(...), interpolate=False, mask=None, maskParams=None, name='unnamed ImageStim', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([1.10714286, 1.77142857]), texRes=128, units='norm', win=Window(...))
+104.3605 	DATA 	Keypress: 5
+104.6338 	DATA 	No keypress (maxWait exceeded)
+104.8338 	DATA 	No keypress (maxWait exceeded)
+104.8750 	DATA 	Keypress: 5
+104.9341 	EXP 	Created unnamed ImageStim = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, draggable=False, flipHoriz=False, flipVert=False, image=PilImage(...), interpolate=False, mask=None, maskParams=None, name='unnamed ImageStim', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([1.10714286, 1.77142857]), texRes=128, units='norm', win=Window(...))
+105.3902 	DATA 	Keypress: 5
+105.6671 	DATA 	No keypress (maxWait exceeded)
+105.8671 	DATA 	No keypress (maxWait exceeded)
+105.9050 	DATA 	Keypress: 5
+105.9630 	EXP 	Created unnamed ImageStim = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, draggable=False, flipHoriz=False, flipVert=False, image=PilImage(...), interpolate=False, mask=None, maskParams=None, name='unnamed ImageStim', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([1.10714286, 1.77142857]), texRes=128, units='norm', win=Window(...))
+106.4200 	DATA 	Keypress: 5
+106.6993 	DATA 	No keypress (maxWait exceeded)
+106.8993 	DATA 	No keypress (maxWait exceeded)
+106.9350 	DATA 	Keypress: 5
+106.9910 	EXP 	Created unnamed ImageStim = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, draggable=False, flipHoriz=False, flipVert=False, image=PilImage(...), interpolate=False, mask=None, maskParams=None, name='unnamed ImageStim', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([1.10714286, 1.77142857]), texRes=128, units='norm', win=Window(...))
+107.4501 	DATA 	Keypress: 5
+107.7163 	DATA 	No keypress (maxWait exceeded)
+107.9163 	DATA 	No keypress (maxWait exceeded)
+107.9647 	DATA 	Keypress: 5
+108.0246 	EXP 	Created unnamed ImageStim = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, draggable=False, flipHoriz=False, flipVert=False, image=PilImage(...), interpolate=False, mask=None, maskParams=None, name='unnamed ImageStim', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([1.10714286, 1.77142857]), texRes=128, units='norm', win=Window(...))
+108.4803 	DATA 	Keypress: 5
+108.7503 	DATA 	No keypress (maxWait exceeded)
+108.9504 	DATA 	No keypress (maxWait exceeded)
+108.9949 	DATA 	Keypress: 5
+109.0535 	EXP 	Created unnamed ImageStim = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, draggable=False, flipHoriz=False, flipVert=False, image=PilImage(...), interpolate=False, mask=None, maskParams=None, name='unnamed ImageStim', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([1.10714286, 1.77142857]), texRes=128, units='norm', win=Window(...))
+109.5119 	DATA 	Keypress: 5
+109.7842 	DATA 	No keypress (maxWait exceeded)
+109.9842 	DATA 	No keypress (maxWait exceeded)
+110.0251 	DATA 	Keypress: 5
+110.0829 	EXP 	Created unnamed ImageStim = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, draggable=False, flipHoriz=False, flipVert=False, image=PilImage(...), interpolate=False, mask=None, maskParams=None, name='unnamed ImageStim', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([1.10714286, 1.77142857]), texRes=128, units='norm', win=Window(...))
+110.5403 	DATA 	Keypress: 5
+110.8165 	DATA 	No keypress (maxWait exceeded)
+111.0165 	DATA 	No keypress (maxWait exceeded)
+111.0550 	DATA 	Keypress: 5
+111.1136 	EXP 	Created unnamed ImageStim = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, draggable=False, flipHoriz=False, flipVert=False, image=PilImage(...), interpolate=False, mask=None, maskParams=None, name='unnamed ImageStim', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([1.10714286, 1.77142857]), texRes=128, units='norm', win=Window(...))
+111.5699 	DATA 	Keypress: 5
+111.8505 	DATA 	No keypress (maxWait exceeded)
+112.0505 	DATA 	No keypress (maxWait exceeded)
+112.0847 	DATA 	Keypress: 5
+112.1546 	EXP 	Created unnamed ImageStim = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, draggable=False, flipHoriz=False, flipVert=False, image=PilImage(...), interpolate=False, mask=None, maskParams=None, name='unnamed ImageStim', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([1.10714286, 1.77142857]), texRes=128, units='norm', win=Window(...))
+112.6003 	DATA 	Keypress: 5
+112.8835 	DATA 	No keypress (maxWait exceeded)
+113.0836 	DATA 	No keypress (maxWait exceeded)
+113.1152 	DATA 	Keypress: 5
+113.1877 	EXP 	Created unnamed ImageStim = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, draggable=False, flipHoriz=False, flipVert=False, image=PilImage(...), interpolate=False, mask=None, maskParams=None, name='unnamed ImageStim', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([1.10714286, 1.77142857]), texRes=128, units='norm', win=Window(...))
+113.6301 	DATA 	Keypress: 5
+113.9162 	DATA 	No keypress (maxWait exceeded)
+114.1162 	DATA 	No keypress (maxWait exceeded)
+114.1450 	DATA 	Keypress: 5
+114.2020 	EXP 	Created unnamed ImageStim = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, draggable=False, flipHoriz=False, flipVert=False, image=PilImage(...), interpolate=False, mask=None, maskParams=None, name='unnamed ImageStim', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([1.10714286, 1.77142857]), texRes=128, units='norm', win=Window(...))
+114.6604 	DATA 	Keypress: 5
+114.9349 	DATA 	No keypress (maxWait exceeded)
+115.1350 	DATA 	No keypress (maxWait exceeded)
+115.1751 	DATA 	Keypress: 5
+115.2300 	EXP 	Created unnamed ImageStim = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, draggable=False, flipHoriz=False, flipVert=False, image=PilImage(...), interpolate=False, mask=None, maskParams=None, name='unnamed ImageStim', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([1.10714286, 1.77142857]), texRes=128, units='norm', win=Window(...))
+115.6905 	DATA 	Keypress: 5
+115.9671 	DATA 	No keypress (maxWait exceeded)
+116.1672 	DATA 	No keypress (maxWait exceeded)
+116.2051 	DATA 	Keypress: 5
+116.2748 	EXP 	Created unnamed ImageStim = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, draggable=False, flipHoriz=False, flipVert=False, image=PilImage(...), interpolate=False, mask=None, maskParams=None, name='unnamed ImageStim', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([1.10714286, 1.77142857]), texRes=128, units='norm', win=Window(...))
+116.7202 	DATA 	Keypress: 5
+116.9995 	DATA 	No keypress (maxWait exceeded)
+117.1996 	DATA 	No keypress (maxWait exceeded)
+117.2351 	DATA 	Keypress: 5
+117.2912 	EXP 	Created unnamed ImageStim = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, draggable=False, flipHoriz=False, flipVert=False, image=PilImage(...), interpolate=False, mask=None, maskParams=None, name='unnamed ImageStim', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([1.10714286, 1.77142857]), texRes=128, units='norm', win=Window(...))
+117.7502 	DATA 	Keypress: 5
+118.0180 	DATA 	No keypress (maxWait exceeded)
+118.2181 	DATA 	No keypress (maxWait exceeded)
+118.2652 	DATA 	Keypress: 5
+118.3183 	EXP 	Created unnamed ImageStim = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, draggable=False, flipHoriz=False, flipVert=False, image=PilImage(...), interpolate=False, mask=None, maskParams=None, name='unnamed ImageStim', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([1.10714286, 1.77142857]), texRes=128, units='norm', win=Window(...))
+118.7801 	DATA 	Keypress: 5
+119.0504 	DATA 	No keypress (maxWait exceeded)
+119.2504 	DATA 	No keypress (maxWait exceeded)
+119.2951 	DATA 	Keypress: 5
+119.3602 	EXP 	Created unnamed ImageStim = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, draggable=False, flipHoriz=False, flipVert=False, image=PilImage(...), interpolate=False, mask=None, maskParams=None, name='unnamed ImageStim', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([1.10714286, 1.77142857]), texRes=128, units='norm', win=Window(...))
+119.8101 	DATA 	Keypress: 5
+120.0824 	DATA 	No keypress (maxWait exceeded)
+120.2824 	DATA 	No keypress (maxWait exceeded)
+120.3250 	DATA 	Keypress: 5
+120.3840 	EXP 	Created unnamed ImageStim = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, draggable=False, flipHoriz=False, flipVert=False, image=PilImage(...), interpolate=False, mask=None, maskParams=None, name='unnamed ImageStim', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([1.10714286, 1.77142857]), texRes=128, units='norm', win=Window(...))
+120.8402 	DATA 	Keypress: 5
+121.1154 	DATA 	No keypress (maxWait exceeded)
+121.3154 	DATA 	No keypress (maxWait exceeded)
+121.3552 	DATA 	Keypress: 5
+121.4205 	EXP 	Created unnamed ImageStim = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, draggable=False, flipHoriz=False, flipVert=False, image=PilImage(...), interpolate=False, mask=None, maskParams=None, name='unnamed ImageStim', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([1.10714286, 1.77142857]), texRes=128, units='norm', win=Window(...))
+121.8704 	DATA 	Keypress: 5
+122.1465 	DATA 	No keypress (maxWait exceeded)
+122.3466 	DATA 	No keypress (maxWait exceeded)
+122.3849 	DATA 	Keypress: 5
+122.4439 	EXP 	Created unnamed ImageStim = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, draggable=False, flipHoriz=False, flipVert=False, image=PilImage(...), interpolate=False, mask=None, maskParams=None, name='unnamed ImageStim', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([1.10714286, 1.77142857]), texRes=128, units='norm', win=Window(...))
+122.9004 	DATA 	Keypress: 5
+123.1638 	DATA 	No keypress (maxWait exceeded)
+123.3639 	DATA 	No keypress (maxWait exceeded)
+123.4150 	DATA 	Keypress: 5
+123.4883 	EXP 	Created unnamed ImageStim = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, draggable=False, flipHoriz=False, flipVert=False, image=PilImage(...), interpolate=False, mask=None, maskParams=None, name='unnamed ImageStim', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([1.10714286, 1.77142857]), texRes=128, units='norm', win=Window(...))
+123.9303 	DATA 	Keypress: 5
+124.2174 	DATA 	No keypress (maxWait exceeded)
+124.4175 	DATA 	No keypress (maxWait exceeded)
+124.4450 	DATA 	Keypress: 5
+124.5075 	EXP 	Created unnamed ImageStim = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, draggable=False, flipHoriz=False, flipVert=False, image=PilImage(...), interpolate=False, mask=None, maskParams=None, name='unnamed ImageStim', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([1.10714286, 1.77142857]), texRes=128, units='norm', win=Window(...))
+124.9606 	DATA 	Keypress: 5
+125.2335 	DATA 	No keypress (maxWait exceeded)
+125.4335 	DATA 	No keypress (maxWait exceeded)
+125.4749 	DATA 	Keypress: 5
+125.5422 	EXP 	Created unnamed ImageStim = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, draggable=False, flipHoriz=False, flipVert=False, image=PilImage(...), interpolate=False, mask=None, maskParams=None, name='unnamed ImageStim', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([1.10714286, 1.77142857]), texRes=128, units='norm', win=Window(...))
+125.9904 	DATA 	Keypress: 5
+126.2668 	DATA 	No keypress (maxWait exceeded)
+126.4669 	DATA 	No keypress (maxWait exceeded)
+126.5049 	DATA 	Keypress: 5
+126.5596 	EXP 	Created unnamed ImageStim = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, draggable=False, flipHoriz=False, flipVert=False, image=PilImage(...), interpolate=False, mask=None, maskParams=None, name='unnamed ImageStim', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([1.10714286, 1.77142857]), texRes=128, units='norm', win=Window(...))
+127.0202 	DATA 	Keypress: 5
+127.2847 	DATA 	No keypress (maxWait exceeded)
+127.4847 	DATA 	No keypress (maxWait exceeded)
+127.6848 	DATA 	No keypress (maxWait exceeded)
+127.8848 	DATA 	No keypress (maxWait exceeded)
+128.0848 	DATA 	No keypress (maxWait exceeded)
+128.2850 	DATA 	No keypress (maxWait exceeded)
+128.4850 	DATA 	No keypress (maxWait exceeded)
+128.6850 	DATA 	No keypress (maxWait exceeded)
+128.8850 	DATA 	No keypress (maxWait exceeded)
+129.0851 	DATA 	No keypress (maxWait exceeded)
+129.2851 	DATA 	No keypress (maxWait exceeded)
+129.4851 	DATA 	No keypress (maxWait exceeded)
+129.6852 	DATA 	No keypress (maxWait exceeded)
+129.8852 	DATA 	No keypress (maxWait exceeded)
+130.0852 	DATA 	No keypress (maxWait exceeded)
+130.2853 	DATA 	No keypress (maxWait exceeded)
+130.4853 	DATA 	No keypress (maxWait exceeded)
+130.6853 	DATA 	No keypress (maxWait exceeded)
+130.8853 	DATA 	No keypress (maxWait exceeded)
+131.0854 	DATA 	No keypress (maxWait exceeded)
+131.2854 	DATA 	No keypress (maxWait exceeded)
+131.4854 	DATA 	No keypress (maxWait exceeded)
+131.6854 	DATA 	No keypress (maxWait exceeded)
+131.8855 	DATA 	No keypress (maxWait exceeded)
+132.0855 	DATA 	No keypress (maxWait exceeded)
+132.2855 	DATA 	No keypress (maxWait exceeded)
+132.4856 	DATA 	No keypress (maxWait exceeded)
+132.6856 	DATA 	No keypress (maxWait exceeded)
+132.8856 	DATA 	No keypress (maxWait exceeded)
+133.0856 	DATA 	No keypress (maxWait exceeded)
+133.2856 	DATA 	No keypress (maxWait exceeded)
+133.4857 	DATA 	No keypress (maxWait exceeded)
+133.6857 	DATA 	No keypress (maxWait exceeded)
+133.8857 	DATA 	No keypress (maxWait exceeded)
+134.0858 	DATA 	No keypress (maxWait exceeded)
+134.2858 	DATA 	No keypress (maxWait exceeded)
+134.4858 	DATA 	No keypress (maxWait exceeded)
+134.6859 	DATA 	No keypress (maxWait exceeded)
+134.8859 	DATA 	No keypress (maxWait exceeded)
+135.0859 	DATA 	No keypress (maxWait exceeded)
+135.2860 	DATA 	No keypress (maxWait exceeded)
+135.4860 	DATA 	No keypress (maxWait exceeded)
+135.6860 	DATA 	No keypress (maxWait exceeded)
+135.8861 	DATA 	No keypress (maxWait exceeded)
+136.0861 	DATA 	No keypress (maxWait exceeded)
+136.2861 	DATA 	No keypress (maxWait exceeded)
+136.4861 	DATA 	No keypress (maxWait exceeded)
+136.6862 	DATA 	No keypress (maxWait exceeded)
+136.8862 	DATA 	No keypress (maxWait exceeded)
+137.0862 	DATA 	No keypress (maxWait exceeded)
+137.2862 	DATA 	No keypress (maxWait exceeded)
+137.4863 	DATA 	No keypress (maxWait exceeded)
+137.6863 	DATA 	No keypress (maxWait exceeded)
+137.8863 	DATA 	No keypress (maxWait exceeded)
+138.0863 	DATA 	No keypress (maxWait exceeded)
+138.2864 	DATA 	No keypress (maxWait exceeded)
+138.4864 	DATA 	No keypress (maxWait exceeded)
+138.6864 	DATA 	No keypress (maxWait exceeded)
+138.8864 	DATA 	No keypress (maxWait exceeded)
+139.0865 	DATA 	No keypress (maxWait exceeded)
+139.2865 	DATA 	No keypress (maxWait exceeded)
+139.4865 	DATA 	No keypress (maxWait exceeded)
+139.6866 	DATA 	No keypress (maxWait exceeded)
+139.8866 	DATA 	No keypress (maxWait exceeded)
+140.0866 	DATA 	No keypress (maxWait exceeded)
+140.2866 	DATA 	No keypress (maxWait exceeded)
+140.4867 	DATA 	No keypress (maxWait exceeded)
+140.6867 	DATA 	No keypress (maxWait exceeded)
+140.8867 	DATA 	No keypress (maxWait exceeded)
+141.0867 	DATA 	No keypress (maxWait exceeded)
+141.2868 	DATA 	No keypress (maxWait exceeded)
+141.4868 	DATA 	No keypress (maxWait exceeded)
+141.6868 	DATA 	No keypress (maxWait exceeded)
+141.8868 	DATA 	No keypress (maxWait exceeded)
+142.0869 	DATA 	No keypress (maxWait exceeded)
+142.2869 	DATA 	No keypress (maxWait exceeded)
+142.4869 	DATA 	No keypress (maxWait exceeded)
+142.6869 	DATA 	No keypress (maxWait exceeded)
+142.8870 	DATA 	No keypress (maxWait exceeded)
+143.0870 	DATA 	No keypress (maxWait exceeded)
+143.2870 	DATA 	No keypress (maxWait exceeded)
+143.4870 	DATA 	No keypress (maxWait exceeded)
+143.6870 	DATA 	No keypress (maxWait exceeded)
+143.8871 	DATA 	No keypress (maxWait exceeded)
+144.0871 	DATA 	No keypress (maxWait exceeded)
+144.2871 	DATA 	No keypress (maxWait exceeded)
+144.4871 	DATA 	No keypress (maxWait exceeded)
+144.6872 	DATA 	No keypress (maxWait exceeded)
+144.8872 	DATA 	No keypress (maxWait exceeded)
+145.0872 	DATA 	No keypress (maxWait exceeded)
+145.2872 	DATA 	No keypress (maxWait exceeded)
+145.4872 	DATA 	No keypress (maxWait exceeded)
+145.6873 	DATA 	No keypress (maxWait exceeded)
+145.8873 	DATA 	No keypress (maxWait exceeded)
+146.0873 	DATA 	No keypress (maxWait exceeded)
+146.2873 	DATA 	No keypress (maxWait exceeded)
+146.4874 	DATA 	No keypress (maxWait exceeded)
+146.6874 	DATA 	No keypress (maxWait exceeded)
+146.8875 	DATA 	No keypress (maxWait exceeded)
+147.0875 	DATA 	No keypress (maxWait exceeded)
+147.2875 	DATA 	No keypress (maxWait exceeded)
+147.4876 	DATA 	No keypress (maxWait exceeded)
+147.6876 	DATA 	No keypress (maxWait exceeded)
+147.8876 	DATA 	No keypress (maxWait exceeded)
+148.0877 	DATA 	No keypress (maxWait exceeded)
+148.2877 	DATA 	No keypress (maxWait exceeded)
+148.4877 	DATA 	No keypress (maxWait exceeded)
+148.6877 	DATA 	No keypress (maxWait exceeded)
+148.8878 	DATA 	No keypress (maxWait exceeded)
+149.0878 	DATA 	No keypress (maxWait exceeded)
+149.2878 	DATA 	No keypress (maxWait exceeded)
+149.4879 	DATA 	No keypress (maxWait exceeded)
+149.6879 	DATA 	No keypress (maxWait exceeded)
+149.8879 	DATA 	No keypress (maxWait exceeded)
+150.0879 	DATA 	No keypress (maxWait exceeded)
+150.2880 	DATA 	No keypress (maxWait exceeded)
+150.4880 	DATA 	No keypress (maxWait exceeded)
+150.6880 	DATA 	No keypress (maxWait exceeded)
+150.8880 	DATA 	No keypress (maxWait exceeded)
+151.0881 	DATA 	No keypress (maxWait exceeded)
+151.2881 	DATA 	No keypress (maxWait exceeded)
+151.4881 	DATA 	No keypress (maxWait exceeded)
+151.6881 	DATA 	No keypress (maxWait exceeded)
+151.8882 	DATA 	No keypress (maxWait exceeded)
+152.0882 	DATA 	No keypress (maxWait exceeded)
+152.2882 	DATA 	No keypress (maxWait exceeded)
+152.4882 	DATA 	No keypress (maxWait exceeded)
+152.6883 	DATA 	No keypress (maxWait exceeded)
+152.8883 	DATA 	No keypress (maxWait exceeded)
+153.0883 	DATA 	No keypress (maxWait exceeded)
+153.2883 	DATA 	No keypress (maxWait exceeded)
+153.4884 	DATA 	No keypress (maxWait exceeded)
+153.6884 	DATA 	No keypress (maxWait exceeded)
+153.8884 	DATA 	No keypress (maxWait exceeded)
+154.0884 	DATA 	No keypress (maxWait exceeded)
+154.2885 	DATA 	No keypress (maxWait exceeded)
+154.4885 	DATA 	No keypress (maxWait exceeded)
+154.6885 	DATA 	No keypress (maxWait exceeded)
+154.8885 	DATA 	No keypress (maxWait exceeded)
+155.0886 	DATA 	No keypress (maxWait exceeded)
+155.1242 	DATA 	Keypress: 5
+155.1865 	EXP 	Created unnamed ImageStim = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, draggable=False, flipHoriz=False, flipVert=False, image=PilImage(...), interpolate=False, mask=None, maskParams=None, name='unnamed ImageStim', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([1.10714286, 1.77142857]), texRes=128, units='norm', win=Window(...))
+155.6396 	DATA 	Keypress: 5
+155.9184 	DATA 	No keypress (maxWait exceeded)
+156.1185 	DATA 	No keypress (maxWait exceeded)
+156.1543 	DATA 	Keypress: 5
+156.2117 	EXP 	Created unnamed ImageStim = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, draggable=False, flipHoriz=False, flipVert=False, image=PilImage(...), interpolate=False, mask=None, maskParams=None, name='unnamed ImageStim', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([1.10714286, 1.77142857]), texRes=128, units='norm', win=Window(...))
+156.6695 	DATA 	Keypress: 5
+156.9504 	DATA 	No keypress (maxWait exceeded)
+157.1504 	DATA 	No keypress (maxWait exceeded)
+157.1842 	DATA 	Keypress: 5
+157.2389 	EXP 	Created unnamed ImageStim = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, draggable=False, flipHoriz=False, flipVert=False, image=PilImage(...), interpolate=False, mask=None, maskParams=None, name='unnamed ImageStim', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([1.10714286, 1.77142857]), texRes=128, units='norm', win=Window(...))
+157.6997 	DATA 	Keypress: 5
+157.9677 	DATA 	No keypress (maxWait exceeded)
+158.1678 	DATA 	No keypress (maxWait exceeded)
+158.2141 	DATA 	Keypress: 5
+158.2731 	EXP 	Created unnamed ImageStim = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, draggable=False, flipHoriz=False, flipVert=False, image=PilImage(...), interpolate=False, mask=None, maskParams=None, name='unnamed ImageStim', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([1.10714286, 1.77142857]), texRes=128, units='norm', win=Window(...))
+158.7295 	DATA 	Keypress: 5
+159.0027 	DATA 	No keypress (maxWait exceeded)
+159.2028 	DATA 	No keypress (maxWait exceeded)
+159.2441 	DATA 	Keypress: 5
+159.2952 	EXP 	Created unnamed ImageStim = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, draggable=False, flipHoriz=False, flipVert=False, image=PilImage(...), interpolate=False, mask=None, maskParams=None, name='unnamed ImageStim', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([1.10714286, 1.77142857]), texRes=128, units='norm', win=Window(...))
+159.7595 	DATA 	Keypress: 5
+160.0333 	DATA 	No keypress (maxWait exceeded)
+160.2333 	DATA 	No keypress (maxWait exceeded)
+160.2742 	DATA 	Keypress: 5
+160.3344 	EXP 	Created unnamed ImageStim = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, draggable=False, flipHoriz=False, flipVert=False, image=PilImage(...), interpolate=False, mask=None, maskParams=None, name='unnamed ImageStim', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([1.10714286, 1.77142857]), texRes=128, units='norm', win=Window(...))
+160.7900 	DATA 	Keypress: 5
+161.0672 	DATA 	No keypress (maxWait exceeded)
+161.2672 	DATA 	No keypress (maxWait exceeded)
+161.3044 	DATA 	Keypress: 5
+161.3609 	EXP 	Created unnamed ImageStim = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, draggable=False, flipHoriz=False, flipVert=False, image=PilImage(...), interpolate=False, mask=None, maskParams=None, name='unnamed ImageStim', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([1.10714286, 1.77142857]), texRes=128, units='norm', win=Window(...))
+161.8193 	DATA 	Keypress: 5
+162.0846 	DATA 	No keypress (maxWait exceeded)
+162.2846 	DATA 	No keypress (maxWait exceeded)
+162.3343 	DATA 	Keypress: 5
+162.3881 	EXP 	Created unnamed ImageStim = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, draggable=False, flipHoriz=False, flipVert=False, image=PilImage(...), interpolate=False, mask=None, maskParams=None, name='unnamed ImageStim', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([1.10714286, 1.77142857]), texRes=128, units='norm', win=Window(...))
+162.8495 	DATA 	Keypress: 5
+163.1176 	DATA 	No keypress (maxWait exceeded)
+163.3176 	DATA 	No keypress (maxWait exceeded)
+163.3644 	DATA 	Keypress: 5
+163.4242 	EXP 	Created unnamed ImageStim = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, draggable=False, flipHoriz=False, flipVert=False, image=PilImage(...), interpolate=False, mask=None, maskParams=None, name='unnamed ImageStim', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([1.10714286, 1.77142857]), texRes=128, units='norm', win=Window(...))
+163.8794 	DATA 	Keypress: 5
+164.1508 	DATA 	No keypress (maxWait exceeded)
+164.3509 	DATA 	No keypress (maxWait exceeded)
+164.3942 	DATA 	Keypress: 5
+164.4523 	EXP 	Created unnamed ImageStim = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, draggable=False, flipHoriz=False, flipVert=False, image=PilImage(...), interpolate=False, mask=None, maskParams=None, name='unnamed ImageStim', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([1.10714286, 1.77142857]), texRes=128, units='norm', win=Window(...))
+164.9097 	DATA 	Keypress: 5
+165.1841 	DATA 	No keypress (maxWait exceeded)
+165.3841 	DATA 	No keypress (maxWait exceeded)
+165.4243 	DATA 	Keypress: 5
+165.4809 	EXP 	Created unnamed ImageStim = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, draggable=False, flipHoriz=False, flipVert=False, image=PilImage(...), interpolate=False, mask=None, maskParams=None, name='unnamed ImageStim', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([1.10714286, 1.77142857]), texRes=128, units='norm', win=Window(...))
+165.9396 	DATA 	Keypress: 5
+166.2179 	DATA 	No keypress (maxWait exceeded)
+166.4179 	DATA 	No keypress (maxWait exceeded)
+166.4543 	DATA 	Keypress: 5
+166.5244 	EXP 	Created unnamed ImageStim = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, draggable=False, flipHoriz=False, flipVert=False, image=PilImage(...), interpolate=False, mask=None, maskParams=None, name='unnamed ImageStim', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([1.10714286, 1.77142857]), texRes=128, units='norm', win=Window(...))
+166.9695 	DATA 	Keypress: 5
+167.2521 	DATA 	No keypress (maxWait exceeded)
+167.4521 	DATA 	No keypress (maxWait exceeded)
+167.4843 	DATA 	Keypress: 5
+167.5403 	EXP 	Created unnamed ImageStim = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, draggable=False, flipHoriz=False, flipVert=False, image=PilImage(...), interpolate=False, mask=None, maskParams=None, name='unnamed ImageStim', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([1.10714286, 1.77142857]), texRes=128, units='norm', win=Window(...))
+167.9999 	DATA 	Keypress: 5
+168.2671 	DATA 	No keypress (maxWait exceeded)
+168.4671 	DATA 	No keypress (maxWait exceeded)
+168.5142 	DATA 	Keypress: 5
+168.5858 	EXP 	Created unnamed ImageStim = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, draggable=False, flipHoriz=False, flipVert=False, image=PilImage(...), interpolate=False, mask=None, maskParams=None, name='unnamed ImageStim', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([1.10714286, 1.77142857]), texRes=128, units='norm', win=Window(...))
+169.0298 	DATA 	Keypress: 5
+169.3168 	DATA 	No keypress (maxWait exceeded)
+169.5168 	DATA 	No keypress (maxWait exceeded)
+169.5443 	DATA 	Keypress: 5
+169.6072 	EXP 	Created unnamed ImageStim = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, draggable=False, flipHoriz=False, flipVert=False, image=PilImage(...), interpolate=False, mask=None, maskParams=None, name='unnamed ImageStim', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([1.10714286, 1.77142857]), texRes=128, units='norm', win=Window(...))
+170.0599 	DATA 	Keypress: 5
+170.3334 	DATA 	No keypress (maxWait exceeded)
+170.5335 	DATA 	No keypress (maxWait exceeded)
+170.5742 	DATA 	Keypress: 5
+170.6331 	EXP 	Created unnamed ImageStim = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, draggable=False, flipHoriz=False, flipVert=False, image=PilImage(...), interpolate=False, mask=None, maskParams=None, name='unnamed ImageStim', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([1.10714286, 1.77142857]), texRes=128, units='norm', win=Window(...))
+171.0897 	DATA 	Keypress: 5
+171.3671 	DATA 	No keypress (maxWait exceeded)
+171.5672 	DATA 	No keypress (maxWait exceeded)
+171.6043 	DATA 	Keypress: 5
+171.6746 	EXP 	Created unnamed ImageStim = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, draggable=False, flipHoriz=False, flipVert=False, image=PilImage(...), interpolate=False, mask=None, maskParams=None, name='unnamed ImageStim', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([1.10714286, 1.77142857]), texRes=128, units='norm', win=Window(...))
+172.1194 	DATA 	Keypress: 5
+172.3999 	DATA 	No keypress (maxWait exceeded)
+172.5999 	DATA 	No keypress (maxWait exceeded)
+172.6343 	DATA 	Keypress: 5
+172.7065 	EXP 	Created unnamed ImageStim = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, draggable=False, flipHoriz=False, flipVert=False, image=PilImage(...), interpolate=False, mask=None, maskParams=None, name='unnamed ImageStim', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([1.10714286, 1.77142857]), texRes=128, units='norm', win=Window(...))
+173.1499 	DATA 	Keypress: 5
+173.4335 	DATA 	No keypress (maxWait exceeded)
+173.6335 	DATA 	No keypress (maxWait exceeded)
+173.6644 	DATA 	Keypress: 5
+173.7272 	EXP 	Created unnamed ImageStim = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, draggable=False, flipHoriz=False, flipVert=False, image=PilImage(...), interpolate=False, mask=None, maskParams=None, name='unnamed ImageStim', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([1.10714286, 1.77142857]), texRes=128, units='norm', win=Window(...))
+174.1795 	DATA 	Keypress: 5
+174.4477 	DATA 	No keypress (maxWait exceeded)
+174.6477 	DATA 	No keypress (maxWait exceeded)
+174.6943 	DATA 	Keypress: 5
+174.7508 	EXP 	Created unnamed ImageStim = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, draggable=False, flipHoriz=False, flipVert=False, image=PilImage(...), interpolate=False, mask=None, maskParams=None, name='unnamed ImageStim', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([1.10714286, 1.77142857]), texRes=128, units='norm', win=Window(...))
+175.2117 	DATA 	Keypress: 5
+175.4837 	DATA 	No keypress (maxWait exceeded)
+175.6837 	DATA 	No keypress (maxWait exceeded)
+175.7245 	DATA 	Keypress: 5
+175.7872 	EXP 	Created unnamed ImageStim = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, draggable=False, flipHoriz=False, flipVert=False, image=PilImage(...), interpolate=False, mask=None, maskParams=None, name='unnamed ImageStim', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([1.10714286, 1.77142857]), texRes=128, units='norm', win=Window(...))
+176.2398 	DATA 	Keypress: 5
+176.5208 	DATA 	No keypress (maxWait exceeded)
+176.7209 	DATA 	No keypress (maxWait exceeded)
+176.7545 	DATA 	Keypress: 5
+176.8241 	EXP 	Created unnamed ImageStim = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, draggable=False, flipHoriz=False, flipVert=False, image=PilImage(...), interpolate=False, mask=None, maskParams=None, name='unnamed ImageStim', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([1.10714286, 1.77142857]), texRes=128, units='norm', win=Window(...))
+177.2693 	DATA 	Keypress: 5
+177.5504 	DATA 	No keypress (maxWait exceeded)
+177.7504 	DATA 	No keypress (maxWait exceeded)
+177.7844 	DATA 	Keypress: 5
+177.8557 	EXP 	Created unnamed ImageStim = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, draggable=False, flipHoriz=False, flipVert=False, image=PilImage(...), interpolate=False, mask=None, maskParams=None, name='unnamed ImageStim', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([1.10714286, 1.77142857]), texRes=128, units='norm', win=Window(...))
+178.2996 	DATA 	Keypress: 5
+178.5850 	DATA 	No keypress (maxWait exceeded)
+178.7850 	DATA 	No keypress (maxWait exceeded)
+178.8144 	DATA 	Keypress: 5
+178.8781 	EXP 	Created unnamed ImageStim = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, draggable=False, flipHoriz=False, flipVert=False, image=PilImage(...), interpolate=False, mask=None, maskParams=None, name='unnamed ImageStim', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([1.10714286, 1.77142857]), texRes=128, units='norm', win=Window(...))
+179.3299 	DATA 	Keypress: 5
+179.6185 	DATA 	No keypress (maxWait exceeded)
+179.8185 	DATA 	No keypress (maxWait exceeded)
+179.8442 	DATA 	Keypress: 5
+179.9038 	EXP 	Created unnamed ImageStim = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, draggable=False, flipHoriz=False, flipVert=False, image=PilImage(...), interpolate=False, mask=None, maskParams=None, name='unnamed ImageStim', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([1.10714286, 1.77142857]), texRes=128, units='norm', win=Window(...))
+180.3594 	DATA 	Keypress: 5
+180.6337 	DATA 	No keypress (maxWait exceeded)
+180.8337 	DATA 	No keypress (maxWait exceeded)
+180.8743 	DATA 	Keypress: 5
+180.9314 	EXP 	Created unnamed ImageStim = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, draggable=False, flipHoriz=False, flipVert=False, image=PilImage(...), interpolate=False, mask=None, maskParams=None, name='unnamed ImageStim', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([1.10714286, 1.77142857]), texRes=128, units='norm', win=Window(...))
+181.3895 	DATA 	Keypress: 5
+181.6655 	DATA 	No keypress (maxWait exceeded)
+181.8656 	DATA 	No keypress (maxWait exceeded)
+181.9044 	DATA 	Keypress: 5
+181.9624 	EXP 	Created unnamed ImageStim = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, draggable=False, flipHoriz=False, flipVert=False, image=PilImage(...), interpolate=False, mask=None, maskParams=None, name='unnamed ImageStim', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([1.10714286, 1.77142857]), texRes=128, units='norm', win=Window(...))
+182.4198 	DATA 	Keypress: 5
+182.7014 	DATA 	No keypress (maxWait exceeded)
+182.9014 	DATA 	No keypress (maxWait exceeded)
+182.9344 	DATA 	Keypress: 5
+182.9922 	EXP 	Created unnamed ImageStim = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, draggable=False, flipHoriz=False, flipVert=False, image=PilImage(...), interpolate=False, mask=None, maskParams=None, name='unnamed ImageStim', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([1.10714286, 1.77142857]), texRes=128, units='norm', win=Window(...))
+183.4499 	DATA 	Keypress: 5
+183.7176 	DATA 	No keypress (maxWait exceeded)
+183.9177 	DATA 	No keypress (maxWait exceeded)
+183.9643 	DATA 	Keypress: 5
+184.0227 	EXP 	Created unnamed ImageStim = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, draggable=False, flipHoriz=False, flipVert=False, image=PilImage(...), interpolate=False, mask=None, maskParams=None, name='unnamed ImageStim', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([1.10714286, 1.77142857]), texRes=128, units='norm', win=Window(...))
+184.4796 	DATA 	Keypress: 5
+184.7502 	DATA 	No keypress (maxWait exceeded)
+184.9503 	DATA 	No keypress (maxWait exceeded)
+184.9944 	DATA 	Keypress: 5
+185.0531 	EXP 	Created unnamed ImageStim = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, draggable=False, flipHoriz=False, flipVert=False, image=PilImage(...), interpolate=False, mask=None, maskParams=None, name='unnamed ImageStim', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([1.10714286, 1.77142857]), texRes=128, units='norm', win=Window(...))
+185.5098 	DATA 	Keypress: 5
+185.7830 	DATA 	No keypress (maxWait exceeded)
+185.9831 	DATA 	No keypress (maxWait exceeded)
+186.0244 	DATA 	Keypress: 5
+186.0955 	EXP 	Created unnamed ImageStim = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, draggable=False, flipHoriz=False, flipVert=False, image=PilImage(...), interpolate=False, mask=None, maskParams=None, name='unnamed ImageStim', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([1.10714286, 1.77142857]), texRes=128, units='norm', win=Window(...))
+186.5398 	DATA 	Keypress: 5
+186.8308 	DATA 	No keypress (maxWait exceeded)
+187.0308 	DATA 	No keypress (maxWait exceeded)
+187.0544 	DATA 	Keypress: 5
+187.1152 	EXP 	Created unnamed ImageStim = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, draggable=False, flipHoriz=False, flipVert=False, image=PilImage(...), interpolate=False, mask=None, maskParams=None, name='unnamed ImageStim', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([1.10714286, 1.77142857]), texRes=128, units='norm', win=Window(...))
+187.5696 	DATA 	Keypress: 5
+187.8520 	DATA 	No keypress (maxWait exceeded)
+188.0520 	DATA 	No keypress (maxWait exceeded)
+188.0846 	DATA 	Keypress: 5
+188.1415 	EXP 	Created unnamed ImageStim = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, draggable=False, flipHoriz=False, flipVert=False, image=PilImage(...), interpolate=False, mask=None, maskParams=None, name='unnamed ImageStim', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([1.10714286, 1.77142857]), texRes=128, units='norm', win=Window(...))
+188.5998 	DATA 	Keypress: 5
+188.8681 	DATA 	No keypress (maxWait exceeded)
+189.0681 	DATA 	No keypress (maxWait exceeded)
+189.1145 	DATA 	Keypress: 5
+189.1711 	EXP 	Created unnamed ImageStim = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, draggable=False, flipHoriz=False, flipVert=False, image=PilImage(...), interpolate=False, mask=None, maskParams=None, name='unnamed ImageStim', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([1.10714286, 1.77142857]), texRes=128, units='norm', win=Window(...))
+189.6297 	DATA 	Keypress: 5
+189.9008 	DATA 	No keypress (maxWait exceeded)
+190.1008 	DATA 	No keypress (maxWait exceeded)
+190.1445 	DATA 	Keypress: 5
+190.2029 	EXP 	Created unnamed ImageStim = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, draggable=False, flipHoriz=False, flipVert=False, image=PilImage(...), interpolate=False, mask=None, maskParams=None, name='unnamed ImageStim', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([1.10714286, 1.77142857]), texRes=128, units='norm', win=Window(...))
+190.6600 	DATA 	Keypress: 5
+190.9337 	DATA 	No keypress (maxWait exceeded)
+191.1338 	DATA 	No keypress (maxWait exceeded)
+191.1745 	DATA 	Keypress: 5
+191.2314 	EXP 	Created unnamed ImageStim = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, draggable=False, flipHoriz=False, flipVert=False, image=PilImage(...), interpolate=False, mask=None, maskParams=None, name='unnamed ImageStim', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([1.10714286, 1.77142857]), texRes=128, units='norm', win=Window(...))
+191.6899 	DATA 	Keypress: 5
+191.9677 	DATA 	No keypress (maxWait exceeded)
+192.1677 	DATA 	No keypress (maxWait exceeded)
+192.2043 	DATA 	Keypress: 5
+192.2650 	EXP 	Created unnamed ImageStim = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, draggable=False, flipHoriz=False, flipVert=False, image=PilImage(...), interpolate=False, mask=None, maskParams=None, name='unnamed ImageStim', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([1.10714286, 1.77142857]), texRes=128, units='norm', win=Window(...))
+192.7196 	DATA 	Keypress: 5
+193.0006 	DATA 	No keypress (maxWait exceeded)
+193.2006 	DATA 	No keypress (maxWait exceeded)
+193.2344 	DATA 	Keypress: 5
+193.2909 	EXP 	Created unnamed ImageStim = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, draggable=False, flipHoriz=False, flipVert=False, image=PilImage(...), interpolate=False, mask=None, maskParams=None, name='unnamed ImageStim', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([1.10714286, 1.77142857]), texRes=128, units='norm', win=Window(...))
+193.7501 	DATA 	Keypress: 5
+194.0177 	DATA 	No keypress (maxWait exceeded)
+194.2177 	DATA 	No keypress (maxWait exceeded)
+194.2645 	DATA 	Keypress: 5
+194.3253 	EXP 	Created unnamed ImageStim = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, draggable=False, flipHoriz=False, flipVert=False, image=PilImage(...), interpolate=False, mask=None, maskParams=None, name='unnamed ImageStim', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([1.10714286, 1.77142857]), texRes=128, units='norm', win=Window(...))
+194.7799 	DATA 	Keypress: 5
+195.0503 	DATA 	No keypress (maxWait exceeded)
+195.2503 	DATA 	No keypress (maxWait exceeded)
+195.2944 	DATA 	Keypress: 5
+195.3533 	EXP 	Created unnamed ImageStim = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, draggable=False, flipHoriz=False, flipVert=False, image=PilImage(...), interpolate=False, mask=None, maskParams=None, name='unnamed ImageStim', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([1.10714286, 1.77142857]), texRes=128, units='norm', win=Window(...))
+195.8099 	DATA 	Keypress: 5
+196.0844 	DATA 	No keypress (maxWait exceeded)
+196.2845 	DATA 	No keypress (maxWait exceeded)
+196.3245 	DATA 	Keypress: 5
+196.3944 	EXP 	Created unnamed ImageStim = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, draggable=False, flipHoriz=False, flipVert=False, image=PilImage(...), interpolate=False, mask=None, maskParams=None, name='unnamed ImageStim', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([1.10714286, 1.77142857]), texRes=128, units='norm', win=Window(...))
+196.8405 	DATA 	Keypress: 5
+197.1179 	DATA 	No keypress (maxWait exceeded)
+197.3179 	DATA 	No keypress (maxWait exceeded)
+197.3545 	DATA 	Keypress: 5
+197.4111 	EXP 	Created unnamed ImageStim = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, draggable=False, flipHoriz=False, flipVert=False, image=PilImage(...), interpolate=False, mask=None, maskParams=None, name='unnamed ImageStim', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([1.10714286, 1.77142857]), texRes=128, units='norm', win=Window(...))
+197.8698 	DATA 	Keypress: 5
+198.1345 	DATA 	No keypress (maxWait exceeded)
+198.3346 	DATA 	No keypress (maxWait exceeded)
+198.3845 	DATA 	Keypress: 5
+198.4445 	EXP 	Created unnamed ImageStim = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, draggable=False, flipHoriz=False, flipVert=False, image=PilImage(...), interpolate=False, mask=None, maskParams=None, name='unnamed ImageStim', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([1.10714286, 1.77142857]), texRes=128, units='norm', win=Window(...))
+198.8999 	DATA 	Keypress: 5
+199.1685 	DATA 	No keypress (maxWait exceeded)
+199.3686 	DATA 	No keypress (maxWait exceeded)
+199.4145 	DATA 	Keypress: 5
+199.4838 	EXP 	Created unnamed ImageStim = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, draggable=False, flipHoriz=False, flipVert=False, image=PilImage(...), interpolate=False, mask=None, maskParams=None, name='unnamed ImageStim', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([1.10714286, 1.77142857]), texRes=128, units='norm', win=Window(...))
+199.9299 	DATA 	Keypress: 5
+200.2164 	DATA 	No keypress (maxWait exceeded)
+200.4165 	DATA 	No keypress (maxWait exceeded)
+200.4445 	DATA 	Keypress: 5
+200.4993 	EXP 	Created unnamed ImageStim = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, draggable=False, flipHoriz=False, flipVert=False, image=PilImage(...), interpolate=False, mask=None, maskParams=None, name='unnamed ImageStim', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([1.10714286, 1.77142857]), texRes=128, units='norm', win=Window(...))
+200.9598 	DATA 	Keypress: 5
+201.2337 	DATA 	No keypress (maxWait exceeded)
+201.4337 	DATA 	No keypress (maxWait exceeded)
+201.4746 	DATA 	Keypress: 5
+201.5382 	EXP 	Created unnamed ImageStim = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, draggable=False, flipHoriz=False, flipVert=False, image=PilImage(...), interpolate=False, mask=None, maskParams=None, name='unnamed ImageStim', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([1.10714286, 1.77142857]), texRes=128, units='norm', win=Window(...))
+201.9899 	DATA 	Keypress: 5
+202.2674 	DATA 	No keypress (maxWait exceeded)
+202.4674 	DATA 	No keypress (maxWait exceeded)
+202.5048 	DATA 	Keypress: 5
+202.5605 	EXP 	Created unnamed ImageStim = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, draggable=False, flipHoriz=False, flipVert=False, image=PilImage(...), interpolate=False, mask=None, maskParams=None, name='unnamed ImageStim', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([1.10714286, 1.77142857]), texRes=128, units='norm', win=Window(...))
+203.0199 	DATA 	Keypress: 5
+203.2851 	DATA 	No keypress (maxWait exceeded)
+203.4852 	DATA 	No keypress (maxWait exceeded)
+203.5345 	DATA 	Keypress: 5
+203.5911 	EXP 	Created unnamed ImageStim = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, draggable=False, flipHoriz=False, flipVert=False, image=PilImage(...), interpolate=False, mask=None, maskParams=None, name='unnamed ImageStim', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([1.10714286, 1.77142857]), texRes=128, units='norm', win=Window(...))
+204.0498 	DATA 	Keypress: 5
+204.3168 	DATA 	No keypress (maxWait exceeded)
+204.5168 	DATA 	No keypress (maxWait exceeded)
+204.5645 	DATA 	Keypress: 5
+204.6227 	EXP 	Created unnamed ImageStim = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, draggable=False, flipHoriz=False, flipVert=False, image=PilImage(...), interpolate=False, mask=None, maskParams=None, name='unnamed ImageStim', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([1.10714286, 1.77142857]), texRes=128, units='norm', win=Window(...))
+205.0797 	DATA 	Keypress: 5
+205.3514 	DATA 	No keypress (maxWait exceeded)
+205.5514 	DATA 	No keypress (maxWait exceeded)
+205.5945 	DATA 	Keypress: 5
+205.6663 	EXP 	Created unnamed ImageStim = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, draggable=False, flipHoriz=False, flipVert=False, image=PilImage(...), interpolate=False, mask=None, maskParams=None, name='unnamed ImageStim', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([1.10714286, 1.77142857]), texRes=128, units='norm', win=Window(...))
+206.1100 	DATA 	Keypress: 5
+206.4030 	DATA 	No keypress (maxWait exceeded)
+206.6030 	DATA 	No keypress (maxWait exceeded)
+206.8030 	DATA 	No keypress (maxWait exceeded)
+207.0030 	DATA 	No keypress (maxWait exceeded)
+207.2031 	DATA 	No keypress (maxWait exceeded)
+207.4032 	DATA 	No keypress (maxWait exceeded)
+207.6032 	DATA 	No keypress (maxWait exceeded)
+207.8033 	DATA 	No keypress (maxWait exceeded)
+208.0033 	DATA 	No keypress (maxWait exceeded)
+208.2033 	DATA 	No keypress (maxWait exceeded)
+208.4033 	DATA 	No keypress (maxWait exceeded)
+208.6034 	DATA 	No keypress (maxWait exceeded)
+208.8034 	DATA 	No keypress (maxWait exceeded)
+209.0034 	DATA 	No keypress (maxWait exceeded)
+209.2035 	DATA 	No keypress (maxWait exceeded)
+209.4035 	DATA 	No keypress (maxWait exceeded)
+209.6035 	DATA 	No keypress (maxWait exceeded)
+209.8035 	DATA 	No keypress (maxWait exceeded)
+210.0036 	DATA 	No keypress (maxWait exceeded)
+210.2036 	DATA 	No keypress (maxWait exceeded)
+210.4036 	DATA 	No keypress (maxWait exceeded)
+210.6036 	DATA 	No keypress (maxWait exceeded)
+210.8037 	DATA 	No keypress (maxWait exceeded)
+211.0037 	DATA 	No keypress (maxWait exceeded)
+211.2037 	DATA 	No keypress (maxWait exceeded)
+211.4037 	DATA 	No keypress (maxWait exceeded)
+211.6037 	DATA 	No keypress (maxWait exceeded)
+211.8038 	DATA 	No keypress (maxWait exceeded)
+212.0038 	DATA 	No keypress (maxWait exceeded)
+212.2038 	DATA 	No keypress (maxWait exceeded)
+212.4039 	DATA 	No keypress (maxWait exceeded)
+212.6039 	DATA 	No keypress (maxWait exceeded)
+212.8039 	DATA 	No keypress (maxWait exceeded)
+213.0039 	DATA 	No keypress (maxWait exceeded)
+213.2039 	DATA 	No keypress (maxWait exceeded)
+213.4040 	DATA 	No keypress (maxWait exceeded)
+213.6040 	DATA 	No keypress (maxWait exceeded)
+213.8041 	DATA 	No keypress (maxWait exceeded)
+214.0041 	DATA 	No keypress (maxWait exceeded)
+214.2041 	DATA 	No keypress (maxWait exceeded)
+214.4042 	DATA 	No keypress (maxWait exceeded)
+214.6042 	DATA 	No keypress (maxWait exceeded)
+214.8042 	DATA 	No keypress (maxWait exceeded)
+215.0043 	DATA 	No keypress (maxWait exceeded)
+215.2043 	DATA 	No keypress (maxWait exceeded)
+215.4043 	DATA 	No keypress (maxWait exceeded)
+215.6044 	DATA 	No keypress (maxWait exceeded)
+215.8044 	DATA 	No keypress (maxWait exceeded)
+216.0044 	DATA 	No keypress (maxWait exceeded)
+216.2044 	DATA 	No keypress (maxWait exceeded)
+216.4045 	DATA 	No keypress (maxWait exceeded)
+216.6045 	DATA 	No keypress (maxWait exceeded)
+216.8045 	DATA 	No keypress (maxWait exceeded)
+217.0045 	DATA 	No keypress (maxWait exceeded)
+217.2046 	DATA 	No keypress (maxWait exceeded)
+217.4046 	DATA 	No keypress (maxWait exceeded)
+217.6046 	DATA 	No keypress (maxWait exceeded)
+217.8046 	DATA 	No keypress (maxWait exceeded)
+218.0047 	DATA 	No keypress (maxWait exceeded)
+218.2047 	DATA 	No keypress (maxWait exceeded)
+218.4047 	DATA 	No keypress (maxWait exceeded)
+218.6048 	DATA 	No keypress (maxWait exceeded)
+218.8048 	DATA 	No keypress (maxWait exceeded)
+219.0048 	DATA 	No keypress (maxWait exceeded)
+219.2048 	DATA 	No keypress (maxWait exceeded)
+219.4048 	DATA 	No keypress (maxWait exceeded)
+219.6049 	DATA 	No keypress (maxWait exceeded)
+219.8049 	DATA 	No keypress (maxWait exceeded)
+220.0049 	DATA 	No keypress (maxWait exceeded)
+220.2049 	DATA 	No keypress (maxWait exceeded)
+220.4050 	DATA 	No keypress (maxWait exceeded)
+220.6050 	DATA 	No keypress (maxWait exceeded)
+220.8050 	DATA 	No keypress (maxWait exceeded)
+221.0050 	DATA 	No keypress (maxWait exceeded)
+221.2051 	DATA 	No keypress (maxWait exceeded)
+221.4051 	DATA 	No keypress (maxWait exceeded)
+221.6051 	DATA 	No keypress (maxWait exceeded)
+221.8051 	DATA 	No keypress (maxWait exceeded)
+222.0052 	DATA 	No keypress (maxWait exceeded)
+222.2052 	DATA 	No keypress (maxWait exceeded)
+222.4052 	DATA 	No keypress (maxWait exceeded)
+222.6052 	DATA 	No keypress (maxWait exceeded)
+222.8052 	DATA 	No keypress (maxWait exceeded)
+223.0053 	DATA 	No keypress (maxWait exceeded)
+223.2053 	DATA 	No keypress (maxWait exceeded)
+223.4053 	DATA 	No keypress (maxWait exceeded)
+223.6053 	DATA 	No keypress (maxWait exceeded)
+223.8053 	DATA 	No keypress (maxWait exceeded)
+224.0054 	DATA 	No keypress (maxWait exceeded)
+224.2054 	DATA 	No keypress (maxWait exceeded)
+224.4054 	DATA 	No keypress (maxWait exceeded)
+224.6055 	DATA 	No keypress (maxWait exceeded)
+224.8055 	DATA 	No keypress (maxWait exceeded)
+225.0055 	DATA 	No keypress (maxWait exceeded)
+225.2055 	DATA 	No keypress (maxWait exceeded)
+225.4056 	DATA 	No keypress (maxWait exceeded)
+225.6056 	DATA 	No keypress (maxWait exceeded)
+225.8056 	DATA 	No keypress (maxWait exceeded)
+226.0056 	DATA 	No keypress (maxWait exceeded)
+226.2057 	DATA 	No keypress (maxWait exceeded)
+226.4057 	DATA 	No keypress (maxWait exceeded)
+226.6057 	DATA 	No keypress (maxWait exceeded)
+226.8057 	DATA 	No keypress (maxWait exceeded)
+227.0058 	DATA 	No keypress (maxWait exceeded)
+227.2058 	DATA 	No keypress (maxWait exceeded)
+227.4058 	DATA 	No keypress (maxWait exceeded)
+227.6058 	DATA 	No keypress (maxWait exceeded)
+227.8059 	DATA 	No keypress (maxWait exceeded)
+228.0059 	DATA 	No keypress (maxWait exceeded)
+228.2059 	DATA 	No keypress (maxWait exceeded)
+228.4059 	DATA 	No keypress (maxWait exceeded)
+228.6060 	DATA 	No keypress (maxWait exceeded)
+228.8060 	DATA 	No keypress (maxWait exceeded)
+229.0060 	DATA 	No keypress (maxWait exceeded)
+229.2060 	DATA 	No keypress (maxWait exceeded)
+229.4060 	DATA 	No keypress (maxWait exceeded)
+229.6061 	DATA 	No keypress (maxWait exceeded)
+229.8061 	DATA 	No keypress (maxWait exceeded)
+230.0061 	DATA 	No keypress (maxWait exceeded)
+230.2061 	DATA 	No keypress (maxWait exceeded)
+230.4062 	DATA 	No keypress (maxWait exceeded)
+230.6062 	DATA 	No keypress (maxWait exceeded)
+230.8062 	DATA 	No keypress (maxWait exceeded)
+231.0062 	DATA 	No keypress (maxWait exceeded)
+231.2062 	DATA 	No keypress (maxWait exceeded)
+231.4063 	DATA 	No keypress (maxWait exceeded)
+231.6063 	DATA 	No keypress (maxWait exceeded)
+231.8063 	DATA 	No keypress (maxWait exceeded)
+232.0063 	DATA 	No keypress (maxWait exceeded)
+232.0356 	DATA 	Keypress: 5
+232.0962 	EXP 	Created unnamed ImageStim = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, draggable=False, flipHoriz=False, flipVert=False, image=PilImage(...), interpolate=False, mask=None, maskParams=None, name='unnamed ImageStim', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([1.10714286, 1.77142857]), texRes=128, units='norm', win=Window(...))
+232.5508 	DATA 	Keypress: 5
+232.8349 	DATA 	No keypress (maxWait exceeded)
+233.0349 	DATA 	No keypress (maxWait exceeded)
+233.0658 	DATA 	Keypress: 5
+233.1237 	EXP 	Created unnamed ImageStim = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, draggable=False, flipHoriz=False, flipVert=False, image=PilImage(...), interpolate=False, mask=None, maskParams=None, name='unnamed ImageStim', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([1.10714286, 1.77142857]), texRes=128, units='norm', win=Window(...))
+233.5807 	DATA 	Keypress: 5
+233.8504 	DATA 	No keypress (maxWait exceeded)
+234.0504 	DATA 	No keypress (maxWait exceeded)
+234.0956 	DATA 	Keypress: 5
+234.1540 	EXP 	Created unnamed ImageStim = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, draggable=False, flipHoriz=False, flipVert=False, image=PilImage(...), interpolate=False, mask=None, maskParams=None, name='unnamed ImageStim', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([1.10714286, 1.77142857]), texRes=128, units='norm', win=Window(...))
+234.6109 	DATA 	Keypress: 5
+234.8855 	DATA 	No keypress (maxWait exceeded)
+235.0856 	DATA 	No keypress (maxWait exceeded)
+235.1257 	DATA 	Keypress: 5
+235.1858 	EXP 	Created unnamed ImageStim = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, draggable=False, flipHoriz=False, flipVert=False, image=PilImage(...), interpolate=False, mask=None, maskParams=None, name='unnamed ImageStim', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([1.10714286, 1.77142857]), texRes=128, units='norm', win=Window(...))
+235.6415 	DATA 	Keypress: 5
+235.9194 	DATA 	No keypress (maxWait exceeded)
+236.1194 	DATA 	No keypress (maxWait exceeded)
+236.1558 	DATA 	Keypress: 5
+236.2304 	EXP 	Created unnamed ImageStim = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, draggable=False, flipHoriz=False, flipVert=False, image=PilImage(...), interpolate=False, mask=None, maskParams=None, name='unnamed ImageStim', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([1.10714286, 1.77142857]), texRes=128, units='norm', win=Window(...))
+236.6708 	DATA 	Keypress: 5
+236.9701 	DATA 	No keypress (maxWait exceeded)
+237.1702 	DATA 	No keypress (maxWait exceeded)
+237.1857 	DATA 	Keypress: 5
+237.2544 	EXP 	Created unnamed ImageStim = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, draggable=False, flipHoriz=False, flipVert=False, image=PilImage(...), interpolate=False, mask=None, maskParams=None, name='unnamed ImageStim', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([1.10714286, 1.77142857]), texRes=128, units='norm', win=Window(...))
+237.7011 	DATA 	Keypress: 5
+237.9840 	DATA 	No keypress (maxWait exceeded)
+238.1841 	DATA 	No keypress (maxWait exceeded)
+238.2157 	DATA 	Keypress: 5
+238.2771 	EXP 	Created unnamed ImageStim = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, draggable=False, flipHoriz=False, flipVert=False, image=PilImage(...), interpolate=False, mask=None, maskParams=None, name='unnamed ImageStim', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([1.10714286, 1.77142857]), texRes=128, units='norm', win=Window(...))
+238.7309 	DATA 	Keypress: 5
+239.0008 	DATA 	No keypress (maxWait exceeded)
+239.2009 	DATA 	No keypress (maxWait exceeded)
+239.2456 	DATA 	Keypress: 5
+239.3011 	EXP 	Created unnamed ImageStim = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, draggable=False, flipHoriz=False, flipVert=False, image=PilImage(...), interpolate=False, mask=None, maskParams=None, name='unnamed ImageStim', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([1.10714286, 1.77142857]), texRes=128, units='norm', win=Window(...))
+239.7610 	DATA 	Keypress: 5
+240.0341 	DATA 	No keypress (maxWait exceeded)
+240.2341 	DATA 	No keypress (maxWait exceeded)
+240.2757 	DATA 	Keypress: 5
+240.3321 	EXP 	Created unnamed ImageStim = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, draggable=False, flipHoriz=False, flipVert=False, image=PilImage(...), interpolate=False, mask=None, maskParams=None, name='unnamed ImageStim', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([1.10714286, 1.77142857]), texRes=128, units='norm', win=Window(...))
+240.7910 	DATA 	Keypress: 5
+241.0675 	DATA 	No keypress (maxWait exceeded)
+241.2676 	DATA 	No keypress (maxWait exceeded)
+241.3058 	DATA 	Keypress: 5
+241.3662 	EXP 	Created unnamed ImageStim = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, draggable=False, flipHoriz=False, flipVert=False, image=PilImage(...), interpolate=False, mask=None, maskParams=None, name='unnamed ImageStim', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([1.10714286, 1.77142857]), texRes=128, units='norm', win=Window(...))
+241.8212 	DATA 	Keypress: 5
+242.0979 	DATA 	No keypress (maxWait exceeded)
+242.2980 	DATA 	No keypress (maxWait exceeded)
+242.3359 	DATA 	Keypress: 5
+242.4016 	EXP 	Created unnamed ImageStim = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, draggable=False, flipHoriz=False, flipVert=False, image=PilImage(...), interpolate=False, mask=None, maskParams=None, name='unnamed ImageStim', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([1.10714286, 1.77142857]), texRes=128, units='norm', win=Window(...))
+242.8510 	DATA 	Keypress: 5
+243.1338 	DATA 	No keypress (maxWait exceeded)
+243.3338 	DATA 	No keypress (maxWait exceeded)
+243.3658 	DATA 	Keypress: 5
+243.4161 	EXP 	Created unnamed ImageStim = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, draggable=False, flipHoriz=False, flipVert=False, image=PilImage(...), interpolate=False, mask=None, maskParams=None, name='unnamed ImageStim', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([1.10714286, 1.77142857]), texRes=128, units='norm', win=Window(...))
+243.8812 	DATA 	Keypress: 5
+244.1520 	DATA 	No keypress (maxWait exceeded)
+244.3520 	DATA 	No keypress (maxWait exceeded)
+244.3957 	DATA 	Keypress: 5
+244.4551 	EXP 	Created unnamed ImageStim = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, draggable=False, flipHoriz=False, flipVert=False, image=PilImage(...), interpolate=False, mask=None, maskParams=None, name='unnamed ImageStim', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([1.10714286, 1.77142857]), texRes=128, units='norm', win=Window(...))
+244.9110 	DATA 	Keypress: 5
+245.1844 	DATA 	No keypress (maxWait exceeded)
+245.3844 	DATA 	No keypress (maxWait exceeded)
+245.4259 	DATA 	Keypress: 5
+245.4822 	EXP 	Created unnamed ImageStim = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, draggable=False, flipHoriz=False, flipVert=False, image=PilImage(...), interpolate=False, mask=None, maskParams=None, name='unnamed ImageStim', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([1.10714286, 1.77142857]), texRes=128, units='norm', win=Window(...))
+245.9412 	DATA 	Keypress: 5
+246.2173 	DATA 	No keypress (maxWait exceeded)
+246.4173 	DATA 	No keypress (maxWait exceeded)
+246.4559 	DATA 	Keypress: 5
+246.5180 	EXP 	Created unnamed ImageStim = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, draggable=False, flipHoriz=False, flipVert=False, image=PilImage(...), interpolate=False, mask=None, maskParams=None, name='unnamed ImageStim', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([1.10714286, 1.77142857]), texRes=128, units='norm', win=Window(...))
+246.9711 	DATA 	Keypress: 5
+247.2491 	DATA 	No keypress (maxWait exceeded)
+247.4491 	DATA 	No keypress (maxWait exceeded)
+247.4857 	DATA 	Keypress: 5
+247.5431 	EXP 	Created unnamed ImageStim = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, draggable=False, flipHoriz=False, flipVert=False, image=PilImage(...), interpolate=False, mask=None, maskParams=None, name='unnamed ImageStim', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([1.10714286, 1.77142857]), texRes=128, units='norm', win=Window(...))
+248.0013 	DATA 	Keypress: 5
+248.2695 	DATA 	No keypress (maxWait exceeded)
+248.4695 	DATA 	No keypress (maxWait exceeded)
+248.5160 	DATA 	Keypress: 5
+248.5730 	EXP 	Created unnamed ImageStim = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, draggable=False, flipHoriz=False, flipVert=False, image=PilImage(...), interpolate=False, mask=None, maskParams=None, name='unnamed ImageStim', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([1.10714286, 1.77142857]), texRes=128, units='norm', win=Window(...))
+249.0310 	DATA 	Keypress: 5
+249.2980 	DATA 	No keypress (maxWait exceeded)
+249.4981 	DATA 	No keypress (maxWait exceeded)
+249.5458 	DATA 	Keypress: 5
+249.6029 	EXP 	Created unnamed ImageStim = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, draggable=False, flipHoriz=False, flipVert=False, image=PilImage(...), interpolate=False, mask=None, maskParams=None, name='unnamed ImageStim', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([1.10714286, 1.77142857]), texRes=128, units='norm', win=Window(...))
+250.0615 	DATA 	Keypress: 5
+250.3330 	DATA 	No keypress (maxWait exceeded)
+250.5330 	DATA 	No keypress (maxWait exceeded)
+250.5758 	DATA 	Keypress: 5
+250.6290 	EXP 	Created unnamed ImageStim = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, draggable=False, flipHoriz=False, flipVert=False, image=PilImage(...), interpolate=False, mask=None, maskParams=None, name='unnamed ImageStim', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([1.10714286, 1.77142857]), texRes=128, units='norm', win=Window(...))
+251.0911 	DATA 	Keypress: 5
+251.3672 	DATA 	No keypress (maxWait exceeded)
+251.5673 	DATA 	No keypress (maxWait exceeded)
+251.6058 	DATA 	Keypress: 5
+251.6675 	EXP 	Created unnamed ImageStim = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, draggable=False, flipHoriz=False, flipVert=False, image=PilImage(...), interpolate=False, mask=None, maskParams=None, name='unnamed ImageStim', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([1.10714286, 1.77142857]), texRes=128, units='norm', win=Window(...))
+252.1214 	DATA 	Keypress: 5
+252.4054 	DATA 	No keypress (maxWait exceeded)
+252.6055 	DATA 	No keypress (maxWait exceeded)
+252.6358 	DATA 	Keypress: 5
+252.6858 	EXP 	Created unnamed ImageStim = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, draggable=False, flipHoriz=False, flipVert=False, image=PilImage(...), interpolate=False, mask=None, maskParams=None, name='unnamed ImageStim', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([1.10714286, 1.77142857]), texRes=128, units='norm', win=Window(...))
+253.1513 	DATA 	Keypress: 5
+253.4201 	DATA 	No keypress (maxWait exceeded)
+253.6202 	DATA 	No keypress (maxWait exceeded)
+253.6660 	DATA 	Keypress: 5
+253.7195 	EXP 	Created unnamed ImageStim = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, draggable=False, flipHoriz=False, flipVert=False, image=PilImage(...), interpolate=False, mask=None, maskParams=None, name='unnamed ImageStim', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([1.10714286, 1.77142857]), texRes=128, units='norm', win=Window(...))
+254.1810 	DATA 	Keypress: 5
+254.4535 	DATA 	No keypress (maxWait exceeded)
+254.6535 	DATA 	No keypress (maxWait exceeded)
+254.6958 	DATA 	Keypress: 5
+254.7584 	EXP 	Created unnamed ImageStim = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, draggable=False, flipHoriz=False, flipVert=False, image=PilImage(...), interpolate=False, mask=None, maskParams=None, name='unnamed ImageStim', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([1.10714286, 1.77142857]), texRes=128, units='norm', win=Window(...))
+255.2111 	DATA 	Keypress: 5
+255.4871 	DATA 	No keypress (maxWait exceeded)
+255.6871 	DATA 	No keypress (maxWait exceeded)
+255.7258 	DATA 	Keypress: 5
+255.7811 	EXP 	Created unnamed ImageStim = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, draggable=False, flipHoriz=False, flipVert=False, image=PilImage(...), interpolate=False, mask=None, maskParams=None, name='unnamed ImageStim', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([1.10714286, 1.77142857]), texRes=128, units='norm', win=Window(...))
+256.2411 	DATA 	Keypress: 5
+256.5176 	DATA 	No keypress (maxWait exceeded)
+256.7177 	DATA 	No keypress (maxWait exceeded)
+256.7558 	DATA 	Keypress: 5
+256.8153 	EXP 	Created unnamed ImageStim = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, draggable=False, flipHoriz=False, flipVert=False, image=PilImage(...), interpolate=False, mask=None, maskParams=None, name='unnamed ImageStim', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([1.10714286, 1.77142857]), texRes=128, units='norm', win=Window(...))
+257.2714 	DATA 	Keypress: 5
+257.5524 	DATA 	No keypress (maxWait exceeded)
+257.7524 	DATA 	No keypress (maxWait exceeded)
+257.7859 	DATA 	Keypress: 5
+257.8401 	EXP 	Created unnamed ImageStim = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, draggable=False, flipHoriz=False, flipVert=False, image=PilImage(...), interpolate=False, mask=None, maskParams=None, name='unnamed ImageStim', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([1.10714286, 1.77142857]), texRes=128, units='norm', win=Window(...))
+258.3010 	DATA 	Keypress: 5
+258.5683 	DATA 	No keypress (maxWait exceeded)
+258.7684 	DATA 	No keypress (maxWait exceeded)
+258.8159 	DATA 	Keypress: 5
+258.8802 	EXP 	Created unnamed ImageStim = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, draggable=False, flipHoriz=False, flipVert=False, image=PilImage(...), interpolate=False, mask=None, maskParams=None, name='unnamed ImageStim', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([1.10714286, 1.77142857]), texRes=128, units='norm', win=Window(...))
+259.3312 	DATA 	Keypress: 5
+259.6170 	DATA 	No keypress (maxWait exceeded)
+259.8170 	DATA 	No keypress (maxWait exceeded)
+259.8459 	DATA 	Keypress: 5
+259.9028 	EXP 	Created unnamed ImageStim = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, draggable=False, flipHoriz=False, flipVert=False, image=PilImage(...), interpolate=False, mask=None, maskParams=None, name='unnamed ImageStim', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([1.10714286, 1.77142857]), texRes=128, units='norm', win=Window(...))
+260.3613 	DATA 	Keypress: 5
+260.6350 	DATA 	No keypress (maxWait exceeded)
+260.8351 	DATA 	No keypress (maxWait exceeded)
+260.8758 	DATA 	Keypress: 5
+260.9377 	EXP 	Created unnamed ImageStim = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, draggable=False, flipHoriz=False, flipVert=False, image=PilImage(...), interpolate=False, mask=None, maskParams=None, name='unnamed ImageStim', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([1.10714286, 1.77142857]), texRes=128, units='norm', win=Window(...))
+261.3910 	DATA 	Keypress: 5
+261.6684 	DATA 	No keypress (maxWait exceeded)
+261.8684 	DATA 	No keypress (maxWait exceeded)
+261.9061 	DATA 	Keypress: 5
+261.9759 	EXP 	Created unnamed ImageStim = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, draggable=False, flipHoriz=False, flipVert=False, image=PilImage(...), interpolate=False, mask=None, maskParams=None, name='unnamed ImageStim', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([1.10714286, 1.77142857]), texRes=128, units='norm', win=Window(...))
+262.4216 	DATA 	Keypress: 5
+262.7012 	DATA 	No keypress (maxWait exceeded)
+262.9012 	DATA 	No keypress (maxWait exceeded)
+262.9360 	DATA 	Keypress: 5
+262.9967 	EXP 	Created unnamed ImageStim = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, draggable=False, flipHoriz=False, flipVert=False, image=PilImage(...), interpolate=False, mask=None, maskParams=None, name='unnamed ImageStim', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([1.10714286, 1.77142857]), texRes=128, units='norm', win=Window(...))
+263.4512 	DATA 	Keypress: 5
+263.7345 	DATA 	No keypress (maxWait exceeded)
+263.9345 	DATA 	No keypress (maxWait exceeded)
+263.9657 	DATA 	Keypress: 5
+264.0249 	EXP 	Created unnamed ImageStim = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, draggable=False, flipHoriz=False, flipVert=False, image=PilImage(...), interpolate=False, mask=None, maskParams=None, name='unnamed ImageStim', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([1.10714286, 1.77142857]), texRes=128, units='norm', win=Window(...))
+264.4817 	DATA 	Keypress: 5
+264.7508 	DATA 	No keypress (maxWait exceeded)
+264.9509 	DATA 	No keypress (maxWait exceeded)
+264.9959 	DATA 	Keypress: 5
+265.0629 	EXP 	Created unnamed ImageStim = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, draggable=False, flipHoriz=False, flipVert=False, image=PilImage(...), interpolate=False, mask=None, maskParams=None, name='unnamed ImageStim', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([1.10714286, 1.77142857]), texRes=128, units='norm', win=Window(...))
+265.5112 	DATA 	Keypress: 5
+265.8032 	DATA 	No keypress (maxWait exceeded)
+266.0033 	DATA 	No keypress (maxWait exceeded)
+266.0259 	DATA 	Keypress: 5
+266.0951 	EXP 	Created unnamed ImageStim = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, draggable=False, flipHoriz=False, flipVert=False, image=PilImage(...), interpolate=False, mask=None, maskParams=None, name='unnamed ImageStim', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([1.10714286, 1.77142857]), texRes=128, units='norm', win=Window(...))
+266.5411 	DATA 	Keypress: 5
+266.8168 	DATA 	No keypress (maxWait exceeded)
+267.0168 	DATA 	No keypress (maxWait exceeded)
+267.0560 	DATA 	Keypress: 5
+267.1130 	EXP 	Created unnamed ImageStim = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, draggable=False, flipHoriz=False, flipVert=False, image=PilImage(...), interpolate=False, mask=None, maskParams=None, name='unnamed ImageStim', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([1.10714286, 1.77142857]), texRes=128, units='norm', win=Window(...))
+267.5712 	DATA 	Keypress: 5
+267.8531 	DATA 	No keypress (maxWait exceeded)
+268.0532 	DATA 	No keypress (maxWait exceeded)
+268.0859 	DATA 	Keypress: 5
+268.1429 	EXP 	Created unnamed ImageStim = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, draggable=False, flipHoriz=False, flipVert=False, image=PilImage(...), interpolate=False, mask=None, maskParams=None, name='unnamed ImageStim', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([1.10714286, 1.77142857]), texRes=128, units='norm', win=Window(...))
+268.6009 	DATA 	Keypress: 5
+268.8678 	DATA 	No keypress (maxWait exceeded)
+269.0679 	DATA 	No keypress (maxWait exceeded)
+269.1159 	DATA 	Keypress: 5
+269.1702 	EXP 	Created unnamed ImageStim = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, draggable=False, flipHoriz=False, flipVert=False, image=PilImage(...), interpolate=False, mask=None, maskParams=None, name='unnamed ImageStim', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([1.10714286, 1.77142857]), texRes=128, units='norm', win=Window(...))
+269.6311 	DATA 	Keypress: 5
+269.9003 	DATA 	No keypress (maxWait exceeded)
+270.1003 	DATA 	No keypress (maxWait exceeded)
+270.1459 	DATA 	Keypress: 5
+270.2047 	EXP 	Created unnamed ImageStim = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, draggable=False, flipHoriz=False, flipVert=False, image=PilImage(...), interpolate=False, mask=None, maskParams=None, name='unnamed ImageStim', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([1.10714286, 1.77142857]), texRes=128, units='norm', win=Window(...))
+270.6614 	DATA 	Keypress: 5
+270.9374 	DATA 	No keypress (maxWait exceeded)
+271.1374 	DATA 	No keypress (maxWait exceeded)
+271.1760 	DATA 	Keypress: 5
+271.2380 	EXP 	Created unnamed ImageStim = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, draggable=False, flipHoriz=False, flipVert=False, image=PilImage(...), interpolate=False, mask=None, maskParams=None, name='unnamed ImageStim', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([1.10714286, 1.77142857]), texRes=128, units='norm', win=Window(...))
+271.6915 	DATA 	Keypress: 5
+271.9706 	DATA 	No keypress (maxWait exceeded)
+272.1706 	DATA 	No keypress (maxWait exceeded)
+272.2059 	DATA 	Keypress: 5
+272.2750 	EXP 	Created unnamed ImageStim = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, draggable=False, flipHoriz=False, flipVert=False, image=PilImage(...), interpolate=False, mask=None, maskParams=None, name='unnamed ImageStim', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([1.10714286, 1.77142857]), texRes=128, units='norm', win=Window(...))
+272.7216 	DATA 	Keypress: 5
+273.0008 	DATA 	No keypress (maxWait exceeded)
+273.2008 	DATA 	No keypress (maxWait exceeded)
+273.2359 	DATA 	Keypress: 5
+273.2886 	EXP 	Created unnamed ImageStim = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, draggable=False, flipHoriz=False, flipVert=False, image=PilImage(...), interpolate=False, mask=None, maskParams=None, name='unnamed ImageStim', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([1.10714286, 1.77142857]), texRes=128, units='norm', win=Window(...))
+273.7512 	DATA 	Keypress: 5
+274.0176 	DATA 	No keypress (maxWait exceeded)
+274.2176 	DATA 	No keypress (maxWait exceeded)
+274.2662 	DATA 	Keypress: 5
+274.3307 	EXP 	Created unnamed ImageStim = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, draggable=False, flipHoriz=False, flipVert=False, image=PilImage(...), interpolate=False, mask=None, maskParams=None, name='unnamed ImageStim', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([1.10714286, 1.77142857]), texRes=128, units='norm', win=Window(...))
+274.7811 	DATA 	Keypress: 5
+275.0681 	DATA 	No keypress (maxWait exceeded)
+275.2681 	DATA 	No keypress (maxWait exceeded)
+275.2960 	DATA 	Keypress: 5
+275.3529 	EXP 	Created unnamed ImageStim = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, draggable=False, flipHoriz=False, flipVert=False, image=PilImage(...), interpolate=False, mask=None, maskParams=None, name='unnamed ImageStim', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([1.10714286, 1.77142857]), texRes=128, units='norm', win=Window(...))
+275.8111 	DATA 	Keypress: 5
+276.0844 	DATA 	No keypress (maxWait exceeded)
+276.2844 	DATA 	No keypress (maxWait exceeded)
+276.3261 	DATA 	Keypress: 5
+276.3839 	EXP 	Created unnamed ImageStim = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, draggable=False, flipHoriz=False, flipVert=False, image=PilImage(...), interpolate=False, mask=None, maskParams=None, name='unnamed ImageStim', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([1.10714286, 1.77142857]), texRes=128, units='norm', win=Window(...))
+276.8411 	DATA 	Keypress: 5
+277.1175 	DATA 	No keypress (maxWait exceeded)
+277.3175 	DATA 	No keypress (maxWait exceeded)
+277.3560 	DATA 	Keypress: 5
+277.4131 	EXP 	Created unnamed ImageStim = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, draggable=False, flipHoriz=False, flipVert=False, image=PilImage(...), interpolate=False, mask=None, maskParams=None, name='unnamed ImageStim', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([1.10714286, 1.77142857]), texRes=128, units='norm', win=Window(...))
+277.8713 	DATA 	Keypress: 5
+278.1518 	DATA 	No keypress (maxWait exceeded)
+278.3519 	DATA 	No keypress (maxWait exceeded)
+278.3861 	DATA 	Keypress: 5
+278.4416 	EXP 	Created unnamed ImageStim = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, draggable=False, flipHoriz=False, flipVert=False, image=PilImage(...), interpolate=False, mask=None, maskParams=None, name='unnamed ImageStim', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([1.10714286, 1.77142857]), texRes=128, units='norm', win=Window(...))
+278.9012 	DATA 	Keypress: 5
+279.1688 	DATA 	No keypress (maxWait exceeded)
+279.3689 	DATA 	No keypress (maxWait exceeded)
+279.4160 	DATA 	Keypress: 5
+279.4715 	EXP 	Created unnamed ImageStim = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, draggable=False, flipHoriz=False, flipVert=False, image=PilImage(...), interpolate=False, mask=None, maskParams=None, name='unnamed ImageStim', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([1.10714286, 1.77142857]), texRes=128, units='norm', win=Window(...))
+279.9313 	DATA 	Keypress: 5
+280.2023 	DATA 	No keypress (maxWait exceeded)
+280.4023 	DATA 	No keypress (maxWait exceeded)
+280.4459 	DATA 	Keypress: 5
+280.5020 	EXP 	Created unnamed ImageStim = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, draggable=False, flipHoriz=False, flipVert=False, image=PilImage(...), interpolate=False, mask=None, maskParams=None, name='unnamed ImageStim', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([1.10714286, 1.77142857]), texRes=128, units='norm', win=Window(...))
+280.9613 	DATA 	Keypress: 5
+281.2350 	DATA 	No keypress (maxWait exceeded)
+281.4350 	DATA 	No keypress (maxWait exceeded)
+281.4761 	DATA 	Keypress: 5
+281.5349 	EXP 	Created unnamed ImageStim = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, draggable=False, flipHoriz=False, flipVert=False, image=PilImage(...), interpolate=False, mask=None, maskParams=None, name='unnamed ImageStim', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([1.10714286, 1.77142857]), texRes=128, units='norm', win=Window(...))
+281.9916 	DATA 	Keypress: 5
+282.2701 	DATA 	No keypress (maxWait exceeded)
+282.4701 	DATA 	No keypress (maxWait exceeded)
+282.5060 	DATA 	Keypress: 5
+282.5601 	EXP 	Created unnamed ImageStim = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, draggable=False, flipHoriz=False, flipVert=False, image=PilImage(...), interpolate=False, mask=None, maskParams=None, name='unnamed ImageStim', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([1.10714286, 1.77142857]), texRes=128, units='norm', win=Window(...))
+283.0214 	DATA 	Keypress: 5
+283.2848 	DATA 	No keypress (maxWait exceeded)
+283.4848 	DATA 	No keypress (maxWait exceeded)
+283.6849 	DATA 	No keypress (maxWait exceeded)
+283.8849 	DATA 	No keypress (maxWait exceeded)
+284.0849 	DATA 	No keypress (maxWait exceeded)
+284.2851 	DATA 	No keypress (maxWait exceeded)
+284.4851 	DATA 	No keypress (maxWait exceeded)
+284.6851 	DATA 	No keypress (maxWait exceeded)
+284.8852 	DATA 	No keypress (maxWait exceeded)
+285.0852 	DATA 	No keypress (maxWait exceeded)
+285.2852 	DATA 	No keypress (maxWait exceeded)
+285.4853 	DATA 	No keypress (maxWait exceeded)
+285.6853 	DATA 	No keypress (maxWait exceeded)
+285.8853 	DATA 	No keypress (maxWait exceeded)
+286.0854 	DATA 	No keypress (maxWait exceeded)
+286.2854 	DATA 	No keypress (maxWait exceeded)
+286.4854 	DATA 	No keypress (maxWait exceeded)
+286.6855 	DATA 	No keypress (maxWait exceeded)
+286.8855 	DATA 	No keypress (maxWait exceeded)
+287.0855 	DATA 	No keypress (maxWait exceeded)
+287.2856 	DATA 	No keypress (maxWait exceeded)
+287.4856 	DATA 	No keypress (maxWait exceeded)
+287.6857 	DATA 	No keypress (maxWait exceeded)
+287.8857 	DATA 	No keypress (maxWait exceeded)
+288.0857 	DATA 	No keypress (maxWait exceeded)
+288.2857 	DATA 	No keypress (maxWait exceeded)
+288.4858 	DATA 	No keypress (maxWait exceeded)
+288.6858 	DATA 	No keypress (maxWait exceeded)
+288.8858 	DATA 	No keypress (maxWait exceeded)
+289.0858 	DATA 	No keypress (maxWait exceeded)
+289.2859 	DATA 	No keypress (maxWait exceeded)
+289.4859 	DATA 	No keypress (maxWait exceeded)
+289.6860 	DATA 	No keypress (maxWait exceeded)
+289.8860 	DATA 	No keypress (maxWait exceeded)
+290.0860 	DATA 	No keypress (maxWait exceeded)
+290.2861 	DATA 	No keypress (maxWait exceeded)
+290.4861 	DATA 	No keypress (maxWait exceeded)
+290.6861 	DATA 	No keypress (maxWait exceeded)
+290.8861 	DATA 	No keypress (maxWait exceeded)
+291.0862 	DATA 	No keypress (maxWait exceeded)
+291.2862 	DATA 	No keypress (maxWait exceeded)
+291.4862 	DATA 	No keypress (maxWait exceeded)
+291.6862 	DATA 	No keypress (maxWait exceeded)
+291.8863 	DATA 	No keypress (maxWait exceeded)
+292.0863 	DATA 	No keypress (maxWait exceeded)
+292.2863 	DATA 	No keypress (maxWait exceeded)
+292.4863 	DATA 	No keypress (maxWait exceeded)
+292.6864 	DATA 	No keypress (maxWait exceeded)
+292.8864 	DATA 	No keypress (maxWait exceeded)
+293.0864 	DATA 	No keypress (maxWait exceeded)
+293.2865 	DATA 	No keypress (maxWait exceeded)
+293.4865 	DATA 	No keypress (maxWait exceeded)
+293.6865 	DATA 	No keypress (maxWait exceeded)
+293.8865 	DATA 	No keypress (maxWait exceeded)
+294.0866 	DATA 	No keypress (maxWait exceeded)
+294.2804 	DATA 	Keypress: q
+294.3572 	EXP 	Created unnamed ImageStim = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, draggable=False, flipHoriz=False, flipVert=False, image=PilImage(...), interpolate=False, mask=None, maskParams=None, name='unnamed ImageStim', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([1.10714286, 1.77142857]), texRes=128, units='norm', win=Window(...))
